@@ -1,31 +1,30 @@
 # Internet-Technologies
 
-## **Opis:**
-Internet-Technologies to repozytorium poświęcone programowaniu i pracy z różnymi technologiami internetowymi. Znajdziesz tutaj przykładowe projekty, narzędzia i materiały edukacyjne związane z tworzeniem aplikacji i stron internetowych.
+## **Description:**
+Internet-Technologies is a repository dedicated to programming and working with various Internet technologies. Here you will find example projects, tools and educational materials related to the development of applications and websites.
 
-## **Struktura Repozytorium:**
-/Projekty: Ten folder zawiera różne projekty, w których skupiamy się na wykorzystaniu technologii internetowych. Każdy projekt posiada swój własny folder z opisem, kodem źródłowym i plikami projektowymi.
+## **Repository Structure:**
+/Projects: This folder contains various projects where we focus on using web technologies. Each project has its own folder with description, source code and project files.
 
-/Narzędzia: W tym folderze znajdują się narzędzia programistyczne, frameworki i biblioteki, które ułatwiają tworzenie aplikacji i stron internetowych.
+/Tools: This folder contains development tools, frameworks, and libraries that make it easy to develop applications and websites.
 
-/Materiały: Tutaj znajdziesz materiały edukacyjne, takie jak tutoriale, artykuły i dokumentacja, które pomogą Ci w nauce i zrozumieniu technologii internetowych.
+/Resources: Here you will find educational materials such as tutorials, articles and documentation to help you learn and understand web technologies.
 
-## **Jak zacząć:**
+## **How ​​to start:**
 
-Sklonuj repozytorium na swój lokalny komputer:
+Clone the repository to your local computer:
 ```
 git clone https://github.com/dawidolko/Internet-Technologies.git
 ```
 
-Przeglądaj dostępne projekty, narzędzia i materiały w odpowiednich folderach.
+Browse available projects, tools and materials in their respective folders.
 
-Wykorzystaj dostępne zasoby i narzędzia, aby tworzyć aplikacje i strony internetowe przy użyciu różnych technologii internetowych.
+Use available resources and tools to create applications and websites using various web technologies.
 
-## **Wymagania systemowe**
-Aby rozpocząć pracę z technologiami internetowymi, będziesz potrzebować odpowiednich narzędzi programistycznych, edytora kodu i środowiska do tworzenia aplikacji internetowych. Upewnij się, że masz zainstalowane niezbędne oprogramowanie zgodnie z preferencjami i potrzebami projektu.
+## **System requirements**
+To get started with web technologies, you'll need the right development tools, a code editor, and a web development environment. Make sure you have the necessary software installed according to your project preferences and needs.
 
-## **Wkład i Wsparcie**
-Jeśli chcesz przyczynić się do tego repozytorium, możesz zgłaszać problemy, tworzyć pull requesty lub udostępniać swoje własne projekty związane z technologiami internetowymi. Wszelkie wkłady są mile widziane!
+## **Contributions and Support**
+If you want to contribute to this repository, you can report issues, create pull requests or share your own projects related to web technologies. Any contributions are welcome!
 
-Jeśli masz pytania lub potrzebujesz pomocy, skontaktuj się ze mną poprzez e-mail lub przez platformę GitHub.
-
+If you have any questions or need help, please contact me via email or GitHub.
