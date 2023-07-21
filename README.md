@@ -6,9 +6,7 @@ Internet-Technologies is a repository dedicated to programming and working with 
 ## **Repository Structure:**
 /Projects: This folder contains various projects where we focus on using web technologies. Each project has its own folder with description, source code and project files.
 
-/Tools: This folder contains development tools, frameworks, and libraries that make it easy to develop applications and websites.
-
-/Resources: Here you will find educational materials such as tutorials, articles and documentation to help you learn and understand web technologies.
+/Labs: Here you will find educational materials such as tutorials, articles and documentation to help you learn and understand web technologies.
 
 ## **How ​​to start:**
 
