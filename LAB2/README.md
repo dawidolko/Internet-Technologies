@@ -130,15 +130,21 @@ Ustaw tytuł strony w znaczniku <title> na "Jan Kowalski - z pasją do muzyki".
 
 Zainstaluj dodatek "Live Server". Jest to serwer deweloperski (czyli służący do tworzenia stron, a nie hostowania ich na produkcji). Słowo Live oznacza, że po zrobieniu jakiejkolwiek zmiany serwer przeładowuje stronę i ją od razu renderuje.
 
-Uruchomić stronę w przeglądarce klikając prawym przyciskiem myszy polu edytora a następnie wybrać opcję Open with Live Server.
-
 <br>![lab1](img/lab1v5.png)
 
+Uruchomić stronę w przeglądarce klikając prawym przyciskiem myszy polu edytora a następnie wybrać opcję Open with Live Server.
+
+<br>![lab1](img/lab1v6.png)
+
 Dodatek odświeży automatycznie stronę po zapisaniu pliku w VSCode
+
+<br>![lab1](img/lab1v7.png)
 
 Niezapisany plik oznaczony jest kropką na karcie z nazwą pliku. **Zapisać plik i zapamiętać skrót służący do zapisywania ctrl+s (kropka powinna zniknąć a strona w przeglądarce zostać odświeżona).**
 
 Na marginesie istnieje też możliwość zainstalowania dodatku, który renderuje HTML wewnątrz VSCode'a do szybkiego podglądu.
+
+<br>![lab1](img/lab1v8.png)
 
 W celu włączenia podglądu wciskamy najpierw ctrl+q a następnie po zwolnieniu tych klawiszy s.
 
@@ -150,7 +156,7 @@ Nagłówek pierwszego stopnia <h1> jest najważniejszy. W przeszłości zalecano
 
 Utwórz nagłówek pierwszego poziomu zawierający tytuł strony związany z zainteresowaniami np. Topo wspinaczkowe – przewodnik dla nowicjuszy
 
-<br>![lab1](img/lab1v6.png)
+<br>![lab1](img/lab1v9.png)
 
 Utwórz nagłówek 2 poziomu o tytule Zespół Redakcyjny. Oraz nagłówek 3 poziomu z imieniem i nazwiskiem.
 
@@ -170,7 +176,7 @@ _Uwaga boczna: założono, że w folderze bieżącym (tj. tym w którym znajduje
 
 Pod nagłówkiem umieść zdjęcie redaktora w formacie jpg.
 
-<br>![lab1](img/lab1v7.png)
+<br>![lab1](img/lab1v10.png)
 
 **Umieszczanie zdjęć o bardzo dobrej jakości znacznie obniży wydajność przetwarzania dokumentu HTML przez przeglądarkę.**
 
@@ -186,7 +192,7 @@ Znacznik `<p>` mówi o tym, że dany fragment dokumentu to akapit. Oznacza, to �
 
 Użyj tego znacznika do stworzenia opisu redaktora pod zdjęciem. Opis powinien zawierać więcej niż 600 znaków.
 
-<br>![lab1](img/lab1v8.png)
+<br>![lab1](img/lab1v11.png)
 
 Znacznik <hr> (horizontal breakdown) mówi, że w dalszej części dokumentu wystąpi zmiana tematu.
 
@@ -195,7 +201,7 @@ Znacznik <hr> (horizontal breakdown) mówi, że w dalszej części dokumentu wys
 
 Dodaj nowego redaktora a następnie oddziel treść dotyczącą poszczególnych redaktorów znacznikiem `<hr>`
 
-<br>![lab1](img/lab1v9.png)
+<br>![lab1](img/lab1v12.png)
 
 ## **Zadanie 3.**
 
@@ -205,7 +211,7 @@ Utwórz listę nieuporządkowaną trzypoziomową związaną z tematyką strony.
 
 Przykładowa lista:
 
-<br>![lab1](img/lab1v10.png)
+<br>![lab1](img/lab1v13.png)
 
 Tworzenie list odbywa się przez zdefiniowanie korzenia znacznikiem `<ol>` (lista uporządkowana ordered list) lub `<ul>` (lista nieuporządkowana, unordered list). Następnie w zawartości znacznika definiujemy elementy listy oznaczone znacznikiem `<li>`.
 ```
@@ -258,7 +264,7 @@ Aby utworzyć listę zagnieżdżoną należy w elemencie listy zdefiniować now�
 Utwórz nagłówek **"Terminarz Wydarzeń"** a następnie utwórz tabelę związaną z wydarzeniami tematycznie związanymi z tytułem strony. Przy tworzeniu tabeli należy użyć atrybutów `colspan` (scalanie kolumn) i `rowspan` (scalanie wierszy) do połączenia komórek w odpowiednich miejscach.
 Przykładowa tabela:
 
-<br>![lab1](img/lab1v11.png)
+<br>![lab1](img/lab1v14.png)
 
 Przykładowa tabela:
 ```
