@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!--wymagany ze wzgledu na kompatybilnosc w stecz-->
+<html lang="en-US"> <!--dokument html, root element-->
+  <head> <!--head - metadane-->
+    <meta charset="utf-8" /> <!-- Atrybuty typ kodowania znaków-->
+    <meta name="viewport" content="width=device-width" initial-scale="1" /> <!--tutaj definiujemy ustawienia skalowania strony-->
+    <link ref="stylesheet" type="text/css" href="style.css" /> <!--link do pliku-->
+    <title>My test page</title> <!--tytuł wyświetlany w przeglądarce-->
+  </head>
+  <body> <!--zawartosc dokumentu-->
+
+    <nav> <!--navbar - pasek nawigacyjny tutaj umieszczamy linki di wszystkich stron-->
+        <ul>
+            <li><a href="https://www.ur.edu.pl">link</a></li>
+            <li><a href="main.html">link</a></li>
+            <li><a href="https://bur.edu.pl">link</a></li>
+        </ul>
+    </nav>
+
+    <img src="images/firefox-icon.png" alt="My test image" />
+    <!--nagłówki słuyly pierwotnie do podzialu dokumentu na spis tresci-->
+    <h1>Nagłówek 1</h1>
+    <h2>Nagłówek 2</h2>
+    <h3>Nagłówek 3</h3>
+    <h4>Nagłówek 4</h4>
+    <h5>Nagłówek 5</h5>
+    <h6>Nagłówek 6</h6>
+
+    <ul> <!--lista nieuporzatkowana, unordered-->
+        <li>a</li>
+        <li>b</li>
+    </ul>
+    <ol> <!--lista uporzatkowana, ordered-->
+        <li>a</li>
+        <li>b</li>
+    </ol>
+
+    <table style="border: 2px dashed blue;"> <!--definicja tabeli-->
+        <tbody>
+            <tr> <!--definiowanie wiersza-->
+                <td style="border: 2px dashed blue;">Kolumna 1</td>
+                <td>Kolumna 2</td> <!--definiujemy kolumne-->
+            </tr>
+            <tr>
+                <td>Kolumna 1</td>
+                <td>Kolumna 2</td>
+            </tr>
+            <tr>
+                <td colspan="2">Kolumna scalona</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer>
+        <ul>
+            <!--tutaj ustawiono rozmiar obazka za pomoca atrybutu width i height lepszy jest CSS!-->
+            <li><img width=50px height=50px src="logo_UR_blue (1).jpg"/><a href="https://ur.edu.pl"></a></li>
+            <li><img width=50px height=50px src="logo_UR_blue (1).jpg"/><a href="https://ur.edu.pl"></a></li>
+            <li><img width=50px height=50px src="logo_UR_blue (1).jpg"/><a href="https://ur.edu.pl"></a></li>
+        </ul>
+    </footer>
+
+    tutaj nastapi <br>
+    przejscie do nastepnej linii
+
+    <marquee>tekst plywajacy</marquee>
+    <br>
+    <p>tutaj pokazano akapit (ang. paragraph)</p>
+    <hr> tutaj wystąpila linia oddzielajaca
+    <br>
+    <!--dawne znaczniki prezentacyjne-->
+    <!--nie wolno ich uywać-->
+    <big>Powiekszenie czcionki<br></big>
+    <center>centrowanie<br></center>
+
+    <!--nowa interpretacja dawnych znaczników-->
+    <b>pogrubienie<br></b> <!--obecnie bring attention -->
+    <strong>przyklad<br></strong> <!--pogrubienie-->
+    <i>pochylone<br></i> <!--the idomatic text element-->
+    <q>cytat</q> <!--cytat-->
+</body>
+</html>
