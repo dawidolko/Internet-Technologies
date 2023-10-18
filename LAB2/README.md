@@ -171,8 +171,9 @@ Tag `<img src="" alt="">` służy do zamieszczania grafiki w dokumencie. Atrybut
 <img src="images/red_panda.jpg" alt="Panda czerwona">
 ```
 Więcej o tagu `<img>`
-[link](https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img)
+
+[link](https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element)
+[link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img)
 
 _Uwaga boczna: założono, że w folderze bieżącym (tj. tym w którym znajduje się ten dokument HTML) znajduje się podfolder images, w którym dopiero znajduje się obraz JPEG._
 
