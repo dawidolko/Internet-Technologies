@@ -152,7 +152,7 @@ W celu włączenia podglądu wciskamy najpierw ctrl+q a następnie po zwolnieniu
 
 Tag `<h1>` do `<h6>` służy do tworzenia nagłówków dla sekcji dokumentu.
 
-Nagłówek pierwszego stopnia <h1> jest najważniejszy. W przeszłości zalecano wykorzystanie go jedynie jeden raz w całym dokumencie, jednak HTML5 zniósł to ograniczenie. Nagłówki mogą pojawiać się wielokrotnie w 
+Nagłówek pierwszego stopnia `<h1>` jest najważniejszy. W przeszłości zalecano wykorzystanie go jedynie jeden raz w całym dokumencie, jednak HTML5 zniósł to ograniczenie. Nagłówki mogą pojawiać się wielokrotnie w 
 dokumencie.
 
 Utwórz nagłówek pierwszego poziomu zawierający tytuł strony związany z zainteresowaniami np. Topo wspinaczkowe – przewodnik dla nowicjuszy
