@@ -165,6 +165,7 @@ Tag `<img src="" alt="">` służy do zamieszczania grafiki w dokumencie. Atrybut
 - src= definiuje ścieżkę do obrazka (preferowana jest ścieżka względna)
 
 -alt= tekst wyświetlany, jeśli obrazek nie może zostać wczytany
+
 ```
 <img src="images/red_panda.jpg" alt="Panda czerwona">
 ```
