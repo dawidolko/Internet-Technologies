@@ -6,6 +6,7 @@
 [link](https://developer.mozilla.org/en-US/docs/Web/HTML/) - witryna fundacji Mozilla, zawierająca dokumentację języka HTML, interaktywne samouczki, poradniki.
 
 https://pl.wikipedia.org/wiki/HTML
+
 https://pl.wikipedia.org/wiki/HTML5
 
 Język HTML rozwija się już przez okres około 30 lat. W początkowym okresie często praktyczne implementacje (tj. przeglądarki) narzucały niektóre rozwiązania, jednocześnie oficjalne specyfikacje powstawały bardzo powoli a nawet jeżeli powstawały jakieś rezultaty, bywały odrzucane przez społeczność. Pierwszą specyfikacją jaka uzyskała pewną stabilność był dopiero HTML4, wydany w 1997. HTML4 był formalnie konkretnym rodzajem SGMLa (tj. jego aplikacją). Następnie przez pewien okres rozwijano XHTML, czyli mówiąc obrazowo HTML parsowany jako XML (czyli również aplikacja XMLa). HTML5 powstał w wyniku niezadowolenia zarówno z HTML4 jak i XHTML (zwłaszcza ich poziomu skomplikowania), oraz potrzeby ujednolicenia sposobu tworzenia stron internetowych.
