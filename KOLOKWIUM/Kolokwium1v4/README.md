@@ -7,8 +7,8 @@ Strona „pierwsza.html”
 
 3.	Stwórz listę
 ```
-A.	Pierwsza pozycja
-B.	Druga pozycja
+A.Pierwsza pozycja
+B.Druga pozycja
   7. pierwsza pozycja
   9. druga pozycja	
   	I. Pierwsza pozycja	
@@ -16,7 +16,7 @@ B.	Druga pozycja
   12. Trzecia pozycja
     •	Pierwsza pozycja
     •	Druga pozycja
-C.	Trzecia pozycja
+C.Trzecia pozycja
 ```
 4.	Stwórz formularz
 
