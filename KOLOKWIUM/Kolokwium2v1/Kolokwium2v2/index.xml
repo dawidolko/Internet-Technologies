@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE stacje_telewizyjne [
+<!ELEMENT stacje_telewizyjne (stacja+)>
+<!ELEMENT stacja (nazwa,zatrudnieni,rok_założenia)>
+<!ELEMENT nazwa (#PCDATA)>
+<!ELEMENT zatrudnieni (#PCDATA)>
+<!ELEMENT rok_założenia (#PCDATA)>
+<!ATTLIST nazwa język CDATA #REQUIRED>
+]>
+
+<stacje_telewizyjne>
+<stacja>
+<nazwa język="polski">TVP</nazwa>
+<zatrudnieni>2000 osób</zatrudnieni>
+<rok_założenia>1950</rok_założenia>
+</stacja>
+<stacja>
+<nazwa język="polski">TVN</nazwa>
+<zatrudnieni>1000</zatrudnieni>
+<rok_założenia>1995</rok_założenia>
+</stacja>
+<stacja>
+<nazwa język="polski">Polsat</nazwa>
+<zatrudnieni>1000</zatrudnieni>
+<rok_założenia>1900</rok_założenia>
+</stacja>
+</stacje_telewizyjne>

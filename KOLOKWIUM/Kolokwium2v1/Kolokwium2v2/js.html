@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zmiana tekstu w akapitach</title>
+</head>
+<body>
+
+<p id="akapit1">Tekst początkowy w akapicie 1.</p>
+<p id="akapit2">Tekst początkowy w akapicie 2.</p>
+
+<button onclick="zmienTekst('akapit1')">Zmień tekst w akapicie 1</button>
+<button onclick="zmienTekst('akapit2')">Zmień tekst w akapicie 2</button>
+
+<script>
+    function zmienTekst(idAkapitu) {
+        if(idAkapitu === "akapit1") {
+            document.getElementById(idAkapitu).innerText = "Nowy tekst w akapicie 1.";
+        } else if(idAkapitu === "akapit2") {
+            document.getElementById(idAkapitu).innerText = "Nowy tekst w akapicie 2.";
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<książka>
+    <tytuł>Władca Pierścieni</tytuł>
+    <autor> 
+        <imię>J.R.R.</imię> 
+        <nazwisko>Tolkien</nazwisko>
+    </autor>
+    <wydawnictwo>Wydawnictwo XYZ</wydawnictwo>
+    <data_wydania>1954</data_wydania>
+</książka>
