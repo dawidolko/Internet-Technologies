@@ -29,4 +29,4 @@
 tytuł, imię i nazwisko autora, nazwę wydawnictwa oraz datę wydania książki. Sprawdź poprawność utworzonego dokumentu w przeglądarce.  
  
 ### 3.	Napisz skrypt JS dzięki, któremu będzie możliwa zmiana tekstu w akapitach. 
-Zdefiniuj w tym celu odpowiednią funkcję, dwa akapity z tekstem (dwa znaczniki <P>) i dwa przyciski. Po kliknięciu na pierwszy przycisk, zmieni się tekst zwarty w akapicie 1, po kliknięciu na drugi przycisk, zmieni się tekst zawarty w akapicie 2. Teksty w pierwszym i drugim akapicie mają się różnić zarówno w postaci wyjściowej jak i po zmianie. 
+Zdefiniuj w tym celu odpowiednią funkcję, dwa akapity z tekstem (dwa znaczniki `<P>`) i dwa przyciski. Po kliknięciu na pierwszy przycisk, zmieni się tekst zwarty w akapicie 1, po kliknięciu na drugi przycisk, zmieni się tekst zawarty w akapicie 2. Teksty w pierwszym i drugim akapicie mają się różnić zarówno w postaci wyjściowej jak i po zmianie. 
