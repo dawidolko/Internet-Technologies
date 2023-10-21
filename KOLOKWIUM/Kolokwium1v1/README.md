@@ -4,20 +4,24 @@
 ### 3.	Atrybuty strony: tło żółte, margines górny i dolny 10px, margines prawy i lewy 5px. 
 ### 4.	Stwórz tabelę 
 
-<br>![](img/kolv1.png)
+<br>![](KOLOKWIUM/Kolokwium1v1/img/kol1v1.png)
 
 ### 5.	Stwórz listę 
 A.	Pierwsza pozycja 
+
 B.	Druga pozycja 
   7.	Pierwsza pozycja 
+  
   8.	Druga pozycja 
-    a.	Pierwsza pozycja 
+    a.	Pierwsza pozycja
+
     b.	Druga pozycja 
+    
 C.	Trzecia pozycja 
 
 ### 6.	Stwórz formularz 
 
-<br>![](img/kolv2.png)  
+<br>![](KOLOKWIUM/Kolokwium1v1/img/kol1v1.png)  
  
 ### 7.	Stwórz link:
 •	Przed najechaniem: Arial; 20px; czarna
