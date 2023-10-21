@@ -1,6 +1,9 @@
-Kolokwium gr I
+# Kolokwium gr I
+
 Strona „pierwsza.html”
+
 1.	Atrybuty strony: tło żółte, marginesy dolny i górny: 10%, prawy i lewy 20%, czcionka czerwona Arial, 12px, pogrubiona
+   
 2.	Stwórz tabelę
 
 <br>![](img/kol1v7.png)
