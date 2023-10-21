@@ -1,4 +1,4 @@
-Kolokwium gr III
+# Kolokwium gr III
 ### 1.	Stwórz plik index.html i zapisuj tam wszystkie zadania. 
 ### 2.	Pamiętaj aby całą zawartość strony formatować CSS.
 ### 3.	Atrybuty strony: tło zielone, marginesy wszystkie 100px, czcionka Verdana – czerwona, 15px, pochyła
