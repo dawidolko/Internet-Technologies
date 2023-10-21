@@ -2,6 +2,7 @@
 ## Strona „pierwsza.html”
 ### 1.	Atrybuty strony: tło białe, marginesy dolny i prawy: 30%, dolny i lewy 30%, czcionka czerwona Verdana 15px, kursywa, niebieska
 ### 2.	Stwórz tabelę
+<br>![](img/kol1v10.png)
 ### 3.	Stwórz listę
 ```
 9. Pierwsza pozycja
@@ -17,5 +18,10 @@
 13. Trzecia pozycja
 ```
 ### 4.	Stwórz formularz
+
+<br>![](img/kol1v11.png)
+
 ### Strona „ramki.html”
 1.	Stwórz ramki
+
+<br>![](img/kol1v12.png)
