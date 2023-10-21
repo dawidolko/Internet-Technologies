@@ -7,6 +7,7 @@
 <br>![](img/kol1v1.png)
 
 ### 5.	Stwórz listę 
+```
 A.	Pierwsza pozycja 
 
 B.	Druga pozycja 
@@ -19,7 +20,8 @@ B.	Druga pozycja
 
     b.	Druga pozycja 
     
-C.	Trzecia pozycja 
+C.	Trzecia pozycja
+```
 
 ### 6.	Stwórz formularz 
 
