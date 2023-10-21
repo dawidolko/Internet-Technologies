@@ -1,0 +1,127 @@
+body {
+    background-color: gray;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 50px;
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+    color: red;
+}
+
+#blok1 {
+    margin: 25px;
+    width: 50%;
+    height: 100px;
+    width: 200px;
+    float: left;
+}
+
+#blok2 {
+    margin: 25px;
+    width: 50%;
+    height: 100px;
+    float: right;
+}
+
+#blok3 {
+    margin: 100px;
+    text-align: center;
+}
+#blok4 {
+    margin: 25px;
+    width: 40%;
+    height: 100px;
+    float: left;
+}
+
+#blok5 {
+    margin: 25px;
+    width: 40%;
+    height: 100px;
+    float: right;
+}
+
+a {
+    font-family: Calibri, sans-serif;
+    font-size: 20px;
+    color: green;
+    text-decoration: none;
+    /* usuwa domyślne podkreślenie linku */
+}
+
+a:hover {
+    font-family: Calibri, sans-serif;
+    font-size: 100px;
+    color: red;
+}
+
+a:active {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: gray;
+    text-underline-position: none;
+}
+
+#white {
+    color: white;
+    font-weight: bold;
+}
+
+#white1 {
+    color: white;
+    font-weight: normal;
+}
+
+#blue {
+    color: blue;
+    font-weight: normal;
+}
+
+#red {
+    color: red;
+}
+
+
+}
+
+.tabela {
+    border: 5px dashed black;
+    border-collapse: collapse;
+    /*
+    height: 60%;
+    width: 87%;
+*/
+}
+
+.aaaa {
+    height: 420px;
+    width: 520px;
+    background-color: white;
+    border: 1px dashed black;
+    vertical-align: top;
+    text-align: center;
+}
+
+#test {
+    text-align: center;
+    vertical-align: top;
+}
+
+#test1 {
+    text-align: center;
+    vertical-align: top;
+}
+
+/* Resetowanie licznika dla listy o ID "red" */
+ol#red {
+    list-style-type: none;
+    counter-reset: custom-counter 5;
+    /* Zaczynamy od wartości 5, aby pierwszy element miał wartość 7 */
+}
+
+/* Definiowanie niestandardowego stylu dla elementów listy o ID "red" */
+ol#red > li:before {
+    counter-increment: custom-counter 2;
+    /* Zwiększanie licznika o 2 dla każdego elementu */
+    content: counter(custom-counter) ". ";
+}
