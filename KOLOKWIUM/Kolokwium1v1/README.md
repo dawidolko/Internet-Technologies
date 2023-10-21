@@ -10,9 +10,11 @@
 A.	Pierwsza pozycja 
 
 B.	Druga pozycja 
+
   7.	Pierwsza pozycja 
   
-  8.	Druga pozycja 
+  8.	Druga pozycja
+     
     a.	Pierwsza pozycja
 
     b.	Druga pozycja 
@@ -21,7 +23,7 @@ C.	Trzecia pozycja
 
 ### 6.	Stwórz formularz 
 
-<br>![](KOLOKWIUM/Kolokwium1v1/img/kol1v1.png)  
+<br>![](img/kol1v2.png)
  
 ### 7.	Stwórz link:
 •	Przed najechaniem: Arial; 20px; czarna
