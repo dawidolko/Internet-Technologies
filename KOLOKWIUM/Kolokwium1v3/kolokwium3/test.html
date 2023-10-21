@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+    <style>
+        form {
+            border: 2px solid black;
+            padding: 20px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .radios, .checkboxes {
+            display: flex;
+            gap: 10px;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+        select, input[type="text"] {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        button {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+
+<form>
+    <div class="radios">
+        <input type="radio" name="opcja">
+        <input type="radio" name="opcja">
+        <input type="radio" name="opcja" disabled>
+    </div>
+
+    <div class="checkboxes">
+        <input type="checkbox" name="opcja_check">
+        <input type="checkbox" name="opcja_check" checked>
+    </div>
+
+    <select name="lista_rozwineta">
+        <option>Lista rozwinięta</option>
+    </select>
+
+    <input type="text" placeholder="pole tekstowe">
+
+    <div class="buttons">
+        <button type="submit">Wyślij</button>
+        <button type="reset">Wyczyść</button>
+    </div>
+</form>
+
+</body>
+</html>
