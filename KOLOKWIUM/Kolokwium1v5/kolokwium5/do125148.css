@@ -1,0 +1,165 @@
+body {
+    background-color: white;
+    margin-bottom, margin-right: 30%;
+    margin-left, margin-top: 30%;
+    font-family: Verdana, sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    color: blue;
+}
+
+.radios,
+.checkboxes {
+    align-content: center;
+    display: flex;
+
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 100%;
+    align-content: flex-start;
+}
+
+.buttons {
+    margin-left: 200px;
+    display: table-row-group;
+    /* Przesuwa przyciski do dolnej części formularza */
+    justify-content: center;
+    /* Wyśrodkowuje przyciski poziomo */
+}
+
+button {
+    height: 40px;
+    width: 100px;
+    flex: 1;
+}
+
+#blok3 {
+    align-content: center;
+    text-align: center;
+}
+
+#blok4 {
+    margin: 0 40 70 0;
+    width: 40%;
+    height: 60px;
+    float: right;
+}
+#blok1{
+    float: left; 
+}
+
+#blok2{
+    float: right;
+    margin-bottom: 50px;
+}
+
+
+
+#lista {
+    width: 80%;
+    height: 30px;
+}
+
+#blok5 {
+    margin: 9px;
+    width: 50%;
+    height: 80px;
+    float: left;
+}
+
+#white {
+    color: white;
+    font-weight: normal;
+}
+
+#blue {
+    color: blue;
+    font-weight: bold;
+}
+
+#red {
+    color: red;
+    font-weight: normal;
+}
+
+#green {
+    color: green;
+    font-weight: bold;
+}
+
+}
+
+.tabela {
+    border: 5px dashed black;
+    border-collapse: collapse;
+    /*
+    height: 60%;
+    width: 87%;
+*/
+}
+
+table.aaaa td,
+table.aaaa th {
+    border: 2px solid black;
+    /* Przerywane granice dla wszystkich komórek. */
+    text-align: left;
+    /* Wyrównanie tekstu do środka. */
+    vertical-align: top;
+    /* Wyrównanie tekstu do góry. */
+}
+
+#yellowCell {
+    background-color: rgba(255, 255, 0, 0.5);
+}
+
+
+.aaaa {
+    border-collapse: collapse;
+    height: 600px;
+    width: 520px;
+    background-color: white;
+    border: 2px solid black;
+    vertical-align: top;
+    text-align: left;
+}
+
+.bbbb {
+    border: 5px dashed black;
+    border-collapse: collapse;
+    margin:10 0 10 10;
+    vertical-align: bottom;
+/*    background-color: rgba(0, 0, 255, 0.5);*/
+    border: 1px solid Blue;
+}
+
+table.bbbb td, table.bbbb th {
+    border-collapse: collapse;
+    border: 1px solid Blue; /* Przerwana linia */
+}
+table.bbbb{
+    border-collapse: collapse;
+}
+#test {
+    text-align: center;
+    vertical-align: top;
+}
+
+#test1 {
+    text-align: center;
+    vertical-align: top;
+}
+/*
+.form{
+    width: 500px;
+    height: 200px
+}
+.form1{
+    width: 500px;
+    height: 200px
+}
+
+.form2{
+    border: none;
+}*/
