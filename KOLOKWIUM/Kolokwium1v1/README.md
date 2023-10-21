@@ -4,7 +4,7 @@
 ### 3.	Atrybuty strony: tło żółte, margines górny i dolny 10px, margines prawy i lewy 5px. 
 ### 4.	Stwórz tabelę 
 
-<br>![](KOLOKWIUM/Kolokwium1v1/img/kol1v1.png)
+<br>![](img/kol1v1.png)
 
 ### 5.	Stwórz listę 
 A.	Pierwsza pozycja 
