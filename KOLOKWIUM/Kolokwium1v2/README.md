@@ -4,7 +4,8 @@
 ### 2.	Pamiętaj aby całą zawartość strony formatować CSS.
 ### 3.	Atrybuty strony: tło szare, margines prawy i dolny 50px, margines dolny i lewy 20px, czcionka Verdana – żółta, 12px; 
 ### 4.	Stwórz tabelę 
- 
+
+ <br>![](img/kol1v3.png)
  
 ### 5.	Stwórz listę 
 
@@ -22,9 +23,7 @@ C.  Pozycja trzecia
  	 
 ### 6.	Stwórz formularz 
 
-
- 
-
+<br>![](img/kol1v4.png)
  
 ### 7.	Stwórz link:
 •	Przed najechaniem: Calibri; 20px; zielona 
