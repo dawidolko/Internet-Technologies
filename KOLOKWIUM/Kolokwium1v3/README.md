@@ -8,7 +8,7 @@ Kolokwium gr IV
  
 ### 5.	Stwórz listę 
  ```
-•	Pierwsza pozycja 
+•Pierwsza pozycja 
   7.	Pierwsza pozycja 
   8.	Druga pozycja 
   10. Trzecia pozycja 
@@ -18,7 +18,7 @@ Kolokwium gr IV
       II.	Druga pozycja 
     c.	Trzecia pozycja 
   11. Czwarta pozycja 
-•	Druga pozycja 
+•Druga pozycja 
 ```
 ### 6.	Stwórz formularz 
 
