@@ -1,25 +1,31 @@
-Formularze
+# Formularze
+
 W trakcie rozwoju języka HTML dodano możliwość wykorzystania interakcji użytkownika ze stroną internetową. W tym celu powstały formularze. Nazwa ta nie jest przypadkowa: elementy, jakie wykorzystujemy do ich tworzenia przypominają takie występujące w papierowych formularzach.
-Przykładowy prosty formularz:
-<!DOCTYPE html> <html lang="pl">
+
+### Przykładowy prosty formularz:
+```html
+<!DOCTYPE html>
+<html lang="pl">
 <head>
-<meta charset="UTF-8">
-<title>Title</title>
+  <meta charset="UTF-8">
+  <title>Title</title>
 </head>
 <body>
-<form>
-<h1>Formularz kontaktowy</h1>
-<label for="name">Podaj swoje imię i nazwisko: </label>
-<input id="name"> <br>
-<label for="mail">Podaj adres email: </label>
-<input type="email" id="mail" name="email"><br>
-<label for="content">Podaj treść wiadomości</label>
-<textarea id="content" name="content"></textarea>
-<br>
-<button>Wyślij</button>
-</form>
-</body> </html>
-Formularz oznaczamy znacznikiem <form>. Na stronie może znajdować się wiele formularzy jednocześnie, które działają niezależnie. Element button jako element potomny form domyślnie służy do przesłania danych z formularza na serwer. Historycznie jedynym sposobem na przetworzenie danych w formularzu było podanie w atrybucie action URLa, który zawierał odniesienie do serwera, który obsługiwał to żądanie. Zasadniczo drugą możliwością pracy z formularzami jest ich przetwarzanie po stronie klienta za pomocą języka JavaScript. Wtedy zwykle nie ma potrzeby korzystania z atrybutu action. Element label oznacza po prostu etykietę danego elementu
+  <form>
+  <h1>Formularz kontaktowy</h1>
+  <label for="name">Podaj swoje imię i nazwisko: </label>
+  <input id="name"> <br>
+  <label for="mail">Podaj adres email: </label>
+  <input type="email" id="mail" name="email"><br>
+  <label for="content">Podaj treść wiadomości</label>
+  <textarea id="content" name="content"></textarea>
+  <br>
+  <button>Wyślij</button>
+  </form>
+</body>
+</html>
+```
+Formularz oznaczamy znacznikiem `<form>`. Na stronie może znajdować się wiele formularzy jednocześnie, które działają niezależnie. Element `button` jako element potomny `form domyślnie służy do przesłania danych z formularza na serwer. Historycznie jedynym sposobem na przetworzenie danych w formularzu było podanie w atrybucie action URLa, który zawierał odniesienie do serwera, który obsługiwał to żądanie. Zasadniczo drugą możliwością pracy z formularzami jest ich przetwarzanie po stronie klienta za pomocą języka JavaScript. Wtedy zwykle nie ma potrzeby korzystania z atrybutu action. Element label oznacza po prostu etykietę danego elementu
 formularza, jednak stosując dodatkowo atrybut for możemy określić dokładnie którego (podając jego id). Przeglądarki wykorzystują tę informację w różnych sytuacjach (np. dotykając/klikając label przejdziemy do edycji elementu nim oznaczonego; czytniki głosowe stron internetowych mają dzięki temu ułatwioną pracę). Można również pominąć for, jeżeli input jest elementem potomnym label.
 W poniższym przykładzie element input posiada atrybuty name, który z jednej strony nazywa dane pole formularza, z drugiej może być uważany za niezbędny, gdyż elementy bez tego atrybutu nie zostaną przesłane na serwer. Atrybut type pozwala określić jaki rodzaj wejścia ma przyjmować element input; w tym przypadku ustawiono number, zatem niemożliwe będzie wpisanie znaków innych niż numeryczne (uwzględniając separatory dziesiętne, jak i znak -, +). Ponadto ustalono atrybut min ustawiający minimalną wartość pola. Element output nigdy nie jest wysyłany na serwer, jego rolą jest jedynie prezentowanie jakiejś już przetworzonej wartości. Atrybut value pozwala ustawić początkową wartość elementu (bez jego użycia widzimy elementy jako puste, nieuzupełnione); w przypadku wystąpienia razem z type="radio" albo type="checbox" i type="hidden" atrybut ten można uznawać za obowiązkowy, gdyż ta wartość zostanie wysłana na serwer.
 
