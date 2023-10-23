@@ -83,7 +83,7 @@ Zmień wartość atrybutu method na post i ponownie naciśnij 1. przycisk. Wyja�
 ### 3.
 Naciśnij przycisk F12 (na laptopie Fn + F12) i włącz następującą zakładkę:
 
-<br>![lab3](img/lab1v1.png)
+<br>![lab3](img/lab3v1.png)
 
 ### 4.
 Następnie ponownie prześlij formularz, zarówno z method=”get” i method=”post”. Obserwuj wygenerowane żądania HTTP i opisz czym się różnią (na podstawie zakładek headers i payload). Metoda post nie zostanie poprawnie obsłużona (gdyż serwer nie oczekuje na przesłanie tego formularza pod danym adresem URL) i otrzymamy
@@ -111,7 +111,7 @@ Albo
 
 Wyjście w terminalu powinno wyglądać mniej więcej tak:
 
-<br>![lab3](img/lab1v2.png)
+<br>![lab3](img/lab3v2.png)
 
 **Jednocześnie ustaw wartość atrybutu action na http://localhost:5000/ i nazwy odpowiednich elementów formularza na email i content.**
 
@@ -271,8 +271,8 @@ Odwzoruj formularz zaprezentowany poniżej. Pamiętaj o ustawieniu wszystkich po
 
 Wykorzystaj następujące symbole graficzne (mogą się renderować różnie w zależności od czcionki, czy miejsca gdzie je wyświetlamy, ale to znaki UTF):
 
-<br>![lab3](img/lab1v3.png)
-<br>![lab3](img/lab1v4.png)
+<br>![lab3](img/lab3v3.png)
+<br>![lab3](img/lab3v4.png)
 
 W przeglądarce Google Chrome zainstaluj rozszerzenie: [link](https://chrome.google.com/webstore/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn?utm_source=ext_sidebar&hl=pl)
 I upewnij się, że jest aktywne:
