@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta link rel="stylesheet" href="style.css">
+    <title>Formularz kontaktowy</title>
+</head>
+
+<body>
+    <!-- Sekcja tworzenia konta w serwisie -->
+<section>
+    <h2>Stwórz konto w naszym serwisie</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <!-- Wykorzystane wcześniejsze znaczniki -->
+        <label for="username">Nazwa użytkownika:</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <!-- Nowe typy znaczników input -->
+        <label for="dob">Data urodzenia:</label>
+        <input type="date" id="dob" name="dob" required><br>
+
+        <label for="avatar">Avatar (obraz):</label>
+        <input type="file" id="avatar" name="avatar" accept="image/*" required><br>
+
+        <label for="password">Hasło konta:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="themeColor">Preferowany kolor motywu:</label>
+        <input type="color" id="themeColor" name="themeColor" required><br>
+
+        <input type="submit" value="Zarejestruj się">
+    </form>
+</section>
+
+<!-- Sekcja zakupu biletu na pociąg -->
+<section>
+    <h2>Zakup biletu na pociąg</h2>
+    <form action="#" method="post">
+        <label for="departureDate">Data odjazdu:</label>
+        <input type="date" id="departureDate" name="departureDate" required><br>
+
+        <label for="departureTime">Godzina odjazdu:</label>
+        <input type="time" id="departureTime" name="departureTime" required><br>
+
+        <label for="citySearch">Wyszukaj miasto:</label>
+        <input type="search" id="citySearch" name="citySearch" placeholder="Wprowadź nazwę miasta" required><br>
+
+        <label for="ticketAmount">Liczba biletów (1-10):</label>
+        <input type="range" id="ticketAmount" name="ticketAmount" min="1" max="10" value="1">
+        <span id="ticketAmountDisplay">1</span> <!-- Wyświetlenie aktualnej liczby biletów -->
+        <br>
+
+        <input type="submit" value="Kup bilet">
+    </form>
+</section>
+
+<script>
+    // Skrypt do aktualizacji liczby biletów
+    const ticketAmountInput = document.getElementById('ticketAmount');
+    const ticketAmountDisplay = document.getElementById('ticketAmountDisplay');
+
+    ticketAmountInput.addEventListener('input', function() {
+        ticketAmountDisplay.textContent = ticketAmountInput.value;
+    });
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta link rel="stylesheet" href="style.css">
+    <title>Formularz kontaktowy</title>
+</head>
+
+<body>
+    <form action="#" method="get">
+        <!-- Pole imię i nazwisko -->
+        <label for="fullName">Imię i nazwisko:</label>
+        <input type="text" id="fullName" name="fullName" pattern="[A-Za-z\s]{4,}" title="Wpisz co najmniej 4 litery. Bez cyfr i znaków specjalnych." required>
+        <br>
+    
+        <!-- Pole numer telefonu -->
+        <label for="phone">Numer telefonu:</label>
+        <input type="tel" id="phone" name="phone" pattern="\+\d{2}\s\d{3}\s\d{3}\s\d{3}" title="Format: +XX XXX XXX XXX" required>
+        <br>
+    
+        <!-- Treść wiadomości -->
+        <label for="message">Wiadomość:</label>
+        <textarea id="message" name="message" minlength="20" required></textarea>
+        <br>
+    
+        <!-- Załączanie plików PDF -->
+        <label for="fileUpload">Załącz plik:</label>
+        <input type="file" id="fileUpload" name="fileUpload" accept=".pdf" required>
+        <br>
+    
+        <!-- Wybór daty -->
+        <label for="datePicker">Data:</label>
+        <input type="date" id="datePicker" name="datePicker" min="" max="" required>
+        <br>
+    
+        <!-- Liczba sztuk -->
+        <label for="quantity">Liczba sztuk:</label>
+        <input type="number" id="quantity" name="quantity" min="1" step="1" required>
+        <br>
+    
+        <!-- Przycisk wysyłania formularza -->
+        <input type="submit" value="Wyślij">
+    </form>
+    
+    <script>
+        // Ustalanie zakresu dla daty
+        const today = new Date();
+        const threeMonthsLater = new Date(today);
+        threeMonthsLater.setMonth(today.getMonth() + 3);
+    
+        const datePicker = document.getElementById('datePicker');
+        datePicker.min = today.toISOString().split('T')[0];
+        datePicker.max = threeMonthsLater.toISOString().split('T')[0];
+    </script>
+    
+</body>
+
+</html>

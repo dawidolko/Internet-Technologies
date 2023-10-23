@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta link rel="stylesheet" href="style.css">
+    <title>Formularz kontaktowy</title>
+</head>
+
+<body>
+
+    <h2>Formularz kontaktowy</h2>
+
+    <form action="" method="post">
+        <div class="form-group">
+            <label for="name">Imię i nazwisko:</label>
+            <input type="text" id="name" name="name" placeholder="Wpisz swoje imię i nazwisko" required> <!--wymagany-->
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Numer telefonu:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Wpisz swój numer telefonu" required pattern="^[0-9]{9}$" maxlength="9" title="Wprowadź dokładnie 9 cyfr">
+
+        </div>
+
+        <div class="form-group">
+            <label for="email">Adres email:</label>
+            <input type="email" id="email" name="email" placeholder="Wpisz swój adres email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Treść wiadomości:</label>
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Wpisz treść wiadomości" required></textarea>
+        </div>
+
+        <input type="submit" value="Wyślij">
+    </form>
+
+</body>
+
+</html>
