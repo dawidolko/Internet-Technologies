@@ -120,9 +120,12 @@ Znajomość języka Python nie jest tutaj najważniejsza, bardziej istotne jest,
 Jaki jest teraz efekt działania formularza?
 
 ## Zadanie 3
+
 [link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)
 
-Znacznik `<select>` reprezentuje interaktywny element zawierający wiele opcji do wyboru zdefiniowanych przy użyciu `<option>`. **Ważne by zdefiniować atrybut name dla znacznika <select> który będzie odpowiedzialny za wartości wysłane przez ten element formularza.** *W znaczniku `<option>` ważne jest zdefiniowanie atrybutu value który zostanie użyty jako wartość przesyłana przez formularz.* Wartości name i value utworzą parę klucz wartość przesyłaną jako wybór w formularzu.
+Znacznik `<select>` reprezentuje interaktywny element zawierający wiele opcji do wyboru zdefiniowanych przy użyciu `<option>`. **Ważne by zdefiniować atrybut name dla znacznika `<select>` który będzie odpowiedzialny za 
+wartości wysłane przez ten element formularza.** *W znaczniku `<option>` ważne jest zdefiniowanie atrybutu value który zostanie użyty jako wartość przesyłana przez formularz.* Wartości name i value utworzą parę klucz 
+wartość przesyłaną jako wybór w formularzu.
 
 Elementy zawarte w liście wyboru można pogrupować używając znacznika `<optgroup>` w którym atrybut label będzie etykietą dla danej grupy opcji wyboru.
 
