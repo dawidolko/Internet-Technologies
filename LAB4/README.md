@@ -349,7 +349,7 @@ Znacznik body ma zawierać:
 Obraz niech będzie miał co najmniej 200x200px.
 
 1. Włącz narzędzia deweloperskie (F12 albo Fn + F12) i następnie odznaczaj kolejno właściwości w selektorze body. Obserwuj jaki ma to wpływ na zachowanie modelu pudełkowego.
-<br>![lab4](img/lab3s4.png)
+<br>![lab4](img/lab3s5.png)
 2. Następnie zmodyfikuj selektor img, tak, aby rozmiar zdjęcia był maksymalnie dwukrotnie większy (czyli 40x40px). Jaki wpływ ta zmiana ma na model pudełkowy rodzica tego elementu?
 
 3. Następnie ustaw dokładny rozmiar obrazka na 200x200px. Co się wydarzyło? Następnie usuń z selektora body właściwości width i height, jaki jest tego efekt?
