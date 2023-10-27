@@ -24,6 +24,9 @@ selektor1, selektor2 {
   właściwość2: wartość2;
 }
 ```
+
+<br>![lab4](img/lab3s1.png)
+
 Selektor w języku CSS może przyjąć różne formy. Może to być nazwa znacznika (elementu HTML), co oznacza, że wszystkie wystąpienia tego elementu HTML zostaną sformatowane zgodnie z ustalonymi regułami stylizacji. Inną formą selektora jest arbitralna nazwa, nazywana w tym kontekście selektorem klasy CSS. Identyfikator (id) może również pełnić rolę selektora CSS. **Istnieje także specjalny selektor '*', który obejmuje wszystkie elementy HTML na stronie.** Dodatkowo, selektor może zawierać atrybut, co pozwala na wybieranie elementów z określoną wartością atrybutu. W ten sposób, przy pomocy różnorodnych selektorów, możliwe jest precyzyjne określenie, które elementy na stronie internetowej zostaną sformatowane przy użyciu reguł stylizacji CSS.
 
 Jednoznacznie można stwierdzić czy dany selektor to selektor znacznika, klasy itd. na podstawie gramatyki języka CSS (tj. każdy typ selektora tworzy inne wyrażenie w tym języku). Wyróżniamy następujące selektory:
@@ -256,7 +259,10 @@ W takim przypadku do tego który styl zostanie zaaplikowany zostanie wykorzystan
 
 • Ilość elementów i pseudoelementów: Każde wystąpienie selektora elementu (np. div) lub pseudoelementu (np. ::before) w selektorze zwiększa specyficzność o 1.
 
+<br>![lab4](img/lab3s2.png)
+
 Jeśli dwie reguły mają tę samą specyficzność, to ostatnia zdefiniowana w arkuszu stylów zostaje zastosowana.
+
 Na przykład:
 
 • #myId ma specyficzność 100.
@@ -271,9 +277,13 @@ Na przykład:
 
 Ważnym pojęciem jest również model pudełkowy (ang. box model). Każdy element jest reprezentowany jako prostokąt, składający się z następujących obszarów:
 
+<br>![lab4](img/lab3s3.png)
+
 Więcej informacji można znaleźć tutaj: [link](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_box_model/Introduction_to_the_CSS_box_model). W praktyce kolejną komplikacją jest fakt, że istnieją właściwie dwa niezależne modele pudełkowe, które różnią się tym, czy ustawiając rozmiar elementu wliczamy również padding i border. Rozróżnienie to powstało na skutek tego, że jedna z dominujących kiedyś przeglądarek zignorowała standard CSS i wprowadziła własny model pudełkowy. Standard został zatem później zmuszony, aby uczynić tę innowację z de facto istniejącej na de iure istniejącą. Więcej tutaj: [link](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing.)
 
 Kolejnym ważnym zagadnieniem jest domyślny sposób układania się elementów na stronie (ang. **normal flow layout**). Elementy **domyślnie** renderowane są albo jako: "**block**" albo "**inline**", ale nigdy obydwa na raz. Więcej można przeczytać tutaj: [link](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flow_layout/Block_and_inline_layout_in_normal_flow). Możliwa jest zmiana layoutu elementu za pomocą właściwości display (w późniejszym okresie dodano tutaj również zupełnie nowe opcje).
+
+<br>![lab4](img/lab3s4.png)
 
 ## Zadanie 1.
 Skopiuj poniższy przykład.
@@ -339,7 +349,7 @@ Znacznik body ma zawierać:
 Obraz niech będzie miał co najmniej 200x200px.
 
 1. Włącz narzędzia deweloperskie (F12 albo Fn + F12) i następnie odznaczaj kolejno właściwości w selektorze body. Obserwuj jaki ma to wpływ na zachowanie modelu pudełkowego.
-
+<br>![lab4](img/lab3s4.png)
 2. Następnie zmodyfikuj selektor img, tak, aby rozmiar zdjęcia był maksymalnie dwukrotnie większy (czyli 40x40px). Jaki wpływ ta zmiana ma na model pudełkowy rodzica tego elementu?
 
 3. Następnie ustaw dokładny rozmiar obrazka na 200x200px. Co się wydarzyło? Następnie usuń z selektora body właściwości width i height, jaki jest tego efekt?
@@ -371,6 +381,8 @@ Czcionka:
 Corbel
 ```
 
+<br>![lab4](img/lab3s5.png)
+
 Następnie napisz kolejny arkusz styli i tym razem niech ten formularz prezentuje się tak jak pokazano poniżej:
 Kolory:
 ```
@@ -379,6 +391,8 @@ Kolory:
 Czcionka:
 Open Sans
 ```
+
+<br>![lab4](img/lab3s6.png)
 
 ## Zadanie 4.
 Skopiuj poniższy przykład. Zapoznaj się z artykułem na temat dziedziczenia w CSS: [link](https://developer.mozilla.org/en-US/docs/Web/CSS/Inheritance). Następnie zmodyfikuj przykład, tak, aby:
@@ -462,6 +476,8 @@ ul > li {
 1. Jaki jest efekt renderingu tego elementu? Czy wiesz co spowodowało taki efekt?
 
 2. Najeżdżając na dany selektor w VSCode wyświetlana jest jego specyficzność.
+<br>![lab4](img/lab3s7.png)
+
 Możesz też skorzystać z kalkulatora specyficzności online (dla utrwalenia zasad obliczania specyficzności: [link](https://specificity.keegan.st/)).
 Sprawdź specyficzność elementów. Który z nich jest "najmocniejszy"?
 
