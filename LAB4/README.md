@@ -381,7 +381,7 @@ Czcionka:
 Corbel
 ```
 
-<br>![lab4](img/lab3s5.png)
+<br>![lab4](img/lab3s6.png)
 
 Następnie napisz kolejny arkusz styli i tym razem niech ten formularz prezentuje się tak jak pokazano poniżej:
 Kolory:
@@ -392,7 +392,7 @@ Czcionka:
 Open Sans
 ```
 
-<br>![lab4](img/lab3s6.png)
+<br>![lab4](img/lab3s7.png)
 
 ## Zadanie 4.
 Skopiuj poniższy przykład. Zapoznaj się z artykułem na temat dziedziczenia w CSS: [link](https://developer.mozilla.org/en-US/docs/Web/CSS/Inheritance). Następnie zmodyfikuj przykład, tak, aby:
@@ -476,7 +476,7 @@ ul > li {
 1. Jaki jest efekt renderingu tego elementu? Czy wiesz co spowodowało taki efekt?
 
 2. Najeżdżając na dany selektor w VSCode wyświetlana jest jego specyficzność.
-<br>![lab4](img/lab3s7.png)
+<br>![lab4](img/lab3s8.png)
 
 Możesz też skorzystać z kalkulatora specyficzności online (dla utrwalenia zasad obliczania specyficzności: [link](https://specificity.keegan.st/)).
 Sprawdź specyficzność elementów. Który z nich jest "najmocniejszy"?
