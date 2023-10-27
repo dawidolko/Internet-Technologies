@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+    <link rel="stylesheet" href="style1.css"> <!-- Łączenie z pierwszym arkuszem stylów -->
+    <!-- <link rel="stylesheet" href="style2.css"> Dla drugiego arkusza stylów -->
+</head>
+<body>
+
+<form action="#" method="post">
+    <h2>Wyszukaj produkt</h2>
+    
+    <label for="nazwaProduktu">Nazwa produktu</label>
+    <input type="text" id="nazwaProduktu" name="nazwaProduktu">
+    
+    <label for="cenaOd">Cena</label>
+    <input type="number" id="cenaOd" name="cenaOd" placeholder="od">
+    <input type="number" id="cenaDo" name="cenaDo" placeholder="do">
+    
+    <label>Ocena produktu</label>
+    <input type="radio" name="ocena" value="5"> 5,0 ⭐⭐⭐⭐⭐<br>
+    <input type="radio" name="ocena" value="4"> 4,0 ⭐⭐⭐⭐<br>
+    <input type="radio" name="ocena" value="3"> 3,0 ⭐⭐⭐<br>
+    <input type="radio" name="ocena" value="2"> 2,0 ⭐⭐<br>
+    <input type="radio" name="ocena" value="1"> 1,0 ⭐<br>
+    
+    <label for="kolor">Kolor:</label>
+    <input type="color" id="kolor" name="kolor">
+    
+    <label for="dataProdukcji">Data produkcji:</label>
+    <input type="date" id="dataProdukcji" name="dataProdukcji">
+    
+    <label for="szybkieLadowanie">Szybkie ładowanie:</label>
+    <input type="range" id="szybkieLadowanie" name="szybkieLadowanie" min="0" max="150">
+    
+    <label>Inne:</label>
+    <input type="checkbox" name="inne" value="dual-sim"> Dual-SIM<br>
+    <input type="checkbox" name="inne" value="5g"> 5G<br>
+    <input type="checkbox" name="inne" value="gorilla-glass"> Gorilla Glass<br>
+    
+    <button type="submit">Filtruj</button>
+    <button type="reset">Usuń filtry</button>
+</form>
+
+</body>
+</html>

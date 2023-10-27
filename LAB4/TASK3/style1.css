@@ -1,0 +1,50 @@
+body {
+    font-family: "Corbel", sans-serif;
+    background-color: #414141;
+    color: #5d4e49;
+}
+
+form {
+    background-color: #fbfbfb;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 40px auto;
+}
+
+input[type="text"], 
+input[type="number"],
+input[type="date"], 
+input[type="range"], 
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #e4d3ce;
+    border-radius: 5px;
+    background-color: #e4d3ce;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="radio"], 
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #5d4e49;
+    color: #fbfbfb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e4d3ce;
+    color: #5d4e49;
+}
