@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Zmiana rozmiaru czcionki</title>
+<style>
+html {
+  font-size: 24px; /* Ustawienie globalnego rozmiaru czcionki na 24px */
+}
+.parent {
+  font-size: 20px; /* Zmiana rozmiaru czcionki w .parent na 20px */
+  border: 1px solid #000; /* Dodanie obramowania dla wizualizacji */
+}
+.child-one, .child-two, .child-three {
+  /* Zamiana jednostek em na rem dla zachowania konsystencji skalowania */
+  font-size: 1.5rem; /* Skalowanie względem <html> element */
+}
+.child-three {
+  font-size: 2rem; /* Skalowanie względem <html> element */
+}
+/* Dodanie nowego diva jako dziecka .parent z obramowaniem */
+.new-child {
+  width: 5rem; /* Szerokość bazująca na rozmiarze czcionki w elemencie html */
+  border: 1px solid black; /* Czarny, cienki obramowanie dla wizualizacji */
+}
+</style>
+</head>
+<body>
+<div class="parent">
+  parent
+  <div class="child-one">1
+    <div class="new-child">New Child</div> <!-- Element wewnątrz child-one -->
+  </div>
+  <div class="child-two">2</div>
+  <div class="child-three">3
+    <!-- Tu można przenieść element .new-child zgodnie z poleceniem, 
+         aby zobaczyć jego rozmiar jako dziecko child-three -->
+  </div>
+</div>
+</body>
+</html>

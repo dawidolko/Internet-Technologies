@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Rozwijane Menu</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+
+  .menu {
+    background-color: #003366;
+    color: white;
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .menu-item {
+    padding: 15px 50px;
+    position: relative; /* Pozycjonowanie dla podmenu */
+    transition: background-color 0.3s; /* Animacja tła */
+  }
+
+  .menu-item:not(:first-child):hover {
+    background-color: #0055A4;
+  }
+
+  .menu-item:first-child {
+    background-color: #0055A4;
+  }
+
+
+  /* Pokaż podmenu po najechaniu */
+  .menu-item:hover > .submenu {
+    display: block;
+  }
+
+  /* Strzałka */
+  .menu-item:last-child::after {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 25px;
+    border: 10px solid transparent;
+    border-top-color: white;
+    transition: transform 0.3s; /* Animacja transformacji */
+  }
+
+  /* Animacja strzałki */
+  .menu-item:hover::after {
+    transform: rotate(180deg);
+  }
+</style>
+</head>
+<body>
+
+<ul class="menu">
+  <li class="menu-item">Kolegium</li>
+  <li class="menu-item">Jednostki naukowe</li>
+  <li class="menu-item">Student</li>
+  <li class="menu-item">Doktorant
+  </li>
+</ul>
+
+</body>
+</html>
