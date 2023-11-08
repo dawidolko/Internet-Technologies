@@ -454,7 +454,8 @@ Jaki jest teraz efekt wstawienia arkusza zarówno przed, jak i po elemencie styl
 
 6. Korzystając z tutorialu: [link](https://www.thoughtco.com/user-style-sheet-3469931) dodaj do przeglądarki styl użytkownika i zmień wartość właściwości color na inną niż stosowane w poleceniu; ponadto ustaw wartość właściwości padding na 100px. Preferowany jest Chrome, który korzysta z rozszerzenia, aby wprowadzone zmiany nie zostały wprowadzone trwale! Jaki efekt przyniosły te zmiany? Pomocne w odpowiedzi może być korzystanie z narzędzi deweloperskich, jak i sprawdzenie efektu z i bez zastosowania inline stylu.
 
-## [Zadanie 6.](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB4/TASK6)
+Zadanie 6.
+
 Zdefiniuj poprawny HTML, gdzie w elemencie body znajduje się:
 ```
 <ul class="nav">
@@ -559,7 +560,7 @@ Służą one do stylowania następującego fragmentu dokumentu HTML:
 
 2. Zastąp reguły zastosowane powyżej, w taki sposób, aby dokument renderował się tak samo, ale selektory były prostsze i nie było powtarzania redundantnych właściwości. Identyfikator `btn-light` zastąp klasą o takiej samej nazwie. Zrezygnuj ze stosowania inline style. Wykorzystaj wiedzę na temat specyficzności i dziedziczenia.
 
-## [Zadanie 7.](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB4/TASK7)
+## [Zadanie 6.](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB4/TASK6)
 Zdefiniuj style css które będą powodować, że:
 
 - Dodanie do tabeli klasy `"row-stripes"` spowoduje, że parzyste wiersze w tabeli będą miały kolor `#73BBE6`. Jeśli tabela posiada nagłówki będą one miały tło w kolorze `#666652`.
