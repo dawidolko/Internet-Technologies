@@ -7,8 +7,7 @@
 | em        | 1 em reprezentuje obecny rozmiar czcionki elementu nadrzędnego. Domyślnie rozmiar czcionki to 16 pikseli, 1 em będzie równowałne 16 pikselom CSS w większości przypadków. Zaleca się stosowanie tej miary przy definiowaniu rozmiaru czcionki z uwagi na różne preferencje użytkowników. Osoby słabowidzące używająca skalowania czy większego rozmiaru czcionki a jednostka em zapewnia im optymalny rozmiar tekstu pod ich preferencje kompatybilne z innymi wytycznymi. Jednak zmiana rozmiaru czcionki w danym elemencie zmieni oczywiście rozmiar 1 em. |
 | rem       | 1 rem oznacza rozmiar czcionki elementu głównego, (ang. root element), czyli elementu html. Od em różni się tym, że nie bierze pod uwagę rozmiaru czcionki elementu nadrzędnego, tylko bezpośrednio element główny. |
 | %         | Jednostka procentowa (%) w CSS jest relatywną jednostką miary, która pozwala określić wartość na podstawie procentowej części pewnej wartości bazowej. Jest powszechnie wykorzystywana do określania wielkości elementów w stosunku do wielkości ich kontenerów lub wartości bazowych. |
-| ex        | Jednostka "ex" w CSS jest relatywną jednostką miary, która bazuje na wysokości litery "x" w bieżącym systemie czcionek. Jednostka "ex" jest używana do określania dużości na podstawie wysokości małego "x" w danym systemie czcionek. Przyjmuje się, że "ex" jest około połowy wysokości liter w danym systemie czcionek (domyślnie 8px - 16px/2). |
-|
+| ex        | Jednostka "ex" w CSS jest relatywną jednostką miary, która bazuje na wysokości litery "x" w bieżącym systemie czcionek. Jednostka "ex" jest używana do określania dużości na podstawie wysokości małego "x" w danym systemie czcionek. Przyjmuje się, że "ex" jest około połowy wysokości liter w danym systemie czcionek (domyślnie 8px - 16px/2). ![lab5](img/lab4v1.png)|
 | pt        | Punkty typograficzne („pointy”) - jednostka absolutna mająca wielkość 1/72 cala. |
 | cm        | Centymetry |
 | mm        | Milimetry |
