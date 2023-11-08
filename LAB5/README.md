@@ -1,31 +1,20 @@
+# Pozycjonowanie treści, jednostki w CSS, at-rules, funkcje CSS
+### 1. Jednostki w CSS.
 
-Pozycjonowanie treści, jednostki w CSS, at-rules, funkcje CSS
-1. Jednostki w CSS.
-Jednostka
-Opis
-px
-Piksel - przy odpowiednim skalowaniu i właściwościach urządzenia 1px będzie odpowiadać fizycznemu pikselowi ekranu. Na ekranach z bardzo dużą rozdzielczością (2k, 4k) stosowane jest skalowanie wtedy 1px będzie większy od piksela fizycznego i wyświetlany przez 2, 4 lub więcej pikseli fizycznych (czyli pewną ich wielokrotność).
-em
-1 em reprezentuje obecny rozmiar czcionki elementu nadrzędnego. Domyślnie rozmiar czcionki to 16 pikseli, 1 em będzie równoważne 16 pikselom CSS w większości przypadków. Zaleca się stosowanie tej miary przy definiowaniu rozmiaru czcionki z uwagi na różne preferencje użytkowników. Osoby słabowidzące używają skalowania czy większego rozmiaru czcionki a jednostka em zapewnia im optymalny rozmiar tekstu pod ich preferencje kompatybilnie z innymi witrynami. Jednak zmiana rozmiaru czcionki w danym elemencie zmieni oczywiście rozmiar 1 em.
-rem
-1 rem oznacza rozmiar czcionki elementu głównego, (ang. root element), czyli elementu html. Od em różni się tym, że nie bierzemy pod uwagę rodzica danego elementu, tylko bezpośrednio element główny.
-%
-Jednostka procentowa (%) w CSS jest relatywną jednostką miary, która pozwala określić wartość na podstawie procentowej części pewnej wartości bazowej. Jest powszechnie wykorzystywana do określania wielkości elementów w stosunku do wielkości ich kontenerów lub wartości bazowych.
-ex
-Jednostka "ex" w CSS jest relatywną jednostką miary, która bazuje na wysokości litery "x" w bieżącym systemie czcionek. Jednostka "ex" jest używana do określania długości na podstawie wysokości małego "x" w danym systemie czcionek. Przyjmuje się, że "ex" jest około połowy
-TECHNOLOGIE INTERNETOWE | MGR INŻ. WOJCIECH GAŁKA,
-MGR INŻ. MARCIN MRUKOWICZ, MGR INŻ. JAROMIR SARZYŃSKI
-wysokości liter w danym systemie czcionek (domyślnie 8px - 16px/2).
-pt
-Punkty typograficzne („pointy”) – jednostka absolutna mająca wielkość 1/72 cala.
-cm
-Centymetry
-mm
-Milimetry
-in
-Cale
-pc
-Pica - 12 punktów typograficznych (pt) lub 1/6 cala.
+| Jednostka | Opis |
+|-----------|------|
+| px        | Piksel - przy odpowiednim skalowaniu i właściwościach urządzenia 1px będzie odpowiadać fizycznemu pikselowi ekranu. Na ekranach z bardzo dużą rozdzielczością (2k, 4k) stosowane jest skalowanie wtedy 1px będzie większy od piksela fizycznego i wyświetlany przez 2, 4 lub więcej pikseli fizycznych (czyli pewna ich wielokrotność). |
+| em        | 1 em reprezentuje obecny rozmiar czcionki elementu nadrzędnego. Domyślnie rozmiar czcionki to 16 pikseli, 1 em będzie równowałne 16 pikselom CSS w większości przypadków. Zaleca się stosowanie tej miary przy definiowaniu rozmiaru czcionki z uwagi na różne preferencje użytkowników. Osoby słabowidzące używająca skalowania czy większego rozmiaru czcionki a jednostka em zapewnia im optymalny rozmiar tekstu pod ich preferencje kompatybilne z innymi wytycznymi. Jednak zmiana rozmiaru czcionki w danym elemencie zmieni oczywiście rozmiar 1 em. |
+| rem       | 1 rem oznacza rozmiar czcionki elementu głównego, (ang. root element), czyli elementu html. Od em różni się tym, że nie bierze pod uwagę rozmiaru czcionki elementu nadrzędnego, tylko bezpośrednio element główny. |
+| %         | Jednostka procentowa (%) w CSS jest relatywną jednostką miary, która pozwala określić wartość na podstawie procentowej części pewnej wartości bazowej. Jest powszechnie wykorzystywana do określania wielkości elementów w stosunku do wielkości ich kontenerów lub wartości bazowych. |
+| ex        | Jednostka "ex" w CSS jest relatywną jednostką miary, która bazuje na wysokości litery "x" w bieżącym systemie czcionek. Jednostka "ex" jest używana do określania dużości na podstawie wysokości małego "x" w danym systemie czcionek. Przyjmuje się, że "ex" jest około połowy wysokości liter w danym systemie czcionek (domyślnie 8px - 16px/2). |
+| pt        | Punkty typograficzne („pointy”) - jednostka absolutna mająca wielkość 1/72 cala. |
+| cm        | Centymetry |
+| mm        | Milimetry |
+| in        | Cale |
+| pc        | Pica - 12 punktów typograficznych (pt) lub 1/6 cala. |
+
+
 W praktyce najczęściej wykorzystywane jednostki przy tworzeniu stron (ang. web development) to px, em, rem, % oraz ex. Stosowanie pozostałych nie jest zalecane przy tworzeniu stron internetowych – te jednostki mają zastosowanie w druku (w sensie drukowaniu zawartości strony przez drukarkę).
 CSS pozwala wykorzystywać tradycyjne jednostki miernicze: centymetry i cale (ang. inch). Ponadto możliwe jest wykorzystanie znanych z typografii punktów typograficznych, „pointów” (ang. points, pt) i pik (ang. pica). Jednakże należy od razu zaznaczyć, że o ile w przeszłości podczas wyświetlania na ekranie jednostki te rzeczywiście odwzorowywały swoje tradycyjne wzorce (było tak do 2011 roku), to obecnie nie musi tak być. Zagadnienie to zależy od tego jaki dokładnie posiadamy ekran, przy czym skomplikowało się po upowszechnieniu urządzeń mobilnych, wykorzystujących ekrany dotykowe. Obecnie jedynie podczas drukowania dokumentów ostylowanych CSS tradycyjne jednostki miernicze będą wiernie odwzorowane; względnie podobnie ma być podczas wykorzystywania ekranów „bardzo wysokiej rozdzielczości”, gdzie jednak standard CSS nie definiuje co to dokładnie oznacza (np. podając jawnie próg ppi). W CSS, używanie tych tradycyjnych jednostek mierniczych (cm, in, pt, pc) może nie zawsze dokładnie odzwierciedlać rzeczywiste rozmiary na różnych urządzeniach ze względu na różne zagadnienia, takie jak rozdzielczość ekranu czy stosowanie skalowania strony.
 W przeszłości dominowały ekrany CRT, z dość ustandaryzowanym ppi (ang. pixel per inch) wynoszącym 96 pikseli na cal, gdzie standard CSS przyjął zasadę, że jeden cal dzieli się na 96 pikseli, 72 pointy i 6 pik. Właściwie w tym okresie piksel CSS (ang. CSS pixel) był równoważny pikselowi fizycznemu na urządzeniu (ang. device pixel). Obecnie na rynku sprzedaje się ekrany o bardzo różnym ppi i wszelkie tego typu założenia stały się bezprzedmiotowe (zwłaszcza że 96 fizycznych pikseli zajmuje 1 cal). Zasadniczo nadal zakłada się, że zachodzą powyższe relacje pomiędzy jednostkami, ale stały się one zupełnie abstrakcyjne, tj. myśląc o calach,
