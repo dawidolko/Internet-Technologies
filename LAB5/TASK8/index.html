@@ -1,133 +1,76 @@
 <!DOCTYPE html>
-<html lang="pl">
-<head>
-<meta charset="UTF-8">
-<title>Responsywna strona</title>
-<style>
-  * {
-    box-sizing: border-box;
-  }
+<html lang="en">
+    <head>
+        <title>zad8</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <style>
+            @media screen and (min-width: 768px) {
+            #pierwsza{
+                height: 100px;
+            }
 
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
+            article{
+                height: 200px;
+                margin-bottom: 20px;
+            }
+            #pierwsza > li{
+                display: inline-block;
+                width: 24%;
+            }
 
-  .container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-  }
+            #left{
+                float: left;
+                width: 20%;
+            }
+            #right{
+                float: right;
+                width: 80%;
+            }
+        }
+        @media screen and (max-width: 768px) {
 
-  .links-row {
-    text-align: center;
-    padding: 0;
-  }
-
-  .links-row1 {
-    margin-top: 100px;
-    text-align: left;
-    padding: 0;
-  }
-
-  .links-row li {
-    display: inline;
-    margin: 0 10px; /* Adjust spacing here */
-  }
-
-  .main-content {
-    padding: 15px;
-    text-align: justify;
-    float: right;
-    width: 600px;
-    height: 200px;
-  }
-
-  .main-content h1 {
-    text-align: left;
-  }
-
-  .links-row:before {
-    content: '';
-    display: block;
-    text-align: center;
-    font-size: 1.2em;
-    margin-bottom: 30px;
-  }
-
-  @media screen and (max-width: 768px) {
-    /* For screens that are 768px wide or more */
-    .main-content {
-        padding: 15px;
-        text-align: justify;
-        margin-top: 200px;
-        width: 600px;
-        height: 200px;
-    }
-    .links-row1 {
-        margin-top: -10px;
-        text-align: left;
-        padding: 0;
-     }
-    .links-row1:before {
-      content: 'In this article'; /* Hide the 'In this article' text */
-    }
-
-    .links-row, .links-row li {
-      display: block;
-      text-align: left;
-    }
-
-    .links-row li {
-      margin-bottom: 5px; /* Spacing between list items */
-    }
-  }
-
-  @media screen and (min-width: 768px) {
-    /* For screens that are less than 768px wide */
-    .links-row li {
-      display: inline;
-    }
-    .links-row1:before{
-        content: 'In this article';
-    }
-  }
-</style>
-</head>
-<body>
-
-<div class="container">
-  <ul class="links-row">
-    <!-- First row of links for wide screens -->
-    <li><a href="http://www.przyklad.pl">link</a></li>
-    <li><a href="http://www.przyklad.pl">link</a></li>
-    <li><a href="http://www.przyklad.pl">link</a></li>
-    <li><a href="http://www.przyklad.pl">link</a></li>
-  </ul>
-
-  <div class="main-content">
-    <h1>Main content</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique sapien ac erat tincidunt, sit amet dignissim lectus vulputate. Donec id iaculis velit. Aliquam vel malesuada erat. Praesent non magna ac massa aliquet tincidunt vel in massa. Phasellus feugiat est vel leo finibus congue.</p>
-  </div>
-
-  <ul class="links-row1">
-    <!-- Second row of links for wide screens -->
-        <li><a href="http://www.przyklad.pl">link</a></li>
-        <li><a href="http://www.przyklad.pl">link</a></li>
-        <li><a href="http://www.przyklad.pl">link</a></li>
-        <li><a href="http://www.przyklad.pl">link</a></li>
-      </ul>
-      <ul class="links-row">
-        <!-- Second row of links for wide screens -->
-            <li><a href="http://www.przyklad.pl">link</a></li>
-            <li><a href="http://www.przyklad.pl">link</a></li>
-            <li><a href="http://www.przyklad.pl">link</a></li>
-            <li><a href="http://www.przyklad.pl">link</a></li>
-          </ul>
-    </nav>
-  </footer>
-</div>
-
-</body>
+            article{
+                min-height: 300px;
+                margin-bottom: 20px;
+            }
+            #pierwsza > li{
+                display: block;
+            }
+        }
+    </style>
+    <body>
+        <ul id="pierwsza">
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+        </ul>
+        <article>
+            <section id="left">
+                <h3>In this article</h3>
+                <ul id="druga">
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </section>
+            <section id="right">
+                <h1>Main content</h1>
+                    orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+            </section>
+        </article>
+        <ul id="pierwsza">
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+        </ul>
+    </body>
 </html>
