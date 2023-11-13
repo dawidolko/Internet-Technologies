@@ -13,7 +13,7 @@ pozwala układać elementy dwuwymiarowo (tj. definiując ich położenie za pomo
 
 Zarówno flexbox, jak i grid zaczęły być powszechnie stosowane (i wspierane) po około 2015 roku. Historia rozwoju layoutu i porównanie różnych metod można znaleźć tutaj: [link](https://dev.to/dianale/css-layoutshistory-from-float-to-flexbox-and-grid-5af7). Jednocześnie warto zaznaczyć, że obecnie wszystkie czołowe przeglądarki wspierają zarówno flexboxa, jak i grida. **Jest to zatem rozwiązanie "wbudowane" w CSS, czego nie można powiedzieć o niektórych frameworkach CSS, np. Twitter Bootstrap (który też od późniejszych wersji stosuje grid i flexbox w swoich implementacjach).** 
 
-## Viewport 
+### Viewport 
 jest to obszar, jaki przeglądarka ma do dyspozycji, do wyrenderowania strony. Zasadniczo zmieniając rozmiar okna dynamicznie zmieniamy rozmiar viewportu (głównie na urządzeniach desktopowych, chociaż i urządzenia mobilne oferują dzisiaj opcje różnego rodzaju "pływających" okien, albo podziału ekranu np. na 2 aplikacje). 
 
 <br>![lab6](img/lab5v1.png)
