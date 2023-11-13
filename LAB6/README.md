@@ -26,7 +26,7 @@ W niektórych sytuacjach, chcąc zagwarantować, że dany element zajmie określ
 
 Są one jak widać niezależne od wartości liczbowych np. w pikselach jednocześnie to coś innego niż po prostu jednostka % (która jest relatywna do rozmiaru rodzica). Chcąc wykorzystać %, musielibyśmy w jakiś sposób wymusić, żeby np. element body zajął cały viewport i potem względem tego ustalać wszystkie inne elementy, co w praktyce nie było i nie jest bardzo proste i wygodne. Na urządzeniach mobilnych zagadnienie to stało się dodatkowo skomplikowane, gdyż tam naturalne jest pojawianie się wirtualnej klawiatury, która wymusza zmianę rozmiaru przeglądarki, więcej tutaj: [link](https://developer.chrome.com/blog/viewport-resize-behavior/). 
 
-Jednocześnie należy dodać, że te 2 jednostki w praktyce i tak okazały się niewystarczające, zwłaszcza dla urządzeń mobilnych. Więcej można o tym przeczytać 	tutaj: 	[link](https://ishadeed.com/article/viewport-units/) 	, [link](https://ishadeed.com/article/new-viewport-units/ https://web.dev/blog/viewport-units?hl=pl)
+Jednocześnie należy dodać, że te 2 jednostki w praktyce i tak okazały się niewystarczające, zwłaszcza dla urządzeń mobilnych. Więcej można o tym przeczytać 	tutaj: 	[link](https://ishadeed.com/article/viewport-units/) 	, [link](https://ishadeed.com/article/new-viewport-units/) [link](https://web.dev/blog/viewport-units?hl=pl)
  
 ## [Zadanie 1.](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB6/TASK1) 
 W celu interaktywnego zapoznania się z możliwościami flexboxa uruchom następującą aplikację internetową: [link](https://flexboxfroggy.com/#pl) i rozwiąż wszystkie zadania. Możesz posiłkować się poradnikiem: 
