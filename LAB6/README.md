@@ -39,7 +39,7 @@ Do następującego dokumentu HTML dopisz style, aby uzyskać efekt, jak na obraz
 
 Wykorzystaj właściwości `flex-direction`, `gap`, `align-items`, `justify-content`, `flex`. W przykładzie zastosowano też zewnętrzny moduł, który dodaje zestaw gotowych ikon. Generalnie zagnieżdżaj układ oparty o flexbox w poszczególnych elementach. Zauważ, że ostatnia karta teoretycznie, mimo że posiada mniej treści, jest wyrównana z rozmiarem pozostałych dwóch kart; uzyskaj taki sam efekt. 
 
-```
+```html
 <!DOCTYPE html> 
 <html> 
 <head> 
@@ -92,7 +92,7 @@ Do przykładu z poprzedniego zadania:
 Efekt powinien być zbliżony do tego powyżej, tj. elementy potomne wykraczają poza swojego rodzica. 
 
 3.	Ustaw teraz w klasie container overflow-x: scroll. Jaki dało to efekt? Rozwiązanie to bywa wbrew pozorom stosowane w układach na urządzenia mobilne, jednak tam dla estetyki zwykle ukrywa się scroll. Można to uzyskać w następujący sposób: 
-```
+```html
 .container::-webkit-scrollbar { display: none; } /* większość przeglądarek */ 
 .container { scrollbar-width: none; /* firefox */ 
 }
@@ -107,7 +107,7 @@ Jest to spowodowane tym, że ostatni element zajmie całe dostępne miejsce w ko
 ## [Zadanie 4.](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB6/TASK4) 
  
 Skopiuj następujący przykład: 
-```
+```html
 <!DOCTYPE html> 
 <html lang="en"> 
 <head> 
@@ -201,7 +201,7 @@ po czym zapoznaj się z dostępnymi właściwościami flexa klikając kolejno ws
 3.	Wyświetl stronę na dowolnym smartfonie (w narzędziach deweloperskich). Oceń optymalność zastosowanego układu treści na tym urządzeniu.  
  
 4.	Następnie za pomocą odpowiedniego media query dopisz style bardziej odpowiadające urządzeniom mobilnym. Na urządzeniu mobilnym popularne są menu oparte o przełącznik (ang. toggle menu). Poniżej pokazano jak można uzyskać za pomocą czystego CSS taki efekt (bez wykorzystania języka JavaScript). Rozwiązanie to opiera się o ukryty przed użytkownikiem checkbox, który jednak posiada widoczny label. Kliknięcie na label aktywuje/dezaktywuje przełącznik, a za pomocą pseudoklasy :checked można modyfikować wygląd elementów (tutaj "zwijać/rozwijać" linki menu). Potraktuj to jako wskazówkę w dalszych działaniach.
-```
+```html
 @media screen and (max-width: 400px) { 
         .navbar { 
         background-color: #313131;         display: flex; 
@@ -220,7 +220,7 @@ po czym zapoznaj się z dostępnymi właściwościami flexa klikając kolejno ws
         } 
     }
 ```
- ```
+ ```html
 <nav class="navbar"> 
         <label for="toggle">☰</label><input type="checkbox" id="toggle"> 
         <ul class="navbar-links"> 
@@ -231,7 +231,7 @@ po czym zapoznaj się z dostępnymi właściwościami flexa klikając kolejno ws
 </nav>
 ```
  PS. Oczywiście poza media query dla urządzeń mobilnych ustawiamy:
-```
+```html
 #toggle { 
         display: none; 
 } 
@@ -243,7 +243,7 @@ W celu interaktywnego zapoznania się z możliwościami grid uruchom następują
 
 ## [Zadanie 6.](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB6/TASK6) 
 W przykładzie z zadania 2. podmień styl `.container` na: 
-```
+```html
 .container {             display: grid;             grid-template-columns: 50% 50%;             grid-template-rows: auto;             gap: 10px; 
         }
 ```
@@ -257,7 +257,7 @@ Przykład:
 Zapoznaj się z poradnikiem pod poniższym linkiem. Najważniejszym elementem są właściwości i wyjaśnienie jak działają. Z lewej strony znajdują się właściwości, które stosuje się do "rodzica" natomiast po prawej do "potomka". 
 [link](https://css-tricks.com/snippets/css/complete-guide-grid/) 
 Wykorzystując wartość "grid" dla właściwości display, utwórz style dla responsywnej galerii zdjęć dla poniższego dokumentu HTML: 
-```
+```html
 <!DOCTYPE html> 
 <html lang="en"> 
  
@@ -297,7 +297,7 @@ W przykładzie wykorzystano "zmienne" w CSS (ułatwia to "zapanowanie" nad zło�
 
 Na ekranach mniejszych niż 768px zdjęcia wyświetlają się w jednej kolumnie o szerokości 400px z odstępami pomiędzy wierszami i kolumnami równym 10 px. 
 
-<br>![lab6](img/lab5v8.png)
+<br>![lab6](img/lab5v9.png)
   
 Na ekranach mniejszych niż 1200px zdjęcia wyświetlają się w dwóch kolumnach o szerokości 400px z odstępami pomiędzy wierszami i kolumnami równym 10 px. 
   
@@ -311,7 +311,7 @@ Powiel znacznik img i sprawdź czy layout nadal jest responsywny.
 
 ## [Zadanie 8.](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB6/TASK8) 
 Skopiuj poniższy dokument a następnie używając display: grid oraz flex ostyluj dokument tak aby wyświetlał kalendarz roku akademickiego z zaznaczonymi tygodniami A oraz B w dwóch różnych kolorach. Na desktopach miesiące tygodni A oraz B są wyświetlane obok siebie.  
-```
+```html
 <!DOCTYPE html> 
 <html lang="en"> 
  
