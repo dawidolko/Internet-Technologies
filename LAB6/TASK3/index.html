@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>title</title>
+<script type="module"
+src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
+</script>
+<style>
+            img{
+        display: block; /* changed from flex to block for proper image display */
+        margin: auto; /* center the image */
+        width: 200px;
+        height: 200px;
+    }
+    .container{
+        display: flex;
+        align-items: stretch;
+        justify-content: space-around;
+        gap: 10px;
+        max-width: 500px;
+        flex-wrap: wrap;
+        scrollbar-width: none; /* firefox */
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.274) 0%, rgba(0, 0, 0, 0.274) 50%);
+    }
+
+    .container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .card{
+        min-width: 200px; /* min-width to ensure cards don't get too small */
+        flex-grow: 1; /* allows card to grow */
+        flex-shrink: 1; /* allows card to shrink */
+        flex-basis: calc(50% - 10px); /* subtract the gap from the flex-basis */
+        border-radius: 10px;
+        background-color: rgb(239, 239, 239);
+        border: 0px solid black;
+        display: flex;
+        align-items: center;
+        flex-direction: column; 
+        margin: 0;
+        padding: 0;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optional: adds shadow for depth */
+    }
+
+    .main-text{
+        display: flex;
+        margin: 10px;
+        padding: 15px;
+        justify-content: center;
+        text-align: justify;
+        font-size: 20px;
+        flex: 1; /* allows this div to fill the space in the flex container */
+    }
+
+    .bottom{
+        border-radius: 10px;
+        margin: auto;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        background-color: silver;
+    }
+    h1,h2,h3{
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="card">
+            <h3>Nazwa</h3>
+            <img src="logo_UR_blue.jpg">
+            <div class="main-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                tristique sapien ac erat tincidunt, sit amet dignissim lectus vulputate.
+            </div>
+           
+        <div class="bottom"><span><ion-icon name="time-outline"></ion-icon> 30 min</span>
+        <button><ion-icon name="heart-outline"></ion-icon></button></div>
+
+        <div class="card">
+            <h3>Nazwa</h3>
+            <img src="logo_UR_blue.jpg">
+            <div class="main-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                tristique sapien ac erat tincidunt, sit amet dignissim lectus vulputate.
+            </div>
+           
+        <div class="bottom"><span><ion-icon name="time-outline"></ion-icon> 30 min</span>
+        <button><ion-icon name="heart-outline"></ion-icon></button></div> -->
+
+        <div class="card">
+            <h3>Nazwa</h3>
+            <img src="logo_UR_blue.jpg">
+            <div class="main-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique sapien
+                    ac erat tincidunt, sit amet dignissim lectus vulputate. Donec id iaculis velit.
+                    Aliquam vel malesuada erat. Praesent non magna ac massa aliquet tincidunt vel in
+                    massa. Phasellus feugiat est vel leo finibus congue.
+                </div>
+                
+                <div class="bottom"><span><ion-icon name="time-outline"></ion-icon>
+                50 min</span> <button><ion-icon name="heart-outline"></ion-icon></button></div>
+                </div>
+               
+        <div class="card">
+            <h3>Nazwa</h3>
+            <img src="logo_UR_blue.jpg">
+            <div class="main-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique sapien
+                ac erat tincidunt, sit amet dignissim lectus vulputate. Donec id iaculis velit.
+                Aliquam vel malesuada erat. Praesent non magna ac massa aliquet tincidunt vel in
+                massa. Phasellus feugiat est vel leo finibus congue.
+                </div>
+               
+                <div class="bottom"><span><ion-icon name="time-outline"></ion-icon>
+                120 min</span> <button><ion-icon name="heart-outline"></ion-icon></button></div>
+                </div>
+               
+        <div class="card">
+            <h3>Nazwa</h3>
+            <img src="logo_UR_blue.jpg">
+            <div class="main-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                tristique sapien ac erat tincidunt, sit amet dignissim lectus vulputate.
+                </div>
+               
+                <div class="bottom"><span><ion-icon name="time-outline"></ion-icon> 30 min</span>
+                <button><ion-icon name="heart-outline"></ion-icon></button></div>
+            </div>
+        </div>
+    </body>
+    </html>

@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalendarz</title>
+<style>
+    article {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    section {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr); /* 7 dni w tygodniu */
+      grid-gap: 5px;
+      margin: 10px;
+      background-color: #f0f0f0; /* kolor tła dla tygodni A */
+      padding: 10px;
+    }
+    
+    section:nth-of-type(2n) {
+      background-color: #e0e0e0; /* inny kolor tła dla tygodni B */
+    }
+    
+    ul {
+      list-style-type: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr); /* 7 dni w tygodniu */
+      margin: 5px 0;
+    }
+    
+    ul li {
+      background-color: #d0d0d0; /* kolor tła dla nagłówków dni */
+      padding: 5px;
+      text-align: center;
+    }
+    
+    ol {
+      list-style-type: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr); /* 7 dni w tygodniu */
+      grid-gap: 5px;
+    }
+    
+    ol li {
+      background-color: #c0c0c0; /* kolor tła dla dni */
+      padding: 5px;
+      text-align: center;
+    }
+    
+    @media screen and (max-width: 1200px) {
+      article {
+        flex-direction: column;
+      }
+    
+      section {
+        grid-template-columns: repeat(7, 1fr); /* 7 dni w tygodniu */
+      }
+    }
+    
+    @media screen and (max-width: 768px) {
+      section {
+        grid-template-columns: repeat(1, 400px); /* 1 kolumna o szerokości 400px */
+      }
+    }
+    </style>
+</head>
+<body>
+<Article>
+<h2>Tydzień A</h2>
+<section>
+<h2>Październik 2023</h2>
+<ul>
+<li>Mon</li>
+<li>Tue</li>
+<li>Wed</li>
+<li>Thu</li>
+<li>Fri</li>
+<li>Sat</li>
+<li>Sun</li>
+</ul>
+<ol>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+<li>5</li>
+<li>6</li>
+<li>7</li>
+<li>8</li>
+<li>9</li>
+<li>10</li>
+<li>11</li>
+<li>12</li>
+<li>13</li>
+<li>14</li>
+<li>15</li>
+<li>16</li>
+<li>17</li>
+<li>18</li>
+<li>19</li>
+<li>20</li>
+<li>21</li>
+<li>22</li>
+<li>23</li>
+<li>24</li>
+<li>25</li>
+<li>26</li>
+<li>27</li>
+<li>28</li>
+<li>29</li>
+<li>30</li>
+<li>31</li>
+</ol>
+</section>
+<section>
+<h2>Listopad 2023</h2>
+<ul>
+<li>Mon</li>
+<li>Tue</li>
+<li>Wed</li>
+<li>Thu</li>
+<li>Fri</li>
+<li>Sat</li>
+<li>Sun</li>
+</ul>
+<ol>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+<li>5</li>
+<li>6</li>
+<li>7</li>
+<li>8</li>
+<li>9</li>
+<li>10</li>
+<li>11</li>
+<li>12</li>
+<li>13</li>
+<li>14</li>
+<li>15</li>
+<li>16</li>
+<li>17</li>
+<li>18</li>
+<li>19</li>
+<li>20</li>
+<li>21</li>
+<li>22</li>
+<li>23</li>
+<li>24</li>
+<li>25</li>
+<li>26</li>
+<li>27</li>
+<li>28</li>
+<li>29</li>
+<li>30</li>
+</ol>
+</section>
+<section>
+    <h2>Grudzień 2023</h2>
+<ul>
+<li>Mon</li>
+<li>Tue</li>
+<li>Wed</li>
+<li>Thu</li>
+<li>Fri</li>
+<li>Sat</li>
+<li>Sun</li>
+</ul>
+<ol>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+<li>5</li>
+<li>6</li>
+<li>7</li>
+<li>8</li>
+<li>9</li>
+<li>10</li>
+<li>11</li>
+<li>12</li>
+<li>13</li>
+<li>14</li>
+<li>15</li>
+<li>16</li>
+<li>17</li>
+<li>18</li>
+<li>19</li>
+<li>20</li>
+<li>21</li>
+<li>22</li>
+<li>23</li>
+<li>24</li>
+<li>25</li>
+<li>26</li>
+<li>27</li>
+<li>28</li>
+<li>29</li>
+<li>30</li>
+<li>31</li>
+</ol>
+</section>
+<section>
+<h2>Styczeń 2024</h2>
+<ul>
+<li>Mon</li>
+<li>Tue</li>
+<li>Wed</li>
+<li>Thu</li>
+<li>Fri</li>
+<li>Sat</li>
+<li>Sun</li>
+</ul>
+<ol>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+<li>5</li>
+<li>6</li>
+<li>7</li>
+<li>8</li>
+<li>9</li>
+<li>10</li>
+<li>11</li>
+<li>12</li>
+<li>13</li>
+<li>14</li>
+<li>15</li>
+<li>16</li>
+<li>17</li>
+<li>18</li>
+<li>19</li>
+<li>20</li>
+<li>21</li>
+<li>22</li>
+<li>23</li>
+<li>24</li>
+<li>25</li>
+<li>26</li>
+<li>27</li>
+<li>28</li>
+<li>29</li>
+<li>30</li>
+<li>31</li>
+</ol>
+</section>
+<section>
+<h2>Luty 2024</h2>
+<ul>
+<li>Mon</li>
+<li>Tue</li>
+<li>Wed</li>
+<li>Thu</li>
+<li>Fri</li>
+<li>Sat</li>
+<li>Sun</li>
+</ul>
+<ol>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+<li>5</li>
+<li>6</li>
+<li>7</li>
+<li>8</li>
+<li>9</li>
+<li>10</li>
+<li>11</li>
+<li>12</li>
+<li>13</li>
+<li>14</li>
+<li>15</li>
+<li>16</li>
+<li>17</li>
+<li>18</li>
+<li>19</li>
+<li>20</li>
+<li>21</li>
+<li>22</li>
+<li>23</li>
+<li>24</li>
+<li>25</li>
+<li>26</li>
+<li>27</li>
+<li>28</li>
+</ol>
+</section>
+<section>
+<h2>Marzec 2024</h2>
+<ul>
+<li>Mon</li>
+<li>Tue</li>
+<li>Wed</li>
+<li>Thu</li>
+<li>Fri</li>
+<li>Sat</li>
+<li>Sun</li>
+</ul>
+<ol>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+<li>5</li>
+<li>6</li>
+<li>7</li>
+<li>8</li>
+<li>9</li>
+<li>10</li>
+<li>11</li>
+<li>12</li>
+<li>13</li>
+<li>14</li>
+<li>15</li>
+<li>16</li>
+<li>17</li>
+<li>18</li>
+<li>19</li>
+<li>20</li>
+<li>21</li>
+<li>22</li>
+<li>23</li>
+<li>24</li>
+<li>25</li>
+<li>26</li>
+<li>27</li>
+<li>28</li>
+<li>29</li>
+<li>30</li>
+<li>31</li>
+</ol>
+</section>
+<section>
+<h2>Kwiecień 2024</h2>
+<ul>
+<li>Mon</li>
+<li>Tue</li>
+<li>Wed</li>
+<li>Thu</li>
+<li>Fri</li>
+<li>Sat</li>
+<li>Sun</li>
+</ul>
+<ol>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+<li>5</li>
+<li>6</li>
+<li>7</li>
+<li>8</li>
+<li>9</li>
+<li>10</li>
+<li>11</li>
+<li>12</li>
+<li>13</li>
+<li>14</li>
+<li>15</li>
+<li>16</li>
+<li>17</li>
+<li>18</li>
+<li>19</li>
+<li>20</li>
+<li>21</li>
+<li>22</li>
+<li>23</li>
+<li>24</li>
+<li>25</li>
+<li>26</li>
+<li>27</li>
+<li>28</li>
+<li>29</li>
+<li>30</li>
+</ol>
+</section>
+<section>
+<h2>Maj 2024</h2>
+<ul>
+<li>Mon</li>
+<li>Tue</li>
+<li>Wed</li>
+<li>Thu</li>
+<li>Fri</li>
+<li>Sat</li>
+<li>Sun</li>
+</ul>
+<ol>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+<li>5</li>
+<li>6</li>
+<li>7</li>
+<li>8</li>
+<li>9</li>
+<li>10</li>
+<li>11</li>
+<li>12</li>
+<li>13</li>
+<li>14</li>
+<li>15</li>
+<li>16</li>
+<li>17</li>
+<li>18</li>
+<li>19</li>
+<li>20</li>
+<li>21</li>
+<li>22</li>
+<li>23</li>
+<li>24</li>
+<li>25</li>
+<li>26</li>
+<li>27</li>
+<li>28</li>
+<li>29</li>
+<li>30</li>
+<li>31</li>
+</ol>
+</section>
+<section>
+<h2>Czerwiec 2024</h2>
+<ul>
+<li>Mon</li>
+<li>Tue</li>
+<li>Wed</li>
+<li>Thu</li>
+<li>Fri</li>
+<li>Sat</li>
+<li>Sun</li>
+</ul>
+<ol>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+<li>5</li>
+<li>6</li>
+<li>7</li>
+<li>8</li>
+<li>9</li>
+<li>10</li>
+<li>11</li>
+<li>12</li>
+<li>13</li>
+<li>14</li>
+<li>15</li>
+<li>16</li>
+<li>17</li>
+<li>18</li>
+<li>19</li>
+<li>20</li>
+<li>21</li>
+<li>22</li>
+<li>23</li>
+<li>24</li>
+<li>25</li>
+<li>26</li>
+<li>27</li>
+<li>28</li>
+<li>29</li>
+<li>30</li>
+</ol>
+</section>
+<section>
+<h2>Lipiec 2024</h2>
+<ul>
+<li>Mon</li>
+<li>Tue</li>
+<li>Wed</li>
+<li>Thu</li>
+<li>Fri</li>
+<li>Sat</li>
+<li>Sun</li>
+</ul>
+<ol>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+<li>5</li>
+<li>6</li>
+<li>7</li>
+<li>8</li>
+<li>9</li>
+<li>10</li>
+<li>11</li>
+<li>12</li>
+<li>13</li>
+<li>14</li>
+<li>15</li>
+<li>16</li>
+<li>17</li>
+<li>18</li>
+<li>19</li>
+<li>20</li>
+<li>21</li>
+<li>22</li>
+<li>23</li>
+<li>24</li>
+<li>25</li>
+<li>26</li>
+<li>27</li>
+<li>28</li>
+<li>29</li>
+<li>30</li>
+<li>31</li>
+</ol>
+</section>
+<section>
+<h2>Sierpień 2024</h2>
+<ul>
+<li>Mon</li>
+<li>Tue</li>
+<li>Wed</li>
+<li>Thu</li>
+<li>Fri</li>
+<li>Sat</li>
+<li>Sun</li>
+</ul>
+<ol>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+<li>5</li>
+<li>6</li>
+<li>7</li>
+<li>8</li>
+<li>9</li>
+<li>10</li>
+<li>11</li>
+<li>12</li>
+<li>13</li>
+<li>14</li>
+<li>15</li>
+<li>16</li>
+<li>17</li>
+<li>18</li>
+<li>19</li>
+<li>20</li>
+<li>21</li>
+<li>22</li>
+<li>23</li>
+<li>24</li>
+<li>25</li>
+<li>26</li>
+<li>27</li>
+<li>28</li>
+<li>29</li>
+<li>30</li>
+<li>31</li>
+</ol>
+</section>
+<section>
+    <h2>Wrzesień 2024</h2>
+    <ul>
+    <li>Mon</li>
+    <li>Tue</li>
+    <li>Wed</li>
+    <li>Thu</li>
+    <li>Fri</li>
+    <li>Sat</li>
+    <li>Sun</li>
+    </ul>
+    <ol>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+    <li>25</li>
+    <li>26</li>
+    <li>27</li>
+    <li>28</li>
+    <li>29</li>
+    <li>30</li>
+    </ol>
+    </section>
+    </Article>
+    <Article>
+    <h2>Tydzień B</h2>
+    <section>
+        <h2>Październik 2023</h2>
+    <ul>
+    <li>Mon</li>
+    <li>Tue</li>
+    <li>Wed</li>
+    <li>Thu</li>
+    <li>Fri</li>
+    <li>Sat</li>
+    <li>Sun</li>
+    </ul>
+    <ol>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+    <li>25</li>
+    <li>26</li>
+    <li>27</li>
+    <li>28</li>
+    <li>29</li>
+    <li>30</li>
+    <li>31</li>
+    </ol>
+    </section>
+    <section>
+    <h2>Listopad 2023</h2>
+<ul>
+    <li>Mon</li>
+    <li>Tue</li>
+    <li>Wed</li>
+    <li>Thu</li>
+    <li>Fri</li>
+    <li>Sat</li>
+    <li>Sun</li>
+    </ul>
+    <ol>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+    <li>25</li>
+    <li>26</li>
+    <li>27</li>
+    <li>28</li>
+    <li>29</li>
+    <li>30</li>
+    </ol>
+    </section>
+    <section>
+    <h2>Grudzień 2023</h2>
+    <ul>
+    <li>Mon</li>
+    <li>Tue</li>
+    <li>Wed</li>
+    <li>Thu</li>
+    <li>Fri</li>
+    <li>Sat</li>
+    <li>Sun</li>
+    </ul>
+    <ol>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+    <li>25</li>
+    <li>26</li>
+    <li>27</li>
+    <li>28</li>
+    <li>29</li>
+    <li>30</li>
+    <li>31</li>
+    </ol>
+    </section>
+    <section>
+    <h2>Styczeń 2024</h2>
+    <ul>
+    <li>Mon</li>
+    <li>Tue</li>
+    <li>Wed</li>
+    <li>Thu</li>
+    <li>Fri</li>
+    <li>Sat</li>
+    <li>Sun</li>
+    </ul>
+    <ol>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+    <li>25</li>
+    <li>26</li>
+    <li>27</li>
+    <li>28</li>
+    <li>29</li>
+    <li>30</li>
+    <li>31</li>
+    </ol>
+    </section>
+    <section>
+    <h2>Luty 2024</h2>
+    <ul>
+    <li>Mon</li>
+    <li>Tue</li>
+    <li>Wed</li>
+    <li>Thu</li>
+    <li>Fri</li>
+    <li>Sat</li>
+    <li>Sun</li>
+    </ul>
+    <ol>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+    <li>25</li>
+    <li>26</li>
+    <li>27</li>
+    <li>28</li>
+    </ol>
+    </section>
+    <section>
+    <h2>Marzec 2024</h2>
+    <ul>
+    <li>Mon</li>
+    <li>Tue</li>
+    <li>Wed</li>
+    <li>Thu</li>
+    <li>Fri</li>
+    <li>Sat</li>
+    <li>Sun</li>
+    </ul>
+    <ol>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+    <li>25</li>
+    <li>26</li>
+    <li>27</li>
+    <li>28</li>
+    <li>29</li>
+    <li>30</li>
+    <li>31</li>
+    </ol>
+    </section>
+    <section>
+    <h2>Kwiecień 2024</h2>
+    <ul>
+    <li>Mon</li>
+    <li>Tue</li>
+    <li>Wed</li>
+    <li>Thu</li>
+    <li>Fri</li>
+    <li>Sat</li>
+    <li>Sun</li>
+    </ul>
+    <ol>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+    <li>25</li>
+    <li>26</li>
+    <li>27</li>
+    <li>28</li>
+    <li>29</li>
+    <li>30</li>
+    </ol>
+    </section>
+    <section>
+    <h2>Maj 2024</h2>
+    <ul>
+    <li>Mon</li>
+    <li>Tue</li>
+    <li>Wed</li>
+    <li>Thu</li>
+    <li>Fri</li>
+    <li>Sat</li>
+    <li>Sun</li>
+    </ul>
+    <ol>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+    <li>25</li>
+    <li>26</li>
+    <li>27</li>
+    <li>28</li>
+    <li>29</li>
+    <li>30</li>
+    <li>31</li>
+    </ol>
+    </section>
+    <section>
+    <h2>Czerwiec 2024</h2>
+    <ul>
+    <li>Mon</li>
+    <li>Tue</li>
+    <li>Wed</li>
+    <li>Thu</li>
+    <li>Fri</li>
+    <li>Sat</li>
+    <li>Sun</li>
+    </ul>
+    <ol>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+    <li>25</li>
+    <li>26</li>
+    <li>27</li>
+    <li>28</li>
+    <li>29</li>
+    <li>30</li>
+    </ol>
+    </section>
+    <section>
+    <h2>Lipiec 2024</h2>
+    <ul>
+    <li>Mon</li>
+    <li>Tue</li>
+    <li>Wed</li>
+    <li>Thu</li>
+    <li>Fri</li>
+    <li>Sat</li>
+    <li>Sun</li>
+    </ul>
+    <ol>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+    <li>25</li>
+    <li>26</li>
+    <li>27</li>
+    <li>28</li>
+    <li>29</li>
+    <li>30</li>
+    <li>31</li>
+    </ol>
+    </section>
+    <section>
+    <h2>Sierpień 2024</h2>
+    <ul>
+    <li>Mon</li>
+    <li>Tue</li>
+    <li>Wed</li>
+    <li>Thu</li>
+    <li>Fri</li>
+    <li>Sat</li>
+    <li>Sun</li>
+    </ul>
+    <ol>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+    <li>25</li>
+    <li>26</li>
+    <li>27</li>
+    <li>28</li>
+    <li>29</li>
+    <li>30</li>
+    <li>31</li>
+    </ol>
+    </section>
+    <section>
+    <h2>Wrzesień 2024</h2>
+    <ul>
+    <li>Mon</li>
+    <li>Tue</li>
+    <li>Wed</li>
+    <li>Thu</li>
+    <li>Fri</li>
+    <li>Sat</li>
+    <li>Sun</li>
+    </ul>
+    <ol>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+    <li>25</li>
+    <li>26</li>
+    <li>27</li>
+    <li>28</li>
+    <li>29</li>
+    <li>30</li>
+    </ol>
+    </section>
+    </Article>
+</body>
+</html>
