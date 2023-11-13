@@ -99,7 +99,7 @@ Efekt powinien być zbliżony do tego powyżej, tj. elementy potomne wykraczają
 ```
  
 4.	Ustaw teraz w klasie `container flex-wrap: wrap` i jednocześnie usuń właściwość `overflow`. Jeżeli posiadamy 3 karty (jak było wyjściowo), możliwy jest następujący rezultat (zależy on od właściwości flex): 
-  
+  <br>![lab6](img/lab5v4.png)
 Jest to spowodowane tym, że ostatni element zajmie całe dostępne miejsce w kontenerze. Żeby zapobiec tego typu układowi treści można wykorzystać następujące właściwości CSS w klasie .card: 
   
 5.	Zaproponuj inne rozwiązanie powyższego problemu w oparciu o `min-width` i `max-width`, ponadto ustaw elementom globalnie równą wysokość. Alternatywne rozwiązanie powyższego problemu za pomocą grid zostanie również pokazane w dalszej części instrukcji. 
@@ -193,10 +193,10 @@ sapien ac erat tincidunt, sit amet dignissim lectus vulputate. Donec id iaculis 
 </html>
 ```
 1.	Otwórz narzędzia deweloperskie i najedź na element ul, posiadający 
-klasę navbar-links. Kliknij przycisk: <br>![lab6](img/lab5v4.png)
+klasę navbar-links. Kliknij przycisk: <br>![lab6](img/lab5v5.png)
 po czym zapoznaj się z dostępnymi właściwościami flexa klikając kolejno wszystkie opcje i obserwując ich efekt:
 
-<br>![lab6](img/lab5v5.png)
+<br>![lab6](img/lab5v6.png)
   
 3.	Wyświetl stronę na dowolnym smartfonie (w narzędziach deweloperskich). Oceń optymalność zastosowanego układu treści na tym urządzeniu.  
  
@@ -249,7 +249,7 @@ W przykładzie z zadania 2. podmień styl `.container` na:
 ```
 Generalnie nie ustawiaj `.card` właściwości min-width.  
 Przykład: 
-<br>![lab6](img/lab5v6.png)
+<br>![lab6](img/lab5v7.png)
   
 • Zmieniaj liczbę kart (od 1 do 10) i obserwuj jak system gridowy adaptuje się do sytuacji. 
 
@@ -297,15 +297,15 @@ W przykładzie wykorzystano "zmienne" w CSS (ułatwia to "zapanowanie" nad zło�
 
 Na ekranach mniejszych niż 768px zdjęcia wyświetlają się w jednej kolumnie o szerokości 400px z odstępami pomiędzy wierszami i kolumnami równym 10 px. 
 
-<br>![lab6](img/lab5v7.png)
+<br>![lab6](img/lab5v8.png)
   
 Na ekranach mniejszych niż 1200px zdjęcia wyświetlają się w dwóch kolumnach o szerokości 400px z odstępami pomiędzy wierszami i kolumnami równym 10 px. 
   
-<br>![lab6](img/lab5v8.png)
+<br>![lab6](img/lab5v9.png)
 
 Na ekranach wiekszych niż 1200px zdjęcia wyświetlają się w trzech kolumnach o szerokości 400px z odstępami pomiędzy wierszami i kolumnami równym 10 px. 
   
-<br>![lab6](img/lab5v9.png)
+<br>![lab6](img/lab5v10.png)
 
 Powiel znacznik img i sprawdź czy layout nadal jest responsywny. 
 
