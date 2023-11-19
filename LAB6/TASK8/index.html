@@ -5,73 +5,124 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kalendarz</title>
 <style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  article {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  article h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    background-color: #eeeeee;
+    padding: 10px;
+    margin-top: 0;
+  }
+
+  section {
+  display: grid;
+  /* grid-template-columns: repeat(7, 1fr); 7 dni w tygodniu */
+  gap: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  }
+
+  /* Tygodnie A */
+  article:nth-child(1) section {
+    background-color: #a2d2ff; 
+  }
+
+  /* Tygodnie B */
+  article:nth-child(2) section {
+    background-color: #ffb4a2; 
+  }
+  
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: #ddd;
+    padding: 0;
+    list-style-type: none;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  ul li {
+    padding: 5px;
+    background-color: #ddd; 
+    border-bottom: 1px solid #bbb; 
+  }
+
+  ol {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 days a week */
+  padding: 0;
+  margin: 0;
+  background-color: #ddd;
+  grid-gap: 1px; /* This creates the grid lines */
+  }
+
+  ol li {
+  padding: 10px;
+  text-align: center;
+  background-color: #fff; /* Default background for days */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  ol li::before {
+    content: attr(data-day);
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    font-size: 0.75em;
+    color: #555;
+  }
+
+  ul li, ol li {
+  padding: 5px;
+  text-align: center;
+  }
+
+
+
+  ol li:nth-child(14n+1),
+  ol li:nth-child(14n+2),
+  ol li:nth-child(14n+3),
+  ol li:nth-child(14n+4),
+  ol li:nth-child(14n+5),
+  ol li:nth-child(14n+6),
+  ol li:nth-child(14n+7) {
+    background-color: #01b5f1;
+  }
+
+  ol li:nth-child(14n+8),
+  ol li:nth-child(14n+9),
+  ol li:nth-child(14n+10),
+  ol li:nth-child(14n+11),
+  ol li:nth-child(14n+12),
+  ol li:nth-child(14n+13),
+  ol li:nth-child(14n+14) {
+    background-color: #0414f6;
+  }
+
+  @media screen and (min-width: 1200px) {
     article {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
+      grid-template-columns: 1fr 1fr;
     }
-    
-    section {
-      display: grid;
-      grid-template-columns: repeat(7, 1fr); /* 7 dni w tygodniu */
-      grid-gap: 5px;
-      margin: 10px;
-      background-color: #f0f0f0; /* kolor tła dla tygodni A */
-      padding: 10px;
-    }
-    
-    section:nth-of-type(2n) {
-      background-color: #e0e0e0; /* inny kolor tła dla tygodni B */
-    }
-    
-    ul {
-      list-style-type: none;
-      padding: 0;
-      display: grid;
-      grid-template-columns: repeat(7, 1fr); /* 7 dni w tygodniu */
-      margin: 5px 0;
-    }
-    
-    ul li {
-      background-color: #d0d0d0; /* kolor tła dla nagłówków dni */
-      padding: 5px;
-      text-align: center;
-    }
-    
-    ol {
-      list-style-type: none;
-      padding: 0;
-      display: grid;
-      grid-template-columns: repeat(7, 1fr); /* 7 dni w tygodniu */
-      grid-gap: 5px;
-    }
-    
-    ol li {
-      background-color: #c0c0c0; /* kolor tła dla dni */
-      padding: 5px;
-      text-align: center;
-    }
-    
-    @media screen and (max-width: 1200px) {
-      article {
-        flex-direction: column;
-      }
-    
-      section {
-        grid-template-columns: repeat(7, 1fr); /* 7 dni w tygodniu */
-      }
-    }
-    
-    @media screen and (max-width: 768px) {
-      section {
-        grid-template-columns: repeat(1, 400px); /* 1 kolumna o szerokości 400px */
-      }
-    }
-    </style>
+  }
+</style>
 </head>
 <body>
 <Article>
-<h2>Tydzień A</h2>
+  <h2>ROK A</h2>
 <section>
 <h2>Październik 2023</h2>
 <ul>
@@ -607,7 +658,7 @@
     </section>
     </Article>
     <Article>
-    <h2>Tydzień B</h2>
+    <h2>ROK B</h2>
     <section>
         <h2>Październik 2023</h2>
     <ul>
