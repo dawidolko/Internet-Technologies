@@ -65,7 +65,7 @@
         padding: 0px;
         }
         .aside li a {
-        color: #fff;
+        color: #000000;
         text-decoration: none;
         padding: 5px;
         }
@@ -96,10 +96,10 @@
         margin: 0px;
         }
         .main-content {
-        display: flex;
+        display: block;
         flex-direction: row;
         flex-grow: 2;
-        align-items: stretch;
+        align-items: center;
         }
         .main-section {
         display: flex;
@@ -135,6 +135,13 @@
         justify-content: space-evenly;
         padding: 0px;
         }
+        .aside-links1 {
+        display: none;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content: space-evenly;
+        padding: 0px;
+        }
         .navbar label {
         color: white;
         background-color: #8e8c8c;
@@ -148,25 +155,59 @@
         text-decoration: none;
         padding: 5px;
         }
-        .aside {
-        background-color: #8e8c8c;
-        min-width: 25%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: justify;
-        }
-        .aside ul {
+        #toggle1 {
+                display: none;
+            }
+        #toggle1:checked ~ .aside-links1 {
         display: flex;
         flex-direction: column;
         list-style-type: none;
         justify-content: space-evenly;
         padding: 0px;
         }
+        .aside {
+        display: none;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content: space-evenly;
+        padding: 0px;
+        }
+        .navbar label {
+        color: white;
+        background-color: #8e8c8c;
+        min-width: 30px;
+        text-align: center;
+        margin: 5px;
+        display: flex;
+        }
+        .aside label {
+                display: block; /* Pokaż etykietę na małych ekranach */
+                color: white;
+                background-color: #313131;
+                text-align: center;
+                cursor: pointer;
+                padding: 5px;
+                margin-top: 10px;
+            }
+
         .aside li a {
         color: #fff;
         text-decoration: none;
         padding: 5px;
+        }
+        .aside {
+        background-color: #8e8c8c;
+        min-height: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+        .aside ul {
+        display: none;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content: space-evenly;
+        padding: 0px;
         }
         .footer {
         background-color: #313131;
@@ -199,7 +240,8 @@
     <div class="main-content">
         <aside class="aside">
         <h2>Mapa strony</h2>
-        <ul>
+        <label for="toggle1">☰</label><input type="checkbox" id="toggle1">
+        <ul class="aside-links1">
             <li><a href="#">link1</a></li>
             <li><a href="#">link2</a></li>
             <li><a href="#">link3</a></li>
