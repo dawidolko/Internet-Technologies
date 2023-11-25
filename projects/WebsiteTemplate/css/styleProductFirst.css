@@ -1,0 +1,130 @@
+body {
+    font-family: 'Victor Mono', monospace;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    background: #000;
+    border-radius: 50px;
+    width: 80px;
+}
+.logo {
+    transition: transform .2s;
+}
+
+.logo:hover {
+    transform: scale(0.8);
+}
+
+.navbar {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+
+.basic-package__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.basic-package__text {
+    font-size: 2rem;
+    color: #f55;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.basic-package__text:hover {
+    transform: scale(1.2);
+}
+
+.basic-package__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.basic-package__item {
+    flex: 0 0 calc(33.33% - 2rem);
+    margin: 1rem;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.basic-package__item:hover {
+    transform: translateY(-5px);
+}
+
+.basic-package__icon {
+    font-size: 3rem;
+    color: #f55;
+    margin-bottom: 1rem;
+}
+
+.basic-package__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.basic-package__description {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+.footer {
+    border-radius: 10px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer__social {
+    margin-bottom: 1rem;
+}
+
+.footer__social-icon {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.footer__text {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.footer__link {
+    color: #f55;
+    text-decoration: underline;
+}
