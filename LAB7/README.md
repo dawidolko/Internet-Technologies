@@ -65,6 +65,8 @@ Skorzystaj z przykładu: [link](https://codepen.io/ma_suwa/pen/eYdZVML)
 ### Zadanie 5 
 Zapoznaj się z przykładem `grid_areas.html`. W przykładzie tym zdefiniowano najpierw właściwość `grid-template-areas` w kontenerze głównym, po czym kolejne elementy otrzymały odpowiednią wartość właściwości `grid-area`.  
 • W przeglądarce Firefox włącz następujący podgląd: 
+
+<br>![lab7](img/lab6v1.png)
   
 i zobacz jak strona została podzielona na obszary. 
 
@@ -88,20 +90,32 @@ Poniżej zaprezentowano prosty slider:
 Otwórz projekt wykonany w programie dla projektantów (ang. designerów) 
 
 Figma: [link](https://www.figma.com/file/GFADyBwRyEVBCC4RvtRs8Z/MOODY-STORE-E-COMMERCE-WEB-SITE-(Community)-(Copy)?type=design&node-id=0-1&mode=design&t=XU2qVkNzGdqEft9o0). Na podstawie wykonanych do tej pory zadań wykonaj responsywną implementacje projektu poniżej zaprezentowanego fragmentu strony głównej na urządzenia mobilne i desktopy:  
+
+<br>![lab7](img/lab6v2.png)
   
 Czcionkę 	Roboto 	używaną 	na 	stronie 	znajdziesz 	na 
 [link](https://fonts.google.com/specimen/Roboto?query=roboto) 
+
+<br>![lab7](img/lab6v3.png)
   
 W celu dostępu do pełnej wersji programu Figma: 
+
+<br>![lab7](img/lab6v4.png)
   
 kliknij continue with Google, po czym skorzystaj z danych logowania do MS Teams (jest to jednocześnie konto Google). 
 
 Przykładowo chcąc ustalić dokładną kolorystykę klikamy element: 
+
+<br>![lab7](img/lab6v5.png)
     
 Jeżeli interesuje nas np. zdjęcie klikamy `ctrl` i klikamy na dany element: 
+<br>![lab7](img/lab6v6.png)
   
 Użyteczny może być też skrót `ctrl + shift + e` (eksport wszystkich assetów): 
+
+<br>![lab7](img/lab6v7.png)
   
 Jeżeli użyjemy go klikając na jakiś frame: 
-  
+
+<br>![lab7](img/lab6v8.png)
  
