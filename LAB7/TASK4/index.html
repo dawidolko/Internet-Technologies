@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animowany Formularz</title>
+  <style>
+    :root {
+      --form-control-color: rebeccapurple;
+      --form-control-disabled: #959495;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #f7f7f7;
+    }
+
+    @keyframes unfold {
+      0% {
+        transform: scaleY(0);
+      }
+      100% {
+        transform: scaleY(1);
+      }
+    }
+
+    form {
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background: white;
+      width: 300px;
+      animation: unfold 0.5s ease forwards;
+      transform-origin: top;
+      overflow: hidden;
+    }
+
+    /* Reszta stylów */
+    .submit-btn {
+      font-family: system-ui, sans-serif;
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: 2px solid black;
+      border-radius: 50%;
+      background-color: white;
+      cursor: pointer;
+      outline: none;
+      transition: all 1.0s ease;
+      /* Obramowanie, powiększenie i zaokrąglenie */
+    }
+
+    .submit-btn:hover {
+      border-color: green;
+      background-color: green;
+      color: white;
+      transform: scale(1.2);
+      /* Animacja na hover */
+    }
+
+    .submit-btn:active::after {
+      content: '✓';
+      /* Znak zaznaczenia po kliknięciu */
+    }
+
+    /* Reszta kodu dla checkboxów ... */
+  </style>
+</head>
+
+<body>
+
+  <form action="">
+    <!-- Elementy formularza -->
+    <label class="form-control">
+      <input type="checkbox" name="checkbox" />
+      Checkbox
+    </label>
+
+    <label class="form-control">
+      <input type="checkbox" name="checkbox-checked" checked />
+      Checkbox - checked
+    </label>
+
+    <label class="form-control form-control--disabled">
+      <input type="checkbox" name="checkbox-disabled" disabled />
+      Checkbox Disabled
+    </label>
+
+    <label class="form-control form-control--disabled">
+      <input type="checkbox" name="checkbox-disabled-checked" checked disabled />
+      Checkbox Disabled - checked
+    </label>
+
+    <button type="submit" class="submit-btn">Wyślij</button>
+  </form>
+
+</body>
+
+</html>

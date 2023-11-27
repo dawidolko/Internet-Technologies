@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsywny Grid CSS</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: 
+        "header header header"
+        "main main sidebar"
+        "footer footer footer";
+      gap: 10px;
+    }
+
+    .header {
+      grid-area: header;
+      background-color: #8ca1af;
+    }
+
+    .main {
+      grid-area: main;
+      background-color: #b2c2d1;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      background-color: #d1dfe9;
+      overflow: hidden;
+      transition: max-height 0.3s;
+      max-height: 0;
+    }
+
+    .footer {
+      grid-area: footer;
+      background-color: #e1eff8;
+    }
+
+    /* Ukrycie checkboxa */
+    .sidebar-checkbox {
+      display: none;
+    }
+
+    /* Styl dla przełącznika sidebar */
+    .sidebar-toggle {
+      grid-area: sidebar-toggle;
+      background-color: #c2d1e1;
+      text-align: center;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .sidebar-toggle label {
+      display: block;
+      cursor: pointer;
+    }
+
+    /* Style dla rozwinięcia sidebar */
+    .sidebar-checkbox:checked ~ .container .sidebar {
+      max-height: 500px; /* Wysokość maksymalna kiedy sidebar jest rozwinięty */
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+          "header"
+          "main"
+          "sidebar-toggle"
+          "sidebar"
+          "footer";
+      }
+    }
+
+    /* Dodatkowe style dla zadania, gdzie kolumna main ma być 5 razy szersza niż sidebar */
+    @media (min-width: 601px) {
+      .container {
+        grid-template-columns: 5fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<input type="checkbox" id="sidebar-checkbox" class="sidebar-checkbox">
+<label for="sidebar-checkbox" class="sidebar-toggle">Pokaż/Zwiń pasek boczny</label>
+
+<div class="container">
+  <div class="header">Nagłówek</div>
+  <div class="main">Główna treść</div>
+  <div class="sidebar" id="sidebar">Pasek boczny</div>
+  <div class="footer">Stopka</div>
+</div>
+
+</body>
+</html>

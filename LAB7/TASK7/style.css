@@ -1,0 +1,666 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjust the padding as needed */
+}
+
+.site-name {
+    font-weight: bold;
+    font-size: 1.5rem; /* Adjust the size as needed */
+}
+
+.header-icons img {
+    margin-left: 10px; /* Space between icons */
+    cursor: pointer; /* Changes the cursor on hover */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    border-top: 1px solid #ddd; /* Top border */
+    border-bottom: 1px solid #ddd; /* Bottom border */
+}
+
+.navbar a {
+    margin: 0 15px; /* Space between navbar items */
+    text-decoration: none; /* Removes underline from links */
+    color: #000; /* Text color for navbar items */
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline; /* Underline on hover for visual feedback */
+}
+
+nav img {
+    margin-right: 10px;
+}
+
+.icon-bar {
+    display: flex;
+    justify-content: space-around; /* Rozmieszcza ikony równomiernie */
+    padding: 20px 0; /* Dodatkowa przestrzeń dookoła */
+    background-color: #f8f8f8; /* Tło sekcji ikon, dostosuj kolor do swoich potrzeb */
+}
+
+.icon-bar a img {
+    width: 20px; /* Dostosuj szerokość ikon */
+    height: auto; /* Zachowaj proporcje ikon */
+}
+
+.promo-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #DBD0CC; /* Kolor tła sekcji */
+    padding: 20px; /* Odstępy wewnętrzne */
+}
+
+.promo-image {
+    width: 594px; /* Szerokość obrazu */
+    height: 446px; /* Wysokość obrazu */
+}
+
+.promo-text {
+    max-width: 465px; /* Maksymalna szerokość tekstu */
+}
+
+.promo-text h2,
+.promo-text p,
+.promo-text h1 {
+    color: #A86A3D; /* Kolor tekstu */
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid #A86A3D; /* Kolor obramowania */
+    color: #A86A3D; /* Kolor tekstu */
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #A86A3D; /* Kolor tła przycisku przy najechaniu */
+    color: #fff;
+}
+
+.social-icons img {
+    margin-left: 10px;
+}
+
+.main-section, .products {
+    padding: 20px;
+}
+
+footer {
+    background-color: #323334; /* Main background color */
+    text-align: center;
+    padding: 10px 0; /* Top and bottom padding */
+}
+
+.footer-container {
+    width: 100%;
+    margin: 0 auto; /* Centers the container */
+}
+
+.main-section {
+    padding: 20px;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Odstępy między produktami */
+}
+
+.product-item {
+    flex-basis: calc(50% - 20px); /* Szerokość dla dwóch produktów w linii, odjęcie gap */
+    display: flex;
+    align-items: center; /* Wyrównanie elementów pionowo */
+    background-color: #fff; /* Domyślne tło dla produktu */
+    float: left;
+    margin: 10px 0;
+    border: 1px solid #eaeaea;
+}
+
+.product-item img {
+    margin: 10px;
+    max-width: 100%; /* Obrazy produktów responsywne */
+    height: auto;
+}
+
+.product-description {
+    padding: 10px; /* Dodaje odstępy wokół opisu produktu */
+}
+
+.product-content {
+    flex-basis: 50%;
+    padding-left: 20px; /* Odstęp między obrazkiem a tekstem */
+    text-align: left; /* Wyrównanie tekstu do lewej */
+}
+
+.details-button {
+    display: block; /* Przycisk w bloku, aby zajął całą dostępną szerokość */
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #000;
+    color: #000;
+    background-color: #fff;
+    margin: 10px auto; /* Automatyczne marginesy centrują przycisk poziomo */
+    cursor: pointer;
+}
+
+.details-button:hover {
+    display: block; /* Przycisk w bloku, aby zajął całą dostępną szerokość */
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #000;
+    color: #000;
+    background-color: #464646;
+    margin: 10px auto; /* Automatyczne marginesy centrują przycisk poziomo */
+    cursor: pointer;
+}
+
+.product-grid1 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  .product-grid2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+
+  .product-item1 {
+    position: relative;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    width: 200px; /* Adjust as needed */
+  }
+  
+  .product-item1 img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .price-rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 150px;
+    width: 20px;
+  }
+
+  .h3{
+    font-weight: bold;
+  }
+
+  .price{
+    font-weight: bold;
+  }
+
+  
+  .product-item1 img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0; /* Nakładka zaczyna się od górnej krawędzi */
+    left: 0; /* Nakładka zaczyna się od lewej krawędzi */
+    right: 0; /* Nakładka rozciąga się do prawej krawędzi */
+    bottom: 0; /* Nakładka rozciąga się do dolnej krawędzi */
+    background: rgba(0, 0, 0, 0.5); /* Półprzezroczyste tło */
+    color: white;
+    padding: 20px; /* Odstęp wewnątrz nakładki */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrowanie zawartości w pionie */
+    align-items: center; /* Centrowanie zawartości w poziomie */
+  }
+  
+  .text h3 {
+    margin-bottom: 15px; /* Odstęp między nagłówkiem a paragrafem */
+  }
+  
+  .details-button {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);;
+    border: 1px solid white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block; /* Aby można było zastosować padding */
+    margin-top: 15px; /* Odstęp między tekstem a przyciskiem */
+  }
+  
+  .product-item4 {
+    position: relative;
+    width: auto; /* Szerokość twojego zdjęcia */
+    height: auto; /* Wysokość twojego zdjęcia */
+    margin: 0 auto; /* Centrowanie */
+  }
+  
+  .product-item4 img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .info-box {
+    position: absolute;
+    top: 50%; /* Środek kontenera w pionie */
+    left: 15%; /* Odległość od lewej krawędzi */
+    transform: translateY(-50%); /* Centrowanie w pionie */
+    width: 300px; /* Szerokość pola z informacjami */
+    background: rgba(255, 255, 255, 0.9); /* Półprzezroczyste białe tło */
+    padding: 20px; /* Wewnętrzny odstęp */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Delikatny cień */
+  }
+  
+  .info-box h2 {
+    margin-bottom: 10px; /* Odstęp między nagłówkiem a ceną */
+  }
+  
+  .price2 {
+    font-weight: bold;
+    margin-bottom: 10px; /* Odstęp między ceną a opisem */
+  }
+  
+  .old-price {
+    text-decoration: line-through; /* Przekreślenie ceny */
+    font-weight: normal;
+    margin-left: 10px; /* Odstęp między cenami */
+  }
+  
+  .details-button2 {
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block; /* Aby można było zastosować padding */
+    margin-top: 10px; /* Odstęp między opisem a przyciskiem */
+  }
+  .details-button2:hover {
+    background-color: #171718;
+    color: white;
+  }
+ 
+  .top-rated-title-container {
+    text-align: left;
+    padding-left: 20px; 
+  }
+  
+  .top-rated-title {
+    font-size: 24px;
+    display: inline-block; /* Aby padding zadziałało na element inline */
+     margin-top: 0; /* Jeśli potrzebujesz usunąć domyślny margines górny */
+     margin-bottom: 20px;
+  }
+  
+  .top-rated-grid {
+    display: flex;
+    justify-content: space-around; /* Zapewnia równomierne rozmieszczenie produktów */
+    flex-wrap: wrap;
+    margin: 0 auto; /* Centrowanie siatki produktów */
+    max-width: 1200px;
+  }
+  
+  .top-rated-item {
+    flex: 1 0 30%; /* Ustawienie szerokości dla produktów, flex-grow: 1 pozwala na rozciągnięcie */
+    display: flex; /* Dla umieszczenia obrazu i informacji obok siebie */
+    align-items: flex-start; /* Wycentrowanie elementów w pionie na górze */
+    flex-direction: row; /* Elementy ułożone w pionie */
+    flex-basis: calc(33.333% - 20px);
+    margin-right: 10px; /* Aby zachować odstęp między produktami */
+    margin-bottom: 20px;
+    width: calc(33.333% - 20px);
+  }
+  
+  .top-rated-item img {
+    max-width: 100px; /* Maksymalna szerokość obrazu, dostosuj zgodnie z potrzebami */
+    margin-right: 10px; /* Odstęp między obrazem a informacjami */
+  }
+  
+  .top-rated-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    
+}
+  
+  .top-rated-price-stars {
+    display: flex;
+    align-items: center;
+  }
+  
+  .top-rated-price {
+    font-weight: bold;
+    margin-right: 10px; /* Odstęp między ceną a gwiazdkami */
+  }
+  
+  .top-rated-stars img {
+    width: auto; /* Aby zapobiec rozciąganiu gwiazdek */
+    height: auto; /* Aby zachować proporcje gwiazdek */
+    margin-right: 2px; /* Małe odstępy między gwiazdkami */
+  }
+  
+  .load-more-container {
+    text-align: center; /* Centrowanie przycisku */
+    margin: 20px 0; /* Odstępy górny i dolny */
+  }
+  
+  .load-more-btn {
+    background-color: #000; /* Czarny kolor tła */
+    color: #fff; /* Biały kolor tekstu */
+    border: none;
+    padding: 10px 20px; /* Wewnętrzny odstęp */
+    cursor: pointer; /* Kursor wskazujący */
+  }
+  
+  .load-more-container {
+    text-align: center; /* Centrowanie przycisku */
+    margin: 20px 0; /* Odstępy górny i dolny */
+}
+
+.load-more-btn {
+    background-color: #000; /* Czarny kolor tła */
+    color: #fff; /* Biały kolor tekstu */
+    border: none;
+    padding: 10px 20px; /* Wewnętrzny odstęp */
+    cursor: pointer; /* Kursor wskazujący */
+}
+
+.newsletter-signup-section {
+    display: flex;
+    justify-content: flex-end; /* Wyrównanie do prawej strony */
+    margin: 20px 0; /* Odstępy górny i dolny */
+    margin-left: 20px;
+}
+
+.newsletter-signup-container {
+    width: 100%; /* Określa szerokość kontenera formularza */
+}
+
+.newsletter-content {
+    text-align: left; /* Wyrównanie tekstu do prawej strony */
+}
+
+.newsletter-title {
+    font-size: 24px; /* Rozmiar czcionki dla tytułu */
+    margin-bottom: 5px; /* Odstęp między tytułem a opisem */
+}
+
+.newsletter-description {
+    margin-bottom: 20px; /* Odstęp między opisem a formularzem */
+}
+
+.newsletter-form {
+    display: flex;
+    margin-right: 20px;
+    justify-content: flex-end; /* Wyrównanie formularza do prawej strony */
+    float: right; /* Przycisk po prawej stronie */
+}
+
+.newsletter-input {
+    padding: 10px;
+    border: 1px solid #ccc; /* Szary obramowanie */
+}
+
+.newsletter-submit-btn {
+    background-color: #aa0000; /* Biały kolor tła */
+    border: 1px solid #050505; /* Szary obramowanie */
+    cursor: pointer; /* Kursor wskazujący */
+}
+
+.newsletter-submit-btn img {
+    width: 20px; /* Rozmiar ikony wysyłania */
+    height: auto; /* Automatyczna wysokość */
+}
+
+  
+
+footer {
+    background-color: #323334;
+    color: #fff;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    width: 23%; /* Aproksymacja 1/4 szerokości kontenera z uwzględnieniem paddingu/marginesów */
+    margin-bottom: 20px; /* Dla responsywności */
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+}
+
+.footer-column p,
+.footer-column ul,
+.footer-column li {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-social-icons {
+    display: flex;
+    justify-content: left; /* Wyśrodkowanie ikon poziomo /
+    align-items: center;
+    margin-bottom: 20px; / Dla responsywności */
+}
+    
+.footer-social-icons a {
+    display: inline-block;
+    margin: 0 20px; /* Zwiększone odstępy między ikonami */
+}
+    
+.footer-social-icons img {
+    width: 24px;
+    height: auto;
+    transition: 0.3s ease;
+}
+    
+.footer-social-icons img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+    
+.footer-bottom p {
+    font-size: 0.875rem;
+}
+
+.copyright{
+    background-color: #171718; 
+    padding: 10px 0;
+}
+
+.footer-bottom {
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+/* Zapytania medialne dla ekranów mniejszych niż 450px */
+@media only screen and (max-width: 450px) {
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar {
+        display: none; 
+    }
+
+    /* Stylizacja przycisku menu hamburger */
+    .header-top .menu-toggle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .header-top .menu-toggle img {
+        margin-left: 10px; /* Odstępy między ikonami */
+    }
+
+    /* Ukryj niektóre ikony z paska górnego */
+    .header-top .header-icons img:not(:nth-child(2)):not(:last-child) {
+        display: none;
+    }
+
+    /* Stylizacja rozwijanego menu */
+    .mobile-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobile-menu a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    #toggle- {
+        display: none;
+        border: 0px;
+    }
+
+    /* Pokaż menu po kliknięciu na ikonę menu (hamburger) */
+    .menu-toggle.active + .mobile-menu {
+        display: flex;
+    }
+
+    /* Ukryj niektóre linki w pasku nawigacyjnym */
+    .navbar a:not(:first-child):not(:last-child) {
+        display: none;
+    }
+
+    /* Ukryj niektóre elementy w stopce */
+    .footer-column {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    /* Ukryj linki w stopce oprócz pierwszej i ostatniej kolumny */
+    .footer-column:not(:first-child):not(:last-child) {
+        display: none;
+    }
+
+    /* Zmień układ sekcji promocyjnej */
+    .promo-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .promo-image {
+        width: 100%;
+        height: auto;
+    }
+    .promo-text {
+        max-width: 100%;
+    }
+
+    /* Zmień układ siatki produktów */
+    .product-grid, .product-grid1, .product-grid2 {
+        flex-direction: column;
+    }
+    .product-item, .product-item1 {
+        width: 100%;
+        margin: 0 0 20px;
+    }
+
+    /* Zmień układ przycisku 'VIEW DETAILS' */
+    .details-button, .details-button2 {
+        width: auto;
+        margin: 10px;
+    }
+
+    .icon-bar {
+        display: none;
+    }
+
+    /* Zmień układ i styl formularza newslettera */
+    .newsletter-signup-section {
+        margin: 20px;
+    }
+    .newsletter-signup-container {
+        width: auto;
+    }
+    .newsletter-form {
+        width: 100%;
+    }
+
+    /* Zmień układ ikon mediów społecznościowych */
+    .footer-social-icons {
+        justify-content: center;
+    }
+    .footer-social-icons a {
+        margin: 0 10px;
+    }
+
+    .load-more-btn{
+        display: none;
+    }
+
+    /* Zmień układ sekcji 'TOP RATING' */
+    .top-rated-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .top-rated-item img {
+        width: auto;
+        margin-right: 20px;
+    }
+
+    /* Zmień układ przycisku 'LOAD MORE PRODUCTS' */
+    .load-more-btn {
+        width: 100%;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJEKT STRONY - ZADANIE 7</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="icon.png">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <label for="menu-toggle">☰</label><input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <span class="site-name">MOODY STUDIO</span>
+            <div class="header-icons">
+                <img src="images/lupa.svg" alt="Search">
+                <img src="images/ludzik.svg" alt="User">
+                <img src="images/serce.svg" alt="Favourites">
+                <img src="images/koszyk.svg" alt="koszyk">
+            </div>
+        </div>
+        <nav class="mobile-menu">
+            <nav class="navbar">
+                <a href="/home">HOME</a>
+                <a href="/store">STORE</a>
+                <a href="/accessories">ACCESSORIES</a>
+                <a href="/brand">BRAND</a>
+                <a href="/pages">PAGES</a>
+                <a href="/aboutUs">ABOUT US</a>
+                <a href="/news">NEWS</a>
+                <a href="/contactUs">CONTACT US</a>
+            </nav>
+         </nav>
+
+        <div class="icon-bar">
+            <a href="/dostawa">
+                <img src="images/dostawczak.svg" alt="Dostawa">
+            </a>
+            <a href="/koszyk">
+                <img src="images/card.svg" alt="Karta">
+            </a>
+            <a href="/kontakt">
+                <img src="images/sluchawki.svg" alt="Kontakt">
+            </a>
+        </div>
+        
+        <div class="promo-section">
+            <img src="images/krzeslo.svg" alt="Krzesło" class="promo-image">
+            <div class="promo-text">
+                <h2>HOT DEALS THIS WEEK</h2>
+                <p>SALE UP 50%</p>
+                <h1>MODERN FURNITURE</h1>
+                <button type="button" onclick="location.href='/sale';">VIEW NOW</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="main-section">
+            <div class="product-grid">
+                <div class="product-item" style="background-color: #FAFAFA;">
+                    <div class="product-image">
+                            <img src="images/p_krzeslo.svg" alt="Krzesło Vintage">
+                        </div>
+                        <div class="product-content">
+                            <h3>IVY VINTAGE CHAIR</h3>
+                            <a href="/krzeslo-vintage" class="details-button">VIEW DETAILS</a>
+                        </div>
+                    </div>
+                    <div class="product-item" style="background-color: #EAE9E7;">
+                        <div class="product-image">
+                            <img src="images/p_wazon.svg" alt="Large Terracotta Vase">
+                        </div>
+                        <div class="product-content">
+                            <h3>LARGE TERRACOTTA VASE</h3>
+                            <a href="/vase" class="details-button">VIEW DETAILS</a>
+                        </div>
+                    </div>
+                </div>
+            <div class="product-grid1">
+                <!-- Product 0 -->
+                <div class="product-item1">
+                    <img src="images/p_wazon2.svg" alt="Wazon">
+                    <div class="overlay">
+                      <div class="text">
+                        <h3>DECOR</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                        <a href="#" class="details-button">VIEW ALL</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                <!-- Product 1 -->
+                <div class="product-item1">
+                  <img src="images/p_recznik.svg" alt="Linen Beach Towel">
+                  <h3>Linen Beach Towel</h3>
+                  <div class="price-rating">
+                    <span class="price">30$</span>
+                    <span class="rating"><img src="images/gwiazda_zolta.svg" alt="Promocja">
+                        <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                        <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                        <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                        <img src="images/gwiazda_szara.svg" alt="Promocja">
+                    </span>
+                  </div>
+                </div>
+              
+                <!-- Product 2 -->
+                <div class="product-item1">
+                  <img src="images/p_pudlo.svg" alt="Square Clear Glass Box">
+                  <h3>Square Clear Glass Box</h3>
+                  <div class="price-rating">
+                    <span class="price">30$</span>
+                    <span class="rating"><img src="images/gwiazda_zolta.svg" alt="Promocja">
+                        <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                        <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                        <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                        <img src="images/gwiazda_szara.svg" alt="Promocja">
+                    </span>
+                  </div>
+                </div>
+              
+                <!-- Product 3 -->
+                <div class="product-item1">
+                  <img src="images/p_talerz.svg" alt="4-pack Small Ceramic Plates">
+                  <h3>4-pack Small Ceramic Plates</h3>
+                  <div class="price-rating">
+                    <span class="price">30$</span>
+                    <span class="rating"><img src="images/gwiazda_zolta.svg" alt="Promocja">
+                        <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                        <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                        <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                        <img src="images/gwiazda_szara.svg" alt="Promocja">
+                    </span>
+                  </div>
+                </div>
+            </div>
+            <div class="product-grid2">
+                <!-- Product 4 -->
+                <div class="product-item1">
+                    <img src="images/p_pudelko.svg" alt="pudelko">
+                    <h3>4-pack Small Ceramic Plates</h3>
+                    <div class="price-rating">
+                      <span class="price">30$</span>
+                      <span class="rating"><img src="images/gwiazda_zolta.svg" alt="Promocja">
+                          <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                          <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                          <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                          <img src="images/gwiazda_szara.svg" alt="Promocja">
+                      </span>
+                    </div>
+                  </div>
+                  <!-- Product 5 -->
+                  <div class="product-item1">
+                    <img src="images/p_tacka.svg" alt="tacka">
+                    <h3>4-pack Small Ceramic Plates</h3>
+                    <div class="price-rating">
+                      <span class="price">30$</span>
+                      <span class="rating"><img src="images/gwiazda_zolta.svg" alt="Promocja">
+                          <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                          <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                          <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                          <img src="images/gwiazda_szara.svg" alt="Promocja">
+                      </span>
+                    </div>
+                  </div>
+                  <!-- Product 6 -->
+                  <div class="product-item1">
+                    <img src="images/p_koszyk.svg" alt="koszyk">
+                    <h3>4-pack Small Ceramic Plates</h3>
+                    <div class="price-rating">
+                      <span class="price">30$</span>
+                      <span class="rating"><img src="images/gwiazda_zolta.svg" alt="Promocja">
+                          <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                          <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                          <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                          <img src="images/gwiazda_szara.svg" alt="Promocja">
+                      </span>
+                    </div>
+                  </div>
+                  <!-- Product 7 -->
+                  <div class="product-item1">
+                    <img src="images/p_torba.svg" alt="torba">
+                    <div class="overlay">
+                      <div class="text">
+                        <h3>BOHO CHIC</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                        <a href="#" class="details-button">VIEW ALL</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="product-item4">
+                <img src="images/lozko.svg" alt="Bedroom">
+                <div class="info-box">
+                  <h2>BEDSHEET SETS</h2>
+                  <p class="price2">$50.00 <span class="old-price">$200.00</span></p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, et do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <a href="#" class="details-button2">VIEW DETAILS</a>
+                </div>
+              </div>
+              
+    </section>
+
+  
+    <section class="top-rated-products">
+        <div class="top-rated-title-container">
+        <h2 class="top-rated-title">TOP RATING</h2>
+        </div>
+        <div class="top-rated-grid">
+            <div class="top-rated-item">
+                <img src="images/g_patera.svg" alt="Product Name">
+                <div class="top-rated-info">
+                <h3 class="top-rated-product-name">Tray with Foot</h3>
+                    <div class="top-rated-price-stars">
+                        <span class="top-rated-price">30$</span>
+                        <span class="top-rated-stars"><img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_szara.svg" alt="Promocja"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="top-rated-item">
+                <img src="images/g_poduszka.svg" alt="Product Name">
+                <div class="top-rated-info">
+                <h3 class="top-rated-product-name">Twill Seat Cushion</h3>
+                    <div class="top-rated-price-stars">
+                        <span class="top-rated-price">30$</span>
+                        <span class="top-rated-stars"><img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_szara.svg" alt="Promocja"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="top-rated-item">
+                <img src="images/g_szklanka.svg" alt="Product Name">
+                <div class="top-rated-info">
+                <h3 class="top-rated-product-name">Fluted Bevarage Glass</h3>
+                    <div class="top-rated-price-stars">
+                        <span class="top-rated-price">30$</span>
+                        <span class="top-rated-stars"><img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_szara.svg" alt="Promocja"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="top-rated-item">
+                <img src="images/g_szklanka.svg" alt="Product Name">
+                <div class="top-rated-info">
+                <h3 class="top-rated-product-name">Ceramic Egg Cup</h3>
+                    <div class="top-rated-price-stars">
+                        <span class="top-rated-price">30$</span>
+                        <span class="top-rated-stars"><img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_szara.svg" alt="Promocja"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="top-rated-item">
+                <img src="images/g_male_pudelko.svg" alt="Product Name">
+                <div class="top-rated-info">
+                <h3 class="top-rated-product-name">Small Bamboo Box</h3>
+                    <div class="top-rated-price-stars">
+                        <span class="top-rated-price">30$</span>
+                        <span class="top-rated-stars"><img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_szara.svg" alt="Promocja"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="top-rated-item">
+                <img src="images/g_poj_na_sztucce.svg" alt="Product Name">
+                <div class="top-rated-info">
+                <h3 class="top-rated-product-name">Metal Cutlery Basket</h3>
+                    <div class="top-rated-price-stars">
+                        <span class="top-rated-price">30$</span>
+                        <span class="top-rated-stars"><img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_szara.svg" alt="Promocja"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="top-rated-item">
+                <img src="images/g_szklanki.svg" alt="Product Name">
+                <div class="top-rated-info">
+                <h3 class="top-rated-product-name">4-pack Ceramic Cups</h3>
+                    <div class="top-rated-price-stars">
+                        <span class="top-rated-price">30$</span>
+                        <span class="top-rated-stars"><img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_szara.svg" alt="Promocja"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="top-rated-item">
+                <img src="images/g_serwetka.svg" alt="Product Name">
+                <div class="top-rated-info">
+                <h3 class="top-rated-product-name">2-pack Linen Napkins</h3>
+                    <div class="top-rated-price-stars">
+                        <span class="top-rated-price">30$</span>
+                        <span class="top-rated-stars"><img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_szara.svg" alt="Promocja"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="top-rated-item">
+                <img src="images/g_miska.svg" alt="Product Name">
+                <div class="top-rated-info">
+                <h3 class="top-rated-product-name">Glazed Stoneware Plate</h3>
+                    <div class="top-rated-price-stars">
+                        <span class="top-rated-price">30$</span>
+                        <span class="top-rated-stars"><img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_zolta.svg" alt="Promocja">
+                            <img src="images/gwiazda_szara.svg" alt="Promocja"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="load-more-container">
+            <button class="load-more-btn">LOAD MORE PRODUCTS</button>
+        </div>
+        
+        <div class="newsletter-signup-section">
+            <div class="newsletter-signup-container">
+                <div class="newsletter-content">
+                    <h2 class="newsletter-title">SIGN UP FOR THE NEWSLETTER</h2>
+                    <p class="newsletter-description">Subscribe for the latest stories and promotions</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email address">
+                    <button type="submit" class="newsletter-submit-btn">
+                        <img src="images/telefon.svg" alt="Send">
+                    </button>
+                </form>
+            </div>
+        </div>
+  
+        
+    </section>
+          
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>URBAN OUTFITTERS</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <h5>121 King Street, Melbourne 3000</h5>
+                <h5>+61 3 8376 6284</h5>
+                <h5>contact@urbanoutfitters.com</h5>
+            </div>
+            <div class="footer-column">
+                <h3>SHOPPING</h3>
+                <ul>
+                    <li><a href="/cart">Your cart</a></li>
+                    <li><a href="/orders">Your orders</a></li>
+                    <li><a href="/compare">Compared items</a></li>
+                    <li><a href="/wishlist">Wishlist items</a></li>
+                    <li><a href="/shipping">Shipping details</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>MORE LINK</h3>
+                <ul>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/gift-center">Gift Center</a></li>
+                    <li><a href="/guides">Buying Guides</a></li>
+                    <li><a href="/new-arrivals">New Arrivals</a></li>
+                    <li><a href="/clearance">Clearance</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>FROM THE BLOG</h3>
+                <p>26 May</p>
+                <p></p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>3 comments</p>
+                <hr>
+                <p>27 May</p> 
+                <p></p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>3 comments</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-social-icons">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <img src="images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+            <img src="images/twitter.svg" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <img src="images/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+            <img src="images/youtube.svg" alt="YouTube">
+            </a>
+        </div>
+        </div>
+            <div class="copyright">
+                <p>Urban Outfitters © – All rights reserved</p>
+            </div>
+        </footer>
+    
+</body>
+</html>
