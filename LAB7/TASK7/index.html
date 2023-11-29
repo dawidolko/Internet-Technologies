@@ -15,13 +15,14 @@
 <body>
     <header>
         <div class="header-top">
-            <label class="toggle-menu" for="menu-toggle">☰</label><input type="checkbox" id="menu-toggle">
             <span class="site-name">MOODY STUDIO</span>
             <div class="header-icons">
-                <img src="images/lupa.svg" alt="Search">
+                <img id="hidden" src="images/lupa.svg" alt="Search">
                 <img src="images/ludzik.svg" alt="User">
-                <img src="images/serce.svg" alt="Favourites">
+                <img id="hidden" src="images/serce.svg" alt="Favourites">
                 <img src="images/koszyk.svg" alt="koszyk">
+                <label class="toggle-menu" for="menu-toggle">☰</label>
+                <!-- <input id="menu-toggle" type="checkbox"> -->
             </div>
         </div>
         <nav class="mobile-menu">
@@ -51,14 +52,28 @@
             </a>
         </div>
 
-        <div class="promo-section">
-            <img src="images/krzeslo.svg" alt="Krzesło" class="promo-image">
-            <div class="promo-text">
-                <h2>HOT DEALS THIS WEEK</h2>
-                <p>SALE UP 50%</p>
-                <h1>MODERN FURNITURE</h1>
-                <button type="button" onclick="location.href='/sale';">VIEW NOW</button>
+        <div class="slider-trzeci">
+            <div class="slides-trzeci">
+                <div id="slide-3-trzeci" class="slide-trzeci">
+                    <div class="promo-section">
+                        <img src="images/krzeslo.svg" alt="Krzesło" class="promo-image">
+                        <div class="promo-text">
+                            <h2>HOT DEALS THIS WEEK</h2>
+                            <p>SALE UP 50%</p>
+                            <h1>MODERN FURNITURE</h1>
+                            <button type="button" onclick="location.href='/sale';">VIEW NOW</button>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="slider-nav-trzeci">
+                <a href="#slide-1-trzeci"></a>
+                <a href="#slide-2-trzeci"></a>
+                <a href="#slide-3-trzeci"></a>
+                <a href="#slide-4-trzeci"></a>
+                <a href="#slide-5-trzeci"></a>
+            </div>
+        </div>
         </div>
 
         <h1>HOT DEALS</h1>
@@ -507,13 +522,14 @@
                 </div>
             </div>
             <div class="container">
-                <div class="horizontal-bar"></div> <!-- The horizontal bar -->
                 <div class="slider-nav-drugi">
                     <!-- The slider navigation (dots) -->
                     <!-- Navigation dots -->
                     <a href="#slide-1-drugi" class="dot"></a>
                     <a href="#slide-2-drugi" class="dot"></a>
                     <a href="#slide-3-drugi" class="dot"></a>
+                    <a href="#slide-4-drugi" class="dot"></a>
+                    <a href="#slide-5-drugi" class="dot"></a>
                 </div>
             </div>
         </div>
