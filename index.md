@@ -12,5 +12,7 @@ redirect_to: java.dawidolko.pl
 
 |LP.  | Template Name  | Live Example |
 |-----|----------------|--------------|
-|  01  | 3-col-portfolio	                                                  |[live example](https://templateswebsite.dawidolko.pl/3-col-portfolio/)|	                                                  													      
+|  01  | 3-col-portfolio	                                                  |[live example](https://templateswebsite.dawidolko.pl/3-col-portfolio/)|	
+
+|test - [test](https://techint.dawidolko.pl/LAB7/TASK7)|
 
