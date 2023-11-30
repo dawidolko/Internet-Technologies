@@ -1,10 +1,3 @@
----
-redirect_to: java.dawidolko.pl
----
-
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&pause=1000&color=000000&random=false&width=435&lines=Technologie+Internetowe)](https://github.com/dawidolko/Internet-Technologies)
-<br>![Technologie](image/icon.png)
-
 # Internet-Technologies
 
 ## **Description:**
@@ -33,13 +26,3 @@ To get started with web technologies, you'll need the right development tools, a
 If you want to contribute to this repository, you can report issues, create pull requests or share your own projects related to web technologies. Any contributions are welcome!
 
 If you have any questions or need help, please contact me via email or GitHub.
-
-<br/>
-
-## Table of contents
-
-
-|LP.  | Template Name  | Live Example |
-|-----|----------------|--------------|
-|  01  | 3-col-portfolio	                                                  |[live example](https://templateswebsite.dawidolko.pl/3-col-portfolio/)|	                                                  													      
-
