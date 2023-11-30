@@ -26,3 +26,13 @@ To get started with web technologies, you'll need the right development tools, a
 If you want to contribute to this repository, you can report issues, create pull requests or share your own projects related to web technologies. Any contributions are welcome!
 
 If you have any questions or need help, please contact me via email or GitHub.
+
+<br/>
+
+## Table of contents
+
+
+|LP.  | Template Name  | Live Example |
+|-----|----------------|--------------|
+|  01  | 3-col-portfolio	                                                  |[live example](https://templateswebsite.dawidolko.pl/3-col-portfolio/)|	                                                  													      
+
