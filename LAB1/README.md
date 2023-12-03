@@ -42,3 +42,5 @@ Termin oddania projektu to [data terminu]. Upewnij się, że Twój projekt jest 
 ## Podsumowanie
 
 To laboratorium to doskonała okazja do nauki podstaw HTML oraz tworzenia swojej pierwszej strony internetowej. Pamiętaj, że HTML to tylko pierwszy krok w budowaniu stron internetowych, ale stanowi solidny fundament do dalszego rozwoju w dziedzinie web developmentu. Powodzenia!
+
+# [PODGLĄD STRONY](https://techint.dawidolko.pl/LAB1/)
