@@ -11,7 +11,6 @@ layout: default
 
 ## Laboratoria:
 
-### [Lab0](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB0) - Wstęp i Stronka z hobby
 ### [Lab1](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB1) - Tworzenie Strony HTML z Podstawowymi Znacznikami
 ### [Lab2](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB2) - Podstawy HTML5
 ### [Lab3](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB3) - Formularze
