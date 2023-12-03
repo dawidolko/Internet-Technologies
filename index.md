@@ -26,10 +26,10 @@ layout: default
 
 ## Kolokwia:
 
-### [Kolokwium 1 version 1](Kolokwium1v1/README.md) - Kolokwium 1 ver.1
-### [Kolokwium 1 version 2](Kolokwium1v2/README.md) - Kolokwium 1 ver.2
-### [Kolokwium 1 version 3](Kolokwium1v3/README.md) - Kolokwium 1 ver.3
-### [Kolokwium 1 version 4](Kolokwium1v4/README.md) - Kolokwium 1 ver.4
-### [Kolokwium 1 version 5](Kolokwium1v5/README.md) - Kolokwium 1 ver.5
+### [Kolokwium 1 version 1](KOLOKWIUM/Kolokwium1v1/README.md) - Kolokwium 1 ver.1
+### [Kolokwium 1 version 2](KOLOKWIUM/Kolokwium1v2/README.md) - Kolokwium 1 ver.2
+### [Kolokwium 1 version 3](KOLOKWIUM/Kolokwium1v3/README.md) - Kolokwium 1 ver.3
+### [Kolokwium 1 version 4](KOLOKWIUM/Kolokwium1v4/README.md) - Kolokwium 1 ver.4
+### [Kolokwium 1 version 5](KOLOKWIUM/Kolokwium1v5/README.md) - Kolokwium 1 ver.5
 
-### [Kolokwium 2](Kolokwium2v1/README.md) - Kolokwium 2
+### [Kolokwium 2](KOLOKWIUM/Kolokwium2v1/README.md) - Kolokwium 2
