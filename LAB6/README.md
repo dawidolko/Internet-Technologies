@@ -220,7 +220,8 @@ po czym zapoznaj się z dostępnymi właściwościami flexa klikając kolejno ws
         } 
     }
 ```
- ```html
+
+```html
 <nav class="navbar"> 
         <label for="toggle">☰</label><input type="checkbox" id="toggle"> 
         <ul class="navbar-links"> 
@@ -230,6 +231,7 @@ po czym zapoznaj się z dostępnymi właściwościami flexa klikając kolejno ws
         </ul> 
 </nav>
 ```
+
  PS. Oczywiście poza media query dla urządzeń mobilnych ustawiamy:
 ```html
 #toggle { 
