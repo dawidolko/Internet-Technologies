@@ -28,7 +28,7 @@ Są one jak widać niezależne od wartości liczbowych np. w pikselach jednocze�
 
 Jednocześnie należy dodać, że te 2 jednostki w praktyce i tak okazały się niewystarczające, zwłaszcza dla urządzeń mobilnych. Więcej można o tym przeczytać 	tutaj: 	[link](https://ishadeed.com/article/viewport-units/) 	, [link](https://ishadeed.com/article/new-viewport-units/) , [link](https://web.dev/blog/viewport-units?hl=pl)
  
-## [Zadanie 1.](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB6/TASK1/README.md) 
+## [Zadanie 1.](TASK1/README.md) 
 W celu interaktywnego zapoznania się z możliwościami flexboxa uruchom następującą aplikację internetową: [link](https://flexboxfroggy.com/#pl) i rozwiąż wszystkie zadania. Możesz posiłkować się poradnikiem: 
 [link](https://csstricks.com/snippets/css/a-guide-to-flexbox/). 
 
@@ -238,7 +238,7 @@ po czym zapoznaj się z dostępnymi właściwościami flexa klikając kolejno ws
 .navbar label {         display: none; 
 }
 ```
-## [Zadanie 5.](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB6/TASK5/README.md) 
+## [Zadanie 5.](TASK5/README.md) 
 W celu interaktywnego zapoznania się z możliwościami grid uruchom następującą aplikację internetową: [link](https://cssgridgarden.com/#pl) i rozwiąż wszystkie zadania. Możesz posiłkować się poradnikiem: [link](https://csstricks.com/snippets/css/complete-guide-grid/)
 
 ## [Zadanie 6.](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB6/TASK6) 
