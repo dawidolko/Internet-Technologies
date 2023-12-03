@@ -145,7 +145,7 @@ Wielokrotny wybór dla danej listy można ustawić za pomocą atrybutu multiple 
 ```
 Rozbuduj formularz o listę rozwijaną, z której możliwy będzie wybór 20 miast w Polsce. Pogrupuj miasta według województw. Możliwe jest do wyboru tylko jedno miasto. **Dwa ostatnie miasta z listy powinny nie być możliwe do wyboru.**
 
-## [Zadanie 4.](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB3/TASK4)
+## [Zadanie 4.](https://techint.dawidolko.pl/LAB3/TASK4/kontakt.html)
 Znacznik `<input>` którego atrybut type zdefiniujemy na checkbox może mieć dwa podstawowe stany: zaznaczony i niezaznaczony. **Istnieje trzeci stan "indeterminate" który jest używany do kontrolowania grupy checkboxów. Stan ten oznacza, że co najmniej jedna ale nie wszystkie dostępne opcje zostały wybrane i można go ustawić jedynie za pomocą JavaScriptu.**
 
 W kontekście checkboxów ważna jest definicja następujących atrybutów:
