@@ -11,13 +11,14 @@ layout: default
 
 ## Laboratoria:
 
+### [Lab0](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB0) - Wstęp i Stronka z hobby
 ### [Lab1](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB1) - Tworzenie Strony HTML z Podstawowymi Znacznikami
-### [Lab2](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB1) - Podstawy HTML5
-### [Lab3](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB1) - Formularze
-### [Lab4](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB1) - Podstawy CSS3
-### [Lab5](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB1) - Pozycjonowanie treści, jednostki w CSS, at-rules, funkcje CSS
-### [Lab6](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB1) - Układ strony za pomocą flexbox i grid, wstęp do RWD
-### [Lab7](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB1) - Tworzenie złożonych układów treści, RWD
+### [Lab2](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB2) - Podstawy HTML5
+### [Lab3](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB3) - Formularze
+### [Lab4](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB4) - Podstawy CSS3
+### [Lab5](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB5) - Pozycjonowanie treści, jednostki w CSS, at-rules, funkcje CSS
+### [Lab6](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB6) - Układ strony za pomocą flexbox i grid, wstęp do RWD
+### [Lab7](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB7) - Tworzenie złożonych układów treści, RWD
 
 ## Projekty:
 
