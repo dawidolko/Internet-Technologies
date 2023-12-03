@@ -48,6 +48,6 @@ This template is free to use for both personal and commercial purposes.
 
 ---
 
-For more information or to report issues, please visit the [GitHub repository](https://github.com/dawidolko/Internet-Technologies/tree/main/projects/WebsiteTemplate).
+For more information or to report issues, please visit the [GitHub repository](https://github.com/dawidolko/Internet-Technologies/tree/main/projects/ResWebsiteTemplate).
 
 
