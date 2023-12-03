@@ -240,10 +240,10 @@ po czym zapoznaj się z dostępnymi właściwościami flexa klikając kolejno ws
 .navbar label {         display: none; 
 }
 ```
-## [Zadanie 5.](TASK5/README.md) 
+## [Zadanie 5.](https://techint.dawidolko.pl/TASK5/README.md) 
 W celu interaktywnego zapoznania się z możliwościami grid uruchom następującą aplikację internetową: [link](https://cssgridgarden.com/#pl) i rozwiąż wszystkie zadania. Możesz posiłkować się poradnikiem: [link](https://csstricks.com/snippets/css/complete-guide-grid/)
 
-## [Zadanie 6.](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB6/TASK6) 
+## [Zadanie 6.](LAB6/TASK6) 
 W przykładzie z zadania 2. podmień styl `.container` na: 
 ```html
 .container {             display: grid;             grid-template-columns: 50% 50%;             grid-template-rows: auto;             gap: 10px; 
@@ -311,7 +311,7 @@ Na ekranach wiekszych niż 1200px zdjęcia wyświetlają się w trzech kolumnach
 
 Powiel znacznik img i sprawdź czy layout nadal jest responsywny. 
 
-## [Zadanie 8.](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB6/TASK8) 
+## [Zadanie 8.](https://techint.dawidolko.pl/LAB6/TASK8) 
 Skopiuj poniższy dokument a następnie używając display: grid oraz flex ostyluj dokument tak aby wyświetlał kalendarz roku akademickiego z zaznaczonymi tygodniami A oraz B w dwóch różnych kolorach. Na desktopach miesiące tygodni A oraz B są wyświetlane obok siebie.  
 ```html
 <!DOCTYPE html> 
