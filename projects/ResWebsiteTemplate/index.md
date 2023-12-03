@@ -1,5 +1,7 @@
 # Responsive Website Template Documentation
 
+## [STRONA](https://techint.dawidolko.pl/projects/ResWebsiteTemplate/home.html)
+
 ## Overview
 
 This project presents a responsive website template designed for versatility and ease of use. It features multiple HTML pages including a main landing page (`index.html`), product pages (`productFirst.html`, `productSecond.html`), a services page (`services.html`), a contact page (`contact.html`), a frequently asked questions (FAQ) page (`faq.html`), a privacy policy page (`privacy.html`), and an our products page (`ourProducts.html`). 
