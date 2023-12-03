@@ -1,5 +1,9 @@
 # Laboratorium 1 - Tworzenie Strony HTML z Podstawowymi Znacznikami
 
+## [PODSTAWOWE ZADANIA](https://techint.dawidolko.pl/LAB1/first.html) - Zadania Przedstawiające podstawy html
+## [STRONA](https://techint.dawidolko.pl/LAB1/strona.html) - Strona
+## [HOBBY](https://techint.dawidolko.pl/LAB1/hobby.html) - Hobby
+
 Witaj na pierwszych zajęciach laboratoryjnych! Na tym laboratorium będziemy zajmować się podstawami tworzenia stron internetowych przy użyciu języka HTML (HyperText Markup Language). HTML to fundament każdej strony internetowej, i to od niego zaczynamy naszą przygodę z web developmentem.
 
 ## Cel Laboratorium
@@ -42,7 +46,3 @@ Termin oddania projektu to [data terminu]. Upewnij się, że Twój projekt jest 
 ## Podsumowanie
 
 To laboratorium to doskonała okazja do nauki podstaw HTML oraz tworzenia swojej pierwszej strony internetowej. Pamiętaj, że HTML to tylko pierwszy krok w budowaniu stron internetowych, ale stanowi solidny fundament do dalszego rozwoju w dziedzinie web developmentu. Powodzenia!
-
-## [PODSTAWOWE ZADANIA](https://techint.dawidolko.pl/LAB1/first.html) - Zadania Przedstawiające podstawy html
-## [STRONA](https://techint.dawidolko.pl/LAB1/strona.html) - Strona
-## [HOBBY](https://techint.dawidolko.pl/LAB1/hobby.html) - Hobby
