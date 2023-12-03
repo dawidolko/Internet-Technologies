@@ -1,4 +1,4 @@
-# Kolokwium gr I
+# [Kolokwium gr I](https://techint.dawidolko.pl/KOLOKWIUM/Kolokwium1v5/kolokwium5/)
 ## Strona „pierwsza.html”
 ### 1.	Atrybuty strony: tło białe, marginesy dolny i prawy: 30%, dolny i lewy 30%, czcionka czerwona Verdana 15px, kursywa, niebieska
 ### 2.	Stwórz tabelę
