@@ -21,8 +21,8 @@ layout: default
 
 ## Projekty:
 
-### [Projekt 1](https://github.com/dawidolko/Internet-Technologies/tree/main/projects/ResWebsiteTemplate/README.md) - Responsive Website Template Documentation
-### [Projekt 2](https://github.com/dawidolko/Internet-Technologies/tree/main/projects/README.md) - JavaScript
+### [Projekt 1](https://techint.dawidolko.pl/projects/ResWebsiteTemplate/) - Responsive Website Template Documentation
+### [Projekt 2](projects/README.md) - JavaScript
 
 ## Kolokwia:
 
