@@ -28,11 +28,11 @@ Są one jak widać niezależne od wartości liczbowych np. w pikselach jednocze�
 
 Jednocześnie należy dodać, że te 2 jednostki w praktyce i tak okazały się niewystarczające, zwłaszcza dla urządzeń mobilnych. Więcej można o tym przeczytać 	tutaj: 	[link](https://ishadeed.com/article/viewport-units/) 	, [link](https://ishadeed.com/article/new-viewport-units/) , [link](https://web.dev/blog/viewport-units?hl=pl)
  
-## [Zadanie 1.](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB6/TASK1) 
+## [Zadanie 1.](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB6/TASK1/README.md) 
 W celu interaktywnego zapoznania się z możliwościami flexboxa uruchom następującą aplikację internetową: [link](https://flexboxfroggy.com/#pl) i rozwiąż wszystkie zadania. Możesz posiłkować się poradnikiem: 
 [link](https://csstricks.com/snippets/css/a-guide-to-flexbox/). 
 
-## [Zadanie 2.](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB6/TASK2) 
+## [Zadanie 2.](https://techint.dawidolko.pl/LAB6/TASK2/) 
 Do następującego dokumentu HTML dopisz style, aby uzyskać efekt, jak na obrazku poniżej: 
   
 <br>![lab6](img/lab5v2.png)
@@ -82,7 +82,7 @@ Wykorzystaj właściwości `flex-direction`, `gap`, `align-items`, `justify-cont
 </html>
 ```
 
-## [Zadanie 3.](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB6/TASK3) 
+## [Zadanie 3.](https://techint.dawidolko.pl/LAB6/TASK3/) 
 Do przykładu z poprzedniego zadania: 
 1.	Najpierw skopiuj jeszcze dwie karty. Jaki spowodowało to efekt? 
 2.	W klasie `.container` ustaw `max-width:500px` i jednocześnie w klasie `.card` ustaw `min-width: 200px`. 
@@ -104,7 +104,7 @@ Jest to spowodowane tym, że ostatni element zajmie całe dostępne miejsce w ko
   <br>![lab6](img/lab5v5.png)
 5.	Zaproponuj inne rozwiązanie powyższego problemu w oparciu o `min-width` i `max-width`, ponadto ustaw elementom globalnie równą wysokość. Alternatywne rozwiązanie powyższego problemu za pomocą grid zostanie również pokazane w dalszej części instrukcji. 
  
-## [Zadanie 4.](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB6/TASK4) 
+## [Zadanie 4.](https://techint.dawidolko.pl/LAB6/TASK4/) 
  
 Skopiuj następujący przykład: 
 ```html
@@ -238,7 +238,7 @@ po czym zapoznaj się z dostępnymi właściwościami flexa klikając kolejno ws
 .navbar label {         display: none; 
 }
 ```
-## [Zadanie 5.](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB6/TASK5) 
+## [Zadanie 5.](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB6/TASK5/README.md) 
 W celu interaktywnego zapoznania się z możliwościami grid uruchom następującą aplikację internetową: [link](https://cssgridgarden.com/#pl) i rozwiąż wszystkie zadania. Możesz posiłkować się poradnikiem: [link](https://csstricks.com/snippets/css/complete-guide-grid/)
 
 ## [Zadanie 6.](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB6/TASK6) 
@@ -253,7 +253,7 @@ Przykład:
   
 • Zmieniaj liczbę kart (od 1 do 10) i obserwuj jak system gridowy adaptuje się do sytuacji. 
 
-## [Zadanie 7.](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB6/TASK7) 
+## [Zadanie 7.](https://techint.dawidolko.pl/LAB6/TASK7/) 
 Zapoznaj się z poradnikiem pod poniższym linkiem. Najważniejszym elementem są właściwości i wyjaśnienie jak działają. Z lewej strony znajdują się właściwości, które stosuje się do "rodzica" natomiast po prawej do "potomka". 
 [link](https://css-tricks.com/snippets/css/complete-guide-grid/) 
 Wykorzystując wartość "grid" dla właściwości display, utwórz style dla responsywnej galerii zdjęć dla poniższego dokumentu HTML: 
