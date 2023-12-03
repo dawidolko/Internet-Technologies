@@ -114,7 +114,7 @@ Wskazówki i porady:
 
 [link](https://html.spec.whatwg.org/multipage/dom.html#kinds-of-content)
 
-## [**Zadanie 1.**](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB2/task1)
+## [**Zadanie 1.**](https://techint.dawidolko.pl/LAB2/task1)
 
 Utwórz dokument index.html (zwyczajowa nazwa głównego dokumentu HTML, automatycznie ładowana przez serwer HTTP po wpisaniu adresu URL strony internetowej), a w nim szkielet dokumentu, którego język to język polski, tytuł wygląda w następujący sposób: "Jan Kowalski – muzyka to moja pasja".
 
@@ -148,7 +148,7 @@ Na marginesie istnieje też możliwość zainstalowania dodatku, który renderuj
 
 W celu włączenia podglądu wciskamy najpierw ctrl+q a następnie po zwolnieniu tych klawiszy s.
 
-## [**Zadanie 2.**](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB2/task2)
+## [**Zadanie 2.**](https://techint.dawidolko.pl/LAB2/task2)
 
 Tag `<h1>` do `<h6>` służy do tworzenia nagłówków dla sekcji dokumentu.
 
@@ -206,7 +206,7 @@ Dodaj nowego redaktora a następnie oddziel treść dotyczącą poszczególnych 
 
 <br>![lab1](img/lab1v12.png)
 
-## [**Zadanie 3.**](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB2/task3)
+## [**Zadanie 3.**](https://techint.dawidolko.pl/LAB2/task3)
 
 Utwórz nagłówek "Najpopularniejsze artykuły" 2 poziomu.
 
@@ -262,7 +262,7 @@ Aby utworzyć listę zagnieżdżoną należy w elemencie listy zdefiniować now�
 
 [link](https://html.spec.whatwg.org/multipage/grouping-content.html#the-ul-element)
 
-## [**Zadanie 4.**](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB2/task4)
+## [**Zadanie 4.**](https://techint.dawidolko.pl/LAB2/task4)
 
 Utwórz nagłówek **"Terminarz Wydarzeń"** a następnie utwórz tabelę związaną z wydarzeniami tematycznie związanymi z tytułem strony. Przy tworzeniu tabeli należy użyć atrybutów `colspan` (scalanie kolumn) i `rowspan` (scalanie wierszy) do połączenia komórek w odpowiednich miejscach.
 Przykładowa tabela:
@@ -344,7 +344,7 @@ Przykładowa tabela:
 
 [link](https://html.spec.whatwg.org/multipage/tables.html#the-table-element)
 
-## [**Zadanie 5.**](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB2/task5)
+## [**Zadanie 5.**](https://techint.dawidolko.pl/LAB2/task5)
 Znacznik footer (stopka strony) wydziela fragment dokumentu, w którym definiujemy informacje dodatkowe takie jak dane kontaktowe, informacje o prawach autorskich, linki do innych stron, inne informacje.
 Wykorzystaj dotychczas zdobyte informacje na temat języka HTML do stworzenia stopki dokumentu zawierającej poprawnie użyte następujące znaczniki:
 • `<address>` - wewnątrz znacznika zdefiniowane zostać powinny informacje kontaktowe
@@ -359,7 +359,7 @@ Wykorzystaj encje do oznaczenia praw autorskich (copyrightów):
 
 Przed upowszechnieniem się `UTF-8` encje były konieczne do reprezentowania znaków specjalnych. Obecnie są częściej wykorzystywane, aby wypisać poprawnie znaki <, >, które łatwo pomylić syntaktycznie z początkiem/końcem znaczników.
 
-## [**Zadanie 6.**](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB2/task6)
+## [**Zadanie 6.**](https://techint.dawidolko.pl/LAB2/task6)
 
 Zapoznaj się z dokumentacją następujących znaczników:
 
@@ -381,7 +381,7 @@ Porównaj wynik renderowania znaczników:
 
 Co możesz o nim powiedzieć?
 
-## [**Zadanie 7.**](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB2/task7)
+## [**Zadanie 7.**](https://techint.dawidolko.pl/LAB2/task7)
 
 Uporządkuj zawartość strony wykorzystując poniższe znaczniki:
 
@@ -408,7 +408,7 @@ Hiperłącza mogą odwoływać się do nagłówków przez zdefiniowanie wartośc
 <h2 id=heading>Nagłówek o id heading</h2>
 ```
 
-## [**Zadanie 8.[*]**](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB2/task8)
+## [**Zadanie 8.[*]**](https://techint.dawidolko.pl/LAB2/task8)
 
 Utwórz dokument będący pierwszym wpisem na blogu. Wykorzystaj zdobytą wiedzę do stworzenia treści wpisu, dodania zdjęć oraz ciekawostki. Ciekawostka powinna być zdefiniowana z użyciem znaczników `<details>` oraz `<summary>`.
 
