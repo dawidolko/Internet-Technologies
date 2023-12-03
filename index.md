@@ -11,7 +11,7 @@ layout: default
 
 ## Laboratoria:
 
-### [Lab1](LAB1/README.md) - Tworzenie Strony HTML z Podstawowymi Znacznikami
+### [Lab1](LAB1) - Tworzenie Strony HTML z Podstawowymi Znacznikami
 ### [Lab2](LAB2/README.md) - Podstawy HTML5
 ### [Lab3](LAB3/README.md) - Formularze
 ### [Lab4](LAB4/README.md) - Podstawy CSS3
