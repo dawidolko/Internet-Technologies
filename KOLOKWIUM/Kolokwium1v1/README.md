@@ -1,4 +1,4 @@
-# [Kolokwium gr I](KOLOKWIUM/Kolokwium1v1/kolokwium) 
+# [Kolokwium gr I](https://techint.dawidolko.pl/KOLOKWIUM/Kolokwium1v1/kolokwium/) 
 ### 1.	Stwórz plik index.html i zapisuj tam wszystkie zadania. 
 ### 2.	Pamiętaj aby całą zawartość strony formatować CSS.
 ### 3.	Atrybuty strony: tło żółte, margines górny i dolny 10px, margines prawy i lewy 5px. 
