@@ -1,4 +1,4 @@
-# Kolokwium XML i JS 
+# [Kolokwium XML i JS](https://techint.dawidolko.pl/KOLOKWIUM/Kolokwium2v1/Kolokwium2v2) 
 ### Przedmiot: Technologie internetowe  
 ### Rok akademicki: 2022/2023 
 ### Semestr: zimowy 
