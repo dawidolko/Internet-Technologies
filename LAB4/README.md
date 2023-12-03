@@ -1,7 +1,7 @@
 # Podstawy CSS3
 
 ## Idea oddzielenia warstwy prezentacji (tj. wyglądu na urządzeniu końcowym) 
-dokumentu od jego struktury została po raz pierwszy wykorzystana w języku znaczników.
+## dokumentu od jego struktury została po raz pierwszy wykorzystana w języku znaczników.
 
 Scribe: [link](https://en.wikipedia.org/wiki/Scribe_markup_language). 
 
