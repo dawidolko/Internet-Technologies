@@ -114,7 +114,7 @@ Wskazówki i porady:
 
 [link](https://html.spec.whatwg.org/multipage/dom.html#kinds-of-content)
 
-## [**Zadanie 1.**](https://techint.dawidolko.pl/LAB2/task1)
+## [**Zadanie 1.**](https://techint.dawidolko.pl/LAB2/task1/)
 
 Utwórz dokument index.html (zwyczajowa nazwa głównego dokumentu HTML, automatycznie ładowana przez serwer HTTP po wpisaniu adresu URL strony internetowej), a w nim szkielet dokumentu, którego język to język polski, tytuł wygląda w następujący sposób: "Jan Kowalski – muzyka to moja pasja".
 
@@ -148,7 +148,7 @@ Na marginesie istnieje też możliwość zainstalowania dodatku, który renderuj
 
 W celu włączenia podglądu wciskamy najpierw ctrl+q a następnie po zwolnieniu tych klawiszy s.
 
-## [**Zadanie 2.**](https://techint.dawidolko.pl/LAB2/task2)
+## [**Zadanie 2.**](https://techint.dawidolko.pl/LAB2/task2/)
 
 Tag `<h1>` do `<h6>` służy do tworzenia nagłówków dla sekcji dokumentu.
 
@@ -262,7 +262,7 @@ Aby utworzyć listę zagnieżdżoną należy w elemencie listy zdefiniować now�
 
 [link](https://html.spec.whatwg.org/multipage/grouping-content.html#the-ul-element)
 
-## [**Zadanie 4.**](https://techint.dawidolko.pl/LAB2/task4)
+## [**Zadanie 4.**](https://techint.dawidolko.pl/LAB2/task4/)
 
 Utwórz nagłówek **"Terminarz Wydarzeń"** a następnie utwórz tabelę związaną z wydarzeniami tematycznie związanymi z tytułem strony. Przy tworzeniu tabeli należy użyć atrybutów `colspan` (scalanie kolumn) i `rowspan` (scalanie wierszy) do połączenia komórek w odpowiednich miejscach.
 Przykładowa tabela:
@@ -359,7 +359,7 @@ Wykorzystaj encje do oznaczenia praw autorskich (copyrightów):
 
 Przed upowszechnieniem się `UTF-8` encje były konieczne do reprezentowania znaków specjalnych. Obecnie są częściej wykorzystywane, aby wypisać poprawnie znaki <, >, które łatwo pomylić syntaktycznie z początkiem/końcem znaczników.
 
-## [**Zadanie 6.**](https://techint.dawidolko.pl/LAB2/task6)
+## [**Zadanie 6.**](https://techint.dawidolko.pl/LAB2/task6/)
 
 Zapoznaj się z dokumentacją następujących znaczników:
 
