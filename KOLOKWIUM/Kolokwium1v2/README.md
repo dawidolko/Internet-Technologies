@@ -1,4 +1,4 @@
-# Kolokwium gr II
+# [Kolokwium gr II](https://techint.dawidolko.pl/KOLOKWIUM/Kolokwium1v2/kolokwium2/)
 
 ### 1.	Stwórz plik index.html i zapisuj tam wszystkie zadania. 
 ### 2.	Pamiętaj aby całą zawartość strony formatować CSS.
