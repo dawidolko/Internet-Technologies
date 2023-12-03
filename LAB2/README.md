@@ -45,9 +45,7 @@ Język HTML rozwija się już przez okres około 30 lat. W początkowym okresie 
 
 Nazewnictwo anglojęzyczne (użyteczne w kontekście czytania dokumentacji): 
 
-<br>![lab1](img/lab1v1.png)
-
-```
+```c#
 <!-- To jest komentarz w języku HTML -->
 ```
 Atrybuty znaczników:
