@@ -1,7 +1,11 @@
 # Podstawy CSS3
 
-Idea oddzielenia warstwy prezentacji (tj. wyglądu na urządzeniu końcowym) dokumentu od jego struktury została po raz pierwszy wykorzystana w języku znaczników 
-Scribe: [link](https://en.wikipedia.org/wiki/Scribe_markup_language). W momencie powstania języka HTML istniały już języki arkuszy styli stosowane do stylowania 
+## Idea oddzielenia warstwy prezentacji (tj. wyglądu na urządzeniu końcowym) 
+dokumentu od jego struktury została po raz pierwszy wykorzystana w języku znaczników.
+
+Scribe: [link](https://en.wikipedia.org/wiki/Scribe_markup_language). 
+
+W momencie powstania języka HTML istniały już języki arkuszy styli stosowane do stylowania 
 SGMLa (DSSSL i FOSI), jednak z różnych powodów (głównie poziomu skomplikowania) uznano je za nieadekwatne do stylowania dokumentów HTML. 
 
 Początkowo zaproponowano kilka rywalizujących języków styli, z których stopniowo przewagę zdobył CSS, choć problemem było niepełne wsparcie przeglądarek. 
@@ -9,7 +13,9 @@ Zdarzały się też sytuacje, że twórcy przeglądarki dodawali własne pomysł
 chaos i opóźniało upowszechnienie się standardu. Równolegle stosowano też znaczniki prezentacyjne, które również przeszkadzały w adaptacji CSS. CSS do wersji 
 2.0 był jednolitą specyfikacją. W trakcie wprowadzenia CSS w wersji 3 doszło do modularyzacji zagadnień w standardzie (tj. poszczególne moduły rozwijają się 
 iezależnie i mają własne wersje). Obecnie nie jest planowane wydanie CSS4 jako jednolitej wersji, ale raczej wydawanie nowych wersji modułów. Więcej na ten 
-temat można przeczytać tutaj: [link](https://www.w3.org/TR/css-2023)
+temat można przeczytać tutaj: 
+
+[link](https://www.w3.org/TR/css-2023)
 
 CSS jest językiem formalnym (tzn. posiada ściśle zdefiniowaną gramatykę), ale nie jest językiem programowania (nie jest w stanie wykonać dowolnego algorytmu). Zasadniczo CSS składa się **z reguł stylowania (ang. style rules)**. Większość reguł stylowania składa się z selektora, po którym występuje **blok deklaracji** oddzielonych średnikiem. **Deklaracja** to para właściwość-wartość. Co do zasady standard CSS definiuje zamknięty zestaw właściwości i dostępnych dla nich wartości, aczkolwiek istnieją obecnie rozwiązania, które pozwalają **rozszerzać CSS o własne właściwości.**
 
@@ -41,7 +47,8 @@ Selektor w języku CSS może przyjąć różne formy. Może to być nazwa znaczn
 
 Jednoznacznie można stwierdzić czy dany selektor to selektor znacznika, klasy itd. na podstawie gramatyki języka CSS (tj. każdy typ selektora tworzy inne wyrażenie w tym języku). Wyróżniamy następujące selektory:
 - **Selektor znacznika** (oznaczono kolorem żółtym) to nazwa znacznika np.:
-```
+- 
+```html
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -70,20 +77,21 @@ Jednoznacznie można stwierdzić czy dany selektor to selektor znacznika, klasy 
 </body>
 </html>
 ```
-- **Selektor klasy** – selektor klasy jest oznaczony prefiksem '.' przed nazwą klasy, której dotyczy. Przy definiowaniu nazw klasy należy:
+- **Selektor klasy** – selektor klasy jest oznaczony prefiksem `'.'` przed nazwą klasy, której dotyczy. Przy definiowaniu nazw klasy należy:
 
-o Unikać słów kluczowych i nazw znaczników html np.: .div lub .span są niezalecanymi nazwami.
+o Unikać słów kluczowych i nazw znaczników html np.: `.div` lub `.span` są niezalecanymi nazwami.
 
-o Nazwa klasy powinna być krótka i opisowa np. .header .btn-light.
+o Nazwa klasy powinna być krótka i opisowa np. `.header` `.btn-light.`
 
 o Nazwa nie powinna zawierać polskich znaków.
 
-o Nazwy wieloczłonowe należy zapisywać stosując camelCase lub oddzielać poszczególne człony znakiem '-' np. .btn-pressed .btnPressed.
+o Nazwy wieloczłonowe należy zapisywać stosując camelCase lub oddzielać poszczególne człony znakiem `'-'` np. `.btn-pressed` `.btnPressed.`
 
 o Przyjmując pewną konwencję należy stosować ją sumiennie w całym dokumencie/dokumentach tworzących witrynę.
 
 o Ta sama klasa może być stosowana do dowolnego elementu HTML.
-```
+
+```html
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -109,6 +117,7 @@ o Ta sama klasa może być stosowana do dowolnego elementu HTML.
 </body>
 </html>
 ```
+
 - **Selektor identyfikatora** – jest oznaczony prefiksem '#' przed nazwą identyfikatora (id).
 ```
 <!DOCTYPE html>
