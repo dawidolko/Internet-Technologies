@@ -42,7 +42,7 @@ selektor1, selektor2 {
 Selektor w języku CSS może przyjąć różne formy. Może to być nazwa znacznika (elementu HTML), co oznacza, że wszystkie wystąpienia tego elementu HTML zostaną sformatowane zgodnie z ustalonymi regułami stylizacji. Inną formą selektora jest arbitralna nazwa, nazywana w tym kontekście selektorem klasy CSS. Identyfikator (id) może również pełnić rolę selektora CSS. **Istnieje także specjalny selektor '*', który obejmuje wszystkie elementy HTML na stronie.** Dodatkowo, selektor może zawierać atrybut, co pozwala na wybieranie elementów z określoną wartością atrybutu. W ten sposób, przy pomocy różnorodnych selektorów, możliwe jest precyzyjne określenie, które elementy na stronie internetowej zostaną sformatowane przy użyciu reguł stylizacji CSS.
 
 Jednoznacznie można stwierdzić czy dany selektor to selektor znacznika, klasy itd. na podstawie gramatyki języka CSS (tj. każdy typ selektora tworzy inne wyrażenie w tym języku). Wyróżniamy następujące selektory:
-- **Selektor znacznika** (oznaczono kolorem żółtym) to nazwa znacznika np.:
+**Selektor znacznika** (oznaczono kolorem żółtym) to nazwa znacznika np.:
    
 ```html
 <!DOCTYPE html>
@@ -73,7 +73,8 @@ Jednoznacznie można stwierdzić czy dany selektor to selektor znacznika, klasy 
 </body>
 </html>
 ```
-- **Selektor klasy** – selektor klasy jest oznaczony prefiksem `'.'` przed nazwą klasy, której dotyczy. Przy definiowaniu nazw klasy należy:
+
+**Selektor klasy** – selektor klasy jest oznaczony prefiksem `'.'` przed nazwą klasy, której dotyczy. Przy definiowaniu nazw klasy należy:
 
 o Unikać słów kluczowych i nazw znaczników html np.: `.div` lub `.span` są niezalecanymi nazwami.
 
@@ -114,7 +115,7 @@ o Ta sama klasa może być stosowana do dowolnego elementu HTML.
 </html>
 ```
 
-- **Selektor identyfikatora** – jest oznaczony prefiksem '#' przed nazwą identyfikatora (id).
+**Selektor identyfikatora** – jest oznaczony prefiksem '#' przed nazwą identyfikatora (id).
 ```
 <!DOCTYPE html>
 <html lang="pl">
@@ -134,6 +135,7 @@ o Ta sama klasa może być stosowana do dowolnego elementu HTML.
 </style>
 </head>
 ```
+
 ```
 <body>
   <p id="paragraph1">Paragraf 1</p>
@@ -141,7 +143,9 @@ o Ta sama klasa może być stosowana do dowolnego elementu HTML.
 </body>
 </html>
 ```
-- **Selektor atrybutu** – do nazwy elementu dodajemy wyrażenie, gdzie pomiędzy znaki "[]" należy zdefiniować atrybut lub parę atrybut wartość, które powinien posiadać dany znacznik lub element z danym id lub klasą.
+
+**Selektor atrybutu** – do nazwy elementu dodajemy wyrażenie, gdzie pomiędzy znaki "[]" należy zdefiniować atrybut lub parę atrybut wartość, które powinien posiadać dany znacznik lub element z danym id lub klasą.
+
 ```
 <!DOCTYPE html>
 <html lang="pl">
@@ -162,7 +166,9 @@ o Ta sama klasa może być stosowana do dowolnego elementu HTML.
   </body>
 </html>
 ```
-- **Selektor pseudoklasy** – oznaczony jest prefiksem ':'. Selektory pseudoklasy pozwalają tworzyć dynamiczne i interaktywne efekty na stronie internetowej. Selektory te definiują jego zachowanie w danym stanie (np. po najechaniu myszką, po naciśnięciu myszką itd.) a niekoniecznie odnoszą się do jego pozycji w dokumencie.
+
+**Selektor pseudoklasy** – oznaczony jest prefiksem ':'. Selektory pseudoklasy pozwalają tworzyć dynamiczne i interaktywne efekty na stronie internetowej. Selektory te definiują jego zachowanie w danym stanie (np. po najechaniu myszką, po naciśnięciu myszką itd.) a niekoniecznie odnoszą się do jego pozycji w dokumencie.
+
 ```
 <!DOCTYPE html>
 <html lang="pl">
@@ -181,7 +187,9 @@ o Ta sama klasa może być stosowana do dowolnego elementu HTML.
 </body>
 </html>
 ```
-- **Selektor pseudoelementu** - Pseudoelementy pozwalają na dodawanie zawartości lub stylizację konkretnych części elementów, takich jak pierwszy znak tekstu, pierwszy wiersz tekstu, czy zawartość przed lub za elementem. Zazwyczaj elementy te fizycznie nie istnieją w dokumencie (tzn. są częścią innego elementu, której nie wyodrębnia się jako znacznik HTML), aby możliwe było zastosowanie styli w inny sposób. Selektor powstaje przez dodanie do nazwy elementu przyrostka :: z nazwą selektora pseudoelementu.
+
+**Selektor pseudoelementu** - Pseudoelementy pozwalają na dodawanie zawartości lub stylizację konkretnych części elementów, takich jak pierwszy znak tekstu, pierwszy wiersz tekstu, czy zawartość przed lub za elementem. Zazwyczaj elementy te fizycznie nie istnieją w dokumencie (tzn. są częścią innego elementu, której nie wyodrębnia się jako znacznik HTML), aby możliwe było zastosowanie styli w inny sposób. Selektor powstaje przez dodanie do nazwy elementu przyrostka :: z nazwą selektora pseudoelementu.
+
 ```
 <!DOCTYPE html>
 <html lang="pl">
@@ -201,17 +209,20 @@ o Ta sama klasa może być stosowana do dowolnego elementu HTML.
   <p>To jest zwykły paragraf.</p>
 </body>
 </html>
+
 ```
-- itd. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors
+itd. [link](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors)
 
 ### Stosowanie styli CSS:
 • **inline**, deklarowany za pomocą atrybutu style, niezależnie dla danego znacznika. Stosowanie tej metody jako jedynej to zła praktyka! Należy co do zasady stosować arkusze CSS, a inline stosować jedynie w sytuacji, gdy chcemy pojedyncze elementy ostylować w nietypowy sposób, zwłaszcza gdyby odpowiedni selektor w arkuszu był bardzo skomplikowany. Style inline nie posiadają selektorów. Oczywistą wadą tych styli jest to, że są "jednorazowego użytku", to jest musielibyśmy każdemu elementowi definiować je z osobna, co jest marnotrawstwem i utrudnia zarządzanie większymi dokumentami HTML:
+
 ```
 <znacznik style="color:lightblue;">zawartość znacznika</znacznik>
 <znacznik> ta zawartość nie będzie ostylowana </znacznik>
 ```
 
 • **internal**, powinien być koniecznie zadeklarowany w elemencie head wewnątrz znacznika style. W czasach bliższych początkom rozwoju WWW, gdy strony były relatywnie proste (popularne kiedyś strony osobiste), niejednokrotnie wystarczało zdefiniowanie zwięzłych reguł wewnątrz dokumentu HTML. Obecnie ta technika jest już dość rzadko spotykana, gdyż złożoność stron i aplikacji internetowych jest z reguły za duża, aby to rozwiązanie było nadal użyteczne:
+
 ```
 <head>
   <meta charset="UTF-8">
@@ -223,7 +234,9 @@ o Ta sama klasa może być stosowana do dowolnego elementu HTML.
   </style>
 </head>
 ```
+
 • **external**, jest to dołączenie arkusza zewnętrznego, tj. zdefiniowanego w zewnętrznym pliku z rozszerzeniem *.css. Plik ten może znajdować się lokalnie na danym serwerze i wtedy stosujemy ścieżkę względną, jak i może znajdować się na zewnętrznym serwerze i stosujemy wtedy ścieżkę bezwzględną. Obecnie jest to podstawowy sposób korzystania z CSS. Arkusze zewnętrzne załączamy w elemencie head, za pomocą elementu link.:
+
 ```
 <head>
   <meta charset="UTF-8">
@@ -232,6 +245,7 @@ o Ta sama klasa może być stosowana do dowolnego elementu HTML.
   <link rel="stylesheet" href="https://www.strona.pl/styles.css">
 </head>
 ```
+
 Selektory możemy łączyć. Dostępne jest kilka kombinatorów (ang. combinators), za pomocą których można zdefiniować jakich elementów mają dotyczyć wybrane style.
 
 | Kombinator                          | Składnia | Opis                                                                                                           |
@@ -248,6 +262,7 @@ Co do zasady w arkuszach styli występuje **dziedziczenie** (ang. inheritance), 
 [link](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance)
 
 Co w przypadku, gdy kilka selektorów będzie odnosiło się do tej samej części dokumentu html i definiowało tę samą właściwość? Np.:
+
 ```
 <!DOCTYPE html>
 <html lang="pl">
@@ -267,7 +282,9 @@ Co w przypadku, gdy kilka selektorów będzie odnosiło się do tej samej częś
   </body>
 </html>
 ```
+
 W takim przypadku do tego który styl zostanie zaaplikowany zostanie wykorzystany algorytm wyliczający ważność danej definicji na podstawie specyficzności.
+
 • Ilość ID (najważniejsza): Każde wystąpienie selektora ID (np. #myId) w selektorze zwiększa specyficzność o 100. Im więcej ID w selektorze, tym większa specyficzność.
 
 • Ilość klas i atrybutów: Każde wystąpienie selektora klasy (.myClass) lub atrybutu (np. [type="text"]) w selektorze zwiększa specyficzność o 10.
@@ -332,6 +349,7 @@ Skopiuj poniższy przykład.
 
 ## [Zadanie 2.](https://techint.dawidolko.pl/LAB4/TASK2/)
 Utwórz poprawny dokument HTML, po czym umieść w sekcji head następujące reguły:
+
 ```
 body {
   width: 400px;
@@ -548,7 +566,9 @@ section p {
   font-family: Corbel;
 }
 ```
+
 Służą one do stylowania następującego fragmentu dokumentu HTML:
+
 ```
 <section id="thisOne">
   <h1>Header</h1>
@@ -571,6 +591,7 @@ Służą one do stylowania następującego fragmentu dokumentu HTML:
   </p>
 </section>
 ```
+
 1. Czy Twoim zdaniem reguły są napisane w sposób optymalny?
 
 2. Zastąp reguły zastosowane powyżej, w taki sposób, aby dokument renderował się tak samo, ale selektory były prostsze i nie było powtarzania redundantnych właściwości. Identyfikator `btn-light` zastąp klasą o takiej samej nazwie. Zrezygnuj ze stosowania inline style. Wykorzystaj wiedzę na temat specyficzności i dziedziczenia.
