@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Created with Liquid Studio 2020 (https://www.liquid-technologies.com)-->
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="spis_zo" type="contentListDetails" />
+    <xs:element name="wniosek" type="requestDetails" />
+    <xs:complexType name="contentListDetails">
+        <xs:sequence>
+            <xs:element name="opis" type="xs:string" minOccurs="0" />
+            <xs:element name="data_utworzenia" type="xs:string" />
+            <xs:element name="najwczesniejsza_data_w_spisie" type="xs:date" />
+            <xs:element name="najpozniejsza_data_w_spisie" type="xs:date" />
+            <xs:element name="ilosc_materialow" type="xs:int" />
+            <xs:element name="ilosc_pozycji" type="xs:int" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="requestDetails">
+        <xs:sequence>
+            <xs:element name="id_rodzica" type="xs:long" minOccurs="0" />
+            <xs:element name="znak_sprawy_wysylajacego" type="xs:string" />
+            <xs:element name="typ" type="requestType" />
+            <xs:element name="data_przygotowania" type="xs:dateTime" />
+            <xs:element name="szczegoly_spisu_zo" type="contentListDetails" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="requestType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ORGANIZED" />
+            <xs:enumeration value="UNORGANIZED" />
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
