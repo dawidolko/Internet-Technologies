@@ -307,8 +307,11 @@ Materiały uzupełniające: • specyfikacja XML 1.0:
 
 •	poprawność dokumentu (składniowa i strukturalna): 
 
-[link](https://www.mimuw.edu.pl/~czarnik/zajecia/xml03/lab2.html http://edu.pjwstk.edu.pl/wyklady/tin/scb/wyklad07/index.html#typ)
-http://www.cs.put.poznan.pl/jkobusinski/xml.html • specyfikacja XML Schema 1.1: https://www.w3.org/XML/Schema.html#dev 
+[link](https://www.mimuw.edu.pl/~czarnik/zajecia/xml03/lab2.html) 
+[link](http://edu.pjwstk.edu.pl/wyklady/tin/scb/wyklad07/index.html#typ)
+[link](http://www.cs.put.poznan.pl/jkobusinski/xml.html)
+
+• specyfikacja XML Schema 1.1: https://www.w3.org/XML/Schema.html#dev 
 
 •	przykłady zastosowania XML Schema jako struktury dla dokumentów XML: 
 
@@ -322,7 +325,7 @@ Początek laboratorium:
 
 [link](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml)
  
-## [Zadanie 1.]()
+## [Zadanie 1.](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB8/TASK1)
 
 Zaproponuj zarówno DTD, jak i XSD dla poniższego dokumentu XML. Przetestuj efekt za pomocą dowolnego walidatora XML. 
 
@@ -349,12 +352,12 @@ Zaproponuj zarówno DTD, jak i XSD dla poniższego dokumentu XML. Przetestuj efe
 </emails>
 ```
  
-## [Zadanie 2.]() 
+## [Zadanie 2.](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB8/TASK2) 
 Korzystając 	z 	XSD 	dostępnego 	tutaj: 
 [link](https://epuap.gov.pl/wps/portal/strefa-urzednika/innesystemy/pi/!ut/p/a1/RcpBCsIwEEbhs_QE_7QRHZcxtUUFBQtqZiPRhhLUVkJ04em1K5eP90FwgvTuHTqXwtC7-9gyPRPzqtaG1mSqgvSEFnp7mOekCRZWZn_ADfMPbIpSGUW0y9FAING3IfprquLwMPtjuYRN8eXHFVpYJoXnzV0-Osu-KfhuHQ!!/)
 zdefiniuj dokument XML zgodny z tym XSD (i jednocześnie zadeklaruj ten fakt, aby parser/walidator mógł na bieżąco analizować poprawność dokumentu). 
 
-## [Zadanie 3.]() 
+## [Zadanie 3.](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB8/TASK3) 
 Utwórz przykładowy plik XML o nazwie rozklad.xml odnośnie rozkładu jazdy pociągów, według wymagań: 
 
 Dla rozkładu jazdy pociągów powinna być dostępna informacja o okresie obowiązywania (data początkowa i data końcowa). Dla każdego pociągu w rozkładzie jazdy powinna być dostępna informacja o: 
@@ -426,9 +429,9 @@ oraz wzorcami budowania XML:
 6)	W pliku rozklad.xml zastąp obecną referencję do pliku z rz1.xsd na  rz2.xsd. Następnie wypróbuj sprawdzanie poprawności strukturalnej. 
  
 7)	Wypróbuj narzędzie online do generowania XSD według różnych wzorców. Wypróbować również sprawdzanie poprawności strukturalnej. 
-[link(https://www.freeformatter.com/xsd-generator.html)  [link](https://www.freeformatter.com/xml-validator-xsd.html)
+[link](https://www.freeformatter.com/xsd-generator.html)  [link](https://www.freeformatter.com/xml-validator-xsd.html)
  
-## [Zadanie 4.]()
+## [Zadanie 4.](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB8/TASK4)
 Do przykładu `person.xml` dopisz następującą linię: 
 
 ```xml
