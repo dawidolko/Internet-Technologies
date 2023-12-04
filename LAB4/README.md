@@ -38,3 +38,52 @@ selektor1, selektor2 {
 ```
 
 <br>![lab4](img/lab3s1.png)
+
+Selektor w języku CSS może przyjąć różne formy. Może to być nazwa znacznika (elementu HTML), co oznacza, że wszystkie wystąpienia tego elementu HTML zostaną sformatowane zgodnie z ustalonymi regułami stylizacji. Inną formą selektora jest arbitralna nazwa, nazywana w tym kontekście selektorem klasy CSS. Identyfikator (id) może również pełnić rolę selektora CSS. **Istnieje także specjalny selektor '*', który obejmuje wszystkie elementy HTML na stronie.** Dodatkowo, selektor może zawierać atrybut, co pozwala na wybieranie elementów z określoną wartością atrybutu. W ten sposób, przy pomocy różnorodnych selektorów, możliwe jest precyzyjne określenie, które elementy na stronie internetowej zostaną sformatowane przy użyciu reguł stylizacji CSS.
+
+Jednoznacznie można stwierdzić czy dany selektor to selektor znacznika, klasy itd. na podstawie gramatyki języka CSS (tj. każdy typ selektora tworzy inne wyrażenie w tym języku). Wyróżniamy następujące selektory:
+- **Selektor znacznika** (oznaczono kolorem żółtym) to nazwa znacznika np.:
+- 
+```html
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selektory znacznika</title>
+<style>
+  /* Kolor tekstu paragrafu będzie miał kolor czerwony */
+  p {
+    color: crimson;
+  }
+  /* Kolor tekstu nagłówka 1 będzie miał kolor czarny */
+  h1 {
+    color: black;
+  }
+  /* w sekcji preformatowanej tekst będzie pomarańczowy */
+  pre {
+    color: #ffaa00
+  }
+</style>
+</head>
+<body>
+  <h1>Nagłówek</h1>
+  <p>Paragraf</p>
+  <pre>Sekcja preformatowana</pre>
+</body>
+</html>
+```
+- **Selektor klasy** – selektor klasy jest oznaczony prefiksem `'.'` przed nazwą klasy, której dotyczy. Przy definiowaniu nazw klasy należy:
+
+o Unikać słów kluczowych i nazw znaczników html np.: `.div` lub `.span` są niezalecanymi nazwami.
+
+o Nazwa klasy powinna być krótka i opisowa np. `.header` `.btn-light.`
+
+o Nazwa nie powinna zawierać polskich znaków.
+
+o Nazwy wieloczłonowe należy zapisywać stosując camelCase lub oddzielać poszczególne człony znakiem `'-'` np. `.btn-pressed` `.btnPressed.`
+
+o Przyjmując pewną konwencję należy stosować ją sumiennie w całym dokumencie/dokumentach tworzących witrynę.
+
+o Ta sama klasa może być stosowana do dowolnego elementu HTML.
+
