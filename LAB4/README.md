@@ -116,6 +116,7 @@ o Ta sama klasa może być stosowana do dowolnego elementu HTML.
 ```
 
 **Selektor identyfikatora** – jest oznaczony prefiksem '#' przed nazwą identyfikatora (id).
+
 ```
 <!DOCTYPE html>
 <html lang="pl">
@@ -134,9 +135,6 @@ o Ta sama klasa może być stosowana do dowolnego elementu HTML.
 }
 </style>
 </head>
-```
-
-```
 <body>
   <p id="paragraph1">Paragraf 1</p>
   <p id="paragraph2">Paragraf 2</p>
@@ -146,7 +144,7 @@ o Ta sama klasa może być stosowana do dowolnego elementu HTML.
 
 **Selektor atrybutu** – do nazwy elementu dodajemy wyrażenie, gdzie pomiędzy znaki "[]" należy zdefiniować atrybut lub parę atrybut wartość, które powinien posiadać dany znacznik lub element z danym id lub klasą.
 
-```
+```html
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -169,7 +167,7 @@ o Ta sama klasa może być stosowana do dowolnego elementu HTML.
 
 **Selektor pseudoklasy** – oznaczony jest prefiksem ':'. Selektory pseudoklasy pozwalają tworzyć dynamiczne i interaktywne efekty na stronie internetowej. Selektory te definiują jego zachowanie w danym stanie (np. po najechaniu myszką, po naciśnięciu myszką itd.) a niekoniecznie odnoszą się do jego pozycji w dokumencie.
 
-```
+```html
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -190,7 +188,7 @@ o Ta sama klasa może być stosowana do dowolnego elementu HTML.
 
 **Selektor pseudoelementu** - Pseudoelementy pozwalają na dodawanie zawartości lub stylizację konkretnych części elementów, takich jak pierwszy znak tekstu, pierwszy wiersz tekstu, czy zawartość przed lub za elementem. Zazwyczaj elementy te fizycznie nie istnieją w dokumencie (tzn. są częścią innego elementu, której nie wyodrębnia się jako znacznik HTML), aby możliwe było zastosowanie styli w inny sposób. Selektor powstaje przez dodanie do nazwy elementu przyrostka :: z nazwą selektora pseudoelementu.
 
-```
+```html
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -209,21 +207,21 @@ o Ta sama klasa może być stosowana do dowolnego elementu HTML.
   <p>To jest zwykły paragraf.</p>
 </body>
 </html>
-
 ```
+
 itd. [link](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors)
 
 ### Stosowanie styli CSS:
 • **inline**, deklarowany za pomocą atrybutu style, niezależnie dla danego znacznika. Stosowanie tej metody jako jedynej to zła praktyka! Należy co do zasady stosować arkusze CSS, a inline stosować jedynie w sytuacji, gdy chcemy pojedyncze elementy ostylować w nietypowy sposób, zwłaszcza gdyby odpowiedni selektor w arkuszu był bardzo skomplikowany. Style inline nie posiadają selektorów. Oczywistą wadą tych styli jest to, że są "jednorazowego użytku", to jest musielibyśmy każdemu elementowi definiować je z osobna, co jest marnotrawstwem i utrudnia zarządzanie większymi dokumentami HTML:
 
-```
+```html
 <znacznik style="color:lightblue;">zawartość znacznika</znacznik>
 <znacznik> ta zawartość nie będzie ostylowana </znacznik>
 ```
 
 • **internal**, powinien być koniecznie zadeklarowany w elemencie head wewnątrz znacznika style. W czasach bliższych początkom rozwoju WWW, gdy strony były relatywnie proste (popularne kiedyś strony osobiste), niejednokrotnie wystarczało zdefiniowanie zwięzłych reguł wewnątrz dokumentu HTML. Obecnie ta technika jest już dość rzadko spotykana, gdyż złożoność stron i aplikacji internetowych jest z reguły za duża, aby to rozwiązanie było nadal użyteczne:
 
-```
+```html
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
@@ -237,7 +235,7 @@ itd. [link](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors)
 
 • **external**, jest to dołączenie arkusza zewnętrznego, tj. zdefiniowanego w zewnętrznym pliku z rozszerzeniem *.css. Plik ten może znajdować się lokalnie na danym serwerze i wtedy stosujemy ścieżkę względną, jak i może znajdować się na zewnętrznym serwerze i stosujemy wtedy ścieżkę bezwzględną. Obecnie jest to podstawowy sposób korzystania z CSS. Arkusze zewnętrzne załączamy w elemencie head, za pomocą elementu link.:
 
-```
+```html
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
@@ -263,7 +261,7 @@ Co do zasady w arkuszach styli występuje **dziedziczenie** (ang. inheritance), 
 
 Co w przypadku, gdy kilka selektorów będzie odnosiło się do tej samej części dokumentu html i definiowało tę samą właściwość? Np.:
 
-```
+```html
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -319,7 +317,8 @@ Kolejnym ważnym zagadnieniem jest domyślny sposób układania się elementów 
 
 ## [Zadanie 1.](https://techint.dawidolko.pl/LAB4/TASK1/)
 Skopiuj poniższy przykład.
-```
+
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -337,6 +336,7 @@ Skopiuj poniższy przykład.
 </body>
 </html>
 ```
+
 1. Do drugiego akapitu dodaj atrybut style i zmień kolor tekstu na zielony.
 
 2. Dodaj do dokumentu HMTL element h1 o treści "Akapity w CSS" i następnie dopisz odpowiedni selektor, który ustawi kolor na pomarańczowy i doda podkreślenie tekstu.
@@ -350,7 +350,7 @@ Skopiuj poniższy przykład.
 ## [Zadanie 2.](https://techint.dawidolko.pl/LAB4/TASK2/)
 Utwórz poprawny dokument HTML, po czym umieść w sekcji head następujące reguły:
 
-```
+```html
 body {
   width: 400px;
   height: 200px;
@@ -372,13 +372,15 @@ span {
 ```
 
 Znacznik body ma zawierać:
-```
+
+```html
 <body>
   <section>Lorem ipsum</section>
   <section>Lorem ipsum <span>abc</span></section>
   <section>Lorem ipsum <img src="obraz.png" alt="obraz"></section>
 </body>
 ```
+
 Obraz niech będzie miał co najmniej 200x200px.
 
 1. Włącz narzędzia deweloperskie (F12 albo Fn + F12) i następnie odznaczaj kolejno właściwości w selektorze body. Obserwuj jaki ma to wpływ na zachowanie modelu pudełkowego.
@@ -395,7 +397,7 @@ Obraz niech będzie miał co najmniej 200x200px.
 
 7. Ustaw w selektorze span kolejno następujące wartości właściwości display:
 
-```
+```html
 display: inline; /* domyślna wartość dla span */
 display: block; display: inline-block;
 ```
@@ -405,7 +407,8 @@ Jaki wpływ mają one na model pudełkowy zarówno elementu span, jak i jego rod
 ## [Zadanie 3.](https://techint.dawidolko.pl/LAB4/TASK3/)
 Odwzoruj formularz z poprzednich zajęć laboratoryjnych, jednak tym razem niech wygląda w sposób zaprezentowany poniżej. Wykorzystaj zewnętrzny arkusz stylu.
 Wykorzystano następujące właściwości:
-```
+
+```html
 Kolory: #414141
 #fbfbfb
 #5d4e49
@@ -418,7 +421,8 @@ Corbel
 
 Następnie napisz kolejny arkusz styli i tym razem niech ten formularz prezentuje się tak jak pokazano poniżej:
 Kolory:
-```
+
+```html
 #fefefe
 #0033A0
 Czcionka:
@@ -435,7 +439,8 @@ Skopiuj poniższy przykład. Zapoznaj się z artykułem na temat dziedziczenia w
 2. Element p posiadał domyślne wartości wszystkich właściwości. Wykorzystaj specjalną właściwość all.
 
 3. Element p posiadał wszystkie właściwości takie same jak rodzic. Ponownie wykorzystaj all.
-```
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -461,14 +466,17 @@ Skopiuj poniższy przykład. Zapoznaj się z artykułem na temat dziedziczenia w
 </body>
 </html>
 ```
+
 ## [Zadanie 5.](https://techint.dawidolko.pl/LAB4/TASK5/)
 Następnie utwórz arkusz styli o nazwie `cascade_example.css`.
-```
+
+```html
 section {
   border: 5px solid orange;
   color: white;
 }
 ```
+
 1. Załącz ten styl za pomocą elementu link w elemencie head przed elementem style. Jaki jest teraz efekt renderingu dokumentu? W narzędziach deweloperskich zaglądnij w sekcje z regułami stylowania dla elementu `section;` co obserwujesz?
 
 2. Następnie przenieś element link poniżej style. Co tym razem obserwujesz?
@@ -490,7 +498,8 @@ Jaki jest teraz efekt wstawienia arkusza zarówno przed, jak i po elemencie styl
 Zadanie 6.
 
 Zdefiniuj poprawny HTML, gdzie w elemencie body znajduje się:
-```
+
+```html
 <ul class="nav">
   <li class="nav-item">Home</li>
   <li class="nav-item">About</li>
@@ -507,6 +516,7 @@ ul > li {
   color: green;
 }
 ```
+
 1. Jaki jest efekt renderingu tego elementu? Czy wiesz co spowodowało taki efekt?
 
 2. Najeżdżając na dany selektor w VSCode wyświetlana jest jego specyficzność.
@@ -516,7 +526,8 @@ Możesz też skorzystać z kalkulatora specyficzności online (dla utrwalenia za
 Sprawdź specyficzność elementów. Który z nich jest "najmocniejszy"?
 
 3. Zmodyfikuj arkusz CSS na następujący:
-```
+
+```html
 #nav > .nav-item:hover {
   color: pink;
 }
@@ -527,10 +538,12 @@ li.nav-item:hover {
   color: orange;
 }
 ```
+
 Jednocześnie zastąp w elemencie ul klasę `nav id="nav`. Ponownie oblicz za pomocą kalkulatora specyficzność selektorów. Podaj kolejność ich "mocy".
 
 4. Rozważ następujące reguły:
-```
+
+```html
 h1 {
   font-size: 60pt;
 }
@@ -569,7 +582,7 @@ section p {
 
 Służą one do stylowania następującego fragmentu dokumentu HTML:
 
-```
+```html
 <section id="thisOne">
   <h1>Header</h1>
   <button>przycisk</button>
