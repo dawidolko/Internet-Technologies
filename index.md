@@ -32,6 +32,9 @@ layout: default
 ### [Lab7](LAB7/README.md) - Tworzenie złożonych układów treści, RWD
 - [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB7)<br>
 
+### [Lab8](LAB8/README.md) - XML (Extensible Markup Language)
+- [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB8)<br>
+
 ## Projekty:
 
 ### [Projekt 1](https://techint.dawidolko.pl/projects/ResWebsiteTemplate/) - Responsive Website Template Documentation
