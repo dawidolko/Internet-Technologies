@@ -1,98 +1,165 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsywny Grid CSS</title>
-  <style>
-    .container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-areas: 
-        "header header header"
-        "main main sidebar"
-        "footer footer footer";
-      gap: 10px;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid Layout Example</title>
+<style>
+    * {
+        box-sizing: border-box;
     }
-
-    .header {
-      grid-area: header;
-      background-color: #8ca1af;
+    body {
+        margin: 0;
     }
-
-    .main {
-      grid-area: main;
-      background-color: #b2c2d1;
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'navbar navbar'
+            'aside main'
+            'footer footer';
+        grid-template-columns: 1fr 5fr;
+        min-height: 100vh;
     }
-
-    .sidebar {
-      grid-area: sidebar;
-      background-color: #d1dfe9;
-      overflow: hidden;
-      transition: max-height 0.3s;
-      max-height: 0;
+    .navbar {
+        grid-area: navbar;
+        background-color: #313131;
     }
-
+    .navbar-links {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content: space-evenly;
+        padding: 0px;
+    }
+    .navbar-links li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 5px;
+    }
+    .main-section {
+        grid-area: main;
+        padding: 10px;
+        text-align: center;
+    }
+    .aside {
+        grid-area: aside;
+        background-color: #8e8c8c;
+        padding: 10px;
+        text-align: justify;
+    }
     .footer {
-      grid-area: footer;
-      background-color: #e1eff8;
+        grid-area: footer;
+        background-color: #313131;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .footer-links {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+    }
+    .footer-links li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 5px;
     }
 
-    /* Ukrycie checkboxa */
-    .sidebar-checkbox {
-      display: none;
+    @media screen and (max-width: 400px) {
+        .grid-container {
+            grid-template-areas:
+                'navbar'
+                'aside'
+                'main'
+                'footer';
+            grid-template-columns: 1fr;
+        }
+        .aside{
+            background-color: #8e8c8c;
+            min-height: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+          }
+        .navbar-links, .aside-links1 {
+            display: none;
+        }
+        #toggle:checked ~ .navbar-links,
+        #toggle1:checked ~ .aside-links1 {
+            display: flex;
+            flex-direction: column;
+        }
+        .navbar label, .aside label {
+            display: block;
+            color: white;
+            background-color: #313131;
+            text-align: center;
+            cursor: pointer;
+            height: auto;
+            width: 30px;
+            padding: 5px;
+            margin-top: 10px;
+        }
+        
+        input{
+          display: none;
+        }
     }
-
-    /* Styl dla przełącznika sidebar */
-    .sidebar-toggle {
-      grid-area: sidebar-toggle;
-      background-color: #c2d1e1;
-      text-align: center;
-      padding: 10px;
-      cursor: pointer;
-    }
-
-    .sidebar-toggle label {
-      display: block;
-      cursor: pointer;
-    }
-
-    /* Style dla rozwinięcia sidebar */
-    .sidebar-checkbox:checked ~ .container .sidebar {
-      max-height: 500px; /* Wysokość maksymalna kiedy sidebar jest rozwinięty */
-    }
-
-    @media (max-width: 600px) {
-      .container {
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-          "header"
-          "main"
-          "sidebar-toggle"
-          "sidebar"
-          "footer";
-      }
-    }
-
-    /* Dodatkowe style dla zadania, gdzie kolumna main ma być 5 razy szersza niż sidebar */
-    @media (min-width: 601px) {
-      .container {
-        grid-template-columns: 5fr 1fr;
-      }
-    }
-  </style>
+</style>
 </head>
 <body>
-
-<input type="checkbox" id="sidebar-checkbox" class="sidebar-checkbox">
-<label for="sidebar-checkbox" class="sidebar-toggle">Pokaż/Zwiń pasek boczny</label>
-
-<div class="container">
-  <div class="header">Nagłówek</div>
-  <div class="main">Główna treść</div>
-  <div class="sidebar" id="sidebar">Pasek boczny</div>
-  <div class="footer">Stopka</div>
-</div>
-
+    <div class="grid-container">
+        <nav class="navbar">
+            <label for="toggle">☰</label>
+            <input type="checkbox" id="toggle">
+            <ul class="navbar-links">
+                <li><a href="#">Strona główna</a></li>
+                <li><a href="#">Podstrona 1</a></li>
+                <li><a href="#">Podstrona 2</a></li>
+                <li><a href="#">Podstrona 3</a></li>
+            </ul>
+        </nav>
+        <div class="main-section">
+            <h1>Strona główna</h1>
+            <section>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique sapien ac erat tincidunt, sit amet dignissim lectus vulputate. Donec id iaculis velit. Aliquam vel malesuada erat. Praesent non magna ac massa
+              aliquet tincidunt vel in massa. Phasellus feugiat est vel leo finibus
+              congue.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique
+              sapien ac erat tincidunt, sit amet dignissim lectus vulputate. Donec id
+              iaculis velit. Aliquam vel malesuada erat. Praesent non magna ac massa
+              aliquet tincidunt vel in massa. Phasellus feugiat est vel leo finibus
+              congue.
+            </section>
+            <section>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique sapien ac erat tincidunt, sit amet dignissim lectus vulputate. Donec id iaculis velit. Aliquam vel malesuada erat. Praesent non magna ac massa
+              aliquet tincidunt vel in massa. Phasellus feugiat est vel leo finibus
+              congue.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique
+              sapien ac erat tincidunt, sit amet dignissim lectus vulputate. Donec id
+              iaculis velit. Aliquam vel malesuada erat. Praesent non magna ac massa
+              aliquet tincidunt vel in massa. Phasellus feugiat est vel leo finibus
+              congue.
+            </section>
+        </div>
+        <aside class="aside">
+            <h2>Mapa strony</h2>
+            <label for="toggle1">☰</label>
+            <input type="checkbox" id="toggle1">
+            <ul class="aside-links1">
+                <li><a href="#">link1</a></li>
+                <li><a href="#">link2</a></li>
+                <li><a href="#">link3</a></li>
+                <li><a href="#">link4</a></li>
+            </ul>
+        </aside>
+        <footer class="footer">
+            <ul class="footer-links">
+                <li><a href="#">link1</a></li>
+                <li><a href="#">link2</a></li>
+                <li><a href="#">link3</a></li>
+                <li><a href="#">link4</a></li>
+            </ul>
+        </footer>
+    </div>
 </body>
 </html>
