@@ -15,7 +15,7 @@
         }
 
         .slides {
-          color: white;
+            color: white;
             display: flex;
             overflow-x: auto;
             scroll-snap-type: x mandatory;
@@ -35,24 +35,39 @@
             margin-right: 50px;
             border-radius: 10px;
             background: #eee;
-            
+
             display: flex;
             justify-content: center;
             align-items: center;
             font-size: 100px;
         }
 
-        .slider > a {
+        /* Styl dla radiobuttonów i etykiet */
+        .slider-controls {
+            display: flex;
+            justify-content: center;
+        }
+
+        .slider-radio {
+            display: none;
+        }
+
+        .slider-label {
             display: inline-block;
             width: 10px;
             height: 10px;
-            background: #ccc;
-            text-decoration: none;
             border-radius: 50%;
+            background: #ccc;
             margin: 0 5px;
-            position: relative;
+            cursor: pointer;
         }
-        .slider > a:hover, .slider > a:focus, .slides > div:target {
+
+        /* Zmiana koloru kropki gdy odpowiadający radiobutton jest zaznaczony */
+        .slider-radio:checked + .slider-label {
+            background: #000;
+        }
+
+        .slider-controls > a:hover, .slider-controls > a:focus, .slides > div:target {
             background: #000;
         }
 
@@ -60,28 +75,30 @@
 </head>
 <body>
     <div class="slider">
-        <a href="#slide-1"></a>
-        <a href="#slide-2"></a>
-        <a href="#slide-3"></a>
-        <a href="#slide-4"></a>
-        <a href="#slide-5"></a>
-      
+
         <div class="slides">
-            <div id="slide-1">
-                1
-            </div>
-            <div id="slide-2">
-                2
-            </div>
-            <div id="slide-3">
-                3
-            </div>
-            <div id="slide-4">
-                4
-            </div>
-            <div id="slide-5">
-                5
-            </div>
+            <div id="slide-1">1</div>
+            <div id="slide-2">2</div>
+            <div id="slide-3">3</div>
+            <div id="slide-4">4</div>
+            <div id="slide-5">5</div>
+        </div>
+        <div class="slider-controls">
+                <input type="radio" id="slide-radio-1" name="slide" class="slider-radio" checked>
+                <label for="slide-radio-1" class="slider-label" onclick="window.location.href='#slide-1';"></label>
+            
+                <input type="radio" id="slide-radio-2" name="slide" class="slider-radio">
+                <label for="slide-radio-2" class="slider-label" onclick="window.location.href='#slide-2';"></label>
+
+                <input type="radio" id="slide-radio-3" name="slide" class="slider-radio">
+                <label for="slide-radio-3" class="slider-label" onclick="window.location.href='#slide-3';"></label>
+
+                <input type="radio" id="slide-radio-4" name="slide" class="slider-radio">
+                <label for="slide-radio-4" class="slider-label" onclick="window.location.href='#slide-4';"></label>
+
+                <input type="radio" id="slide-radio-5" name="slide" class="slider-radio">
+                <label for="slide-radio-5" class="slider-label" onclick="window.location.href='#slide-5';"></label>
+            </a>
         </div>
     </div>
 </body>
