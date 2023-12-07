@@ -2,7 +2,7 @@
 <html lang="pl">
 <head>
 <meta charset="UTF-8">
-<title>Rozwijane Menu</title>
+<title>Menu</title>
 <style>
   body {
     margin: 0;
@@ -19,23 +19,22 @@
     margin: 0;
   }
 
-  .menu-item {
+  .pozycja-menu, .rozwijane-menu {
     padding: 15px 40px;
-    position: relative; /* Pozycjonowanie dla podmenu */
-    transition: background-color 0.3s; /* Animacja tła */
+    position: relative;
+    transition: background-color 0.3s;
   }
 
-  .menu-item:not(:first-child):hover, .menu-item-with-submenu:hover {
+  .pozycja-menu:hover, .rozwijane-menu:hover {
     background-color: #0055A4;
   }
 
-  .menu-item:first-child {
+  .pozycja-menu:first-child {
     background-color: #0055A4;
   }
 
-  /* Podmenu */
-  .submenu {
-    display: none; /* Ukrycie podmenu */
+  .podmenu {
+    display: none;
     position: absolute;
     left: 0;
     top: 100%;
@@ -47,19 +46,17 @@
     box-sizing: border-box;
   }
 
-  /* Pokaż podmenu po najechaniu */
-  .menu-item-with-submenu:hover > .submenu {
+  .rozwijane-menu:hover > .podmenu {
     display: block;
   }
 
-  .submenu-item {
+  .pozycja-podmenu, .podmenu-zagniezdzony {
     padding: 10px 20px;
-    border-top: 1px solid #ffffff; /* Granica między elementami podmenu */
-    position: relative; /* Pozycjonowanie dla zagnieżdżonego podmenu */
+    border-top: 1px solid #ffffff;
+    position: relative;
   }
 
-  /* Zagnieżdżone podmenu */
-  .submenu-item-with-submenu > ul {
+  .podmenu-zagniezdzony > ul {
     display: none;
     position: absolute;
     left: 100%;
@@ -67,49 +64,59 @@
     margin: 0;
     padding-left: 0;
     list-style: none;
-    background-color: #008000; /* Zielone tło dla zagnieżdżonego podmenu */
+    background-color: #008000;
   }
 
-  /* Pokaż zagnieżdżone podmenu po najechaniu */
-  .submenu-item-with-submenu:hover > ul {
+  .podmenu-zagniezdzony:hover > ul {
     display: block;
   }
 
-  /* Strzałka */
-  .menu-item-with-submenu::after {
+  .rozwijane-menu::after {
     content: '';
     position: absolute;
     top: 40%;
-    right: 15px; /* Zmiana położenia strzałki na prawą stronę */
+    right: 15px;
     border: 10px solid transparent;
-    border-top-color: white; /* Biały trójkąt na górze */
-    transition: transform 0.3s; /* Animacja transformacji */
+    border-top-color: white;
+    transition: transform 0.3s;
   }
 
-  /* Animacja strzałki dla elementów z podmenu */
-  .menu-item-with-submenu:hover::after {
+  .rozwijane-menu:hover::after {
     transform: rotate(180deg);
   }
 
-  /* Dodatkowe style dla zagnieżdżonego podmenu 'Kierunki' */
-  .submenu-item-with-submenu > ul > li {
+  .podmenu-zagniezdzony::after{
+    content: '';
+    position: absolute;
+    top: 25%;
+    right: 25px;
+    border: 10px solid transparent;
+    border-left-color: #fdfdfd;
+    transition: transform 0.3s;
+  }
+
+  .podmenu-zagniezdzony:hover::after{
+    transform: rotate(90deg);
+  }
+
+  .podmenu-zagniezdzony > ul > li{
     padding: 10px 20px;
   }
 
-  /* Styl dla elementów wewnętrznych podmenu 'Kierunki' przy najechaniu */
-  .submenu-item-with-submenu > ul > li:hover {
-    background-color: #004d00; /* Ciemniejsze zielone tło */
+  .podmenu-zagniezdzony > ul > li:hover{
+    background-color: #004d00;
   }
+
 </style>
 </head>
 <body>
 
   <ul class="menu">
-    <li class="menu-item">Kolegium</li>
-    <li class="menu-item">Jednostki naukowe</li>
-    <li class="menu-item menu-item-with-submenu">Student
-      <ul class="submenu">
-        <li class="submenu-item submenu-item-with-submenu">Kierunki
+    <li class="pozycja-menu">Kolegium</li>
+    <li class="pozycja-menu">Jednostki naukowe</li>
+    <li class="rozwijane-menu">Student
+      <ul class="podmenu">
+        <li class="podmenu-zagniezdzony">Kierunki
           <ul>
             <li>Matematyka</li>
             <li>Informatyka</li>
@@ -117,16 +124,16 @@
             <li>Mechatronika</li>
           </ul>
         </li>
-        <li class="submenu-item">Aktualności</li>
-        <li class="submenu-item">Dziekanat</li>
-        <li class="submenu-item">Stypendia</li>
+        <li class="pozycja-podmenu">Aktualności</li>
+        <li class="pozycja-podmenu">Dziekanat</li>
+        <li class="pozycja-podmenu">Stypendia</li>
       </ul>
     </li>
-    <li class="menu-item menu-item-with-submenu">Doktorant
-      <ul class="submenu">
-        <li class="submenu-item">Ogłoszenia</li>
-        <li class="submenu-item">Kontakt</li>
-        <li class="submenu-item">Stypendia</li>
+    <li class="rozwijane-menu">Doktorant
+      <ul class="podmenu">
+        <li class="pozycja-podmenu">Ogłoszenia</li>
+        <li class="pozycja-podmenu">Kontakt</li>
+        <li class="pozycja-podmenu">Stypendia</li>
       </ul>
     </li>
   </ul>
