@@ -7,8 +7,13 @@ label {
     margin-bottom: 5px;
 }
 
-input[type="text"], input[type="tel"], input[type="email"], textarea {
-    width: 100%;
+input[type="text"], input[type="tel"], input[type="email"] {
+    width: 94%;
+    padding: 10px;
+    border: 10px solid #ccc;
+    border-radius: 4px;
+}
+textarea {
     padding: 10px;
     border: 10px solid #ccc;
     border-radius: 4px;
