@@ -12,21 +12,26 @@
     <form action="#" method="get">
         <div>
             <label for="productName">Nazwa produktu:</label>
-            <input type="text" id="productName" name="productName">
+            <input type="text" id="productName" name="productName" placeholder="🔎 Nazwa produktu">
         </div>
         <br>
-        <div>
+        <fieldset style="height: 60px;">
+            <br>
+            <legend>Cena</legend>
             <label for="priceFrom">Cena od:</label>
-            <input type="number" id="priceFrom" name="priceFrom" value="0.00">
+            <input type="number" id="priceFrom" name="priceFrom" placeholder="0.00" min="0.00" max="100000000.00">
             
             <label for="priceTo">do:</label>
-            <input type="number" id="priceTo" name="priceTo" value="100000000.00">
+            <input type="number" id="priceTo" name="priceTo" placeholder="100000000.00" min="0.00" max="100000000.00">
             
             <select name="currency" id="currency">
-                <option value="PLN" selected>PLN</option>
-                <option value="EURO" disabled>EURO</option>
+                <optgroup label="Waluty">
+                    <option value="PLN" selected>PLN</option>
+                    <option value="EURO" disabled>EURO</option>
+                </optgroup>
             </select>
-        </div>
+            
+        </fieldset>
         <br>
         <fieldset>
             <legend>Ocena produktu:</legend>
@@ -47,10 +52,11 @@
                 <label for="rating1">1,0 ⭐</label><br>
             </div>
         </fieldset>
+        <hr>
         
         <div>
             <label for="color">Kolor:</label>
-            <input type="color" id="color" name="color">
+            <input type="color" id="color" name="color" value="#FFA500">
         </div>
         <br>
         <div>
@@ -59,18 +65,19 @@
         </div>
         <br>
         <div>
-            <label for="fastCharging">Szybkie ładowanie:</label>
-            <input type="range" id="fastCharging" name="fastCharging" min="0" max="150" value="0">
+            <label for="fastCharging">Szybkie ładowanie: 0W</label>
+            <input type="range" id="fastCharging" name="fastCharging" min="0" max="150" value="0">150W
         </div>
         <br>
-        <fieldset>
+        <fieldset style="height: 70px;">
             <legend>Inne:</legend>
+            <br>
             <div>
                 <input type="checkbox" id="dualSim" name="dualSim" value="true">
-                <label for="dualSim">dual-sim</label>
+                <label style="margin-right: 20px;" for="dualSim">dual-sim</label>
                 
                 <input type="checkbox" id="5g" name="5g" value="true">
-                <label for="5g">5G</label>
+                <label style="margin-right: 20px;"for="5g">5G</label>
                 
                 <input type="checkbox" id="gorillaGlass" name="gorillaGlass" value="true">
                 <label for="gorillaGlass">Gorilla glass</label>
