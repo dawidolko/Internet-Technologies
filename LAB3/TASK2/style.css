@@ -8,13 +8,13 @@ label {
 }
 
 input[type="text"], input[type="tel"], input[type="email"], textarea {
-    width: 100%;
+    width: 94%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-input[type="submit"] {
+button[type="submit"], button[type="reset"] {
     padding: 10px 15px;
     background-color: #007BFF;
     border: none;
@@ -23,6 +23,6 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-input[type="submit"]:hover {
+button[type="submit"]:hover, button[type="reset"]:hover {
     background-color: #0056b3;
 }
