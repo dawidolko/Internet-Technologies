@@ -1,15 +1,35 @@
 body {
     font-family: "Corbel", sans-serif;
-    background-color: #414141;
-    color: #5d4e49;
+    background-color: #ffffff;
+    color: #e4d3ce;
 }
 
 form {
-    background-color: #fbfbfb;
-    padding: 20px;
+    background-color: #5d4e49;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
     border-radius: 10px;
-    max-width: 400px;
-    margin: 40px auto;
+    max-width: 600px;
+    margin: auto;
+}
+
+.price{
+    margin-right: 20px;
+    margin-left: 20px
+}
+.inne label{
+    margin-right: 20px;
+    margin-left: 20px
+}
+
+.inne{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+input[type="color"]{
+    border-radius: 10px;
+    border: 1px
 }
 
 input[type="text"], 
@@ -17,16 +37,15 @@ input[type="number"],
 input[type="date"], 
 input[type="range"], 
 select {
-    width: 100%;
-    padding: 10px;
+    width: 25%;
     margin: 10px 0;
-    border: 1px solid #e4d3ce;
-    border-radius: 5px;
-    background-color: #e4d3ce;
+    border: 2px solid #414141;
+    border-radius: 10px;
+    background-color: #ffffff;
 }
 
 label {
-    display: block;
+    display: inline;
     margin-bottom: 5px;
 }
 
@@ -35,16 +54,36 @@ input[type="checkbox"] {
     margin-right: 5px;
 }
 
+select {
+    width: auto;
+}
+
+#ramka{
+    height: 70px;
+}
+
+h2{
+    margin-top:0px;
+}
+
 button {
-    padding: 10px 15px;
-    background-color: #5d4e49;
+    padding: auto auto;
+    background-color: #50433f;
     color: #fbfbfb;
-    border: none;
-    border-radius: 5px;
+    border: 2px solid #414141;
+    border-radius: 10px;
     cursor: pointer;
 }
 
 button:hover {
     background-color: #e4d3ce;
     color: #5d4e49;
+}
+
+form fieldset{
+    margin-bottom: 10px;
+}
+
+fieldset{
+    border-radius: 10px;
 }
