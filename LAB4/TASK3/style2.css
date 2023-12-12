@@ -19,7 +19,7 @@ hr{
 
 .rama{
     text-align: center;
-    border-radius: 10px;
+    border-radius: 50px;
 }
 
 .inne label{
@@ -100,7 +100,6 @@ form fieldset{
     margin-bottom: 10px;
     border: 2px solid white;
     border-top-width: 10px;
-    border-radius: 10px;
     border-left-width: 4px;
     border-right-width: 4px;
 }
