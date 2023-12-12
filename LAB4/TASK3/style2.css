@@ -15,8 +15,9 @@ form {
 
 .rama{
     text-align: center;
-    border: 2px solid white;
-    border-top-width: 10px;
+    border: 10px 2px 2px 2px;
+    border-color: white;
+    border-style: solid;
 }
 
 .inne label{
