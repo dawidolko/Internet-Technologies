@@ -101,6 +101,8 @@ form fieldset{
     border: 2px solid white;
     border-top-width: 10px;
     border-radius: 10px;
+    border-left-width: 4px;
+    border-right-width: 4px;
 }
 
 legend{
