@@ -17,12 +17,6 @@ form {
     text-align: center;
 }
 
-#ramka1{
-    border: 10px 2px 2px 2px;
-    border-color: white;
-    border-style: solid;
-}
-
 .inne label{
     margin-right: 20px;
     margin-left: 20px
@@ -99,6 +93,9 @@ button:hover {
 
 form fieldset{
     margin-bottom: 10px;
+    border: 10px 2px 2px 2px;
+    border-color: white;
+    border-style: solid;
 }
 
 legend{
