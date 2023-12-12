@@ -93,14 +93,12 @@ button:hover {
 
 form fieldset{
     margin-bottom: 10px;
+    border-top-width: 10px;
+    border-left-width: 4px;
+    border-radius: 30px;
 }
 
 legend{
     margin-right: auto;
 }
 
-fieldset{
-    border-top-width: 10px;
-    border-left-width: 4px;
-    border-radius: 30px;
-}
