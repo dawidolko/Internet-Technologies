@@ -98,9 +98,8 @@ button:hover {
 
 form fieldset{
     margin-bottom: 10px;
-    border: 10px 2px 2px 2px;
-    border-color: white;
-    border-style: solid;
+    border: 2px solid white;
+    border-top-width: 10px;
     border-radius: 10px;
 }
 
