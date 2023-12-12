@@ -13,6 +13,10 @@ form {
     margin: auto;
 }
 
+hr{
+    display:none;
+}
+
 .rama{
     text-align: center;
 }
