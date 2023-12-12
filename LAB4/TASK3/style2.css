@@ -13,8 +13,11 @@ form {
     margin: auto;
 }
 
-.ramka1{
+.rama{
     text-align: center;
+}
+
+.ramka1{
     border: 10px 2px 2px 2px;
     border-color: white;
     border-style: solid;
