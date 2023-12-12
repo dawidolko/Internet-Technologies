@@ -96,7 +96,7 @@ form fieldset{
     border-top-width: 10px;
     border-left-width: 4px;
     border-radius: 30px;
-    color: white;
+    border: 2px solid white;
 }
 
 legend{
