@@ -95,6 +95,12 @@ form fieldset{
     margin-bottom: 10px;
 }
 
+legend{
+    margin-right: auto;
+}
+
 fieldset{
-    border-radius: 10px;
+    border-top-width: 10px;
+    border-left-width: 4px;
+    border-radius: 30px;
 }
