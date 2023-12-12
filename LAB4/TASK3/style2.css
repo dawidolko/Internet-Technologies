@@ -99,7 +99,7 @@ form fieldset{
     border: 2px solid white;
 }
 
-form fieldset.rama{
+fieldset .rama{
     border: 2px solid white;
     border-top-width: 10px;
 }
