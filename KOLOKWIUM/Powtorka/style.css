@@ -34,20 +34,32 @@ header {
 
 ul.menu li.rozwijane-menu a,
 ul.menu li.pozycja-menu a {
+    transition: color 0.3s, border-bottom-color 0.3s;
     text-decoration: none;
     color: white;
 }
 
+ul.menu li.pozycja-menu a:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+ul.menu li.pozycja-menu a.active {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
 ul.menu li.rozwijane-menu a:hover,
 ul.menu li.pozycja-menu a:hover {
-    text-decoration: none;
+    text-decoration: underline;
+    border-bottom-color: #fff;
     color: rgb(201, 201, 201);
 }
 
 ul.menu li.rozwijane-menu a:visited,
 ul.menu li.pozycja-menu a:visited {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
 }
 
 .menu {
