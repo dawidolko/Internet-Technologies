@@ -51,10 +51,14 @@
   }
 
   .pozycja-podmenu, .podmenu-zagniezdzony {
-    padding: 10px 20px;
-    border-top: 1px solid #ffffff;
+    padding: 15px 20px;
+    border-top: 4px solid #ffffff;
     position: relative;
   }
+
+  .pozycja-podmenu:hover, .podmenu-zagniezdzony:hover {
+    background-color: #003366;
+  } 
 
   .podmenu-zagniezdzony > ul {
     display: none;
@@ -62,6 +66,7 @@
     left: 100%;
     top: 0;
     margin: 0;
+    margin-top: -4px;
     padding-left: 0;
     list-style: none;
     background-color: #008000;
@@ -100,7 +105,8 @@
   }
 
   .podmenu-zagniezdzony > ul > li{
-    padding: 10px 20px;
+    padding: 15px 20px;
+    border-top: 4px solid #ffffff;
   }
 
   .podmenu-zagniezdzony > ul > li:hover{
@@ -118,10 +124,10 @@
       <ul class="podmenu">
         <li class="podmenu-zagniezdzony">Kierunki
           <ul>
-            <li>Matematyka</li>
-            <li>Informatyka</li>
-            <li>Biotechnologia</li>
-            <li>Mechatronika</li>
+            <li class="podpodmenu">Matematyka</li>
+            <li class="podpodmenu">Informatyka</li>
+            <li class="podpodmenu">Biotechnologia</li>
+            <li class="podpodmenu">Mechatronika</li>
           </ul>
         </li>
         <li class="pozycja-podmenu">Aktualności</li>
