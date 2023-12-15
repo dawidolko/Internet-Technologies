@@ -1,165 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Grid Layout Example</title>
-<style>
-    * {
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout Example</title>
+    <style>
+      * {
         box-sizing: border-box;
-    }
-    body {
+      }
+      body {
         margin: 0;
-    }
-    .grid-container {
+      }
+      .grid-container {
         display: grid;
         grid-template-areas:
-            'navbar navbar'
-            'aside main'
-            'footer footer';
+          "navbar navbar"
+          "aside main"
+          "footer footer";
         grid-template-columns: 1fr 5fr;
         min-height: 100vh;
-    }
-    .navbar {
+      }
+      .navbar {
         grid-area: navbar;
         background-color: #313131;
-    }
-    .navbar-links {
+      }
+      .navbar-links {
         display: flex;
         flex-direction: row;
         list-style-type: none;
         justify-content: space-evenly;
         padding: 0px;
-    }
-    .navbar-links li a {
+      }
+      .navbar-links li a {
         color: #fff;
         text-decoration: none;
         padding: 5px;
-    }
-    .main-section {
+      }
+      .main-section {
         grid-area: main;
         padding: 10px;
         text-align: center;
-    }
-    .aside {
+      }
+      .aside {
         grid-area: aside;
         background-color: #8e8c8c;
         padding: 10px;
         text-align: justify;
-    }
-    .footer {
+      }
+      .footer {
         grid-area: footer;
         background-color: #313131;
         display: flex;
         justify-content: space-evenly;
-    }
-    .footer-links {
+      }
+      .footer-links {
         list-style-type: none;
         padding: 0;
         display: flex;
         flex-direction: row;
-    }
-    .footer-links li a {
+      }
+      .footer-links li a {
         color: #fff;
         text-decoration: none;
         padding: 5px;
-    }
+      }
 
-    @media screen and (max-width: 400px) {
+      label {
+        display: none;
+      }
+
+      #toggle,
+      #toggle1 {
+        display: none;
+      }
+
+      .aside-links1 {
+        list-style-type: none;
+      }
+
+      .aside-links1 li a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      .aside-links1 {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      @media screen and (max-width: 400px) {
         .grid-container {
-            grid-template-areas:
-                'navbar'
-                'aside'
-                'main'
-                'footer';
-            grid-template-columns: 1fr;
+          grid-template-areas:
+            "navbar"
+            "aside"
+            "main"
+            "footer";
+          grid-template-columns: 1fr;
         }
-        .aside{
-            background-color: #8e8c8c;
-            min-height: 25%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-          }
-        .navbar-links, .aside-links1 {
-            display: none;
+        .aside {
+          background-color: #8e8c8c;
+          min-height: 25%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+        .navbar-links,
+        .aside-links1 {
+          display: none;
         }
         #toggle:checked ~ .navbar-links,
         #toggle1:checked ~ .aside-links1 {
-            display: flex;
-            flex-direction: column;
+          display: flex;
+          flex-direction: column;
         }
-        .navbar label, .aside label {
-            display: block;
-            color: white;
-            background-color: #313131;
-            text-align: center;
-            cursor: pointer;
-            height: auto;
-            width: 30px;
-            padding: 5px;
-            margin-top: 10px;
+        .navbar label,
+        .aside label {
+          display: block;
+          color: white;
+          background-color: #313131;
+          text-align: center;
+          cursor: pointer;
+          height: auto;
+          width: 30px;
+          padding: 5px;
+          margin-top: 10px;
         }
-        
-        input{
+
+        input {
           display: none;
         }
-    }
-</style>
-</head>
-<body>
+      }
+    </style>
+  </head>
+  <body>
     <div class="grid-container">
-        <nav class="navbar">
-            <label for="toggle">☰</label>
-            <input type="checkbox" id="toggle">
-            <ul class="navbar-links">
-                <li><a href="#">Strona główna</a></li>
-                <li><a href="#">Podstrona 1</a></li>
-                <li><a href="#">Podstrona 2</a></li>
-                <li><a href="#">Podstrona 3</a></li>
-            </ul>
-        </nav>
-        <div class="main-section">
-            <h1>Strona główna</h1>
-            <section>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique sapien ac erat tincidunt, sit amet dignissim lectus vulputate. Donec id iaculis velit. Aliquam vel malesuada erat. Praesent non magna ac massa
-              aliquet tincidunt vel in massa. Phasellus feugiat est vel leo finibus
-              congue.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique
-              sapien ac erat tincidunt, sit amet dignissim lectus vulputate. Donec id
-              iaculis velit. Aliquam vel malesuada erat. Praesent non magna ac massa
-              aliquet tincidunt vel in massa. Phasellus feugiat est vel leo finibus
-              congue.
-            </section>
-            <section>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique sapien ac erat tincidunt, sit amet dignissim lectus vulputate. Donec id iaculis velit. Aliquam vel malesuada erat. Praesent non magna ac massa
-              aliquet tincidunt vel in massa. Phasellus feugiat est vel leo finibus
-              congue.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique
-              sapien ac erat tincidunt, sit amet dignissim lectus vulputate. Donec id
-              iaculis velit. Aliquam vel malesuada erat. Praesent non magna ac massa
-              aliquet tincidunt vel in massa. Phasellus feugiat est vel leo finibus
-              congue.
-            </section>
-        </div>
-        <aside class="aside">
-            <h2>Mapa strony</h2>
-            <label for="toggle1">☰</label>
-            <input type="checkbox" id="toggle1">
-            <ul class="aside-links1">
-                <li><a href="#">link1</a></li>
-                <li><a href="#">link2</a></li>
-                <li><a href="#">link3</a></li>
-                <li><a href="#">link4</a></li>
-            </ul>
-        </aside>
-        <footer class="footer">
-            <ul class="footer-links">
-                <li><a href="#">link1</a></li>
-                <li><a href="#">link2</a></li>
-                <li><a href="#">link3</a></li>
-                <li><a href="#">link4</a></li>
-            </ul>
-        </footer>
+      <nav class="navbar">
+        <label for="toggle">☰</label>
+        <input type="checkbox" id="toggle" />
+        <ul class="navbar-links">
+          <li><a href="#">Strona główna</a></li>
+          <li><a href="#">Podstrona 1</a></li>
+          <li><a href="#">Podstrona 2</a></li>
+          <li><a href="#">Podstrona 3</a></li>
+        </ul>
+      </nav>
+      <div class="main-section">
+        <h1>Strona główna</h1>
+        <section>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+          tristique sapien ac erat tincidunt, sit amet dignissim lectus
+          vulputate. Donec id iaculis velit. Aliquam vel malesuada erat.
+          Praesent non magna ac massa aliquet tincidunt vel in massa. Phasellus
+          feugiat est vel leo finibus congue.Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Morbi tristique sapien ac erat tincidunt,
+          sit amet dignissim lectus vulputate. Donec id iaculis velit. Aliquam
+          vel malesuada erat. Praesent non magna ac massa aliquet tincidunt vel
+          in massa. Phasellus feugiat est vel leo finibus congue.
+        </section>
+        <section>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+          tristique sapien ac erat tincidunt, sit amet dignissim lectus
+          vulputate. Donec id iaculis velit. Aliquam vel malesuada erat.
+          Praesent non magna ac massa aliquet tincidunt vel in massa. Phasellus
+          feugiat est vel leo finibus congue.Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Morbi tristique sapien ac erat tincidunt,
+          sit amet dignissim lectus vulputate. Donec id iaculis velit. Aliquam
+          vel malesuada erat. Praesent non magna ac massa aliquet tincidunt vel
+          in massa. Phasellus feugiat est vel leo finibus congue.
+        </section>
+      </div>
+      <aside class="aside">
+        <h2>Mapa strony</h2>
+        <label for="toggle1">☰</label>
+        <input type="checkbox" id="toggle1" />
+        <ul class="aside-links1">
+          <li><a href="#">link1</a></li>
+          <li><a href="#">link2</a></li>
+          <li><a href="#">link3</a></li>
+          <li><a href="#">link4</a></li>
+        </ul>
+      </aside>
+      <footer class="footer">
+        <ul class="footer-links">
+          <li><a href="#">link1</a></li>
+          <li><a href="#">link2</a></li>
+          <li><a href="#">link3</a></li>
+          <li><a href="#">link4</a></li>
+        </ul>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
