@@ -4,10 +4,9 @@
 
 @layer pierwsza {
   section {
-    color: black !important; /* Priorytet nadany z poprzedniego zadania */
     transform: rotate(10deg) scale(2); /* Obrót i skalowanie */
     filter: blur(5px); /* Rozmycie */
-    background-color: rgba(0, 0, 255, 0.5); /* Półprzezroczysty niebieski tło (jeżeli miało być tło) */
+    color: rgba(0, 0, 255, 0.5) !important; /* Półprzezroczysty niebieski tło (jeżeli miało być tło) */
     padding: calc(1em - 5px); /* Padding z wykorzystaniem funkcji calc */
   }
 }
