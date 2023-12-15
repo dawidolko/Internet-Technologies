@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>zad8</title>
+        <title>Responsywna Strona</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <style>
-            @media screen and (min-width: 768px) {
+        
+        h1{
+            font-size: 2em; 
+        }
+
+        ul {
+            list-style-type: disc;
+        }
+
+        @media screen and (min-width: 768px) {
             #pierwsza{
                 height: 100px;
             }
 
             article{
                 height: 200px;
-                margin-bottom: 20px;
+                margin-bottom: 0px;
             }
             #pierwsza > li{
                 display: inline-block;
@@ -24,6 +33,13 @@
                 float: left;
                 width: 20%;
             }
+
+            section#left > ul > li{
+                display: block;
+                list-style-type: disc;
+                margin-bottom: 15px;
+            }
+
             #right{
                 float: right;
                 width: 80%;
@@ -33,7 +49,7 @@
 
             article{
                 min-height: 300px;
-                margin-bottom: 20px;
+                margin-bottom: 0px;
             }
             #pierwsza > li{
                 display: block;
@@ -42,24 +58,24 @@
     </style>
     <body>
         <ul id="pierwsza">
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
         </ul>
         <article>
             <section id="left">
-                <h3>In this article</h3>
+                <h4>In this article</h4>
                 <ul id="druga">
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
                 </ul>
             </section>
             <section id="right">
                 <h1>Main content</h1>
-                    orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
                     reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
@@ -67,10 +83,10 @@
             </section>
         </article>
         <ul id="pierwsza">
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
         </ul>
     </body>
-</html>
+</html> 
