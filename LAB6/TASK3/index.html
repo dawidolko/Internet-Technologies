@@ -7,21 +7,24 @@
 src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
 </script>
 <style>
-            img{
-        display: block; /* changed from flex to block for proper image display */
-        margin: auto; /* center the image */
-        width: 200px;
-        height: 200px;
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    img{
+        display: flex;
+        justify-content: center;
+        width: 100px;
+        height:100px;
     }
     .container{
         display: flex;
-        align-items: stretch;
-        justify-content: space-around;
+        padding: 10px;
         gap: 10px;
         max-width: 500px;
+        /* overflow-x: scroll; */
+
         flex-wrap: wrap;
-        scrollbar-width: none; /* firefox */
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.274) 0%, rgba(0, 0, 0, 0.274) 50%);
     }
 
     .container::-webkit-scrollbar {
@@ -29,83 +32,73 @@ src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
     }
 
     .card{
-        min-width: 200px; /* min-width to ensure cards don't get too small */
-        flex-grow: 1; /* allows card to grow */
-        flex-shrink: 1; /* allows card to shrink */
-        flex-basis: calc(50% - 10px); /* subtract the gap from the flex-basis */
         border-radius: 10px;
         background-color: rgb(239, 239, 239);
-        border: 0px solid black;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.574);
         display: flex;
+        /* flex: 1; */
         align-items: center;
         flex-direction: column; 
-        margin: 0;
-        padding: 0;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optional: adds shadow for depth */
+        max-width: 200px;
+
+        flex: 0 0 200px;
     }
 
     .main-text{
         display: flex;
-        margin: 10px;
-        padding: 15px;
+        padding: 5px 20px 5px 20px;
         justify-content: center;
+        align-items: center;
         text-align: justify;
         font-size: 20px;
-        flex: 1; /* allows this div to fill the space in the flex container */
+        flex: 1; 
     }
 
     .bottom{
-        border-radius: 10px;
-        margin: auto;
-        bottom: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
         width: 100%;
         display: flex;
         justify-content: space-between;
-        text-align: center;
         background-color: silver;
+    }
+    span{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    button{
+        background-color: silver;
+        border-radius: 5px;
+        border: 0px;
     }
     h1,h2,h3{
         text-align: center;
     }
+
 </style>
 </head>
 <body>
     <div class="container">
-        <!-- <div class="card">
-            <h3>Nazwa</h3>
-            <img src="logo_UR_blue.jpg">
-            <div class="main-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                tristique sapien ac erat tincidunt, sit amet dignissim lectus vulputate.
-            </div>
-           
-        <div class="bottom"><span><ion-icon name="time-outline"></ion-icon> 30 min</span>
-        <button><ion-icon name="heart-outline"></ion-icon></button></div>
-
         <div class="card">
             <h3>Nazwa</h3>
             <img src="logo_UR_blue.jpg">
             <div class="main-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                tristique sapien ac erat tincidunt, sit amet dignissim lectus vulputate.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique sapien
+                ac erat tincidunt, sit amet dignissim lectus vulputate. Donec id iaculis velit.
+                Aliquam vel malesuada erat. Praesent non magna ac massa aliquet tincidunt vel in
+                massa. Phasellus feugiat est vel leo finibus congue.
             </div>
-           
-        <div class="bottom"><span><ion-icon name="time-outline"></ion-icon> 30 min</span>
-        <button><ion-icon name="heart-outline"></ion-icon></button></div> -->
-
-        <div class="card">
-            <h3>Nazwa</h3>
-            <img src="logo_UR_blue.jpg">
-            <div class="main-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique sapien
-                    ac erat tincidunt, sit amet dignissim lectus vulputate. Donec id iaculis velit.
-                    Aliquam vel malesuada erat. Praesent non magna ac massa aliquet tincidunt vel in
-                    massa. Phasellus feugiat est vel leo finibus congue.
-                </div>
                 
-                <div class="bottom"><span><ion-icon name="time-outline"></ion-icon>
-                50 min</span> <button><ion-icon name="heart-outline"></ion-icon></button></div>
-                </div>
+            <div class="bottom">
+                <span>
+                    <ion-icon name="time-outline"></ion-icon>
+                50 min</span> 
+                <button><ion-icon name="heart-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
                
         <div class="card">
             <h3>Nazwa</h3>
@@ -115,11 +108,35 @@ src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
                 ac erat tincidunt, sit amet dignissim lectus vulputate. Donec id iaculis velit.
                 Aliquam vel malesuada erat. Praesent non magna ac massa aliquet tincidunt vel in
                 massa. Phasellus feugiat est vel leo finibus congue.
-                </div>
+            </div>
                
-                <div class="bottom"><span><ion-icon name="time-outline"></ion-icon>
+            <div class="bottom"><span><ion-icon name="time-outline"></ion-icon>
                 120 min</span> <button><ion-icon name="heart-outline"></ion-icon></button></div>
-                </div>
+        </div>
+
+        <div class="card">
+            <h3>Nazwa</h3>
+            <img src="logo_UR_blue.jpg">
+            <div class="main-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                tristique sapien ac erat tincidunt, sit amet dignissim lectus vulputate.
+            </div>
+               
+            <div class="bottom"><span><ion-icon name="time-outline"></ion-icon>
+                120 min</span> <button><ion-icon name="heart-outline"></ion-icon></button></div>
+        </div>
+
+        <div class="card">
+            <h3>Nazwa</h3>
+            <img src="logo_UR_blue.jpg">
+            <div class="main-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                tristique sapien ac erat tincidunt, sit amet dignissim lectus vulputate.
+            </div>
+               
+            <div class="bottom"><span><ion-icon name="time-outline"></ion-icon>
+                120 min</span> <button><ion-icon name="heart-outline"></ion-icon></button></div>
+        </div>
                
         <div class="card">
             <h3>Nazwa</h3>
@@ -127,11 +144,11 @@ src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
             <div class="main-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
                 tristique sapien ac erat tincidunt, sit amet dignissim lectus vulputate.
-                </div>
-               
-                <div class="bottom"><span><ion-icon name="time-outline"></ion-icon> 30 min</span>
-                <button><ion-icon name="heart-outline"></ion-icon></button></div>
             </div>
+               
+            <div class="bottom"><span><ion-icon name="time-outline"></ion-icon> 30 min</span>
+                <button><ion-icon name="heart-outline"></ion-icon></button></div>
+        </div>
         </div>
     </body>
     </html>
