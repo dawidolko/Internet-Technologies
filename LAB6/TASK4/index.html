@@ -1,287 +1,250 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flexbox intro</title>
-</head>
-<style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox intro</title>
+  </head>
+  <style>
     * {
-    box-sizing: border-box;
+      box-sizing: border-box;
     }
     @media screen and (min-width: 400px) {
-        .take-all-space {
+      .take-all-space {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         min-width: 100vw;
         min-height: 100vh;
         margin: 0px;
-        }
-        .main-content {
+      }
+      .main-content {
         display: flex;
         flex-direction: row;
         flex-grow: 2;
         align-items: stretch;
-        }
-        .main-section {
+      }
+      .main-section {
         display: flex;
         flex-direction: column;
         align-items: center;
-        }
-        .main-section section {
+      }
+      .main-section section {
         padding: 10px;
         max-width: 70%;
         text-align: center;
-        }
-        .navbar {
+      }
+      .navbar {
         background-color: #313131;
-        }
-        .navbar-links {
+      }
+      .navbar-links {
         display: flex;
         flex-direction: row;
         list-style-type: none;
         justify-content: space-evenly;
         padding: 0px;
-        }
-        .navbar-links li a {
+      }
+      .navbar-links li a {
         color: #fff;
         text-decoration: none;
         padding: 5px;
-        }
-        .aside {
+      }
+      .aside {
         background-color: #8e8c8c;
         min-width: 25%;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: justify;
-        }
-        .aside ul {
+      }
+      .aside ul {
         display: flex;
         flex-direction: column;
         list-style-type: none;
         justify-content: space-evenly;
         padding: 0px;
-        }
-        .aside li a {
+      }
+      .aside li a {
         color: #000000;
         text-decoration: none;
         padding: 5px;
-        }
-        .footer {
+      }
+      .footer {
         background-color: #313131;
-        }
-        .footer-links {
+      }
+      .footer-links {
         display: flex;
         flex-direction: row;
         list-style-type: none;
         justify-content: space-evenly;
         padding: 0px;
-        }
-        .footer-links li a {
+      }
+      .footer-links li a {
         color: #fff;
         text-decoration: none;
         padding: 5px;
-        }
-        label{
-            display:none;
-        }
-        input{
-            display:none;
-        }
+      }
+      label {
+        display: none;
+      }
+      input {
+        display: none;
+      }
     }
 
     @media screen and (max-width: 400px) {
-        .take-all-space {
+      .take-all-space {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         min-width: 100vw;
         min-height: 100vh;
         margin: 0px;
-        }
-        .main-content {
+      }
+      .main-content {
         display: block;
         flex-direction: row;
         flex-grow: 2;
         align-items: center;
-        }
-        .main-section {
+      }
+      .main-section {
         display: flex;
         flex-direction: column;
         align-items: center;
-        }
-        .main-section section {
+      }
+      .main-section section {
         padding: 10px;
         max-width: 70%;
         text-align: center;
-        }
-        .navbar {
+      }
+      .navbar {
         background-color: #313131;
         display: flex;
-        align-items: baseline;
-        }
+      }
 
-        #toggle {
+      #toggle {
         display: none;
         border: 0px;
-        }
-        #toggle:checked ~ .navbar-links {
+      }
+      #toggle:checked ~ .navbar-links {
         display: flex;
         flex-direction: column;
         list-style-type: none;
         justify-content: space-evenly;
         padding: 0px;
-        }
-        .navbar-links {
+      }
+      .navbar-links {
         display: none;
-        flex-direction: row;
-        list-style-type: none;
-        justify-content: space-evenly;
-        padding: 0px;
-        }
-        .aside-links1 {
+      }
+      .aside-links1 {
         display: none;
-        flex-direction: row;
-        list-style-type: none;
-        justify-content: space-evenly;
-        padding: 0px;
-        }
-        .navbar label {
-        color: white;
-        background-color: #8e8c8c;
-        min-width: 30px;
-        text-align: center;
-        margin: 5px;
-        display: flex;
-        }
-        .navbar-links li a {
+      }
+      .navbar-links li a {
         color: #fff;
         text-decoration: none;
         padding: 5px;
-        }
-        #toggle1 {
-                display: none;
-            }
-        #toggle1:checked ~ .aside-links1 {
+      }
+      #toggle1 {
+        display: none;
+      }
+      #toggle1:checked ~ .aside-links1 {
         display: flex;
         flex-direction: column;
         list-style-type: none;
-        justify-content: space-evenly;
         padding: 0px;
-        }
-        .aside {
-        display: none;
-        flex-direction: row;
-        list-style-type: none;
-        justify-content: space-evenly;
-        padding: 0px;
-        }
-        .navbar label {
+      }
+      .aside label {
+        display: block;
         color: white;
-        background-color: #8e8c8c;
-        min-width: 30px;
+        background-color: #313131;
         text-align: center;
-        margin: 5px;
-        display: flex;
-        }
-        .aside label {
-                display: block; /* Pokaż etykietę na małych ekranach */
-                color: white;
-                background-color: #313131;
-                text-align: center;
-                cursor: pointer;
-                padding: 5px;
-                margin-top: 10px;
-            }
+        cursor: pointer;
+        padding: 5px;
+        margin-top: 10px;
+      }
 
-        .aside li a {
+      .aside li a {
         color: #fff;
         text-decoration: none;
         padding: 5px;
-        }
-        .aside {
+      }
+      .aside {
         background-color: #8e8c8c;
         min-height: 25%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        }
-        .aside ul {
-        display: none;
-        flex-direction: row;
-        list-style-type: none;
-        justify-content: space-evenly;
-        padding: 0px;
-        }
-        .footer {
+      }
+
+      .footer {
         background-color: #313131;
-        }
-        .footer-links {
+      }
+      .footer-links {
         display: flex;
         flex-direction: row;
         list-style-type: none;
         justify-content: space-evenly;
-        padding: 0px;
-        }
-        .footer-links li a {
+      }
+      .footer-links li a {
         color: #fff;
         text-decoration: none;
-        padding: 5px;
+      }
     }
-    
-}
-</style>
-<body class="take-all-space">
+  </style>
+  <body class="take-all-space">
     <nav class="navbar">
-        <label for="toggle">☰</label><input type="checkbox" id="toggle">
-        <ul class="navbar-links">
-            <li><a href="#">Strona główna</a></li>
-            <li><a href="#">Podstrona 1</a></li>
-            <li><a href="#">Podstrona 2</a></li>
-            <li><a href="#">Podstrona 3</a></li>
-        </ul>
+      <label for="toggle">☰</label><input type="checkbox" id="toggle" />
+      <ul class="navbar-links">
+        <li><a href="#">Strona główna</a></li>
+        <li><a href="#">Podstrona 1</a></li>
+        <li><a href="#">Podstrona 2</a></li>
+        <li><a href="#">Podstrona 3</a></li>
+      </ul>
     </nav>
     <div class="main-content">
-        <aside class="aside">
+      <aside class="aside">
         <h2>Mapa strony</h2>
-        <label for="toggle1">☰</label><input type="checkbox" id="toggle1">
+        <label for="toggle1">☰</label><input type="checkbox" id="toggle1" />
         <ul class="aside-links1">
-            <li><a href="#">link1</a></li>
-            <li><a href="#">link2</a></li>
-            <li><a href="#">link3</a></li>
-            <li><a href="#">link4</a></li>
+          <li><a href="#">link1</a></li>
+          <li><a href="#">link2</a></li>
+          <li><a href="#">link3</a></li>
+          <li><a href="#">link4</a></li>
         </ul>
-        </aside>
-        <div class="main-section">
-            <h1>Strona główna</h1>
-            <section>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique sapien ac erat tincidunt, sit amet dignissim lectus vulputate. Donec id iaculis velit. Aliquam vel malesuada erat. Praesent non magna ac massa
-            aliquet tincidunt vel in massa. Phasellus feugiat est vel leo finibus
-            congue.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique
-            sapien ac erat tincidunt, sit amet dignissim lectus vulputate. Donec id
-            iaculis velit. Aliquam vel malesuada erat. Praesent non magna ac massa
-            aliquet tincidunt vel in massa. Phasellus feugiat est vel leo finibus
-            congue.</section>
-            <section>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique sapien ac erat tincidunt, sit amet dignissim lectus vulputate. Donec id iaculis velit. Aliquam vel malesuada erat. Praesent non magna ac massa
-            aliquet tincidunt vel in massa. Phasellus feugiat est vel leo finibus
-            congue.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique
-            sapien ac erat tincidunt, sit amet dignissim lectus vulputate. Donec id
-            iaculis velit. Aliquam vel malesuada erat. Praesent non magna ac massa
-            aliquet tincidunt vel in massa. Phasellus feugiat est vel leo finibus
-            congue.</section>
-        </div>
+      </aside>
+      <div class="main-section">
+        <h1>Strona główna</h1>
+        <section>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+          tristique sapien ac erat tincidunt, sit amet dignissim lectus
+          vulputate. Donec id iaculis velit. Aliquam vel malesuada erat.
+          Praesent non magna ac massa aliquet tincidunt vel in massa. Phasellus
+          feugiat est vel leo finibus congue.Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Morbi tristique sapien ac erat tincidunt,
+          sit amet dignissim lectus vulputate. Donec id iaculis velit. Aliquam
+          vel malesuada erat. Praesent non magna ac massa aliquet tincidunt vel
+          in massa. Phasellus feugiat est vel leo finibus congue.
+        </section>
+        <section>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+          tristique sapien ac erat tincidunt, sit amet dignissim lectus
+          vulputate. Donec id iaculis velit. Aliquam vel malesuada erat.
+          Praesent non magna ac massa aliquet tincidunt vel in massa. Phasellus
+          feugiat est vel leo finibus congue.Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Morbi tristique sapien ac erat tincidunt,
+          sit amet dignissim lectus vulputate. Donec id iaculis velit. Aliquam
+          vel malesuada erat. Praesent non magna ac massa aliquet tincidunt vel
+          in massa. Phasellus feugiat est vel leo finibus congue.
+        </section>
+      </div>
     </div>
     <footer class="footer">
-        <ul class="footer-links">
-            <li><a href="#">link1</a></li>
-            <li><a href="#">link2</a></li>
-            <li><a href="#">link3</a></li>
-            <li><a href="#">link4</a></li>
-        </ul>
+      <ul class="footer-links">
+        <li><a href="#">link1</a></li>
+        <li><a href="#">link2</a></li>
+        <li><a href="#">link3</a></li>
+        <li><a href="#">link4</a></li>
+      </ul>
     </footer>
-</body>
+  </body>
 </html>
