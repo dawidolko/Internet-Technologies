@@ -1,63 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Grid example</title>
-<style>
-:root {
-  --blue-ur: #0033A0;
-  --white-ur: #FEFEFE;
-}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid example</title>
+    <style>
+      :root {
+        --blue-ur: #0033a0;
+        --white-ur: #fefefe;
+      }
 
-body {
-  text-align: center;
-  color: var(--white-ur);
-  background-color: var(--blue-ur);
-}
+      h1{
+        color: var(--white-ur);
+      }
 
-.gallery {
-  display: grid;
-  gap: 10px;
-  justify-content: center;
-}
+      body {
+        text-align: center;
+        color: #0033a0;
+        background-color: var(--blue-ur);
+      }
 
-.gallery img {
-  background-color: var(--white-ur);
-  width: 100%; /* Responsive width */
-  max-width: 400px; /* Maximum width */
-}
+      .gallery {
+        display: grid;
+        gap: 10px;
+        justify-content: center;
+        overflow: hidden;
+      }
 
-/* For screens smaller than 768px */
-@media (max-width: 767px) {
-  .gallery {
-    grid-template-columns: repeat(1, 400px); /* One column */
-  }
-}
+      .gallery img {
+        background-color: var(--white-ur);
+        width: 100%;
+        max-width: 400px;
+      }
 
-/* For screens smaller than 1200px and at least 768px */
-@media (min-width: 768px) and (max-width: 1199px) {
-  .gallery {
-    grid-template-columns: repeat(2, 400px); /* Two columns */
-  }
-}
+      @media (max-width: 767px) {
+        .gallery {
+          grid-template-columns: repeat(1, 400px);
+        }
+      }
 
-/* For screens larger than 1200px */
-@media (min-width: 1200px) {
-  .gallery {
-    grid-template-columns: repeat(3, 400px); /* Three columns */
-  }
-}
-</style>
-</head>
-<body>
-<h1>Gallery</h1>
-<section id="gallery" class="gallery">
-<img src="logo_UR_blue.jpg" alt="placeholder image">
-<img src="logo_UR_blue.jpg" alt="placeholder image">
-<img src="logo_UR_blue.jpg" alt="placeholder image">
-<img src="logo_UR_blue.jpg" alt="placeholder image">
-<img src="logo_UR_blue.jpg" alt="placeholder image">
-</section>
-</body>
+      @media (min-width: 768px) and (max-width: 1199px) {
+        .gallery {
+          grid-template-columns: repeat(2, 400px);
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .gallery {
+          grid-template-columns: repeat(3, 400px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Gallery</h1>
+    <section class="gallery">
+      <img src="logo_UR_blue.jpg" alt="placeholder image" />
+      <img src="logo_UR_blue.jpg" alt="placeholder image" />
+      <img src="logo_UR_blue.jpg" alt="placeholder image" />
+      <img src="logo_UR_blue.jpg" alt="placeholder image" />
+      <img src="logo_UR_blue.jpg" alt="placeholder image" />
+      <img src="logo_UR_blue.jpg" alt="placeholder image" />
+      <img src="logo_UR_blue.jpg" alt="placeholder image" />
+      <img src="logo_UR_blue.jpg" alt="placeholder image" />
+      <img src="logo_UR_blue.jpg" alt="placeholder image" />
+      <img src="logo_UR_blue.jpg" alt="placeholder image" />
+    </section>
+  </body>
 </html>
