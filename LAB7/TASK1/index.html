@@ -1,67 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Animacja Logo</title>
-<style>
-@keyframes blink-animation {
-  50% {
-    background-image: url('logo_monochromatyczne.png');
-  }
-  100% {
-    background-image: url('logo_barwne.png');
-  }
-}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animacja Logo</title>
+    <style>
+      @keyframes blink-animation {
+        from{
+          background-image: url(logo_monochromatyczne.png);
+        }
+        to{
+          background-image: url(logo_barwne.png);
+        }
+      }
 
-@keyframes hover-animation {
-  100% {
-    transform: scale(2);
-  }
-}
+      @keyframes hover-animation {
+        100% {
+          transform: scale(2);
+        }
+      }
 
-@keyframes combined-animation {
-  100% {
-    transform: scale(2) rotate(360deg);
-  }
-}
+      @keyframes combined-animation {
+        100% {
+          transform: scale(2) rotate(360deg);
+        }
+      }
 
-.logo {
-  width: 200px;
-  height: 200px;
-  background-image: url('logo_monochromatyczne.png');
-  background-size: cover;
-  animation: blink-animation 6s infinite alternate;
-  animation-name: blink-animation;
-  /* animation-duration: 6;
-  animation-iteration-count: infinite; */
-}
+      .logo {
+        width: 200px;
+        height: 200px;
+        background-image: url("logo_monochromatyczne.png");
+        background-size: cover;
+        animation: blink-animation 6s infinite alternate;
+        /*
+        animation-name: blink-animation;
+        animation-duration: 6;
+        animation-iteration-count: infinite;  
+        */
+      }
 
-.logo:hover {
-  animation: hover-animation 2s forwards;
-}
+      .logo:hover {
+        animation: hover-animation 2s forwards;
+      }
 
-.rotating-logo:hover {
-  animation: combined-animation 2s forwards;
-}
+      .rotating-logo:hover {
+        animation: combined-animation 2s forwards;
+      }
 
-/*mozna animacje robic po , poprzez dwie bedą w jednej.*/
+      /*mozna animacje robic po , poprzez dwie bedą w jednej.*/
 
-/* Ustawienie wyjściowe dla diva obracającego się */
-.rotating-logo {
-  width: 200px;
-  height: 200px;
-  background-image: url('logo_monochromatyczne.png');
-  background-size: cover;
-  animation: blink-animation 6s infinite alternate;
-}
+      /* Ustawienie wyjściowe dla diva obracającego się */
+      .rotating-logo {
+        width: 200px;
+        height: 200px;
+        background-image: url("logo_monochromatyczne.png");
+        background-size: cover;
+        animation: blink-animation 6s infinite alternate;
+      }
 
-</style>
-</head>
-<body>
-
-<div class="logo"></div>
-<div class="rotating-logo"></div>
-
-</body>
+      .main{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <section class="main">
+      <h1>DIV 1</h1>
+      <div class="logo"></div>
+      <h1>DIV 2</h1>
+      <div class="rotating-logo"></div>
+    </section>
+  </body>
 </html>
