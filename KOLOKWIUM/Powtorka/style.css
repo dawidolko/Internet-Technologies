@@ -229,6 +229,7 @@ nav ul {
 }
 
 #pierwszev2 {
+    margin-top: 20px;
     display: none;
     justify-content: space-around;
     align-items: center;
