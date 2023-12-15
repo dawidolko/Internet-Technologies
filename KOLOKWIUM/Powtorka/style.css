@@ -32,6 +32,38 @@ header {
     z-index: 1000;
 }
 
+nav ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s, border-bottom-color 0.3s;
+    border-bottom: 2px solid transparent;
+    position: relative;
+}
+
+nav ul li a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+nav ul li a:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+
 ul.menu li.rozwijane-menu a,
 ul.menu li.pozycja-menu a {
     transition: color 0.3s, border-bottom-color 0.3s;
