@@ -69,5 +69,5 @@ layout: default
 ### [Kolokwium Powtórka](KOLOKWIUM/Powtorkav2) - Kolokwium 2
 - [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/KOLOKWIUM/Powtorkav2)<br>
 
-### [Pasek Navbar](KOLOKWIUM/PasekNav) - Kolokwium 2
+### [Pasek Navbar](KOLOKWIUM/PasekNav/pasekNav.html) - Kolokwium 2
 - [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/KOLOKWIUM/PasekNav)<br>
