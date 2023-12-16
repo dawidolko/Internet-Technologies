@@ -12,7 +12,9 @@
 <body>
     <header>
         <nav>
-            <a id="minusowe" href="#"> <img id="zerowe" src="image/logotyp.jpg" alt="LOGO"></a>
+            <div class="logo">
+                <a id="minusowe" href="#"> <img id="zerowe" src="image/logotyp.jpg" alt="LOGO"></a>
+            </div>
             <ul class="menu">
                 <li class="pozycja-menu"><a href=#>Strona główna</a></li>
                 <li class="pozycja-menu"><a href=#>Grafika</a></li>
@@ -43,19 +45,25 @@
     </header>
     <main>
         <section class="pierwsze">
-            <img src="image/logotyp.jpg" alt="Logo Uniwersytetu Rzeszowskiego">
-            <img src="image/logotyp.jpg" alt="Logo Uniwersytetu Rzeszowskiego">
-            <img src="image/logotyp.jpg" alt="Logo Uniwersytetu Rzeszowskiego">
+            <img id="fotka1" src="image/logotyp.jpg" alt="Logo Uniwersytetu Rzeszowskiego">
+            <img id="fotka2" src="image/logotyp.jpg" alt="Logo Uniwersytetu Rzeszowskiego">
+            <img id="fotka3" src="image/logotyp.jpg" alt="Logo Uniwersytetu Rzeszowskiego">
         </section>
 
         <input type="checkbox" id="toggleImages">
 
         <label for="toggleImages" id="showMoreButton" class="button">Pokaż więcej</label>
 
+        <div id="pierwszev2">
+            <div class="animacje"></div>
+            <div class="animacje"></div>
+            <div class="animacje"></div>
+        </div>
+
         <section id="pierwszev2">
-            <img src="image/logotyp.jpg" alt="Logo Uniwersytetu Rzeszowskiego">
-            <img src="image/logotyp.jpg" alt="Logo Uniwersytetu Rzeszowskiego">
-            <img src="image/logotyp.jpg" alt="Logo Uniwersytetu Rzeszowskiego">
+            <img id="fotkaX" src="image/logotyp.jpg" alt="Logo Uniwersytetu Rzeszowskiego">
+            <img id="fotkaX" src="image/logotyp.jpg" alt="Logo Uniwersytetu Rzeszowskiego">
+            <img id="fotkaX" src="image/logotyp.jpg" alt="Logo Uniwersytetu Rzeszowskiego">
         </section>
 
         <label for="toggleImages" id="showLessButton" class="button">Pokaż mniej</label>
@@ -63,27 +71,27 @@
         <div id="float">
             <h1>Tabela</h1>
             <section class="drugie">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>naglowek 1</th>
-                                <th colspan="2">
-                                    naglowek 2
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td rowspan="2">pole1</td>
-                                <td>pole2</td>
-                                <td>pole3</td>
-                            </tr>
-                            <tr>
-                                <td>pole4</td>
-                                <td>pole5</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>naglowek 1</th>
+                            <th colspan="2">
+                                naglowek 2
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">pole1</td>
+                            <td>pole2</td>
+                            <td>pole3</td>
+                        </tr>
+                        <tr>
+                            <td>pole4</td>
+                            <td>pole5</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
             <section id="lista">
                 <ol>
