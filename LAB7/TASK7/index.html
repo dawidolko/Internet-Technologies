@@ -21,8 +21,14 @@
                 <img src="images/ludzik.svg" alt="User">
                 <img id="hidden" src="images/serce.svg" alt="Favourites">
                 <img src="images/koszyk.svg" alt="koszyk">
-                <label class="toggle-menu" for="menu-toggle">☰</label>
-                <!-- <input id="menu-toggle" type="checkbox"> -->
+                <div id="hamburger">
+                    <label class="toggle-menu" for="menu-toggle">☰</label>
+                    <input type="checkbox" id="menu-toggle" />
+                    <ul class="navbar-links">
+                        <li><a href="#"><img src="images/lupa.svg" alt="Search"></a></li>
+                        <li><a href="#"><img src="images/serce.svg" alt="Favourites"></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <nav class="mobile-menu">
@@ -61,7 +67,7 @@
                             <h2>HOT DEALS THIS WEEK</h2>
                             <p>SALE UP 50%</p>
                             <h1>MODERN FURNITURE</h1>
-                            <button type="button" onclick="location.href='/sale';">VIEW NOW</button>
+                            <button type="button" onclick="window.location.href='/sale';">VIEW NOW</button>
                         </div>
                     </div>
                 </div>
@@ -523,9 +529,7 @@
             </div>
             <div class="container">
                 <div class="slider-nav-drugi">
-                    <!-- The slider navigation (dots) -->
-                    <!-- Navigation dots -->
-                    <a href="#slide-1-drugi" class="dot"></a>
+                    <a href="#slide-1-drugi" class="dot active"></a>
                     <a href="#slide-2-drugi" class="dot"></a>
                     <a href="#slide-3-drugi" class="dot"></a>
                     <a href="#slide-4-drugi" class="dot"></a>
