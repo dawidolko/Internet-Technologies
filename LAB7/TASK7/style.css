@@ -1018,7 +1018,6 @@ footer {
     .slider-drugi {
         display: flex;
         flex-direction: column;
-        overflow-x: auto;
         padding: 20px 0;
     }
 
