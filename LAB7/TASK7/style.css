@@ -1019,7 +1019,8 @@ footer {
         display: flex;
         flex-direction: column;
         overflow-x: auto;
-        overflow-x: hidden;
+                scroll-snap-type: x mandatory;
+                -webkit-overflow-scrolling: touch;
         padding: 20px 0;
     }
 
