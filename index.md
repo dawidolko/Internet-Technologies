@@ -63,11 +63,11 @@ layout: default
 ### [Kolokwium 2](KOLOKWIUM/Kolokwium2v1/README.md) - Kolokwium 2
 - [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/KOLOKWIUM/Kolokwium2v1)<br>
 
-### [Kolokwium Powtorka](KOLOKWIUM/Powtorka) - Kolokwium 2
+### [Kolokwium Powtorka](KOLOKWIUM/Powtorka) - Kolokwium Powtórka 1
 - [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/KOLOKWIUM/Powtorka)<br>
 
-### [Kolokwium Powtórka](KOLOKWIUM/Powtorkav2) - Kolokwium 2
+### [Kolokwium Powtórka](KOLOKWIUM/Powtorkav2) - Kolokwium Powtórka 2
 - [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/KOLOKWIUM/Powtorkav2)<br>
 
-### [Pasek Navbar](KOLOKWIUM/PasekNav/pasekNav.html) - Kolokwium 2
+### [Pasek Navbar](KOLOKWIUM/PasekNav/pasekNav.html) - Pasek nawigacyjny
 - [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/KOLOKWIUM/PasekNav)<br>
