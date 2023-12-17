@@ -667,6 +667,36 @@ footer {
 /* Zapytania medialne dla ekranów mniejszych niż 450px */
 @media only screen and (max-width: 700px) {
 
+        .slider-controls {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .slider-radio {
+            display: none;
+        }
+
+        .slider-label {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #ccc;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        /* Zmiana koloru kropki gdy odpowiadający radiobutton jest zaznaczony */
+        .slider-radio:checked + .slider-label {
+            background: #000;
+        }
+
+        .slider-controls > a:hover, .slider-controls > a:focus, .slider-nav > div:target {
+            background: #000;
+        }
+
+
     .header-icons {
         display: flex;
     }
