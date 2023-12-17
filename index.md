@@ -71,3 +71,6 @@ layout: default
 
 ### [Pasek Navbar](KOLOKWIUM/PasekNav/pasekNav.html) - Pasek nawigacyjny
 - [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/KOLOKWIUM/PasekNav)<br>
+
+### [Pasek Navbar](KOLOKWIUM/PasekNavv2/pasekNav.html) - Pasek nawigacyjny ver. 2
+- [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/KOLOKWIUM/PasekNavv2)<br>
