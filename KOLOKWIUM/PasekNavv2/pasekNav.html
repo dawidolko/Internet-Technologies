@@ -48,6 +48,7 @@
         }
 
         ol > li{
+            position: relative;
             float: left;
             width: 150px;
             height: 40px;
@@ -66,20 +67,18 @@
             color: #451717;
         }
 
-        ol > li > ul{
+        ol > li > ul {
+            display: none;
+            position: relative;
             list-style-type: none;
             padding: 0;
             margin: 0;
             background-color: #883b3b;
-        }
-        ol > li > ul > li{
-            display: none;
-            position: relative;
             border-bottom: 1px dotted #751b1b;
             z-index: 100;
         }
 
-        ol > li:hover > ul > li{
+        ol > li:hover > ul{
             display: block;
         }
 
@@ -88,6 +87,30 @@
         }
         ol > li > ul > li:last-child{
             border-bottom: none;
+        }
+
+        ol > li > ul > li > ul{
+            display: none;
+            position: absolute;
+            left: 100%;
+            top: 0;
+            width: 150px;
+            margin: 0;
+            padding-left: 0;
+            list-style: none;
+            border-bottom: 1px dotted #751b1b;
+            background-color: #ac1212;
+            z-index: 100;
+        }
+
+
+        ol > li > ul > li > ul > li:hover{
+            background-color: #ff0000;
+        }
+
+        ol > li > ul > li:hover > ul{
+            display: flex;
+            flex-direction: column;
         }
 
         footer{
@@ -135,7 +158,15 @@
                 </li>
                 <li><a href="#">Gry sportowe</a>
                     <ul>
-                        <li><a href="#">FIFA</a></li>
+                        <li><a href="#">FIFA</a>
+                            <ul>
+                                <li><a href="#">FIFA 2000</a></li>
+                                <li><a href="#">FIFA 2001</a></li>
+                                <li><a href="#">FIFA 2002</a></li>
+                                <li><a href="#">FIFA 2003</a></li>
+                                <li><a href="#">FIFA 2004</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#">NBA</a></li>
                         <li><a href="#">NHL</a></li>
                         <li><a href="#">WWE</a></li>
