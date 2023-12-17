@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @keyframes animacja {
+            50%{
+                transform: scale(0.8);
+            }
+            75%{
+                transform: rotate(180deg);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+
+        :root{
+            --blue--ur: blue;
+            --white--ur: white;
+        }
+
+        body{
+            text-align: center;
+            margin:0;
+            padding:0;
+            background-color: var(--blue--ur);
+        }
+
+        img{
+            max-width: 400px;
+            width: 100%;
+        }
+
+        
+        .animacje:hover{
+            background-color: var(--white--ur);
+            animation: animacja 2s ease-in-out infinite;
+        }
+
+
+        .galeria{
+            display: grid;
+            gap: 10px;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        @media screen and (max-width: 767px) {
+        .galeria {
+            grid-template-columns: repeat(1, 400px);
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            .galeria {
+            grid-template-columns: repeat(2, 400px);
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            .galeria {
+            grid-template-columns: repeat(3, 400px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <section class="galeria">
+        <div class="animacje"><a href=""><img src="logo_UR_blue.jpg" alt="zdjecie"></a></div>
+        <div class="animacje"><a href=""><img src="logo_UR_blue.jpg" alt="zdjecie"></a></div>
+        <div class="animacje"><a href=""><img src="logo_UR_blue.jpg" alt="zdjecie"></a></div>
+        <div class="animacje"><a href=""><img src="logo_UR_blue.jpg" alt="zdjecie"></a></div>
+        <div class="animacje"><a href=""><img src="logo_UR_blue.jpg" alt="zdjecie"></a></div>
+        <div class="animacje"><a href=""><img src="logo_UR_blue.jpg" alt="zdjecie"></a></div>
+    </section>
+</body>
+</html>
