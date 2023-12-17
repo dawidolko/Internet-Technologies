@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasek navbar</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color:  #303030;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .sticky{
+            width: 100%;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav{
+            margin-top: 50px;
+            width: 100%;
+            padding:10px 0;
+            background-color: #c34f4f;
+            text-align: center;
+            border-top: 1px solid #751b1b;
+            border-bottom: 1px solid #751b1b;
+            height: 40;
+        }
+
+        ol{
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            font-size: 18px;
+            height: 35px;
+            line-height: 200%;
+        }
+
+        ol a{
+            color: #ffffff;
+            text-decoration: none;
+            display: block;
+        }
+
+        ol > li{
+            float: left;
+            width: 150px;
+            height: 40px;
+            border-right: 1px dotted #751b1b;
+        }
+
+        ol > li:last-child{
+            border-right: none;
+        }
+
+        ol > li:hover{
+            background-color: #cf6969;
+        }
+
+        ol > li:hover > a{
+            color: #451717;
+        }
+
+        ol > li > ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: #883b3b;
+        }
+        ol > li > ul > li{
+            display: none;
+            position: relative;
+            border-bottom: 1px dotted #751b1b;
+            z-index: 100;
+        }
+
+        ol > li:hover > ul > li{
+            display: block;
+        }
+
+        ol > li > ul > li:hover{
+            background-color: #cf6969;
+        }
+        ol > li > ul > li:last-child{
+            border-bottom: none;
+        }
+
+        footer{
+            text-align: center;
+            margin-top: 95vw;
+        }
+
+        .logo{
+            text-align: center;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#"><img height="20px" width="20px" src="image/logotyp.jpg" alt="LOGO"></a>
+        </div>
+        <div class="nav sticky">
+            <ol>
+                <li><a href="#">Strona Główna</a></li>
+                <li><a href="#">Klasyki NES</a>
+                    <ul>
+                        <li><a href="#">Super Mario Bros</a></li>
+                        <li><a href="#">Contra</a></li>
+                        <li><a href="#">Battletoads</a></li>
+                        <li><a href="#">Duck Hunt</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Gry filmowe</a>
+                    <ul>
+                        <li><a href="#">Harry Potter</a></li>
+                        <li><a href="#">Władca Pierścieni</a></li>
+                        <li><a href="#">Gwiezdne Wojny</a></li>
+                        <li><a href="#">Piraci z Karaibów</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Bijatyki</a>
+                    <ul>
+                        <li><a href="#">Mortal Kombat</a></li>
+                        <li><a href="#">Street Fighter</a></li>
+                        <li><a href="#">Tekken</a></li>
+                        <li><a href="#">Soul Calibur</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Gry sportowe</a>
+                    <ul>
+                        <li><a href="#">FIFA</a></li>
+                        <li><a href="#">NBA</a></li>
+                        <li><a href="#">NHL</a></li>
+                        <li><a href="#">WWE</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">O autorach</a></li>
+            </ol>
+        </div>
+        </nav>
+    </header>
+    <footer>
+        <br><br><br><br><br><br><br><br><br><br><br><br>        
+        <p>Strona powtórkowa - KOLOKWIUM</p>
+    </footer>
+</body>
+</html>
