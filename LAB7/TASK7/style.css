@@ -4,12 +4,12 @@ body {
     padding: 0;
 }
 
-    .navbar-links{
-        list-style-type: none;
-        display: none;
-        flex-direction: column;
-        align-items: center;
-    }
+ul.navbar-links{
+    list-style-type: none;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
 
 #menu-toggle {
     display: none;
