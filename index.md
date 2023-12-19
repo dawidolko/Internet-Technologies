@@ -47,7 +47,7 @@ layout: default
 
 KOLOKWIUM/DO125148
 
-### [Kolokwium 1 version 1](KOLOKWIUM/DO125148/README.md) - Kolokwium 1
+### [Kolokwium 1 Główne](KOLOKWIUM/DO125148/README.md) - Kolokwium 1
 - [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/KOLOKWIUM/DO125148)<br>
 
 ### [Kolokwium 1 version 1](KOLOKWIUM/Kolokwium1v1/README.md) - Kolokwium 1 ver.1
