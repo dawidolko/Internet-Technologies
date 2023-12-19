@@ -1,4 +1,4 @@
-# [Kolokwium z przedmiotu Technologie internetowe](KOLOKWIUM/DO125148/source/index.html)
+# [Kolokwium z przedmiotu Technologie internetowe](https://techint.dawidolko.pl/KOLOKWIUM/DO125148/source/index.html)
 
 ### Zadanie  1. 
 Utwórz nowy dokument HTML o tytule imię nazwisko nr albumu. Ustaw kodowanie na `UTF-8` i język dokumentu na polski. Niech korzeń posiada wymaganych potomków, którzy sami niech posiadają wymaganych potomków.
