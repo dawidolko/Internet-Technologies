@@ -11,7 +11,7 @@
     transform: scale(1);
     opacity: 1;
   }
-}
+} 
 
 @keyframes fadeOut {
   0%,
@@ -799,7 +799,7 @@ footer {
   }
 
   nav {
-    margin-left: 25px;
+    margin-left: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
