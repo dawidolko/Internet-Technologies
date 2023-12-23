@@ -1,0 +1,160 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Victor Mono", monospace;
+  padding-top: 70px; /* Adjust this value based on the actual height of your navbar */
+  padding-bottom: 70px; /* Adjust this value based on the actual height of your footer */
+  box-sizing: border-box;
+}
+
+.logo img {
+  background: #000;
+  border-radius: 50px;
+  width: 80px;
+  transition: transform 0.2s;
+}
+.logo img:hover {
+  transform: scale(0.8);
+}
+.logo {
+  transition: transform 0.2s;
+}
+
+.logo:hover {
+  transform: scale(0.8);
+}
+.nav__item:hover {
+  transition: transform 0.3s ease;
+  margin-right: 15px;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #333;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.section__heading {
+  font-size: 2rem;
+  color: #f55;
+  margin-bottom: 2rem;
+}
+
+.section__heading:hover {
+  transform: scale(0.8);
+}
+
+.footer {
+    margin-top:10px;
+    padding: 1rem 0;
+  position: absolute;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.footer__social {
+  margin-bottom: 1rem;
+}
+
+.footer__social-icon {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.footer__text {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.footer__link {
+  color: #f55;
+  text-decoration: underline;
+  transition: transform 0.3s ease;
+}
+.footer__link:hover {
+  transform: scale(1.2);
+  color: rgb(145, 0, 0);
+}
+.footer__link:visited {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+div h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  margin-bottom: 2rem;
+}
+
+.gallery-heading {
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: underline;
+  color: #333;
+  margin: 0;
+  padding: 20px 0; /* Add some spacing above and below the heading */
+}
+
+/* Additional container around gallery for proper spacing */
+.gallery-container {
+  width: 100%;
+  max-width: 1200px; /* Adjust as needed */
+  margin: auto; /* Center the container */
+  padding: 0 10px; /* Add some padding on the sides */
+}
+
+#gallery {
+  margin-top: 10px;
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+}
+
+#gallery img {
+  width: 100%;
+  max-width: 400px;
+}
+
+@media (max-width: 767px) {
+  #gallery {
+    grid-template-columns: repeat(1, 400px);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  #gallery {
+    grid-template-columns: repeat(2, 400px);
+  }
+}
+
+@media (min-width: 1200px) {
+  #gallery {
+    grid-template-columns: repeat(3, 400px);
+  }
+}
