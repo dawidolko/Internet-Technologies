@@ -73,6 +73,12 @@ input#toggle {
   display: none;
 }
 
+nav ul li img{
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
+}
+
 #fotka1:hover {
   animation-name: animacja1;
   animation-duration: 5s;
