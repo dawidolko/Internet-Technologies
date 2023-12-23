@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lorem ipsum - CONTACT</title>
+    <link rel="icon" type="img/png" href="img/icone.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styleContact.css" />
+  </head>
+
+  <body>
+    <div class="navbar">
+      <a
+        href="https://techint.dawidolko.pl/projects/ResWebsiteTemplate/home.html"
+        class="logo"
+        ><img src="img/icon.png" alt="Logo"
+      /></a>
+      <ul>
+        <li>
+          <a
+            href="https://techint.dawidolko.pl/projects/ResWebsiteTemplate/home.html"
+            class="nav__item"
+            >Home</a
+          >
+        </li>
+      </ul>
+    </div>
+    <section class="section contact" id="contact">
+      <form class="form" action="#thankyou">
+        >
+        <h2>CONTACT US</h2>
+        <p>
+          <input
+            type="text"
+            name="name"
+            placeholder="Write your name here..."
+            title="Please fill out this field."
+            required />
+        </p>
+        <p>
+          <input
+            type="email"
+            name="email"
+            placeholder="Let us know how to contact you back..."
+            title="Please fill out this field."
+            required />
+        </p>
+        <p>
+          <input
+            type="date"
+            name="dob"
+            placeholder="Your date of birth..."
+            title="Please fill out this field."
+            required />
+        </p>
+        <p>
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Your phone number..."
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+            title="A phone number should be 123-456-789"
+            required />
+        </p>
+        <p>
+          <textarea
+            name="message"
+            placeholder="What would you like to tell us..."
+            title="Please fill out this field."
+            required
+            rows="5"></textarea>
+        </p>
+        <button type="submit">Send message</button>
+        <div>
+          <span class="phone"></span> 123 456 789
+          <span class="contakt"></span> contact@company.com
+        </div>
+      </form>
+    </section>
+    <div id="thankyou">
+      <div class="thankyou-content">
+          <p>Udało ci się wysłać wiadomość. Miłego dnia!</p>
+      </div>
+  </div>
+
+    <footer class="footer">
+      <div class="footer__social">
+        <a
+          href="https://www.facebook.com/?locale=pl_PL"
+          class="footer__social-icon"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="https://twitter.com/?lang=pl" class="footer__social-icon"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://www.instagram.com/" class="footer__social-icon"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+      <p class="footer__text">
+        All rights reserved &copy; 2023 Lorem ipsum |
+        <a
+          href="https://techint.dawidolko.pl/projects/ResWebsiteTemplate/privacy.html"
+          class="footer__link"
+          >Privacy Policy</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

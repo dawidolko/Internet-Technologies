@@ -1,0 +1,157 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0; 
+    padding: 0; 
+  }
+  
+  .logo img {
+    background: #000;
+    border-radius: 50px;
+    width: 80px;
+    transition: transform .2s;
+}
+.logo img:hover {
+    transform: scale(0.8);
+}
+.logo {
+    transition: transform .2s;
+}
+
+.logo:hover {
+    transform: scale(0.8);
+}
+.nav__item:hover{
+    transition: transform 0.3s ease;
+    margin-right: 15px;
+}
+  .navbar {
+      background-color: #333;
+      padding: 1rem 0;
+      text-align: center;
+  }
+  
+  .navbar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+  
+  .navbar li {
+      display: inline;
+  }
+  
+  .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+  }
+  
+  .pricing__container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  .section__heading {
+          text-align: center;
+          width: 100%;
+          margin-top: 40px; /* Adjust the value as needed */
+          font-size: 2rem; /* Your desired font-size */
+      }
+  
+  .pricing__plan {
+      max-width: 400px;
+      margin-top: 20px;
+      margin: 20px;
+      border: 1px solid #ccc;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+  }
+  
+  .pricing__plan:hover {
+      transform: translateY(-5px);
+  }
+  
+  .pricing__title {
+      font-size: 1.5rem;
+      color: #f55;
+      margin-bottom: 1rem;
+  }
+  
+  .pricing__price {
+      font-size: 1.2rem;
+      color: #333;
+      margin-bottom: 1rem;
+  }
+  
+  .pricing__features {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 1rem;
+  }
+  
+  .pricing__features li {
+      font-size: 1rem;
+      color: #333;
+      margin-bottom: 0.5rem;
+  }
+  
+  .pricing__cta {
+      display: inline-block;
+      text-decoration: none;
+      background-color: #f55;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+  }
+  
+  .pricing__cta:hover {
+      background-color: #d43;
+  }
+  
+  
+  .footer {
+    position: absolute;
+    width: 100%;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding-bottom:1rem;
+  }
+  
+  .footer__social {
+      margin-bottom: 1rem;
+  }
+  
+  .footer__social-icon {
+      color: #fff;
+      font-size: 24px;
+      margin: 0 10px;
+      text-decoration: none;
+  }
+  
+  .footer__text {
+      font-size: 1rem;
+      color: #fff;
+  }
+  
+  .footer__link {
+    color: #f55;
+    text-decoration: underline;
+    transition: transform 0.3s ease;
+}
+.footer__link:hover {
+    transform: scale(1.2);
+    color: rgb(145, 0, 0);
+}
+.footer__link:visited{
+    color: rgba(0, 0, 0, 0.7);
+}
