@@ -162,6 +162,7 @@ body, html {
 /* Paragraph styles */
 .form p {
     margin-bottom: 20px;
+    margin-left: 10px;
     width: 100%;
 }
 
