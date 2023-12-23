@@ -146,6 +146,8 @@ body, html {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     max-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Form headings */
