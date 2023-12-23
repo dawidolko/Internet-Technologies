@@ -30,7 +30,6 @@ body {
     position: fixed;
     width: 100%;
     background-color: #333;
-    padding: 1rem 0;
     text-align: center;
 }
 
@@ -119,7 +118,6 @@ body {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 1rem;
 }
 
 .footer__social {
