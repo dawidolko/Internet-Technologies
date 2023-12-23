@@ -144,3 +144,13 @@ body {
 .footer__link:visited{
     color: rgba(0, 0, 0, 0.7);
 }
+
+@media screen and (max-width: 450px) {
+    .offer__box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+}
