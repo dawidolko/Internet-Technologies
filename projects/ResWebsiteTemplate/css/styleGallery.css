@@ -125,7 +125,6 @@ div h2 {
 .gallery-container {
   max-width: 1200px; /* Adjust as needed */
   margin: auto; /* Center the container */
-  padding: 0 10px; /* Add some padding on the sides */
 }
 
 #gallery {
