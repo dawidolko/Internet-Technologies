@@ -891,6 +891,8 @@ footer {
     transform: translateX(-50%);
   }
   .logo img {
-    width: 30%;
+    margin-top: 9px;
+    width: 25%;
+    margin-left: 40px;
   }
 }
