@@ -779,8 +779,8 @@ footer {
     background-color: #202020;
     padding: 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column-reverse;
+    align-content: flex-end;
     justify-content: flex-start;
     text-align: center;
   }
@@ -888,7 +888,7 @@ footer {
   .logo {
     position: absolute;
     top: 5px;
-    left: 50%;
+    left: 10%;
     transform: translateX(-50%);
   }
   .logo img {
