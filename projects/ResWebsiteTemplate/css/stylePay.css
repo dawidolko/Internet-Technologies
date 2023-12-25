@@ -388,7 +388,8 @@ footer img {
 @media (max-width: 800px) {
 
   .credit-card-form {
-      width: 400px;
+      width: 300px;
+      margin-right: 15px;
   }
 
 
