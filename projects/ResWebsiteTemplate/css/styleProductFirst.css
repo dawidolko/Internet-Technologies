@@ -243,7 +243,7 @@ main {
 
 
 #przycisk img {
-    margin-left: 22vw;
+    margin-left: 80px;
     width: 100px;
     height: 100px;
 }
@@ -261,13 +261,13 @@ main {
 .premium-package__container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 2rem;
 }
 
 .premium-package__text {
     font-size: 2rem;
     color: var(--eighth-color);
     margin-bottom: 2rem;
-    text-align: center;
     transition: transform 0.3s ease;
 }
 
@@ -280,13 +280,14 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 2rem;
-    flex-direction: column;
 }
 
 .premium-package__item {
     flex: 0 0 calc(33.33% - 2rem);
     margin: 1rem;
-    width: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 20%;
     background-color: #f5f5f5;
     border-radius: 5px;
     padding: 1.5rem;
