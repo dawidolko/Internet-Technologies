@@ -204,7 +204,7 @@ main {
 
 .logo img {
     border-radius: 50px;
-    width: 80px;
+    width: 22vw;
     transition: transform .2s;
 }
 
