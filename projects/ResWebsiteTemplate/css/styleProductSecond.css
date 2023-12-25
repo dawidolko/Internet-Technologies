@@ -418,7 +418,25 @@ footer img {
 
 
 @media (max-width: 768px) {
-
+    .premium-package__box {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    
+    .premium-package__item {
+        flex: 0 0 calc(33.33% - 2rem);
+        margin: 1rem;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: auto;
+        background-color: #f5f5f5;
+        border-radius: 5px;
+        padding: 1.5rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
 
     #hamburger {
         display: flex;
