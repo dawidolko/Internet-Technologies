@@ -261,12 +261,12 @@ main {
 .premium-package__container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
 }
 
 .premium-package__text {
     font-size: 2rem;
     color: var(--eighth-color);
+    text-align: center;
     margin-bottom: 2rem;
     transition: transform 0.3s ease;
 }
