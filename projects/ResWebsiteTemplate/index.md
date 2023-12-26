@@ -2,37 +2,88 @@
 
 ## [STRONA](https://techint.dawidolko.pl/projects/ResWebsiteTemplate/home.html)
 
-## Overview
+## Dokumentacja Strony Internetowej
 
-This project presents a responsive website template designed for versatility and ease of use. It features multiple HTML pages including a main landing page (`index.html`), product pages (`productFirst.html`, `productSecond.html`), a services page (`services.html`), a contact page (`contact.html`), a frequently asked questions (FAQ) page (`faq.html`), a privacy policy page (`privacy.html`), and an our products page (`ourProducts.html`). 
+### Ogólny Zarys
 
-## Features
+Dokumentacja obejmuje szczegółowy opis strony internetowej składającej się z różnych powiązanych podstron, w tym: `Strona Główna`, `O Nas`, `Kontakt`, `FAQ`, `Galeria`, `Polityka Prywatności`, `Produkty` oraz `strony płatności`. Każda podstrona jest zaprojektowana, aby wspólnie tworzyć spójne doświadczenie użytkownika, wykorzystując struktury HTML, CSS bez użycia technologii Java script'u.
 
-### Main Page (index.html)
-- **Landing Page**: Introduces the website with a clean, engaging design.
-- **Navigation Bar**: Includes links to other pages for easy navigation.
-- **Responsive Design**: Adjusts content layout according to screen size for optimal viewing on different devices.
+## Struktura i Kategorie
+### 1. Strona Główna (home.html)
+Opis: Wejście do witryny z nawigacją do innych sekcji.
 
-### Product Pages (productFirst.html, productSecond.html)
-- **Product Details**: Presents information about specific products or services.
-- **Interactive Elements**: Includes buttons and links for user interaction.
+Cel: Powitanie i kierowanie użytkowników do odpowiednich sekcji.
 
-### Services Page (services.html)
-- **Service Offerings**: Details the various services provided with descriptive text.
-- **Icons**: Utilizes icons for a visually appealing presentation of services.
+Elementy: Pasek nawigacji, elementy interaktywne, podsumowanie oferty.
 
-### Contact Page (contact.html)
-- **Contact Form**: Allows users to send messages or inquiries directly through the website.
-- **Contact Information**: Displays address, phone number, and email.
+### 2. O Nas (aboutUs.html)
+Opis: Informacje o firmie, jej misji i zespole.
 
-### FAQ Page (faq.html)
-- **Questions and Answers**: Lists common questions and their answers, providing helpful information to users.
+Cel: Budowanie zaufania i dostarczanie informacji o firmie.
 
-### Privacy Policy Page (privacy.html)
-- **Privacy Statement**: Outlines how user data is handled and protected.
+Elementy: Historia, misja, zespół, multimedia.
 
-### Our Products Page (ourProducts.html)
-- **Product Showcase**: Displays a range of products with descriptions and images.
+### 3. Usługi (services.html)
+Opis: Lista oferowanych usług.
+
+Cel: Informowanie o dostępnych usługach.
+
+Elementy: Opisy usług, ceny, opcje rezerwacji.
+
+### 4. Produkty (ourProducts.html)
+Opis: Wyświetlanie produktów do przeglądania i zakupu.
+
+Cel: Prezentacja produktów firmy.
+
+Elementy: Kategorie produktów, obrazy, opisy, ceny.
+
+### 5. Galeria (gallery.html)
+Opis: Wizualna prezentacja oferty firmy.
+
+Cel: Pokazanie produktów/usług w atrakcyjny sposób.
+
+Elementy: Zdjęcia i/lub wideo.
+
+### 6. Kontakt (contact.html)
+Opis: Formularz i dane kontaktowe.
+
+Cel: Umożliwienie kontaktu z firmą.
+
+Elementy: Formularz kontaktowy, dane adresowe, mapa.
+
+### 7. FAQ (faq.html)
+Opis: Najczęściej zadawane pytania i odpowiedzi.
+
+Cel: Szybkie dostarczanie odpowiedzi na podstawowe pytania.
+
+Elementy: Pytania i odpowiedzi, podział na kategorie.
+
+### 8. Polityka Prywatności (privacy.html)
+Opis: Zasady dotyczące prywatności i danych osobowych.
+
+Cel: Informowanie o ochronie danych i praktykach firmy.
+
+Elementy: Zasady dotyczące danych, prawa użytkowników.
+
+### 9. Strony Produktów (productFirst.html, productSecond.html, productThird.html)
+Opis: Szczegółowe strony dla poszczególnych produktów.
+
+Cel: Prezentacja szczegółów produktów.
+
+Elementy: Obrazy, opisy, specyfikacje, przyciski zakupu.
+
+### 10. Strony Płatności (payFirstProduct.html, paySecondProduct.html, payThirdProduct.html)
+Opis: Realizacja zakupu wybranych produktów.
+
+Cel: Umożliwienie finalizacji zakupu.
+
+Elementy: Formularze płatności, podsumowanie zakupu, opcje.
+
+### Zastosowania
+Witryna ma za zadanie prezentować i sprzedawać produkty lub usługi, dostarczać informacji, a także umożliwiać interakcję z użytkownikami. Może służyć różnym celom w zależności od branży i potrzeb użytkowników, od celów komercyjnych po edukacyjne i informacyjne.
+
+### Podsumowanie
+Skonstruowana witryna i jej podstrony tworzą złożoną platformę internetową, łączącą estetyczne projektowanie z funkcjonalnością i użytecznością. Każdy element został zaprojektowany, aby zapewnić spójność, intuicyjną nawigację i pozytywne doświadczenia użytkownika, tworząc razem zintegrowany ekosystem cyfrowy dla różnorodnych potrzeb użytkowników.
 
 ## Technical Aspects
 
