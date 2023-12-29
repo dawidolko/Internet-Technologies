@@ -339,9 +339,9 @@ input[type="radio"] {
   ;
 }
 
-.product_women button,
-.product_men button,
-.product_kids button {
+.product_women a,
+.product_men a,
+.product_kids a {
   background: var(--black-color);
   color: var(--white-color);
   border: 0;
@@ -350,7 +350,7 @@ input[type="radio"] {
   transition: background-color 0.3s ease;
 }
 
-.product button:hover {
+.product a:hover {
   background: var(--bg-color);
 }
 
@@ -372,12 +372,12 @@ input[type="radio"] {
   display: none;
 }
 
-button a {
+a {
   color: var(--white-color);
   text-decoration: none;
 }
 
-button a:hover {
+a:hover {
   color: var(--gray-color);
   text-decoration: none;
 }
