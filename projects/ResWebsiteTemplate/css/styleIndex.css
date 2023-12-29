@@ -182,6 +182,7 @@ img {
 
 .header__text {
   line-height: 1;
+  margin-bottom: 10px;
   font-size: 2.5rem;
   color: var(--white-color);
   transition: transform 0.2s;
