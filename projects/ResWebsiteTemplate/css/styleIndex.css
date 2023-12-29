@@ -138,11 +138,6 @@ body {
   overflow-x: hidden;
 }
 
-img {
-  height: auto;
-  max-width: 100%;
-}
-
 .header {
   margin-top: 60px;
   height: 100vh;
