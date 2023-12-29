@@ -1236,20 +1236,20 @@ footer img:hover {
   }
 }
 
-/* @media (min-width: 1000px) {
+@media (min-width: 1000px) {
 
   .photoFirst {
       margin-left: 0px;
-      margin-right: 60px;
+      mustify-items: center;
       grid-template-columns: repeat(3, 250px);
   }
 	
   .photoSecond {
       margin-left: 0px;
-      margin-right: 50px;
+      ustify-items: center;
       grid-template-columns: repeat(3, 250px);
   }
-} */
+}
 
 @media screen and (min-width: 769px) and (max-width: 999px) {
 
