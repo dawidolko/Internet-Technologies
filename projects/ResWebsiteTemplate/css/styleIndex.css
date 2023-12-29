@@ -1203,6 +1203,12 @@ footer {
   width: 100%;
 }
 
+#socialmedia{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
 .footer__text {
   font-size: 1.2rem;
   color: var(--white-color);
