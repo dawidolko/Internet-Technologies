@@ -346,8 +346,7 @@ input#toggle {
 }
 
 .photoFirst img,
-#photoSecond img, 
-#photoThird img {
+.photoSecond img {
   width: 300px;
   height: 300px;
 }
@@ -412,17 +411,12 @@ label.button:hover,
   display: block;
 }
 
-#toggleImages:checked ~ #photoSecond {
+#toggleImages:checked ~ .photoSecond {
   display: grid;
   justify-content: space-evenly;
 }
 
-#toggleImages:checked ~ #photoThird {
-  display: grid;
-  justify-content: space-evenly;
-}
-
-#photoSecond, #photoThird {
+.photoSecond {
   justify-items: center;
   gap: 10px;
   margin-top: 20px;
@@ -1262,7 +1256,7 @@ footer img:hover {
 @media (min-width: 1000px) {
 
   .photoFirst,
-  #photoSecond, #photoThird {
+  .photoSecond {
       margin-left: 0px;
       margin-right: 60px;
       grid-template-columns: repeat(3, 250px);
@@ -1272,7 +1266,7 @@ footer img:hover {
 @media screen and (min-width: 769px) and (max-width: 999px) {
 
   .photoFirst,
-  #photoSecond, #photoThird {
+  .photoSecond {
       margin-left: 0px;
       margin-right: 60px;
       grid-template-columns: repeat(2, 250px);
@@ -1349,7 +1343,7 @@ footer img:hover {
   }
 
   .photoFirst,
-  #photoSecond, #photoThird {
+  .photoSecond {
       margin-left: 0px;
       grid-template-columns: repeat(2, 300px);
       justify-items: center;
@@ -1611,7 +1605,7 @@ footer img:hover {
   }
 
   .photoFirst,
-  #photoSecond, #photoThird {
+  .photoSecond {
       margin-left: 0px;
       grid-template-columns: repeat(1, 300px);
       justify-items: center;
