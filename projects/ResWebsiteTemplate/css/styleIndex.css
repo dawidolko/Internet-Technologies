@@ -405,8 +405,6 @@ label.button:hover,
 
 #toggleImages:checked ~ .photoSecond {
   display: grid;
-  justify-content: space-evenly;
-  justify-items: center;
 }
 
 .photoSecond {
@@ -414,7 +412,7 @@ label.button:hover,
   gap: 10px;
   margin-top: 20px;
   display: none;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
