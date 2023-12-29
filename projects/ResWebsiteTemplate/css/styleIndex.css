@@ -1240,13 +1240,13 @@ footer img:hover {
 
   .photoFirst {
       margin-left: 0px;
-      mustify-items: center;
+      justify-items: center;
       grid-template-columns: repeat(3, 250px);
   }
 	
   .photoSecond {
       margin-left: 0px;
-      ustify-items: center;
+      justify-items: center;
       grid-template-columns: repeat(3, 250px);
   }
 }
