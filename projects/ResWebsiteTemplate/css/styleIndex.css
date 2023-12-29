@@ -862,10 +862,6 @@ div.slider-controls {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.slides::-webkit-scrollbar {
-  display: none;
-}
-
 .slides {
   display: flex;
   scroll-snap-type: x mandatory;
