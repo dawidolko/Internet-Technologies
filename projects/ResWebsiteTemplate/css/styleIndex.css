@@ -445,7 +445,7 @@ label.button:hover,
   animation-fill-mode: forwards;
 }
 
-photosX:hover {
+.photosX:hover {
   animation-name: animacjaX;
   animation-duration: 5s;
   animation-iteration-count: 1;
