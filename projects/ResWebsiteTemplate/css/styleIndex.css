@@ -1246,7 +1246,7 @@ footer img:hover {
 	
   .photoSecond {
       margin-left: 0px;
-      margin-right: 60px;
+      margin-right: 50px;
       grid-template-columns: repeat(3, 250px);
   }
 }
