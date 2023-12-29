@@ -19,6 +19,12 @@
   --ten-color: #203a4d;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/roboto.woff2') format('woff2');
+  font-display: swap;
+}
+
 @keyframes pulse {
   0% {
       transform: scale(1);
@@ -115,6 +121,15 @@
   }
 }
 
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
 body {
   background-color: var(--bg2-color);
   font-family: "Roboto", sans-serif;
@@ -127,6 +142,12 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  display: block;
 }
 
 .header {
@@ -325,7 +346,8 @@ input#toggle {
 }
 
 .photoFirst img,
-#photoSecond img {
+#photoSecond img, 
+#photoThird img {
   width: 300px;
   height: 300px;
 }
@@ -395,7 +417,12 @@ label.button:hover,
   justify-content: space-evenly;
 }
 
-#photoSecond {
+#toggleImages:checked ~ #photoThird {
+  display: grid;
+  justify-content: space-evenly;
+}
+
+#photoSecond, #photoThird {
   justify-items: center;
   gap: 10px;
   margin-top: 20px;
@@ -433,7 +460,7 @@ label.button:hover,
   animation-fill-mode: forwards;
 }
 
-#photosX:hover {
+photosX:hover {
   animation-name: animacjaX;
   animation-duration: 5s;
   animation-iteration-count: 1;
@@ -497,7 +524,7 @@ label.button:hover,
   margin-right: 5px;
 }
 
-.details-button {
+.details-button, .details-button1 {
   margin-right: 5px;
   display: block;
   padding: 10px 20px;
@@ -511,7 +538,7 @@ label.button:hover,
   cursor: pointer;
 }
 
-.details-button:hover {
+.details-button:hover, .details-button1:hover {
   background-color: var(--black-color);
   color: var(--white-color);
   text-decoration: underline;
@@ -1235,7 +1262,7 @@ footer img:hover {
 @media (min-width: 1000px) {
 
   .photoFirst,
-  #photoSecond {
+  #photoSecond, #photoThird {
       margin-left: 0px;
       margin-right: 60px;
       grid-template-columns: repeat(3, 250px);
@@ -1245,7 +1272,7 @@ footer img:hover {
 @media screen and (min-width: 769px) and (max-width: 999px) {
 
   .photoFirst,
-  #photoSecond {
+  #photoSecond, #photoThird {
       margin-left: 0px;
       margin-right: 60px;
       grid-template-columns: repeat(2, 250px);
@@ -1274,7 +1301,7 @@ footer img:hover {
   }
 
   .details-button,
-  .details-button2 {
+  .details-button2, .details-button1 {
       width: auto;
       margin: 10px;
   }
@@ -1322,7 +1349,7 @@ footer img:hover {
   }
 
   .photoFirst,
-  #photoSecond {
+  #photoSecond, #photoThird {
       margin-left: 0px;
       grid-template-columns: repeat(2, 300px);
       justify-items: center;
@@ -1346,7 +1373,7 @@ footer img:hover {
   }
 
   .details-button,
-  .details-button2 {
+  .details-button2, .details-button1 {
       width: auto;
       margin: 10px;
   }
@@ -1584,7 +1611,7 @@ footer img:hover {
   }
 
   .photoFirst,
-  #photoSecond {
+  #photoSecond, #photoThird {
       margin-left: 0px;
       grid-template-columns: repeat(1, 300px);
       justify-items: center;
