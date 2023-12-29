@@ -220,14 +220,14 @@ main {
     border-radius: 5px;
 }
 
-.buttoner a {
+a {
     text-decoration: none;
     color: var(--white-color);
     border-radius: 5px;
     transition: transform 0.2s;
 }
 
-.buttoner a:hover {
+a:hover {
     transform: scale(1.1);
     color: var(--gray-color);
 }
