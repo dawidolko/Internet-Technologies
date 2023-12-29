@@ -6,7 +6,7 @@
 
 ### Ogólny Zarys
 
-Dokumentacja obejmuje szczegółowy opis strony internetowej składającej się z różnych powiązanych podstron, w tym: `Strona Główna`, `O Nas`, `Kontakt`, `FAQ`, `Galeria`, `Polityka Prywatności`, `Produkty` oraz `strony płatności`. Każda podstrona jest zaprojektowana, aby wspólnie tworzyć spójne doświadczenie użytkownika, wykorzystując struktury HTML, CSS bez użycia technologii Java script'u.
+Dokumentacja obejmuje szczegółowy opis strony internetowej składającej się z różnych powiązanych podstron, w tym: `Strona Główna`, `O Nas`, `Kontakt`, `FAQ`, `Galeria`, `Polityka Prywatności`, `Produkty` oraz `strony płatności`. Każda podstrona jest zaprojektowana, aby wspólnie tworzyć spójne doświadczenie użytkownika, wykorzystując struktury HTML, CSS bez użycia technologii Javascript'u.
 
 ## Struktura i Kategorie
 ### 1. Strona Główna (home.html)
