@@ -141,7 +141,6 @@ body {
 img {
   height: auto;
   max-width: 100%;
-  display: block;
 }
 
 .header {
@@ -182,6 +181,7 @@ img {
 
 
 .header__text {
+  line-height: 1;
   font-size: 2.5rem;
   color: var(--white-color);
   transition: transform 0.2s;
@@ -193,7 +193,7 @@ img {
 }
 
 .header__text--colorized {
-  line-height: 0.5;
+  line-height: 1;
   margin-bottom: 30px;
   font-size: 2.5rem;
   color: var(--red-color);
