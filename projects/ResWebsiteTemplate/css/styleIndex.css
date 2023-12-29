@@ -19,12 +19,6 @@
   --ten-color: #203a4d;
 }
 
-@font-face {
-  font-family: 'Roboto';
-  src: url('/fonts/roboto.woff2') format('woff2');
-  font-display: swap;
-}
-
 @keyframes pulse {
   0% {
       transform: scale(1);
