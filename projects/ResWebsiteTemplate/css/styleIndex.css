@@ -794,7 +794,6 @@ photosX:hover {
 .collection__img {
   width: 350px;
   height: 250px;
-  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -855,7 +854,6 @@ div.slider-controls {
   display: flex;
   scroll-snap-type: x mandatory;
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
   padding: 20px 0;
   width: 100vw;
 }
@@ -875,15 +873,9 @@ div.slider-controls {
 }
 
 .slides {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.slides {
   display: flex;
   scroll-snap-type: x mandatory;
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
   padding: 20px 0;
 }
 
@@ -1110,14 +1102,8 @@ span .price {
 }
 
 .service__truck {
-  scale: 1.7;
   margin-right: 5px;
 }
-
-.service__return {
-  scale: 0.9;
-}
-
 
 .load-more-container {
   text-align: center;
