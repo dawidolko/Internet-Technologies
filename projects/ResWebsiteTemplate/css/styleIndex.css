@@ -184,7 +184,6 @@ img {
 .header__text {
   font-size: 2.5rem;
   color: var(--white-color);
-  margin-bottom: 1rem;
   transition: transform 0.2s;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
 }
@@ -194,6 +193,9 @@ img {
 }
 
 .header__text--colorized {
+  line-height: 0.5;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
   color: var(--red-color);
   font-weight: bold;
 }
