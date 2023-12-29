@@ -317,6 +317,8 @@ input[type="radio"] {
 .product_women img,
 .product_men img,
 .product_kids img {
+  width: 400px;
+  height: auto;
   max-width: 100%;
   display: block;
   margin: 0 auto 20px;
