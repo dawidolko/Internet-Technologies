@@ -368,7 +368,7 @@ img {
 
 
 .navbar {
-  position: sticky;
+  position: fixed;
   width: 100%;
   background-color: var(--seventh-color);
   padding: 1rem;
