@@ -370,6 +370,8 @@ img {
 .navbar {
   position: fixed;
   width: 100%;
+  left: 0;
+  top: 0;
   background-color: var(--seventh-color);
   padding: 1rem;
   text-align: center;
