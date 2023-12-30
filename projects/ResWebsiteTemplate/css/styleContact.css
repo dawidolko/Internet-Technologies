@@ -476,7 +476,7 @@ span.button {
 @media (max-width: 700px) {
     .form {
         max-width: 500px;
-        width: 80%;
+        width: 75%;
     }
 
     .form h2 {
