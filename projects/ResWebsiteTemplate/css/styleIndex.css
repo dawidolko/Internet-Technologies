@@ -182,6 +182,11 @@ body {
   overflow-x: hidden;
 }
 
+img {
+	width: 100%
+	height: auto;
+}
+
 .header {
   margin-top: 60px;
   height: 100vh;
