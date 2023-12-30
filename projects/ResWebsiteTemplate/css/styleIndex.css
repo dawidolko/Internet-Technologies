@@ -172,13 +172,6 @@ body {
   background-color: var(--bg2-color);
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
   overflow-x: hidden;
 }
 
