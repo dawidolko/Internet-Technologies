@@ -18,8 +18,6 @@ danych i wypisz wiersze tej tablicy.
 // rozwiązanie
 </script>
 ```
-Laboratorium 1
-W pliku lab-1.htm rozwiąż zadania:
 
 ### [Zad. 1.1]()
 Utwórz dwuwymiarową tablicę łańcuchów o nazwie tab na podstawie poniższych danych i wypisz
