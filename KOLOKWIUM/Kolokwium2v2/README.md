@@ -1,15 +1,16 @@
 # KOLOKWIUM 2 JavaScript
 
 ## Każde zadanie rozwiązujemy w oddzielnym skrypcie. Poniżej szablon dla pierwszego zadania.
-```
-<!--
-Zad. 1
+
+
+### [Zad. 1.0]()
 Utwórz dwuwymiarową tablicę łańcuchów o nazwie tab na podstawie poniższych
 danych i wypisz wiersze tej tablicy.
+```
 1 a
 2 a b
 3 c b
--->
+
 ```
 
 ### [Zad. 1
