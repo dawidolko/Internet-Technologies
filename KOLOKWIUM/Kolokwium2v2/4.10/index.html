@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Formularz z Auto Focusem i Selekcją</title>
+<script>
+window.onload = function() {
+  document.getElementById("poleTekstowe").focus();
+};
+
+function zaznaczTekst() {
+  document.getElementById("poleTekstowe").select();
+}
+</script>
+</head>
+<body>
+
+<form name="formularzTekstowy">
+  <label for="poleTekstowe">Kliknij w pole:</label>
+  <input type="text" id="poleTekstowe" name="poleTekstowe" onclick="zaznaczTekst()" value="Przykładowy tekst">
+</form>
+
+</body>
+</html>

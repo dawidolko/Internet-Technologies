@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Formularz z Kontrolką Select</title>
+</head>
+<body>
+
+<form name="formularzSelect" onsubmit="return odczytajWybranaOpcje()">
+  <label for="wybor">Wybierz opcję:</label>
+  <select id="wybor" name="wybor">
+    <option value="Opcja1">Opcja 1</option>
+    <option value="Opcja2">Opcja 2</option>
+  </select>
+  <input type="submit" value="Wyślij">
+</form>
+
+<script>
+function odczytajWybranaOpcje() {
+  var wybranaOpcja = document.forms["formularzSelect"]["wybor"].value;
+  alert("Wybrano: " + wybranaOpcja);
+  return true;
+}
+</script>
+
+</body>
+</html>

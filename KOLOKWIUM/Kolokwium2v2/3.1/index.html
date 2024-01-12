@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Tablica Zadań i Metod Algorytmicznych</title>
+</head>
+<body>
+
+<script>
+// Lista zadań i metod algorytmicznych
+let listaZadan = [
+  "Decyzyjny problem plecakowy BS DZ SO AZ",
+  "Ogólny problem plecakowy BS DZ SO",
+  "Problem doboru załogi statku kosmicznego BS SO",
+  // ... (inne zadania)
+  "Problem wydawania reszty AZ SO"
+];
+
+// Funkcja przetwarzająca listę zadań na dwuwymiarową tablicę par
+function utworzTabliceZadan(lista) {
+  return lista.map(zadanie => {
+    // Rozdzielamy zadanie na części - nagłówek i metody
+    let [naglowek, ...metody] = zadanie.split(' ');
+    return [naglowek, metody.join(' ')];
+  });
+}
+
+// Utworzenie tablicy dwuwymiarowej
+let tablicaZadan = utworzTabliceZadan(listaZadan);
+
+// Wypisanie tablicy dwuwymiarowej
+console.log(tablicaZadan);
+</script>
+
+</body>
+</html>

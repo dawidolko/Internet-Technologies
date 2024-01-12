@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Formularz z Walidacją Email Wyrażeniem Regularnym</title>
+</head>
+<body>
+
+<form name="formularzEmail" onsubmit="return walidujEmail()">
+  <label for="email">Adres email:</label>
+  <input type="email" id="email" name="email" required>
+  <input type="submit" value="Wyślij">
+</form>
+
+<script>
+function walidujEmail() {
+  var email = document.forms["formularzEmail"]["email"].value;
+  var wzorEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
+  if (!wzorEmail.test(email)) {
+    alert("Proszę wprowadzić poprawny adres email.");
+    return false;
+  }
+  return true;
+}
+</script>
+
+</body>
+</html>

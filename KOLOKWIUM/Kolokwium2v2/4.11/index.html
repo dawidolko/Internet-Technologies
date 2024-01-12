@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Formularz z Kontrolkami Radio</title>
+</head>
+<body>
+
+<form name="formularzRadio" onsubmit="return odczytajWybranaWartosc()">
+  <label for="opcja1">Opcja 1:</label>
+  <input type="radio" id="opcja1" name="opcje" value="Opcja1">
+  <label for="opcja2">Opcja 2:</label>
+  <input type="radio" id="opcja2" name="opcje" value="Opcja2">
+  <input type="submit" value="Wyślij">
+</form>
+
+<script>
+function odczytajWybranaWartosc() {
+  var opcje = document.forms["formularzRadio"]["opcje"];
+  for (var i = 0; i < opcje.length; i++) {
+    if (opcje[i].checked) {
+      alert("Wybrano: " + opcje[i].value);
+      return true;
+    }
+  }
+  alert("Proszę wybrać opcję.");
+  return false;
+}
+</script>
+
+</body>
+</html>

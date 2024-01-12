@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Tablica Zadań Java</title>
+</head>
+<body>
+
+<script>
+// Przykład listy zadań z metodami algorytmicznymi
+let listaZadan = [
+  "Decyzyjny problem plecakowy EX DZ SO AZ",
+  "Ogólny problem plecakowy BS DZ SO",
+  // ... (inne zadania z listy)
+  "Problem wydawania reszty AZ EX"
+];
+
+// Funkcja tworząca tablicę zadań Java
+function utworzTabliceZadanJava(lista) {
+  return lista
+    .filter(zadanie => !zadanie.includes('EX') && !zadanie.includes('SO'))
+    .map(zadanie => {
+      let elementy = zadanie.split(' ');
+      let naglowek = elementy[0];
+      let metody = elementy.slice(1).join(' ');
+      return `${naglowek} ${metody}`;
+    });
+}
+
+// Utworzenie tablicy zadań Java
+let zadaniaJava = utworzTabliceZadanJava(listaZadan);
+
+// Wypisanie tablicy zadań Java
+console.log(zadaniaJava);
+</script>
+
+</body>
+</html>

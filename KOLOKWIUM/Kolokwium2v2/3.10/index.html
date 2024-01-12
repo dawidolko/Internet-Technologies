@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Losowanie Zadań</title>
+</head>
+<body>
+
+<textarea id="losoweZadanie" style="width: 410px; height: 145px;" readonly></textarea>
+<button id="losujZestaw">Losuj zestaw</button>
+
+<script>
+let zadaniaExcel = [
+  "Zadanie Excel 1",
+  "Zadanie Excel 2",
+  // ... więcej zadań Excel
+];
+let zadaniaJava = [
+  "Zadanie Java 1",
+  "Zadanie Java 2",
+  // ... więcej zadań Java
+];
+
+function wylosujZadanie() {
+  let zadanieExcel = zadaniaExcel[Math.floor(Math.random() * zadaniaExcel.length)];
+  let zadanieJava = zadaniaJava[Math.floor(Math.random() * zadaniaJava.length)];
+  
+  // Ustawienie tekstu w oknie tekstowym i przewinięcie do końca
+  let textarea = document.getElementById('losoweZadanie');
+  textarea.value = `Excel: ${zadanieExcel}\nJava: ${zadanieJava}`;
+  textarea.scrollTop = textarea.scrollHeight;
+}
+
+// Dodanie zdarzenia kliknięcia do przycisku
+document.getElementById('losujZestaw').addEventListener('click', wylosujZadanie);
+</script>
+
+</body>
+</html>

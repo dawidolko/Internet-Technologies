@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Formularz z Walidacją Liczbową</title>
+</head>
+<body>
+
+<form name="formularzLiczbowy" onsubmit="return walidujLiczbe()">
+  <label for="liczba">Wprowadź liczbę (od 1 do 5):</label>
+  <input type="text" id="liczba" name="liczba" required>
+  <input type="submit" value="Wyślij">
+</form>
+
+<script>
+function walidujLiczbe() {
+  var liczba = document.forms["formularzLiczbowy"]["liczba"].value;
+  var wzorLiczby = /^[1-5]$/;
+  
+  if (!wzorLiczby.test(liczba)) {
+    alert("Proszę wprowadzić liczbę od 1 do 5.");
+    document.forms["formularzLiczbowy"].reset();
+    return false;
+  }
+  return true;
+}
+</script>
+
+</body>
+</html>

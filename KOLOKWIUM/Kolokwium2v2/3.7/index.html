@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Liczba Zadań Excel i Java</title>
+</head>
+<body>
+
+<!-- Pusty akapit z identyfikatorem 'head' -->
+<p id="head"></p>
+
+<script>
+// Zakładamy, że tablice zadaniaExcel i zadaniaJava zostały już wcześniej zdefiniowane
+let zadaniaExcel = [
+  // ... lista zadań Excel
+];
+let zadaniaJava = [
+  // ... lista zadań Java
+];
+
+// Ustawienie zawartości akapitu z ilością zadań
+document.getElementById('head').textContent = 
+  `Excel:  ${zadaniaExcel.length}  Java:  ${zadaniaJava.length}`;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Formularz z Kontrolkami Checkbox</title>
+</head>
+<body>
+
+<form name="formularzCheckbox" onsubmit="return odczytajWybraneWartosci()">
+  <label for="opcja1">Opcja 1:</label>
+  <input type="checkbox" id="opcja1" name="opcje" value="Opcja1">
+  <label for="opcja2">Opcja 2:</label>
+  <input type="checkbox" id="opcja2" name="opcje" value="Opcja2">
+  <input type="submit" value="Wyślij">
+</form>
+
+<script>
+function odczytajWybraneWartosci() {
+  var wybrane = [];
+  var opcje = document.forms["formularzCheckbox"]["opcje"];
+  for (var i = 0; i < opcje.length; i++) {
+    if (opcje[i].checked) {
+      wybrane.push(opcje[i].value);
+    }
+  }
+  if (wybrane.length > 0) {
+    alert("Wybrane opcje: " + wybrane.join(", "));
+    return true;
+  } else {
+    alert("Proszę wybrać przynajmniej jedną opcję.");
+    return false;
+  }
+}
+</script>
+
+</body>
+</html>

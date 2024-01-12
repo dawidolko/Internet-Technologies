@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Formularz z Automatyczną Walidacją</title>
+</head>
+<body>
+
+<form name="formularzTekstowy" onsubmit="return walidujFormularz()">
+  <label for="poleTekstowe">Pole tekstowe:</label>
+  <input type="text" id="poleTekstowe" name="poleTekstowe" required>
+  <input type="submit" value="Wyślij">
+</form>
+
+<script>
+function walidujFormularz() {
+  // Walidacja jest już wbudowana w przeglądarkę dzięki atrybutowi "required"
+  // Poniższy kod jest więc opcjonalny, chyba że potrzebujesz bardziej złożonej walidacji
+  var poleTekstowe = document.forms["formularzTekstowy"]["poleTekstowe"].value;
+  if (poleTekstowe == "") {
+    alert("Pole tekstowe nie może być puste!");
+    return false;
+  }
+  return true;
+}
+</script>
+
+</body>
+</html>

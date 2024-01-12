@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Formularz z Walidacją</title>
+<script>
+function walidujFormularz() {
+  var poleTekstowe = document.getElementById('poleTekstowe').value;
+  if (poleTekstowe == "") {
+    alert("Pole tekstowe nie może być puste!");
+    return false;
+  }
+  return true;
+}
+</script>
+</head>
+<body>
+
+<form onsubmit="return walidujFormularz()">
+  <label for="poleTekstowe">Pole tekstowe:</label>
+  <input type="text" id="poleTekstowe" name="poleTekstowe">
+  <input type="submit" value="Wyślij">
+</form>
+
+</body>
+</html>

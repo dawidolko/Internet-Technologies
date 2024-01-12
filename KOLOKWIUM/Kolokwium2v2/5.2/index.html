@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Dodawanie Pisemne z Przeniesieniami</title>
+<style>
+  #dodawanie {
+    font-family: monospace;
+    white-space: pre;
+  }
+</style>
+</head>
+<body>
+
+<label for="liczbaA">a = </label><input type="text" id="liczbaA" /><br />
+<label for="liczbaB">b = </label><input type="text" id="liczbaB" /><br />
+<button onclick="dodajPisemnie()">Dodaj</button>
+
+<pre id="dodawanie"></pre>
+
+<script>
+function dodajPisemnie() {
+  let a = document.getElementById('liczbaA').value.split('').reverse().map(Number);
+  let b = document.getElementById('liczbaB').value.split('').reverse().map(Number);
+  let wynik = [];
+  let przeniesienia = [];
+  let przeniesienie = 0;
+
+  let maxLength = Math.max(a.length, b.length);
+  for (let i = 0; i < maxLength; i++) {
+    let suma = (a[i] || 0) + (b[i] || 0) + przeniesienie;
+    przeniesienie = suma > 9 ? 1 : 0;
+    przeniesienia.push(przeniesienie);
+    wynik.push(suma % 10);
+  }
+  if (przeniesienie) wynik.push(przeniesienie);
+
+  let wynikStr = wynik.reverse().join('');
+  let przeniesieniaStr = przeniesienia.reverse().join(' ');
+  
+  // Formatowanie wyniku
+  document.getElementById('dodawanie').textContent = 
+    `Przeniesienia: ${przeniesieniaStr}\n` +
+    `  ${document.getElementById('liczbaA').value.padStart(wynikStr.length)}\n` +
+    `+ ${document.getElementById('liczbaB').value.padStart(wynikStr.length)}\n` +
+    `${'-'.repeat(wynikStr.length)}\n` +
+    `  ${wynikStr}`;
+
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Tablica Zadań Excel</title>
+</head>
+<body>
+
+<script>
+// Przykład listy zadań z metodami algorytmicznymi
+let listaZadan = [
+  "Decyzyjny problem plecakowy EX DZ SO AZ",
+  "Ogólny problem plecakowy BS DZ SO",
+  // ... (inne zadania z listy)
+  "Problem wydawania reszty EX SO"
+];
+
+// Funkcja filtrująca zadania i tworząca tablicę dla Excela
+function utworzTabliceZadanExcel(lista) {
+  return lista
+    .filter(zadanie => zadanie.includes('EX') || zadanie.includes('SO'))
+    .map(zadanie => {
+      let elementy = zadanie.split(' ');
+      let naglowek = elementy[0];
+      let metody = elementy.slice(1).join(' ');
+      return `${naglowek} ${metody}`;
+    });
+}
+
+// Utworzenie tablicy zadań Excel
+let zadaniaExcel = utworzTabliceZadanExcel(listaZadan);
+
+// Wypisanie tablicy zadań Excel
+console.log(zadaniaExcel);
+</script>
+
+</body>
+</html>
