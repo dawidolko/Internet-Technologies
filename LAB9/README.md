@@ -48,21 +48,21 @@ W przypadku dłuższych skryptów takie podejście jest raczej nieefektywne i mo
 ## 2. Deklarowanie zmiennych 
 W pierwszym okresie rozwoju języka do deklaracji zmiennej używano słowa kluczowego `var`. Obecnie nie zaleca się stosować tej konstrukcji w nowym kodzie, zwłaszcza gdy piszemy klasy nowego typu. Jednak z użyciem tej składni powstało bardzo dużo tzw. legacy code'u i poznanie tej konstrukcji nadal wydaje się konieczne. Warto zwrócić uwagę, że `var` oznacza zmienną dowolnego typu. 
 
-```html
+```javascript
 var a = 1; 
 console.log(a); // wypisanie zmiennej w konsoli przeglądarki
 ```
 
 Zasadniczo język dopuszcza pominięcie tej deklaracji 
 
-```html
+```javascript
 a = 1; 
 console.log(a); // wypisanie zmiennej w konsoli przeglądarki
 ```
 
 Język zastosuje tutaj jednak automatycznie konstrukcję równoważną mniej więcej takiej: 
 
-```html
+```javascript
 var a; // deklaracja zmiennej a a = 1; // inicjalizacja zmiennej a 
 console.log(a); // wypisanie zmiennej w konsoli przeglądarki
 ```
@@ -70,7 +70,7 @@ console.log(a); // wypisanie zmiennej w konsoli przeglądarki
 **Nie poleca się jednak pomijania deklaracji zmiennej, jest to zła praktyka.**
 W wersji ES6 wprowadzono nowy sposób deklarowania zmiennych za pomocą let i const. 
 
-```html
+```javascript
 let a = 1; // jest to zmienna mutowalna, jej wartość może ulec zmianie const b = 0; // jest to stała, która jest niemutowalna, nie można zmienić jej wartości 
 a	+= 1; // zmienną a można modyfikować console.log(a) 
 b	+= 2; // tutaj nastąpi błąd wykonania, nie można modyfikować stałej b
@@ -85,7 +85,7 @@ Nieznajomość tego pojęcia (i brak zakładania, że może się ono pojawić) m
 Język JavaScript posiada dość unikalny system obiektowy. Większość języków obiektowych jest oparta o klasy (ang. class-based object model), na bazie których tworzymy obiekty. JS jest natomiast oparty o prototypy (ang. prototype-based object model). W pewnym skrócie w JS tworzymy obiekty, z których możemy utworzyć kolejne obiekty (w tym rozszerzające pierwowzór), bez potrzeby pisania klas. Każdy obiekt w JS posiada jakiś prototyp (może to być choćby null, ale raczej język stosuje taką konstrukcję wewnętrznie, tzn. samodzielnie pisane obiekty nie powinny mieć takiego prototypu).   
 Najprostszy sposób na utworzenie obiektu w JS to wykorzystanie ang. object literal: 
 
-```html
+```javascript
 const obj = {};
 ```
 
@@ -99,7 +99,7 @@ Można zadać sobie pytanie skąd one się wzięły? Pomimo że nie napisano teg
  <br>![lab9](img/lab8v4.png)
   
 Zadeklarujmy jednak bardziej "użyteczny" obiekt (również wykorzystując object literal): 
-```html
+```javascript
 const person = {name: null, printIntroduction: function() {return `I am ${this.name}`}}
 ```
 
@@ -109,7 +109,7 @@ Tym razem poza prototypem Object obiekt posiada właściwość (property) name i
 
 Możliwe jest teraz zdefiniowanie nowego obiektu, którego prototypem będzie person (warto zwrócić uwagę, że poniżej po prostu nadpisano wartość właściwości rodzica, ale jednocześnie w rodzicu pozostała ona nienaruszona):
 
-```html
+```javascript
 const mark = Object.create(person); mark.name = 'Mark'; 
 ```
  <br>![lab9](img/lab8v6.png)
@@ -118,7 +118,7 @@ Zatem obiekt mark posiada jako prototyp obiekt person, który posiada jako proto
 Więcej tutaj: [link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain) i [link](https://ui.dev/beginners-guide-to-javascript-prototype)
 Inną powszechnie wykorzystywaną konstrukcją jest poniższa (ang. constructor function): 
 
-```html
+```javascript
 function Person(name) {
            this.name = name; 
            this.printIntroduction = function() {return `I am ${this.name}`}; 
@@ -129,7 +129,7 @@ susan = new Person('Susan');
  <br>![lab9](img/lab8v7.png)
    
 Język JavaScript pozwala również "złożyć" sobie obiekt z innych obiektów. 
-```html
+```javascript
 const HoursEmployee = { 
             computeHourlyPayment(hours) {                 return hours * this.hourlyRate; 
             }         } 
@@ -138,7 +138,7 @@ const FullTimeEmployee = {             computeMonthlySalary() {                 
 } 
 ```
 
-```html
+```javascript
 function FullTimeEmployeeWithAdditionalHourlyPayment(salary, hourlyRate) {       return {salary, hourlyRate, 
                 ...FullTimeEmployee, 	...HoursEmployee, computeOverallPayment(additionalHours) { 
                 return this.computeHourlyPayment(additionalHours) + this.computeMonthlySalary(); 
@@ -150,7 +150,7 @@ console.log(f.computeOverallPayment(10));
 
 Obiekt `FullTimeEmployeeWithAdditionalHourlyPayment` ma na celu reprezentowanie pracownika, który jednocześnie pracuje na etat, jak i tzw. akord (np. w formie nadgodzin, ale potencjalnie sprawa może być bardziej złożona, np. pracownik czasowo zastępuje innego pracownika na jego stanowisku i otrzymuje za to poza swoją zwykłą pensją dodatkowe wynagrodzenie). Obiekt został utworzony jako złożenie obiektu `HoursEmployee` i `FullTimeEmployee` oraz właściwości salary i hourlyRate. 
 Alternatywnie możliwa jest również konstrukcja zaprezentowana poniżej: 
-```html
+```javascript
 const hourlyPaymenter = (state) => ({     computeHourlyPayment(hours) {         return hours * state.hourlyRate; 
     } 
 });
@@ -184,12 +184,12 @@ Więcej 	o 	tych 	technikach 	można 	przeczytać 	tutaj:
 [link](https://softchris.github.io/pages/javascript-composition.html#objectcomposition-without-classes) i tutaj: [link](https://ui.dev/javascript-inheritancevs-composition). 
  
 Obiektom w JS można w każdej chwili dynamicznie dodać nową właściwość: 
-```html
+```javascript
 susan.newProperty = 'zupełnie nowa właściwość!';
 ```
 
 Podobnie metodę: 
-```html
+```javascript
 susan.newMethod = function() { return 'Ta metoda została dodana po utworzeniu obiektu!'};
 ```
 Na razie nie będzie jeszcze prezentowane pisanie klas w JS, które oczywiście dodatkowo rozszerza tworzenie obiektów o nową składnię, jednak od razu warto zaznaczyć, że klasy są lukrem syntaktycznym (syntactic sugar) i w rzeczywistości są zamieniane pod spodem na wyrażenia operujące na prototypach i ich łańcuchach!  
@@ -210,7 +210,7 @@ Załóżmy, że mamy zdefiniowany przycisk
 <button id="btn" onclick="handler(event)">przycisk</button>
 ```
 i następnie załączono skrypt (argument musi nazywać się event): 
-```html
+```javascript
 function handler(event) {    console.log(event.target); 
    console.log('Został wciśnięty przycisk');
    event.target.innerText = 'Zmieniono napis';
@@ -237,7 +237,7 @@ o możemy ponownie przypisywać wartości
 -	const o nie mogą być ponownie zadeklarowane w danym bloku o nie mogą mieć ponownie przypisanej wartości o nie są dostępne poza blokami {} 
 [link](https://developer.mozilla.org/pl/docs/Learn/JavaScript/First_steps/Variables) 
 JavaScript pozwala na elastyczne przypisywanie różnych typów danych do tych samych zmiennych w trakcie działania programu.
-```html
+```javascript
 let zmienna = 10;  // Zmienna 'zmienna' jest typu number (liczba) console.log(typeof zmienna);  // Wyświetli: number 
  
 zmienna = "Tekst";  // Teraz 'zmienna' jest typu string (tekst) console.log(typeof zmienna);  // Wyświetli: string 
@@ -263,7 +263,7 @@ Podstawowe operatory:
 | mnożenie/dzielenie/modulo | * / % |
  
 Utwórz zmienne: 
-```html
+```javascript
 a = "3.45" b = 4 c = true d  e = []
 ```
 Wykonaj działania arytmetyczne +, -, *, / na parach zmiennych [a, b] [b,c] [a, c]  
@@ -274,25 +274,25 @@ Znajdź wytłumaczenie otrzymanych rezultatów w sieci. [link](https://github.co
 ### [Zadanie 2.]()
 Funkcje można zadeklarować na kilka sposobów. 
 Sposób 1: Definicja funkcji 
-```html
+```javascript
 function mojaFunkcja() { 
     // kod funkcji }
 ```
 Sposób 2: Wyrażenie funkcyjne 
 Tworzona jest tu funkcja anonimowa (funkcja która nie ma nazwy) i jest przypisywana do stałej mojaFunkcja 
-```html
+```javascript
 const mojaFunkcja = function () { 
     // kod funkcji 
 };
 ```
 Sposób 3: Funkcja strzałkowa (Arrow function) - ES6 
-```html
+```javascript
 const mojaFunkcja = () => { 
     // kod funkcji 
 };
 ```
 Sposób 4: Konstruktor Function 
-```html
+```javascript
 const mojaFunkcja = new Function('arg1', 'arg2', 'return arg1 + arg2;');
 ```
  
@@ -301,30 +301,30 @@ W JavaScript funkcje są obiektami. To oznacza, że w JavaScript funkcje są ins
 Funkcje jako obiekty: 
 
 Mogą być przypisywane do zmiennych i stałych: 
-```html
+```javascript
 let myFunc = function () {     console.log("Funkcja została wywołana"); };
  
 myFunc(); // wywołanie funkcji
 ```
 Mogą być przekazywane jako argumenty do innych funkcji:
-```html
+```javascript
 function execute(func_var) {     func_var(); 
 }
 execute(function () {     console.log("Wywołana funkcja"); 
 }); 
 ```
 Mogą być zwracane przez inne funkcje: 
-```html
+```javascript
 function createFunction() {     return function () {         console.log("Funkcja zwrócona przez inną funkcję");     }; 
 } 
 ```
 
-```html
+```javascript
 const newFunction = createFunction(); // przypisuje obiekt zwrócony przez funkcje do zmiennej 
 newFunction(); // obiekt ten jest funkcją 
 ```
 Mogą posiadać właściwości i metody: 
-```html
+```javascript
 function myFunction() { 
     // kod funkcji 
 } 
@@ -334,12 +334,12 @@ console.log(myFunction.nazwa); // Wyświetli "Funkcja testowa"
 ```
 
 Są instancjami obiektu typu Function: 
-```html
+```javascript
 console.log(typeof myFunction); // Wyświetli "function" console.log(myFunction instanceof Function); // Zwróci true 
  ```
 Aby utworzyć funkcję, która przyjmuje nieskończenie wiele parametrów używamy operatora … (rest parameter) 
 
-```html
+```javascript
 function przyklad(...params) {     console.log(params); 
 } przyklad(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 ```
@@ -372,7 +372,7 @@ Następnie włącz narzędzia deweloperskie w przeglądarce i wpisz:
  <br>![lab9](img/lab8v9.png)
   
 Następnie wpisz kolejno instrukcje i obserwuj co zostanie zwrócone przez konsolę: 
-```html
+```javascript
 document.body document.all
 document.getElementsByTagName('h1')
 document.getElementsByTagName('h1')[0]
@@ -388,11 +388,11 @@ document.body.parentElement
 ```
 
 Poza możliwością jedynie podglądu elementów, możliwa jest ich edycja, która będzie odwzorowana w przeglądarce natychmiast.  
-```html
+```javascript
 document.getElementsByTagName('p')[0].innerHTML = 'Akapit 2'
 ```
 Ponadto możliwe jest programowe tworzenie nowych elementów i dodanie ich do dokumentu: 
-```html
+```javascript
 let newP = document.createElement('p'); newP.innerText = 'Programowo utworzony akapit'; document.body.append(newP);
 ```
 
@@ -401,7 +401,7 @@ let newP = document.createElement('p'); newP.innerText = 'Programowo utworzony a
 Poniżej pokazano przykład, w którym tablice, zawierającą obiekty JSON przekształcono w dynamicznie wygenerowaną tablicę HTML. 
 [link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
 
-```html
+```javascript
 const exchangeRate = [{"currency":"dolar amerykański","code":"USD","mid":3.9432}, 
                               {"currency":"dolar australijski","code":"AUD","mid":2.6897},                               {"currency":"dolar Hongkongu","code":"HKD","mid":0.5046}, 
                               {"currency":"dolar kanadyjski","code":"CAD","mid":2.9752}, 
@@ -431,7 +431,7 @@ document.body.append(HTMLTable);
 ```
  
 Możliwe jest programowa zmiana wartości właściwości stylów CSS danego elementu(ów). Tutaj sprawiono, że tabela posiada dość klasyczne obramowanie. Jednak od razu warto zwrócić uwagę na fakt, że żeby to uzyskać była potrzeba wykorzystania dwóch pętli: 
-```html
+```javascript
 HTMLTable.style.borderCollapse = 'collapse';         for (let child of HTMLTable.children) {             child.style.border = '1px solid black';             for (let grandchild of child.children) { 
                 grandchild.style.border = '1px solid black'; 
             } 
@@ -440,7 +440,7 @@ HTMLTable.style.borderCollapse = 'collapse';         for (let child of HTMLTable
 Co ważne w rzeczywistości dodamy każdemu elementowi inline style. 
 
 Alternatywą jest programowe dodanie samego stylu (który jest przecież atrybutem HTML): 
-```html
+```javascript
 const HTMLTable2 = HTMLTable.cloneNode(true); // tworzymy kopię elementu zanim 
 potem zmodyfikujemy mu style, true oznacza, że kopiujemy element z potomkami 
  
@@ -462,7 +462,7 @@ document.body.append(HTMLTable); document.body.append(HTMLTable2);
 ```
 Jest to lepsze rozwiązanie w przypadku, gdy chcemy w ten sposób ostylować dużą liczbę elementów, jak i upraszcza zdecydowanie skrypt. 
 Na podstawie przykładów napisz program, który wygeneruje programowo tabelę, na bazie następującej tablicy w JavaScript: 
-```html
+```javascript
 const data = [ 
     ['Imię', 'Nazwisko', 'Wiek'], 
     ['John', 'Doe', 30], 
