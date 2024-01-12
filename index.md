@@ -35,6 +35,9 @@ layout: default
 ### [Lab8](LAB8/README.md) - XML (Extensible Markup Language)
 - [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB8)<br>
 
+### [Lab9](LAB9/README.md) - JavaScript 1
+- [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB9)<br>
+
 ## Projekty:
 
 ### [Projekt 1](https://techint.dawidolko.pl/projects/ResWebsiteTemplate/) - Responsive Website Template Documentation
