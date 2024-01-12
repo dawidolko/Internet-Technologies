@@ -3,7 +3,7 @@
 ## Każde zadanie rozwiązujemy w oddzielnym skrypcie. Poniżej szablon dla pierwszego zadania.
 
 
-### [Zad. 1.0]()
+### [Zad. 1.0](1.0/index.html)
 Utwórz dwuwymiarową tablicę łańcuchów o nazwie tab na podstawie poniższych
 danych i wypisz wiersze tej tablicy.
 ```
@@ -19,7 +19,7 @@ danych i wypisz wiersze tej tablicy.
 </script>
 ```
 
-### [Zad. 1.1]()
+### [Zad. 1.1](1.1/index.html)
 Utwórz dwuwymiarową tablicę łańcuchów o nazwie tab na podstawie poniższych danych i wypisz
 wiersze tej tablicy.
 ```
@@ -28,49 +28,49 @@ wiersze tej tablicy.
 3 c b
 ```
 
-### [Zad. 1.2]()
+### [Zad. 1.2](1.2/index.html)
 Wypisz elementy tablicy tab używając różnych rodzajów pętli for.
 
-### [Zad. 1.3]()
+### [Zad. 1.3](1.3/index.html)
 Wypisz elementy tablicy tab z pominięciem pierwszego elementu z każdego wiersza.
 
-### [Zad. 1.4]()
+### [Zad. 1.4](1.4/index.html)
 Podaj kod, który utworzy tablicę pary zawierającą wszystkie łańcuchy utworzone z pierwszego
 elementu danego wiersza i pozostałych elementów w danych wierszu. Elementy w parze powinny
 być oddzielone spacją.
 
-### [Zad. 1.5]()
+### [Zad. 1.5](1.5/index.html)
 Podaj kod, który utworzy tablicę pary1 zawierającą wszystkie łańcuchy utworzone z pierwszego
 elementu danego wiersza i pozostałych elementów w danych wierszu z pominięciem elementu b.
 Elementy w parze powinny być oddzielone spacją.
 
-### [Zad. 1.6]()
+### [Zad. 1.6](1.6/index.html)
 Podaj kod, który utworzy tablicę pary2 zawierającą wszystkie łańcuchy utworzone z pierwszego
 elementu danego wiersza i pozostałych elementów w danych wierszu z pominięciem elementu c.
 Elementy w parze powinny być oddzielone spacją.
 
-### [Zad. 1.7]()
+### [Zad. 1.7](1.7/index.html)
 Podaj kod, który utworzy tablice pary1 oraz pary2 z poprzedniego zadania w jednym przebiegu.
 
-### [Zad. 2.1]()
+### [Zad. 2.1](2.1/index.html)
 Podaj kod, który wypisze rozmiary tablic pary1 oraz pary2.
 
-### [Zad. 2.2]()
+### [Zad. 2.2](2.2/index.html)
 Podaj kod, który w sposób losowy wypisze wszystkie elementy z tablicy pary.
 
-### [Zad. 2.3]()
+### [Zad. 2.3](2.3/index.html)
 Utwórz pusty akapit z identyfikatorem akapit oraz określ jego zawartość przy pomocy kodu
 JavaScript. Akapit powinien zawierać liczbę elementów tablicy pary1 oraz pary2.
 
-### [Zad. 2.4]()
+### [Zad. 2.4](2.4/index.html)
 Utwórz nieruchome pole tekstowe textarea i przycisk button, który dodaje do pola tekstowego
 dodaje napis To jest pole tekstowe.
 
-### [Zad. 2.5]()
+### [Zad. 2.5](2.5/index.html)
 Rozwiąż powyższe zadanie w taki sposób, aby w oknie tekstowym zawsze widoczny był koniec tekstu.
 
 
-### [Zad. 3.1]()
+### [Zad. 3.1](3.1/index.html)
 Dana jest lista zawierająca nagłówki zadań wraz z metodami algorytmicznymi. Utwórz
 dwuwymiarową tablicę zadania, której elementami będą tablice zawierające napisy złożone z
 nagłówka zadania i metod algorytmicznych do niego przypisanych.
@@ -113,34 +113,34 @@ nagłówka zadania i metod algorytmicznych do niego przypisanych.
 
 19. Problem wydawania reszty AZ SO
 
-### [Zad. 3.2 *]()
+### [Zad. 3.2 *](3.2/index.html)
 Podaj kod, który utworzy dwuwymiarową tablicę zadania, której elementami będą wszystkie
 tablice zawierające napisy złożone z nagłówka zadania i metod algorytmicznych do niego
 przypisanych.
 
-### [Zad. 3.3]()
+### [Zad. 3.3](3.3/index.html)
 Podaj kod, który wypisze wszystkie pary złożone z nagłówka zadania i metody algorytmicznej do
 niego przypisanej.
 
-### [Zad. 3.4]()
+### [Zad. 3.4](3.4/index.html)
 Podaj kod, który utworzy tablicę zadaniaExcel, której elementami będą wszystkie napisy
 złożone z nagłówka zadania i metody algorytmicznej do niego przypisanej typu EX lub SO.
 
-### [Zad. 3.5]()
+### [Zad. 3.5](3.5/index.html)
 Podaj kod, który utworzy tablicę zadaniaJava, której elementami będą wszystkie napisy złożone
 z nagłówka zadania i metody algorytmicznej do niego przypisanej typu innego niż EX i SO.
 
-### [Zad. 3.6]()
+### [Zad. 3.6](3.6/index.html)
 Do zmiennych liczbaZadanExcel i liczbaZadanJava przypisz rozmiary tablic odpowiednio
 zadaniaExcel i zadaniaJava.
 
-### [Zad. 3.7]()
+### [Zad. 3.7](3.7/index.html)
 Utwórz pusty akapit z identyfikatorem head oraz określ jego zawartość przy pomocy kodu
 JavaScript. Akapit powinien zawierać informację o liczbie zadań z Excel’a i liczbie zadań z Javy w
 formacie:
 Excel:, spacja, liczba zadań, dwie spacje, Java:, spacja, liczba zadań
 
-### [Zad. 3.8]()
+### [Zad. 3.8](3.8/index.html)
 Utwórz okno tekstowe textarea o szerokości 410 i wysokości 145 pikseli. Podaj kod funkcji
 losuj, która dla kolejnej osoby w polu tekstowym wypisze losowo wybrane zadanie z Excela i Javy
 w formacie:
@@ -150,72 +150,72 @@ treść zadania z javy
 wiersz odstępu
 W oknie tekstowym zawsze powinien być widoczny koniec tekstu.
 
-### [Zad. 3.9]()
+### [Zad. 3.9](3.9/index.html)
 Utwórz przycisk button z opisem Losuj zestaw, który wywołuje funkcję losuj i przetestuj
 działanie tej funkcji.
 
-### [Zad. 3.10*]()
+### [Zad. 3.10*](3.10/index.html)
 Na podstawie treści laboratoriów nr 3, w pliku zadania.htm utwórz aplikację losującą zadania.
 
-### [Zad. 3.11*]()
+### [Zad. 3.11*](3.11/index.html)
 Przygotuj dokumentację do aplikacji losującej zadania.
 
 
 
-### [Zad. 4.1]()
+### [Zad. 4.1](4.1/index.html)
 Utwórz formularz zawierający pole tekstowe i dokonaj jego walidacji. Formularz może być wysłany,
 jeśli pole tekstowe nie jest puste. Do dostępu do kontrolki wykorzystaj metodę getElementById.
 
-### [Zad. 4.2]()
+### [Zad. 4.2](4.2/index.html)
 Utwórz formularz zawierający pole tekstowe i dokonaj jego walidacji. Formularz może być wysłany,
 jeśli pole tekstowe nie jest puste. Do dostępu do kontrolki wykorzystaj pole forms obiektu
 document.
 
-### [Zad. 4.3]()
+### [Zad. 4.3](4.3/index.html)
 Utwórz formularz zawierający pole tekstowe i dokonaj jego automatycznej walidacji. Formularz może
 być wysłany, jeśli pole tekstowe nie jest puste.
 
-### [Zad. 4.4]()
+### [Zad. 4.4](4.4/index.html)
 Utwórz formularz zawierający adres email i dokonaj jego walidacji. Formularz może być wysłany, jeśli
 adres email zawiera znak @ w odpowiednim miejscu.
 
-### [Zad. 4.5*]()
+### [Zad. 4.5*](4.5/index.html)
 Utwórz formularz zawierający adres email i dokonaj jego profesjonalnej walidacji przy pomocy
 wyrażenia regularnego.
 
-### [Zad. 4.6]()
+### [Zad. 4.6](4.6/index.html)
 Utwórz formularz zawierający pole tekstowe i dokonaj jego walidacji. Formularz może być wysłany,
 jeśli pole tekstowe zawiera wartości liczbowe od 1 do 5. Funkcja walidująca dodatkowo resetuje
 formularz z nieprawidłowymi wartościami.
 
-### [Zad. 4.7]()
+### [Zad. 4.7](4.7/index.html)
 Utwórz formularz zawierający pole tekstowe i dokonaj jego walidacji. Formularz może być wysłany,
 jeśli pole tekstowe zawiera wartości liczbowe od 1 do 5. W tym zadaniu formularz wysyła funkcja
 walidująca.
 
-### [Zad. 4.8]()
+### [Zad. 4.8](4.8/index.html)
 Utwórz formularz zawierający pole tekstowe i dokonaj jego automatycznej walidacji. Formularz może
 być wysłany, jeśli pole tekstowe zawiera wartości liczbowe od 1 do 5.
 
-### [Zad. 4.9]()
+### [Zad. 4.9](4.9/index.html)
 Utwórz formularz zawierający pole tekstowe i przetestuj dla tego pola funkcję focus().
 
-### [Zad. 4.10]()
+### [Zad. 4.10](4.10/index.html)
 Utwórz formularz zawierający pole tekstowe i przetestuj dla tego pola funkcję select().
 
-### [Zad. 4.11]()
+### [Zad. 4.11](4.11/index.html)
 Utwórz formularz zawierający dwie kontrolki typu radio i przetestuj dla nich odczyt wybranej
 wartości.
 
-### [Zad. 4.12]()
+### [Zad. 4.12](4.12/index.html)
 Utwórz formularz zawierający dwie kontrolki typu checkbox i przetestuj dla nich odczyt wybranych
 wartości.
 
-### [Zad. 4.13]()
+### [Zad. 4.13](4.13/index.html)
 Utwórz formularz zawierający kontrolkę typu select z dwiema wartościami i przetestuj dla niej
 odczyt wybranej wartości.
 
-### [Zad. 5.1]()
+### [Zad. 5.1](5.1/index.html)
 
 Napisz program, który realizuje dodawanie pisemne. Interfejs programu musi wyglądać dokładnie tak
 samo, jak w programie dodawanie.exe na stronie autora. Zakładamy, że dane wejściowe mają
@@ -244,5 +244,5 @@ b = 1267
 Program autora:
 [link](www.balois.pl/file/dodawanie.exe)
 
-### [Zad. 5.2*]()
+### [Zad. 5.2*](5.2/index.html)
 Napisz analogiczny program realizujący dodawanie pisemne. Wykorzystaj inną metodą wyliczania przeniesień i zapamiętaj je w łańcuchu tekstowym.
