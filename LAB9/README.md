@@ -229,7 +229,7 @@ function handler2() {
 ```
 Innym sposobem na pracę ze zdarzeniami jest programowe dodawanie event listenerów (gdybyśmy zupełnie programowo tworzyli dokument, będzie to być może preferowany sposób): 
  
-### [Zadanie 1.]() 
+### [Zadanie 1.](TASK1/index.html) 
 Zmienne w języku JavaScript definiujemy za pomocą 3 słów kluczowych: 
 -	`let` o nie mogą być ponownie zadeklarowane w danym bloku {} o mogą mieć ponownie przypisaną wartość o nie są dostępne poza blokami {} 
 -	`var` o może być pusta (undefined) 
@@ -271,7 +271,7 @@ Które z operacji arytmetycznych wykonały się poprawnie?
 Czy kolejność zmiennych przy działaniach na zmiennych różnego typu ma znaczenie? 
 Znajdź wytłumaczenie otrzymanych rezultatów w sieci. [link](https://github.com/denysdovhan/wtfjs)
  
-### [Zadanie 2.]()
+### [Zadanie 2.](TASK2/index.html)
 Funkcje można zadeklarować na kilka sposobów. 
 Sposób 1: Definicja funkcji 
 ```javascript
@@ -348,7 +348,7 @@ Przekazane jako parametry funkcji liczby od 1 do 10 są przechowywane w tablicy 
 W pliku `zadanie2.js` napisz funkcję arithemticMean która przyjmuje dowolną liczbę parametrów (liczb całkowitych) z których zwracana jest średnia arytmetyczna. 
 
 
-### [Zadanie 3.]()
+### [Zadanie 3.](TASK3/index.html)
 Załaduj następujący dokument index.html: 
 
 ```html
@@ -472,14 +472,14 @@ const data = [
 Następnie przekształć powstały kod w funkcję, która będzie w stanie wygenerować tabelę dla tablicy o dowolnym rozmiarze. Funkcja powinna przyjmować jako parametr informacje czy tablica ma nagłówki i założyć, że wtedy pierwszy element tablicy jest nagłówkiem. 
  
 
-### [Zadanie 4.]()
+### [Zadanie 4.](TASK4/index.html)
 Zapoznaj się z poniższymi linkami: Zdarzenia elementów html (event listener) [link](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event) CSS Object Model [link](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model) Zmiana właściwości dla elementu html 
 [link](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/setProperty)
  
 W pliku zadanie4.html Utwórz kalkulator opłacalności zakupu pizzy. Na podstawie wprowadzonych przez użytkownika danych: cena, średnica dla małej i dużej pizzy, program zaznacza kolorem zielonym który zakup w przeliczeniu `cena/cm2` jest bardziej opłacalny. 
  
 
-### [Zadanie 5.]()
+### [Zadanie 5.](TASK5/index.html)
 BOM (Browser Object Model) to część interfejsu JavaScriptu, która umożliwia interakcję z przeglądarką. Oto kilka kluczowych właściwości i metod BOM: 
 
 •	window: Główne okno przeglądarki, reprezentujące globalne środowisko przeglądarki. Jest to obiekt (podobnie jak document).
