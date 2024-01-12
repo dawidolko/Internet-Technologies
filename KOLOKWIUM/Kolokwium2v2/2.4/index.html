@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Nieruchome Pole Tekstowe</title>
+</head>
+<body>
+
+<!-- Nieruchome pole tekstowe i przycisk -->
+<textarea id="nieruchomePole" rows="4" cols="50" readonly></textarea>
+<button id="dodajTekst">Dodaj tekst</button>
+
+<script>
+// Przycisk dodający tekst do pola tekstowego
+document.getElementById('dodajTekst').addEventListener('click', function() {
+  document.getElementById('nieruchomePole').textContent = 'To jest pole tekstowe.';
+});
+</script>
+
+</body>
+</html>

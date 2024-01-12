@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Tablica dwuwymiarowa</title>
+</head>
+<body>
+
+<script>
+// Przykładowe dane, które będą podstawą do utworzenia tablicy
+let tablica = [
+  [1, 'a'],
+  [2, 'a', 'b'],
+  [3, 'c', 'b']
+];
+
+// Funkcja do wyświetlania tablicy
+function wyswietlTablice(tablica) {
+  for (let i = 0; i < tablica.length; i++) {
+    console.log('Wiersz ' + (i + 1) + ': ' + tablica[i].join(', '));
+  }
+}
+
+// Wywołanie funkcji do wyświetlania
+wyswietlTablice(tablica);
+</script>
+
+</body>
+</html>

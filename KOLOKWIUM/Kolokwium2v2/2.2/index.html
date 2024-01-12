@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>powtorka</title>
+</head>
+<body>
+
+    <script>
+        // Przykład tablicy 'pary' z poprzedniego zadania
+        let pary = ['1 a', '2 a', '3 c', '1 d', '2 e', '3 f']; // Przykładowe dane
+        
+        // Funkcja mieszająca tablicę
+        function shuffleArray(array) {
+          let currentIndex = array.length, temporaryValue, randomIndex;
+        
+          // Dopóki pozostaną elementy do przemieszania...
+          while (0 !== currentIndex) {
+        
+            // Wybierz pozostały element...
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex -= 1;
+        
+            // I zamień go z bieżącym elementem.
+            temporaryValue = array[currentIndex];
+            array[currentIndex] = array[randomIndex];
+            array[randomIndex] = temporaryValue;
+          }
+        
+          return array;
+        }
+        
+        // Wywołanie funkcji mieszającej i wypisanie elementów tablicy
+        shuffleArray(pary);
+        pary.forEach(element => console.log(element));
+        </script>
+        
+</body>
+</html>

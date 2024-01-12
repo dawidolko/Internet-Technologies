@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>powtorka</title>
+</head>
+<body>
+
+    <script>
+        // Przykład tablicy dwuwymiarowej
+        let tab = [
+          [1, 'a'],
+          [2, 'a', 'b'],
+          [3, 'c', 'b']
+        ];
+        
+        // Funkcja tworząca pary
+        function utworzPary(tablica) {
+          let pary = [];
+        
+          for (let i = 0; i < tablica.length; i++) {
+            for (let j = 1; j < tablica[i].length; j++) {
+              pary.push(`${tablica[i][0]} ${tablica[i][j]}`);
+            }
+          }
+        
+          return pary;
+        }
+        
+        // Wywołanie funkcji i wyświetlenie wyników
+        let wynikowePary = utworzPary(tab);
+        console.log(wynikowePary);
+        </script>
+        
+        
+
+</body>
+</html>

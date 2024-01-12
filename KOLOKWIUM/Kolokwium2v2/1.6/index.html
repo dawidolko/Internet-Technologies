@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>powtorka</title>
+</head>
+<body>
+
+    <script>
+        // Przykład tablicy dwuwymiarowej
+        let tab = [
+          [1, 'a', 'c'],
+          [2, 'a', 'b'],
+          [3, 'c', 'b']
+        ];
+        
+        // Funkcja tworząca pary z pominięciem elementu 'c'
+        function utworzParyBezC(tablica) {
+          let pary2 = [];
+        
+          for (let i = 0; i < tablica.length; i++) {
+            for (let j = 1; j < tablica[i].length; j++) {
+              if (tablica[i][j] !== 'c') {
+                pary2.push(`${tablica[i][0]} ${tablica[i][j]}`);
+              }
+            }
+          }
+        
+          return pary2;
+        }
+        
+        // Wywołanie funkcji i wyświetlenie wyników
+        let wynikoweParyBezC = utworzParyBezC(tab);
+        console.log(wynikoweParyBezC);
+        </script>
+        
+
+</body>
+</html>

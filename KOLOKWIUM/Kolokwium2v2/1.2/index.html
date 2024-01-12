@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>powtorka</title>
+</head>
+<body>
+
+    <script>
+        // Założenie, że istnieje tablica 'tab'
+        let tab = [
+          [1, 'a'],
+          [2, 'a', 'b'],
+          [3, 'c', 'b']
+        ];
+        
+        // Wypisanie za pomocą klasycznej pętli for
+        console.log('Klasyczna pętla for:');
+        for (let i = 0; i < tab.length; i++) {
+          for (let j = 0; j < tab[i].length; j++) {
+            console.log(tab[i][j]);
+          }
+        }
+        
+        // Wypisanie za pomocą pętli for...of
+        console.log('Pętla for...of:');
+        for (let wiersz of tab) {
+          for (let element of wiersz) {
+            console.log(element);
+          }
+        }
+        
+        // Wypisanie za pomocą pętli for...in
+        console.log('Pętla for...in (niezalecane dla tablic):');
+        for (let i in tab) {
+          for (let j in tab[i]) {
+            console.log(tab[i][j]);
+          }
+        }
+        </script>
+        
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Auto-scroll TextArea</title>
+</head>
+<body>
+
+<!-- Nieruchome pole tekstowe i przycisk -->
+<textarea id="nieruchomePole" rows="4" cols="50" readonly></textarea>
+<button id="dodajTekst">Dodaj tekst</button>
+
+<script>
+// Przycisk dodający tekst do pola tekstowego i przewijający do końca
+document.getElementById('dodajTekst').addEventListener('click', function() {
+  const poleTekstowe = document.getElementById('nieruchomePole');
+  poleTekstowe.textContent = 'To jest pole tekstowe.';
+  // Przewijanie do końca tekstu
+  poleTekstowe.scrollTop = poleTekstowe.scrollHeight;
+});
+</script>
+
+</body>
+</html>

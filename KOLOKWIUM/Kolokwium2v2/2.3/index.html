@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Liczba elementów w tablicach</title>
+</head>
+<body>
+
+<!-- Pusty akapit z identyfikatorem -->
+<p id="info"></p>
+
+<script>
+// Przykładowe tablice 'pary1' i 'pary2'
+let pary1 = ['1 a', '2 a', '3 c']; // Przykładowe dane
+let pary2 = ['1 a', '2 a', '3 c', '4 d']; // Przykładowe dane
+
+// Wypełnienie akapitu treścią
+document.getElementById('info').textContent = 
+  'Liczba elementów w tablicy pary1: ' + pary1.length + 
+  ', Liczba elementów w tablicy pary2: ' + pary2.length;
+</script>
+
+</body>
+</html>

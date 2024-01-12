@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>powtorka</title>
+</head>
+<body>
+
+    <script>
+        // Deklaracja tablicy dwuwymiarowej
+        let tab = [
+          [1, 'a'],
+          [2, 'a', 'b'],
+          [3, 'c', 'b']
+        ];
+        
+        // Funkcja do wypisywania wierszy tablicy
+        function wypiszWierszeTablicy(tab) {
+          for (let i = 0; i < tab.length; i++) {
+            console.log(`Wiersz ${i + 1}: ${tab[i].join(' ')}`);
+          }
+        }
+        
+        // Wywołanie funkcji
+        wypiszWierszeTablicy(tab);
+        </script>
+        
+
+</body>
+</html>
