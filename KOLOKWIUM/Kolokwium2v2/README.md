@@ -154,10 +154,10 @@ W oknie tekstowym zawsze powinien być widoczny koniec tekstu.
 Utwórz przycisk button z opisem Losuj zestaw, który wywołuje funkcję losuj i przetestuj
 działanie tej funkcji.
 
-### [Zad. 3.10*](3.10/index.md)
+### [Zad. 3.10*](3.10/index.html)
 Na podstawie treści laboratoriów nr 3, w pliku zadania.htm utwórz aplikację losującą zadania.
 
-### [Zad. 3.11*](3.11/index.html)
+### [Zad. 3.11*](3.11/index.md)
 Przygotuj dokumentację do aplikacji losującej zadania.
 
 
