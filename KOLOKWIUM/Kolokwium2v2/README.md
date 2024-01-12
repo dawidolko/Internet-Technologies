@@ -13,8 +13,6 @@ danych i wypisz wiersze tej tablicy.
 
 ```
 
-### [Zad. 1
-
 ```
 <script>
 // rozwiązanie
