@@ -66,8 +66,11 @@ layout: default
 ### [Kolokwium 1 version 5](KOLOKWIUM/Kolokwium1v5/README.md) - Kolokwium 1 ver.5
 - [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/KOLOKWIUM/Kolokwium1v5)<br>
 
-### [Kolokwium 2](KOLOKWIUM/Kolokwium2v1/README.md) - Kolokwium 2
+### [Kolokwium 2](KOLOKWIUM/Kolokwium2v1/README.md) - Kolokwium 2 ver.1
 - [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/KOLOKWIUM/Kolokwium2v1)<br>
+
+### [Kolokwium 2](KOLOKWIUM/Kolokwium2v2/README.md) - Kolokwium 2 ver.2
+- [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/KOLOKWIUM/Kolokwium2v2)<br>
 
 ### [Kolokwium Powtorka](KOLOKWIUM/Powtorka) - Kolokwium Powtórka 1
 - [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/KOLOKWIUM/Powtorka)<br>
