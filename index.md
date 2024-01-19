@@ -83,3 +83,13 @@ layout: default
 
 ### [Pasek Navbar](KOLOKWIUM/PasekNavv2/pasekNav.html) - Pasek nawigacyjny ver. 2
 - [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/KOLOKWIUM/PasekNavv2)<br>
+
+## Kursy:
+
+### [ZAGADNIENIA](Courses/README.md) - Jakie kursy?
+
+### [KURS 1](Courses/Course1/README.md) - Kurs 1
+- [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/Courses/Course1)<br>
+
+### [KURS 2](Courses/Course2/README.md) - Kurs 2
+- [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/Courses/Course2)<br>
