@@ -91,5 +91,5 @@ layout: default
 ### [KURS 1](Courses/Course1/README.md) - Kurs 1
 - [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/Courses/Course1)<br>
 
-### [KURS 2](Courses/Course2/README.md) - Kurs 2
+### [KURS 2](Courses/Course2) - Kurs 2
 - [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/Courses/Course2)<br>
