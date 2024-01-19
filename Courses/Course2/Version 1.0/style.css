@@ -1,0 +1,164 @@
+body {
+    /*można dodać body i wtedy jest tylko w body a * jest wszedzie*/
+    font-family: Arial;
+    background-color: aliceblue;
+    padding: 40px 0;
+}
+
+h1 {
+    font-size: 36px;
+    margin-left: 10px;
+    color: darkred;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 28px;
+
+}
+
+span {
+    color: dimgray;
+}
+
+#main {
+    box-shadow: 0 0 20px grey;
+    display: flex;
+    justify-content: center;
+    /*    align-items: center*/
+    /*wyśrodkowanie pionowe*/
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px dashed black;
+    padding: 2px;
+    height: 180px;
+    border-radius: 25px;
+}
+
+a:hover {
+    color: black;
+    transition: 2px all grey;
+}
+
+section,
+header {
+    padding: 10px 60px 20px 60px;
+    background-color: azure;
+}
+
+header {
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer {
+    padding: 10px 60px 20px 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header ul {
+    list-style: none;
+}
+
+header {
+    margin-bottom: 15px;
+}
+
+header address img {
+    box-shadow: 0 0 20px grey;
+    width: 16px;
+    height: 16px;
+    background-color: cornflowerblue;
+    margin-right: 10px;
+    padding: 8px;
+    vertical-align: middle;
+    /*dziala tylko dla list*/
+}
+
+#circle {
+    3 border-radius: 50%;
+}
+
+h4 {
+    margin-top: 5px;
+}
+
+.icony {
+    box-shadow: 0 0 20px grey;
+    width: 16px;
+    height: 16px;
+}
+
+.hobbies {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hobbies li {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.hobbies div {
+    margin-left: 20px;
+}
+
+.hobbies p {
+    color: gray;
+}
+
+p {
+    line-height: 1.5;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+.link {
+    border: 1px solid cornflowerblue;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25%;
+    transition: background-color 2.5s, color 0.5;
+    box-shadow: 0 0 20px grey;
+}
+
+.link:hover {
+    color: wheat;
+    background-color: aquamarine;
+}
+
+.link:focus {
+    outline: none;
+    color: white;
+    background-color: rebeccapurple;
+}
+
+.link:active {
+    text-decoration: underline;
+}
+
+hr {
+    box-shadow: 0 0 50px grey;
+}
+
+
+.con {
+    box-shadow: 0 0 50px black;
+    width: 960px;
+    margin: 0 auto 0 auto;
+}

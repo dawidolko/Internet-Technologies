@@ -1,0 +1,57 @@
+*
+{
+    font-family: sans-serif;
+}
+
+h1
+{
+    text-align: center;
+    color: brown;
+    font-family: "arial";
+}
+
+a
+{
+    color: blueviolet;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+a:visited
+{
+    color: gray;
+}
+
+a:hover
+{
+    text-decoration: underline;
+    color: deepskyblue;
+}
+
+.obraz
+{
+    width: 500px;
+    border-radius: 1000px;
+}
+
+#obramowanie
+{
+    /*background-color: aquamarine;*/
+    display: inline-block;)
+}
+
+#podpis
+{
+    font-size: 200%;
+    color: crimson;
+    transition: color 0.5s;
+    text-align: center;
+}
+
+body
+{
+    background-image: url(a.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}

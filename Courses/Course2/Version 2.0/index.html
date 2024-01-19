@@ -1,0 +1,183 @@
+<!--
+  1. Nasze CV jest już prawie gotowe! W tej lekcji wykończymy je, tak aby było perfekcyjne. 
+  Zaczniemy od uporządkowania nagłówka, bo po ostatniej pracy nad linkami zrobiło się tam trochę gęsto. (SKOK DO CSS)
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dawid Olko- Curriculum vitae</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- 
+      3. Obejmijmy nagłówek i sekcję main divem. Nadajmy też naszemu divowi klasę "container" z angielskiego - "kontener". Kontener na całą zawartość strony.
+      Ok, zobaczmy w devtoolsach co się stało. Mamy diva, który obejmuje nam wszystkie elementy strony. Wrócmy do CSS.
+
+    -->
+    <div class="container">
+      <header>
+        <img
+          src="./default-avatar.png"
+          alt="Zdjęcie profilowe"
+          class="circle profile-picture"
+        />
+        <div class="header-center-element">
+          <h1>Dawid Olko</h1>
+          <span class="big-font-size">Front-end developer</span>
+          <div>
+            <a class="download-cv-link" href="">Pobierz CV</a>
+          </div>
+        </div>
+
+        <address>
+          <ul>
+            <!--
+            2. Dodaliśmy klasy. Zobaczmy jak wygląda strona. Zdjęcie się powiększyło, a sekcja adresu wygląda jak poprzednio. Dobrze, dokładnie tak
+            powinien być efekt refaktoryzacji. Dodajmy teraz trochę odstępu od góry w naszym nagłówku. (SKOK DO CSS)
+          -->
+            <li class="address-line-item">
+              <img
+                src="./images/phone.png"
+                class="address-line-item-icon circle"
+                aria-hidden="true"
+              /><b>Telefon:</b
+              ><a href="phoneto:+48123456789">+48 123 456 789</a>
+            </li>
+            <li class="address-line-item">
+              <img
+                src="./images/mail.png"
+                class="address-line-item-icon circle"
+                aria-hidden="true"
+              /><b>E-mail:</b>
+              <a href="mailto:jp2@vatican.pl">dawiotm@gmail.pl</a>
+            </li>
+            <li class="address-line-item">
+              <img
+                src="./images/birthday-cake.png"
+                class="address-line-item-icon circle"
+                aria-hidden="true"
+              /><b>Data urodzenia:</b>
+              18.05.1920
+            </li>
+            <li class="address-line-item">
+              <img
+                src="./images/pin.png"
+                class="address-line-item-icon circle"
+                aria-hidden="true"
+              /><b>Miejsce zamieszkania:</b>
+              Kraków
+            </li>
+          </ul>
+        </address>
+      </header>
+      <main>
+        <section>
+          <h2>O mnie</h2>
+          <p>
+            Mam na imię <b>Dawid!</b> Programowaniem
+            <a href="https://en.wikipedia.org/wiki/Front-end_web_development"
+              >Front-endu</a
+            >
+            zajmuje się zawodowo od 5 lat. Wcześniej studiowałem
+            <i>Informatyke</i>
+            W codziennej pracy staram się przede wszystkim czerpać przyjemność z tego co robię.
+            Jestem entuzjastą pracy zespołowej i uwielbiam eksperymentować tworząc nowy kod!
+          </p>
+        </section>
+        <section>
+          <h2>Języki</h2>
+          <ul>
+            <li>Polski - Ojczysty</li>
+            <li>Angielski - B1</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Doświadczenie zawodowe</h2>
+          <ul>
+            <li>
+              2016-obecnie: <a href="https://codewise.com">I</a> -
+              Frontend Developer
+            </li>
+            <li>
+              2015-2016: <a href="https://www.vmlyr.com/">II</a> -
+              Frontend Developer
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Wyszktałcenie</h2>
+          <ul>
+            <li>
+              2012-2017:
+              <a href="https://www.ur.edu.pl">Uniwersytet Rzeszowski</a> -
+              Informatyka
+            </li>
+            <li>
+              2009-2012:
+              <a href="http://www.rcez.pl/"
+                >Technikum w nisku</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Zainteresowania</h2>
+          <ul class="hobbies">
+            <li class="hobby">
+              <img src="./images/basketball.png" aria-hidden="true" />
+              <div>
+                <h3>Sport</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Culpa nam dolores quibusdam possimus animi ullam voluptatem
+                  voluptatum rem? Rerum perferendis atque reprehenderit
+                  voluptatem doloremque delectus a fugit architecto laboriosam
+                  voluptas!
+                </p>
+              </div>
+            </li>
+            <li class="hobby">
+              <img src="./images/puzzle.png" aria-hidden="true" />
+              <div>
+                <h3>Gry planszowe</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Culpa nam dolores quibusdam possimus animi ullam voluptatem
+                  voluptatum rem? Rerum perferendis atque reprehenderit
+                  voluptatem doloremque delectus a fugit architecto laboriosam
+                  voluptas!
+                </p>
+              </div>
+            </li>
+            <li class="hobby">
+              <img src="./images/music.png" aria-hidden="true" />
+              <div>
+                <h3>Sport Muzyka</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Culpa nam dolores quibusdam possimus animi ullam voluptatem
+                  voluptatum rem? Rerum perferendis atque reprehenderit
+                  voluptatem doloremque delectus a fugit architecto laboriosam
+                  voluptas!
+                </p>
+              </div>
+            </li>
+            <li class="hobby">
+              <img src="./images/book.png" aria-hidden="true" />
+              <div>
+                <h3>Literatura faktu</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Culpa nam dolores quibusdam possimus animi ullam voluptatem
+                  voluptatum rem? Rerum perferendis atque reprehenderit
+                  voluptatem doloremque delectus a fugit architecto laboriosam
+                  voluptas!
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

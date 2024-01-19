@@ -1,0 +1,140 @@
+* {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: brown;
+    font-family: "arial";
+}
+
+a {
+    color: blueviolet;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: deepskyblue;
+}
+
+.obraz {
+    width: 500px;
+    border-radius: 1000px;
+}
+
+#obramowanie {
+    /*background-color: aquamarine;*/
+    display: inline-block;
+    )
+}
+
+#podpis {
+    font-size: 200%;
+    color: crimson;
+    transition: color 0.5s;
+    text-align: center;
+}
+
+body {
+    background-image: url(a.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+#akapit1,
+#akapit2 {
+    box-sizing: border-box;
+    width: 45%;
+    line-height: 200%;
+    padding: 30px;
+    border: 3px solid red;
+}
+
+#akapit1 {
+    float: left;
+}
+
+#akapit2 {
+    float: right;
+}
+
+#content
+{
+    display: inline-block;
+    width: 1000px;
+    height: auto;
+    text-align: justify;
+    background-color: bisque;
+    font-size: 15px;
+}
+#navbar 
+{
+    text-align: center;
+    font-size: 150%;
+    padding: 35px;
+    background-color: aliceblue;
+    border-top: 2px dashed grey;
+    border-bottom: 2px dashed grey;
+}
+
+#main
+{
+    background-color: floralwhite;
+    font-size: 0;
+}
+
+#navbar a
+{
+    margin: 0 30px;
+}
+body
+{
+    background-image: url(a.jpg);
+}
+#container
+{
+    margin:-top: 50px;
+    margin-bottom: 50px;
+    border: 1px solid grey;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#header
+{
+    text-align: center;
+    font-size: 250%;
+    color: brown;
+    background-color: antiquewhite;
+}
+#header > span
+{
+    padding: 25px;
+    display: block;
+}
+#sidemenu
+{
+    line-height: 200%;
+    display: inline-block;
+    width: 150px;
+    float: left;
+    height: 200px;
+    font-size: 15px;
+}
+#footer
+{
+    border-top: 1px dashed grey;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    color:blueviolet;
+    font-style: italic;
+    background-color:aquamarine;
+}

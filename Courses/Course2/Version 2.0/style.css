@@ -1,0 +1,226 @@
+body {
+    font-family: Arial;
+    color: #333333;
+    background-color: #ecf1f9;
+    padding: 40px 0;
+}
+
+/*
+  10. Dodajmy cień. I zobaczmy efekt.
+  Wow, co tu się stało. No tak, cień nałożył się na każdy element, my chcielibyśmy nałożyć cień na całą zawartość. Mozemy objąć 
+  całą zawartość divem. (SKOK DO HTML)
+*/
+
+section,
+header {
+    padding: 20px 60px;
+    /* margin: 0 auto;
+  width: 960px;
+  background-color: white; */
+    /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); */
+}
+
+p {
+    line-height: 1.5;
+}
+
+header {
+    padding-top: 60px;
+    display: flex;
+}
+
+/*
+  3. Dobrze, chcemy dodać górny margines wewnętrzny dla "headera". Musimy pamiętać, że reguła wyżej ("section, header") dodaje już
+  regułę "padding". Musimy więc dodać tylko "padding-top: 60px". Dobrze, teraz przysuńmy jeszcze nazwę naszego zawodu trochę bliżej imienia i nazwiska
+  oraz odsuńmy link trochę niżej. Ok, czyli elementowi H1 musimy zmniejszyć margines dolny. Ustawmy go na 10 pikseli.
+
+  Teraz odsuńmy jeszzce link.
+
+*/
+
+h1 {
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 28px;
+    color: black;
+}
+
+span {
+    color: grey;
+}
+
+/* 
+  6. Możemy wystylować tutaj wszystkie listy na stronie za jedynm zamachem. Gdybyśmy dodali wiecej list, od razu dostałby takie style jak trzeba.
+  Piszemy:
+*/
+
+ul li {
+    margin-bottom: 20px;
+}
+
+/*
+  7. Jest fajnie! Teraz poznamy nową regułę CSS, która pozwoli nam dodawać cień pod elementami. Cienie pod elementami pozwalają osiągnąć bardzo 
+  ciekawe przestrzenne efekty. Elementy wyglądają tak jakby "wystawały" z ekranu. Na początku dodamy cień dla naszego linku!
+*/
+
+/*
+  11. Usuńmy więc cień z "header, section" i dodajmy go do .container. Sprawdźmy efekt. Cień dodał się, ale otoczył też marginesy nadane dla elementów
+  "header" i "section". Zobaczmy w devtoolsach jak to wygląda. "Header" i wszystkie tagi "section" mają "width: 960px" i "margin: 0 auto", który ustawia je 
+  na środku ekranu. Zobaczcie, że możemy tą szerokość i marginesy ustawić dla "diva" z klasą ".container". Jego dzieci - "header" i wszystkie "section" 
+  dostosują się do jego szerokości! Cień działa trochę jak border, więc nie obejmie marginesów i osiągniemy efekt który chcemy. Możemy pójść jeszcze dalej 
+  i ustawić białe tło na .container. Uprościmy style jeszcze bardziej! Stylowany będzie tylko jeden element, nie wiele. Style z "header, section" możemy już usunąć.
+  
+  Zobaczmy efekt! Wszysko działa tak jak chcieliśmy. Zobaczcie jak to działa. Marginesy, szerokość i kolor tła ustawione są na elemencie obejmującym nagłowek 
+  i wszystkie sekcje (TUTAJ MOZNA W DEVTOOLSACH POKAZAC). 
+  
+  Dodajmy jeszcze ładne zaokrąglenia rogów na całym kontenterze. Pamiętacie, do zaokrąglania rogów używamy "border-radius". Ustawmy "border-radius: na 40px
+*/
+.container {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    width: 960px;
+    background-color: white;
+
+    border-radius: 40px;
+}
+
+/*
+  1. Na początek powiększmy trochę zdjęcie profilowe. Do 180px. Będąc w tym miejscu zrefaktorujmy też style danych adresowych. 
+  Stwórzmy klasę .address-line-item, która będzie opisywać jak ma wylądać pojedynczy element listy.
+*/
+.profile-picture {
+    width: 180px;
+    height: 180px;
+}
+
+header address ul {
+    font-style: normal;
+    list-style: none;
+}
+
+/* header address ul li {
+  font-size: 16px;
+  margin-bottom: 15px;
+} */
+/* 
+  2. Style wyżej, możemy już usunąć, nie są nam potrzebne. Dodajmy klasy do HTML (SKOK DO HTML).
+*/
+.address-line-item {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.address-line-item-icon {
+    width: 16px;
+    height: 16px;
+    background-color: #007ced;
+    margin-right: 10px;
+    padding: 4px;
+    vertical-align: middle;
+}
+.address-line-item-icon {
+    border-radius: 12px;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.big-font-size {
+    font-size: 24px;
+}
+
+.hobbies {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hobby {
+    flex-basis: 50%;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.hobby h3 {
+    margin-top: 5px;
+}
+
+.hobby p {
+    color: grey;
+    line-height: 1.5;
+}
+
+.hobby div {
+    margin-left: 20px;
+}
+
+.header-center-element {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.download-cv-link {
+    border: 2px solid #007ced;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+
+    /* 
+    4. Piszemy więc:
+  */
+    /* margin: 10px 0; */
+    margin-top: 40px;
+    border-radius: 20px;
+    display: inline-block;
+
+    /*
+    5. Zobaczmy jak to wygląda. Bardzo fajnie! Listy nie wyglądają jeszcze najlepiej. Dobrze by wyglądały, gdyby elementy listy były trochę od siebie odsunięte. (SKOK DO GÓRY PLIKU)
+  */
+
+    /*
+    8. Cień dodajemy regułą "box-shadow". Box-shadow przyjmuje szereg wartości (TUTAJ SLAJD ALBO POKAZOWKA W DEVTOOLSACH JEST PEWNIE POTRZEBNY): 
+      1. Pierwsze dwie mówią nam o tym, o ile pikseli cień ma być przesunięty względem elementu któremu nakładamy cień. Wartości mogą być też ujemne. (TO SIĘ IDEALNIE NADAJE NA
+      ZABAWĘ Z DEVTOOLSAMI).
+      2. Trzecia wartość to blur, czyli rozmycie koloru cienia. Zasada jest prosta, im wyższa wartość tym bardziej rozmyty jest nasz cień. 0px spowoduje, że nie zobaczymy cienia
+      jeśli ustawimy wartość na 1px to cień będzie wyglądał jak border (jednopikselowy obrys),
+      3. Jako trzecią wartośc możemy podać kolor cienia.
+
+      Ok, zobaczmy jak to działa. Piszemy:
+  */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    /* 
+    9. Pod przyciskiem pojawił się delikatny cień. Fajnie. (TUTAJ WARTO POKAZAĆ W DEVTOOLSACH JAK WYGLADA ROZNICA, WLACZAJAC I WYLACZAJAC REGUŁĘ).
+    Wiecie co byłoby jeszcze fajniejsze? Gdybyśmy dodali cień pod całą naszą stroną. Musimy więc dodać cień do naszych reguł dla "header" i "section" (SKOK DO 10.)
+  */
+}
+
+.download-cv-link:visited {
+    border: 2px solid grey;
+}
+
+.download-cv-link:focus {
+    border: 2px solid #007ced;
+    background-color: #007ced;
+    color: white;
+}
+
+.download-cv-link:active {
+    text-decoration: underline;
+}
+
+.download-cv-link:hover {
+    border: 2px solid #007ced;
+    background-color: #007ced;
+    color: white;
+}
+
+.download-cv-link {
+    transition: background-color 0.5s;
+}

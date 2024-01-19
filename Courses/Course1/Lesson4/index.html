@@ -1,0 +1,58 @@
+<!-- 4. Kurs HTML & CSS - tabela, selektory CSS
+[https://www.youtube.com/watch?v=2o06ynM567k&list=PL6aekdNhY7DCmEzy303ZDo31d9uSYDCTt&index=4]-->
+
+<!doctype html>
+<html lang="pl"><!-- język --> 
+    <head> 
+        <meta charset="UTF-8" /> 
+        <title>Kurs HTML i CSS</title> 
+        <link rel="stylesheet" type="text/css" href="style.css" /> 
+        <!-- meta dane -->
+        <meta name="description" content="Kurs Youtube"> <!-- opis strony -->
+        <meta name="keywords" content="słowa kluczowe">
+        <meta name="author" content="Dawid Olko"> <!-- dane -->
+        
+    </head>
+    
+    <body> 
+        <h1 class="h1"> 
+            Nagłówek 1
+        </h1>
+        <table>
+            <caption>Nagłówek tabeli</caption>
+            <thead>
+                <tr>Lewa strona</tr>
+                <tr>Prawa strona</tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="navbar" colspan="2">Menu górne</td>
+                </tr>
+                <tr>
+                    <td id="content">
+                        <p id="akapit1"><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis ut enim sit amet feugiat. Cras accumsan urna auctor posuere rhoncus. Vivamus condimentum felis vitae lectus cursus aliquam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin venenatis commodo odio et iaculis. Morbi lobortis risus nec turpis scelerisque, eget tincidunt augue varius. Vivamus ante lacus, feugiat sollicitudin metus a, vehicula volutpat ipsum. Suspendisse sed pellentesque dolor, vel pharetra nisl. Quisque at ullamcorper nulla, vel blandit dui.</q></p>
+                        <p id="akapit2"><q>Ut metus purus, hendrerit eget facilisis eu, tempor in eros. Donec vehicula, ipsum a laoreet dapibus, ante libero pulvinar neque, sit amet lobortis quam dui id ante. Sed aliquet libero justo, et porta nisi scelerisque at. Mauris leo ante, scelerisque ut neque nec, vehicula rutrum sapien. Donec sit amet efficitur leo, a sollicitudin ligula. In dolor augue, pulvinar ultrices sem id, vestibulum fermentum arcu. Fusce ultrices semper augue at cursus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst.</q></p>
+                    </td>
+                    <td id="sidemenu">
+                        <ul>
+                            <li><a target="_blank" href="https://google.pl">Google<br></a></li>
+                            <li><a target="_blank" href="https://google.pl">Google<br></a></li>
+                            <li><a target="_blank" href="https://google.pl">Google<br></a></li>
+                            <li><a target="_blank" href="https://google.pl">Google<br></a></li>
+                            <li><a target="_blank" href="https://google.pl">Google<br></a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="footer" class="big" colspan="2"><span>Stopka strony</span></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" align="center">Wszelkie prawa zastrzeżone!</td>
+                </tr>
+            </tfoot>
+        </table>
+        <span class="big">Inny tekst</span>
+    </body>
+</html>

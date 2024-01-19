@@ -1,0 +1,53 @@
+<!-- 5. Kurs HTML & CSS - struktura strony (DIV), semantyka HTML 5
+[https://www.youtube.com/watch?v=WylvZoiuJY0&list=PL6aekdNhY7DCmEzy303ZDo31d9uSYDCTt&index=5]-->
+
+<!doctype html>
+<html lang="pl">
+<!-- język -->
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Kurs HTML i CSS</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- meta dane -->
+    <meta name="description" content="Kurs Youtube"> <!-- opis strony -->
+    <meta name="keywords" content="słowa kluczowe">
+    <meta name="author" content="Dawid Olko"> <!-- dane -->
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="header"><span>Kurs HTML i CSS</span> <!-- div od słowa różnica divide ma za zadanie rozdzielić stronę na części-->
+        </div>
+        <nav id="navbar">
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+        <main id="main">
+            <article id="content">
+                <section>
+                    <p id="akapit1"><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis ut enim sit amet feugiat. Cras accumsan urna auctor posuere rhoncus. Vivamus condimentum felis vitae lectus cursus aliquam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin venenatis commodo odio et iaculis. Morbi lobortis risus nec turpis scelerisque, eget tincidunt augue varius. Vivamus ante lacus, feugiat sollicitudin metus a, vehicula volutpat ipsum. Suspendisse sed pellentesque dolor, vel pharetra nisl. Quisque at ullamcorper nulla, vel blandit dui.</q></p>
+                </section>
+                <section>
+                    <p id="akapit2">Ut metus purus, hendrerit eget facilisis eu, tempor in eros. Donec vehicula, ipsum a laoreet dapibus, ante libero pulvinar neque, sit amet lobortis quam dui id ante. Sed aliquet libero justo, et porta nisi scelerisque at. Mauris leo ante, scelerisque ut neque nec, vehicula rutrum sapien. Donec sit amet efficitur leo, a sollicitudin ligula. In dolor augue, pulvinar ultrices sem id, vestibulum fermentum arcu. Fusce ultrices semper augue at cursus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst.</p>
+                </section>
+            </article>
+            <aside id="sidemenu">
+                <ul>
+                    <li> <a href="#">link</a></li>
+                    <li> <a href="#">link</a></li>
+                    <li> <a href="#">link</a></li>
+                    <li> <a href="#">link</a></li>
+                </ul>
+            </aside>
+        </main>
+        <footer id="footer" align="center">
+            <span>Wszelkie prawa zastrzeżone!</span>
+        </footer>
+    </div>
+</body>
+
+</html>

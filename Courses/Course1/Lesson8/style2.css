@@ -1,0 +1,48 @@
+*
+{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 40px;
+}
+
+.square
+{
+    height: auto;
+    min-height: 300px;
+    max-height:  700px;
+    width: 300px;
+    background-color: bisque!important;
+    margin: 30px;
+    display: inline-block; /*widocznosc poziomo*/
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); /*rozmycie */
+    transition: all 0.2s ease-out;
+}
+.square:hover
+{
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.8);
+    opacity: 80%;
+    visibility: hidden;
+}
+
+#first
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+#last
+{
+    z-index: 0; /*ta opcja pozwala w jakiej kolejnosci ma sie co wyswietlac*/
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background-color: aquamarine;
+}
+
+#middle
+{
+    overflow: hidden;
+    background-image: linear-gradient(to right bottom, #ff7788,#9988ff);
+    background-image: linear-gradient(45deg,#f7788,#9988ff);
+}

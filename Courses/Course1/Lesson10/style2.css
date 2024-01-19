@@ -1,0 +1,92 @@
+*
+{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 40px;
+}
+
+#container
+{
+    border: 1px solid grey;
+    background-color: #eee;
+    margin: 20px;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap; /*elementy przechodza do nowej linii, non-wrap zostają w jednej linii*/
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: row;
+/*    align-content: space-around;*/
+}
+.square
+{
+    height: auto;
+    height: 300px;
+/*    width: 300px;*/
+    background-color: bisque;
+/*    display: block; widocznosc poziomo*/
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); /*rozmycie */
+    transition: all 0.2s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 300px;
+    flex-grow: 1; /*powiększać*/
+    flex-shrink: 1; /*kurczyć się*/
+}
+.square:hover
+{
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.8);
+    opacity: 80%;
+    visibility: hidden;
+}
+
+#first
+{
+    flex-grow: 5;
+    order: 2;
+}
+#last
+{
+    order: 3;
+}
+
+#middle
+{
+    flex-shrink: 5;
+    order: 1;
+}
+
+/*punkty kluczowe*/
+
+@media screen and (max-width: 1500px)
+{
+    #middle
+    {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px)
+{
+    #container
+    {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1501px)
+{
+    #container
+    {
+        background-color: beige;
+    }
+}
+@media screen and (min-width: 1001px) and (max-width: 1500px)
+{
+    .square
+    {
+        background-color: aquamarine;
+    }
+}

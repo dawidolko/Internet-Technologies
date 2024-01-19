@@ -1,0 +1,92 @@
+*
+{
+    font-family: sans-serif;
+}
+
+h1
+{
+    text-align: center;
+    color: brown;
+    font-family: "arial";
+}
+
+td.big
+{
+    font-size:40px;
+}
+table > tbody > tr:nth-child(odd) > td:last-child
+{
+    background-color: skyblue;
+    background-color: #87ceeb;
+    background-color: rgb(135,206,235);
+    background-color: rgba(135,206,235,0.25);
+}
+table tr td span
+{
+    font-weight: bold;
+    color: brown;
+}
+#footer
+{
+    height: 150px;
+    text-align: center;
+}
+#sidemenu
+{
+    width: 150px;
+}
+#akapit1
+{
+    float: left;
+}
+#akapit2
+{
+    float: right;
+}
+#akapit1, #akapit2
+{
+    width: 45%;
+}
+#content
+{
+    width:auto;
+    height: 500px;
+    vertical-align: top;
+    text-align: justify;
+    display: table-cell;
+}
+#navbar
+{
+    height: 100px;
+    text-align: center;
+}
+td
+{
+    border: 1px dashed black;
+}
+
+a:hover
+{
+    text-decoration: underline;
+    color: deepskyblue;
+}
+
+a
+{
+    color: blueviolet;
+    text-decoration: none;
+    transition: color 0.5s;
+    
+}
+body
+{
+    background-image: url(a.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
+table
+{
+    border: 1px solid black;
+    width: 100%;
+}
