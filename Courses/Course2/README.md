@@ -16,9 +16,6 @@ This course is aimed at beginners and individuals looking to build a strong foun
 
 ## TASKS:
 
-### [TASK 0](Courses/Course2) - TASK 0
-- [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/Courses/Course2)<br>
-
 ### [TASK 1](Courses/Course2/Version%201.0) - TASK 1
 - [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/Courses/Course2/Version%201.0)<br>
 
