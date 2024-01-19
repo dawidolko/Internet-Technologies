@@ -1,0 +1,46 @@
+*
+{
+    font-family: sans-serif;
+}
+
+h1
+{
+    color: brown;
+    font-family: "arial";
+}
+
+span
+{
+    display:inline;
+    margin-top: 15px;
+    
+}
+
+.b
+{
+    font-weight: 700;
+}
+
+.i
+{
+    font-style: italic;
+}
+
+.u
+{
+    text-decoration: underline;
+}
+
+ul
+{
+    list-style-type: circle;
+}
+
+ol
+{
+    background-color: gray;
+    margin: 10px;
+    padding: 10px;
+    border: 5px solid yellowgreen;
+    border-radius: 25px;
+}

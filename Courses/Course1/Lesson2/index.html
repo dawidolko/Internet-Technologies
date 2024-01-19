@@ -1,0 +1,46 @@
+
+<!-- 2. Kurs HTML & CSS - agregowanie tekstu, listy, style
+[https://www.youtube.com/watch?v=w9ewlWDpzFA&list=PL6aekdNhY7DCmEzy303ZDo31d9uSYDCTt&index=2] -->
+
+<!doctype html>
+<html> <!-- znacznik główny strony -->
+    <head> <!-- nagłówek strony (nie widzi tego użytkownik tylko przeglądarka) -->
+        <meta charset="UTF-8" /> <!-- to atrybut (charset zestaw znaków w jakim języku bedziemy kodowali naszą strone) --> 
+        <title>Kurs HTML i CSS</title> <!-- nazwa zakładki-->
+        <link rel="stylesheet" type="text/css" href="style.css" /> <!-- rel to format pliku (arkusz styli) type to typ, href to łącze (link) -->
+        
+    </head>
+    
+    <body> 
+        <h1 class="h1"> 
+            Nagłówek 1
+        </h1>
+        <p>To jest jakiś tekst,</p> <!--paragraf, przenosi do nowej linii, ale jest odstęp-->
+        <p>a to jest jego dalsza część.</p>   
+        
+        <span>To jest jakiś tekst,</span> <!--span to inaczej jakby spawać, w style jest specialny znaczik który powoduje przejście bez przerwy. Ale margin-top tworzy marginez-->
+        <span>a to jest jego <br/>dalsza część.</span> <!--br to break czyli łamać-->
+        <hr> <!--to taka linia jakby podkreślająca albo rozdzielająca działy-->
+        <b>Pogrubienie<br></b>
+        <strong>Pogrubienie 2 metoda<br></strong>
+        <i>Pochylenie(kursywa)<br></i>
+        <em>Pochylenie 2 metoda<br></em>
+        <u>Podkreślenie tekstu<br></u> <!--underline-->   
+        
+        <hr>
+        
+        <span class="b">Pogrubienie</span>
+        <span class="i">Pochylenie</span>
+        <span class="u">Podkreślenie tekstu</span> 
+        
+        <ul> <!-- listy nienumerowane -->
+            <li>Zrobić zakupy</li>
+            <li>Posprzątać</li>
+        </ul>
+        
+        <ol> <!-- listy numerowane "olderlist" odwrotne listy-->
+            <li> Zrobić zakupy</li>
+            <li> Posprzątać</li>
+        </ol>
+    </body>
+</html>
