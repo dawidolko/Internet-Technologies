@@ -11,40 +11,35 @@ layout: default
 
 ## Laboratoria:
 
-### [Lab1](LAB1) - Tworzenie Strony HTML z Podstawowymi Znacznikami
-- [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB1)<br>
+### [Lab1](LAB01) - Tworzenie Strony HTML z Podstawowymi Znacznikami
+- [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB01)<br>
 
-### [Lab2](LAB2/README.md) - Podstawy HTML5
-- [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB2)<br>
+### [Lab2](LAB02/README.md) - Podstawy HTML5
+- [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB02)<br>
 
-### [Lab3](LAB3/README.md) - Formularze
-- [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB3)<br>
+### [Lab3](LAB03/README.md) - Formularze
+- [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB03)<br>
 
-### [Lab4](LAB4/README.md) - Podstawy CSS3
-- [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB4)<br>
+### [Lab4](LAB04/README.md) - Podstawy CSS3
+- [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB04)<br>
 
-### [Lab5](LAB5/README.md) - Pozycjonowanie treści, jednostki w CSS, at-rules, funkcje CSS
-- [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB5)<br>
+### [Lab5](LAB05/README.md) - Pozycjonowanie treści, jednostki w CSS, at-rules, funkcje CSS
+- [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB05)<br>
 
-### [Lab6](LAB6/README.md) - Układ strony za pomocą flexbox i grid, wstęp do RWD
-- [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB6)<br>
+### [Lab6](LAB06/README.md) - Układ strony za pomocą flexbox i grid, wstęp do RWD
+- [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB06)<br>
 
-### [Lab7](LAB7/README.md) - Tworzenie złożonych układów treści, RWD
-- [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB7)<br>
+### [Lab7](LAB07/README.md) - Tworzenie złożonych układów treści, RWD
+- [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB07)<br>
 
-### [Lab8](LAB8/README.md) - XML (Extensible Markup Language)
-- [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB8)<br>
+### [Lab8](LAB08/README.md) - XML (Extensible Markup Language)
+- [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/LA0B8)<br>
 
-### [Lab9](LAB9/README.md) - JavaScript 1
-- [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB9)<br>
+### [Lab9](LAB09/README.md) - JavaScript 1
+- [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB09)<br>
 
-## Projekty:
-
-### [Projekt 1](https://techint.dawidolko.pl/projects/ResWebsiteTemplate/) - Responsive Website Template Documentation
-- [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/projects/ResWebsiteTemplate)<br>
-
-### [Projekt 2](projects/README.md) - JavaScript
-- [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/projects)<br>
+### [Lab10](LAB10/README.md) - JavaScript 2
+- [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/LAB10)<br>
 
 ## Kolokwia:
 
@@ -75,7 +70,7 @@ layout: default
 ### [Kolokwium Powtorka](KOLOKWIUM/Powtorka) - Kolokwium Powtórka 1
 - [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/KOLOKWIUM/Powtorka)<br>
 
-### [Kolokwium Powtórka](KOLOKWIUM/Powtorkav2) - Kolokwium Powtórka 2
+### [Kolokwium Powtórka](KOLOKWIUM/Powtorkav2) - Kolokwium Powtórka 1 ver.2
 - [Pliki w postaci kodu](https://github.com/dawidolko/Internet-Technologies/tree/main/KOLOKWIUM/Powtorkav2)<br>
 
 ### [Pasek Navbar](KOLOKWIUM/PasekNav/pasekNav.html) - Pasek nawigacyjny
