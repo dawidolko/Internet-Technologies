@@ -1,0 +1,175 @@
+/*Oczywiście, przygotuję kod demonstrujący te zagadnienia. Ze względu na ograniczenia formatu, podam przykłady kodu, które pokrywają każdy z wymienionych punktów. Niektóre zagadnienia, takie jak interakcja z DOM czy obsługa zdarzeń, będą przedstawione w formie pseudokodu lub opisów, ponieważ działanie takiego kodu jest najlepiej widoczne w kontekście strony internetowej.
+
+### 1. Deklarowanie zmiennych w JS
+
+```javascript
+const stałaZmienna = 10; // const - stała wartość
+let zmiennaZmienna = 20; // let - zmienna wartość
+```
+
+### 2. Pętle
+
+```javascript
+// Pętla for
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+
+// Pętla while
+let i = 0;
+while (i < 5) {
+    console.log(i);
+    i++;
+}
+```
+
+### 3. Tablice
+
+```javascript
+let tablica = [1, 2, 3, 4, 5];
+
+console.log(tablica.length); // Długość tablicy
+
+let filtrTablicy = tablica.filter(x => x > 2); // Filtrowanie
+let sortTablicy = tablica.sort(); // Sortowanie
+
+console.log(tablica.includes(3)); // Sprawdzanie, czy zawiera element
+```
+
+### 4. Operacje na DOM
+
+```javascript
+// Pseudokod / Opis
+let element = document.getElementById("idElementu");
+let elementy = document.getElementsByTagName("div");
+
+document.body // Odwołanie do ciała dokumentu
+document.forms // Odwołanie do formularzy
+
+element.append(childElement); // Dodawanie elementu
+element.setAttribute("klasa", "nazwaKlasy"); // Ustawianie atrybutu
+
+// i tak dalej...
+```
+
+### 5. Skrypty zewnętrzne
+
+```html
+<!-- W HTML -->
+<script src="sciezkaDoSkryptu.js"></script>
+```
+
+### 6. Funkcje
+
+```javascript
+function bezArgumentowa() {
+    console.log("Brak argumentów");
+}
+
+function zArgumentami(a, b) {
+    return a + b;
+}
+```
+
+### 7. Obiekty
+
+```javascript
+let obiekt = {
+    właściwość: 123,
+    metoda: function() {
+        return this.właściwość;
+    },
+    innyObiekt: {
+        wewnątrz: "wartość"
+    }
+};
+```
+
+### 8. Wyjątki
+
+```javascript
+throw new Error("To jest błąd!");
+```
+
+### 9. API Canvas
+
+```javascript
+// Pseudokod / Opis
+let canvas = document.getElementById('canvasId');
+let ctx = canvas.getContext('2d');
+
+ctx.fillStyle = 'red';
+ctx.fillRect(20, 20, 50, 50); // Prostokąt
+
+// Rysowanie innych figur, zmiana pozycji itd.
+```
+
+### 10. Operacje na łańcuchach
+
+```javascript
+let tekst = "Hello World";
+console.log(tekst.includes("Hello")); // Sprawdza, czy zawiera
+console.log(tekst.split(" ")); // Dzieli na podstawie spacji
+console.log(tekst.startsWith("Hello")); // Sprawdza, czy zaczyna się od
+```
+
+### 11. Tabela z danych tablicowych
+
+```javascript
+// Pseudokod / Opis
+let dane = [/* dane z API */];
+let tabela = document.createElement('table');
+
+// Iterowanie przez dane i tworzenie wierszy tabeli
+```
+
+### 12. Zapytania REST i DOM
+
+```javascript
+fetch('urlAPI')
+    .then(response => response.json())
+    .then(data => {
+        // Tworzenie elementów DOM na podstawie danych
+    });
+```
+
+### 13. Konwersja typów
+
+```javascript
+let liczba = 123;
+let jakoTekst = liczba.toString(); // Liczba na tekst
+
+let tekstNaLiczbe = Number.parseInt("123"); // Tekst na liczbę całkowitą
+```
+
+### 14. Zdarzenia
+
+```javascript
+element.onclick = function() { /*...*/ };
+element.addEventListener('keydown', function(event) { /*...*/ });
+```
+
+### 15. Sortowanie i filt
+
+rowanie elementów DOM
+
+```javascript
+// Pseudokod / Opis
+let elementy = document.querySelectorAll('.klasa');
+// Sortowanie i filtrowanie na podstawie atrybutów elementów
+```
+
+### 16. Walidacja formularza
+
+```javascript
+function walidujFormularz() {
+    let input = document.getElementById('inputId');
+    if (input.value.length < 5) {
+        // Błąd walidacji
+    }
+}
+```
+
+Każdy z tych przykładów przedstawia podstawową ideę stojącą za danym zagadnieniem. Do pełnego zrozumienia 
+i efektywnego stosowania wymagane jest praktykowanie i eksperymentowanie z tymi konceptami w różnych kontekstach.
+*/

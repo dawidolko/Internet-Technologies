@@ -1,0 +1,332 @@
+//zadanie 1.1
+let tab = [["1", "a"], ["2", "a", "b"], ["3", "c", "b"]];
+
+tab.forEach(wiersz => {
+  console.log(wiersz.join(" "));
+});
+
+//zadanie 1.2
+// Pętla for klasyczna
+for (let i = 0; i < tab.length; i++) {
+  console.log(tab[i].join(" "));
+}
+
+// Pętla for...of
+for (let wiersz of tab) {
+  console.log(wiersz.join(" "));
+}
+
+// Pętla forEach
+tab.forEach(wiersz => {
+  console.log(wiersz.join(" "));
+});
+
+//zadanie 1.3
+tab.forEach(wiersz => {
+  console.log(wiersz.slice(1).join(" "));
+});
+
+//zadanie 1.4
+let pary = tab.map(wiersz => {
+  return [wiersz[0], wiersz.slice(1).join(" ")].join(" ");
+});
+
+console.log(pary);
+
+//zadanie 1.5
+let pary1 = tab.map(wiersz => {
+  return [wiersz[0], wiersz.slice(1).filter(el => el !== "b").join(" ")].join(" ");
+});
+
+console.log(pary1);
+
+//zadanie 1.6
+let pary2 = tab.map(wiersz => {
+  return [wiersz[0], wiersz.slice(1).filter(el => el !== "c").join(" ")].join(" ");
+});
+
+console.log(pary2);
+
+//zadanie 1.7
+let pary1 = [], pary2 = [];
+
+tab.forEach(wiersz => {
+  pary1.push([wiersz[0], wiersz.slice(1).filter(el => el !== "b").join(" ")].join(" "));
+  pary2.push([wiersz[0], wiersz.slice(1).filter(el => el !== "c").join(" ")].join(" "));
+});
+
+console.log(pary1);
+console.log(pary2);
+
+//zadanie 2.1
+console.log("Rozmiar pary1: " + pary1.length);
+console.log("Rozmiar pary2: " + pary2.length);
+
+//zadanie 2.2
+let pary = pary1.concat(pary2); // Zakładając, że pary to połączenie pary1 i pary2
+
+pary.sort(() => 0.5 - Math.random());
+
+pary.forEach(element => {
+  console.log(element);
+});
+
+//zadanie 2.3
+document.body.innerHTML += `<p id='akapit'>Liczba elementów pary1: ${pary1.length}, Liczba elementów pary2: ${pary2.length}</p>`;
+
+//zadanie 2.4
+document.body.innerHTML += `
+  <textarea id="textarea" rows="4" cols="50"></textarea>
+  <button onclick="dodajTekst()">Dodaj Tekst</button>
+`;
+
+function dodajTekst() {
+  document.getElementById("textarea").value += "To jest pole tekstowe\n";
+}
+//zadanie 2.5
+function dodajTekst() {
+  let textarea = document.getElementById("textarea");
+  textarea.value += "To jest pole tekstowe\n";
+  textarea.scrollTop = textarea.scrollHeight;
+}
+//zadanie 3.1 i 3.2
+const listaZadan = [
+  "1. Decyzyjny problem plecakowy BS DZ SO AZ",
+  // ... reszta zadań
+];
+
+let zadania = listaZadan.map(zadanie => {
+  let podzielone = zadanie.split(" ");
+  let naglowek = podzielone[0];
+  let metody = podzielone.slice(1);
+  return metody.map(metoda => naglowek + " " + metoda);
+});
+
+console.log(zadania);
+
+//zadanie 3.3
+zadania.forEach(pary => {
+  pary.forEach(para => console.log(para));
+});
+
+//zadanie 3.4
+let zadaniaExcel = zadania.flat().filter(zadanie => zadanie.includes("EX") || zadanie.includes("SO"));
+console.log(zadaniaExcel);
+
+//zadanie 3.5
+let zadaniaExcel = zadania.flat().filter(zadanie => zadanie.includes("EX") || zadanie.includes("SO"));
+console.log(zadaniaExcel);
+
+//zadanie 3.6
+let liczbaZadanExcel = zadaniaExcel.length;
+let liczbaZadanJava = zadaniaJava.length;
+console.log(`Liczba zadań Excel: ${liczbaZadanExcel}, Liczba zadań Java: ${liczbaZadanJava}`);
+
+//zadanie 3.7
+document.body.innerHTML += `<p id='head'>Excel: ${liczbaZadanExcel}  Java: ${liczbaZadanJava}</p>`;
+
+//zadanie 3.8
+//do pliku HTML 
+<textarea id="output" style="width: 410px; height: 145px;"></textarea>
+<button id="losujButton">Losuj zestaw</button>
+//do pliku javascript (muszą być wcześnie stworzone tablica zadaniaExcel/Java
+let numerOsoby = 1;
+
+function losuj() {
+  const textarea = document.getElementById('output');
+  const losoweZadanieExcel = zadaniaExcel[Math.floor(Math.random() * zadaniaExcel.length)];
+  const losoweZadanieJava = zadaniaJava[Math.floor(Math.random() * zadaniaJava.length)];
+
+  textarea.value += `Osoba: ${numerOsoby++}\n${losoweZadanieExcel}\n${losoweZadanieJava}\n\n`;
+  textarea.scrollTop = textarea.scrollHeight;
+}
+
+document.getElementById('losujButton').addEventListener('click', losuj);
+//zadanie 3.9 jest zrobione w 3.8
+
+//zadanie 4.1
+//do pliku HTML
+<form id="form1">
+    <input type="text" id="textField1">
+    <input type="submit" value="Wyślij">
+</form>
+//do pliku JS
+document.getElementById('form1').addEventListener('submit', function(event) {
+    const input = document.getElementById('textField1');
+    if (input.value === '') {
+        alert('Pole tekstowe nie może być puste!');
+        event.preventDefault();
+    }
+});
+
+//zadanie 4.2
+//do pliku HTML
+<form name="form2">
+    <input type="text" name="textField2">
+    <input type="submit" value="Wyślij">
+</form>
+//do pliku JS
+document.forms['form2'].addEventListener('submit', function(event) {
+    const input = this['textField2'];
+    if (input.value === '') {
+        alert('Pole tekstowe nie może być puste!');
+        event.preventDefault();
+    }
+});
+
+//zadanie 4.3
+//do pliku HTML
+<form id="form3">
+    <input type="text" required>
+    <input type="submit" value="Wyślij">
+</form>
+//to mi gpt napisał:
+// Tutaj nie jest wymagany dodatkowy kod JavaScript,
+// ponieważ atrybut 'required' automatycznie waliduje formularz.
+
+//zadanie 4.4
+//do pliku HTML
+<form id="form4">
+    <input type="email" id="emailField">
+    <input type="submit" value="Wyślij">
+</form>
+//do pliku JS
+document.getElementById('form4').addEventListener('submit', function(event) {
+    const email = document.getElementById('emailField').value;
+    if (!email.includes('@')) {
+        alert('Adres email musi zawierać znak "@"!');
+        event.preventDefault();
+    }
+});
+
+//zadanie 4.5
+//do pliku HTML
+<form id="form5">
+    <input type="email" id="emailFieldRegex">
+    <input type="submit" value="Wyślij">
+</form>
+//do pliku JS
+document.getElementById('form5').addEventListener('submit', function(event) {
+    const email = document.getElementById('emailFieldRegex').value;
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!regex.test(email)) {
+        alert('Niepoprawny format adresu email!');
+        event.preventDefault();
+    }
+});
+
+//zadanie 4.6
+//do pliku HTML
+<form id="form6">
+    <input type="number" id="numberField">
+    <input type="submit" value="Wyślij">
+</form>
+//do pliku JS
+document.getElementById('form6').addEventListener('submit', function(event) {
+    const number = document.getElementById('numberField').value;
+    if (number < 1 || number > 5) {
+        alert('Wartość musi być w zakresie od 1 do 5!');
+        event.preventDefault();
+    }
+});
+
+//zadanie 4.7
+//do pliku HTML
+<form id="form7">
+    <input type="number" id="numberFieldReset">
+    <input type="submit" value="Wyślij">
+</form>
+//do pliku JS
+document.getElementById('form7').addEventListener('submit', function(event) {
+    const number = document.getElementById('numberFieldReset').value;
+    if (number < 1 || number > 5) {
+        alert('Wartość musi być w zakresie od 1 do 5!');
+        event.preventDefault();
+        this.reset();
+    }
+});
+
+//zadanie 4.8
+//do pliku HTML
+<form id="form8">
+    <input type="number" min="1" max="5" required>
+    <input type="submit" value="Wyślij">
+</form>
+//gpt pisze, że js nie jest wymagany
+
+//zadanie 4.9
+//do pliku HTML
+<form id="form9">
+    <input type="text" id="textFieldFocus">
+    <input type="submit" value="Wyślij">
+</form>
+//do pliku JS
+document.getElementById('textFieldFocus').focus();
+
+//zadanie 4.10
+//do pliku HTML
+<form id="form10">
+    <input type="text" id="textFieldSelect" value="Przykładowy tekst">
+    <input type="submit" value="Wyślij">
+</form>
+//do pliku JS
+document.getElementById('textFieldSelect').addEventListener('focus', function() {
+    this.select();
+});
+
+//zadanie 4.11
+//do pliku HTML
+<form id="form11">
+    <input type="radio" name="option" value="Opcja 1"> Opcja 1<br>
+    <input type="radio" name="option" value="Opcja 2"> Opcja 2<br>
+    <input type="submit" value="Wyślij">
+</form>
+//do pliku JS
+document.getElementById('form11').addEventListener('submit', function(event) {
+    const options = document.getElementsByName('option');
+    let selectedOption = '';
+    for (let i = 0; i < options.length; i++) {
+        if (options[i].checked) {
+            selectedOption = options[i].value;
+            break;
+        }
+    }
+    alert('Wybrano: ' + selectedOption);
+    event.preventDefault();
+});
+
+//zadanie 4.12
+//do pliku HTML
+<form id="form12">
+    <input type="checkbox" name="optionCheckbox" value="Opcja 1"> Opcja 1<br>
+    <input type="checkbox" name="optionCheckbox" value="Opcja 2"> Opcja 2<br>
+    <input type="submit" value="Wyślij">
+</form>
+//do pliku JS
+document.getElementById('form12').addEventListener('submit', function(event) {
+    const options = document.getElementsByName('optionCheckbox');
+    let selectedOptions = [];
+    for (let i = 0; i < options.length; i++) {
+        if (options[i].checked) {
+            selectedOptions.push(options[i].value);
+        }
+    }
+    alert('Wybrane opcje: ' + selectedOptions.join(', '));
+    event.preventDefault();
+});
+
+//zadanie 4.13
+//do pliku HTML
+<form id="form13">
+    <select id="selectField">
+        <option value="Opcja 1">Opcja 1</option>
+        <option value="Opcja 2">Opcja 2</option>
+    </select>
+    <input type="submit" value="Wyślij">
+</form>
+//do pliku JS
+document.getElementById('form13').addEventListener('submit', function(event) {
+    const selectedValue = document.getElementById('selectField').value;
+    alert('Wybrano: ' + selectedValue);
+    event.preventDefault();
+});
