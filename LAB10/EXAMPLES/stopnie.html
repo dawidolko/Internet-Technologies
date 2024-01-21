@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="c">Temperatura Celcjusza:</label>
+    <input id="c" type="number" onchange="convertCelcjuszToFahrenheit()">
+
+    <label for="">Temperatura Fahreheita:</label>
+    <output id="f" name="" for=""></output>
+
+    <script>
+        function convertCelcjuszToFahrenheit() {
+            let celcjuszDegree = document.getElementById('c').value;
+            // nie ma temperatury poniżej zera bezwględnego
+            if (celcjuszDegree >= -273.15) 
+                document.getElementById('f').innerText = ((celcjuszDegree - 0.1 * celcjuszDegree) * 2) + 32;
+            else {
+                alert('Podano nieprawidłowe wejście!');
+            }
+        }
+    </script>
+</body>
+</html>

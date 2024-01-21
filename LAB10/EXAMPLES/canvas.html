@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<canvas id="myCanvas" width="400" height="200" style="border:1px solid #000;"></canvas>
+<script>
+    // Pobranie elementu Canvas
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+    // Rysowanie linii
+    ctx.beginPath();
+    ctx.moveTo(50, 50); // Początek pierwszej linii (x=50, y=50)
+    ctx.lineTo(200, 50); // Koniec pierwszej linii (x=200, y=50)
+    ctx.moveTo(50, 100); // Początek drugiej linii (x=50, y=100)
+    ctx.lineTo(200, 100); // Koniec drugiej linii (x=200, y=100)
+    ctx.moveTo(50, 150); // Początek trzeciej linii (x=50, y=150)
+    ctx.lineTo(200, 100); // Koniec trzeciej linii (x=200, y=150)
+    ctx.stroke(); // Wyrysowanie linii
+ </script>
+ </body>
+</html>

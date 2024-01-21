@@ -1,0 +1,29 @@
+{
+    "osoba": {
+    "imie": "Anna",
+    "nazwisko": "Kowalska",
+    "wiek": 30,
+    "adres": {
+    "ulica": "Kwiatowa",
+    "numer": 10,
+    "miasto": "Warszawa"
+    },
+    "telefon": ["123-456-789", "987-654-321"],
+    "aktywny": true,
+    "znizka": null
+    },
+    "produkty": [
+    {
+    "nazwa": "Koszula",
+    "rozmiar": "M",
+    "cena": 49.99,
+    "dostepny": true
+    },
+    {
+    "nazwa": "Spodnie",
+    "rozmiar": "L",
+    "cena": 79.99,
+    "dostepny": false
+    }
+    ]
+    }

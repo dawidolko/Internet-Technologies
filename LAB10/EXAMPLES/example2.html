@@ -1,0 +1,12 @@
+// Przykładowy JSON
+const jsonString = '{
+"name": "John",
+"age": 30,
+"city": "New York"
+}';
+// Konwersja JSON-a na obiekt
+const jsonObject = JSON.parse(jsonString);
+// Dostęp do pól obiektu
+console.log("Imię: " + jsonObject.name); // Wyświetli: Imię: John
+console.log("Wiek: " + jsonObject.age); // Wyświetli: Wiek: 30
+console.log("Miasto: " + jsonObject.city); // Wyświetli: Miasto: New York

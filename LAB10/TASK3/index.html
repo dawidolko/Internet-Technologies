@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Tabela JavaScript</title>
-<style>
-  table, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-  }
-  td {
-    padding: 5px;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wykres Temperatury</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Nagłówek</h1>
-    <p>Akapit</p>
-<script src="script.js"></script>
+    <h1>Wykres Temperatury</h1>
+    <div>
+        <input type="text" id="cityInput" placeholder="Wpisz miasto">
+        <button id="searchButton">Szukaj</button>
+    </div>
+    <div id="wykresik">
+        <canvas id="temperatureChart" width="800" height="400"></canvas>
+        <script src="script.js"></script>
+    </div>
 </body>
 </html>

@@ -3,11 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Java script</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Prognoza Pogody</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .cold { color: blue; }
+        .moderate { color: green; }
+        .warm { color: orange; }
+        .hot { color: red; }
+        #searchBox {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Witaj w zadaniu JavaScript!</h1>
+    <div id="searchBox">
+        <input type="text" id="cityInput" placeholder="Wpisz duże miasto w Polsce">
+        <button id="searchButton">Szukaj</button>
+    </div>
+    <table id="weatherTable">
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Temperatura (°C)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Dane pogodowe zostaną tutaj wstawione przez JavaScript -->
+        </tbody>
+    </table>
     <script src="script.js"></script>
 </body>
 </html>

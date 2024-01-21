@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="demo">
+
+    <script>
+        
+// Adres URL z danymi do prognozy pogody
+// 'https://api.open-meteo.com/v1/forecast?latitude=50.0413&longitude=21.999&hourly=temperature_2m,cloud_cover&timezone=auto&past_days=7';
+
+const weatherForecastURL = 'https://api.nbp.pl/api/exchangerates/rates/a/usd/?format=json'; 
+
+// Wykorzystanie fetch do pobrania danych
+fetch(weatherForecastURL).then(response => {
+    // Sprawdzenie, czy odpowiedź ma status ok (kod 200)
+    if (!response.ok) {
+        throw new Error('Network response was not ok.');
+    }
+    return response.json(); // Parsowanie odpowiedzi do formatu JSON
+}).then(data => {
+    // Obsługa danych z odpowiedzi
+    console.log('Odebrane dane:', data);
+    // Tutaj można wykonać operacje na danych 
+    // Najlepiej wywołując funkcję
+    printCurrentRate(data);
+
+    }).catch(error => {
+    // Obsługa potencjalnych błędów
+    console.error('Wystąpił błąd:', error);
+});
+
+function printCurrentRate(data) {
+    // Wypisujemy informację o każdym kursie dolara
+    for (let r of data.rates) {
+        const span = document.createElement('span');
+        span.innerText = 'Kurs Dolara dnia: ' + r.effectiveDate + ' wyniósł ' + r.mid + ' zł.';
+        document.body.append(span);
+    }
+}
+
+
+
+// przykład wykonania tej samej operacji za pomocą bardziej
+// archaicznego sposobu
+const xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    // wypisujemy w konsoli odpowiedź
+    console.log(this.responseText);
+    
+    // pokazowo przypisano ten tekst do inputa
+    document.getElementById("demo").value = this.responseText;
+
+    // raczej bardziej dogodnym sposobem na obróbkę danych jest
+    // napisanie dedykowanej funkcji
+    printCurrentRate2(this.responseText);
+  }
+};
+xhttp.open("GET", "https://api.nbp.pl/api/exchangerates/rates/a/usd/?format=json", true);
+xhttp.send();
+
+function printCurrentRate2(data) {
+    // najpierw parsujemy dane z tekstu do obiektu w JS 
+    const rates = JSON.parse(data);
+
+    for (let r of rates.rates) {
+        const span = document.createElement('span');
+        span.innerText = 'Kurs Dolara dnia: ' + r.effectiveDate + ' wyniósł ' + r.mid + ' zł.';
+        document.body.append(span);
+    }
+}
+
+
+    </script>
+</body>
+</html>

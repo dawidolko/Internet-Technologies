@@ -1,0 +1,14 @@
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+}
+
+#wykresik{
+    margin-top:20px;
+    border: 1px solid black;
+    background-color: azure;
+}

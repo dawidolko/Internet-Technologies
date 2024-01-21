@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error {
+            background-color: red;
+            color: darkred;
+        }
+
+        .success {
+            background-color: green;
+            color: lawngreen;
+        }
+
+        #items {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <input id="filter" type="text" onchange="filter()" placeholder="filter items">
+    <button onclick="sortItems('status')">sortuj po statusie</button>
+    <button onclick="sortItems('text')">sortuj po tekście</button>
+    <button onclick="resetSort()">resetuj sortowanie</button>
+    <div id="items"></div>
+
+    <script>
+        let messages = [{  text: 'Sample text',
+                status: 'success'}, {
+                text: 'Sample error',
+                status: 'error'}, {
+                text: 'Sample text2',
+                status: 'success'}, {
+                text: 'Example',
+                status: 'error'}];
+        const originalOrder = structuredClone(messages);
+
+        function loadAllItems() {
+            messages.map((message) => {
+                const b = document.createElement('button');
+                b.innerText = message.text;
+                b.className = message.status;
+
+                items.appendChild(b);
+            });
+        }
+
+        function filter() {
+            
+            const expression = document.getElementById('filter').value;
+            
+            let items = document.getElementById('items');
+
+            // jeżeli wyrażenie po którym chcemy filtrować elementy 
+            // jest puste, usuwamy wszystkie dotychczasowe dzieci
+            // innymi słowy filtr jest pusty
+            if (expression === '') {
+                // ta konstrukcja jeżeli podamy puste argumenty, usuwa obecnie 
+                // istniejące dzieci elementu
+                items.replaceChildren();
+
+                // jednocześnie wczytujemy zatem wszystkie elementy
+                loadAllItems();
+                // return tutaj pozwala wyjść poza funkcję
+                // i zakończyć jej działanie
+                return;
+            }
+
+            // ta konstrukcja jeżeli podamy puste argumenty, usuwa obecnie 
+            // istniejące dzieci elementu
+            items.replaceChildren();
+
+            // stosujemy tutaj filter, musimy podać na wejściu funkcję, która
+            // odwzorowuje każdy element kolekcji.
+            // Wykorzystanie array function sprowadza się tutaj do tego, że z
+            // oryginalnej kolekcji pozostanie ten element, który zwróci true
+            // dla tego elementu
+
+            // map następnie dla odfiltrowanych elementów kolekcji tworzy programowo
+            // elementy HTML i dodaje je do dokumentu za pomocą DOM
+            // również podajemy funkcje, która odwzorowuje tablicę
+            messages.filter((message) => message.text.includes(expression)).map(
+                (message) => {
+                const b = document.createElement('button');
+                b.innerText = message.text;
+                b.className = message.status;
+
+                items.appendChild(b);
+                }
+            );
+        }
+
+        function sortItems(by) {
+            if (by === 'status') {
+                messages.sort((a,b) => { 
+                    if (a.status > b.status) return 1;
+                    if (a.status < b.status) return -1;
+                    return 0;
+                 });
+                 items.replaceChildren();
+                 loadAllItems();
+            }
+            if (by === 'text') {
+                messages.sort((a,b) => { 
+                    if (a.text > b.text) return 1;
+                    if (a.text < b.text) return -1;
+                    return 0;
+                 });
+                 items.replaceChildren();
+                 loadAllItems();
+            }
+        }
+
+        function resetSort() {
+            // ponieważ sortując mutujemy obiekt
+            // messages musimy powrócić do jego pierwotnej kopii
+            messages = originalOrder;
+            items.replaceChildren();
+            loadAllItems();
+        }
+
+        loadAllItems();
+    </script>
+</body>
+</html>

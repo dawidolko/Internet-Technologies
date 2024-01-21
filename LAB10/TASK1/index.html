@@ -1,13 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Java script</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zapis danych formularza</title>
 </head>
 <body>
-    <h1>Witaj w zadaniu JavaScript!</h1>
-    <script src="script.js"></script>
+    <form id="formularz">
+        <label for="imie">Imię:</label>
+        <input id="imie" type="text" name="imie"><br><br>
+        <label for="nazwisko">Nazwisko:</label>
+        <input id="nazwisko" type="text" name="nazwisko"><br><br>
+        <label for="adres">Adres:</label>
+        <input id="adres" type="text" name="adres"><br><br>
+        <label for="email">Email:</label>
+        <input id="email" type="email" name="email"><br><br>
+        <label for="wiek">Wiek:</label>
+        <input id="wiek" type="number" name="wiek"><br><br>
+        <button type="submit" id="submitButton">Wyślij</button>
+    </form>
+
+    <script>
+        // Funkcja do zapisywania danych w localStorage
+        function saveDataToLocalStorage(event) {
+            const inputElement = event.target;
+            localStorage.setItem(inputElement.name, inputElement.value);
+        }
+
+        // Funkcja do wyświetlenia danych
+        function submitForm() {
+            alert(`
+                Imię: ${localStorage.getItem('imie') || ''}
+                Nazwisko: ${localStorage.getItem('nazwisko') || ''}
+                Adres: ${localStorage.getItem('adres') || ''}
+                Email: ${localStorage.getItem('email') || ''}
+                Wiek: ${localStorage.getItem('wiek') || ''}
+            `);
+            // Tutaj możesz dodać logikę wysyłania danych do serwera
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault(); // Zapobiega domyślnemu wysyłaniu formularza
+            submitForm(); // Funkcja, która symuluje wysyłanie formularza
+        }
+
+        // Dodanie nasłuchiwania zdarzeń
+        const formElements = document.querySelectorAll('#formularz input');
+        formElements.forEach(element => {
+            element.addEventListener('input', saveDataToLocalStorage);
+
+            // Wypełnienie pól formularza zapisanymi danymi
+            if (localStorage.getItem(element.name)) {
+                element.value = localStorage.getItem(element.name);
+            }
+        });
+
+        document.getElementById('formularz').addEventListener('submit', handleSubmit);
+    </script>
 </body>
 </html>
