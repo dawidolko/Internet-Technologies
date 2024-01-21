@@ -267,7 +267,7 @@ Canvas oferuje interfejs programistyczny, który umożliwia renderowanie grafiki
 Więcej przykładów z rysowaniem kształtów: 
 [link](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes)
  
-## [Zadanie 1.]()
+## [Zadanie 1.](LAB10/TASK1)
 Stwórz formularz, który będzie zapisywał wprowadzone dane w localStorage na bieżąco. 
 Kroki do wykonania: 
 
@@ -314,7 +314,7 @@ Kroki do wykonania:
 
 •	Zweryfikuj, czy dane są odczytywane i wypełniają pola formularza po ponownym załadowaniu strony. 
  
-## [Zadanie 2.]()
+## [Zadanie 2.](LAB10/TASK2)
 Stwórz aplikację, która pobierze dane dotyczące temperatury na najbliższe 7 dni z API open-meteo.com i wyświetli je w tabelce, gdzie kolor tekstu będzie odzwierciedlał wartość temperatury. 
 Kroki do wykonania: 
 
@@ -332,7 +332,7 @@ Kroki do wykonania:
 
 •	Upewnij się, że kolor tekstu w tabelce odzwierciedla wartość temperatury zgodnie z założeniami. 
 
-## [Zadanie 3.]()
+## [Zadanie 3.](LAB10/TASK3)
 Stwórz wykres temperatury na podstawie wcześniej pobranych danych z API open-meteo.com przy użyciu elementu Canvas. 
 
 ### Kroki do wykonania: 
