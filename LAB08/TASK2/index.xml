@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wniosek xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="wniosek.xsd">
+    <id_rodzica>1234567890</id_rodzica>
+    <znak_sprawy_wysylajacego>XYZ/123/2023</znak_sprawy_wysylajacego>
+    <typ>ORGANIZED</typ>
+    <data_przygotowania>2023-12-04T15:00:00</data_przygotowania>
+    <szczegoly_spisu_zo>
+        <opis>Opis zawartości spisu</opis>
+        <data_utworzenia>2023-12-04</data_utworzenia>
+        <najwczesniejsza_data_w_spisie>2023-01-01</najwczesniejsza_data_w_spisie>
+        <najpozniejsza_data_w_spisie>2023-12-04</najpozniejsza_data_w_spisie>
+        <ilosc_materialow>100</ilosc_materialow>
+        <ilosc_pozycji>10</ilosc_pozycji>
+    </szczegoly_spisu_zo>
+</wniosek>

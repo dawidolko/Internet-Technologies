@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:include schemaLocation="persons.xsd"/>
+    <xs:element name="persons">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="person" minOccurs="1" maxOccurs="unbounded">
+                    <!-- Struktura person zdefiniowana w person.xsd -->
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

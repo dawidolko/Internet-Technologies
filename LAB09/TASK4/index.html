@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Kalkulator opłacalności pizzy</h1>
+
+    <form id="pizzaForm">
+      <h2>Pizza mała:</h2>
+      Cena: <input type="text" id="smallPizzaPrice" pattern="\\d*(\\.\\d+)?" title="Proszę wprowadzić wartość dodatnią"><br>
+      Średnica: <input type="text" id="smallPizzaDiameter" pattern="\\d+" title="Proszę wprowadzić wartość dodatnią"><br>
+    
+      <h2>Pizza duża:</h2>
+      Cena: <input type="text" id="largePizzaPrice" pattern="\\d*(\\.\\d+)?" title="Proszę wprowadzić wartość dodatnią"><br>
+      Średnica: <input type="text" id="largePizzaDiameter" pattern="\\d+" title="Proszę wprowadzić wartość dodatnią"><br>
+    
+      <input type="button" value="Oblicz" id="calculate">
+    </form>
+    
+    <div id="result"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

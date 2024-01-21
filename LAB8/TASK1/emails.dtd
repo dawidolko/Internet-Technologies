@@ -1,9 +1,0 @@
-<!ELEMENT emails (email+)>
-<!ELEMENT email (to, from, heading, body, attachements?)>
-<!ELEMENT to (#PCDATA)>
-<!ELEMENT from (#PCDATA)>
-<!ELEMENT heading (#PCDATA)>
-<!ELEMENT body (#PCDATA)>
-<!ELEMENT attachements (attachement*)>
-<!ELEMENT attachement (name)>
-<!ELEMENT name (#PCDATA)>

@@ -1,0 +1,23 @@
+@import "external.css";
+
+@layer pierwsza, druga, trzecia, zerowa;
+
+@layer pierwsza {
+  section {
+    color: black !important; /* Dodajemy !important zgodnie z poleceniem */
+  }
+}
+
+@layer druga {
+  section {
+    color: red;
+  }
+}
+
+@layer trzecia {
+  section {
+    color: blue;
+  }
+}
+
+/* Teraz nie ma potrzeby używania @include, ponieważ wszystko jest już zaimportowane i zdefiniowane */

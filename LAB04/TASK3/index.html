@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+<!--     <link rel="stylesheet" href="style1.css"> -->
+    <link rel="stylesheet" href="style2.css"> 
+</head>
+<body>
+
+<form action="#" method="post">
+    <h2>Wyszukaj produkt</h2>
+    <div class="rama">
+        <input type="text" id="nazwaProduktu" name="nazwaProduktu" placeholder="🔎 Nazwa produktu">
+    </div>
+    <fieldset class="rama">
+        <legend id="x">Cena</legend>
+        <label class="price" for="cenaOd">od</label>
+        <input class="price" type="number" id="cenaOd" name="cenaOd" placeholder="0,00" min="0" max="10000000">
+        <label class="price" for="cenaOd">do</label>
+        <input class="price" type="number" id="cenaDo" name="cenaDo" placeholder="10000000,00" min="0" max="10000000">    
+        <select class="price" name="waluta">
+            <optgroup label="Waluty">
+                <option value="pln">PLN</option>
+                <option value="eur" disabled>EUR</option>
+            </optgroup>
+        </select>
+    </fieldset>
+    <fieldset class="rama">
+        <br>
+        <legend>Ocena produktu</legend>
+        <input type="radio" name="ocena" value="5" checked> 5,0 ⭐⭐⭐⭐⭐<br>
+        <input type="radio" name="ocena" value="4"> 4,0 ⭐⭐⭐⭐<br>
+        <input type="radio" name="ocena" value="3"> 3,0 ⭐⭐⭐<br>
+        <input type="radio" name="ocena" value="2"> 2,0 ⭐⭐<br>
+        <input type="radio" name="ocena" value="1"> 1,0 ⭐<br>
+    </fieldset>
+    <hr>
+    <div class="rama" class="inne">
+        <label for="kolor">Kolor:</label>
+        <input type="color" id="kolor" name="kolor" value="#FFA500">
+    </div>
+    <div class="rama" class="inne">
+        <label for="dataProdukcji">Data produkcji:</label>
+        <input type="date" id="dataProdukcji" name="dataProdukcji">
+    </div>
+    <div class="rama" class="inne">
+        <label for="szybkieLadowanie">Szybkie ładowanie: 0W</label>
+        <input type="range" id="szybkieLadowanie" name="szybkieLadowanie" value="75" min="0" max="150"> 150W
+    </div>
+    <fieldset class="rama" id="ramka"">
+        <br>
+        <legend>Inne:</legend>
+        <input class="price" id="sim" type="checkbox" name="inne" value="dual-sim"> 
+        <label for="sim">Dual-SIM</label>
+        <input class="price"id="5g" type="checkbox" name="inne" value="5g">
+        <label for="5g">5G</label>
+        <input class="price"id="glass" type="checkbox" name="inne" value="gorilla-glass"> 
+        <label for="glass">Gorilla-glass</label>
+    </fieldset>
+    <div class="rama">
+    <button type="submit">filtruj</button>
+    <button type="reset">usuń filtry</button>
+</div>
+</form>
+
+</body>
+</html>
