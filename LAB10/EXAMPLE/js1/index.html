@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        // import{abc} from './script.js';
+
+        // abc();
+
+        // import {bac} from './script2.js';
+
+        let x = {}; // object literal
+        console.log(x);
+
+        let y = new Object(); 
+        console.log(y);
+
+        const person = {name: null, printIntroduction: function() {return `My name is ${this.name}.`}};
+
+        const mark = Object.create(person);
+        mark.name= 'Mark';
+
+        const person2 = {name: 'Person'};
+
+        function Person(name) {
+            this.name = name;
+
+            this.printIntroduction  = function() {
+                return `My name is ${this.name}.`;
+            }
+        }
+
+        susan = new Person('Susan');
+
+        console.log(person);
+
+    </script>
+    <script src="script.js" type="module"></script>
+    <script src="script2.js" type="module"></script>
+</body>
+</html>
