@@ -315,7 +315,7 @@ Kolejnym ważnym zagadnieniem jest domyślny sposób układania się elementów 
 
 <br>![lab4](img/lab3s4.png)
 
-## [Zadanie 1.](https://techint.dawidolko.pl/LAB4/TASK1/)
+## [Zadanie 1.](https://techint.dawidolko.pl/LAB04/TASK1/)
 Skopiuj poniższy przykład.
 
 ```html
@@ -347,7 +347,7 @@ Skopiuj poniższy przykład.
 
 **Pamiętaj, aby elementy nie miały pustych zawartości, tak aby wizualnie widzieć efekty stylowania.**
 
-## [Zadanie 2.](https://techint.dawidolko.pl/LAB4/TASK2/)
+## [Zadanie 2.](https://techint.dawidolko.pl/LAB04/TASK2/)
 Utwórz poprawny dokument HTML, po czym umieść w sekcji head następujące reguły:
 
 ```html
@@ -404,7 +404,7 @@ display: block; display: inline-block;
 
 Jaki wpływ mają one na model pudełkowy zarówno elementu span, jak i jego rodzica?
 
-## [Zadanie 3.](https://techint.dawidolko.pl/LAB4/TASK3/)
+## [Zadanie 3.](https://techint.dawidolko.pl/LAB04/TASK3/)
 Odwzoruj formularz z poprzednich zajęć laboratoryjnych, jednak tym razem niech wygląda w sposób zaprezentowany poniżej. Wykorzystaj zewnętrzny arkusz stylu.
 Wykorzystano następujące właściwości:
 
@@ -431,7 +431,7 @@ Open Sans
 
 <br>![lab4](img/lab3s7.png)
 
-## [Zadanie 4.](https://techint.dawidolko.pl/LAB4/TASK4/)
+## [Zadanie 4.](https://techint.dawidolko.pl/LAB04/TASK4/)
 Skopiuj poniższy przykład. Zapoznaj się z artykułem na temat dziedziczenia w CSS: [link](https://developer.mozilla.org/en-US/docs/Web/CSS/Inheritance). Następnie zmodyfikuj przykład, tak, aby:
 
 1. Element p odziedziczył jednak wartość właściwości border.
@@ -467,7 +467,7 @@ Skopiuj poniższy przykład. Zapoznaj się z artykułem na temat dziedziczenia w
 </html>
 ```
 
-## [Zadanie 5.](https://techint.dawidolko.pl/LAB4/TASK5/)
+## [Zadanie 5.](https://techint.dawidolko.pl/LAB04/TASK5/)
 Następnie utwórz arkusz styli o nazwie `cascade_example.css`.
 
 ```html
@@ -609,7 +609,7 @@ Służą one do stylowania następującego fragmentu dokumentu HTML:
 
 2. Zastąp reguły zastosowane powyżej, w taki sposób, aby dokument renderował się tak samo, ale selektory były prostsze i nie było powtarzania redundantnych właściwości. Identyfikator `btn-light` zastąp klasą o takiej samej nazwie. Zrezygnuj ze stosowania inline style. Wykorzystaj wiedzę na temat specyficzności i dziedziczenia.
 
-## [Zadanie 6.](https://techint.dawidolko.pl/LAB4/TASK6/)
+## [Zadanie 6.](https://techint.dawidolko.pl/LAB04/TASK6/)
 Zdefiniuj style css które będą powodować, że:
 
 - Dodanie do tabeli klasy `"row-stripes"` spowoduje, że parzyste wiersze w tabeli będą miały kolor `#73BBE6`. Jeśli tabela posiada nagłówki będą one miały tło w kolorze `#666652`.
