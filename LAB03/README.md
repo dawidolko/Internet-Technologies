@@ -58,12 +58,12 @@ Dowolne oprogramowanie, które parsuje i renderuje HTML (używa się tutaj okre�
 
 Dotyczy to dużej liczby elementów formularzy jednak nie używa się słowa "musi" w kontekście wyświetlania danych znaczników. Zamiast tego, używa się terminu "expected" (oczekiwane), aby wskazać zachowanie, które doprowadzi do osiągnięcia zamierzonego efektu. Sugestie zawarte w dokumentacji zakładają ogólnie, że medium wyjściowe ma rozdzielczość co najmniej 96 ppi. Sugestie dotyczące prezentacji są głównie wyrażane w terminach CSS i oczekuje się, że programy przeglądające będą obsługiwać CSS lub dostosują te sugestie do innych mechanizmów prezentacji. **Jednakże nie można zignorować faktu, że w przeszłości elementy formularzy były renderowane w konkretny sposób bez CSS** i poniekąd **dla kompatybilności wstecz** utrzymano, że elementy formularzy nieostylowane w żaden sposób, wyświetlają się w sposób **„domyślny”, choć zależny od konkretnej przeglądarki.**
 
-## [Zadanie 1.](https://techint.dawidolko.pl/LAB3/TASK1/kontakt.html)
+## [Zadanie 1.](https://techint.dawidolko.pl/LAB03/TASK1/kontakt.html)
 Utwórz dokument kontakt.html w którym, utworzysz formularz zawierający imię i nazwisko, numer telefonu, adres email (wykorzystaj odpowiedni atrybut type), treść wiadomości (wykorzystaj element textarea i atrybuty rows and cols). Pamiętaj o poprawnym zdefiniowaniu elementów label i ustawieniu atrybutów for a także placeholder.
 
 [link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)
 
-## [Zadanie 2.](https://techint.dawidolko.pl/LAB3/TASK2/kontakt.html)
+## [Zadanie 2.](https://techint.dawidolko.pl/LAB03/TASK2/kontakt.html)
 
 Do znacznika `<form>` z poprzedniego zadania dopisz atrybut `action` o wartości "" i dopisz atrybut `method=”get”` (jest to domyślna wartość, ale warto poznać ten atrybut). Ustawienie `action=””` spowoduje że formularz będzie wysyłany przez **dokument do samego siebie**, tutaj stosujemy to dlatego że **nie napisano serwera**, który obsługiwałby ten formularz, ale może też być wykorzystywany, aby formularz nie posiadał efektów ubocznych (ang. side effects). Zwykle podaje się tutaj adres URL serwera (względny albo bezwzględny), który będzie przetwarzał dane z formularza.
 
@@ -119,7 +119,7 @@ Znajomość języka Python nie jest tutaj najważniejsza, bardziej istotne jest,
 
 Jaki jest teraz efekt działania formularza?
 
-## [Zadanie 3.](https://techint.dawidolko.pl/LAB3/TASK3/kontakt.html)
+## [Zadanie 3.](https://techint.dawidolko.pl/LAB03/TASK3/kontakt.html)
 
 [link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)
 
@@ -145,7 +145,7 @@ Wielokrotny wybór dla danej listy można ustawić za pomocą atrybutu multiple 
 ```
 Rozbuduj formularz o listę rozwijaną, z której możliwy będzie wybór 20 miast w Polsce. Pogrupuj miasta według województw. Możliwe jest do wyboru tylko jedno miasto. **Dwa ostatnie miasta z listy powinny nie być możliwe do wyboru.**
 
-## [Zadanie 4.](https://techint.dawidolko.pl/LAB3/TASK4/kontakt.html)
+## [Zadanie 4.](https://techint.dawidolko.pl/LAB03/TASK4/kontakt.html)
 Znacznik `<input>` którego atrybut type zdefiniujemy na checkbox może mieć dwa podstawowe stany: zaznaczony i niezaznaczony. **Istnieje trzeci stan "indeterminate" który jest używany do kontrolowania grupy checkboxów. Stan ten oznacza, że co najmniej jedna ale nie wszystkie dostępne opcje zostały wybrane i można go ustawić jedynie za pomocą JavaScriptu.**
 
 W kontekście checkboxów ważna jest definicja następujących atrybutów:
@@ -180,7 +180,7 @@ Utwórz w formularzu następujące pola wyboru:
 
 - Subskrybuj newsletter
   
-## [Zadanie 5.](https://techint.dawidolko.pl/LAB3/TASK5/kontakt.html)
+## [Zadanie 5.](https://techint.dawidolko.pl/LAB03/TASK5/kontakt.html)
 [link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio)
 
 Kolejny typ znacznika `<input>` to radio. Pozwala on na stworzenie grupy pól wyboru z których możliwe jest zaznaczenie tylko jednej opcji. Te same wartości atrybutu `name` tworzą grupę z której możliwe jest wybranie tylko jednej opcji i zmiana zaznaczenia jednego z tych elementów automatycznie odznacza poprzednio zaznaczony. **Ważne jest dodanie atrybutu value którego wartość będzie przesyłana do serwera.** Technicznie możliwe jest że formularz będzie tak utworzony, że możliwe będzie niezaznaczenie żadnej z opcji.
@@ -211,7 +211,7 @@ Utwórz w formularzu grupę przycisków która będzie odpowiedzialna za wybrani
   
 - Zgłoszenie nadużycia
   
-## [Zadanie 6.](https://techint.dawidolko.pl/LAB3/TASK6/kontakt.html)
+## [Zadanie 6.](https://techint.dawidolko.pl/LAB03/TASK6/kontakt.html)
 Znacznik `<fieldset>` służy do grupowania kilku elementów formularza w grupy tematyczne. Znacznik `<legend>` wewnątrz znacznika `<fieldset>` definiuje opis danej grupy elementów interaktywnych. Zwykle przeglądarki automatycznie obramowują ten element, choć jego wygląd należy definiować za pomocą CSS.
 
 [link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset)
@@ -224,7 +224,7 @@ Pogrupuj elementy formularza według kategorii:
   
 - Informacje o użytkowniku
   
-## [Zadanie 7.](https://techint.dawidolko.pl/LAB3/TASK7/kontakt.html)
+## [Zadanie 7.](https://techint.dawidolko.pl/LAB03/TASK7/kontakt.html)
 Zapoznaj się z pozostałymi typami input:
 
 [link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types)
@@ -247,7 +247,7 @@ Następnie utwórz sekcję, w której możliwe będzie zakupienie biletu na poci
    
 4. range (liczba biletów od 1 do maksymalnie 10)
 
-## [Zadanie 8.](https://techint.dawidolko.pl/LAB3/TASK8/kontakt.html)
+## [Zadanie 8.](https://techint.dawidolko.pl/LAB03/TASK8/kontakt.html)
 W celu ograniczenia możliwości przesłania na serwer błędnych danych, stosuje się walidację (sprawdzenie poprawności uzupełnienia) formularza. **Może być ona (i powinna być) wykonywana i po stronie klienta i po stronie serwera.**
 Niektóre elementy formularza automatycznie dodają reguły walidacji (np. typ email konieczność obecności znaku @). Wymagania dotyczące walidacji dodajemy za pomocą atrybutów. Najbardziej złożone, ale też i ogólne wymagania dotyczące danego pola można uzyskać za pomocą atrybutu pattern.
 [link](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/pattern )
