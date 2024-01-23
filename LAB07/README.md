@@ -25,7 +25,7 @@ Obecnie jednak zdefiniowanie wielu animacji jest natywnie wspierane przez CSS, a
 </html> 
  ```
  
-### [Zadanie 1.](https://techint.dawidolko.pl/LAB7/TASK1/) 
+### [Zadanie 1.](https://techint.dawidolko.pl/LAB07/TASK1/) 
 Napisz animację, która animuje logo Uniwersytetu Rzeszowskiego z wersji standardowej w monochromatyczną (załączone w assetach). Wykorzystaj właściwości `background-image` i `background-size`. 
 
 •	Niech animacja wykonuje się nieskończoną ilość razy (właściwość `animation-iteration-count`) i trwa `6s`. Niech animowany będzie w ten sposób jeden `div`. 
@@ -36,12 +36,12 @@ Napisz animację, która animuje logo Uniwersytetu Rzeszowskiego z wersji standa
  
 •	Zastanów się, jak można za pomocą `animation-composition` połączyć działanie kilku animacji, bez konieczności pisania na nowo jednej animacji, będącej "sumą" kilku niezależnych animacji. 
  
-### [Zadanie 2.](https://techint.dawidolko.pl/LAB7/TASK2/) 
+### [Zadanie 2.](https://techint.dawidolko.pl/LAB07/TASK2/) 
 Wykonaj za pomocą CSS następujący spinner: 
  
 Wykorzystaj właściwość `animation-timing-function` aby animacja działała płynnie. 
  
-### [Zadanie 3.](https://techint.dawidolko.pl/LAB7/TASK3/) 
+### [Zadanie 3.](https://techint.dawidolko.pl/LAB07/TASK3/) 
 Zapoznaj się z przykładem, który definiuje zdefiniowany samodzielnie (tj. przez autora strony) checkbox. Następnie dodaj animację, która po aktywacji `checkboxa`: 
 
 •	powiększy go dwukrotnie 
@@ -58,7 +58,7 @@ Następnie dodaj do formularza przycisk typu submit, który będzie animowany w 
 
 •	przycisk będzie okrągły i jako tekst pojawi się: `✔` 
  
-### [Zadanie 4.](https://techint.dawidolko.pl/LAB7/TASK4/)  
+### [Zadanie 4.](https://techint.dawidolko.pl/LAB07/TASK4/)  
 Niech formularz z poprzedniego zadania dodatkowo wyświetla się w postaci animowanej, tzn. rozwija się dynamicznie podczas animowania. 
 Skorzystaj z przykładu: [link](https://codepen.io/ma_suwa/pen/eYdZVML)
  
@@ -76,7 +76,7 @@ i zobacz jak strona została podzielona na obszary.
 
 •	Powróć do stanu wyjściowego. Dopisz media query, które dla urządzeń mobilnych zmieni grid na jednokolumnowy z czterema wierszami. Niech grid-template-areas pozostaną takie jakie były, ale niech dostosują się do nowego układu. Niech również zarówno pasek nawigacyjny, jak i mapa strony będą zwijalne/rozwijalne. 
  
-### [Zadanie 6.](https://techint.dawidolko.pl/LAB7/TASK6/)  
+### [Zadanie 6.](https://techint.dawidolko.pl/LAB07/TASK6/)  
 Popularnym elementem występującym na stronach internetowych jest `slider`. Jest to układ treści, w którym grupa elementów jest pokazywana trochę na podobieństwo pokazu slajdów (stąd nazwa), tj. jeden z elementów jest aktualnie widoczny, natomiast za pomocą przysików nawigacyjnych możliwa jest jego zmiana na kolejny. Podobnym rozwiązaniem jest carousel, gdzie jednocześnie widzimy kilka elementów i również za pomocą przycisków nawigacyjnych możemy przełączać na kolejne elementy, przy czym w carouselu zwykle nawigacja jest cykliczna, tj. ostatni element przełączy widok z powrotem na pierwszy. 
 
 Poniżej zaprezentowano prosty slider: 
@@ -85,7 +85,7 @@ Poniżej zaprezentowano prosty slider:
 
 •	Wykonaj modyikację, w której zmienisz styl linków nawigacyjnych z postaci numerycznej na spotykane w tym kontekście zamalowywane kropki. 
  
-### [Zadanie 7.](https://techint.dawidolko.pl/LAB7/TASK7/) 
+### [Zadanie 7.](https://techint.dawidolko.pl/LAB07/TASK7/) 
 
 Otwórz projekt wykonany w programie dla projektantów (ang. designerów) 
 
