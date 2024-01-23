@@ -32,7 +32,7 @@ Jednocześnie należy dodać, że te 2 jednostki w praktyce i tak okazały się 
 W celu interaktywnego zapoznania się z możliwościami flexboxa uruchom następującą aplikację internetową: [link](https://flexboxfroggy.com/#pl) i rozwiąż wszystkie zadania. Możesz posiłkować się poradnikiem: 
 [link](https://csstricks.com/snippets/css/a-guide-to-flexbox/). 
 
-## [Zadanie 2.](https://techint.dawidolko.pl/LAB6/TASK2/) 
+## [Zadanie 2.](https://techint.dawidolko.pl/LAB06/TASK2/) 
 Do następującego dokumentu HTML dopisz style, aby uzyskać efekt, jak na obrazku poniżej: 
   
 <br>![lab6](img/lab5v2.png)
@@ -82,7 +82,7 @@ Wykorzystaj właściwości `flex-direction`, `gap`, `align-items`, `justify-cont
 </html>
 ```
 
-## [Zadanie 3.](https://techint.dawidolko.pl/LAB6/TASK3/) 
+## [Zadanie 3.](https://techint.dawidolko.pl/LAB06/TASK3/) 
 Do przykładu z poprzedniego zadania: 
 1.	Najpierw skopiuj jeszcze dwie karty. Jaki spowodowało to efekt? 
 2.	W klasie `.container` ustaw `max-width:500px` i jednocześnie w klasie `.card` ustaw `min-width: 200px`. 
@@ -104,7 +104,7 @@ Jest to spowodowane tym, że ostatni element zajmie całe dostępne miejsce w ko
   <br>![lab6](img/lab5v5.png)
 5.	Zaproponuj inne rozwiązanie powyższego problemu w oparciu o `min-width` i `max-width`, ponadto ustaw elementom globalnie równą wysokość. Alternatywne rozwiązanie powyższego problemu za pomocą grid zostanie również pokazane w dalszej części instrukcji. 
  
-## [Zadanie 4.](https://techint.dawidolko.pl/LAB6/TASK4/) 
+## [Zadanie 4.](https://techint.dawidolko.pl/LAB06/TASK4/) 
  
 Skopiuj następujący przykład: 
 ```html
@@ -240,10 +240,10 @@ po czym zapoznaj się z dostępnymi właściwościami flexa klikając kolejno ws
 .navbar label {         display: none; 
 }
 ```
-## [Zadanie 5.](https://techint.dawidolko.pl/TASK5/README.md) 
+## [Zadanie 5.](https://techint.dawidolko.pl/TASK05/README.md) 
 W celu interaktywnego zapoznania się z możliwościami grid uruchom następującą aplikację internetową: [link](https://cssgridgarden.com/#pl) i rozwiąż wszystkie zadania. Możesz posiłkować się poradnikiem: [link](https://csstricks.com/snippets/css/complete-guide-grid/)
 
-## [Zadanie 6.](LAB6/TASK6) 
+## [Zadanie 6.](LAB06/TASK6) 
 W przykładzie z zadania 2. podmień styl `.container` na: 
 ```html
 .container {             display: grid;             grid-template-columns: 50% 50%;             grid-template-rows: auto;             gap: 10px; 
@@ -255,7 +255,7 @@ Przykład:
   
 • Zmieniaj liczbę kart (od 1 do 10) i obserwuj jak system gridowy adaptuje się do sytuacji. 
 
-## [Zadanie 7.](https://techint.dawidolko.pl/LAB6/TASK7/) 
+## [Zadanie 7.](https://techint.dawidolko.pl/LAB06/TASK7/) 
 Zapoznaj się z poradnikiem pod poniższym linkiem. Najważniejszym elementem są właściwości i wyjaśnienie jak działają. Z lewej strony znajdują się właściwości, które stosuje się do "rodzica" natomiast po prawej do "potomka". 
 [link](https://css-tricks.com/snippets/css/complete-guide-grid/) 
 Wykorzystując wartość "grid" dla właściwości display, utwórz style dla responsywnej galerii zdjęć dla poniższego dokumentu HTML: 
@@ -311,7 +311,7 @@ Na ekranach wiekszych niż 1200px zdjęcia wyświetlają się w trzech kolumnach
 
 Powiel znacznik img i sprawdź czy layout nadal jest responsywny. 
 
-## [Zadanie 8.](https://techint.dawidolko.pl/LAB6/TASK8) 
+## [Zadanie 8.](https://techint.dawidolko.pl/LAB06/TASK8) 
 Skopiuj poniższy dokument a następnie używając display: grid oraz flex ostyluj dokument tak aby wyświetlał kalendarz roku akademickiego z zaznaczonymi tygodniami A oraz B w dwóch różnych kolorach. Na desktopach miesiące tygodni A oraz B są wyświetlane obok siebie.  
 ```html
 <!DOCTYPE html> 
