@@ -198,7 +198,7 @@ Dostępne wartości dla clear to:
 
 • both: Element będzie czekać, aż żaden element nie opływa go ani po lewej, ani po prawej stronie, a dopiero wtedy zostanie ułożony poniżej nich.
 
-### [Zadanie 1.](https://techint.dawidolko.pl/LAB5/TASK1/)
+### [Zadanie 1.](https://techint.dawidolko.pl/LAB05/TASK1/)
 Skopiuj poniższy dokument: 
 ```html
 <!DOCTYPE html>
@@ -263,7 +263,7 @@ Gdyby nie użyto exact, przeglądarka usunęłaby kolory tła.
 
 6. * Jeżeli dysponujesz linijką, również możesz sprawdzić długość 1cm oraz 1 cala, wyświetloną na ekranie.
 
-### [Zadanie 2.](https://techint.dawidolko.pl/LAB5/TASK2/)
+### [Zadanie 2.](https://techint.dawidolko.pl/LAB05/TASK2/)
 Skopiuj następujący dokument HTML: 
 ```html
 <!DOCTYPE html>
@@ -303,7 +303,7 @@ font-size: 1.5em;
 
 6. Dodaj regułę, w której ustawisz font-size elementowi html na 24px; jednocześnie dopisz elementowi div o klasie „parent” tekst parent. Jaki dało to efekt?
 
-### [Zadanie 3.](https://techint.dawidolko.pl/LAB5/TASK3/)
+### [Zadanie 3.](https://techint.dawidolko.pl/LAB05/TASK3/)
 Utwórz następujący pasek menu.
 
 <br>![lab5](img/lab4v2.png)
@@ -320,19 +320,19 @@ Do utworzenia strzałek użyj pseudo-elementu ::after w którym:
 
 [link](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
 
-### [Zadanie 4.](https://techint.dawidolko.pl/LAB5/TASK4/)
+### [Zadanie 4.](https://techint.dawidolko.pl/LAB05/TASK4/)
 Rozbuduj menu tak by po najechaniu na element pojawiały się następujące opcje, natomiast po zabraniu kursora znikały.
 
 <br>![lab5](img/lab4v3.png)
 
 Elementy tworzące pod-menu mogą być wyświetlone jako elementy blokowe oraz początkowo mieć ustawioną właściwość opacity na wartość 0. Po najechaniu myszą elementy zmieniają opacity na 1.
 
-### [Zadanie 5.](https://techint.dawidolko.pl/LAB5/TASK5/)
+### [Zadanie 5.](https://techint.dawidolko.pl/LAB05/TASK5/)
 Zmodyfikuj reguły CSS, aby w jak najprostszy sposób można było utworzyć menu składające się z kolejnych rozwijanych menu. Zredukuj liczbę reguł css na tyle ile to możliwe.
 
 <br>![lab5](img/lab4v4.png)
 
-### [Zadanie 6.](https://techint.dawidolko.pl/LAB5/TASK6/)
+### [Zadanie 6.](https://techint.dawidolko.pl/LAB05/TASK6/)
 Utwórz opcję dodania kolejnego menu rozwijanego z lewej lub prawej strony w zielonym kolorze.
 
 <br>![lab5](img/lab4v5.png)
@@ -343,7 +343,7 @@ Zapoznaj się z dokumentacją:
 
 A następnie dodaj odpowiednie właściwości tak aby elementy niewidoczne nie blokowały wyboru opcji Informatyka w utworzonym menu. Bez tych właściwości obecne menu po najechaniu na informatyka może pokazywać opcję z menu Doktorant.
 
-### [Zadanie 7.](https://techint.dawidolko.pl/LAB5/TASK7/)
+### [Zadanie 7.](https://techint.dawidolko.pl/LAB05/TASK7/)
 Korzystając z dokumentacji
 
 [link](https://developer.mozilla.org/en-US/docs/Web/CSS/float)
@@ -370,7 +370,7 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
 
 Z uwagi na złożoność flexa zostanie on dokładnie omówiony w kolejnej instrukcji; tutaj ma on głównie znaczenie pokazowe.
 
-### [Zadanie 8.](https://techint.dawidolko.pl/LAB5/TASK8/)
+### [Zadanie 8.](https://techint.dawidolko.pl/LAB05/TASK8/)
 Wykorzystując media query:
 
 - ustal taki układ dla dużych ekranów (umownie powyżej 768px szerokości)
@@ -378,7 +378,7 @@ Wykorzystując media query:
 - ustal taki układ dla małych ekranów (umownie poniżej 768px szerokości)
 <br>![lab5](img/lab4v9.png)
 
-### [Zadanie 9.](https://techint.dawidolko.pl/LAB5/TASK9/)
+### [Zadanie 9.](https://techint.dawidolko.pl/LAB05/TASK9/)
 Za pomocą `@layer` utwórz 3 warstwy CSS: pierwsza, druga i trzecia; nadaj im taką samą kolejność. Ustaw kolor czcionki odpowiednio na czarny, czerwony i niebieski dla elementu section w każdej warstwie. Następnie utwórz poprawny dokument HTML i utwórz element section.
 
 1. Jaki kolor czcionki jest aktywny? Czy wiesz dlaczego tak jest?
@@ -393,7 +393,7 @@ Za pomocą `@layer` utwórz 3 warstwy CSS: pierwsza, druga i trzecia; nadaj im t
 
 6. Do `external.css` poza warstwą zerowa ustaw kolor section na żółty. Która w hierarchii kaskady jest ta definicja?
 
-### [Zadanie 10.](https://techint.dawidolko.pl/LAB5/TASK10/)
+### [Zadanie 10.](https://techint.dawidolko.pl/LAB05/TASK10/)
 Element `section` z poprzedniego zadania kolejno:
 
 1. Obróć o 10 stopni.
