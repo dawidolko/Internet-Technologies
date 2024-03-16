@@ -1,6 +1,6 @@
 # Manaus Fish Species Catalog
 
-![Manaus Fish](manaus_fish.jpg)
+Author: [link](https://github.com/lukaszsolecki/Manaus)
 
 Welcome to the Manaus Fish Species Catalog! This project aims to provide a comprehensive guide to the diverse array of fish species found in the Manaus region of Brazil, particularly in the Amazon River basin.
 
