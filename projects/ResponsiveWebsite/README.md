@@ -1,6 +1,6 @@
 # Responsive Website
 
-![Responsive Website](responsive_website.jpg)
+Author: [link](https://github.com/PiotrSmola/Responsive-website-template)
 
 Welcome to our Responsive Website! We've designed this website to provide an optimal viewing and interaction experience across a wide range of devices, from desktop computers to smartphones and tablets.
 
