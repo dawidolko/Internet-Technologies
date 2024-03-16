@@ -1,6 +1,6 @@
 # PCBT Computer Store
 
-![PCBT](pcbt.jpg)
+Author: [link](https://github.com/g00staw/PCBT)
 
 Welcome to PCBT Computer Store! We are your one-stop destination for all things related to computers, offering a wide range of products and services to meet your technology needs.
 
