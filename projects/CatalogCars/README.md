@@ -1,6 +1,6 @@
 # CatalogCars Website
 
-![CatalogCars](catalog_cars.jpg)
+Author: [link](https://github.com/SzymekRzepka/HTML-CSS-projekt)
 
 Welcome to the CatalogCars website! This project is designed to showcase a wide range of cars, providing users with detailed information about each vehicle to aid in their car-buying decisions.
 
