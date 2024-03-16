@@ -1,7 +1,7 @@
 # html-projekt
 # Bakery Website
 
-![Bakery](bakery.jpg)
+Author: [link](https://github.com/Matias014/html-projekt)
 
 Welcome to the Bakery website! This project is a simple yet delightful representation of a bakery's online presence, showcasing various baked goods and services offered.
 
