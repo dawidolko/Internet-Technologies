@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lorem ipsum">
+    <title>Template - TI</title>
+    <link rel="stylesheet" href="./css/styleContact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="hamburger-icon">&#9776;</label>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about_us.html">About Us</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <section id="contactBanner">
+            <div class="banner_content">
+                <div class="upper_banner_text">
+                    <h3>Lorem ipsum</h3>
+                </div>
+
+                <div class="main_banner_text">
+                    <h1>Contact Us</h1>
+                </div>
+                <a href="#form"><button type="button" id="goTo_contact">Go to contact form</button></a>
+            </div>
+            <div class="banner_image">
+            </div>
+        </section>
+    </header>
+    <main>
+
+        <section class="contactForm">
+            <form action="#" method="get" class="form" id="form" >
+                <h1>CONTACT US</h1>
+                
+                <p><label for="firstName">First name: </label><input type="text" id="firstName" name="firstName" placeholder="Write your first name here..." minlength="2" maxlength="30" required></input></p>
+                <p><label for="lastName">Last name: </label><input type="text" id="lastName" name="lastName" placeholder="Write your last name here..." minlength="2" maxlength="30" required></input></p>
+                <p><label for="phoneNum">Phone number: </label><input type="tel" id="phoneNum" name="phoneNum" placeholder="Write your phone number here..." pattern="[0-9]{9,12}" required></input></p>
+                <p><label for="email">Email: </label><input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$" placeholder="Enter your email here and we will contact you" required></input></p>
+                <p><label for="birthDate">Birth date: </label><input type="date" id="birthDate" name="birthDate" required></input></p>
+                <p class="topic"><label for="contact-topic">Reason for contact: </label></p>
+                <p class="topic">
+                  <select id="contact-topic" name="contact-topic" size="1" required>
+                    <option value="offer">Our offer</option>
+                    <option value="techProblem">Technical problem</option>
+                    <option value="opinion">Your opinion about us</option>
+                    <option disabled value="complaints">Complaints</option>
+                  </select>
+                </p>
+                <p><label for="message">Your message:</label><input type="text" id="message" name="message" placeholder="What would you like to tell us..." minlength="10" maxlength="500" required></input></p>
+                <div id="agreements">
+                <input type="checkbox" name="regulations" id="regulations" required></input><label for="regulations">I consent to the processing of my data and accept the website regulations</label></div>
+                <div class="formButtons">
+                  <input type="reset" value="Clear fields"></input>
+                  <input type="submit" value="Send Message"></input>
+                </div>
+              </form>
+        </section>
+
+        <aside>
+            <div class="animation">
+                <div class="row">
+                  <div class="cube">
+                    <div class="wall front"></div>
+                    <div class="wall back"></div>
+                    <div class="wall left"></div>
+                    <div class="wall right"></div>
+                    <div class="wall top"></div>
+                    <div class="wall bottom"></div>
+                  </div>
+                  <div class="cube">
+                    <div class="wall front"></div>
+                    <div class="wall back"></div>
+                    <div class="wall left"></div>
+                    <div class="wall right"></div>
+                    <div class="wall top"></div>
+                    <div class="wall bottom"></div>
+                  </div>
+                  <div class="cube">
+                    <div class="wall front"></div>
+                    <div class="wall back"></div>
+                    <div class="wall left"></div>
+                    <div class="wall right"></div>
+                    <div class="wall top"></div>
+                    <div class="wall bottom"></div>
+                  </div>
+                  <div class="cube">
+                    <div class="wall front"></div>
+                    <div class="wall back"></div>
+                    <div class="wall left"></div>
+                    <div class="wall right"></div>
+                    <div class="wall top"></div>
+                    <div class="wall bottom"></div>
+                  </div>
+                  <div class="cube">
+                    <div class="wall front"></div>
+                    <div class="wall back"></div>
+                    <div class="wall left"></div>
+                    <div class="wall right"></div>
+                    <div class="wall top"></div>
+                    <div class="wall bottom"></div>
+                  </div>
+                  
+                </div>
+                <div class="row">
+                  <div class="cube">
+                    <div class="wall front"></div>
+                    <div class="wall back"></div>
+                    <div class="wall left"></div>
+                    <div class="wall right"></div>
+                    <div class="wall top"></div>
+                    <div class="wall bottom"></div>
+                  </div>
+                  <div class="cube">
+                    <div class="wall front"></div>
+                    <div class="wall back"></div>
+                    <div class="wall left"></div>
+                    <div class="wall right"></div>
+                    <div class="wall top"></div>
+                    <div class="wall bottom"></div>
+                  </div>
+                  <div class="cube">
+                    <div class="wall front"></div>
+                    <div class="wall back"></div>
+                    <div class="wall left"></div>
+                    <div class="wall right"></div>
+                    <div class="wall top"></div>
+                    <div class="wall bottom"></div>
+                  </div>
+                  <div class="cube">
+                    <div class="wall front"></div>
+                    <div class="wall back"></div>
+                    <div class="wall left"></div>
+                    <div class="wall right"></div>
+                    <div class="wall top"></div>
+                    <div class="wall bottom"></div>
+                  </div>
+                  <div class="cube">
+                    <div class="wall front"></div>
+                    <div class="wall back"></div>
+                    <div class="wall left"></div>
+                    <div class="wall right"></div>
+                    <div class="wall top"></div>
+                    <div class="wall bottom"></div>
+                  </div>
+                  
+                </div>
+                <div class="row">
+                  <div class="cube">
+                    <div class="wall front"></div>
+                    <div class="wall back"></div>
+                    <div class="wall left"></div>
+                    <div class="wall right"></div>
+                    <div class="wall top"></div>
+                    <div class="wall bottom"></div>
+                  </div>
+                  <div class="cube">
+                    <div class="wall front"></div>
+                    <div class="wall back"></div>
+                    <div class="wall left"></div>
+                    <div class="wall right"></div>
+                    <div class="wall top"></div>
+                    <div class="wall bottom"></div>
+                  </div>
+                  <div class="cube">
+                    <div class="wall front"></div>
+                    <div class="wall back"></div>
+                    <div class="wall left"></div>
+                    <div class="wall right"></div>
+                    <div class="wall top"></div>
+                    <div class="wall bottom"></div>
+                  </div>
+                  <div class="cube">
+                    <div class="wall front"></div>
+                    <div class="wall back"></div>
+                    <div class="wall left"></div>
+                    <div class="wall right"></div>
+                    <div class="wall top"></div>
+                    <div class="wall bottom"></div>
+                  </div>
+                  <div class="cube">
+                    <div class="wall front"></div>
+                    <div class="wall back"></div>
+                    <div class="wall left"></div>
+                    <div class="wall right"></div>
+                    <div class="wall top"></div>
+                    <div class="wall bottom"></div>
+                  </div>
+                  
+                </div>
+                <div class="row">
+                  <div class="cube">
+                    <div class="wall front"></div>
+                    <div class="wall back"></div>
+                    <div class="wall left"></div>
+                    <div class="wall right"></div>
+                    <div class="wall top"></div>
+                    <div class="wall bottom"></div>
+                  </div>
+                  <div class="cube">
+                    <div class="wall front"></div>
+                    <div class="wall back"></div>
+                    <div class="wall left"></div>
+                    <div class="wall right"></div>
+                    <div class="wall top"></div>
+                    <div class="wall bottom"></div>
+                  </div>
+                  <div class="cube">
+                    <div class="wall front"></div>
+                    <div class="wall back"></div>
+                    <div class="wall left"></div>
+                    <div class="wall right"></div>
+                    <div class="wall top"></div>
+                    <div class="wall bottom"></div>
+                  </div>
+                  <div class="cube">
+                    <div class="wall front"></div>
+                    <div class="wall back"></div>
+                    <div class="wall left"></div>
+                    <div class="wall right"></div>
+                    <div class="wall top"></div>
+                    <div class="wall bottom"></div>
+                  </div>
+                  <div class="cube">
+                    <div class="wall front"></div>
+                    <div class="wall back"></div>
+                    <div class="wall left"></div>
+                    <div class="wall right"></div>
+                    <div class="wall top"></div>
+                    <div class="wall bottom"></div>
+                  </div>
+                  
+                </div>
+                <div class="row">
+                  <div class="cube">
+                    <div class="wall front"></div>
+                    <div class="wall back"></div>
+                    <div class="wall left"></div>
+                    <div class="wall right"></div>
+                    <div class="wall top"></div>
+                    <div class="wall bottom"></div>
+                  </div>
+                  <div class="cube">
+                    <div class="wall front"></div>
+                    <div class="wall back"></div>
+                    <div class="wall left"></div>
+                    <div class="wall right"></div>
+                    <div class="wall top"></div>
+                    <div class="wall bottom"></div>
+                  </div>
+                  <div class="cube">
+                    <div class="wall front"></div>
+                    <div class="wall back"></div>
+                    <div class="wall left"></div>
+                    <div class="wall right"></div>
+                    <div class="wall top"></div>
+                    <div class="wall bottom"></div>
+                  </div>
+                  <div class="cube">
+                    <div class="wall front"></div>
+                    <div class="wall back"></div>
+                    <div class="wall left"></div>
+                    <div class="wall right"></div>
+                    <div class="wall top"></div>
+                    <div class="wall bottom"></div>
+                  </div>
+                  <div class="cube">
+                    <div class="wall front"></div>
+                    <div class="wall back"></div>
+                    <div class="wall left"></div>
+                    <div class="wall right"></div>
+                    <div class="wall top"></div>
+                    <div class="wall bottom"></div>
+                  </div>
+                </div>
+              </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="footer_container">
+            <section class="left_side">
+                <div class="footer_logo">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+                <div class="footer_text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit pretium diam, a semper dolor
+                    malesuada tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                    ridiculus
+                    mus. Integer lorem sem, pulvinar nec augue ac, cursus blandit lectus.
+                    Cras neque erat, convallis a est sagittis, lobortis semper enim.
+                </div>
+            </section>
+
+            <section class="right_side">
+                <div class="footer_links">
+                    <h6>Useful Links</h6>
+                    <div class="links">
+                        <div class="link_container"><img src="/images/web.svg" alt="wikipedia"><a
+                                href="https://en.wikipedia.org">Wikipedia</a></div>
+                        <div class="link_container"><img src="/images/web.svg" alt="britannica"><a
+                                href="https://www.britannica.com">Britannica</a></div>
+                        <div class="link_container"><img src="/images/web.svg" alt="google"><a
+                                href="https://www.google.com">Google</a></div>
+                    </div>
+                </div>
+                <div class="footer_social">
+                    <h6>Our Social Media</h6>
+                    <div class="socialMedia_links">
+                        <a href="https://www.facebook.com"><img src="images/facebook.svg" alt="Facebook" /></a>
+                        <a href="https://www.instagram.com"><img src="images/instagram.svg" alt="Instagram" /></a>
+                        <a href="https://www.twitter.com"><img src="images/twitter.svg" alt="Twitter" /></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="copyright">
+          <p>All rights reserved © 2024 Piotr Smoła | All used icons are from <a href="https://www.svgrepo.com/">SVG Repo</a> (CC0 License, <a href="https://www.svgrepo.com/svg/510026/instagram">MIT License</a>, <a href="https://www.svgrepo.com/svg/532125/clock-two">CC Attribution Licence</a>)</p>
+        </section>
+    </footer>
+</body>
+
+</html>
