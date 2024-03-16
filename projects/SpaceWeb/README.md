@@ -1,6 +1,6 @@
 # SpaceWeb: Explore the Planets
 
-![SpaceWeb](spaceweb_planets.jpg)
+Author: [link](https://github.com/MaciQ1/ProjektHTML)
 
 Welcome to SpaceWeb! Embark on a journey through our solar system and beyond as we explore the fascinating worlds of the planets. Our website is your ultimate destination for learning about the celestial bodies that inhabit our cosmic neighborhood.
 
