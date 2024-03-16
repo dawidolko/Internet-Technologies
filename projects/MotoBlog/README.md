@@ -1,6 +1,6 @@
 # MotoBlog Website
 
-![MotoBlog](motoblog.jpg)
+Author: [link](https://github.com/tomasz0tarala/tomasz0tarala.github.io)
 
 Welcome to MotoBlog! This website is dedicated to motorcycle enthusiasts, offering a platform to share experiences, tips, and stories about the thrilling world of motorcycling.
 
