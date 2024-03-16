@@ -1,0 +1,130 @@
+@import url("https://fonts.google.com/specimen/JetBrains+Mono");
+
+html{
+    font-family: 'JetBrains Mono';
+    font-size: 16px;
+}
+
+h1{
+    font-family: 'Bauhaus 93';
+    font-size: 40px;
+    letter-spacing: 4px;
+    margin-bottom: -10px;
+}
+
+h2{
+    font-family: 'JetBrains Mono';
+    font-size: 20px;
+}
+
+.title-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 900px;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+body {
+    animation: scroll 100s linear infinite;
+    background: url("https://images.unsplash.com/photo-1484387436194-cf7cb70800ce?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+      #111111;
+    color: #eee;
+    height: 100vh;
+    min-width: 360px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+  }
+  
+@keyframes scroll {
+    100% {
+      background-position: 0px -400%;
+    }
+}
+  
+  /* Fallback if the operatring system prefers reduced motion*/
+@media (prefers-reduced-motion) {
+    .wrapper {
+      animation: scroll 800s linear infinite;
+    }
+}
+  
+@media (min-width: 670px) {
+    .title {
+      font-size: 5rem;
+    }
+}
+
+.theme{
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.black{
+    background-color: black;
+    color: white;
+}
+
+.blue {
+    background-color: rgb(0, 40, 110);
+    color: rgb(255, 255, 255, 0.95);
+}
+
+.white{
+    background-color: rgb(232, 232, 232);
+    color: #000;
+}
+
+.playButton{
+    width: 100px;
+    height: 40px;
+    background-color: #000;
+    color: white;
+    font-family: 'JetBrains Mono';
+    font-size: 18px;
+    animation: backgroundColor 5s infinite;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: white;
+}
+
+
+@keyframes backgroundColor {
+    0%{
+        background-color: #000;
+        border-color: white;
+    }
+    50%{
+        background-color: #23008a;
+        border-color: #000;
+    }
+
+    100%{
+        background-color: #000;
+        border-color: white;
+    }
+}
+

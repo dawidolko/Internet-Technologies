@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PCBT - Undervolting</title>
+    <link rel="stylesheet" href="undervolting.css">
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list nav-list-mobile">
+                    <li class="nav-item">
+                        <div class="mobile-menu">
+                            <spanc class="line line-top"></spanc>
+                            <spanc class="line line-bottom"></spanc>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link nav-link-pcbt"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link nav-link-bag"></a>
+                    </li>
+                </ul>
+                <!-- /.nav-list nav-list-mobile -->
+    
+                <ul class="nav-list nav-list-larger">
+                    <li class="nav-item nav-item-hidden">
+                        <a href="index.html" class="nav-link nav-link-pcbt"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="hardwareSelection.html" class="nav-link nav-link-hardwareselection">Dobór komponentów</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="partsInstallation.html" class="nav-link nav-link-partsInstallation">Instalacja podzespołów</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="overclocking.html" class="nav-link">Overclocking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="undervolting.html" class="nav-link-undervolting">Undervolting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="maintenance.html" class="nav-link nav-link-maintenance">Serwisowanie</a>
+                    </li>
+                </ul>
+                <!-- /.nav-list nav-list-larger -->
+            </nav>
+        </div>
+    </header>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Ta sekcja jest dla zaawansowanych użytkowników. Należy ją traktować jako ciekawostkę. Przed przystąpieniem do wspomnianych czynności prosimy o dokładne zgłębienie tematu z innych źródeł! <span class="important">NIE PONOSIMY ODPOWIEDZIALNOŚCI ZA PONIESIONE SZKODY W WYNIKU POWTARZANIA NIŻEJ WYMIENIONYCH CZYNNOŚCI!</span>
+             Przechodząc dalej akceptujesz ryzyko.
+        </p>
+        </div>
+      </div>
+      <!-- JavaScript -->
+      <script>
+          var modal = document.getElementById("myModal");
+          var span = document.getElementsByClassName("close")[0];
+
+          window.onload = function() {
+            modal.style.display = "block";
+          }
+
+          span.onclick = function() {
+            modal.style.display = "none";
+          }
+
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
+      </script>
+    <script src="main.js"></script>
+    <div class="back-to-top-scroll-button"><a href="#titleheading">▲</a></div>
+    <section class="hero partsInstallation">
+        <div class="title-container">
+            <div class="title">
+                <h2 class="title-heading" id="titleheading">Undervolting</h2>
+            </div>
+            <p class="subTitleCon">Jak przeprowadzić na karcie graficznej i procesorze</p>
+            <div class="effect-container">
+                <div class="circle-container">
+                    <svg>
+                        <circle class="bg" cx="57" cy="57" r="52" />
+                        <circle class="meter-1" cx="57" cy="57" r="52" />
+                        <p class="circ-description">Taktowanie rdzenia</p>
+                        <p class="freq"> MHz</a>
+                    </svg>
+                </div>
+                <div class="circle-container">
+                    <svg>
+                        <circle class="bg" cx="57   " cy="57" r="52" />
+                        <circle class="meter-2" cx="57" cy="57" r="52" />
+                        <p class="circ-description">Temperatura</p>
+                        <p class="temp"> °C</a>
+                    </svg>
+                </div>
+                <div class="circle-container">
+                    <svg>
+                        <circle class="bg" cx="57" cy="57" r="52" />
+                        <circle class="meter-3" cx="57" cy="57" r="52" />
+                        <p class="circ-description">Prędkość wentylatorów</p>
+                        <p class="fan"> %</a>
+                    </svg>
+                </div>
+            </div>
+        </div>
+           
+    </section>
+    <section class="first-slide">
+        <h2 class="section-title">Wprowadzenie</h2>
+        <p class="point-description">Undervolting to proces polegający na obniżeniu napięcia procesora, karty graficznej lub innego komponentu. Przeprowadza się go w celu zmniejszenia poboru mocy urządzenia. W efekcie daje to lepsze temperatury oraz niższą prędkość wentylatorów (czyli też obniżenie hałasu generowanego przez komputer).
+             Undervolting może okazać się szczególnie przydatny w przypadku drobnych komputerów w formacie mini ITX oraz wydajnych laptopów gamingowych, które pod obciążeniem nierzadko pracują na granicy throttlingu. Proces samego undervoltingu jest zazwyczaj przeprowadzany w taki sposób, aby zachować domyślną wydajność danego podzespołu. 
+             Czasami obniżanie napięć idzie jednak w parze z równoczesnym obniżeniem zegarów (tzw. underclocking), co pozwala zaoszczędzić jeszcze więcej energii 2. Całe działanie jest w dużej mierze przeciwieństwem podkręcania, czyli zwiększania zegarów i wydajności kosztem poboru mocy oraz kultury pracy.
+             Undervolting jest bezpieczny dla sprzętu, ale należy pamiętać, że jeśli nie przeprowadzimy undervoltingu prawidłowo, to w systemie mogą pojawić się błędy i problemy ze stabilnością. Właśnie dlatego przed ostatecznym zatwierdzeniem nowych ustawień, należy je zawsze dokładnie przetestować.</p>
+    </section>
+    <section class="slideA">
+        <h1 class="sectionTitle">Karta graficzna</h1>
+        <div class="slideContainer">
+            <p class="slidesContent">Undervolting w przypadku karty graficznej jest najbardziej popularny ze wszystkich podzespołów. Spowodowane jest to przez to, że wiele modelów jest sprzedawanych w wersji OC, które mogą osiągać wysokie temeperatury podczas pracy pod pełnym obciążeniem.
+                Za wysokimi temperaturami idzie również wysoka głośność pracy takiej karty. Dobrze przeprowadzony undervolting może zaradzić tym problemom oraz wydłużyć żywotność naszej karty.
+            </p>
+            <img class="slideImage" src="images/hero/undervolting/voltage-curve.jpg">
+        </div>
+        <div class="sectionContainer">
+            <h2 class="sectionTitle2">Jak przeprowadzić undervolting karty?</h2>
+            <div class="pointsContainer">
+                <div class="point">
+                    <h2 class="point-title">Oprogramowanie</h2>
+                    <p class="pointDescription">Jeśli chcesz przeprowadzić undervolting swojej karty graficznej, 
+                        najlepiej wykorzystać do tego aplikację <span class="important">MSI Afterburner</span>. Jest to uniwersalne narzędzie, które działa nie tylko z kartami MSI, ale także z kartami innych producentów. Program wyróżnia się przejrzystym interfejsem i prostą obsługą. Włączenie opcji “Startup” pozwoli załadować zmienione ustawienia już przy starcie systemu.</p>
+                </div>
+                <div class="point">
+                    <h2 class="point-title">Jak włączyć wykres częstotliwości i napięć?</h2>
+                    <p class="pointDescription">Uruchamiamy MSI Afterburner, klikamy kombinację klawiszy <span class="important">[Ctrl] + [F]</span>. Powinien pojawić się wykres częstotliwości i napięcia. Z lewej strony zobaczymy zegary karty, a na dole przypisane do niej napięcia.</p>
+                </div>
+                <div class="point">
+                    <h2 class="point-title">O ile zmieniać napięcia?</h2>
+                    <p class="pointDescription">Szukamy punkciku o interesującej nas wartości częstotliwości karty i <span class="important">stopniowo zmienjszamy na nim napięcie, np. o 50 mV</span>. Następnie kliknij przycisk zatwierdzenia znajdujący się w głównym menu programu. </p>
+                </div>
+                <div class="point">
+                    <h2 class="point-title">Test stabilności</h2>
+                    <p class="pointDescription">Testujemy nasz undervolting przy pomocy wybranego benchmarku graficznego, monitorując temperatury i stabliność systemu. Po wykonaniu testów możemy ponownie kontnuować undervolting lub zakończyć proces.</p>
+                </div>
+            </div>
+            <div class="video">
+                <p class="point-description">Oto przykładowy film instruktażowy.</p>
+                <iframe src="https://www.youtube.com/embed/n6jMhbL4JIU?si=B_T8kSzOKsy0Kvhz"></iframe>
+            </div>
+        </div>
+    </section>
+    <section class="slideB">
+        <h1 class="sectionTitle2">Procesor</h1>
+        <div class="opinionContainer">
+            <div class="slideContainer">
+                <img class="slideImage" src="images/hero/overclocking/cpu-oc.jpg">
+                <p class="slidesContent">Undervolting procesora będzie wyglądał trochę inaczej w zależności od platformy oraz producenta płyty głównej. Ogólne zasady obniżania napięcia są jednak identyczne i najczęściej najistotniejszą zmianą będą różnice dotyczące nazw danych funkcji.</p>
+            </div>
+        </div>
+        <div class="addonPhotos">
+            <div class="addP1"></div>
+            <div class="addP2"></div>
+        </div>
+        <div class="sectionContainer">
+            <h2 class="sectionTitle">Proces undervoltingu procesora</h2>
+            <div class="pointsContainer">
+                <div class="point">
+                    <h2 class="point-title">Jak przeprowadzić undervolting procesora w BIOSie?</h2>
+                    <p class="pointDescription">Przechodzimy do zakładki z opcjami dotyczącymi taktowania i napięć procesora - <span class="important">“OC” albo “Tweaker”</span>.
+                        Przełączamy tryb sterowania taktowaniami na manualny - np. opcja “CPU Frequency and Voltage (VID) Change”.
+                        Ustawiamy taktowanie procesora - Frequency oraz napięcie - Voltage na wartości odczytane w programie CPU-Z.
+                        Obniżamy domyślne napięcie o <span class="important">0,0125/0,025V</span>. Następnie zapisujemy zmiany i wychodzimy z BIOS-U.</p>
+                </div>
+                <div class="point">
+                    <h2 class="point-title">Test stabliności.</h2>
+                    <p class="pointDescription">Jednym z najlepszych programów do sprawdzania stabilności systemu jest <span class="important">Prime95</span>. Wraz z nim powinniśmy wyświetlać z boku program taki jak <span class="important">HwInfo</span>, aby stale kontrolować poprawność aktualnych temperatur.
+                        Taki test pozostawiamy na godzinę lub dłużej, monitorując pracę komputera.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="first-slide">
+        <h2 class="section-title">Zakończenie</h2>
+        <p class="point-description">Undervolting jest bezpieczny dla sprzętu, ale należy dokładnie przetestować każdą zmianę, aby uniknąć problemów ze stabilnością systemu. Dlatego ważne jest, aby wykonywać undervolting stopniowo, zmieniając napięcie o niewielkie wartości i dokładnie testując stabilność systemu po każdej zmianie.
+
+            Pamiętaj, że undervolting może prowadzić do spadku wydajności karty graficznej lub procesora, jeśli napięcie zostanie obniżone zbyt mocno. Dlatego ważne jest, aby dokładnie przetestować stabilność systemu po każdej zmianie napięcia karty graficznej i znaleźć optymalne ustawienia dla swojego sprzętu.</p>
+    </section>
+</body>
+<footer>
+    <div class="footer">         
+        <div class="row">
+            <ul>
+                <li>
+                    <a>Autor: </a>
+                    <a>Konrad Pluta</a>
+                </li>
+                <li>
+                    <a>E-mail:</a>
+                    <a>adres@email.com</a>
+                </li>
+                <li>
+                    <a>Numer telefonu:</a> 
+                    <a>+48 123 456 789</a>
+                </li>
+                <li>
+                    <a>Zgłoś:</a> 
+                    <a href="form.html">Formularz zgłoszeniowy</a>
+                </li>
+            </ul>
+        </div>
+        <div class="row">
+            Strona stworzona na potrzeby projektu z przedmiotu: Technologie Internetowe.
+        </div>
+    </div>
+</footer>
+</html>

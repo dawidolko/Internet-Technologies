@@ -1,0 +1,343 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0e2d3;
+}
+
+nav {
+    background: #d2a679;
+}
+
+/*
+    Strona główna - sekcja główna strony piekarnii
+
+    Poniżej jest przedstawiona zawartość kontenera strony głównej.
+
+    **.container**: Kontener o tej klasie ma szerokość 80% ekranu, jest wyśrodkowany, ma pionowe marginesy ustawione na 20px i padding na 20px. Minimalna wysokośc kontenera to 70vh.
+    
+    **#zdjecie1**: Zdjęcia o tym id mają ustawione opływanie z prawej strony.
+    
+    **.obrazy**: Kontener o tej klasie ma ustawienie display:flex, flex-direction: row, flex-wrap: wrap i jest wyśrodkowany.
+    
+    **#zdjecie5**: Zdjęcie o tej klasie ma szerkośc 50%, jest wyświetlany jako blok i jest wyśrodkowany.
+
+    Markup:
+    <main>
+        <div class="container">
+            <section>
+                <h1>Witamy w naszej piekarni!</h1>
+                <p>Odkryj smak tradycyjnego pieczywa, wypiekanego z pasją i według starych receptur. Nasze chleby, bułki
+                    i
+                    ciasta są przygotowywane z najlepszych składników - zawsze świeże i pachnące.</p>
+                <p><img src="img/index/chleb1.jpg" alt="chleb1" id="zdjecie1">Lorem ipsum dolor sit amet, consectetur
+                    adipisicing
+                    elit.
+                    Temporibus, voluptate iure suscipit aut
+                    consequatur laudantium animi sapiente at iste tempore nisi vitae dolore. Hic magni maxime aliquid
+                    doloribus at laudantium a natus. Expedita exercitationem temporibus esse velit nihil sint
+                    dignissimos obcaecati ad quam molestiae ducimus quis iure cupiditate sed, eligendi aspernatur quia
+                    culpa dolor natus aliquid! Eligendi, corrupti. Atque, voluptates saepe! Recusandae, ullam?
+                    Voluptatem dignissimos ad error tempore magni repudiandae, sequi natus recusandae dolores id
+                    pariatur eligendi incidunt perspiciatis aperiam cum excepturi earum? Alias, quae quod, commodi
+                    repellat ratione tempora ab deserunt veritatis, nam modi quidem enim harum. Ex, eligendi.</p>
+            </section>
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ratione esse possimus praesentium
+                    ab reiciendis! Aspernatur, rerum. Commodi, voluptatibus? Minus eligendi rem molestiae sit autem aut
+                    reprehenderit ab expedita veritatis, dolore, adipisci impedit consequuntur vel quibusdam beatae
+                    culpa temporibus corporis laborum sed assumenda tempore velit nobis soluta! Laborum a at, error ab
+                    impedit magni nulla vitae modi saepe quo. Ullam harum distinctio itaque corporis! Vero ut fugiat
+                    deserunt deleniti magnam error maxime dolorem officiis distinctio debitis. Ipsa repellat culpa
+                    voluptates! Autem libero odio iure maxime magni fugiat iusto dolorem rem culpa nemo? Vel temporibus
+                    dolor ab assumenda, officiis itaque dicta.</p>
+                <!-- Tutaj będą się wyświetały trzy obrazy, z podpisami na dole, które będą się powiększać po najechaniu na nie myszką -->
+                <div class="obrazy">
+                    <div class="obraz-img">
+                        <figure>
+                            <img src="img/index/chleb2.jpg" alt="chleb2" onclick="kliknij()">
+                            <figcaption style="text-align: center;">Lorem ipsum dolor sit amet.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="obraz-img">
+                        <figure>
+                            <img src="img/index/chleb3.jpg" alt="chleb3" onclick="kliknij2()">
+                            <figcaption style="text-align: center;">Lorem ipsum dolor sit amet.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="obraz-img">
+                        <figure>
+                            <img src="img/index/chleb4.jpg" alt="chleb4" onclick="kliknij3()">
+                            <figcaption style="text-align: center;">Lorem ipsum dolor sit amet.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta exercitationem quod sed earum
+                    distinctio facilis mollitia aliquam, quas modi cupiditate quaerat, officia quibusdam ratione
+                    repellendus laboriosam doloribus delectus sint temporibus debitis eos? Sit libero ullam dolores
+                    mollitia. Harum perferendis veritatis quae iusto illo quam commodi distinctio. At ducimus dolor
+                    consequatur facilis quae aliquam magnam reprehenderit placeat culpa laboriosam quia fugiat cumque
+                    odit deleniti fugit, magni itaque atque quaerat? Voluptatibus, sed cum. Expedita ex cupiditate sint
+                    non fugit hic laboriosam voluptas blanditiis quos, dolorum odit labore, fugiat eveniet doloremque
+                    veniam laudantium mollitia ratione quis. Pariatur accusamus rerum, velit itaque cumque et enim quod
+                    voluptas dolor accusantium dolorem fugiat voluptatibus, voluptate nisi labore facere earum neque
+                    sequi obcaecati est asperiores explicabo? Labore ipsa vitae vel, animi dolore corporis accusamus
+                    fugiat asperiores magnam suscipit eum deleniti nemo? Sint aspernatur eius maxime. Ut placeat iure
+                    necessitatibus eaque recusandae sequi nisi quas amet odio? Cumque!.</p>
+            </section>
+            <section>
+                <p style="font-style: italic;">Suspendisse molestie, lorem in tempus posuere, mauris nulla malesuada
+                    libero, sollicitudin hendrerit
+                    dolor tortor sed enim. Vestibulum laoreet scelerisque enim ac pulvinar. Pellentesque pretium
+                    faucibus vulputate. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+                    turpis egestas. Donec eget urna consequat, tempus lacus nec, vestibulum erat. Morbi quam tortor,
+                    blandit a vulputate vel, dictum vel tortor. Vivamus sed dolor ac diam imperdiet pellentesque ac ac
+                    ipsum. Pellentesque et nulla ante. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                </p>
+            </section>
+            <section>
+                <img id="zdjecie5" src="img/galeria/bread5.jpg" alt="chleb5">
+            </section>
+        </div>
+    </main>
+
+    Style guide: 1.0
+*/
+
+.burger-menu {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.zdjecie {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.zdjecie img {
+    width: 200px;
+    height: auto;
+}
+
+.linki {
+    display: flex;
+    flex-grow: 3;
+    background-color: #bd946c;
+}
+
+.linki a {
+    flex: 1;
+    padding: 1.5em;
+    text-align: center;
+    border-left: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+}
+
+.linki a:hover {
+    background-color: #b08a61;
+}
+
+.linki a:first-child {
+    border-left: none;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff7e6;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    min-height: 70vh;
+}
+
+.container p {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #8f5c30;
+    color: #fff;
+    padding: 1em 0;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+}
+
+.footer-info>p,
+.socials {
+    margin: 0;
+}
+
+.footer-info>.footer-right>p>a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footer-info>.footer-right>p>a:hover {
+    color: #d2a679;
+}
+
+.socials img {
+    padding: 0 0.5em;
+    vertical-align: middle;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 712px) {
+
+    .zdjecie {
+        order: -1;
+    }
+
+    .menu,
+    .linki {
+        flex-direction: column;
+    }
+
+    .linki {
+        display: none;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .linki a {
+        border-left: none;
+        border-top: 1px solid #fff;
+        padding: 1em;
+        text-align: center;
+    }
+
+    .linki.active {
+        display: flex;
+    }
+
+    .linki a:first-child {
+        border-top: none;
+    }
+
+    .linki.active a {
+        border-left: none;
+    }
+
+    .container img {
+        width: 100%;
+        display: block;
+        margin: 1em auto;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        align-items: center;
+        margin: 0.5em 0;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+}
+
+.container section {
+    overflow: hidden;
+    margin-bottom: 2em;
+}
+
+.container img {
+    width: 300px;
+    height: auto;
+    margin-left: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container #zdjecie1 {
+    float: right;
+}
+
+.container #zdjecie5 {
+    width: 50%;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+.obrazy {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.obrazy img {
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.obrazy img:hover {
+    transform: scale(1.10);
+}
+
+.obrazy img:not(:hover) {
+    transform: scale(1);
+}
+
+@media (max-width: 712px) {
+    .container #zdjecie1 {
+        float: none;
+        display: block;
+        margin: auto;
+    }
+
+    .container #zdjecie5 {
+        width: 100%;
+    }
+
+    .obrazy {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .obrazy img {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+}

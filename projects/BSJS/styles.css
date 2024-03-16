@@ -1,0 +1,426 @@
+@import url("https://fonts.google.com/specimen/JetBrains+Mono");
+
+html{
+    background-color: rgb(10, 10, 10);
+    color: rgb(255, 255, 255, 0.9);
+    font-family: 'JetBrains Mono';
+    font-size: 20px;
+}
+
+h1{
+    font-family: 'Bauhaus 93';
+    font-size: 40px;
+    letter-spacing: 4px;
+    margin-bottom: -10px;
+}
+
+h2{
+    font-family: 'JetBrains Mono';
+    font-size: 20px;
+}
+
+.title-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.info-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1000px;
+    height: 150px;
+    margin: 50px;
+
+    background-color: rgba(0, 0, 0, 0.845);
+    border-style: solid;
+    border-color: rgb(255, 255, 255, 0.9);
+    border-width: 2px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.info-container p{
+    margin: 20px;
+    width: 200px;
+}
+
+.info-container span{
+    color: yellowgreen;
+}
+
+#gamesboard-container{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+
+    background-color: rgba(0, 0, 0, 0.845);
+    padding: 5px;
+    border-radius: 10px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+
+    border: 2px solid;
+    border-image: conic-gradient(from var(--angle), white, aqua, rgb(0, 213, 255), aqua,white) 1;
+    animation: 10s rotate linear infinite;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.game-board{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    scale: 1.35;
+    margin: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.info-board{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.block{
+    width: 20px;
+    height: 20px;
+}
+
+.option-container{
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    width: 500px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.845);
+    border-style: solid;
+    border-color: rgb(255, 255, 255, 0.9);
+    border-width: 2px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid;
+    border-image: conic-gradient(from var(--angle), white, aqua, rgb(0, 213, 255), aqua,white) 1;
+    animation: 10s rotate linear infinite;
+
+}
+
+
+
+.dest{
+    background-color: rgb(125, 184, 179);
+}
+
+.sub{
+    background-color: rgb(0, 195, 255);
+}
+
+.cru{
+    background-color: rgb(21, 81, 177);
+}
+
+.batt{
+    background-color: rgb(26, 36, 169);
+}
+
+.carr{
+    background-color: rgb(27, 27, 234);
+}
+
+#player .sub{
+    background-size: 100%;
+    background-color: transparent;
+    background-image: url('images/submarine.png');
+
+}
+
+#player .dest{
+    background-size: 100%;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url('images/destroyer.png');
+}
+
+#player .cru{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: 70%;
+    background-color: transparent;
+    background-image: url('images/crusier.png');
+}
+
+#player .batt{
+    background-size: 100%;
+    background-color: transparent;
+    background-image: url('images/battleship.png');
+    background-repeat: no-repeat;
+}
+
+#player .carr{
+    background-size: 100%;
+    background-color: transparent;
+    background-image: url('images/carrier.png');
+    background-repeat: no-repeat;
+}
+
+
+.dest-prev{
+    width: 20px;
+    height: 10px;
+    margin: 3px;
+}
+
+.sub-prev{
+    width: 30px;
+    height: 10px;
+    margin: 3px;
+    background: rgb(0, 195, 255);
+}
+
+.cru-prev{
+    width: 30px;
+    height: 10px;
+    margin: 3px;
+}
+.batt-prev{
+    width: 40px;
+    height: 10px;
+    margin: 3px;
+}
+
+.carr-prev{
+    width: 50px;
+    height: 10px;
+    margin: 3px;
+}
+
+#computer .dest,
+#computer .sub,
+#computer .carr,
+#computer .cru,
+#computer .batt {
+    background-color: darkblue;
+}
+
+.hover{
+    background-color: darkslategray;
+}
+
+.boom{
+    background-color: red !important;
+    background: url("images/boom.jpg") !important;
+    background-size: 250% !important;
+    background-position-y: 50% !important;
+    background-position-x: 50% !important;
+}
+
+.empty{
+    background: url("images/x.jpg") !important;
+    background-size: 100% !important;
+    background-position-y: 50%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+
+    animation: scroll 500s linear infinite;
+    background: #111111;
+    color: #eee;
+    min-width: 360px;
+    width: 100%;
+    height: 100%;
+    perspective: 800px;
+    perspective-origin: 50% 50%;
+  }
+  
+@keyframes scroll {
+    100% {
+      background-position: 0px -400%;
+    }
+}
+  
+  /* Fallback if the operatring system prefers reduced motion*/
+@media (prefers-reduced-motion) {
+    .wrapper {
+      animation: scroll 800s linear infinite;
+    }
+}
+  
+@media (min-width: 670px) {
+    .title {
+      font-size: 5rem;
+    }
+}
+
+.main-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100%;
+}
+
+.slidecontainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.info-container{
+    border: 2px solid;
+    border-image: conic-gradient(from var(--angle), white, aqua, rgb(0, 145, 255), rgb(1, 244, 127), rgb(0, 187, 255), aqua, white) 1;
+    animation: 10s rotate linear infinite;
+}
+
+@keyframes rotate {
+      to {
+        --angle: 360deg;
+    }
+}
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    background: cornflowerblue;
+    border-radius: 10px;
+  }
+  
+  input[type=range]::-webkit-slider-thumb {
+    background: cornflowerblue;
+  }
+  
+  input[type=range]::-moz-range-track {
+    background: cornflowerblue;
+  }
+  
+  input[type=range]::-moz-range-thumb {
+    background: cornflowerblue;
+  }
+  
+  input[type=range]::-ms-fill-lower {
+    background: cornflowerblue;
+  }
+  
+  input[type=range]::-ms-fill-upper {
+    background: cornflowerblue;
+  }
+  
+  input[type=range]::-ms-thumb {
+    background: cornflowerblue;
+  }
+
+  @keyframes backgroundColor {
+    0%{
+        background-color: #000;
+        border-color: white;
+    }
+    50%{
+        background-color: #23008a;
+        border-color: #000;
+    }
+
+    100%{
+        background-color: #000;
+        border-color: white;
+    }
+}
+
+.startButton{
+    width: 100px;
+    height: 40px;
+    background-color: #000;
+    color: white;
+    font-family: 'JetBrains Mono';
+    font-size: 18px;
+    animation: backgroundColor 5s infinite;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: white;
+}
+
+.flipButton{
+    width: 100px;
+    height: 40px;
+    background-color: #000;
+    color: white;
+    font-family: 'JetBrains Mono';
+    font-size: 18px;
+    animation: backgroundColor 5s infinite;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: white;
+}
+
+.resetButton{
+    width: 100px;
+    height: 40px;
+    background-color: #000;
+    color: white;
+    font-family: 'JetBrains Mono';
+    font-size: 18px;
+    animation: backgroundColor 5s infinite;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: white;
+}
+
+@media only screen and (max-height: 1300px) {
+    #gamesboard-container{
+        width: 600px;
+        scale: 0.8;
+        margin: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        width: 700px;
+        margin-bottom: -50px;
+    }
+
+    .info-container{
+        width: 900px;
+        margin: 0;
+        height: 100px;
+    }
+
+    .info-board{
+        width: 100%;
+        margin-bottom: -40px;
+    }
+
+    .info-container p{
+        font-size: 14px;
+    }
+
+    .option-container{
+        height: 30px;
+        margin: 10px;
+    }
+
+    .buttons-container{
+        scale: 0.9;
+    }
+
+    .slidecontainer{
+        scale: 0.9;
+    }
+}

@@ -1,0 +1,1360 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(font/Poppins-Medium.ttf);
+  }
+  
+  * {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  /* 
+  Klasa .navigation
+  
+  Styl dla nawigacji. Ustawia nawigację jako element stały na górze strony.Zawiera podstawowe właściwości stylu i pozycjonowania.
+  
+  Markup:
+  <div class="navigation">
+    <ul>
+      <li><a href="#">Strona Główna</a></li>
+      <li class="icon"><a href="#"><i class="fi fi-rr-home"></i></a></li>
+      <li><a href="aboutus.html">O Nas</a></li>
+      <li class="icon"><a href="aboutus.html"><i class="fi fi-rr-info"></i></a></li>
+      <li><a href="contactus.html">Skontauj się z Nami</a></li>
+      <li class="icon"><a href="contactus.html"><i class="fi fi-rr-envelope"></i></a></li>
+      <li><a href="gallery.html">Galeria</a></li>
+      <li class="icon"><a href="gallery.html"><i class="fi fi-rr-picture"></i></a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+      <li class="icon"><a href="quiz.html"><i class="fi fi-rr-interrogation"></i></a></li>
+    </ul>
+  </div>
+  
+  Style guide: 1.0 
+  */
+  .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    background-color: #333;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navigation  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .navigation ul li {
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .navigation  ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navigation  ul li a:hover {
+    color: #ccc;
+  }
+  
+  .navigation .icon {
+    display: none;
+  }
+  
+  main {
+    min-height: calc(100vh - 4em);
+    padding-top: 120px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+  }
+  
+/* 
+Klasa .footer-style
+  
+Styl dla elementu <footer>.Definiuje tło, kolor tekstu, wyrównanie tekstu, padding oraz szerokość.
+  
+Markup:
+<footer class="footer-style">
+    <p>Copyright &copy; MotoBlog 2024 | <a href="privacypolicy.html">Polityka Prywatności</a></p>
+    <p>UIcons by <a href="https://www.flaticon.com/uicons">Flaticon</a></p>
+</footer>
+  
+Style guide: 2.0 
+  */
+  .footer-style {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .footer-style a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .footer-style p {
+    margin: 10px 0;
+  }
+  
+  .footer-style .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 0;
+  }
+  
+  .footer-style .social-media a {
+    display: block;
+  }
+  
+  .footer-style .social-media a img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* 
+  Klasy .popup .popup-content
+  
+  Styl dla wyskakującego okna typu 'popup'. Okno jest domyślnie ukryte (display: none) i pojawia się w pełnym oknie przeglądarki z ciemnym, półprzezroczystym tłem. Zawiera ustawienia pozycjonowania, rozmiaru oraz tła.
+  
+  Markup:
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <h2>Zapisz się na nasz newsletter!</h2>
+      <p>Dołącz do naszej pasjonującej społeczności miłośników motoryzacji! Zapisując się do naszego newslettera,
+        otrzymasz regularne aktualizacje pełne fascynujących treści, które każdy fan czterech kółek pokocha. Od
+        ekskluzywnych recenzji najnowszych modeli samochodów, przez zapowiedzi najgorętszych wydarzeń motoryzacyjnych, aż
+        po praktyczne porady i ciekawostki ze świata motoryzacji – nasz newsletter to Twoje źródło informacji, które
+        pozwoli Ci być zawsze o krok przed innymi. Zapisz się już teraz, aby nie przegapić żadnych nowości i dołączyć do
+        grona entuzjastów, którzy dzielą Twoją pasję. To tylko jeden klik – zapisz się, aby każdy dzień był pełen
+        motoryzacyjnych inspiracji!</p>
+    </div>
+  </div>
+  
+  Style guide: 3.0 
+  */
+  .popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: auto;
+  }
+  
+  .popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: auto;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 
+  Klasa .newsletter-form .form-grid
+  
+  Styl dla siatki formularza newslettera. Używa display: grid do stworzenia układu siatki. Zawiera definicję kolumn oraz odstępy między nimi.
+  
+  Markup:
+    <form class="newsletter-form">
+      <div class="form-grid">
+        <label for="email"></label>
+        <input type="email" id="email" name="email" placeholder="Twój adres email" required>
+        <input type="submit" value="Zapisz się">
+      </div>
+    </form>
+  
+  Style guide: 4.0 
+  */
+  .newsletter-form .form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .newsletter-form input[type=email],
+  .newsletter-form input[type=submit] {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .newsletter-form input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .newsletter-form input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* 
+  Klasa .hamburger-menu .hamburger-menu span
+  
+  Styl dla przycisku menu hamburgerowego. Domyślnie ukryty (display: none). Zmienia kursor na wskaźnik, aby wskazać interaktywność. Ustawia również margines. Zazwyczaj używany w responsywnym designie, widoczny tylko na urządzeniach mobilnych. Styl dla poszczególnych pasków w przycisku menu hamburgerowego. Ustawia szerokość, wysokość, margines dolny oraz kolor tła każdego paska.
+  
+  Markup:
+  <div class="hamburger-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  
+  Style guide: 5.0 
+  */
+  .hamburger-menu {
+    display: none;
+    cursor: pointer;
+    margin: 1em;
+  }
+  
+  .hamburger-menu span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: white;
+  }
+  
+  /* 
+  Klasy .navbar-logo .navbar-logo img
+   
+  Styl dla logo wewnątrz navbara. Ustawia wysokość na 100% paska nawigacji, aby logo było w pełni widoczne i dobrze wyśrodkowane.
+  
+  Markup:
+  <div class="navbar-logo">
+    <img src="img/logo-ostateczne.png" alt="Logo">
+  </div>
+  
+  Style guide: 6.0 
+  */
+  .navbar-logo {
+    height: 100%;
+  }
+  
+  .navbar-logo img {
+    height: 100%;
+    width: auto;
+  }
+
+  /*
+    Klasa .social-media
+    
+    Styl dla kontenera ikon mediów społecznościowych. Używa Flexbox do rozmieszczenia ikon w poziomie. Ustawia marginesy.
+
+    Markup:
+    <div class="social-media">
+    <a href="https://www.facebook.com/" target="_blank">
+      <img src="img/facebook-icon.png" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com/" target="_blank">
+      <img src="img/instagram-icon.png" alt="Instagram">
+    </a>
+    <a href="https://www.twitter.com/" target="_blank">
+      <img src="img/x-icon.png" alt="X">
+    </a>
+    </div>
+
+    Style guide: 7.0
+    */
+  .social-media a {
+    margin: 0 10px;
+    display: inline-block;
+  }
+  
+  .social-media img {
+    width: 24px;
+    height: auto;
+  }
+  
+  /* 
+  Klasy .gallery .gallery-item .gallery-item img .gallery-item-text
+  
+
+  Styl kontenera galerii wykorzystuje siatkę (grid) do zapewnienia responsywnego rozmieszczenia obrazów, definiując kolumny o dynamicznej szerokości, które adaptują się do przestrzeni, z odstępami i paddingiem między elementami. Dla poszczególnych elementów galerii, styl określa ich pozycję, maskuje nadmiar treści i aplikuje cień dla wzbogacenia wizualnego. Styl dla obrazów w elementach galerii ustawia ich szerokość na 100% i wysokość na auto, wprowadzając płynną transformację dla efektu powiększenia podczas najechania kursorem. Tekst na obrazach jest pozycjonowany absolutnie, z dodanym tłem i stylizacją, co gwarantuje jego widoczność na różnorodnych tłach.
+  
+  Markup:
+  <div>
+    <div id="gallery">
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="img/gallery-f1-race.png" alt="Wyścig F1">
+          <div class="gallery-item-text">Wyścig F1</div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/gallery-testing.png" alt="Testy">
+          <div class="gallery-item-text">Zdjęcia z testów</div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/fans-meetup.png" alt="Spotkanie z fanami">
+          <div class="gallery-item-text">Zdjęcia ze spotkania z fanami</div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/gallery-supra.png" alt="Toyota Supra">
+          <div class="gallery-item-text">Toyota Supra</div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/gallery-gtr.png" alt="Nissan GTR">
+          <div class="gallery-item-text">Nissan GTR</div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/fans-meetup.png" alt="Testy">
+          <div class="gallery-item-text">Zdjęcia ze spotkania z fanami</div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/fans-meetup.png" alt="Testy">
+          <div class="gallery-item-text">Zdjęcia ze spotkania z fanami</div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/fans-meetup.png" alt="Testy">
+          <div class="gallery-item-text">Zdjęcia ze spotkania z fanami</div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/fans-meetup.png" alt="Testy">
+          <div class="gallery-item-text">Zdjęcia ze spotkania z fanami</div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/fans-meetup.png" alt="Testy">
+          <div class="gallery-item-text">Zdjęcia ze spotkania z fanami</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  Style guide: 8.0 
+  */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.726);
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    display: block;
+  }
+  
+  .gallery-item-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.05);
+  }
+  
+  /*
+  Klasy .image-row .image-container .image-row-item .image-text
+  
+  Styl dla rzędu obrazów wykorzystuje Flexbox do równomiernego rozmieszczenia obrazów, włączając właściwości justowania i wyrównania oraz określając odstępy między elementami. Styl dla kontenera obrazu w rzędzie zapewnia pozycjonowanie elementu i jego szerokość, służąc jako fundament dla rozmieszczenia obrazów i tekstu. Dla obrazów w rzędzie, styl ustala szerokość, wysokość, dopasowanie obiektu i wprowadza płynną transformację dla efektu powiększenia. Tekst na obrazach w rzędzie jest pozycjonowany absolutnie, z dodanym tłem i stylizacją tekstu, oraz oferuje płynną zmianę przezroczystości przy najechaniu, co zwiększa interaktywność i czytelność.
+  
+  Markup:
+  <div class="image-row">
+            <div class="image-container">
+              <img class="image-row-item" src="img/F1_race.png" alt="F1">
+              <div class="image-text">F1 Race</div>
+            </div>
+            <div class="image-container">
+              <img class="image-row-item" src="img/rally_race.png" alt="Rally race">
+              <div class="image-text">Rally Race</div>
+            </div>
+            <div class="image-container">
+              <img class="image-row-item" src="img/endurance_race.png" alt="Endurance race">
+              <div class="image-text">Endurance Race</div>
+            </div>
+            <div class="image-container">
+              <img class="image-row-item" src="img/moto_gp.png" alt="MotoGP race">
+              <div class="image-text">MotoGP Race</div>
+            </div>
+            <div class="image-container">
+              <img class="image-row-item" src="img/rallycross_race.png" alt="Rallycross race">
+              <div class="image-text">Rallycross Race</div>
+            </div>
+    </div>
+  
+  Style guide: 9.0 
+  */
+  .image-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image-row-item {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-row-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .image-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+  }
+  
+  .image-container:hover .image-text {
+    opacity: 1;
+  }
+  
+  /*
+  Klasy .slider .slides .slide .slide img .slide-text .prev .next 
+   
+  Styl głównego kontenera slidera określa jego pozycję, maksymalną szerokość, automatyczne marginesy i ukrywa nadmiar treści, stanowiąc fundament dla wyświetlania slajdów. Kontener slajdów wykorzystuje Flexbox do liniowego układania slajdów. Pojedynczy slajd w sliderze ma ustawioną minimalną szerokość na 100% i płynną transformację dla animacji przejścia. Styl obrazu na slajdzie zapewnia szerokość 100%, wysokość auto i płynną transformację dla efektu powiększenia. Tekst na slajdzie jest pozycjonowany absolutnie, z dodanym tłem i stylizacją, co poprawia czytelność. Przyciski nawigacji (poprzedni/następny) mają określoną pozycję, stylizowany wygląd i efekty przejścia, w tym stan :hover dla zwiększenia widoczności i interaktywności.
+  
+  Markup:
+  <div class="slider">
+    <div class="slides">
+      <div class="slide" id="slide1">
+        <img src="img/fans1.png" alt="Festiwal">
+        <div class="slide-text">Festiwal motoryzacyjny</div>
+      </div>
+      <div class="slide" id="slide2">
+        <img src="img/fans2.png" alt="Fani">
+        <div class="slide-text">Fani</div>
+      </div>
+      <div class="slide" id="slide3">
+        <img src="img/fans3.png" alt="Zlot">
+        <div class="slide-text">Zlot motoryzacyjny</div>
+      </div>
+      <div> class="slide" id="slide4">
+        <img src="img/F1-fans4.png" alt="Kibice na GP">
+        <div class="slide-text">Kibice na GP</div>
+      </div>
+      <div class="slide" id="slide5">
+        <img src="img/rally-fans5.png" alt="Kibice na Rajdzie Polski">
+        <div class="slide-text">Kibice na Rajdzie Polski</div>
+      </div>
+    </div>
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+  </div>
+    
+  Style guide: 10.0 
+  */
+  .slider {
+    position: relative;
+    max-width: 700px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+  }
+  
+  .slide {
+    min-width: 100%;
+    transition: ease 0.5s;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.4s ease;
+  }
+  
+  .slide img:hover {
+    transform: scale(1.05);
+  }
+  
+  .slide-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  /*
+  Klasa .dots-container .dot
+
+  Styl dla kontenera z kropkami nawigacyjnymi. Ustawia wyrównanie tekstu na środek. Dla poszczególnych kropek nawigacyjnych ustawia kursor, wymiary, marginesy, kolor tła, zaokrąglenie oraz dodaje cień i płynną zmianę koloru tła. Zawiera także stan :hover i .active dla lepszej interakcji użytkownika.
+
+  Markup:
+  <div class="dots-container">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  Style guide: 11.0 
+  */
+  .dots-container {
+    text-align: center;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /*
+  Klasa .accordion .tab .tab-content .tab-label 
+   
+  Styl główny dla komponentu akordeonu określa padding górny i dolny oraz szerokość, tworząc kontener dla wszystkich elementów akordeonu. Poszczególne taby w akordeonie mają ustawiony margines dolny, co zapewnia ich wyraźne oddzielenie. Etykieta każdego tabu jest klikalna (cursor: pointer), posiada wyróżnioną typografię oraz efekt :hover, co ułatwia interakcję użytkownika. Domyślnie ukryta treść tabu ma ustawioną maksymalną wysokość na 0, aby pozostać niewidoczna, z dodanym efektem przejścia, który umożliwia płynne odsłanianie treści.
+  
+  Markup:
+    <div class="accordion">
+        <div class="tab">
+            <button class="tab-label">Aktualności ze Świata Motorsportu</button>
+            <div class="tab-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <button class="tab-label">Opinie i Analizy</button>
+            <div class="tab-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <button class="tab-label">Nadchodzące wydarzenia</button>
+            <div class="tab-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+    </div>
+  
+  Style guide: 12.0 
+  */
+  .accordion {
+    padding-top: 90px;
+    padding-bottom: 40px;
+    width: 100%;
+  }
+  
+  .tab {
+    margin-bottom: 1px;
+  }
+  
+  .tab input:checked ~ .tab-content {
+    max-height: 100vh;
+  }
+
+  .tab input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  .tab button {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #f7f7f7;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .tab button:hover {
+    background: #ddd;
+  }
+  
+  .tab-label {
+    display: block;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: xx-large;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+  }
+  
+  .tab-label:hover {
+    background: #ddd;
+  }
+  
+  .tab-content {
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    transition: max-height 0.3s ease;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 
+  Klasa .responsive-table
+  
+  Styl główny dla kontenera responsywnej tabeli. Ustawia szerokość na 100% i pozwala na przewijanie poziome, gdy zawartość przekracza szerokość kontenera oraz kolor nagłówka tabeli.
+  
+  Markup:
+  <div class="responsive-table">
+      <h3>Wstęp</h3>
+      <p>
+        Najszybsze okrążenia w historii wyścigów to przyciągające uwagę osiągnięcia, które stanowią świadectwo zarówno
+        umiejętności kierowców, jak i zaawansowania technicznego ich pojazdów. Kiedy kierowca i maszyna pracują w pełnej
+        harmonii, możliwe jest przekroczenie granic tego, co uważano za możliwe na danym torze. Rekordowe czasy okrążeń
+        są
+        odzwierciedleniem intensywnego przygotowania, precyzji i odwagi, jak również postępu w inżynierii i
+        aerodynamice.
+        Te momenty, kiedy wszystko się zgadza, przechodzą do historii sportów motorowych, inspirując zarówno fanów, jak
+        i
+        przyszłe pokolenia kierowców. Dlatego z ogromną ekscytacją przedstawiamy Wam tabelę najlepszych rezultatów,
+        która
+        nie tylko oddaje hołd najszybszym okrążeniom, ale również celebruje ducha rywalizacji i nieustannego dążenia do
+        perfekcji.</p>
+      <h4>Najlepsze Czasy Okrążeń</h4>
+      <table>
+        <thead>
+        <tr>
+          <th>Czas Okrążenia</th>
+          <th>Nazwa Toru</th>
+          <th>Kierowca</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td data-label="Czas Okrążenia">1:10.166</td>
+          <td data-label="Nazwa Toru">Circuit de Monaco</td>
+          <td data-label="Kierowca">Lewis Hamilton</td>
+        </tr>
+        <tr>
+          <td data-label="Czas Okrążenia">1:33.401</td>
+          <td data-label="Nazwa Toru">Silverstone Circuit</td>
+          <td data-label="Kierowca">Mark Webber</td>
+        </tr>
+        <tr>
+          <td data-label="Czas Okrążenia">1:30.983</td>
+          <td data-label="Nazwa Toru">Suzuka International Racing Course</td>
+          <td data-label="Kierowca">Lewis Hamilton</td>
+        </tr>
+        <tr>
+          <td data-label="Czas Okrążenia">1:10.166</td>
+          <td data-label="Nazwa Toru">Circuit de Monaco</td>
+          <td data-label="Kierowca">Lewis Hamilton</td>
+        </tr>
+        <tr>
+          <td data-label="Czas Okrążenia">1:33.401</td>
+          <td data-label="Nazwa Toru">Silverstone Circuit</td>
+          <td data-label="Kierowca">Mark Webber</td>
+        </tr>
+        <tr>
+          <td data-label="Czas Okrążenia">1:30.983</td>
+          <td data-label="Nazwa Toru">Suzuka International Racing Course</td>
+          <td data-label="Kierowca">Lewis Hamilton</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  
+  Style guide: 13.0 
+  */
+  .responsive-table {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .responsive-table h4 {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  
+  .responsive-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .responsive-table th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+
+  .responsive-table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .responsive-table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+  
+  /*
+  Klasy .contact-form-container .contact-form .input-group .checkbox-custom .contact-form input[type=submit]
+  
+  Styl kontenera formularza kontaktowego definiuje szerokość, maksymalną szerokość, automatyczny margines, padding, cień, kolor tła oraz właściwości box-sizing, tworząc solidną bazę dla formularza. Styl dla samego formularza wykorzystuje flexbox z orientacją kolumnową do centrowania zawartości, dopasowuje elementy i ustawia minimalną wysokość na 100vh, z dodatkowym paddingiem górnym i dolnym dla lepszego rozmieszczenia. Styl dla grupy elementów wejściowych określa margines dolny, zapewniając odpowiednie odstępy między grupami. Elementy wejściowe w grupie (input, textarea, select) mają ustawioną szerokość, padding, margines górny, obramowanie, zaokrąglenie rogów oraz rodzaj czcionki, z dodatkowym marginesem dolnym, co przyczynia się do ich czytelności i estetyki. Styl dla niestandardowego checkboxa wykorzystuje flexbox do wyrównania i określa margines dolny. Przycisk typu submit w formularzu ma zdefiniowaną szerokość, padding, kolor tła, kolor tekstu, jest bez obramowania, z zaokrągleniem rogów i ustawionym kursorem wskazującym, oraz marginesem górnym, z efektem :hover, co zwiększa interaktywność i użyteczność formularza.
+   
+  Markup:
+  <div class="contact-form-container">
+    <div class="contact-form">
+      <form action="#" method="get">
+        <h1>Skontaktuj się z nami</h1>
+        <div class="input-group">
+          <label for="imie">Imię i nazwisko</label>
+          <input type="text" name="imie" id="imie" required placeholder="Twoje imię i nazwisko">
+        </div>
+        <div class="input-group">
+          <label for="email">Adres email</label>
+          <input type="email" name="email" id="email" placeholder="Twój adres email" required>
+        </div>
+        <div class="input-group">
+          <label for="data">Podaj datę</label>
+          <input type="date" name="data" id="data">
+        </div>
+        <div class="input-group">
+          <label for="telefon">Numer telefonu</label>
+          <input type="tel" name="telefon" id="telefon" pattern="+48-[0-9]{3}-[0-9]{3}-[0-9]{3}" required
+                 placeholder="+48-XXX-XXX-XXX">
+        </div>
+        <div class="input-group">
+          <label for="kraj">Kraj</label>
+          <select name="kraj" id="kraj">
+            <option value="Polska">Polska</option>
+            <option value="Niemcy">Niemcy</option>
+            <option value="Czechy">Czechy</option>
+            <option value="Słowacja">Słowacja</option>
+            <option value="Ukraina">Ukraina</option>
+            <option value="Białoruś">Białoruś</option>
+            <option value="Litwa">Litwa</option>
+            <option value="Łotwa">Łotwa</option>
+            <option value="Estonia">Estonia</option>
+            <option value="Rosja">Rosja</option>
+          </select>
+        </div>
+        <p>Temat twojej wiadomości</p>
+        <div class="checkbox-custom">
+          <input type="radio" id="noweTresci" name="group" value="noweTresci">
+          <label for="noweTresci">Propozycja nowych treści</label>
+        </div>
+        <div class="checkbox-custom">
+          <input type="radio" id="wspolpraca" name="group" value="wspolpraca">
+          <label for="wspolpraca">Współpraca reklamowa</label>
+        </div>
+        <div class="checkbox-custom">
+          <input type="radio" id="inny" name="group" value="inny">
+          <label for="inny">Inny</label>
+        </div>
+        <div class="input-group">
+          <label for="wiadomosc">Co chciałbyś nam przekazać</label>
+          <textarea name="wiadomosc" id="wiadomosc" placeholder="Twoja wiadomość ..."></textarea>
+        </div>
+        <div class="checkbox-custom">
+          <input type="checkbox" name="akceptacja" id="akceptacja" checked disabled>
+          <label for="akceptacja">Akceptuję regulamin oraz polityke prywatności.</label>
+        </div>
+        <div class="checkbox-custom">
+          <input type="checkbox" name="akceptacja1" id="akceptacja1" checked>
+          <label for="akceptacja1">Chcę otrzymywać dodatkowe informacje o MotoBlogu.</label>
+        </div>
+        <div class="input-group">
+          <button type="submit">Send message</button>
+        </div>
+      </form>
+    </div>
+  </div>
+   
+  Style guide: 14.0 
+  */
+  .contact-form-container {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px;
+  }
+
+  .input-group input,
+  .input-group textarea,
+  .input-group select {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .input-group textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .checkbox-custom {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+  
+  .checkbox-custom input[type="checkbox"], input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .input-group button[type="submit"] {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .input-group button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .heading {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  /* 
+  Klasy .team .team-member .purpose
+  
+  Style dla sekcji zespołu. Używa Flexbox do rozmieszczenia profili członków zespołu. Stosuje 'flex-wrap' do zawijania elementów i centruje je. Dla poszczególnego członka zespołu u stawia bazę i maksymalną szerokość, używa Flexbox z kierunkiem kolumnowym, centruje zawartość i dodaje cień oraz tło. Zawiera także padding i margines. Styluje sekcję celu, opisującą misję lub cele zespołu. Ustawia tło, padding, margines i cień.
+  
+  Markup:
+  <div class="team">
+    <div class="team-member">
+      <img src="img/female-editor.png" alt="Wiktoria Nowak">
+      <h2>Wiktoria Nowak</h2>
+      <p>Wiktoria jest doświadczonym redaktorem Motobloga, znana ze swojej pasji do motoryzacji i szczegółowej wiedzy
+        technicznej. Ma długie, falowane blond włosy i często nosi okulary przeciwsłoneczne w kształcie awiatorów. Jej
+        styl ubierania jest elegancki, ale funkcjonalny, idealny do pracy zarówno w biurze, jak i na torze wyścigowym.
+        Zawsze uśmiechnięta, Wiktoria jest dynamiczna i pełna energii, co widać w jej entuzjastycznym podejściu do
+        każdego tematu motoryzacyjnego.</p>
+    </div>
+    <div class="team-member">
+      <img src="img/men-editor.png" alt="Jakub Kowalski">
+      <h2>Jakub Kowalski</h2>
+      <p>Jakub to redaktor z charakterystyczną, łagodną postawą, znany z umiejętności pisania przystępnych i
+        interesujących artykułów. Ma krótkie, ciemne włosy i często nosi casualowe koszulki z logo motoryzacyjnymi.
+        Jego podejście do pracy jest analityczne, co widać w jego dogłębnych recenzjach i artykułach technicznych.
+        Jakub jest również odpowiedzialny za rozwój cyfrowy Motobloga, co czyni go kluczową postacią w zespole.</p>
+    </div>
+    <div class="team-member">
+      <img src="img/assistant.png" alt="Maciej Nowacki">
+      <h2>Maciej Nowacki</h2>
+      <p>Maciej, asystent Wiktorii i Jakuba, jest wschodzącą gwiazdą w świecie motoryzacji. Jego młody wiek i świeże
+        podejście do tematu przyciągają młodsze pokolenie czytelników. Ma kręcone, rude włosy i nosi modną,
+        młodzieżową odzież. Maciej jest znany z tego, że jest zawsze gotowy do pracy, a jego zapał i entuzjazm są
+        zaraźliwe. Mimo że jest asystentem, jego artykuły i wpisy w mediach społecznościowych zdobywają coraz większą
+        popularność. </p>
+    </div>
+    <div class="purpose">
+      <section>
+        <h2>Nasz Cel</h2>
+        <p>W MotoBlogu, naszą misją jest dostarczanie pasjonatom motorsportu, zarówno weteranom, jak i nowicjuszom,
+          najświeższych i najbardziej rzetelnych informacji z świata wyścigów i motoryzacji. Dążymy do tego, by nasz
+          blog
+          był miejscem, gdzie każdy miłośnik szybkich samochodów i adrenaliny może znaleźć coś dla siebie - od
+          dogłębnych
+          analiz technicznych, przez ekskluzywne wywiady z czołowymi postaciami motorsportu, aż po porady dla tych,
+          którzy
+          dopiero zaczynają swoją przygodę z szybkimi pojazdami. Nasz zespół ekspertów i entuzjastów motoryzacji pracuje
+          nieustannie, by dostarczać treści, które nie tylko informują, ale i inspirują, zachęcając do pogłębiania
+          wiedzy
+          i udziału w tej ekscytującej społeczności. W MotoBlogu wierzymy, że motorsport to nie tylko sport, ale styl
+          życia, a nasz blog jest dedykowany każdemu, kto dzieli tę pasję.</p>
+      </section>
+    </div>
+  </div>
+  
+  Style guide: 15.0 
+  */
+  
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .team-member {
+    flex-basis: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 30px;
+    margin: 1rem;
+  }
+  
+  .team-member img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    object-fit: cover;
+  }
+  
+  
+  .team-member h2 {
+    margin: 0.5rem 0;
+  }
+  
+  .purpose {
+    background: #ddd;
+    padding: 30px;
+    margin: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 
+  KLasa .box
+  
+  Styl dla ogólnego kontenera typu box. Może być użyty w różnych sekcjach. Ustawia tło, padding i cień.
+  
+  Markup:
+  <div class="box">...</div>
+  
+  Style guide: 16.0 
+  */
+  .box {
+    background-color: white;
+    padding: 20px 30px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media only screen and (max-width: 600px) {
+  
+    .footer-style .social-media a {
+      margin-bottom: 5px;
+    }
+  
+    .responsive-table thead tr {
+      display: none;
+    }
+  
+    .responsive-table tbody tr {
+      display: block;
+      margin-bottom: 1em;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    .responsive-table td {
+      display: block;
+      text-align: left;
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+      border-bottom: 1px dotted #ddd;
+    }
+  
+    .responsive-table td:before {
+      content: attr(data-label);
+      display: block;
+      margin-bottom: 0.25em;
+      font-weight: bold;
+    }
+  
+    .navbar-logo img {
+      display: none;
+    }
+  
+    .slide-text {
+      display: none;
+    }
+  
+    .image-row {
+      flex-direction: column;
+    }
+  
+    .image-container {
+      width: 100%;
+    }
+  
+    .image-row-item {
+      width: 100%;
+      height: auto;
+    }
+  
+    .image-row img {
+      max-width: 100%;
+    }
+  
+    .image-text {
+      display: block;
+      opacity: 1;
+    }
+  
+    .color .tab-label {
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .gallery-item-text {
+      font-size: 12px;
+    }
+  
+    .gallery-item img {
+      z-index: auto;
+      position: relative;
+    }
+  
+    .hamburger-menu {
+      display: inline-block;
+      position: fixed;
+      top: 1.2em;
+      left: 1em;
+      z-index: 9999;
+      width: 35px;
+      height: auto;
+      flex-direction: column;
+      justify-content: space-around;
+      cursor: pointer;
+    }
+  
+    .hamburger-menu span {
+      display: block;
+      height: 3px;
+      width: 100%;
+      background: white;
+    }
+  
+    .navigation {
+      z-index: 999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .navigation ul {
+      position: fixed;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 0;
+      bottom: 0;
+      margin: 0;
+      left: -100%;
+      width: 100%;
+      background-color: #333;
+      transition: left 0.3s;
+      z-index: 999;
+    }
+  
+    .navigation ul.active {
+      left: 0;
+    }
+  
+    .navigation ul li {
+      display: none;
+      padding: 10px 0;
+    }
+  
+    .navigation ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 2em;
+    }
+    
+    .navigation .icon {
+      display: inline-block;
+    }
+  
+    main {
+      padding-top: 100px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  
+    .contact-form-container {
+      padding: 20px 0;
+    }
+  
+    .popup-content {
+      margin: 15% 10%;
+      width: 80%;
+    }
+  
+    .popup {
+      padding-top: 80px;
+    }
+  
+  }
+  
+  @media (min-width: 600px) {
+    .team-member {
+      flex-basis: calc(50% - 2rem);
+      max-width: calc(50% - 2rem);
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .team-member {
+      flex-basis: calc(33.333% - 2rem);
+      max-width: calc(33.333% - 2rem);
+    }
+  }
+  
+  /* 
+  Color Background
+  
+  Styl dla elementów z klasą .color. Ustawia jednolite tło o kolorze #f7f7f7. Może być stosowany do różnych elementów wymagających tego tła.
+  
+  Markup:
+  <div class="color">...</div>
+  
+  Style guide: Kolor
+  */
+  
+  .color {
+    background-color: #f7f7f7;
+  }
+  
+  /* 
+  Klasa .form-box
+  
+  Styl dla kontenera formularza (form-box). Ustawia margines, tło, wyświetlanie Flexbox, kierunek kolumnowy, wyrównanie i centrowanie zawartości.
+  
+  Markup:
+  <div class="form-box">...</div>
+  
+  Style guide: 17.0 
+  */
+  
+  .form-box {
+    margin: 0;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* 
+  Klasy .form-container .form-container h1 h2 .form-container p
+  
+  Styl dla kontenera formularza. Ustawia szerokość, maksymalną szerokość, cień, padding, tło, zaokrąglenie rogów, margines, wyświetlanie Flexbox, kierunek kolumnowy i odstęp między elementami.
+   
+  Markup:
+  <div class="form-container">
+    <h2>Quiz Motoryzacyjny</h2>
+    <p>przykładowy tekst</p>
+  </div>
+   
+  Style guide: 18.0
+  */
+  .form-container {
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    background-color: white;
+    border-radius: 4px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form-container h1, h2 {
+    padding-left: 5px;
+    font-size: 28px;
+  }
+  
+  .form-container p {
+    padding-left: 5px;
+    font-size: 20px;
+  }
+  
+  /* 
+  Klasa .buttons-group
+  
+  Styl dla grupy przycisków. Ustawia wyświetlanie Flexbox, szerokość, odstęp między przyciskami oraz padding.
+  
+  Markup:
+  <div class="button-group">
+    <button id="restart-quiz-btn" class="quiz-btn">Zagraj ponownie</button>
+    <button id="back-to-start-btn" class="quiz-btn">Powrót do startu</button>
+  </div>
+  
+  Style guide: 19.0
+  */
+  .buttons-group {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* 
+  Klasa .corrrect-display
+  
+  Styl dla poprawnie wyświetlanego elementu. Ustawia padding, font-weight oraz font-size.
+  
+  Markup:
+  <div class="correct-display">Przykładowy tekst</div>
+  
+  Style guide: 20.0
+  */
+  .correct-display {
+    padding: 5px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-size: 28px;
+  }
+  
+  /* 
+  Klasa .quiz-btn
+  
+  Styl dla przycisków w quizie. Określa marginesy, padding, kolor tła, kolor tekstu, brak obramowania, zaokrąglenie rogu, kursor wskaźnika, przejście koloru tła, wyśrodkowanie oraz rodzaj czcionki. Przyciski są zaprojektowane do użycia w quizie, zwiększając interaktywność użytkownika.
+  
+  Markup:
+  <button class="quiz-btn">Potwierdź odpowiedź</button>
+  
+  Style guide: 21.0
+  */
+  .quiz-btn, #confirm-answer-btn, #next-question-btn {
+    margin-left: 5px;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center;
+    font-family: 'Poppins', sans-serif;
+    width: 200px;
+  }
+  
+  /* 
+  Klasa .answer-label
+  
+  Styl dla etykiet odpowiedzi. Określa margines dolny i rozmiar czcionki. Etykiety są zaprojektowane do wyświetlania opcji odpowiedzi w quizie, ułatwiając użytkownikowi czytelność.
+  
+  Markup:
+  <label class="answer-label">Opcja odpowiedzi</label>
+  
+  Style guide: 22.0
+  */
+  .answer-label {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }

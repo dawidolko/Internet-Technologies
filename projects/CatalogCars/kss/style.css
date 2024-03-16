@@ -1,0 +1,644 @@
+/*
+    Stylizacja globalna
+
+    Stylizoowanie globalne, w tym czcionka, tło jako obraz, marginesy
+
+    Markup:
+    <html>
+   <body></body>
+   </html>
+
+    Styleguide 1.0
+*/    
+
+body{
+    font-family: Arial, sans-serif;
+    background-image: url("zdjecia/background.jpg");
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 
+    Stylizacja nagłówka
+   
+    Stylizowanie nagłówka strony, w tym tła, koloru tekstu, merginesu wewnętrznego.
+   
+    Markup:
+   <header></header>
+   
+   Styleguide 2.0
+*/
+header{
+    background-color: #444;
+    color: white;
+    padding-top: 10px;
+}
+
+/* 
+    Stylizacja panelu nawigacyjnego listy
+   
+    Stylizowanie panelu nawigacyjnego listy, w tym tła, styl listy,układu elementów, marginesy.
+   
+    Markup:
+   <nav class="nav">
+    <ul>
+	<li><a href="#type_cars">Rodzaje samochodów</a></li>
+	<li><a href="#about_us">O nas</a></li>
+    <li><a href="#contact_form">Kontakt</a></li>
+	</ul>
+   </nav>
+   
+   Styleguide 3.0
+*/
+/* 
+    Stylizacja panelu nawigacyjnego elementu z listy
+   
+    Stylizowanie panelu nawigacyjnego elementu z listy, w tym pozycjonowania, ułożenie flex, centrowanie, wymiary.
+   
+    Markup:
+   <nav class="nav">
+    <ul>
+        <li><a href="#type_cars">Rodzaje samochodów</a></li>
+        <li><a href="#about_us">O nas</a></li>
+        <li><a href="#contact_form">Kontakt</a></li>
+    </ul>
+   </nav>
+   
+   Styleguide 3.1
+*/
+/* 
+    Stylizacja panelu nawigacyjnego listy w liście
+   
+    Stylizowanie panelu nawigacyjnego listy w liście, w tym wyświetlania, pozycjonowania, wyśrodkowania tekstu.
+   
+    Markup:
+   <nav class="nav">
+	   <ul>
+			<li><a href="#type_cars">Rodzaje samochodów</a>
+			<ul>
+				<li><a href="#bmw">BMW</a></li>
+				<li><a href="#audi">Audi</a></li>
+				<li><a href="#mercedes">Mercedes</a></li>
+			</ul>
+			</li>
+			<li><a href="#about_us">O nas</a></li>
+			<li><a href="#contact_form">Kontakt</a></li>
+	   </ul>
+   </nav>
+   
+   Styleguide 3.2
+*/
+/* 
+    Stylizacja panelu nawigacyjnego listy w liście
+   
+    Stylizowanie panelu nawigacyjnego listy w liście po najechaniu, w tym pozycjonowaniu w pionie, szerokosc, i zmiana tła.
+   
+    Markup:
+   <nav class="nav">
+	   <ul>
+			<li><a href="#type_cars">Rodzaje samochodów</a>
+			<ul>
+				<li><a href="#bmw">BMW</a></li>
+				<li><a href="#audi">Audi</a></li>
+				<li><a href="#mercedes">Mercedes</a></li>
+			</ul>
+			</li>
+			<li><a href="#about_us">O nas</a></li>
+			<li><a href="#contact_form">Kontakt</a></li>
+	   </ul>
+   </nav>
+   
+   Styleguide 3.3
+*/
+/* 
+    Stylizacja panelu nawigacyjnego listy z listy w liście
+   
+    Stylizowanie panelu nawigacyjnego listy w liście po najechaniu, w tym pozycjonowaniu szerokości, koloru tła.
+   
+    Markup:
+   <nav class="nav">
+	   <ul>
+			<li><a href="#type_cars">Rodzaje samochodów</a>
+			<ul>
+				<li><a href="#bmw">BMW</a>
+					<ul>
+						<li><a href="#seria3">Seria 3</a></li>
+						<li><a href="#seria4">Seria 4</a></li>
+					</ul>
+				</li>
+				<li><a href="#audi">Audi</a>
+					<ul>
+						<li><a href="#a3">A3</a></li>
+						<li><a href="#a5">A5</a></li>
+					</ul>
+				</li>
+				<li><a href="#mercedes">Mercedes</a>
+					<ul>
+						<li><a href="#klasaC">Klasa C</a></li>
+						<li><a href="#klasaE">Klasa E</a></li>
+					</ul>
+				</li>
+			</ul>
+			</li>
+			<li><a href="#about_us">O nas</a></li>
+			<li><a href="#contact_form">Kontakt</a></li>
+	   </ul>
+   </nav>
+   
+   Styleguide 3.3
+*/
+.nav ul {
+    background-color: #333;
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+}
+
+.nav ul ul {
+    display: none;
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    left: 0;
+}
+
+.nav ul li:hover > ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    background-color: #222;
+}
+
+.nav ul li ul li:hover > ul {
+    display: block;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 50%;
+    background-color: #111;
+}
+
+/* 
+    Stylizacja hiperłącza
+   
+    Stylizowanie hiperłącza, w tym kolor tekstu, wyświetlanie blokowe, brak dekoracji, grubość czcionki.
+   
+    Markup:
+   <a href="#type_cars">Rodzaje samochodów</a>
+   
+   Styleguide 4.0
+*/
+/* 
+    Stylizacja hiperłącza
+   
+    Stylizowanie hiperłącza w trakcie naciśnięcia, w tym kolor tekstu.
+   
+    Markup:
+   <a href="#type_cars">Rodzaje samochodów</a>
+   
+   Styleguide 4.1
+*/
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+a:active{
+    color: darkgray;
+}
+
+/* 
+    Stylizacja nagłówków oraz akapitu
+   
+    Stylizowanie nagłówków oraz akapitu, w tym wyśrodkowanie tekstu.
+   
+    Markup:
+   <h1>Rodzaje samochodów</h1>
+   <h2>BMW</h2>
+   <p>Seria 3</p>
+   
+   Styleguide 5.0
+*/
+
+h1, h2, p{
+    text-align: center;
+}
+
+
+/* 
+    Stylizacja panelu marek samochodów
+   
+    Stylizowanie panelu marek samochodów, w tym pozycjonowanie relatywne, wyświetlanie w lini, przepełnienie miejsca, margines.
+   
+    Markup:
+   <section id="type_cars" class="type_cars">
+    <div id="bmw">
+        <div id="seria3"><p>Seria 3</p></div>
+        <div id="seria4"><p>Seria 4</p></div>
+    </div>
+    <div id="audi">
+        <div id="a3"><p>A3</p></div>
+        <div id="a5"><p>A5</p></div>
+    </div>
+    <div id="mercedes">
+        <div id="klasaC"><p>Klasa C</p></div>
+        <div id="klasaE"><p>Klasa E</p></div>
+    </div>
+   </section>
+   
+   Styleguide 6.0
+*/
+/* 
+    Stylizacja panelu marek samochodów zdjęcia
+   
+    Stylizowanie panelu marek samochodów zdjęcia po najechaniu myszą, w tym przyciemnienie zdjęcia.
+   
+    Markup:
+   <section id="type_cars" class="type_cars">
+    <div id="bmw">
+        <div id="seria3">
+            <a href="bmw_seria3.html"><img src="zdjecia/seria3.jpg" alt="seria3"/></a>
+        </div>
+        <div id="seria4">
+            <a href="bmw_seria4.html"><img src="zdjecia/seria4.jpg" alt="seria4"/></a>
+        </div>
+    </div>
+    <div id="audi">
+        <div id="a3">
+            <a href="audi_a3.html"><img src="zdjecia/a3.jpg" alt="a3"/></a>
+        </div>
+        <div id="a5">
+            <a href="audi_a5.html"><img src="zdjecia/a5.jpg" alt="a5"/></a>
+        </div>
+    </div>
+    <div id="mercedes">
+        <div id="klasaC">
+            <a href="mercedes_klasaC.html"><img src="zdjecia/c200.jpg" alt="c200"/></a>
+        </div>
+        <div id="klasaE">
+            <a href="mercedes_klasaE.html"><img src="zdjecia/w213.jpg" alt="w213"/></a>
+        </div>
+    </div>
+   </section>
+   
+   Styleguide 6.1
+*/
+.type_cars div div{
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin: 10px;
+}
+
+.type_cars div div:hover img {
+    filter: brightness(60%);
+}
+
+
+/* 
+    Stylizacja panelu model
+   
+    Stylizowanie panelu model w podstronach, wyświetlanie flex, zawijanie wierszy, wyśrodkowanie tekstu, maksymalna szerokość.
+   
+    Markup:
+   <section class="model">
+        <div class="part">
+            <h2>Audi A3</h2>
+            <img src="zdjecia/a3.jpg" alt="a3"/>
+        </div>
+        
+        <div class="part"><h2>Informacje o samochodzie</h2>
+            <table>
+                <tr>
+                    <th>Model:</th>
+                    <td>Audi A3</td>
+                </tr>
+                <tr>
+                    <th>Pojemność silnika [litry]:</th>
+                    <td>2.0</td>
+                </tr>
+                <tr>
+                    <th>Moc silnika [KM]:</th>
+                    <td>140</td>
+                </tr>
+                <tr>
+                    <th>Typ skrzyni biegów:</th>
+                    <td>Manualna</td>
+                </tr>
+                <tr>
+                    <th>Liczba biegów:</th>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <th>Napędzane koła:</th>
+                    <td>Przód</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+   
+   Styleguide 7.0
+*/
+/* 
+    Stylizacja panelu part
+   
+    Stylizowanie panelu part w sekcji model, wielkości panelu, dla tablicy i jej elementów obramowanie, marginesy, tekst do lewej, dla samej tabeli ustala wielkości.
+   
+    Markup:
+	<div class="part">
+		<h2>Audi A3</h2>
+		<img src="zdjecia/a3.jpg" alt="a3"/>
+	</div>
+    <div class="part"><h2>Informacje o samochodzie</h2>
+		<table>
+			<tr>
+				<th>Model:</th>
+				<td>Audi A3</td>
+			</tr>
+			<tr>
+				<th>Pojemność silnika [litry]:</th>
+				<td>2.0</td>
+			</tr>
+			<tr>
+				<th>Moc silnika [KM]:</th>
+				<td>140</td>
+			</tr>
+			<tr>
+				<th>Typ skrzyni biegów:</th>
+				<td>Manualna</td>
+			</tr>
+			<tr>
+				<th>Liczba biegów:</th>
+				<td>6</td>
+			</tr>
+			<tr>
+				<th>Napędzane koła:</th>
+				<td>Przód</td>
+			</tr>
+		</table>
+	</div>
+   
+   Styleguide 7.1
+*/
+.model{
+    display: flex;
+    flex-direction: wrap;
+    text-align: center;
+    max-width: 100%;
+}
+
+.part{
+    width: 100%;
+    height: 100%;
+    table, td, th{
+        text-align: left;
+        border: 1px solid black;
+        border-collapse: collapse;
+        margin-left: 10%;
+        padding: 20px;
+    }
+
+    table{
+        width: 70%;
+        height: 400px;
+    }
+}
+
+/* 
+    Stylizacja zdjęcia
+   
+    Stylizowanie zdjęcia, w tym wielkość zdjęcia.
+   
+    Markup:
+   <img src="zdjecia/car.jpg"/>
+   
+   Styleguide 8.0
+*/
+img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/* 
+    Stylizacja panelu zdjęcia głównego
+   
+    Stylizowanie panelu zdjęcia głównego, ułożenie flex, ustawienie na środku, wysokość, margines wewnętrzny górny.
+   
+    Markup:
+   <div id="car">
+        <img src="zdjecia/car.jpg"/>
+    </div>
+   
+   Styleguide 9.0
+*/
+#car{
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    height: 400px;
+}
+
+/* 
+    Stylizacja panelu stopki
+   
+    Stylizowanie panelu stopki, kolor tła, kolor tekstu, margines zewnętrzny górny, dla nagłówka drugiego stopnia w stopce margines wewnętrzny górny.
+   
+    Markup:
+   <footer>
+		<h2>Kontakt</h2>
+   </footer>
+   
+   Styleguide 10.0
+*/
+footer{
+    
+    background-color: #333;
+    color: white;
+    margin-top: 0px;
+    h2{
+        padding-top: 20px;
+    }
+}
+
+/* 
+    Stylizacja elementów formularza
+   
+    Stylizowanie elementów formularza(text,email,textarea,label), margines zewnętrzny dolny i lewy, szerokość.
+   
+    Markup:
+   <label for="email">Email:</label>
+   <input type="email" id="email" name="email" required><br>
+   <label for="subject">Temat:</label>
+   <input type="text" id="subject" name="subject" required><br>
+   <label for="message">Wiadomość:</label>
+   <textarea id="message" name="message" rows="4" required></textarea>
+   
+   Styleguide 11.0
+*/
+/* 
+    Stylizacja elementów formularza
+   
+    Stylizowanie elementów formularza(submit), margines zewnętrzny dolny i lewy, margines wewnętrzny, kolor tła, zaokrąglone krawędzie.
+   
+    Markup:
+   <input type="submit" value="Wyślij">
+   
+   Styleguide 11.1
+*/
+/* 
+    Stylizacja elementów formularza
+   
+    Stylizowanie elementów input, textarea po zaznaczeniu, kolor tła.
+   
+    Markup:
+    <input type="email" id="email" name="email" required><br>
+    <input type="text" id="subject" name="subject" required><br>
+    <textarea id="message" name="message" rows="4" required></textarea><br>
+    <input type="submit" value="Wyślij">
+   
+   Styleguide 11.2
+*/
+input[type=text], input[type=email], textarea, label{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 300px;
+}
+
+input[type=submit]{
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background-color: lightgray;
+    border-radius: 45%;
+}
+
+input:focus, textarea:focus{
+    background-color: lightgray;
+}
+
+/* 
+    Stylizacja dla ekranów dla ekranów o szerokości do 600px
+   
+    Powoduje zmiane wyświetlania elementu nawigacji w kolumnie, model też w kolumnie, dla part szerokość i zerowanie marginesu lewego, zmiana długości pól w formularzu, zmiana wielkości panelu głównego ze zdjęciem 
+   
+    Markup:
+    <nav class="nav">
+	   <ul>
+			<li><a href="#type_cars">Rodzaje samochodów</a>
+			<ul>
+				<li><a href="#bmw">BMW</a>
+					<ul>
+						<li><a href="#seria3">Seria 3</a></li>
+						<li><a href="#seria4">Seria 4</a></li>
+					</ul>
+				</li>
+				<li><a href="#audi">Audi</a>
+					<ul>
+						<li><a href="#a3">A3</a></li>
+						<li><a href="#a5">A5</a></li>
+					</ul>
+				</li>
+				<li><a href="#mercedes">Mercedes</a>
+					<ul>
+						<li><a href="#klasaC">Klasa C</a></li>
+						<li><a href="#klasaE">Klasa E</a></li>
+					</ul>
+				</li>
+			</ul>
+			</li>
+			<li><a href="#about_us">O nas</a></li>
+			<li><a href="#contact_form">Kontakt</a></li>
+	   </ul>
+   </nav>
+    <section class="model">
+        <div class="part">
+            <h2>Audi A3</h2>
+        </div>
+        
+        <div class="part"><h2>Informacje o samochodzie</h2>
+        </div>
+    </section>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+    <label for="subject">Temat:</label>
+    <input type="text" id="subject" name="subject" required><br>
+    <label for="message">Wiadomość:</label>
+    <textarea id="message" name="message" rows="4" required></textarea><br>
+    <div id="car">
+        <img src="zdjecia/car.jpg"/>
+    </div>
+   
+   Styleguide 12.0
+*/
+/* 
+    Stylizacja dla ekranów dla ekranów o szerokości do 768px
+   
+    Powoduje zmiane wysokości panelu zdjęcia głównego.
+   
+    Markup:
+    <div id="car">
+        <img src="zdjecia/car.jpg"/>
+    </div>
+   
+   Styleguide 12.1
+*/
+@media only screen and (max-width: 600px) {
+
+    .nav ul {
+        flex-direction: column;
+    }
+
+    .nav ul li ul {
+        position: static;
+        display: none;
+    }
+
+    .nav ul li:hover > ul {
+        display: none;
+    }
+
+    .nav ul li ul li:hover > ul {
+        display: none;
+    }
+
+    .model {
+        flex-direction: column;
+    }
+
+    .part {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    input[type=text], input[type=email], textarea, label {
+        width: 90%;
+    }
+
+    #car {
+        padding-top: 2%;
+        height: auto;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    #car {
+        height: auto;
+    }
+}

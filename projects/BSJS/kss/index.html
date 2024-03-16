@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleships JS - Menu</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <script src="menuGameSettings.js"></script>
+    <div class="container">
+        <div class="title-box">
+            <h1>BATTLESHIPS - JS PROJECT</h1>
+            <h2>Technologie internetowe</h2>
+        </div>
+        <div class="form-container">
+            <form id="gameForm">
+                <label for="fname">Imię gracza:</label><br>
+                <input type="text" id="playerName" name="playerName"><br>
+                <div>
+                    <label for="theme">Wybierz motyw kolorystyczny: </label>
+                    <div class="black theme">
+                        <input type="radio" id="themeChoice" name="themeChoice" value="black" checked>
+                        <div class="demo"><p class="text">Black theme: czarne tło | biała czcionka</p></div>
+                    </div>
+                    <div class="blue theme">
+                        <input type="radio" id="themeChoice" name="themeChoice" value="blue">
+                        <div class="demo"><p class="text">Blue theme: niebieskie tło | biała czcionka</p></div>
+                    </div>
+                    <div class="white theme">
+                        <input type="radio" id="themeChoice" name="themeChoice" value="white">
+                        <div class="demo"><p class="text">Black theme: białe tło | czarna czcionka</p></div>
+                    </div>
+                </div>
+                <input class="playButton" type="button" value="Graj" onclick="startGame()">
+              </form>
+        </div>
+    </div>
+</body>
+</html>

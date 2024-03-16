@@ -1,0 +1,326 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0e2d3;
+}
+
+nav {
+    background: #d2a679;
+}
+
+.burger-menu {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.zdjecie {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.zdjecie img {
+    width: 200px;
+    height: auto;
+}
+
+.linki {
+    display: flex;
+    flex-grow: 3;
+    background-color: #bd946c;
+}
+
+.linki a {
+    flex: 1;
+    padding: 1.5em;
+    text-align: center;
+    border-left: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+}
+
+/*
+    O nas - sekcja przezentacji firmy
+
+    Poniżej jest przedstawiona zawartość podstrony "o nas" piekarnii
+
+    **.container**: Kontener o tej klasie ma szerokość 80% ekranu, jest wyśrodkowany, ma pionowe marginesy ustawione na 20px i padding na 20px. Minimalna wysokośc kontenera to 70vh.
+    
+    **.slider**: Kontener o tej klasie jest wyśrodkowany i ma położenie relatywne względem nadrzędnego kontenera. Ma szerokość 100% dla maksymlanej szerokości 600px.
+
+    **.slide**: Zdjęcie o tej klasie ma szerokość i wysokość na 100%. Ma początkowo ustawione opacity na 0 i ma animację zmieniającą opacity.
+
+    Markup:
+    <main>
+        <div class="container">
+            <section>
+                <h2>Nasza historia i działalność.</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat aspernatur repellendus recusandae
+                    doloremque sed deserunt vitae velit veniam, accusamus delectus aut officiis id fuga, minima optio
+                    voluptate quidem adipisci! Blanditiis mollitia distinctio cum qui perspiciatis reiciendis quis, ad
+                    aperiam molestias dicta incidunt repudiandae enim architecto natus facere asperiores accusamus
+                    recusandae?</p>
+            </section>
+            <section>
+                <p>Nullam accumsan purus sed augue interdum molestie. Pellentesque a volutpat elit. Phasellus facilisis,
+                    metus ut accumsan euismod, enim velit interdum enim, vel posuere nibh sapien sed lacus. Nulla
+                    tincidunt
+                    hendrerit ligula, vel cursus purus tristique et. Aliquam euismod condimentum lectus a vehicula.
+                    Proin
+                    ornare nec odio sed pharetra. Suspendisse semper ut urna ac sodales. Sed tristique sollicitudin
+                    cursus.
+                </p>
+            </section>
+            <section>
+                <p>
+                    Pellentesque turpis purus, dapibus eget euismod nec, imperdiet ac dui. Etiam vel magna vehicula,
+                    fringilla dui vel, feugiat tortor. Duis venenatis massa diam, eu pharetra purus tempus eu. Aenean
+                    consectetur nulla leo, quis blandit est efficitur et. Ut eu tincidunt augue. Integer ut nunc vel
+                    arcu
+                    accumsan luctus ut ac mauris. Curabitur non imperdiet metus. Cras viverra iaculis massa id bibendum.
+                    Quisque sit amet dignissim sapien, sed tempus ante. Aliquam auctor sit amet massa sit amet lacinia.
+                    Vestibulum hendrerit, diam non molestie blandit, massa elit vehicula neque, sed tincidunt libero
+                    velit
+                    et turpis. Sed luctus nec est eu tempor.
+                </p>
+            </section>
+            <section>
+            <div class="slider">
+                <div class="slide" id="slide1">
+                    <img src="img/o_nas/slide1.jpg" alt="Chleb 1">
+                </div>
+                <div class="slide" id="slide2">
+                    <img src="img/o_nas/slide2.jpg" alt="Chleb 2">
+                </div>
+                <div class="slide" id="slide3">
+                    <img src="img/o_nas/slide3.jpg" alt="Chleb 3">
+                </div>
+                <div class="slide" id="slide4">
+                    <img src="img/o_nas/slide4.jpg" alt="Chleb 4">
+                </div>
+            </div>
+            </section>
+            <section>
+                <h2>Opinie klientów</h2>
+            </section>
+        </div>
+    </main>
+
+    Style guide: 2.0
+*/
+
+.linki a:hover {
+    background-color: #b08a61;
+}
+
+.linki a:first-child {
+    border-left: none;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff7e6;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    min-height: 70vh;
+}
+
+.container p {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #8f5c30;
+    color: #fff;
+    padding: 1em 0;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+}
+
+.footer-info>p,
+.socials {
+    margin: 0;
+}
+
+.footer-info>.footer-right>p>a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footer-info>.footer-right>p>a:hover {
+    color: #d2a679;
+}
+
+.socials img {
+    padding: 0 0.5em;
+    vertical-align: middle;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 712px) {
+
+    .zdjecie {
+        order: -1;
+    }
+
+    .menu,
+    .linki {
+        flex-direction: column;
+    }
+
+    .linki {
+        display: none;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .linki a {
+        border-left: none;
+        border-top: 1px solid #fff;
+        padding: 1em;
+        text-align: center;
+    }
+
+    .linki.active {
+        display: flex;
+    }
+
+    .linki a:first-child {
+        border-top: none;
+    }
+
+    .linki.active a {
+        border-left: none;
+    }
+
+    .container img {
+        width: 100%;
+        display: block;
+        margin: 1em auto;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        align-items: center;
+        margin: 0.5em 0;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+}
+
+.container img {
+    margin: 0 0 1em 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.slider {
+    margin: auto;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 50vh;
+    margin-top: 5em;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+@keyframes slideAnimation {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    5%,
+    25% {
+        opacity: 1;
+    }
+
+    30%,
+    95% {
+        opacity: 0;
+    }
+}
+
+#slide1 {
+    animation: slideAnimation 20s infinite;
+}
+
+#slide2 {
+    animation: slideAnimation 20s infinite;
+    animation-delay: 5s;
+}
+
+#slide3 {
+    animation: slideAnimation 20s infinite;
+    animation-delay: 10s;
+}
+
+#slide4 {
+    animation: slideAnimation 20s infinite;
+    animation-delay: 15s;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .slider {
+        max-width: 400px;
+        height: 300px;
+    }
+
+    .slide img {
+        width: 100%;
+        height: auto;
+    }
+}

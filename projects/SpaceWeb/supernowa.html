@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Nadchodzące wydarzenia astronomiczne</title>
+	<meta name="description" content="Strona internetowa poświęcona ukazaniu przyszłych wydarzeń astronomicznych" />
+	<meta name="keywords" content="zaćmienie Słońca, pełnia Księżyca, misje kosmiczne, komety, supernowa"  />
+
+	<link rel="shortcut icon" href="telescope.png" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="styleMobilne.css" type="text/css" />
+	<style>
+		a {
+			color: #ffffff
+		}
+	</style>
+
+
+</head>
+
+<body>
+
+	<div id="container">
+
+
+		<div id="menu">
+			
+			<ol>
+				<li><a href="index.html" style="text-decoration: none" >Strona główna</a></li>
+				<li><a href="2024.html" style="text-decoration: none" >2024</a>
+						<ul>
+							<li><a href="pełniaKsiezyca.html" style="text-decoration: none" >Pełnia Księżyca</a></li>
+							<li><a href="kometa.html" style="text-decoration: none" >Kometa 62P/Tsuchinshan</a></li>
+							<li><a href="astronomicznaWiosna.html" style="text-decoration: none" >Astronomiczna wiosna</a></li>
+							<li><a href="lirydy.html" style="text-decoration: none" >Rój Lirydów</a></li>
+							<li><a href="astronomiczneLato.html" style="text-decoration: none" >Astronomiczne Lato</a></li>
+                            <li><a href="parseidy.html" style="text-decoration: none" >Maksimum roju Parseidów</a></li>
+                            <li><a href="astronomicznaJesien.html" style="text-decoration: none" >Astronomiczna Jesień</a></li>
+                            <li><a href="jowiszGwiazdozbiorByka.html" style="text-decoration: none" >Jowisz i gwiazdozbiór Byka</a></li>
+                            <li><a href="astronomicznaZima.html" style="text-decoration: none" >Astronomiczna Zima</a></li>
+						</ul>
+						</li>
+				<li><a href="przyszłeLata.html" style="text-decoration: none" >Przyszłe lata</a>
+						<ul>
+							<li><a href="zacmienieSlonca.html" style="text-decoration: none"  >Zaćmienie Słońca</a></li>
+							<li><a href="misjeNaKsiezyc.html" style="text-decoration: none" >Misje na Księżyc</a></li>
+							<li><a href="apophis.html" style="text-decoration: none" >Apophis</a></li>
+							<li><a href="supernowa.html" style="text-decoration: none" >Supernowa Betelgezy</a></li>
+						</ul>
+						</li>
+				<li><a href="zdjDnia.html" style="text-decoration: none" >Zdjęcie dnia</a></li>
+				<li><a href="kontakt.html" style="text-decoration: none" >Kontakt</a></li>
+				
+			
+			</ol>
+		
+				
+		</div>
+
+
+
+		<div id="content">
+			<span class="bigtitle">Supernowa Betelgezy</span>
+
+			<div class="dottedline"></div>
+
+			<div>
+
+				Nieco ponad 650 lat świetlnych od Ziemi umiera Betelgeza. <br>
+				Najświeższe prognozy dają słynnemu nadolbrzymowi zaledwie kilka dekad, <br>
+				zanim zapadnie się w ostatnim błysku chwały.
+
+				<br> <br>
+
+				Betelgeza jest jedną z najjaśniejszych gwiazd widocznych na naszym niebie <br>
+				i zdecydowanie jedną z najbardziej interesujących.
+				Można ją dostrzec w „prawym ramieniu” postaci Oriona, gdzie tworzy wierzchołek tzw. trójkąta zimowego,
+				<br>
+				złożonego z jasnych gwiazd dobrze widocznych zimą z Polski.
+
+				<br><br>
+
+				Badacze sugerują, że do ostatecznego rozbłysku może dojść w drugiej połowie naszego wieku.
+
+
+				<br><br>
+
+				<div style="max-width:900px">
+
+					<img class="zdjęciaDoPrzejscia" src="images/supernowa1.png" alt="zdjęciaDoPrzejscia 1" style="width:100%">
+					<img class="zdjęciaDoPrzejscia" src="images/supernowa2.png" alt="zdjęciaDoPrzejscia 2" style="width:100%">
+					<img class="zdjęciaDoPrzejscia" src="images/supernowa3.png" alt="zdjęciaDoPrzejscia 3" style="width:100%">
+
+				</div>
+
+				<script>
+					var idneks = 0;
+					przejscie();
+
+					function przejscie() {
+						var i;
+						var x = document.getElementsByClassName("zdjęciaDoPrzejscia");
+						for (i = 0; i < x.length; i++) {
+							x[i].style.display = "none";
+						}
+						idneks++;
+						if (idneks > x.length) { idneks = 1 }
+						x[idneks - 1].style.display = "block";
+						setTimeout(przejscie, 3500);
+					}
+				</script>
+
+			</div>
+		</div>
+
+		<div id="footer">
+			&copy; Poznaj przyszłość kosmosu 2024
+		</div>
+
+	</div>
+
+
+
+</body>
+
+</html>
+
+
+
+<!--  Odnośniki skąd były brane informacje  -->
+
+
+<!--    https://www.national-geographic.pl/artykul/jeszcze-w-tym-wieku-betelgeza-zakonczy-zycie-to-bedzie-potezna-supernowa-230703020438   -->
+
+
+
+
+
+
+<!-- Odnośniki do zdjęć -->
+
+<!--<a href="https://www.flaticon.com/free-icons/astronomy" title="astronomy icons">Astronomy icons created by Freepik - Flaticon</a>-->
+
+<!--  zdjęcie deszu Lirydów wygenerowane w chacie gpt przez DALLE E   -->

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Strona internetowa piekarni - zapraszamy!">
+    <meta name="keywords" content="piekarnia, pieczywo, chleby, bułki, rogaliki, bagietki">
+    <title>Piekarnia - zamówienia</title>
+    <link rel="stylesheet" href="css/wspolne.css">
+    <link rel="stylesheet" href="css/dla_telefonow.css">
+    <link rel="stylesheet" href="css/dla_zamowienia.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/bread_web_icon.png">
+    <script src="js/burger.js"></script>
+    <script src="js/do_zamowienia.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="menu">
+            <div class="zdjecie">
+                <img src="img/placeholder.png" alt="logo">
+            </div>
+            <button class="burger-menu">&#9776;</button>
+            <div class="linki">
+                <a href="index.html">Strona Główna</a>
+                <a href="o_nas.html">O nas</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="zamowienie.html">Zamówienia</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <section>
+                <h2>Składanie zamówienia</h2>
+                <form id="formularz-zamowienia">
+                    <label for="imie">Imię*:</label>
+                    <input type="text" id="imie" name="imie" required autofocus pattern="[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]+"
+                        title="Wpisz poprawne imię.">
+
+                    <label for="nazwisko">Nazwisko*:</label>
+                    <input type="text" id="nazwisko" name="nazwisko" required pattern="[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]+"
+                        title="Wpisz poprawne nazwisko.">
+
+                    <label for="email">Adres e-mail*:</label>
+                    <input type="email" id="email" name="email" required title="Wpisz adres e-mail.">
+
+                    <label for="telefon">Nr telefonu*:</label>
+                    <input type="tel" id="telefon" name="telefon" required title="Wpisz nr telefonu.">
+
+                    <label for="miasto">Miasto*:</label>
+                    <input type="text" id="miasto" name="miasto" required pattern="[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]+"
+                        title="Wpisz poprawne miasto.">
+
+                    <label for="kod-pocztowy">Kod pocztowy*:</label>
+                    <input type="text" id="kod-pocztowy" name="kod-pocztowy" required pattern="\d{2}-\d{3}"
+                        title="Wpisz poprawny kod pocztowy (np. 00-000).">
+
+                    <label for="ulica">Ulica*:</label>
+                    <input type="text" id="ulica" name="ulica" required pattern="[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]+"
+                        title="Wpisz poprawną ulicę.">
+
+                    <label for="nr-budynku">Numer budynku/mieszkania*:</label>
+                    <input type="text" id="nr-budynku" name="nr-budynku" required pattern="\d+[\/]?\d*"
+                        title="Wpisz poprawny nr budynku lub mieszkania mieszkania (np. 10/20).">
+
+                    <label for="pieczywo">Wybierz pieczywo:</label>
+                    <select id="pieczywo" name="pieczywo">
+                        <optgroup label="Chleby">
+                            <option value="chleb1">chleb1</option>
+                            <option value="chleb2">chleb2</option>
+                            <option value="chleb3">chleb3</option>
+                        </optgroup>
+                        <optgroup label="Bułki">
+                            <option value="bułka1">bułka1</option>
+                            <option value="bułka2">bułka2</option>
+                            <option value="bułka3">bułka3</option>
+                        </optgroup>
+                        <optgroup label="Rogaliki">
+                            <option value="rogalik1">rogalik1</option>
+                            <option value="rogalik2">rogalik2</option>
+                            <option value="rogalik3">rogalik3</option>
+                        </optgroup>
+                        <optgroup label="Bagietki">
+                            <option value="bagietka1">bagietka1</option>
+                            <option value="bagietka1">bagietka2</option>
+                            <option value="bagietka1">bagietka3</option>
+                        </optgroup>
+                    </select>
+
+                    <label for="ilosc">Ilość*:</label>
+                    <input type="number" id="ilosc" name="ilosc" min="1" max="100" required
+                        title="Wpisz ilość zamówień.">
+
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" id="maka-zytnia" name="maka" value="maka-zytnia" checked>
+                            Mąka żytnia
+                        </label>
+                        <label>
+                            <input type="radio" id="maka-pszenna" name="maka" value="maka-pszenna">
+                            Mąka pszenna
+                        </label>
+                    </div>
+
+                    <button type="submit">Zamów</button>
+                </form>
+            </section>
+            <section>
+                <h2>Moje zamówienia</h2>
+                <table id="tabela-zamowien">
+                    <thead>
+                        <tr>
+                            <th>Imię</th>
+                            <th>Nazwisko</th>
+                            <th>Pieczywo</th>
+                            <th>Ilość</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <div class="footer-left">
+                <p>© Piekarnia 2024</p>
+            </div>
+            <div class="footer-right">
+                <p><a href="#">Polityka prywatności</a></p>
+                <div class="socials">
+                    <a href="#"><img src="img/socials/facebook.png" id="fb" alt="link_do_facebooka"></a>
+                    <a href="#"><img src="img/socials/instagram.png" id="inst" alt="link_do_instagrama"></a>
+                    <a href="#"><img src="img/socials/twitter.png" id="tw" alt="link_do_twittera"></a>
+                    <a href="#"><img src="img/socials/youtube.png" id="yt" alt="link_do_youtuba"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

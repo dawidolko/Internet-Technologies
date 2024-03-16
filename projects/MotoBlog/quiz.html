@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+</head>
+<body>
+  <header>
+    <!-- Nawigacja -->
+    <div class="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+      <nav>
+        <div class="navigation">
+          <ul>
+            <li><a href="index.html">Strona Główna</a></li>
+            <li class="icon"><a href="index.html"><i class="fi fi-rr-home"></i></a></li>
+            <li><a href="aboutus.html">O Nas</a></li>
+            <li class="icon"><a href="aboutus.html"><i class="fi fi-rr-info"></i></a></li>
+            <li><a href="contactus.html">Skontauj się z Nami</a></li>
+            <li class="icon"><a href="contactus.html"><i class="fi fi-rr-envelope"></i></a></li>
+            <li><a href="gallery.html">Galeria</a></li>
+            <li class="icon"><a href="gallery.html"><i class="fi fi-rr-picture"></i></a></li>
+            <li><a href="#">Quiz</a></li>
+            <li class="icon"><a href="#"><i class="fi fi-rr-interrogation"></i></a></li>
+          </ul>
+          <div class="navbar-logo">
+            <img src="img/logo-ostateczne.png" alt="Logo">
+          </div>
+        </div>
+      </nav>
+  </header>
+
+<main class="color">
+  <div class="form-box">
+    <div class="form-container">
+        <div id="quiz-container">
+            <div id="introduction">
+                <h2>Quiz Motoryzacyjny</h2>
+                <p>Sprawdź swoją wiedzę na temat swiata motoryzacji, nasz quiz-test zawiera 10 losowo wybranych pytań, naciśnij przycisk aby rozpocząć i sprawdzić swoją wiedzę.</p>
+            </div>
+            <button id="start-quiz-btn" class="quiz-btn">Rozpocznij Quiz</button>
+            <div id="question-container" class="hidden">
+                <div id="question" class="correct-display"></div>
+                <div id="answer-buttons" class="btn-grid">
+                    <!-- Przyciski odpowiedzi generowane przez JS -->
+                </div>
+                <button id="confirm-answer-btn" class="hidden">Potwierdź</button>
+            </div>
+            <div id="result-container" class="hidden">
+                <div id="result" class="correct-display">Twój wynik: </div>
+                <div class="button-group">
+                    <button id="restart-quiz-btn" class="quiz-btn">Zagraj ponownie</button>
+                    <button id="back-to-start-btn" class="quiz-btn">Powrót do startu</button>
+                </div>
+            </div>
+            <div id="feedback-container" class="hidden">
+              <h2 id="feedback-header"></h2>
+              <p id="feedback-text"></p>
+            </div>
+            <div id="correct-answer-container" class="hidden">
+              <h2>Poprawna odpowiedź to:</h2>
+              <p id="correct-answer"></p>
+            </div>
+            <button id="next-question-btn" class="hidden">Przejdź do następnego pytania</button>
+        </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer-style">
+  <div class="social-media">
+    <a href="https://www.facebook.com/" target="_blank">
+      <img src="img/facebook-icon.png" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com/" target="_blank">
+      <img src="img/instagram-icon.png" alt="Instagram">
+    </a>
+    <a href="https://www.twitter.com/" target="_blank">
+      <img src="img/x-icon.png" alt="X">
+    </a>
+  </div>
+  <p>Copyright &copy; MotoBlog 2024 | <a href="privacypolicy.html">Privacy Policy</a></p>
+  <p>UIcons by <a href="https://www.flaticon.com/uicons">Flaticon</a></p>
+</footer>
+<script src="js/app.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

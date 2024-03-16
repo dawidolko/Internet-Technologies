@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PC Building Tips - Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list nav-list-mobile">
+                    <li class="nav-item">
+                        <div class="mobile-menu">
+                            <spanc class="line line-top"></spanc>
+                            <spanc class="line line-bottom"></spanc>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link nav-link-pcbt"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link nav-link-bag"></a>
+                    </li>
+                </ul>
+                <!-- /.nav-list nav-list-mobile -->
+
+                <ul class="nav-list nav-list-larger">
+                    <li class="nav-item nav-item-hidden">
+                        <a href="index.html" class="nav-link nav-link-pcbt"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="hardwareSelection.html" class="nav-link">Dobór komponentów</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="partsInstallation.html" class="nav-link">Instalacja podzespołów</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="overclocking.html" class="nav-link">Overclocking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#.html" class="nav-link">Undervolting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#.html" class="nav-link">Serwisowanie</a>
+                    </li>
+                </ul>
+                <!-- /.nav-list nav-list-larger -->
+            </nav>
+        </div>
+    </header>
+    <script src="main.js"></script>
+    <section>
+        <div class="form-container">
+            <form action="/submit_form" method="post" enctype="multipart/form-data">
+                <h1>Formularz zgłoszeniowy</h1>
+                <fieldset>
+                   <legend>Dane zgłaszającego:</legend>
+                   <div class="data-container">
+                       <label for="name">Imię* : </label>
+                       <input type="name" id="name" required>
+   
+                       <label for="lastname">Nazwisko : </label>
+                       <input type="text" id="lastname">
+   
+                       <label for="age">Wiek: </label>
+                       <input type="number" id="age" min="3" max="200"><br>
+                   </div>
+                   <div class="data-container">
+                       <label for="email">E-mail* :  </label>
+                       <input type="email" id="email" required>
+   
+                       <label for="number">Numer tel. :  </label>
+                       <input type="tel" id="number" minlength="9" maxlength="9" max="999999999">
+                   </div>
+                </fieldset>
+                <fieldset>
+                   <legend>Powód zgłoszenia:</legend>
+                   
+                   <div class="data-container">
+                       <div class="data-container">
+                           <label for="report-category">Wybierz powód zgłoszenia:</label>
+                           <select id="report-category">
+                               <option value="tresc">Treść</option>
+                               <option value="rozklad">Rozkład treści</option>
+                               <option value="media">Multimedia</option>
+                               <option value="inne">Inne</option>
+                           </select>
+   
+                           <label for="report-category">Wybierz sekcje zgloszenia:</label>
+                           <select id="report-category">
+                               <option value="1">PCBT</option>
+                               <option value="2">Dobór komponentów</option>
+                               <option value="3">Instalacja podzespołów</option>
+                               <option value="4">Overclocking</option>
+                               <option value="5">Undervolting</option>
+                               <option value="6">Serwisowanie</option>
+                               <option value="7">Więcej niż jedna: ( napisz które )</option>
+                           </select>
+                       </div>
+                   </div>
+                   <label for="report-description">Treść zgłoszenia: </label>
+                   <div class="data-container">
+                       <textarea id="report-description" placeholder="Wpisz treść zgłoszenia."></textarea>
+                   </div>
+                   <div class="data-container2">
+                       <div>
+                           <label for="file">Wybierz plik:</label>
+                           <input class="file" type="file" id="file" name="file">
+                       </div>
+                   </div>
+               </fieldset>
+               <fieldset>
+                   <legend>Zgody: </legend>
+                   <div class="check-req">
+                       <input class="dane-os" id="zgoda-na-zapis" value="tak" type="checkbox" required checked disabled>
+                       <label for="zgoda-na-zapis">Zgoda na przetwarzanie danych osobowych.*</label>
+                   </div>
+                   <div class="check-req">
+                       <input class="dane-os" id="zgoda-na-zal" value="tak" type="checkbox" required checked disabled>
+                       <label for="zgoda-na-zapis">Zgoda na przetwarzanie wysłanych załączników.*</label>
+                   </div>
+                   <div class="check-req">
+                       <input class="dane-os" value="tak" id="zgoda-na-zapis" type="checkbox">
+                       <label for="zgoda-na-zapis">Zgoda na otrzymywanie propozycji drogą mailową.</label>
+                   </div>
+                   <div>
+                    <button class="submit" type="submit">Wyślij</button>
+               </div>
+               </fieldset>
+           </form>
+        </div>
+    </section>
+</body>
+</html>

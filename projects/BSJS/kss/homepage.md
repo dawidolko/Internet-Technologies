@@ -1,0 +1,2 @@
+# Dokumentacja KSS projektu "BSJS - Battleships JavaScript"
+Witaj w dokumentacji. Ta strona zawiera szczegóły dotyczące wszystkich dostępnych stylów oraz ich zastosowań w projekcie. Z poważaniem, Konrad Pluta.

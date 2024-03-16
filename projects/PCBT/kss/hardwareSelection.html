@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PCBT - Dobór komponentów</title>
+    <link rel="stylesheet" href="hardwareSelectStyle.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list nav-list-mobile">
+                    <li class="nav-item">
+                        <div class="mobile-menu">
+                            <spanc class="line line-top"></spanc>
+                            <spanc class="line line-bottom"></spanc>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link nav-link-pcbt"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link nav-link-bag"></a>
+                    </li>
+                </ul>
+                <!-- /.nav-list nav-list-mobile -->
+    
+                <ul class="nav-list nav-list-larger">
+                    <li class="nav-item nav-item-hidden">
+                        <a href="index.html" class="nav-link nav-link-pcbt"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="hardwareSelection.html" class="nav-link nav-link-hardwareselection">Dobór komponentów</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="partsInstallation.html" class="nav-link nav-link-partsInstallation">Instalacja podzespołów</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="overclocking.html" class="nav-link">Overclocking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="undervolting.html" class="nav-link">Undervolting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="maintenance.html" class="nav-link nav-link-maintenance">Serwisowanie</a>
+                    </li>
+                </ul>
+                <!-- /.nav-list nav-list-larger -->
+            </nav>
+        </div>
+    </header>
+    <script src="main.js"></script>
+    <div class="back-to-top-scroll-button"><a href="#titleheading">▲</a></div>
+    <section class="hero hardwareSelection">
+        <div class="container">
+            <div class="title">
+                <h2 class="title-heading" id="titleheading">Dobór komponentów</h2>   
+                <p class="subTitleCon">Czym się kierować?</p>
+                <a href="#title-heading2" class="short-link">Dowiedz się więcej. ></a>
+            </div>
+            <div class="boxForTable">
+                <div class="tableOfContent">
+                    <p>Spis treści</p>
+                    <ul>
+                        <li><a href="#1">Wprowadzenie</a></li>
+                        <li><a href="#2">Karta graficzna</a></li>
+                        <li><a href="#3">Procesor</a></li>
+                        <li><a href="#4">Chłodzenie procesora</a></li>
+                        <li><a href="#5">Pamięć RAM</a></li>
+                        <li><a href="#6">Płyta główna</a></li>
+                        <li><a href="#7">Obudowa</a></li>
+                        <li><a href="#8">Dyski</a></li>
+                    </ul>
+                </div>
+                <hr>    
+            </div>
+        </div>
+        <div class="content">
+            <section id="1" class="introSlide">
+                <h1 class="sectionTitle">Wprowadzenie</h1>
+                <p class="slidesContent">Wybór odpowiednich komponentów do komputera jest kluczowym krokiem w budowie efektywnego i wydajnego systemu. Każda część pełni istotną rolę, a ich harmonijne dopasowanie może zdecydować o ogólnej wydajności i funkcjonalności komputera. Przyjęcie strategicznego podejścia do doboru podzespołów, takich jak procesor, karta graficzna, pamięć RAM czy dysk SSD, pozwala dostosować system do konkretnych zastosowań, od gier po profesjonalne zadania graficzne czy programowanie. W tym kontekście, zrozumienie kluczowych parametrów i technologii związanych z poszczególnymi komponentami staje się kluczowe, aby osiągnąć optymalną wydajność i zadowalające rezultaty. W dalszej części omówimy istotne aspekty, na które warto zwrócić uwagę podczas doboru części do komputera.</p>
+            </section>
+            <section id="2" class="slideA">
+                <h1 class="sectionTitle">Karta graficzna</h1>
+                <div class="slideContainer">
+                    <p class="slidesContent">Karta graficzna to kluczowy element komputera odpowiedzialny za przetwarzanie i renderowanie obrazu. Jej rdzenie CUDA (NVIDIA) lub Stream Processors (AMD) odpowiadają za wydajność obliczeniową, decydując o płynności gier i efektywności w zastosowaniach graficznych. Pamięć VRAM wpływa na obsługę dużych projektów graficznych oraz wydajność w grach w wysokich rozdzielczościach. Szybkość taktowania GPU determinuje, jak szybko karta może wykonywać operacje. Technologie takie jak Ray Tracing i DLSS (NVIDIA) podnoszą realizm grafiki w grach. Kompatybilność z technologią FreeSync/G-Sync eliminuje zacinanie obrazu. Złącza wyjściowe, zużycie energii, a także rozmiar i chłodzenie są istotne przy wyborze, dostosowując kartę do konkretnych potrzeb użytkownika oraz specyfikacji systemu.</p>
+                    <img class="slideImage" src="images/hero/hardwareSelection/nana-dua-aVeKubCF-48-unsplash.jpg">
+                </div>
+                <div class="addonPhotos">
+                    <div class="addP1"></div>
+                    <div class="addP2"></div>
+                </div>
+                <div class="sectionContainer">
+                    <h2 class="sectionTitle2">Na co zwrócić uwagę?</h2>
+                    <div class="pointsContainer">
+                        <div class="point">
+                            <h2 class="point-title">Proces technologiczny</h2>
+                            <p class="pointDescription">Oznacza, ile nanometrów wynosi technologia produkcji GPU. Im mniejszy ten parametr, tym bardziej efektywna i wydajna jest karta graficzna.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Ilość rdzeni CUDA / Stream Processors</h2>
+                            <p class="pointDescription">Liczba rdzeni obliczeniowych wpływa na ogólną wydajność karty. Więcej rdzeni zazwyczaj oznacza lepszą wydajność w zadaniach obliczeniowych.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Pamięć VRAM</h2>
+                            <p class="pointDescription">Duża ilość pamięci VRAM jest ważna przy pracy z dużymi teksturami, modelami 3D i wysokimi rozdzielczościami. W przypadku gier, zwłaszcza w rozdzielczości 4K, zaleca się kartę z co najmniej 8 GB VRAM.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Rodzaj pamięci</h2>
+                            <p class="pointDescription">GDDR6 jest obecnie jednym z najnowszych standardów i oferuje wyższą przepustowość niż wcześniejsze wersje, takie jak GDDR5</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Szybkość taktowania</h2>
+                            <p class="pointDescription">Oznacza, jak szybko pracuje GPU. Wyższe taktowanie zazwyczaj przekłada się na lepszą wydajność, ale nie jest jedynym kluczowym czynnikiem.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Technologie Ray Tracing i DLSS (NVIDIA)</h2>
+                            <p class="pointDescription">Technologia śledzenia promieni (ray tracing) pozwala na bardziej realistyczne efekty świetlne w grach.
+                                Deep Learning Super Sampling (DLSS) to technologia, która wykorzystuje sztuczną inteligencję do poprawy jakości obrazu przy mniejszym obciążeniu GPU.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Zużycie energii i zasilanie</h2>
+                            <p class="pointDescription">Sprawdź, czy zasilacz w twoim systemie spełnia wymagania karty graficznej pod względem mocy i złącz zasilających.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Rozmiar i chłodzenie</h2>
+                            <p class="pointDescription">Upewnij się, że karta mieści się w obudowie komputera.
+                                Dobre chłodzenie jest kluczowe dla utrzymania niskich temperatur podczas intensywnego obciążenia.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Generacja PCIe:</h2>
+                            <p class="pointDescription">Sprawdź, czy karta obsługuje daną generację PCIe (np. PCIe 3.0, PCIe 4.0). Wybierając nowoczesną kartę, warto korzystać z najnowszej generacji dla zwiększenia przepustowości.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sectionContainer">
+                    <h2 class="sectionTitle2">Opinie i recenzje</h2>
+                    <div class="opinionContainer">
+                        <div class="slideContainer">
+                            <img class="slideImage" src="images/hero/hardwareSelection/arkan-perdana-eKTLh4_u7Ao-unsplash.jpg">
+                            <p class="slidesContent">Przed zakupem karty graficznej zaleca się gruntowne zbadanie opinii i recenzji, a także analizę różnorodnych benchmarków. Oceny użytkowników oraz ekspertów pomagają w zrozumieniu rzeczywistego doświadczenia z produktu, podczas gdy benchmarki dostarczają obiektywnych danych dotyczących wydajności. Ten holistyczny proces pozwala na dokładne zrozumienie, czy dana karta spełni oczekiwania, zarówno pod kątem gier, jak i profesjonalnych zastosowań graficznych, i zapewnia pewność co do ostatecznego wyboru.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="3" class="slideB">
+                <h1 class="sectionTitle">Procesor</h1>
+                <div class="opinionContainer">
+                    <div class="slideContainer">
+                        <img class="slideImage" src="images/hero/hardwareSelection/christian-wiediger-4Iv0Z1e2nNY-unsplash.jpg">
+                        <p class="slidesContent">Procesor, nazywany mózgiem komputera, pełni kluczową rolę w przetwarzaniu danych. Jego moc obliczeniowa, wyrażona w ilości rdzeni i wątków, wpływa na płynność działania systemu. Producenci oferują różne linie procesorów, np. Intel i AMD, które są dostosowane do różnych zastosowań. Procesory o wyższej częstotliwości zegara sprawdzają się w grach, podczas gdy modele wielordzeniowe są skuteczne w zadaniach wielowątkowych, takich jak renderowanie grafiki 3D czy kompilacje programów. Przy wyborze procesora warto także zwrócić uwagę na architekturę, pamięć cache oraz kompatybilność z płytą główną.</p>
+                    </div>
+                </div>
+                <div class="addonPhotos">
+                    <div class="addP1"></div>
+                    <div class="addP2"></div>
+                </div>
+                <div class="sectionContainer">
+                    <h2 class="sectionTitle2">Na co zwrócić uwagę?</h2>
+                    <div class="pointsContainer">
+                        <div class="point">
+                            <h2 class="point-title">Liczba Rdzeni i Wątków:</h2>
+                            <p class="pointDescription">Im więcej rdzeni i wątków, tym lepsza wydajność w zadaniach wielozadaniowych i wielowątkowych. Procesory wielordzeniowe są korzystne przy renderowaniu, kompilacji kodu czy obróbce grafiki.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Częstotliwość Zegara:</h2>
+                            <p class="pointDescription">Wyższa częstotliwość zegara przekłada się na szybsze wykonywanie pojedynczych zadań. To istotne w grach i zadaniach, które korzystają z pojedynczego wątku.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Pamięć Cache:</h2>
+                            <p class="pointDescription">Większa pamięć cache przyspiesza dostęp do danych, co ma znaczenie dla ogólnej wydajności procesora. L2 i L3 cache są szczególnie ważne.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">TDP (Thermal Design Power):</h2>
+                            <p class="pointDescription">Oznacza ilość energii, jaką procesor generuje podczas pełnej pracy. Wybieraj procesory o odpowiednim TDP, aby uniknąć problemów z chłodzeniem.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Kompatybilność z Płytą Główną:</h2>
+                            <p class="pointDescription">Upewnij się, że procesor jest zgodny z płytą główną. Nowe procesory mogą wymagać aktualizacji BIOS-u.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Architektura:</h2>
+                            <p class="pointDescription">Nowoczesne architektury, takie jak Zen od AMD czy Core od Intel, wprowadzają poprawki w efektywności energetycznej i ogólnej wydajności.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Zastosowanie:</h2>
+                            <p class="pointDescription">Wybierz procesor odpowiedni do planowanych zastosowań. Procesory gamingowe różnią się od tych dedykowanych do profesjonalnych zastosowań graficznych czy programowania.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Technologie Dodatkowe:</h2>
+                            <p class="pointDescription">Sprawdź, czy procesor obsługuje nowoczesne technologie, takie jak Hyper-Threading, SMT (Symmetrical Multi-Threading), czy AMD Ryzen Master.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">GPU Zintegrowane (w przypadku APU):</h2>
+                            <p class="pointDescription">W przypadku procesorów z zintegrowanym układem graficznym (APU), zwróć uwagę na wydajność GPU, jeśli nie planujesz korzystać z karty dedykowanej.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Opinie i Recenzje:</h2>
+                            <p class="pointDescription">Przed zakupem procesora zaleca się nie tylko opinię użytkowników, ale także sprawdzenie wyników benchmarków. Analiza testów wydajności, porównań z innymi modelami oraz recenzji zawierających konkretne dane pozwoli uzyskać kompleksowe i obiektywne spojrzenie na potencjalne osiągnięcia danego procesora. Dzięki temu możesz dokładnie ocenić, czy dany model spełnia Twoje oczekiwania pod względem wydajności w różnych zastosowaniach, od gier po zadania profesjonalne.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sectionContainer">
+                    <h2 class="sectionTitle2">Krótki podział procesorów</h2>
+                    <div class="categoryPointContainer">
+                        <div class="categoryPoint">
+                            <h2 class="point-title">1. Procesory Entry-Level (np. Intel Core i3, Ryzen 3):</h2>
+                            <p class="pointDescription">Zastosowanie ogólne: Doskonałe do codziennych zadań, przeglądania internetu, obsługi multimediów.</p>
+                            <p class="pointDescription">Praca biurowa: Skorzystaj z tych procesorów do standardowych zadań biurowych.</p>
+                        </div>
+                        <div class="categoryPoint">
+                            <h2 class="point-title">2. Procesory Średniej Klasy (np. Intel Core i5, Ryzen 5):</h2>
+                            <p class="pointDescription">Zastosowanie ogólne: Odpowiednie do pracy biurowej, multitaskingu i lekkich zastosowań graficznych.</p>
+                            <p class="pointDescription">Gaming: Zapewniają dobrą wydajność w grach, szczególnie przy rozdzielczościach do 1080p.</p>
+                        </div>
+                        <div class="categoryPoint">
+                            <h2 class="point-title">3. Procesory Wyższej Klasy (np. Intel Core i7/i9, Ryzen 7/9):</h2>
+                            <p class="pointDescription">Zastosowanie ogólne: Odpowiednie do zaawansowanej pracy biurowej, edycji multimediów, programowania i gier.</p>
+                            <p class="pointDescription">Gaming: Zapewniają doskonałą wydajność w grach, zwłaszcza w rozdzielczościach 1440p i 4K.</p>
+                            <p class="pointDescription">Przy zastosowaniach profesjonalnych: Nadają się do profesjonalnych zastosowań graficznych, takich jak obróbka wideo czy renderowanie grafiki 3D.</p>
+                        </div>
+                        <div class="categoryPoint">
+                            <h2 class="point-title">4. Procesory Wielordzeniowe / Threadripper (np. Ryzen Threadripper):</h2>
+                            <p class="pointDescription">Zastosowania profesjonalne: Idealne do profesjonalnego renderowania grafiki, przetwarzania wideo, pracy z dużymi zestawami danych.</p>
+                            <p class="pointDescription">Zadania wielowątkowe: Zapewniają doskonałą wydajność w zadaniach, które korzystają z wielu rdzeni i wątków.</p>
+                            <p class="pointDescription">Tworzenie i edycja treści: Nadają się do zaawansowanych zastosowań w dziedzinie kreatywności i produkcji treści.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="4" class="slideA">
+                <h1 class="sectionTitle">Chłodzenie procesora</h1>
+                <div class="slideContainer">
+                    <p class="slidesContent">Podczas doboru chłodzenia do procesora warto wziąć pod uwagę kilka kluczowych czynników, a wybór między chłodzeniem wodnym a powietrznym zależy od indywidualnych preferencji, potrzeb oraz budżetu.</p>
+                    <img class="slideImage" src="images/hero/hardwareSelection/barez-omer-H7eYwYUFU5c-unsplash.jpg">
+                </div>
+                <div class="sectionContainer">
+                    <h2 class="sectionTitle2">Chłodzenie powietrzne</h2>
+                    <div class="plus">
+                        <h3 class="sectionSubTitle">Plusy</h3>
+                        <div class="categoryPointContainer">
+                            <div class="categoryPoint2">
+                                <h2 class="point-title">1. Koszt</h2>
+                                <p class="pointDescription">Chłodzenie powietrzne jest zazwyczaj tańsze niż jego odpowiednik wodny.</p>
+                            </div>
+                            <div class="categoryPoint2">
+                                <h2 class="point-title">2. Prosta Instalacja</h2>
+                                <p class="pointDescription">Montaż jest zwykle prostszy, co jest korzystne dla mniej doświadczonych użytkowników.</p>
+                            </div>
+                            <div class="categoryPoint2">
+                                <h2 class="point-title">3. Prosty w utrzymaniu</h2>
+                                <p class="pointDescription">Nie ma potrzeby uzupełniania płynu chłodzącego, co sprawia, że chłodzenie powietrzne jest mniej wymagające w utrzymaniu.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="minus">
+                        <h3 class="sectionSubTitle">Minusy</h3>
+                        <div class="categoryPointContainer">
+                            <div class="categoryPoint2">
+                                <h2 class="point-title">1. Gabaryty</h2>
+                                <p class="pointDescription">Duże chłodnice mogą ograniczać dostęp do przestrzeni w obudowie, zwłaszcza w mniejszych konstrukcjach.</p>
+                            </div>
+                            <div class="categoryPoint2">
+                                <h2 class="point-title">2. Ograniczenie wydajności</h2>
+                                <p class="pointDescription">W przypadku bardziej zaawansowanych zastosowań, takich jak intensywne overclocking, chłodzenie powietrzne może osiągnąć swoje granice wydajności.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sectionContainer">
+                    <h2 class="sectionTitle2">Chłodzenie wodne</h2>
+                    <div class="plus">
+                        <h3 class="sectionSubTitle">Plusy</h3>
+                        <div class="categoryPointContainer">
+                            <div class="categoryPoint2">
+                                <h2 class="point-title">1. Wydajność</h2>
+                                <p class="pointDescription">Chłodzenie wodne często oferuje wyższą wydajność chłodzenia, szczególnie w przypadku zaawansowanych modeli z dużymi radiatorami.</p>
+                            </div>
+                            <div class="categoryPoint2">
+                                <h2 class="point-title">2. Estetyka</h2>
+                                <p class="pointDescription">Chłodzenie cieczą może dodatkowo wpłynąć na estetykę komputera, zwłaszcza gdy wykorzystuje się kolorowy płyn czy podświetlenie LED.</p>
+                            </div>
+                            <div class="categoryPoint2">
+                                <h2 class="point-title">3. Opcje Dostosowania</h2>
+                                <p class="pointDescription">Istnieje możliwość dostosowania konfiguracji chłodzenia cieczą do indywidualnych potrzeb, co jest korzystne dla entuzjastów.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="minus">
+                        <h3 class="sectionSubTitle">Minusy</h3>
+                        <div class="categoryPointContainer">
+                            <div class="categoryPoint2">
+                                <h2 class="point-title">1. Koszt</h2>
+                                <p class="pointDescription">Chłodzenie wodne zwykle jest droższe niż chłodzenie powietrzne, zwłaszcza w przypadku zaawansowanych systemów.</p>
+                            </div>
+                            <div class="categoryPoint2">
+                                <h2 class="point-title">2. Słabsza Trwałość</h2>
+                                <p class="pointDescription">W niektórych przypadkach chłodzenie wodne może być bardziej podatne na awarie niż chłodzenie powietrzne, szczególnie w związku z możliwością wycieku płynu chłodzącego.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="slideB">
+                <h1  id="5" class="sectionTitle">Pamięć RAM</h1>
+                <div class="opinionContainer">
+                    <div class="slideContainer">
+                        <img class="slideImage" src="images/hero/hardwareSelection/andrey-matveev-ekiRuzxdWYA-unsplash.jpg">
+                        <p class="slidesContent">RAM, czyli Pamięć Dostępu Przypadkowego (ang. Random Access Memory), to rodzaj pamięci komputerowej, która jest używana do przechowywania tymczasowych danych potrzebnych przez procesor w trakcie działania systemu operacyjnego oraz uruchomionych programów. Odpowiada za szybki dostęp do informacji, które są bieżąco przetwarzane przez komputer. RAM umożliwia efektywne wykonywanie wielu operacji jednocześnie, a większa ilość pamięci RAM zazwyczaj przekłada się na lepszą wydajność systemu, zwłaszcza w przypadku zadań wymagających dużej ilości danych do jednoczesnego przechowywania, takich jak gry, edycja multimediów czy obsługa wielu aplikacji jednocześnie.</p>
+                    </div>
+                </div>
+                <div class="sectionContainer">
+                    <h2 class="sectionTitle2">Na co zwrócić uwagę?</h2>
+                    <div class="categoryPointContainer">
+                        <div class="categoryPoint">
+                            <h2 class="point-title">Standard pamięci</h2>
+                            <p class="pointDescription">Wybieraj pamięci RAM z najnowszymi standardami, takimi jak DDR4 lub DDR5, biorąc pod uwagę kompatybilność z płytą główną.</p>
+                        </div>
+                        <div class="categoryPoint">
+                            <h2 class="point-title">Prędkość MHz</h2>
+                            <p class="pointDescription">Im wyższa prędkość RAM, tym lepsza wydajność w wielu zastosowaniach, zwłaszcza w grach. Jednak warto dostosować prędkość do specyfikacji obsługiwanej przez płytę główną.</p>
+                        </div>
+                        <div class="categoryPoint">
+                            <h2 class="point-title">Opóźnienia CAS Latency (CL)</h2>
+                            <p class="pointDescription">Niskie opóźnienia przyczyniają się do szybszej responsywności pamięci. Przy podobnych prędkościach warto wybierać moduły z niższym CL.</p>
+                        </div>
+                        <div class="categoryPoint">
+                            <h2 class="point-title">Pojemość</h2>
+                            <p class="pointDescription">Wybierz odpowiednią pojemność RAM do planowanych zastosowań. Standardowo, 16 GB jest dobrym punktem wyjścia dla większości użytkowników, ale zadania wymagające większej ilości pamięci mogą wymagać 32 GB lub więcej.</p>
+                        </div>
+                        <div class="categoryPoint">
+                            <h2 class="point-title">Kompatybilność z Płytą Główną</h2>
+                            <p class="pointDescription">Upewnij się, że wybrany model RAM jest w pełni kompatybilny z płytą główną, uwzględniając ograniczenia dotyczące obsługiwanej pojemności i prędkości.</p>
+                        </div>
+                        <div class="categoryPoint">
+                            <h2 class="point-title">Profile XMP/DOCP</h2>
+                            <p class="pointDescription">Moduły RAM z obsługą profili XMP (Extreme Memory Profile) lub DOCP (Direct Overclock Profile) ułatwiają dostosowanie parametrów pamięci, zapewniając łatwiejszy proces overclockingu.</p>
+                        </div>
+                        <div class="categoryPoint">
+                            <h2 class="point-title">Chłodzenie</h2>
+                            <p class="pointDescription">W przypadku intensywnego użytkowania lub planowanego overclockingu, modele z dodatkowym chłodzeniem (np. radiatorami) mogą pomóc w utrzymaniu stabilnych temperatur.</p>
+                        </div>
+                        <div class="categoryPoint">
+                            <h2 class="point-title">Opinie Użytkowników</h2>
+                            <p class="pointDescription">Przed zakupem pamięci RAM warto sprawdzić opinie innych użytkowników, aby uzyskać praktyczne informacje na temat nie tylko wydajności, ale także niezawodności danego modelu. Doświadczenia innych mogą pomóc w dokładniejszym zrozumieniu, jak dana pamięć sprawdza się w różnych scenariuszach użytkowania.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="6" class="slideA">
+                <h1 class="sectionTitle">Płyta główna</h1>
+                <div class="slideContainer">
+                    <p class="slidesContent">Płyta główna, nazywana również motherboard, to kluczowy element komputera, który koordynuje i łączy wszystkie główne komponenty. Odpowiada za zapewnienie kompatybilności procesora, dostarcza złącza i porty dla różnych urządzeń, obsługuje pamięć RAM oraz pełni kluczową rolę w sprawnym funkcjonowaniu całego systemu komputerowego.</p>
+                    <img class="slideImage" src="images/hero/hardwareSelection/anirudh-gadgil-OWZEiO_3_V0-unsplash.jpg">
+                </div>
+                <div class="addonPhotos">
+                    <div class="addP1"></div>
+                    <div class="addP2"></div>
+                </div>
+                <div class="sectionContainer">
+                    <h2 class="sectionTitle2">Na co zwrócić uwagę?</h2>
+                    <div class="pointsContainer">
+                        <div class="point">
+                            <h2 class="point-title">Kompatybilność z Procesorem</h2>
+                            <p class="pointDescription">Upewnij się, że płyta główna jest w pełni kompatybilna z wybranym procesorem pod względem gniazda (Socket) i obsługi generacji.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Obsługa Najnowszych Technologii</h2>
+                            <p class="pointDescription">Sprawdź, czy płyta obsługuje najnowsze technologie, takie jak PCIe 4.0, USB 3.2 Gen 2, czy WiFi 6, aby być przygotowanym na przyszłość.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Złącza i Rozszerzenia</h2>
+                            <p class="pointDescription">Zapewnij wystarczającą ilość i różnorodność złącz, takich jak USB, HDMI, DisplayPort, M.2, aby sprostać potrzebom związanych z podłączaniem różnych urządzeń.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Sekcja Zasilania (VRM)</h2>
+                            <p class="pointDescription">Dla entuzjastów i użytkowników planujących overclocking, warto zwrócić uwagę na jakość sekcji zasilania VRM (Voltage Regulator Module) na płycie głównej.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Chipset</h2>
+                            <p class="pointDescription">Wybierz chipset, który spełnia Twoje potrzeby. Chipsety oferują różne funkcje, a bardziej zaawansowane mogą zapewnić dodatkowe możliwości, takie jak obsługa RAID, USB-C, czy więcej linii PCIe.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Format Płyty (ATX, MicroATX, Mini-ITX)</h2>
+                            <p class="pointDescription">Zastanów się nad rozmiarem płyty głównej w kontekście rozmiaru obudowy. Płyty ATX oferują najwięcej opcji rozszerzeń, ale mniejsze formy, takie jak MicroATX czy Mini-ITX, są bardziej kompaktowe.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Obsługa Pamięci RAM</h2>
+                            <p class="pointDescription">Sprawdź obsługę standardów pamięci RAM (DDR4, DDR5) oraz maksymalną pojemność i prędkość obsługiwaną przez płytę główną.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Kontrola Jakości i Opinie</h2>
+                            <p class="pointDescription">Przeczytaj recenzje i opinie innych użytkowników, aby uzyskać informacje na temat jakości wykonania płyty, wydajności oraz stabilności działania.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sectionContainer">
+                    <h2 class="sectionTitle2">Podsumowanie o MB</h2>
+                    <div class="opinionContainer">
+                        <div class="slideContainer">
+                            <img class="slideImage" src="images/hero/hardwareSelection/christian-wiediger-8WFcelVBOoI-unsplash.jpg">
+                            <p class="slidesContent">Podsumowując, dobór płyty głównej zależy od indywidualnych potrzeb, planów rozbudowy, a także technologii, które chcesz wykorzystać. Warto również przyszłościowo myśleć, aby płytę można było łatwo zaktualizować w razie konieczności.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="7" class="slideB">
+                <h1 class="sectionTitle">Obudowa</h1>
+                <div class="opinionContainer">
+                    <div class="slideContainer">
+                        <img class="slideImage" src="images/hero/hardwareSelection/anthony-roberts-fMbiAi0rbkA-unsplash.jpg">
+                        <p class="slidesContent">Przy wyborze obudowy komputerowej warto zwrócić uwagę na kilka kluczowych aspektów, aby zapewnić odpowiednie warunki dla komponentów oraz ułatwić zarządzanie przewodami i chłodzeniem:</p>
+                    </div>
+                </div>
+                <div class="addonPhotos">
+                    <div class="addP1"></div>
+                    <div class="addP2"></div>
+                </div>
+                <div class="sectionContainer">
+                    <h2 class="sectionTitle2">Najważniejsze aspekty w wyborze obudowy</h2>
+                    <div class="pointsContainer">
+                        <div class="point">
+                            <h2 class="point-title">Przepływ Powietrza:</h2>
+                            <p class="pointDescription">Wybieraj obudowy z dobrze zaprojektowanym systemem przepływu powietrza, z odpowiednimi miejscami na wentylatory, aby utrzymać niskie temperatury wewnątrz obudowy.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Ilość Wentylatorów:</h2>
+                            <p class="pointDescription">Sprawdź, ile wentylatorów można zamontować w obudowie. Dodatkowe wentylatory poprawią cyrkulację powietrza, co z kolei wpłynie na efektywne chłodzenie komponentów.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Rozmiar Obudowy:</h2>
+                            <p class="pointDescription">Wybierz rozmiar obudowy zgodny z planowanym zestawem komponentów. Istnieją standardowe rozmiary, takie jak ATX, MicroATX i Mini-ITX, które różnią się przestrzenią dostępną dla komponentów.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Wejścia i Dziury na Kable:</h2>
+                            <p class="pointDescription">Sprawdź dostępność i rozmieszczenie wejść i otworów na kable w obudowie. Dobre zarządzanie kablami poprawi estetykę wnętrza i ułatwi konserwację.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Miejsce na Chłodzenie Procesora (Cooler):</h2>
+                            <p class="pointDescription">Upewnij się, że obudowa ma wystarczająco dużo miejsca na instalację chłodzenia procesora. W przypadku chłodzenia wodnego zwróć uwagę na kompatybilność z radiatorami.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Miejsce na Karty Graficzne:</h2>
+                            <p class="pointDescription">Ocen, czy obudowa ma wystarczająco dużo miejsca na planowane karty graficzne, zwłaszcza jeśli są to modele o większych wymiarach.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Wydajność Akustyczna:</h2>
+                            <p class="pointDescription">Jeśli zależy ci na cichym środowisku, zwróć uwagę na wydajność akustyczną obudowy. Dobrej jakości materiały izolacyjne mogą ograniczyć dźwięki generowane przez komponenty.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Łatwość Montażu Komponentów:</h2>
+                            <p class="pointDescription">Sprawdź, czy obudowa umożliwia łatwy montaż komponentów. Systemy bez narzędziowego montażu i dobre rozmieszczenie śrub ułatwią budowę.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="8" class="slideA">
+                <h1 class="sectionTitle">Dyski</h1>
+                <div class="slideContainer">
+                    <p class="slidesContent">Przy wyborze dysków do komputera warto zwrócić uwagę na kilka kluczowych kwestii, uwzględniając różne rodzaje dysków dostępnych na rynku:</p>
+                    <img class="slideImage" src="images/hero/hardwareSelection/samsung-memory-MJkGUYwMYr4-unsplash.jpg">
+                </div>
+                <div class="sectionContainer">
+                    <h2 class="sectionTitle2">Dyski SSD (Solid State Drive)</h2>
+                    <div class="pointsContainer">
+                        <div class="point">
+                            <h2 class="point-title">NVMe vs. SATA</h2>
+                            <p class="pointDescription">NVMe (Non-Volatile Memory Express): Oferuje wyższe prędkości odczytu/zapisu w porównaniu do tradycyjnych dysków SATA. Stosowany głównie jako dyski systemowe ze względu na swoją znakomitą wydajność.</p>
+                            <p class="pointDescription">SATA (Serial ATA): Mniej wydajne niż NVMe, ale wciąż znacznie szybsze niż tradycyjne HDD. Nadal dobre jako dyski do przechowywania danych i programów.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Temperatury i Radiatory (NVMe)</h2>
+                            <p class="pointDescription">Dyski NVMe mogą generować większe ilości ciepła niż tradycyjne dyski SATA. Rozważ zakup modelu z radiatorami lub zaplanuj odpowiednią wentylację w obudowie.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sectionContainer">
+                    <h2 class="sectionTitle2">Dyski HDD (Hard Disk Drive)</h2>
+                    <div class="pointsContainer">
+                        <div class="point">
+                            <h2 class="point-title">Rola HDD jako Magazynu</h2>
+                            <p class="pointDescription">Dyski HDD są nadal używane jako magazyny na duże ilości danych, zwłaszcza tam, gdzie duże pojemności są bardziej istotne niż szybkość odczytu/zapisu.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sectionContainer">
+                    <h2 class="sectionTitle2">Kierunki Ogólne</h2>
+                    <div class="pointsContainer">
+                        <div class="point">
+                            <h2 class="point-title">Pojemność</h2>
+                            <p class="pointDescription">Wybierz pojemność odpowiednią dla Twoich potrzeb. Dyski SSD są dostępne w różnych rozmiarach, a większa pojemność zapewni więcej miejsca na system operacyjny, programy i pliki.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Szybkość Odczytu/Zapisu</h2>
+                            <p class="pointDescription">Jeśli wydajność jest kluczowa, skup się na prędkości odczytu/zapisu. W przypadku SSD warto inwestować w NVMe dla lepszej wydajności w porównaniu do standardowych dysków SATA.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Technologie Cache</h2>
+                            <p class="pointDescription">Niektóre dyski SSD oferują technologie cache, takie jak SLC lub TLC, które mogą poprawić wydajność w określonych zastosowaniach.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Trwałość (SSD)</h2>
+                            <p class="pointDescription">Przy wyborze dysków SSD zwróć uwagę na parametr TBW (Total Bytes Written), który wskazuje, ile danych można zapisać na dysku przed potencjalną awarią.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="outroSlide">
+                <h1 class="sectionTitle">Zakończenie</h1>
+                <p class="slidesContent">Oczywiście, zawsze warto podkreślać, że moje porady powinny być traktowane jako wskazówki lub ciekawostki, a nie jako absolutna pewność. W analizie danych ważne jest uwzględnienie różnych źródeł informacji i kontekstu. Dlatego zalecam również konsultację innych źródeł i potwierdzenie informacji przed podjęciem decyzji.</p>
+                <iframe width="640" height="360" src="https://youtube.com/embed/BQ308X5_xn4?si=MUIB8Yg17P4Fcj2b"></iframe>
+                <p class="slidesContent">Warto zaczerpnąć tej opinii.</p>
+                <div class="backToTop">
+                    <a class="text" href="#titleheading" >Powrót na górę</a>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="footer">         
+                <div class="row">
+                    <ul>
+                        <li>
+                            <a>Autor: </a>
+                            <a>Konrad Pluta</a>
+                        </li>
+                        <li>
+                            <a>E-mail:</a>
+                            <a>adres@email.com</a>
+                        </li>
+                        <li>
+                            <a>Numer telefonu:</a> 
+                            <a>+48 123 456 789</a>
+                        </li>
+                        <li>
+                            <a>Zgłoś:</a> 
+                            <a href="form.html">Formularz zgłoszeniowy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row">
+                    Strona stworzona na potrzeby projektu z przedmiotu: Technologie Internetowe.
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>

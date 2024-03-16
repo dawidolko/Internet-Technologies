@@ -1,0 +1,539 @@
+/*
+    Formularz
+
+    Opis elementów formularza
+
+    `<div class="form-container">` - główny kontener formularza przechowywujący jego wszystkie elementy, posiada wyświetlanie flex, oraz centruje elementy w nim zawarte
+    
+    `<div class="data-container">` - kontener na konkretny rodzaj danych posiada wyświetlanie flex
+
+    Style guide: 5.0
+
+*/
+
+/*
+    form-container
+
+    Markup:
+    <div class="form-container">
+            <form action="/submit_form" method="post" enctype="multipart/form-data">
+                <h1>Formularz zgłoszeniowy</h1>
+                <fieldset>
+                   <legend>Dane zgłaszającego:</legend>
+                   <div class="data-container">
+                       <label for="name">Imię* : </label>
+                       <input type="name" id="name" required>
+                       <label for="lastname">Nazwisko : </label>
+                       <input type="text" id="lastname">
+                       <label for="age">Wiek: </label>
+                       <input type="number" id="age" min="3" max="200"><br>
+                   </div>
+                   <div class="data-container">
+                       <label for="email">E-mail* :  </label>
+                       <input type="email" id="email" required>
+                       <label for="number">Numer tel. :  </label>
+                       <input type="tel" id="number" minlength="9" maxlength="9" max="999999999">
+                   </div>
+                </fieldset>
+                <fieldset>
+                   <legend>Powód zgłoszenia:</legend>
+                   <div class="data-container">
+                       <div class="data-container">
+                           <label for="report-category">Wybierz powód zgłoszenia:</label>
+                           <select id="report-category">
+                               <option value="tresc">Treść</option>
+                               <option value="rozklad">Rozkład treści</option>
+                               <option value="media">Multimedia</option>
+                               <option value="inne">Inne</option>
+                           </select>
+                           <label for="report-category">Wybierz sekcje zgloszenia:</label>
+                           <select id="report-category">
+                               <option value="1">PCBT</option>
+                               <option value="2">Dobór komponentów</option>
+                               <option value="3">Instalacja podzespołów</option>
+                               <option value="4">Overclocking</option>
+                               <option value="5">Undervolting</option>
+                               <option value="6">Serwisowanie</option>
+                               <option value="7">Więcej niż jedna: ( napisz które )</option>
+                           </select>
+                       </div>
+                   </div>
+                   <label for="report-description">Treść zgłoszenia: </label>
+                   <div class="data-container">
+                       <textarea id="report-description" placeholder="Wpisz treść zgłoszenia."></textarea>
+                   </div>
+                   <div class="data-container2">
+                       <div>
+                           <label for="file">Wybierz plik:</label>
+                           <input class="file" type="file" id="file" name="file">
+                       </div>
+                   </div>
+               </fieldset>
+               <fieldset>
+                   <legend>Zgody: </legend>
+                   <div class="check-req">
+                       <input class="dane-os" id="zgoda-na-zapis" value="tak" type="checkbox" required checked disabled>
+                       <label for="zgoda-na-zapis">Zgoda na przetwarzanie danych osobowych.*</label>
+                   </div>
+                   <div class="check-req">
+                       <input class="dane-os" id="zgoda-na-zal" value="tak" type="checkbox" required checked disabled>
+                       <label for="zgoda-na-zapis">Zgoda na przetwarzanie wysłanych załączników.*</label>
+                   </div>
+                   <div class="check-req">
+                       <input class="dane-os" value="tak" id="zgoda-na-zapis" type="checkbox">
+                       <label for="zgoda-na-zapis">Zgoda na otrzymywanie propozycji drogą mailową.</label>
+                   </div>
+                   <div>
+                    <button class="submit" type="submit">Wyślij</button>
+               </div>
+               </fieldset>
+           </form>
+        </div>
+    
+    Style guide: 5.1
+*/
+
+/*
+    data-container
+
+    Markup:
+     <div class="data-container">
+                       <label for="name">Imię* : </label>
+                       <input type="name" id="name" required>
+                       <label for="lastname">Nazwisko : </label>
+                       <input type="text" id="lastname">
+                       <label for="age">Wiek: </label>
+                       <input type="number" id="age" min="3" max="200"><br>
+                   </div>
+
+    Style guide: 5.2
+
+*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(15, 15, 15);
+
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+
+
+.container {
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0 2.2rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 1400;
+    width: 100%;
+    height: 4.4rem;
+    background-color: rgba(0, 0, 0, .8);
+    backdrop-filter: blur(2rem);
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin: 0 -1rem;
+}
+
+.nav-list-mobile {
+    display: none;
+}
+
+.nav-link {
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 0 1rem;
+    transition: opacity .5s;
+}
+
+.nav-link:hover {
+    opacity: .7;
+}
+
+.nav-link-pcbt {
+    width: 2.6rem;
+    height: 5.4rem;
+    background: url("images/icons/pcbt50.png") center no-repeat;
+}
+
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    margin-top: 100px;
+    padding-bottom: 100px;
+    color: white;
+    border-radius: 25px;
+
+    box-shadow: rgba(151, 65, 252, 0.35) 0 15px 30px -5px;
+
+    background: linear-gradient(-45deg, #000000, #004ee9, #B30059, #E62600);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1{
+    font-size: 50px;
+    color: white;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    border-radius: 25px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    min-width: 1000px;
+    background-color: rgba(0, 0, 0, .7);
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(0, 33, 90, 0.479);
+    margin-bottom: 10px;
+}
+
+.data-container{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+label{
+    min-width: 10%;
+    margin-left: 20px;
+}
+
+input{
+    background-color: rgba(255, 255, 255, 0.23);
+    color: white;
+    font-size: 20px;
+    border-style: none;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+legend{
+    font-size: 30px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+}
+
+input:hover{
+    animation: backgroundBD 3s infinite;
+    border-width: 2px;
+}
+
+@keyframes backgroundBD{
+    0%{
+        background-color: rgb(57, 57, 57);
+    }
+
+    50%{
+        background-color: #000000;
+    }
+
+    100%{
+        background-color: rgb(57, 57, 57);
+    }
+}
+.checkbox{
+    width: auto;
+    margin-left: 25px;
+    padding-left: 0;
+}
+
+.report-category{
+    display: flex;
+}
+
+.checkboxs{
+    display: flex;
+    flex-direction: row;
+}
+
+.report-category-select{
+    display: none;
+}
+
+#type-of-rep:checked .report-category-select{
+    display: flex;
+}
+
+select{
+    font-size: 20px;
+    text-align: center;
+}
+
+select{
+    background-color: rgba(255, 255, 255, 0.821);
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+textarea{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.23);
+    color: white;
+    width: 100%;
+    height: 100px;
+}
+
+textarea:hover{
+    animation: backgroundBD 5s infinite;
+}
+.data-container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.file{
+    max-width: 100px;
+    font-size: 16px;
+}
+
+.submit{
+    width: 100px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.23);
+    border-style: none;
+    color: white;
+    border-radius: 10px;
+    transition: 1s;
+    margin-top: 5px;
+    padding: 2px;
+}
+
+.submit:hover{
+    background-color: #000;
+}
+
+@media screen and (max-width: 1200px) {
+
+    header{
+        height: 4.8rem;
+        transition: background .37s cubic-bezier(0.32, 0.08, 0.24, 1),
+                    height .56s cubic-bezier(0.32, 0.08, 0.24, 1);
+    }
+
+    header .container{
+        padding: 0;
+    }
+
+    .nav-list{
+        margin-top: 0;
+
+    }
+
+    .nav-list-mobile{
+        display: flex;
+    }
+
+    .nav-item{
+        width: 4.8rem;
+        height: 4.8rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-item-hidden{
+        display: none;
+    }
+
+    .mobile-menu{
+        position: relative;
+        z-index: 1500;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .line{
+        position: absolute;
+        width: 1.7rem;
+        height: 1px;
+        background-color: #fff;
+        transition: margin-top .3192s cubic-bezier(0.04, 0.04, 0.12, 0.98);
+
+    }
+
+    .line-top{
+        margin-top: 3px;
+    }
+
+    .line-bottom{
+        margin-top: -.4rem;
+    }
+
+    .active .line-top{
+        margin-top: 0;
+        transform: rotate(45deg);
+        transition: transform .3192s .1s cubic-bezier(0.04, 0.04, 0.12, 0.98);
+    }
+
+    .active .line-bottom{
+        margin-top: 0;
+        transform: rotate(-45deg);
+        transition: transform .3192s .1s cubic-bezier(0.04, 0.04, 0.12, 0.98);
+    }
+
+    header.active{
+        height: 100%;
+        background-color: #000;
+
+    }
+
+    .nav-link-pcbt{
+        width: 2rem;
+        height: 4.8rem;
+        position: relative;
+        z-index: 1500;
+    }
+
+    .nav{
+        position: relative;
+    }
+
+    .nav-link{
+        font-size: 1.4rem;
+        padding: 0;
+        margin: auto 0;
+    }
+
+    .nav-list-larger{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        display: block;
+        padding: 10.5rem 5rem;
+        z-index: 1000;
+        box-sizing: border-box;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .3s;
+    }
+
+    .active .nav-list-larger{
+        width: 100%;
+        height: 100vh;
+        opacity: 1;
+        visibility:visible;
+    }
+
+    .nav-list-larger .nav-item{
+        width: 100%;
+        justify-content: flex-start;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .nav-list-larger .nav-item:nth-child(9){
+        width: 100%;
+        justify-content: flex-start;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .active .nav-list-larger .nav-item{
+        animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+
+    .form-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 600px;
+        flex-direction: column;
+        margin: 20px;
+        margin-top: 100px;
+    }
+
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    h1{
+        font-size: 30px;
+    }
+
+    fieldset{
+        min-width: 0;
+        margin: 5px;
+    }
+
+    .data-container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    textarea{
+        width: 90%;
+    }
+
+
+}
+
+

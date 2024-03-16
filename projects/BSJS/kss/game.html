@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSJS - Battleship JS Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="body-main">
+    <div class="main-box">
+        <div class="title-box">
+            <h1>BATTLESHIPS - JS PROJECT</h1>
+            <h2>Technologie internetowe</h2>
+        </div>
+    
+        <div class="info-container" id="game-info">
+            <p>Aktualna tura: <span id="turn-display"></span></p>
+            <p>Informacje: <span id="info"></span></p>
+            <p>Oddane strzały: <span id="shoots"></span> </p>
+            <p>Trafione strzały: <span id="hits"></span></p>
+            <p>Spudłowane strzały: <span id="missed"></span></p>
+        </div>
+    
+    
+    
+    
+        <div class="container">
+            <div class="info-board" id="#info-board">
+                <p id="player-board-name"></p>
+                <p>Plansza gracza: Bot</p>
+            </div>
+            <div id="gamesboard-container"></div>
+        </div>
+        <p>Twoje statki:</p>
+        <div class="option-container">
+            <div id="0" class="dest-prev dest" draggable="true"></div>
+            <div id="1" class="sub-prev sub" draggable="true"></div>
+            <div id="2" class="cru-prev cru" draggable="true"></div>
+            <div id="3" class="batt-prev batt" draggable="true"></div>
+            <div id="4" class="carr-prev carr" draggable="true"></div>
+        </div>
+    
+        <div class="buttons-container">
+            <button class="startButton" id="start-button">Start</button>
+            <button class="flipButton" id="flip-ship">Obróć</button>
+
+            <label for="mute">Wycisz dźwięk:</label>
+            <input type="checkbox" id="mute" name="mute">
+
+            <button class="resetButton" onclick="myFunction()" id="reset-button">Reset</button>
+            
+        </div>
+        <div class="slidecontainer">
+            <p>Przybliżenie planszy:</p>
+            <input type="range" min="1.0" max="1.5" step="0.1" value="1.0" class="slider" id="myRange">
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

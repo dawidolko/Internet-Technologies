@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skontauj się z nami</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+</head>
+<body>
+  <header>
+    <!-- Nawigacja -->
+    <div class="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+      <nav>
+        <div class="navigation">
+          <ul>
+            <li><a href="index.html">Strona Główna</a></li>
+            <li class="icon"><a href="index.html"><i class="fi fi-rr-home"></i></a></li>
+            <li><a href="aboutus.html">O Nas</a></li>
+            <li class="icon"><a href="aboutus.html"><i class="fi fi-rr-info"></i></a></li>
+            <li><a href="#">Skontauj się z Nami</a></li>
+            <li class="icon"><a href="#"><i class="fi fi-rr-envelope"></i></a></li>
+            <li><a href="gallery.html">Galeria</a></li>
+            <li class="icon"><a href="gallery.html"><i class="fi fi-rr-picture"></i></a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li class="icon"><a href="quiz.html"><i class="fi fi-rr-interrogation"></i></a></li>
+          </ul>
+          <div class="navbar-logo">
+            <img src="img/logo-ostateczne.png" alt="Logo">
+          </div>
+        </div>
+      </nav>
+  </header>
+
+<main class="color">
+  <div class="contact-form-container">
+    <div class="contact-form">
+      <form action="#" method="get">
+        <h1>Skontaktuj się z nami</h1>
+        <div class="input-group">
+          <label for="imie">Imię i nazwisko</label>
+          <input type="text" name="imie" id="imie" required placeholder="Twoje imię i nazwisko">
+        </div>
+        <div class="input-group">
+          <label for="email">Adres email</label>
+          <input type="email" name="email" id="email" placeholder="Twój adres email" required>
+        </div>
+        <div class="input-group">
+          <label for="data">Podaj datę</label>
+          <input type="date" name="data" id="data">
+        </div>
+        <div class="input-group">
+          <label for="telefon">Numer telefonu</label>
+          <input type="tel" name="telefon" id="telefon" pattern="+48-[0-9]{3}-[0-9]{3}-[0-9]{3}" required
+                 placeholder="+48-XXX-XXX-XXX">
+        </div>
+        <div class="input-group">
+          <label for="kraj">Kraj</label>
+          <select name="kraj" id="kraj">
+            <option value="Polska">Polska</option>
+            <option value="Niemcy">Niemcy</option>
+            <option value="Czechy">Czechy</option>
+            <option value="Słowacja">Słowacja</option>
+            <option value="Ukraina">Ukraina</option>
+            <option value="Białoruś">Białoruś</option>
+            <option value="Litwa">Litwa</option>
+            <option value="Łotwa">Łotwa</option>
+            <option value="Estonia">Estonia</option>
+            <option value="Rosja">Rosja</option>
+          </select>
+        </div>
+        <p>Temat twojej wiadomości</p>
+        <div class="checkbox-custom">
+          <input type="radio" id="noweTresci" name="group" value="noweTresci">
+          <label for="noweTresci">Propozycja nowych treści</label>
+        </div>
+        <div class="checkbox-custom">
+          <input type="radio" id="wspolpraca" name="group" value="wspolpraca">
+          <label for="wspolpraca">Współpraca reklamowa</label>
+        </div>
+        <div class="checkbox-custom">
+          <input type="radio" id="inny" name="group" value="inny">
+          <label for="inny">Inny</label>
+        </div>
+        <div class="input-group">
+          <label for="wiadomosc">Co chciałbyś nam przekazać</label>
+          <textarea name="wiadomosc" id="wiadomosc" placeholder="Twoja wiadomość ..."></textarea>
+        </div>
+        <div class="checkbox-custom">
+          <input type="checkbox" name="akceptacja" id="akceptacja" checked disabled>
+          <label for="akceptacja">Akceptuję regulamin oraz polityke prywatności.</label>
+        </div>
+        <div class="checkbox-custom">
+          <input type="checkbox" name="akceptacja1" id="akceptacja1" checked>
+          <label for="akceptacja1">Chcę otrzymywać dodatkowe informacje o MotoBlogu.</label>
+        </div>
+        <div class="input-group">
+          <button type="submit">Send message</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+
+<footer class="footer-style">
+  <div class="social-media">
+    <a href="https://www.facebook.com/" target="_blank">
+      <img src="img/facebook-icon.png" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com/" target="_blank">
+      <img src="img/instagram-icon.png" alt="Instagram">
+    </a>
+    <a href="https://www.twitter.com/" target="_blank">
+      <img src="img/x-icon.png" alt="X">
+    </a>
+  </div>
+  <p>Copyright &copy; MotoBlog 2024 | <a href="privacypolicy.html">Polityka Prywatności</a></p>
+  <p>UIcons by <a href="https://www.flaticon.com/uicons">Flaticon</a></p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
+

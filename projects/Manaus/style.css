@@ -1,0 +1,607 @@
+/* 
+    Globalne ustawienia HTML
+   
+    Ustawienia dotyczące podstawowych właściwości strony, takie jak czcionka, marginesy i kolor tła.
+   
+    Markup:
+   <html>
+   <body></body>
+   </html>
+   
+   Styleguide 1.0
+*/
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* 
+    Stylizacja nagłówka
+   
+    Stylowanie nagłówka strony, w tym tła, koloru tekstu, wyrównania tekstu oraz układu elementów w pionie.
+   
+    Markup:
+   <header></header>
+   
+   Styleguide 2.0
+*/
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 
+    Stylizacja panelu nawigacyjnego
+   
+    Stylowanie nawigacji, w tym tła i właściwości overflow.
+   
+    Markup:
+   <div class="nav"></div>
+   
+   Styleguide 3.1
+*/
+/* 
+    Stylizacja przycisku panelu nawigacyjnego
+   
+    Ustawienie braku widoczności dla etykiety i przycisku.
+   
+    Markup:
+   <div class="nav">
+        <label for="menu">☰ Menu</label>
+        <input type="checkbox" id="menu" />
+    </div>
+   
+   Styleguide 3.2
+
+*/
+
+/* 
+    Stylizacja panelu nawigacyjnego przy przesuwaniu ekranu
+   
+    Utrzymanie panelu nawigacyjnego na stałóej pozycji.
+   
+    Markup:
+   <div class="nav"></div>
+   
+   Styleguide 3.3
+
+*/
+
+/* 
+    Stylizacja elementów menu
+   
+    Ustawienie elementów menu w lini, stylowanie tekstu, dodanie odstępów
+   
+    Markup:
+   <div class="nav">
+            <div class="navItem">
+                <a href="index.html">Strona główna</a>
+                <a href="#Blog">Blog</a>
+                <a href="#Ryby">Ryby</a>
+                <a href="obsada.html">Dobór obsady</a>
+                <a href="#Inspiracje">Inspiracje</a>
+            </div>
+    </div>
+   
+   Styleguide 3.4.1
+
+*/
+
+/* 
+    Stylizacja elementów menu
+   
+    Zmiana kolorów tła i czcionki po najechaniu na elementy
+   
+    Markup:
+   <div class="nav">
+            <div class="navItem">
+                <a href="index.html">Strona główna</a>
+                <a href="#Blog">Blog</a>
+                <a href="#Ryby">Ryby</a>
+                <a href="obsada.html">Dobór obsady</a>
+                <a href="#Inspiracje">Inspiracje</a>
+            </div>
+    </div>
+   
+   Styleguide 3.4.2
+
+*/
+.nav {
+    background-color: #333;
+    overflow: hidden;
+    position: relative;
+}
+
+.nav input,
+label {
+    display: none;
+}
+
+.nav.fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navItem a {
+
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navItem a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* 
+    Stylizacja dla ekranów dla ekranów o szerokości do 543px
+   
+    Powoduje ukrycie panelu nawigacyjnego oraz zastąpienie go skrótem "menu" oraz ukrycie nagłówka 2 stopnia w panelu informacyjnym
+   
+    Markup:
+    <header>
+        <div class="nav">
+            <label for="menu">☰ Menu</label>
+            <input type="checkbox" id="menu" />
+            <div class="navItem">
+                <a href="index.html">Strona główna</a>
+                <a href="#Blog">Blog</a>
+                <a href="#Ryby">Ryby</a>
+                <a href="obsada.html">Dobór obsady</a>
+                <a href="#Inspiracje">Inspiracje</a>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="info">
+            <h2>DLA MIŁOŚNIKÓW BIOTOPÓW AMAZONII</h2>
+        </div>
+    </section>
+   
+   Styleguide 4.0
+*/
+@media (max-width: 543px) {
+    .nav label {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navItem {
+        display: none;
+    }
+
+    #menu:checked~.navItem {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav input {
+        display: none;
+    }
+
+    .info h2 {
+        display: none;
+    }
+}
+
+/* 
+    Stylizacja sekcji
+   
+    Stylowanie sekcji - jej rozmiaru i pozycji.
+   
+    Markup:
+   <section></section>
+   
+   Styleguide 5.0
+*/
+
+/* 
+    Stylizacja obrazu sekcji
+   
+    Ustawia wymiary zdjęcia oraz wypełnienie przestrzeni.
+   
+    Markup:
+    <section>
+        <img src="images/tapajos_2.jpg" alt="Fishes">
+    </section>>
+   
+   Styleguide 5.1
+*/
+
+/* 
+    Stylizacja bloku informacyjnego
+   
+    Stylowanie bloku informacyjnego, w tym absolutną pozycję, przeźroczystość i cień.
+   
+    Markup:
+   <div class="info"></div>
+   
+   Styleguide 6.0
+*/
+
+/* 
+    Stylizacja nagłówka bloku informacyjnego
+   
+    Ustawia margines oraz wielkość czcionki dla nagłówka drugiego stopnia.
+   
+    Markup:
+   <h2>DLA MIŁOŚNIKÓW BIOTOPÓW AMAZONII</h2>
+   
+   Styleguide 7.0
+*/
+
+/* 
+    Stylizacja przycisku bloku informacyjnego
+   
+    Styluje przycisk czyniąc go blokiem, zmieniając kolor, obramowanie 
+   i marginesy.
+   
+    Markup:
+   <a href="#Blog" class="blogButton">ODWIEDŹ BLOG</a>
+   
+   Styleguide 8.0
+*/
+
+/* 
+    Stylizacja przycisku bloku informacyjnego po najechaniu na niego
+   
+    Styluje przycisk po najechaniu, powiększając go.
+   
+    Markup:
+   <a href="#Blog" class="blogButton">ODWIEDŹ BLOG</a>
+   
+   Styleguide 8.1
+*/
+
+section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    height: auto;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.info {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    width: 30%;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 5%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+
+.blogButton {
+    display: block;
+    margin-top: 5%;
+    padding: 5%;
+    text-align: center;
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.blogButton:hover {
+    transform: scale(1.03);
+}
+
+
+/* 
+    Stylizacja kontenera głównej treści
+   
+    Stylowanie nagłówka kontenera, w tym tła, koloru, ułożenia tekstu.
+   
+    Markup:
+   <div class="contHead"></div>
+   
+   Styleguide 9.0
+*/
+/* 
+    Stylizacja paragrafów głównej treści
+   
+    Ustawienie wewnętrznego marginesu dla paragrafów.
+   
+    Markup:
+    <div class="contHead">
+        <p>Hodowlane doświadczenia:</p>
+    </div>
+   
+   Styleguide 9.1
+*/
+/* 
+    Stylizacja głównej treści
+   
+    Ustawienia elementu - szerokość maksymalna, marginesy i wyrównanie.
+   
+    Markup:
+    <main></main>
+   
+   Styleguide 10.0
+*/
+
+/* 
+    Stylizacja bloku produktów
+   
+    Stylowanie sekcji produktów, wykorzystując grid oraz dodając margines wewnętrzny.
+   
+    Markup:
+    <div class="product"></div>
+   
+   Styleguide 11.0
+*/
+
+/* 
+    Stylizacja przedmiotów
+   
+    Stylowanie pojedynczego elementu produktu, definiując animacje przejścia, ramkę, obramowanie oraz wyrównanie tekstu
+   
+    Markup:
+    <div class="productItem"></div>
+   
+   Styleguide 12.0
+*/
+
+/* 
+    Stylizacja przedmiotów po najechaniu na nie
+   
+    Stylowanie pojedynczego elementu produktu po najechaniu na niego zwiększając jego rozmiar, kolor obramowania oraz wygląd kursora.
+   
+    Markup:
+    <div class="productItem"></div>
+   
+   Styleguide 12.1
+*/
+
+/* 
+    Stylizacja zdjęć produktów
+   
+    Dopasowanie zdjęć do rozmiaru kontenera w którym się znajduje, oraz ustawienie ich rozmiarów.
+   
+    Markup:
+    <div class="productItem">
+        <img src="images/mendezi.jpg" alt="Apistogramma Mendezi">
+    </div>
+   
+   Styleguide 13.0
+*/
+
+.contHead {
+    text-align: center;
+    background-color: #333;
+    width: 100%;
+    color: white;
+    min-height: 20px;
+}
+
+.contHead p {
+    padding: 10px;
+}
+
+.main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    padding: 20px 0;
+}
+
+.productItem {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.productItem:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.productItem img {
+    max-width: 80%;
+    object-fit: cover;
+    object-position: center;
+    width: 300px;
+    height: 100px;
+}
+/* 
+    Stylizacja bloku formularza
+   
+    Stylowanie bloku formularza, w tym tła, obramowania i wypełnienia.
+   
+    Markup:
+   <div class="form"></div>
+   
+   Styleguide 14.0
+*/
+
+/* 
+    Stylizacja nagłówka bloku formularza
+   
+    Stylowanie koloru tekstu i położenia nagłówka pierwszego stopnia.
+   
+    Markup:
+   <div class="form">
+        <h1>Formularz kontaktowy</h1>
+   </div>
+   
+   Styleguide 14.1
+*/
+
+/* 
+    Stylizacja etykiet formularza
+   
+    Ustawienie elementu jako blokowego, dodanie dolnego marginesu.
+   
+    Markup:
+        <label for="name">Imię:</label>
+    
+   
+   Styleguide 15.0
+*/
+
+/* 
+    Stylizacja pól formularza
+   
+    Stylowanie pól tekstowych -obramowania, marginesów, ustawienie szerokości.
+   
+    Markup:
+        <form action="#" method="post">
+            <input type="text" id="name" name="name" required>
+            <input type="email" id="email" name="email" required>
+            <textarea id="message" name="message" required></textarea>
+        </form>
+    
+   
+   Styleguide 15.1
+*/
+/* 
+    Stylizacja wieloliniowego pola tekstowego
+   
+    Ustawienie wysokości wieloliniowego pola tekstowego.
+   
+    Markup:
+        <form action="#" method="post">
+            <textarea id="message" name="message" required></textarea>
+        </form>
+    
+   
+   Styleguide 15.2
+*/
+
+/* 
+    Stylizacja przycisku wysyłąnia formularza
+   
+    Stylowanie kolorów, obramowania, kursora i marginesów dla przycisku wysyłającego formularz
+   
+    Markup:
+        <form action="#" method="post">
+            <input type="submit" value="Wyślij">
+        </form>
+    
+   
+   Styleguide 15.3.0
+*/
+/* 
+    Stylizacja przycisku wysyłąnia formularza po najechaniu na niego
+   
+    Zmiana koloru po najechaniu na przycisk
+   
+    Markup:
+        <form action="#" method="post">
+            <input type="submit" value="Wyślij">
+        </form>
+    
+   
+   Styleguide 15.3.1
+*/
+
+.form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+}
+
+.form h2 {
+    color: #333;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    height: 150px;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+/* 
+    Stylizacja stopki
+   
+    Stylowanie stopki strony, w tym tła, koloru tekstu i wyrównania.
+   
+    Markup:
+   <footer></footer>
+   
+   Styleguide 16.0
+*/
+
+footer {
+    background-color: #666;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.webDescr {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.webDescr p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}

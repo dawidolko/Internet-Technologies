@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Katalog Samochodów</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html"><h1>Katalog Samochodów</h1></a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html#type_cars">Rodzaje samochodów</a>
+                    <ul>
+                        <li><a href="index.html#bmw#bmw">BMW</a>
+                        <ul>
+                            <li><a href="index.html#seria3">Seria 3</a></li>
+                            <li><a href="index.html#seria4">Seria 4</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="index.html#audi">Audi</a>
+                        <ul>
+                            <li><a href="index.html#a3">A3</a></li>
+                            <li><a href="index.html#a5">A5</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="index.html#mercedes">Mercedes</a>
+                        <ul>
+                            <li><a href="index.html#klasaC">Klasa C</a></li>
+                            <li><a href="index.html#klasaE">Klasa E</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                    </li>
+                    <li><a href="index.html#about_us">O nas</a></li>
+                    <li><a href="#contact_form">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="model">
+        <div class="part">
+            <h2>Audi A5</h2>
+            <img src="zdjecia/a5.jpg" alt="a5"/>
+        </div>
+        
+        <div class="part"><h2>Informacje o samochodzie</h2>
+            <table>
+                <tr>
+                    <th>Model:</th>
+                    <td>Audi A5</td>
+                </tr>
+                <tr>
+                    <th>Pojemność silnika [litry]:</th>
+                    <td>2.0</td>
+                </tr>
+                <tr>
+                    <th>Moc silnika [KM]:</th>
+                    <td>170</td>
+                </tr>
+                <tr>
+                    <th>Typ skrzyni biegów:</th>
+                    <td>Manualna</td>
+                </tr>
+                <tr>
+                    <th>Liczba biegów:</th>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <th>Napędzane koła:</th>
+                    <td>Przód</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <footer>
+        <section id="contact_form" class="contact_form">
+            <h2>Kontakt</h2><hr>
+            <form action="#" method="post">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+    
+                <br><label for="subject">Temat:</label><br>
+                <input type="text" id="subject" name="subject" required>
+    
+                <br><label for="message">Wiadomość:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+    
+                <input type="submit" value="Wyślij">
+            </form>
+        </section>
+    </footer>
+</body>
+</html>

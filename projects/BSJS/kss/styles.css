@@ -1,0 +1,980 @@
+/* 
+    Import czcionki
+   
+    Importuje czcionkę 'JetBrains Mono' z Google Fonts.
+   
+    Markup:
+    <p style="font-family: 'JetBrains Mono';">Przykładowy tekst</p>
+   
+    Styleguide 13.0
+*/
+
+/* 
+    Globalne ustawienia HTML
+   
+    Ustawia tło na ciemnoszare, kolor tekstu na prawie biały, domyślną czcionkę na 'JetBrains Mono' i domyślny rozmiar czcionki na 20px dla całego dokumentu HTML.
+   
+    Markup:
+   <html>
+   <body>
+   <p>Przykładowy tekst</p>
+   </body>
+   </html>
+   
+   Styleguide 14.0
+*/
+
+/* 
+    Stylizacja nagłówka h1
+   
+    Definiuje styl dla nagłówków pierwszego poziomu (h1). Czcionka to 'Bauhaus 93', rozmiar czcionki to 40px, odstęp między literami to 4px, a dolny margines to -10px.
+   
+    Markup:
+   <h1>Przykładowy nagłówek</h1>
+   
+   Styleguide 15.0
+*/
+
+/* 
+    Stylizacja nagłówka h2
+   
+    Definiuje styl dla nagłówków drugiego poziomu (h2). Czcionka to 'JetBrains Mono', rozmiar czcionki to 20px.
+   
+    Markup:
+   
+    <h2>Przykładowy nagłówek</h2>
+   Styleguide 16.0
+*/
+
+/* 
+    Stylizacja .title-box
+   
+    Definiuje styl dla elementu o klasie 'title-box'. Wykorzystuje flexbox do wyśrodkowania elementów wewnątrz pionowo i poziomo.
+   
+    Markup:
+    <div class="title-box">Przykładowy tekst</div>
+   
+    Styleguide 17.0
+*/
+
+/* 
+    Stylizacja .info-container
+   
+    Definiuje styl dla elementu o klasie 'info-container'. Używa flexbox do organizacji elementów wewnątrz w rzędzie i rozłożenia ich równomiernie. Ustawia tło na półprzezroczyste czarne, szerokość na 1000px, wysokość na 150px, margines na 50px, styl obramowania na solidne, kolor obramowania na prawie biały, szerokość obramowania na 2px, padding na 5px i zaokrąglenie rogów na 10px.
+   
+    Markup:
+   <div class="info-container">Przykładowy tekst</div>
+   
+   Styleguide 18.0
+*/
+
+/* 
+    Stylizacja paragrafów w .info-container
+   
+    Definiuje styl dla paragrafów w elemencie o klasie 'info-container'. Ustawia margines na 20px i szerokość na 200px.
+   
+    Markup:
+   <div class="info-container"><p>Przykładowy tekst</p></div>
+   
+   Styleguide 18.1
+*/
+
+/* 
+    Stylizacja spanów w .info-container
+   Definiuje styl dla spanów w elemencie o klasie 'info-container'. Ustawia kolor na yellowgreen.
+   Markup:
+   <div class="info-container"><span>Przykładowy tekst</span></div>
+   Styleguide 18.1.2
+*/
+
+/* 
+    Stylizacja #gamesboard-container
+   
+    Definiuje styl dla elementu o id 'gamesboard-container'. Używa flexbox do organizacji elementów wewnątrz i rozłożenia ich równomiernie. Ustawia tło na półprzezroczyste czarne, szerokość na 800px, margines na 50px, padding na 5px, zaokrąglenie rogów na 10px, padding-bottom na 50px, padding-top na 50px, styl obramowania na solidne, obraz obramowania na gradient kątowy, animację obracania na 10s.
+   
+    Markup:
+   <div id="gamesboard-container">Przykładowy tekst</div>
+   
+   Styleguide 18.2
+*/
+
+/* 
+    Stylizacja .container
+   
+    Definiuje styl dla elementu o klasie 'container'. Używa flexbox do organizacji elementów wewnątrz w kolumnie.
+   
+    Markup:
+   <div class="container">Przykładowy tekst</div>
+   
+   Styleguide 18.3
+*/
+
+/* 
+    Stylizacja .game-board
+   
+    Definiuje styl dla elementu o klasie 'game-board'. Ustawia szerokość na 200px, wysokość na 200px, wyświetlanie na flex, flex-wrap na wrap, skalę na 1.35, margines na 10px, margin-right na 50px i margin-left na 50px.
+   
+    Markup:
+   <div class="game-board">Przykładowy tekst</div>
+   
+   Styleguide 18.4
+*/
+
+/* 
+    Stylizacja .info-board
+   
+    Definiuje styl dla elementu o klasie 'info-board'. Używa flexbox do organizacji elementów wewnątrz i rozłożenia ich równomiernie. Ustawia szerokość na 100%.
+   
+    Markup:
+   <div class="info-board">Przykładowy tekst</div>
+   
+   Styleguide 18.5
+*/
+
+/* 
+    Stylizacja .block
+   
+    Definiuje styl dla elementu o klasie 'block'. Ustawia szerokość na 20px i wysokość na 20px.
+   
+    Markup:
+   <div class="block">Przykładowy tekst</div>
+   
+   Styleguide 18.6
+*/
+
+/* 
+    Stylizacja .option-container
+   
+    Definiuje styl dla elementu o klasie 'option-container'. Używa flexbox do wyśrodkowania elementów wewnątrz pionowo, ustawia margines na 30px 0, szerokość na 500px, wysokość na 60px, tło na półprzezroczyste czarne, styl obramowania na solidne, kolor obramowania na prawie biały, szerokość obramowania na 2px, padding na 5px, zaokrąglenie rogów na 10px, obraz obramowania na gradient kątowy, animację obracania na 10s.
+   
+    Markup:
+   <div class="option-container">Przykładowy tekst</div>
+   
+   Styleguide 18.7
+*/
+
+/* 
+    Stylizacja .dest
+   
+    Definiuje styl dla elementu o klasie 'dest'. Ustawia tło na rgb(125, 184, 179).
+   
+    Markup:
+   <div class="dest">Przykładowy tekst</div>
+   Styleguide 19.0
+*/
+
+/* 
+    Stylizacja .sub
+   
+    Definiuje styl dla elementu o klasie 'sub'. Ustawia tło na rgb(0, 195, 255).
+   
+    Markup:
+    <div class="sub">Przykładowy tekst</div>
+   
+    Styleguide 20.0
+*/
+
+/* 
+    Stylizacja .cru
+   
+    Definiuje styl dla elementu o klasie 'cru'. Ustawia tło na rgb(21, 81, 177).
+   
+    Markup:
+   <div class="cru">Przykładowy tekst</div>
+   
+   Styleguide 21.0
+*/
+
+/* 
+    Stylizacja .batt
+   
+    Definiuje styl dla elementu o klasie 'batt'. Ustawia tło na rgb(26, 36, 169).
+   
+    Markup:
+   <div class="batt">Przykładowy tekst</div>
+   
+   Styleguide 22.0
+*/
+
+/* 
+    Stylizacja .carr
+   
+    Definiuje styl dla elementu o klasie 'carr'. Ustawia tło na rgb(27, 27, 234).
+   
+    Markup:
+   <div class="carr">Przykładowy tekst</div>
+   
+   Styleguide 23.0
+*/
+
+/* 
+    Stylizacja .sub dla #player
+   
+    Definiuje styl dla elementu o klasie 'sub' w elemencie o id 'player'. Ustawia rozmiar tła na 100%, tło na przezroczyste, obraz tła na 'images/submarine.png'.
+   
+    Markup:
+   <div id="player">
+     <div class="sub">Przykładowy tekst</div>
+   </div>
+   
+   Styleguide 24.0
+*/
+
+/* 
+    Stylizacja .dest dla #player
+   
+    Definiuje styl dla elementu o klasie 'dest' w elemencie o id 'player'. Ustawia rozmiar tła na 100%, pozycję obrazu tła na 50%, powtarzanie obrazu tła na no-repeat, tło na przezroczyste, obraz tła na 'images/destroyer.png'.
+   
+    Markup:
+   <div id="player">
+     <div class="dest">Przykładowy tekst</div>
+   </div>
+   
+   Styleguide 25.0
+*/
+
+/* 
+    Stylizacja .cru dla #player
+   
+    Definiuje styl dla elementu o klasie 'cru' w elemencie o id 'player'. Ustawia rozmiar tła na 100%, powtarzanie obrazu tła na no-repeat, pozycję obrazu tła na 70%, tło na przezroczyste, obraz tła na 'images/crusier.png'.
+   
+    Markup:
+   <div id="player">
+     <div class="cru">Przykładowy tekst</div>
+   </div>
+   
+   Styleguide 26.0
+*/
+
+/* 
+    Stylizacja .batt dla #player
+   
+    Definiuje styl dla elementu o klasie 'batt' w elemencie o id 'player'. Ustawia rozmiar tła na 100%, tło na przezroczyste, obraz tła na 'images/battleship.png', powtarzanie obrazu tła na no-repeat.
+   
+    Markup:
+   <div id="player">
+     <div class="batt">Przykładowy tekst</div>
+   </div>
+   
+   Styleguide 26.0
+*/
+
+/* 
+    Stylizacja .carr dla #player
+   
+    Definiuje styl dla elementu o klasie 'carr' w elemencie o id 'player'. Ustawia rozmiar tła na 100%, tło na przezroczyste, obraz tła na 'images/carrier.png', powtarzanie obrazu tła na no-repeat.
+   
+    Markup:
+   <div id="player">
+     <div class="carr">Przykładowy tekst</div>
+   </div>
+   
+   Styleguide 27.0
+*/
+
+/* 
+    Stylizacja .dest-prev
+   
+    Definiuje styl dla elementu o klasie 'dest-prev'. Ustawia szerokość na 20px, wysokość na 10px i margines na 3px.
+   
+    Markup:
+   <div class="dest-prev">Przykładowy tekst</div>
+   
+   Styleguide 28.0
+*/
+
+/* 
+    Stylizacja .sub-prev
+   
+    Definiuje styl dla elementu o klasie 'sub-prev'. Ustawia szerokość na 30px, wysokość na 10px, margines na 3px i tło na rgb(0, 195, 255).
+   
+    Markup:
+   <div class="sub-prev">Przykładowy tekst</div>
+   
+   Styleguide 29.0
+*/
+
+/* 
+    Stylizacja .cru-prev
+   
+    Definiuje styl dla elementu o klasie 'cru-prev'. Ustawia szerokość na 30px, wysokość na 10px i margines na 3px.
+   
+    Markup:
+   <div class="cru-prev">Przykładowy tekst</div>
+   
+   Styleguide 30.0
+*/
+
+/* 
+    Stylizacja .batt-prev
+   
+    Definiuje styl dla elementu o klasie 'batt-prev'. Ustawia szerokość na 40px, wysokość na 10px i margines na 3px.
+   
+    Markup:
+   <div class="batt-prev">Przykładowy tekst</div>
+   
+   Styleguide 31.0
+*/
+
+/* 
+    Stylizacja .carr-prev
+   
+    Definiuje styl dla elementu o klasie 'carr-prev'. Ustawia szerokość na 50px, wysokość na 10px i margines na 3px.
+   
+    Markup:
+   <div class="carr-prev">Przykładowy tekst</div>
+   
+   Styleguide 32.0
+*/
+
+/* 
+    Stylizacja .dest, .sub, .carr, .cru, .batt dla #computer
+   
+    Definiuje styl dla elementów o klasach 'dest', 'sub', 'carr', 'cru', 'batt' w elemencie o id 'computer'. Ustawia tło na ciemnoniebieskie.
+   
+    Markup:
+   <div id="computer">
+     <div class="dest">Przykładowy tekst</div>
+     <div class="sub">Przykładowy tekst</div>
+     <div class="carr">Przykładowy tekst</div>
+     <div class="cru">Przykładowy tekst</div>
+     <div class="batt">Przykładowy tekst</div>
+   </div>
+   
+   Styleguide 33.0
+*/
+
+/* 
+    Stylizacja .hover
+   
+    Definiuje styl dla elementu o klasie 'hover'. Ustawia tło na darkslategray.
+   
+    Markup:
+   <div class="hover">Przykładowy tekst</div>
+   
+   Styleguide 34.0
+*/
+
+/* 
+    Stylizacja .boom
+   
+    Definiuje styl dla elementu o klasie 'boom'. Ustawia tło na czerwone, obraz tła na 'images/boom.jpg', rozmiar tła na 250%, pozycję tła na środek.
+   
+    Markup:
+   <div class="boom">Przykładowy tekst</div>
+   Styleguide 35.0
+*/
+
+/* 
+    Stylizacja .empty
+   
+    Definiuje styl dla elementu o klasie 'empty'. Ustawia obraz tła na 'images/x.jpg', rozmiar tła na 100%, pozycję tła na środek.
+   
+    Markup:
+   <div class="empty">Przykładowy tekst</div>
+   
+   Styleguide 36.0
+*/
+
+/* 
+    Stylizacja body
+   
+    Definiuje podstawowe style dla elementu body. Ustawia wyświetlanie na flex, kierunek flex na kolumnę, wyśrodkowanie elementów, wyśrodkowanie elementów wzdłuż osi poprzecznej, animację przewijania, tło, kolor tekstu, minimalną szerokość, szerokość, wysokość, perspektywę i punkt perspektywy.
+   
+    Markup:
+   <body>
+     <p>Przykładowy tekst</p>
+   </body>
+   
+   Styleguide 37.0
+*/
+
+/* 
+    Animacja scroll
+   
+    Definiuje animację 'scroll', która przesuwa tło w dół.
+   
+    Markup:
+   <div style="animation: scroll 5s linear infinite;">Przykładowy tekst</div>
+   
+   Styleguide 38.0
+*/
+
+/* 
+    Zapytanie medialne dla prefers-reduced-motion
+   
+    Definiuje zachowanie animacji dla użytkowników, którzy preferują zredukowaną ilość ruchu. Zmienia prędkość animacji 'scroll'.
+   
+    Markup:
+   <div style="animation: scroll 5s linear infinite;">Przykładowy tekst</div>
+   
+   Styleguide 39.0
+*/
+
+/* 
+    Zapytanie medialne dla min-width: 670px
+   
+    Definiuje zachowanie stylów dla ekranów o szerokości co najmniej 670px. Zmienia rozmiar czcionki dla elementu o klasie 'title'.
+   
+    Markup:
+   <div class="title">Przykładowy tekst</div>
+   
+   Styleguide 40.0
+*/
+
+/* 
+    Stylizacja .main-box
+   
+    Definiuje styl dla elementu o klasie 'main-box'. Używa flexbox do organizacji elementów wewnątrz w kolumnie i wyśrodkowania ich. Ustawia tło na półprzezroczyste czarne, szerokość na 100% i wysokość na 100%.
+   
+    Markup:
+   <div class="main-box">Przykładowy tekst</div>
+   
+   Styleguide 41.0
+*/
+
+/* 
+    Stylizacja .slidecontainer
+   
+    Definiuje styl dla elementu o klasie 'slidecontainer'. Używa flexbox do organizacji elementów wewnątrz w kolumnie.
+   
+    Markup:
+   <div class="slidecontainer">Przykładowy tekst</div>
+   
+   Styleguide 42.0
+*/
+
+/* 
+    Stylizacja .info-container
+   
+    Definiuje styl dla elementu o klasie 'info-container'. Ustawia obramowanie na solidne, obraz obramowania na gradient kątowy, animację obracania na 10s.
+   
+    Markup:
+   <div class="info-container">Przykładowy tekst</div>
+   
+   Styleguide 43.0
+*/
+
+/* 
+    Animacja rotate
+   
+    Definiuje animację 'rotate', która obraca element o 360 stopni.
+   
+    Markup:
+   <div style="animation: rotate 2s linear infinite;">Przykładowy tekst</div>
+   
+   Styleguide 44.0
+*/
+
+/* 
+    Właściwość --angle
+   
+    Definiuje właściwość '--angle'. Składnia to '<angle>', wartość początkowa to 0deg, nie dziedziczy.
+   
+    Markup:
+   <div style="--angle: 45deg;">Przykładowy tekst</div>
+   
+   Styleguide 45.0
+*/
+
+/* 
+    Stylizacja suwaka
+   
+    Definiuje styl dla suwaka. Ustawia tło na cornflowerblue i zaokrąglenie rogów na 10px.
+   
+    Markup:
+   <input type="range" min="1" max="100" value="50" class="slider">
+   
+   Styleguide 46.0
+*/
+
+/* 
+    Animacja backgroundColor
+   
+    Definiuje animację 'backgroundColor', która cyklicznie zmienia kolor tła i obramowania elementu.
+   
+    Markup:
+   <div style="animation: backgroundColor 5s linear infinite;">Przykładowy tekst</div>
+   
+   Styleguide 47.0
+*/
+
+/* 
+    Stylizacja .startButton
+   
+    Definiuje styl dla przycisku o klasie 'startButton'. Ustawia szerokość, wysokość, tło, kolor tekstu, czcionkę, rozmiar czcionki, animację, styl obramowania, zaokrąglenie rogów i kolor obramowania.
+   
+    Markup:
+   <button class="startButton">Start</button>
+   
+   Styleguide 48.0
+*/
+
+/* 
+    Stylizacja .flipButton
+   
+    Definiuje styl dla przycisku o klasie 'flipButton'. Ustawia szerokość, wysokość, tło, kolor tekstu, czcionkę, rozmiar czcionki, animację, styl obramowania, zaokrąglenie rogów i kolor obramowania.
+   
+    Markup:
+    <button class="flipButton">Flip</button>
+   
+    Styleguide 49.0
+*/
+
+/*
+
+    Stylizacja .resetButton
+   
+    Definiuje styl dla przycisku o klasie 'resetButton'. Ustawia szerokość, wysokość, tło, kolor tekstu, czcionkę, rozmiar czcionki, animację, styl obramowania, zaokrąglenie rogów i kolor obramowania.
+   
+    Markup:
+   <button class="resetButton">Reset</button>
+   
+   Styleguide 50.0
+*/
+
+/* 
+     Zapytanie medialne dla max-height: 1300px
+  
+     Definiuje zachowanie stylów dla ekranów o wysokości co najwyżej 1300px. Zmienia szerokość dla elementu o id 'gamesboard-container', skalę, margines, margines górny, margines dolny, wyświetlanie dla elementu o klasie 'container', wyśrodkowanie elementów, szerokość, margines dolny, szerokość dla elementu o klasie 'info-container', margines, wysokość, rozmiar czcionki dla paragrafów w elemencie o klasie 'info-container', wysokość, margines dla elementu o klasie 'option-container', skalę dla elementu o klasie 'buttons-container', skalę dla elementu o klasie 'slidecontainer'.
+   
+     Markup:
+   <div id="gamesboard-container">Przykładowy tekst</div>
+   <div class="container">Przykładowy tekst</div>
+   <div class="info-container">Przykładowy tekst</div>
+   <p>Przykładowy tekst</p>
+   <div class="option-container">Przykładowy tekst</div>
+   <div class="buttons-container">Przykładowy tekst</div>
+   <div class="slidecontainer">Przykładowy tekst</div>
+   
+   Styleguide 51.0
+*/
+
+@import url("https://fonts.google.com/specimen/JetBrains+Mono");
+
+html {
+    background-color: rgb(10, 10, 10);
+    color: rgb(255, 255, 255, 0.9);
+    font-family: 'JetBrains Mono';
+    font-size: 20px;
+}
+
+h1 {
+    font-family: 'Bauhaus 93';
+    font-size: 40px;
+    letter-spacing: 4px;
+    margin-bottom: -10px;
+}
+
+h2 {
+    font-family: 'JetBrains Mono';
+    font-size: 20px;
+}
+
+.title-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1000px;
+    height: 150px;
+    margin: 50px;
+
+    background-color: rgba(0, 0, 0, 0.845);
+    border-style: solid;
+    border-color: rgb(255, 255, 255, 0.9);
+    border-width: 2px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.info-container p {
+    margin: 20px;
+    width: 200px;
+}
+
+.info-container span {
+    color: yellowgreen;
+}
+
+#gamesboard-container {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+
+    background-color: rgba(0, 0, 0, 0.845);
+    padding: 5px;
+    border-radius: 10px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+
+    border: 2px solid;
+    border-image: conic-gradient(from var(--angle), white, aqua, rgb(0, 213, 255), aqua, white) 1;
+    animation: 10s rotate linear infinite;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.game-board {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    scale: 1.35;
+    margin: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.info-board {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.block {
+    width: 20px;
+    height: 20px;
+}
+
+.option-container {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    width: 500px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.845);
+    border-style: solid;
+    border-color: rgb(255, 255, 255, 0.9);
+    border-width: 2px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid;
+    border-image: conic-gradient(from var(--angle), white, aqua, rgb(0, 213, 255), aqua, white) 1;
+    animation: 10s rotate linear infinite;
+
+}
+
+
+
+.dest {
+    background-color: rgb(125, 184, 179);
+}
+
+.sub {
+    background-color: rgb(0, 195, 255);
+}
+
+.cru {
+    background-color: rgb(21, 81, 177);
+}
+
+.batt {
+    background-color: rgb(26, 36, 169);
+}
+
+.carr {
+    background-color: rgb(27, 27, 234);
+}
+
+#player .sub {
+    background-size: 100%;
+    background-color: transparent;
+    background-image: url('images/submarine.png');
+
+}
+
+#player .dest {
+    background-size: 100%;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url('images/destroyer.png');
+}
+
+#player .cru {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: 70%;
+    background-color: transparent;
+    background-image: url('images/crusier.png');
+}
+
+#player .batt {
+    background-size: 100%;
+    background-color: transparent;
+    background-image: url('images/battleship.png');
+    background-repeat: no-repeat;
+}
+
+#player .carr {
+    background-size: 100%;
+    background-color: transparent;
+    background-image: url('images/carrier.png');
+    background-repeat: no-repeat;
+}
+
+
+.dest-prev {
+    width: 20px;
+    height: 10px;
+    margin: 3px;
+}
+
+.sub-prev {
+    width: 30px;
+    height: 10px;
+    margin: 3px;
+    background: rgb(0, 195, 255);
+}
+
+.cru-prev {
+    width: 30px;
+    height: 10px;
+    margin: 3px;
+}
+
+.batt-prev {
+    width: 40px;
+    height: 10px;
+    margin: 3px;
+}
+
+.carr-prev {
+    width: 50px;
+    height: 10px;
+    margin: 3px;
+}
+
+#computer .dest,
+#computer .sub,
+#computer .carr,
+#computer .cru,
+#computer .batt {
+    background-color: darkblue;
+}
+
+.hover {
+    background-color: darkslategray;
+}
+
+.boom {
+    background-color: red !important;
+    background: url("images/boom.jpg") !important;
+    background-size: 250% !important;
+    background-position-y: 50% !important;
+    background-position-x: 50% !important;
+}
+
+.empty {
+    background: url("images/x.jpg") !important;
+    background-size: 100% !important;
+    background-position-y: 50%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+
+    animation: scroll 500s linear infinite;
+    background: #111111;
+    color: #eee;
+    min-width: 360px;
+    width: 100%;
+    height: 100%;
+    perspective: 800px;
+    perspective-origin: 50% 50%;
+}
+
+@keyframes scroll {
+    100% {
+        background-position: 0px -400%;
+    }
+}
+
+/* Fallback if the operatring system prefers reduced motion*/
+@media (prefers-reduced-motion) {
+    .wrapper {
+        animation: scroll 800s linear infinite;
+    }
+}
+
+@media (min-width: 670px) {
+    .title {
+        font-size: 5rem;
+    }
+}
+
+.main-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100%;
+}
+
+.slidecontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-container {
+    border: 2px solid;
+    border-image: conic-gradient(from var(--angle), white, aqua, rgb(0, 145, 255), rgb(1, 244, 127), rgb(0, 187, 255), aqua, white) 1;
+    animation: 10s rotate linear infinite;
+}
+
+@keyframes rotate {
+    to {
+        --angle: 360deg;
+    }
+}
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    background: cornflowerblue;
+    border-radius: 10px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    background: cornflowerblue;
+}
+
+input[type=range]::-moz-range-track {
+    background: cornflowerblue;
+}
+
+input[type=range]::-moz-range-thumb {
+    background: cornflowerblue;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: cornflowerblue;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: cornflowerblue;
+}
+
+input[type=range]::-ms-thumb {
+    background: cornflowerblue;
+}
+
+@keyframes backgroundColor {
+    0% {
+        background-color: #000;
+        border-color: white;
+    }
+
+    50% {
+        background-color: #23008a;
+        border-color: #000;
+    }
+
+    100% {
+        background-color: #000;
+        border-color: white;
+    }
+}
+
+.startButton {
+    width: 100px;
+    height: 40px;
+    background-color: #000;
+    color: white;
+    font-family: 'JetBrains Mono';
+    font-size: 18px;
+    animation: backgroundColor 5s infinite;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: white;
+}
+
+.flipButton {
+    width: 100px;
+    height: 40px;
+    background-color: #000;
+    color: white;
+    font-family: 'JetBrains Mono';
+    font-size: 18px;
+    animation: backgroundColor 5s infinite;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: white;
+}
+
+.resetButton {
+    width: 100px;
+    height: 40px;
+    background-color: #000;
+    color: white;
+    font-family: 'JetBrains Mono';
+    font-size: 18px;
+    animation: backgroundColor 5s infinite;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: white;
+}
+
+@media only screen and (max-height: 1300px) {
+    #gamesboard-container {
+        width: 600px;
+        scale: 0.8;
+        margin: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        width: 700px;
+        margin-bottom: -50px;
+    }
+
+    .info-container {
+        width: 900px;
+        margin: 0;
+        height: 100px;
+    }
+
+    .info-board {
+        width: 100%;
+        margin-bottom: -40px;
+    }
+
+    .info-container p {
+        font-size: 14px;
+    }
+
+    .option-container {
+        height: 30px;
+        margin: 10px;
+    }
+
+    .buttons-container {
+        scale: 0.9;
+    }
+
+    .slidecontainer {
+        scale: 0.9;
+    }
+}

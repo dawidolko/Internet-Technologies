@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Strona internetowa piekarni - zapraszamy!">
+    <meta name="keywords" content="piekarnia, pieczywo, chleby, bułki, rogaliki, bagietki">
+    <title>Piekarnia - kontakt</title>
+    <link rel="stylesheet" href="css/wspolne.css">
+    <link rel="stylesheet" href="css/dla_telefonow.css">
+    <link rel="stylesheet" href="css/dla_kontakt.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/bread_web_icon.png">
+    <script src="js/burger.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="menu">
+            <div class="zdjecie">
+                <img src="img/placeholder.png" alt="logo">
+            </div>
+            <button class="burger-menu">&#9776;</button>
+            <div class="linki">
+                <a href="index.html">Strona Główna</a>
+                <a href="o_nas.html">O nas</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="zamowienie.html">Zamówienia</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <section>
+                <h2>Dane kontaktowe</h2>
+                <p>Adres: Lorem, ipsum dolor.</p>
+                <p>E-mail: example@example.pl</p>
+                <p>tel./fax: +48 12 345 67 89</p>
+                <p>tel.kom.: +48 123 456 789</p>
+                <p>Czynne: pon-pt 6:00 - 20:00</p>
+            </section>
+            <section>
+                <h2>Wyślij nam wiadomość</h2>
+                <form action="#" id="formularz">
+                    <label for="imie">Imię*:</label>
+                    <input type="text" id="imie" name="imie" required autofocus pattern="[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]+"
+                        title="Wpisz poprawne imię.">
+
+                    <label for="nazwisko">Nazwisko*:</label>
+                    <input type="text" id="nazwisko" name="nazwisko" required pattern="[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]+"
+                        title="Wpisz poprawne nazwisko.">
+
+                    <label for="adres-email">Adres e-mail*:</label>
+                    <input type="email" id="adres-email" name="adres-email" required title="Wpisz adres e-mail.">
+
+                    <label for="temat">Temat:</label>
+                    <input type="text" id="temat" name="temat" title="Wpisz temat.">
+
+                    <label for="tresc">Treść wiadomości:</label>
+                    <textarea name="tresc" id="tresc" cols="60" rows="10"></textarea>
+
+                    <button type="submit">Wyślij</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <div class="footer-left">
+                <p>© Piekarnia 2024</p>
+            </div>
+            <div class="footer-right">
+                <p><a href="#">Polityka prywatności</a></p>
+                <div class="socials">
+                    <a href="#"><img src="img/socials/facebook.png" id="fb" alt="link_do_facebooka"></a>
+                    <a href="#"><img src="img/socials/instagram.png" id="inst" alt="link_do_instagrama"></a>
+                    <a href="#"><img src="img/socials/twitter.png" id="tw" alt="link_do_twittera"></a>
+                    <a href="#"><img src="img/socials/youtube.png" id="yt" alt="link_do_youtuba"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

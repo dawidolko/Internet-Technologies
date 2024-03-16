@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>KSS Style Guide</title>
+
+  <meta name="description" content=""/>
+  <meta name="generator" content="kss-node"/>
+  <meta name="viewport" content="width=device-width"/>
+
+  <link rel="stylesheet" href="kss-assets/kss.css"/>
+  <link rel="stylesheet" href="../kss-style.css"/>
+
+</head>
+<body id="kss-node" >
+
+<div class="kss-sidebar kss-style">
+  <header class="kss-header">
+    <h1 class="kss-doc-title">KSS Style Guide</h1>
+  </header>
+  <nav class="kss-nav" aria-label="Style Guide">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-1.html">
+          <span class="kss-nav__ref">1</span><span class="kss-nav__name">PCBT - Strona główna</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-2.html">
+          <span class="kss-nav__ref">2</span><span class="kss-nav__name">Dobór podzespołow</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-3.html">
+          <span class="kss-nav__ref">3</span><span class="kss-nav__name">Instalacja podzespołów</span>
+        </a>
+            <ul class="kss-nav__menu-child">
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-3.html#kssref-3-1">
+                  <span class="kss-nav__ref ">3.1</span
+                  ><span class="kss-nav__name">points-container</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-3.html#kssref-3-2">
+                  <span class="kss-nav__ref ">3.2</span
+                  ><span class="kss-nav__name">video</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-3.html#kssref-3-4">
+                  <span class="kss-nav__ref ">3.4</span
+                  ><span class="kss-nav__name">point-container</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-3.html#kssref-3-5">
+                  <span class="kss-nav__ref ">3.5</span
+                  ><span class="kss-nav__name">media-container</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-3.html#kssref-3-6">
+                  <span class="kss-nav__ref ">3.6</span
+                  ><span class="kss-nav__name">tableOfWires</span>
+                </a>
+              </li>
+            </ul>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-4.html">
+          <span class="kss-nav__ref">4</span><span class="kss-nav__name">Overclocking | Undervolting</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-5.html">
+          <span class="kss-nav__ref">5</span><span class="kss-nav__name">Formularz</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<main class="kss-main" aria-label="Content">
+  <article>
+
+    <div id="kssref-3" class="kss-section kss-section--depth-1 ">
+
+      <div class="kss-style">
+        <h1 class="kss-title kss-title--level-1">
+          <a class="kss-title__permalink" href="#kssref-3">
+            <span class="kss-title__ref">
+              3
+              <span class="kss-title__permalink-hash">
+                  #permalink
+              </span>
+            </span>
+            Instalacja podzespołów
+          </a>
+        </h1>
+
+
+          <div class="kss-description">
+            <p>Opis najważniejszych elementów występujących na stronie z pominięciem wcześniej występujących</p>
+<p><code>&lt;div class=&quot;points-container&quot;&gt;</code> - kontener przechowywujący punkty dla sekcji w wyświetlaniu flex, kierunek kolumnowy i zdefiniowaną rozdzielczością</p>
+<p><code>&lt;div class=&quot;video&quot;&gt;</code> - przechowuje tytuł do załącznika wideo oraz sam załącznik, wyświetlanie flex, kierunek kolumnowy</p>
+<p><code>&lt;div class=&quot;point-div&quot;&gt;</code> - przechowuje jeden point dla points-container, wyświetlanie flex</p>
+<p><code>&lt;div class=&quot;point-container&quot;&gt;</code> -przechowuje drugi rodzaj punktów, wyświetlanie flex, kierunek kolumnowy oraz wyśrodkowuje treści, definiuje nowe style dla point-div</p>
+<p><code>&lt;div class=&quot;media-container&quot;&gt;</code> - przechowuje responsywną tabelę oraz galerię zdjęć, wyświetlanie flex, kierunek kolumnowy oraz wyśrodkowuje treści</p>
+
+          </div>
+
+
+          <div class="kss-parameters__title">Parameters:</div>
+          <ul class="kss-parameters">
+            <li class="kss-parameters__item">
+              <div class="kss-parameters__name"><code>&#x60;&lt;table class&#x3D;&quot;tableOfWires&quot;&gt;&#x60;</code></div>
+              <div class="kss-parameters__description">
+                resposywna tabela która dostosowuje się do rozmiarów urządzenia, overflow - x: auto, overflow - y: scroll
+              </div>
+            </li>
+          </ul>
+      </div>
+
+
+        <div class="kss-source kss-style">
+          Source: <code>partsInstallation.css</code>, line 2
+        </div>
+
+    </div>
+    <section id="kssref-3-1" class="kss-section kss-section--depth-2 ">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-3-1">
+            <span class="kss-title__ref">
+              3.1
+              <span class="kss-title__permalink-hash">
+                  #permalink
+              </span>
+            </span>
+            points-container
+          </a>
+        </h2>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-3-1" data-kss-fullscreen="kssref-3-1">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-3-1.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-3-1" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-3-1" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Example
+          </div>
+
+
+          <div class="kss-modifier__example">
+            <div class="points-container">
+            <p class="point-description">Zamontowanie procesora w płycie głównej wymaga kilku kroków, które zależą od typu procesora i gniazda. Procesor Intel lub AMD można zainstalować na płycie głównej w następujący sposób:</p><br>
+            <div class="point-div">
+                <p class="number">1.</p>
+                <p class="point-description">Oparcie płyty głównej na pudełku, co zapewni solidną podstawę do zamontowania komponentów na płycie głównej.</p><br>
+            </div>
+            <div class="point-div">
+                <p class="number">2.</p>
+                <p class="point-description">Podniesienie procesora i trzymanie plastikowego pudełka pod ręką (na wypadek, gdybyś musiał odłożyć go z powrotem w bezpieczne miejsce).</p><br>
+            </div>
+            <div class="point-div">
+                <p class="number">3.</p>
+                <p class="point-description">Umieszczenie chipa w gniaździe procesora płyty głównej, wyrównując znaki i wycięcia procesora z gniazdem.</p><br>
+            </div>
+        </div>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;points-container&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;point-description&quot;</span>&gt;</span>Zamontowanie procesora w płycie głównej wymaga kilku kroków, które zależą od typu procesora i gniazda. Procesor Intel lub AMD można zainstalować na płycie głównej w następujący sposób:<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;point-div&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;number&quot;</span>&gt;</span>1.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;point-description&quot;</span>&gt;</span>Oparcie płyty głównej na pudełku, co zapewni solidną podstawę do zamontowania komponentów na płycie głównej.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;point-div&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;number&quot;</span>&gt;</span>2.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;point-description&quot;</span>&gt;</span>Podniesienie procesora i trzymanie plastikowego pudełka pod ręką (na wypadek, gdybyś musiał odłożyć go z powrotem w bezpieczne miejsce).<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;point-div&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;number&quot;</span>&gt;</span>3.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;point-description&quot;</span>&gt;</span>Umieszczenie chipa w gniaździe procesora płyty głównej, wyrównując znaki i wycięcia procesora z gniazdem.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>partsInstallation.css</code>, line 25
+        </div>
+
+    </section>
+    <section id="kssref-3-2" class="kss-section kss-section--depth-2 ">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-3-2">
+            <span class="kss-title__ref">
+              3.2
+              <span class="kss-title__permalink-hash">
+                  #permalink
+              </span>
+            </span>
+            video
+          </a>
+        </h2>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-3-2" data-kss-fullscreen="kssref-3-2">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-3-2.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-3-2" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-3-2" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Example
+          </div>
+
+
+          <div class="kss-modifier__example">
+            <div class="video">
+            <p class="point-description">Oto przykładowy film instruktażowy.</p>
+            <iframe src="https://www.youtube.com/embed/_zojIW-2DD8?si=yorHTloNfg7qvAkD"></iframe>
+        </div>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;video&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;point-description&quot;</span>&gt;</span>Oto przykładowy film instruktażowy.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://www.youtube.com/embed/_zojIW-2DD8?si=yorHTloNfg7qvAkD&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>partsInstallation.css</code>, line 49
+        </div>
+
+    </section>
+    <section id="kssref-3-4" class="kss-section kss-section--depth-2 ">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-3-4">
+            <span class="kss-title__ref">
+              3.4
+              <span class="kss-title__permalink-hash">
+                  #permalink
+              </span>
+            </span>
+            point-container
+          </a>
+        </h2>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-3-4" data-kss-fullscreen="kssref-3-4">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-3-4.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-3-4" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-3-4" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Example
+          </div>
+
+
+          <div class="kss-modifier__example">
+            <div class="point-container">
+        <div class="point-div">
+            <p class="number">1.</p>
+            <p class="point-description">Przygotuj narzędzia i akcesoria potrzebne do instalacji.</p><br>
+        </div>
+        <div class="point-div">
+            <p class="number">2.</p>
+            <p class="point-description">Otwórz obudowę komputera i umieść ją na płaskiej powierzchni.</p><br>
+        </div>
+        <div class="point-div">
+            <p class="number">3.</p>
+            <p class="point-description">Zidentyfikuj miejsce, w którym płyta główna będzie zamontowana. Zazwyczaj znajduje się ono w dolnej części obudowy.</p><br>
+        </div>
+        <div class="point-div">
+            <p class="number">4.</p>
+            <p class="point-description">Przykręć dystanse do obudowy w miejscach, w których płyta główna będzie przymocowana.</p><br>
+        </div>
+    </div>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;point-container&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;point-div&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;number&quot;</span>&gt;</span>1.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;point-description&quot;</span>&gt;</span>Przygotuj narzędzia i akcesoria potrzebne do instalacji.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;point-div&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;number&quot;</span>&gt;</span>2.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;point-description&quot;</span>&gt;</span>Otwórz obudowę komputera i umieść ją na płaskiej powierzchni.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;point-div&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;number&quot;</span>&gt;</span>3.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;point-description&quot;</span>&gt;</span>Zidentyfikuj miejsce, w którym płyta główna będzie zamontowana. Zazwyczaj znajduje się ono w dolnej części obudowy.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;point-div&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;number&quot;</span>&gt;</span>4.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;point-description&quot;</span>&gt;</span>Przykręć dystanse do obudowy w miejscach, w których płyta główna będzie przymocowana.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>partsInstallation.css</code>, line 74
+        </div>
+
+    </section>
+    <section id="kssref-3-5" class="kss-section kss-section--depth-2 ">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-3-5">
+            <span class="kss-title__ref">
+              3.5
+              <span class="kss-title__permalink-hash">
+                  #permalink
+              </span>
+            </span>
+            media-container
+          </a>
+        </h2>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-3-5" data-kss-fullscreen="kssref-3-5">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-3-5.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-3-5" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-3-5" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Example
+          </div>
+
+
+          <div class="kss-modifier__example">
+            <div>
+    <div class="media-container">
+            <h3>Podział kabli które bedą podpięte to płyty głównej</h3>
+            <div class="table-container">
+                <table class="tableOfWires">
+                    <tr>
+                        <th>Kabel</th>
+                        <th>Opis</th>
+                        <th>Zdjęcie</th>
+                    </tr>
+                    <tr>
+                        <td>ATX 24-pin (24-pinowy złączalny zasilacz)</td>
+                        <td>Ten kabel dostarcza główną moc zasilania do płyty głównej. Składa się z 24 pinów i jest podstawowym zasilaniem dla większości komputerów stacjonarnych. Obejmuje zarówno napięcia dla zasilania procesora, pamięci RAM, jak i pozostałych komponentów na płycie głównej.</td>
+                        <td><img src="images/hero/partsInstalling/conector-atx-24-pines.png"></td>
+                    </tr>
+                      <tr>
+                        <td>ATX 8-pin / CPU Power (8-pinowy złączalny zasilacz CPU)</td>
+                        <td>Ten kabel dostarcza dodatkową moc zasilania dla procesora. W przypadku niektórych płyt głównych może występować w postaci 4-pinowego złącza, ale wiele nowoczesnych procesorów i płyt głównych wymaga 8-pinowego zasilania CPU.</td>
+                        <td>
+                            <img src="images/hero/partsInstalling/cpu-power.jpg">
+                            <a class="copy-right-link" href="https://pl.wikipedia.org/wiki/Plik:ATX12V_EPS12V_(8-pin).jpg#globalusage">https://pl.wikipedia.org/wiki/Plik:ATX12V_EPS12V_(8-pin).jpg#globalusage</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>PCIe (zasilanie karty graficznej)</td>
+                        <td>Karty graficzne wymagają dodatkowego zasilania, które dostarcza kabel PCIe. Dostępne są różne wersje tego kabla, takie jak PCIe 6-pin, PCIe 8-pin, a także kombinacje, takie jak 6+2-pin, które mogą być używane do różnych kart graficznych.</td>
+                        <td>
+                            <img src="images/hero/partsInstalling/pci-e.jpg">
+                            <a class="copy-right-link" href="https://pl.wikipedia.org/wiki/Plik:PCI-E_6pin_8pin.jpg">https://pl.wikipedia.org/wiki/Plik:PCI-E_6pin_8pin.jpg</a>
+                        </td>
+                    </tr>
+                      <tr>
+                        <td>SATA (zasilanie i transfer danych dla urządzeń pamięci masowej)</td>
+                        <td>Kabel SATA jest używany do zasilania i przesyłania danych pomiędzy płytą główną a urządzeniami pamięci masowej, takimi jak dyski twarde, SSD czy napędy optyczne.</td>
+                        <td>
+                            <img src="images/hero/partsInstalling/sata-wire.jpg">
+                            <a class="copy-right-link" href="https://commons.wikimedia.org/wiki/File:SATA_Data_Cable.jpg">https://commons.wikimedia.org/wiki/File:SATA_Data_Cable.jpg</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Molex (starsze urządzenia peryferyjne)</td>
+                        <td>Kablowanie Molex jest starszym standardem, który był powszechnie używany do zasilania starszych urządzeń peryferyjnych, takich jak napędy optyczne, wentylatory, czy inne dodatkowe komponenty.</td>
+                        <td>
+                            <img src="images/hero/partsInstalling/molex-wire.jpg">
+                            <a class="copy-right-link" href="https://pl.wikipedia.org/wiki/Plik:Molex_female_connector.jpg">https://pl.wikipedia.org/wiki/Plik:Molex_female_connector.jpg</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>USB (Universal Serial Bus)</td>
+                        <td>Kable USB służą do łączenia różnych urządzeń peryferyjnych z komputerem, takich jak klawiatury, myszy, drukarki, itp.</td>
+                        <td>
+                            <img src="images/hero/partsInstalling/usb-mobo-wire.jpg">
+                            <a class="copy-right-link">Zdjęcie wykonane przeze mnie.</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>HD Audio (Audio Front Panel)</td>
+                        <td>Kabel HD Audio łączy przedni panel obudowy z płytą główną, umożliwiając podłączenie gniazd słuchawkowych i mikrofonowych dostępnych na przednim panelu obudowy.</td>
+                        <td>
+                            <img src="images/hero/partsInstalling/hd-audio-wire.jpg">
+                            <a class="copy-right-link">Zdjęcie wykonane przeze mnie.</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Wentylatory (CPU Fan, Case Fan)</td>
+                        <td>Kable od wentylatorów służą do zasilania i kontrolowania obrotów wentylatorów. W przypadku wentylatora procesora (CPU Fan) często łączony jest z odpowiednim złączem na płycie głównej, umożliwiając kontrolę obrotów w zależności od temperatury procesora. Wentylatory obudowy mogą być również podłączane do złącz na płycie głównej lub do kontrolera wentylatorów, jeśli obudowa posiada taki element.</td>
+                        <td>
+                            <img src="images/hero/partsInstalling/fan-wire.jpg">
+                            <a class="copy-right-link">Zdjęcie wykonane przeze mnie.</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Kable od obudowy (Power Switch, Reset Switch, HDD LED, Power LED)</td>
+                        <td>Kable te łączą przyciski zasilania, resetu, diodę sygnalizacyjną pracy dysku twardego (HDD LED) oraz diodę sygnalizującą zasilanie (Power LED) z odpowiednimi złączami na płycie głównej. Umożliwiają one obsługę przycisków na przednim panelu obudowy oraz informują o stanie pracy komputera.</td>
+                        <td>
+                            <img src="images/hero/partsInstalling/fan-case-wire.jpg">
+                            <a class="copy-right-link">Zdjęcie wykonane przeze mnie.</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>USB Front Panel (USB 2.0, USB 3.0)</td>
+                        <td>Kablowanie USB Front Panel łączy porty USB na przednim panelu obudowy z odpowiednimi złączami na płycie głównej, umożliwiając podłączenie urządzeń USB do komputera.</td>
+                        <td>
+                            <img src="images/hero/partsInstalling/case-wires.jpg">
+                            <a class="copy-right-link">Zdjęcie wykonane przeze mnie.</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>SATA Power (zasilanie urządzeń pamięci masowej)</td>
+                        <td>Podobnie jak kabel SATA, ale służy jedynie do zasilania urządzeń pamięci masowej, takich jak dyski twarde czy SSD.</td>
+                        <td>
+                            <img src="images/hero/partsInstalling/sata-power.jpg">
+                            <a class="copy-right-link" href="https://pl.wikipedia.org/wiki/Plik:SATA_Power_Plug.jpg">https://pl.wikipedia.org/wiki/Plik:SATA_Power_Plug.jpg</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <i>
+                <input type="radio" name="s" style="background-image: url('images/hero/partsInstalling/perfect-cable-management.jpg');" title="Idealnie poprowadzone kable z tyłu obudowy">
+                <input checked type="radio" name="s" style="background-image: url('images/hero/partsInstalling/cable-management-nside.jpg');" title="Popowadzenie kabli w środku obudowy">
+                <input type="radio" name="s" style="background-image: url('images/hero/partsInstalling/onur-binay-z3MP5DDiEME-unsplash.jpg');" title="">
+            </i>
+        </div>
+    </div>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;media-container&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Podział kabli które bedą podpięte to płyty głównej<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;table-container&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tableOfWires&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Kabel<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Opis<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Zdjęcie<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>ATX 24-pin (24-pinowy złączalny zasilacz)<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Ten kabel dostarcza główną moc zasilania do płyty głównej. Składa się z 24 pinów i jest podstawowym zasilaniem dla większości komputerów stacjonarnych. Obejmuje zarówno napięcia dla zasilania procesora, pamięci RAM, jak i pozostałych komponentów na płycie głównej.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/hero/partsInstalling/conector-atx-24-pines.png&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>ATX 8-pin / CPU Power (8-pinowy złączalny zasilacz CPU)<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Ten kabel dostarcza dodatkową moc zasilania dla procesora. W przypadku niektórych płyt głównych może występować w postaci 4-pinowego złącza, ale wiele nowoczesnych procesorów i płyt głównych wymaga 8-pinowego zasilania CPU.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/hero/partsInstalling/cpu-power.jpg&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;copy-right-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://pl.wikipedia.org/wiki/Plik:ATX12V_EPS12V_(8-pin).jpg#globalusage&quot;</span>&gt;</span>https://pl.wikipedia.org/wiki/Plik:ATX12V_EPS12V_(8-pin).jpg#globalusage<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                      <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>PCIe (zasilanie karty graficznej)<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Karty graficzne wymagają dodatkowego zasilania, które dostarcza kabel PCIe. Dostępne są różne wersje tego kabla, takie jak PCIe 6-pin, PCIe 8-pin, a także kombinacje, takie jak 6+2-pin, które mogą być używane do różnych kart graficznych.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/hero/partsInstalling/pci-e.jpg&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;copy-right-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://pl.wikipedia.org/wiki/Plik:PCI-E_6pin_8pin.jpg&quot;</span>&gt;</span>https://pl.wikipedia.org/wiki/Plik:PCI-E_6pin_8pin.jpg<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>SATA (zasilanie i transfer danych dla urządzeń pamięci masowej)<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Kabel SATA jest używany do zasilania i przesyłania danych pomiędzy płytą główną a urządzeniami pamięci masowej, takimi jak dyski twarde, SSD czy napędy optyczne.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/hero/partsInstalling/sata-wire.jpg&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;copy-right-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://commons.wikimedia.org/wiki/File:SATA_Data_Cable.jpg&quot;</span>&gt;</span>https://commons.wikimedia.org/wiki/File:SATA_Data_Cable.jpg<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Molex (starsze urządzenia peryferyjne)<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Kablowanie Molex jest starszym standardem, który był powszechnie używany do zasilania starszych urządzeń peryferyjnych, takich jak napędy optyczne, wentylatory, czy inne dodatkowe komponenty.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/hero/partsInstalling/molex-wire.jpg&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;copy-right-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://pl.wikipedia.org/wiki/Plik:Molex_female_connector.jpg&quot;</span>&gt;</span>https://pl.wikipedia.org/wiki/Plik:Molex_female_connector.jpg<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>USB (Universal Serial Bus)<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Kable USB służą do łączenia różnych urządzeń peryferyjnych z komputerem, takich jak klawiatury, myszy, drukarki, itp.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/hero/partsInstalling/usb-mobo-wire.jpg&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;copy-right-link&quot;</span>&gt;</span>Zdjęcie wykonane przeze mnie.<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>HD Audio (Audio Front Panel)<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Kabel HD Audio łączy przedni panel obudowy z płytą główną, umożliwiając podłączenie gniazd słuchawkowych i mikrofonowych dostępnych na przednim panelu obudowy.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/hero/partsInstalling/hd-audio-wire.jpg&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;copy-right-link&quot;</span>&gt;</span>Zdjęcie wykonane przeze mnie.<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Wentylatory (CPU Fan, Case Fan)<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Kable od wentylatorów służą do zasilania i kontrolowania obrotów wentylatorów. W przypadku wentylatora procesora (CPU Fan) często łączony jest z odpowiednim złączem na płycie głównej, umożliwiając kontrolę obrotów w zależności od temperatury procesora. Wentylatory obudowy mogą być również podłączane do złącz na płycie głównej lub do kontrolera wentylatorów, jeśli obudowa posiada taki element.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/hero/partsInstalling/fan-wire.jpg&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;copy-right-link&quot;</span>&gt;</span>Zdjęcie wykonane przeze mnie.<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Kable od obudowy (Power Switch, Reset Switch, HDD LED, Power LED)<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Kable te łączą przyciski zasilania, resetu, diodę sygnalizacyjną pracy dysku twardego (HDD LED) oraz diodę sygnalizującą zasilanie (Power LED) z odpowiednimi złączami na płycie głównej. Umożliwiają one obsługę przycisków na przednim panelu obudowy oraz informują o stanie pracy komputera.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/hero/partsInstalling/fan-case-wire.jpg&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;copy-right-link&quot;</span>&gt;</span>Zdjęcie wykonane przeze mnie.<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>USB Front Panel (USB 2.0, USB 3.0)<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Kablowanie USB Front Panel łączy porty USB na przednim panelu obudowy z odpowiednimi złączami na płycie głównej, umożliwiając podłączenie urządzeń USB do komputera.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/hero/partsInstalling/case-wires.jpg&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;copy-right-link&quot;</span>&gt;</span>Zdjęcie wykonane przeze mnie.<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>SATA Power (zasilanie urządzeń pamięci masowej)<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Podobnie jak kabel SATA, ale służy jedynie do zasilania urządzeń pamięci masowej, takich jak dyski twarde czy SSD.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/hero/partsInstalling/sata-power.jpg&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;copy-right-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://pl.wikipedia.org/wiki/Plik:SATA_Power_Plug.jpg&quot;</span>&gt;</span>https://pl.wikipedia.org/wiki/Plik:SATA_Power_Plug.jpg<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">i</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;s&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-image: url(&#x27;images/hero/partsInstalling/perfect-cable-management.jpg&#x27;);&quot;</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;Idealnie poprowadzone kable z tyłu obudowy&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">checked</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;s&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-image: url(&#x27;images/hero/partsInstalling/cable-management-nside.jpg&#x27;);&quot;</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;Popowadzenie kabli w środku obudowy&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;s&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-image: url(&#x27;images/hero/partsInstalling/onur-binay-z3MP5DDiEME-unsplash.jpg&#x27;);&quot;</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>partsInstallation.css</code>, line 101
+        </div>
+
+    </section>
+    <section id="kssref-3-6" class="kss-section kss-section--depth-2 ">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-3-6">
+            <span class="kss-title__ref">
+              3.6
+              <span class="kss-title__permalink-hash">
+                  #permalink
+              </span>
+            </span>
+            tableOfWires
+          </a>
+        </h2>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-3-6" data-kss-fullscreen="kssref-3-6">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-3-6.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-3-6" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-3-6" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Example
+          </div>
+
+
+          <div class="kss-modifier__example">
+            <table class="tableOfWires">
+                    <tr>
+                        <th>Kabel</th>
+                        <th>Opis</th>
+                        <th>Zdjęcie</th>
+                    </tr>
+                    <tr>
+                        <td>ATX 24-pin (24-pinowy złączalny zasilacz)</td>
+                        <td>Ten kabel dostarcza główną moc zasilania do płyty głównej. Składa się z 24 pinów i jest podstawowym zasilaniem dla większości komputerów stacjonarnych. Obejmuje zarówno napięcia dla zasilania procesora, pamięci RAM, jak i pozostałych komponentów na płycie głównej.</td>
+                        <td><img src="images/hero/partsInstalling/conector-atx-24-pines.png"></td>
+                    </tr>
+                      <tr>
+                        <td>ATX 8-pin / CPU Power (8-pinowy złączalny zasilacz CPU)</td>
+                        <td>Ten kabel dostarcza dodatkową moc zasilania dla procesora. W przypadku niektórych płyt głównych może występować w postaci 4-pinowego złącza, ale wiele nowoczesnych procesorów i płyt głównych wymaga 8-pinowego zasilania CPU.</td>
+                        <td>
+                            <img src="images/hero/partsInstalling/cpu-power.jpg">
+                            <a class="copy-right-link" href="https://pl.wikipedia.org/wiki/Plik:ATX12V_EPS12V_(8-pin).jpg#globalusage">https://pl.wikipedia.org/wiki/Plik:ATX12V_EPS12V_(8-pin).jpg#globalusage</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>PCIe (zasilanie karty graficznej)</td>
+                        <td>Karty graficzne wymagają dodatkowego zasilania, które dostarcza kabel PCIe. Dostępne są różne wersje tego kabla, takie jak PCIe 6-pin, PCIe 8-pin, a także kombinacje, takie jak 6+2-pin, które mogą być używane do różnych kart graficznych.</td>
+                        <td>
+                            <img src="images/hero/partsInstalling/pci-e.jpg">
+                            <a class="copy-right-link" href="https://pl.wikipedia.org/wiki/Plik:PCI-E_6pin_8pin.jpg">https://pl.wikipedia.org/wiki/Plik:PCI-E_6pin_8pin.jpg</a>
+                        </td>
+                    </tr>
+                      <tr>
+                        <td>SATA (zasilanie i transfer danych dla urządzeń pamięci masowej)</td>
+                        <td>Kabel SATA jest używany do zasilania i przesyłania danych pomiędzy płytą główną a urządzeniami pamięci masowej, takimi jak dyski twarde, SSD czy napędy optyczne.</td>
+                        <td>
+                            <img src="images/hero/partsInstalling/sata-wire.jpg">
+                            <a class="copy-right-link" href="https://commons.wikimedia.org/wiki/File:SATA_Data_Cable.jpg">https://commons.wikimedia.org/wiki/File:SATA_Data_Cable.jpg</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Molex (starsze urządzenia peryferyjne)</td>
+                        <td>Kablowanie Molex jest starszym standardem, który był powszechnie używany do zasilania starszych urządzeń peryferyjnych, takich jak napędy optyczne, wentylatory, czy inne dodatkowe komponenty.</td>
+                        <td>
+                            <img src="images/hero/partsInstalling/molex-wire.jpg">
+                            <a class="copy-right-link" href="https://pl.wikipedia.org/wiki/Plik:Molex_female_connector.jpg">https://pl.wikipedia.org/wiki/Plik:Molex_female_connector.jpg</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>USB (Universal Serial Bus)</td>
+                        <td>Kable USB służą do łączenia różnych urządzeń peryferyjnych z komputerem, takich jak klawiatury, myszy, drukarki, itp.</td>
+                        <td>
+                            <img src="images/hero/partsInstalling/usb-mobo-wire.jpg">
+                            <a class="copy-right-link">Zdjęcie wykonane przeze mnie.</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>HD Audio (Audio Front Panel)</td>
+                        <td>Kabel HD Audio łączy przedni panel obudowy z płytą główną, umożliwiając podłączenie gniazd słuchawkowych i mikrofonowych dostępnych na przednim panelu obudowy.</td>
+                        <td>
+                            <img src="images/hero/partsInstalling/hd-audio-wire.jpg">
+                            <a class="copy-right-link">Zdjęcie wykonane przeze mnie.</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Wentylatory (CPU Fan, Case Fan)</td>
+                        <td>Kable od wentylatorów służą do zasilania i kontrolowania obrotów wentylatorów. W przypadku wentylatora procesora (CPU Fan) często łączony jest z odpowiednim złączem na płycie głównej, umożliwiając kontrolę obrotów w zależności od temperatury procesora. Wentylatory obudowy mogą być również podłączane do złącz na płycie głównej lub do kontrolera wentylatorów, jeśli obudowa posiada taki element.</td>
+                        <td>
+                            <img src="images/hero/partsInstalling/fan-wire.jpg">
+                            <a class="copy-right-link">Zdjęcie wykonane przeze mnie.</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Kable od obudowy (Power Switch, Reset Switch, HDD LED, Power LED)</td>
+                        <td>Kable te łączą przyciski zasilania, resetu, diodę sygnalizacyjną pracy dysku twardego (HDD LED) oraz diodę sygnalizującą zasilanie (Power LED) z odpowiednimi złączami na płycie głównej. Umożliwiają one obsługę przycisków na przednim panelu obudowy oraz informują o stanie pracy komputera.</td>
+                        <td>
+                            <img src="images/hero/partsInstalling/fan-case-wire.jpg">
+                            <a class="copy-right-link">Zdjęcie wykonane przeze mnie.</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>USB Front Panel (USB 2.0, USB 3.0)</td>
+                        <td>Kablowanie USB Front Panel łączy porty USB na przednim panelu obudowy z odpowiednimi złączami na płycie głównej, umożliwiając podłączenie urządzeń USB do komputera.</td>
+                        <td>
+                            <img src="images/hero/partsInstalling/case-wires.jpg">
+                            <a class="copy-right-link">Zdjęcie wykonane przeze mnie.</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>SATA Power (zasilanie urządzeń pamięci masowej)</td>
+                        <td>Podobnie jak kabel SATA, ale służy jedynie do zasilania urządzeń pamięci masowej, takich jak dyski twarde czy SSD.</td>
+                        <td>
+                            <img src="images/hero/partsInstalling/sata-power.jpg">
+                            <a class="copy-right-link" href="https://pl.wikipedia.org/wiki/Plik:SATA_Power_Plug.jpg">https://pl.wikipedia.org/wiki/Plik:SATA_Power_Plug.jpg</a>
+                        </td>
+                    </tr>
+                </table>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tableOfWires&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Kabel<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Opis<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Zdjęcie<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>ATX 24-pin (24-pinowy złączalny zasilacz)<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Ten kabel dostarcza główną moc zasilania do płyty głównej. Składa się z 24 pinów i jest podstawowym zasilaniem dla większości komputerów stacjonarnych. Obejmuje zarówno napięcia dla zasilania procesora, pamięci RAM, jak i pozostałych komponentów na płycie głównej.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/hero/partsInstalling/conector-atx-24-pines.png&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>ATX 8-pin / CPU Power (8-pinowy złączalny zasilacz CPU)<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Ten kabel dostarcza dodatkową moc zasilania dla procesora. W przypadku niektórych płyt głównych może występować w postaci 4-pinowego złącza, ale wiele nowoczesnych procesorów i płyt głównych wymaga 8-pinowego zasilania CPU.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/hero/partsInstalling/cpu-power.jpg&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;copy-right-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://pl.wikipedia.org/wiki/Plik:ATX12V_EPS12V_(8-pin).jpg#globalusage&quot;</span>&gt;</span>https://pl.wikipedia.org/wiki/Plik:ATX12V_EPS12V_(8-pin).jpg#globalusage<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                      <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>PCIe (zasilanie karty graficznej)<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Karty graficzne wymagają dodatkowego zasilania, które dostarcza kabel PCIe. Dostępne są różne wersje tego kabla, takie jak PCIe 6-pin, PCIe 8-pin, a także kombinacje, takie jak 6+2-pin, które mogą być używane do różnych kart graficznych.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/hero/partsInstalling/pci-e.jpg&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;copy-right-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://pl.wikipedia.org/wiki/Plik:PCI-E_6pin_8pin.jpg&quot;</span>&gt;</span>https://pl.wikipedia.org/wiki/Plik:PCI-E_6pin_8pin.jpg<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>SATA (zasilanie i transfer danych dla urządzeń pamięci masowej)<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Kabel SATA jest używany do zasilania i przesyłania danych pomiędzy płytą główną a urządzeniami pamięci masowej, takimi jak dyski twarde, SSD czy napędy optyczne.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/hero/partsInstalling/sata-wire.jpg&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;copy-right-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://commons.wikimedia.org/wiki/File:SATA_Data_Cable.jpg&quot;</span>&gt;</span>https://commons.wikimedia.org/wiki/File:SATA_Data_Cable.jpg<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Molex (starsze urządzenia peryferyjne)<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Kablowanie Molex jest starszym standardem, który był powszechnie używany do zasilania starszych urządzeń peryferyjnych, takich jak napędy optyczne, wentylatory, czy inne dodatkowe komponenty.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/hero/partsInstalling/molex-wire.jpg&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;copy-right-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://pl.wikipedia.org/wiki/Plik:Molex_female_connector.jpg&quot;</span>&gt;</span>https://pl.wikipedia.org/wiki/Plik:Molex_female_connector.jpg<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>USB (Universal Serial Bus)<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Kable USB służą do łączenia różnych urządzeń peryferyjnych z komputerem, takich jak klawiatury, myszy, drukarki, itp.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/hero/partsInstalling/usb-mobo-wire.jpg&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;copy-right-link&quot;</span>&gt;</span>Zdjęcie wykonane przeze mnie.<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>HD Audio (Audio Front Panel)<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Kabel HD Audio łączy przedni panel obudowy z płytą główną, umożliwiając podłączenie gniazd słuchawkowych i mikrofonowych dostępnych na przednim panelu obudowy.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/hero/partsInstalling/hd-audio-wire.jpg&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;copy-right-link&quot;</span>&gt;</span>Zdjęcie wykonane przeze mnie.<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Wentylatory (CPU Fan, Case Fan)<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Kable od wentylatorów służą do zasilania i kontrolowania obrotów wentylatorów. W przypadku wentylatora procesora (CPU Fan) często łączony jest z odpowiednim złączem na płycie głównej, umożliwiając kontrolę obrotów w zależności od temperatury procesora. Wentylatory obudowy mogą być również podłączane do złącz na płycie głównej lub do kontrolera wentylatorów, jeśli obudowa posiada taki element.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/hero/partsInstalling/fan-wire.jpg&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;copy-right-link&quot;</span>&gt;</span>Zdjęcie wykonane przeze mnie.<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Kable od obudowy (Power Switch, Reset Switch, HDD LED, Power LED)<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Kable te łączą przyciski zasilania, resetu, diodę sygnalizacyjną pracy dysku twardego (HDD LED) oraz diodę sygnalizującą zasilanie (Power LED) z odpowiednimi złączami na płycie głównej. Umożliwiają one obsługę przycisków na przednim panelu obudowy oraz informują o stanie pracy komputera.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/hero/partsInstalling/fan-case-wire.jpg&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;copy-right-link&quot;</span>&gt;</span>Zdjęcie wykonane przeze mnie.<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>USB Front Panel (USB 2.0, USB 3.0)<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Kablowanie USB Front Panel łączy porty USB na przednim panelu obudowy z odpowiednimi złączami na płycie głównej, umożliwiając podłączenie urządzeń USB do komputera.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/hero/partsInstalling/case-wires.jpg&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;copy-right-link&quot;</span>&gt;</span>Zdjęcie wykonane przeze mnie.<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>SATA Power (zasilanie urządzeń pamięci masowej)<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Podobnie jak kabel SATA, ale służy jedynie do zasilania urządzeń pamięci masowej, takich jak dyski twarde czy SSD.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/hero/partsInstalling/sata-power.jpg&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;copy-right-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://pl.wikipedia.org/wiki/Plik:SATA_Power_Plug.jpg&quot;</span>&gt;</span>https://pl.wikipedia.org/wiki/Plik:SATA_Power_Plug.jpg<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>partsInstallation.css</code>, line 215
+        </div>
+
+    </section>
+</article>
+</main>
+
+<!-- SCRIPTS -->
+<script src="kss-assets/kss.js"></script>
+<script src="kss-assets/scrollspy.js"></script>
+<script src="kss-assets/kss-fullscreen.js"></script>
+<script src="kss-assets/kss-guides.js"></script>
+<script src="kss-assets/kss-markup.js"></script>
+<script>
+  var spy = new ScrollSpy('#kss-node', {
+    nav: '.kss-nav__menu-child > li > a',
+    className: 'is-in-viewport'
+  });
+  var kssFullScreen = new KssFullScreen({
+    idPrefix: 'kss-fullscreen-',
+    bodyClass: 'kss-fullscreen-mode',
+    elementClass: 'is-fullscreen'
+  });
+  var kssGuides = new KssGuides({
+    bodyClass: 'kss-guides-mode'
+  });
+  var kssMarkup = new KssMarkup({
+    bodyClass: 'kss-markup-mode',
+    detailsClass: 'kss-markup'
+  });
+</script>
+
+
+
+<!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>

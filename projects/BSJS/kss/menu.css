@@ -1,0 +1,324 @@
+/* Import czcionki
+
+   Importuje czcionkę 'JetBrains Mono' z Google Fonts.
+   
+   Markup:
+   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+
+   Styleguide 1.0
+*/
+
+/* 
+    Globalne ustawienia HTML
+
+   Ustawia domyślną czcionkę na 'JetBrains Mono' i domyślny rozmiar czcionki na 16px dla całego dokumentu HTML.
+
+   Markup:
+   <html>
+     <body>
+       <p>Przykładowy tekst</p>
+     </body>
+   </html>
+
+   Styleguide 2.0
+*/
+
+/* 
+    Stylizacja nagłówka h1
+
+   Definiuje styl dla nagłówków pierwszego poziomu (h1). Czcionka to 'Bauhaus 93', rozmiar czcionki to 40px, odstęp między literami to 4px, a dolny margines to -10px.
+
+   Markup:
+   <h1>Przykładowy tekst</h1>
+   Styleguide 3.0
+*/
+
+/* 
+    Stylizacja nagłówka h2
+
+    Definiuje styl dla nagłówków drugiego poziomu (h2). Czcionka to 'JetBrains Mono', rozmiar czcionki to 20px.
+
+    Markup:
+   <h2>Przykładowy tekst</h2>
+
+   Styleguide 3.1
+*/
+
+/* 
+    Stylizacja .title-box
+   
+    Definiuje styl dla elementu o klasie 'title-box'. Wykorzystuje flexbox do wyśrodkowania elementów wewnątrz pionowo i poziomo.
+   
+    Markup:
+   <div class="title-box">Przykładowy tekst</div>
+   
+   Styleguide 4.0
+*/
+
+/* 
+    Stylizacja .container
+   
+    Definiuje styl dla elementu o klasie 'container'. Używa flexbox do organizacji elementów wewnątrz. Ustawia tło na półprzezroczyste czarne, szerokość na 900px, zaokrąglenie rogów na 25px i padding na 10px.
+   
+    Markup:
+   <div class="container">Przykładowy tekst</div>
+   
+   Styleguide 5.0
+*/
+
+/* 
+    Stylizacja formularza
+   
+    Definiuje styl dla elementu formularza. Używa flexbox do wyśrodkowania elementów wewnątrz pionowo i poziomo.
+   
+    Markup:
+   <form action="/submit">
+     <input type="text" name="name" required>
+     <input type="submit" value="Submit">
+   </form>
+   
+   Styleguide 6.0
+*/
+
+/* 
+    Stylizacja body
+   
+    Definiuje podstawowe style dla elementu body. Ustawia animację przewijania, tło, kolor tekstu, wysokość, minimalną szerokość, wyśrodkowanie elementów, perspektywę i punkt perspektywy.
+   
+    Markup:
+   <body>
+     <p>Przykładowy tekst</p>
+   
+     </body>
+   Styleguide 7.0
+*/
+
+/* 
+    Animacja scroll
+   
+    Definiuje animację 'scroll', która przesuwa tło w dół.
+   
+    Markup:
+   <div style="animation: scroll 5s linear infinite;">Przykładowy tekst</div>
+   
+   Styleguide 8.0
+*/
+
+/* 
+    Zapytanie medialne dla prefers-reduced-motion
+   
+    Definiuje zachowanie animacji dla użytkowników, którzy preferują zredukowaną ilość ruchu. Zmienia prędkość animacji 'scroll'.
+  
+    Markup:
+    <div style="animation: scroll 5s linear infinite;">Przykładowy tekst</div>
+  
+    Styleguide 8.1
+*/
+
+/* 
+    Zapytanie medialne dla min-width: 670px
+   
+    Definiuje zachowanie stylów dla ekranów o szerokości co najmniej 670px. Zmienia rozmiar czcionki dla elementu o klasie 'title'.
+   
+    Markup:
+   <div class="title">Przykładowy tekst</div>
+   
+   Styleguide 9.0
+*/
+
+/* 
+    Stylizacja .theme
+   
+    Definiuje styl dla elementu o klasie 'theme'. Ustawia wyświetlanie na flex, margines na 5px, padding na 5px i zaokrąglenie rogów na 10px.
+   
+    Markup:
+   <div class="theme">Przykładowy tekst</div>
+   
+   Styleguide 10.0
+*/
+
+/* 
+    Stylizacja .black
+   
+    Definiuje styl dla elementu o klasie 'black'. Ustawia tło na czarne i kolor tekstu na biały.
+   
+    Markup:
+   <div class="black">Przykładowy tekst</div>
+   
+   Styleguide 10.1
+*/
+
+/* 
+    Stylizacja .blue
+   
+    Definiuje styl dla elementu o klasie 'blue'. Ustawia tło na ciemnoniebieskie i kolor tekstu na prawie biały.
+   
+    Markup:
+   <div class="blue">Przykładowy tekst</div>
+   
+   Styleguide 10.2
+*/
+
+/* 
+    Stylizacja .white
+   
+    Definiuje styl dla elementu o klasie 'white'. Ustawia tło na jasnoszare i kolor tekstu na czarny.
+   
+    Markup:
+   <div class="white">Przykładowy tekst</div>
+   
+   Styleguide 10.3
+*/
+
+/* 
+    Stylizacja .playButton
+   
+    Definiuje styl dla przycisku o klasie 'playButton'. Ustawia szerokość, wysokość, tło, kolor tekstu, czcionkę, rozmiar czcionki, animację, styl obramowania, zaokrąglenie rogów i kolor obramowania.
+   
+    Markup:
+   <button class="playButton">Play</button>
+   
+   Styleguide 11.0
+*/
+
+/* 
+    Animacja backgroundColor
+   
+    Definiuje animację 'backgroundColor', która cyklicznie zmienia kolor tła i obramowania elementu.
+   
+    Markup:
+   <div style="animation: backgroundColor 5s linear infinite;">Przykładowy tekst</div>
+   
+   Styleguide 12.0
+*/
+
+@import url("https://fonts.google.com/specimen/JetBrains+Mono");
+
+html{
+    font-family: 'JetBrains Mono';
+    font-size: 16px;
+}
+
+h1{
+    font-family: 'Bauhaus 93';
+    font-size: 40px;
+    letter-spacing: 4px;
+    margin-bottom: -10px;
+}
+
+h2{
+    font-family: 'JetBrains Mono';
+    font-size: 20px;
+}
+
+.title-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 900px;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+body {
+    animation: scroll 100s linear infinite;
+    background: url("https://images.unsplash.com/photo-1484387436194-cf7cb70800ce?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+      #111111;
+    color: #eee;
+    height: 100vh;
+    min-width: 360px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+  }
+  
+@keyframes scroll {
+    100% {
+      background-position: 0px -400%;
+    }
+}
+  
+  /* Fallback if the operatring system prefers reduced motion*/
+@media (prefers-reduced-motion) {
+    .wrapper {
+      animation: scroll 800s linear infinite;
+    }
+}
+  
+@media (min-width: 670px) {
+    .title {
+      font-size: 5rem;
+    }
+}
+
+.theme{
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.black{
+    background-color: black;
+    color: white;
+}
+
+.blue {
+    background-color: rgb(0, 40, 110);
+    color: rgb(255, 255, 255, 0.95);
+}
+
+.white{
+    background-color: rgb(232, 232, 232);
+    color: #000;
+}
+
+.playButton{
+    width: 100px;
+    height: 40px;
+    background-color: #000;
+    color: white;
+    font-family: 'JetBrains Mono';
+    font-size: 18px;
+    animation: backgroundColor 5s infinite;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: white;
+}
+
+
+@keyframes backgroundColor {
+    0%{
+        background-color: #000;
+        border-color: white;
+    }
+    50%{
+        background-color: #23008a;
+        border-color: #000;
+    }
+
+    100%{
+        background-color: #000;
+        border-color: white;
+    }
+}
+

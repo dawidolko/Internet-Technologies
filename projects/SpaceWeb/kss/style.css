@@ -1,0 +1,1240 @@
+body {
+    background-color: #404040;
+    background-image: url("images/tło.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+    min-height: 100vh;
+
+
+}
+
+
+
+/*
+    Strona główna - sekcja główna strony
+
+    To jest strona główna szablonu.
+
+    **#content**: Div o tym id ma padding 40px, szerokość 917px i wyjustowany tekst w środku.
+
+    **.bigtitle**: Elementy o tej klasie mają pogrubioną czcionkę o rozmiarze 32px, litery są wystrzelone na 2px.
+
+    **.dottedline**: Elementy o tej klasie mają wysokość 5px, margines górny 15px, margines dolny 20px i dole obramowanie 2px.
+
+    **#srodek**: Nagłówki o tym id są wyśrodkowane.
+
+    **#strGlownaZdj**: Zdjęcia o tym id są wyśrodkowane, wyświetlane są jako bloki i mają szerokośc 900px.
+
+    Markup:
+    <div id="content">
+		<span class="bigtitle">Wydarzenia astronomiczne najblższych lat</span>
+		<div class="dottedline"></div>
+		<h2>Witaj na naszej stronie poświęconej przyszłym wydarzeniom astronomicznym!</h2>
+		<br><br>
+		<p>Odkryj fascynujący kosmos i zanurz się w tajemnicze zjawiska, które czekają na nas w latach 2024 i
+		dalszych. <br>
+		Przygotuj się na niezapomniane zaćmienia Słońca, pełnie Księżyca, bliskie spotkania z planetami, misje
+		kosmiczne <br>
+		i wiele innych niezwykłych wydarzeń.</p>
+		<br><br>
+		<h3 id="srodek">Rozpocznij swoją kosmiczną podróż już teraz!</h3>
+		<br><br>
+		<img id="strGlownaZdj" src="images/stronaGlowna.png" alt="ZdjęcieDoStronyGłównej">
+	</div>
+
+    Style guide: 1.0
+*/
+
+
+
+/*
+    2024 - sekcja "2024" strony
+
+    To jest strona "2024" szablonu przedstawiająca wydarzenia astronomiczne z 2024.
+
+    **#content**: Div o tym id ma padding 40px, szerokość 917px i wyjustowany tekst w środku.
+
+    **.bigtitle**: Elementy o tej klasie mają pogrubioną czcionkę o rozmiarze 32px, litery są wystrzelone na 2px.
+
+    **.dottedline**: Elementy o tej klasie mają wysokość 5px, margines górny 15px, margines dolny 20px i dole obramowanie 2px.
+
+
+    Markup:
+    <div id="content">
+		<span class="bigtitle">Wydarzenia z 2024 roku </span>
+		<div class="dottedline"></div>
+		<p>Ta seria podstron zawiera jedne z ważniejszych wydarzeń astronomicznych przewidzianych na rok 2024. </p>
+		<br><br>
+	</div>	
+
+    Style guide: 2.0
+*/
+
+
+
+/*
+    Pełnia Księżyca - podstrona sekcji "2024" strony
+
+    To jest podstrona sekcji "2024" szablonu.
+
+    **#content**: Div o tym id ma padding 40px, szerokość 917px i wyjustowany tekst w środku.
+
+    **.bigtitle**: Elementy o tej klasie mają pogrubioną czcionkę o rozmiarze 32px, litery są wystrzelone na 2px.
+
+    **.dottedline**: Elementy o tej klasie mają wysokość 5px, margines górny 15px, margines dolny 20px i dole obramowanie 2px.
+
+    **.przyklad**: Elementy o tej klasie mają padding 0. Zdjęcia wewnątrz kontenerów o tej klasie mają ustawioną animacje i są wyśrodkowane.
+
+    **#zdj**: Zdjęcia o tym id są wyśrodkowane, wyświetlane są jako bloki oraz mają efekt cienia o wymiarach 0px, 3 px, 6 px.
+    
+
+    Markup:
+    <div id="content">
+		<span class="bigtitle">Pełnia księżyca</span>
+		<div class="dottedline"></div>
+		Pełnia to faza Księżyca, kiedy znajduje się on po przeciwnej stronie Ziemi w stosunku do Słońca. 
+		<br>
+		Podczas tej fazy półkula Księżyca skierowana w stronę Ziemi jest całkowicie oświetlona, co sprawia, że wydaje się być kołem. 
+		Jednocześnie przeciwna strona Księżyca, niewidoczna z Ziemi, jest nieoświetlona. 
+		<br>
+		Pomimo że jasność Księżyca w tej fazie jest o wiele niższa od jasności Słońca, nadal może on utrudniać obserwacje astronomiczne. 
+		<br><br>
+		Zazwyczaj w ciągu jednego miesiąca kalendarzowego występuje jedna pełnia.
+		<br><br>
+		<div class="przyklad">
+		    <img id="zdj" src="images/pełnia_księżyca.jpg" alt="powiekszający się obrazek">
+		</div>
+		<br><br>
+		Pełnie Księżyca w 2024 roku będą występować w następujących dniach:
+		<br>
+		25 stycznia 2024
+		<br>
+		24 lutego 2024
+		<br>
+		25 marca 2024
+		<br>
+		24 kwietnia 2024
+		<br>
+		23 maja 2024
+		<br>
+		22 czerwca 2024
+		<br>
+		21 lipca 2024
+		<br>
+		19 sierpnia 2024 (Superpełnia)
+		<br>
+		18 września 2024 (Superpełnia)
+		<br>
+		17 października 2024
+		<br> 
+	    15 listopada 2024
+		<br>
+		15 grudnia 2024 	
+		<br><br>
+		W sierpniu i wrześniu bieżącego roku spodziewać możemy się superpełni Księżyca. 
+		Oznacza to że srebrny glob będzie znacznie bliżej Ziemi niż w inne miesiące, tym samym będzie zajmował więcej miejsca na niebie. 
+		<br><br>
+	</div>	
+
+    Style guide: 2.1
+*/
+
+
+/*
+    Kometa - podstrona sekcji "2024" strony
+
+    To jest podstrona sekcji "2024" szablonu.
+
+    **#content**: Div o tym id ma padding 40px, szerokość 917px i wyjustowany tekst w środku.
+
+    **.bigtitle**: Elementy o tej klasie mają pogrubioną czcionkę o rozmiarze 32px, litery są wystrzelone na 2px.
+
+    **.dottedline**: Elementy o tej klasie mają wysokość 5px, margines górny 15px, margines dolny 20px i dole obramowanie 2px.
+
+    **#zdj2**: Zdjęcia o tym id są wyśrodkowane, wyświetlane są jako bloki.
+
+    **.przyklad**: Elementy o tej klasie mają padding 0. Zdjęcia wewnątrz kontenerów o tej klasie mają ustawioną animacje i są wyśrodkowane.
+
+    Markup:
+    <div id="content">
+		<span class="bigtitle">Największe zbliżenie komety 62P/Tsuchinshan do Ziemi</span>
+		<div class="dottedline"></div>
+		Kometa 62P/Tsuchinshan przeprowadza pełne okrążenie wokół Słońca w ciągu 2330 dni, <br> 
+		co odpowiada ponad sześciu latom (6,38 lat). 
+		Jej najbliższe zbliżenie do Ziemi zaplanowane jest na 29 stycznia 2024 roku. <br>
+		Będzie wtedy można spostrzec tę kometę przez lornetkę.
+		<br><br>
+		<div id="zdj2" class="przyklad">
+			<img src="images/kometa.jpg" alt="powiekszający się obrazek">	
+		</div>
+		<br><br>
+		Odkryto ją 1 stycznia 1965 roku dzięki Obserwatorium Astronomicznemu Zijinshan, <br>
+		znajdującemu się na Górze Purpurowej w Chinach, 
+		na wysokości 267 metrów nad poziomem morza, w Nankinie, w prowincji Jiangsu.
+		<br><br>
+		Kometę 62P/Tsuchinshan zalicza się do rodziny Jowisza. <br>
+		Obiekty z tej grupy są silnie oddziaływane grawitacyjnie przez gazowego olbrzyma. 
+		Ich orbity prowadzą pomiędzy Słońcem a Jowiszem.	
+	</div>
+
+    Style guide: 2.2
+*/
+
+
+
+/*
+    Astronomiczna wiosna - podstrona sekcji "2024" strony
+
+    To jest podstrona sekcji "2024" szablonu.
+
+    **#content**: Div o tym id ma padding 40px, szerokość 917px i wyjustowany tekst w środku.
+
+    **.bigtitle**: Elementy o tej klasie mają pogrubioną czcionkę o rozmiarze 32px, litery są wystrzelone na 2px.
+
+    **.dottedline**: Elementy o tej klasie mają wysokość 5px, margines górny 15px, margines dolny 20px i dole obramowanie 2px.
+
+    **#zdj2**: Zdjęcia o tym id są wyśrodkowane, wyświetlane są jako bloki.
+
+    **.przyklad**: Elementy o tej klasie mają padding 0. Zdjęcia wewnątrz kontenerów o tej klasie mają ustawioną animacje i są wyśrodkowane. 
+
+    Markup:
+    <div id="content">
+		<span class="bigtitle">Astronomiczna wiosna</span>
+		<div class="dottedline"></div>
+		20 marca o 4:06 nastąpi początek astronomicznej wiosny, in. równonocy wiosennej.
+		<br><br>
+		<br><br>
+		<div id="zdj2" class="przyklad">
+			<img src="images/wiosna.jpg" alt="powiekszający się obrazek">
+		</div>
+	</div>
+
+    Style guide: 2.3
+*/
+
+
+/*
+    Lirydy - podstrona sekcji "2024" strony
+
+    To jest podstrona sekcji "2024" szablonu.
+
+    **#content**: Div o tym id ma padding 40px, szerokość 917px i wyjustowany tekst w środku.
+
+    **.bigtitle**: Elementy o tej klasie mają pogrubioną czcionkę o rozmiarze 32px, litery są wystrzelone na 2px.
+
+    **.dottedline**: Elementy o tej klasie mają wysokość 5px, margines górny 15px, margines dolny 20px i dole obramowanie 2px.
+
+    **#zdj**: Zdjęcia o tym id są wyśrodkowane, wyświetlane są jako bloki oraz mają efekt cienia o wymiarach 0px, 3 px, 6 px.
+
+    **.przyklad**: Elementy o tej klasie mają padding 0. Zdjęcia wewnątrz kontenerów o tej klasie mają ustawioną animacje i są wyśrodkowane.
+
+    Markup:
+    <div id="content">
+		<span class="bigtitle">Rój Lirydów</span>	
+		<div class="dottedline"></div>			
+		Lirydy to rój meteorów powiązany z kometą Thatchera (C/1861 G1). <br> 
+		Punkt radiacyjny roju znajduje się na granicy konstelacji Lutni i Herkulesa. <br> 
+		Okres aktywności roju przypada między 16 a 25 kwietnia, 
+		<br>
+		z największą intensywnością obserwowaną w okolicach 21-22 kwietnia (maksimum). 
+		<br><br>
+		<div id="zdj" class="przyklad">
+			<img src="images/lirydy.png" alt="powiekszający się obrazek">	
+		</div>
+		<br>
+		Meteoroidy Lirydów poruszają się z prędkością 49 km/s, co czyni je stosunkowo szybkimi zjawiskami. 
+		<br><br>
+		Rój Lirydów jest jednym z najstarszych obserwowanych rojów meteorów, o którym wspominają starożytne kroniki.  <br>
+		Pierwsze wzmianki o jego aktywności można znaleźć już w chińskich zapisach datowanych na rok 2000 p.n.e.
+	</div>
+
+    Style guide: 2.4
+*/
+
+
+
+/*
+    Astronomiczne lato - podstrona sekcji "2024" strony
+
+    To jest podstrona sekcji "2024" szablonu.
+
+    **#content**: Div o tym id ma padding 40px, szerokość 917px i wyjustowany tekst w środku.
+
+    **.bigtitle**: Elementy o tej klasie mają pogrubioną czcionkę o rozmiarze 32px, litery są wystrzelone na 2px.
+
+    **.dottedline**: Elementy o tej klasie mają wysokość 5px, margines górny 15px, margines dolny 20px i dole obramowanie 2px.
+
+    **#zdj2**: Zdjęcia o tym id są wyśrodkowane, wyświetlane są jako bloki.
+
+    **.przyklad**: Elementy o tej klasie mają padding 0. Zdjęcia wewnątrz kontenerów o tej klasie mają ustawioną animacje i są wyśrodkowane.
+
+    Markup:
+    <div id="content">
+		<span class="bigtitle">Astronomiczne Lato</span>
+		<div class="dottedline"></div>
+		20 czerwa rozpocznie sie astronomiczne lato znane również pod nazwą przesilenia letniego.
+		<br>	<br>
+		<div id="zdj2" class="przyklad">
+		    <img src="images/lato.jpg" alt="powiekszający się obrazek">	
+		</div>		
+	</div>
+
+    Style guide: 2.5
+*/
+
+
+
+/*
+    Parseidy - podstrona sekcji "2024" strony
+
+    To jest podstrona sekcji "2024" szablonu.
+
+    **#content**: Div o tym id ma padding 40px, szerokość 917px i wyjustowany tekst w środku.
+
+    **.bigtitle**: Elementy o tej klasie mają pogrubioną czcionkę o rozmiarze 32px, litery są wystrzelone na 2px.
+
+    **.dottedline**: Elementy o tej klasie mają wysokość 5px, margines górny 15px, margines dolny 20px i dole obramowanie 2px.
+
+    **#zdj**: Zdjęcia o tym id są wyśrodkowane, wyświetlane są jako bloki oraz mają efekt cienia o wymiarach 0px, 3 px, 6 px.
+
+    **.przyklad**: Elementy o tej klasie mają padding 0. Zdjęcia wewnątrz kontenerów o tej klasie mają ustawioną animacje i są wyśrodkowane. 
+
+    Markup:
+    <div id="content">
+		<span class="bigtitle">Maksimum roju Parseidów</span>	
+		<div class="dottedline"></div>		
+		Perseidy to jedne z najbardziej regularnie pojawiających się rojów meteorów, 
+		<br>
+		których orbita przecina się z orbitą Ziemi co roku. 
+		<br><br>
+		To zjawisko można obserwować zazwyczaj od połowy lipca do drugiej połowy sierpnia,  
+		<br>
+		a szczyt aktywności roju przypada na 12 i 13 sierpnia.			
+		<br>	<br>
+		<div id="zdj" class="przyklad">
+			<img src="images/parseidy.png" alt="powiekszający się obrazek">			
+		</div>									
+	</div>
+
+    Style guide: 2.6
+*/
+
+
+
+
+/*
+    Astronomiczna jesień - podstrona sekcji "2024" strony
+
+    To jest podstrona sekcji "2024" szablonu.
+
+    **#content**: Div o tym id ma padding 40px, szerokość 917px i wyjustowany tekst w środku.
+
+    **.bigtitle**: Elementy o tej klasie mają pogrubioną czcionkę o rozmiarze 32px, litery są wystrzelone na 2px.
+
+    **.dottedline**: Elementy o tej klasie mają wysokość 5px, margines górny 15px, margines dolny 20px i dole obramowanie 2px.
+
+    **#zdj2**: Zdjęcia o tym id są wyśrodkowane, wyświetlane są jako bloki.
+
+    **.przyklad**: Elementy o tej klasie mają padding 0. Zdjęcia wewnątrz kontenerów o tej klasie mają ustawioną animacje i są wyśrodkowane.
+
+
+    Markup:
+    <div id="content">
+		<span class="bigtitle">Astronomiczna Jesień</span>			
+		<div class="dottedline"></div>			
+        22 września rozpocznie się astronomiczna jesień. Jest to dzień równonocy jesiennej.
+		<br><br>
+		<div id="zdj2" class="przyklad">
+			<img src="images/jesien.jpg" alt="powiekszający się obrazek">			
+		</div>									
+	</div>	
+
+    Style guide: 2.7
+*/
+
+
+
+
+/*
+    Jowisz i Gwiazdozbiór Byka - podstrona sekcji "2024" strony
+
+    To jest podstrona sekcji "2024" szablonu.
+
+    **#content**: Div o tym id ma padding 40px, szerokość 917px i wyjustowany tekst w środku.
+
+    **.bigtitle**: Elementy o tej klasie mają pogrubioną czcionkę o rozmiarze 32px, litery są wystrzelone na 2px.
+
+    **.dottedline**: Elementy o tej klasie mają wysokość 5px, margines górny 15px, margines dolny 20px i dole obramowanie 2px.
+
+    **#zdj**: Zdjęcia o tym id są wyśrodkowane, wyświetlane są jako bloki oraz mają efekt cienia o wymiarach 0px, 3 px, 6 px.
+
+    **.przyklad**: Elementy o tej klasie mają padding 0. Zdjęcia wewnątrz kontenerów o tej klasie mają ustawioną animacje i są wyśrodkowane.
+
+
+    Markup:
+    <div id="content">
+		<span class="bigtitle">Jowisz w opozycji na tle gwiazdozbioru Byka</span>		
+		<div class="dottedline"></div>
+		To zjawisko nastanie 7 grudnia. <br>
+		Kiedy Jowisz jest w opozycji w stosunku do gwiazdozbioru Byka, oznacza to, <br>
+        że widzimy go na niebie dokładnie naprzeciwko Słońca. <br>
+        To specyficzne ustawienie ciał niebieskich wpływa pozytywnie na obserwacje astronomiczne.
+		<br><br>
+		<div id="zdj" class="przyklad">
+			<img src="images/jowiszGwiazdozbiorByka.png" alt="powiekszający się obrazek">				
+		</div>							
+	</div>
+
+    Style guide: 2.8
+*/
+
+
+
+
+/*
+    Astronomiczna zima - podstrona sekcji "2024" strony
+
+    To jest podstrona sekcji "2024" szablonu.
+
+    **#content**: Div o tym id ma padding 40px, szerokość 917px i wyjustowany tekst w środku.
+
+    **.bigtitle**: Elementy o tej klasie mają pogrubioną czcionkę o rozmiarze 32px, litery są wystrzelone na 2px.
+
+    **.dottedline**: Elementy o tej klasie mają wysokość 5px, margines górny 15px, margines dolny 20px i dole obramowanie 2px.
+
+    **#zdj2**: Zdjęcia o tym id są wyśrodkowane, wyświetlane są jako bloki.
+
+    **.przyklad**: Elementy o tej klasie mają padding 0. Zdjęcia wewnątrz kontenerów o tej klasie mają ustawioną animacje i są wyśrodkowane.
+
+    Markup:
+    <div id="content">
+		<span class="bigtitle">Astronomiczna Zima</span>	
+		<div class="dottedline"></div>		
+		21 grudnia rozpocznie się astronomiczna zima - przesilenie zimowe.
+		<br><br>
+		<div id="zdj2" class="przyklad">
+			<img src="images/zima.jpg" alt="powiekszający się obrazek">				
+		</div>					
+	</div>	
+
+    Style guide: 2.9
+*/
+
+
+
+/*
+    Przyszłe lata - sekcja "Przyszłe lata" strony
+
+    To jest strona "Przyszłe lata" szablonu przedstawiająca wydarzenia astronomiczne z przysżłych lat.
+
+    **#content**: Div o tym id ma padding 40px, szerokość 917px i wyjustowany tekst w środku.
+
+    **.bigtitle**: Elementy o tej klasie mają pogrubioną czcionkę o rozmiarze 32px, litery są wystrzelone na 2px.
+
+    **.dottedline**: Elementy o tej klasie mają wysokość 5px, margines górny 15px, margines dolny 20px i dole obramowanie 2px.
+
+
+    Markup:
+    <div id="content">
+		<span class="bigtitle">Wydarzenia z lat przyszłych </span>
+		<div class="dottedline"></div>
+		<p>Ta seria podstron zawiera jedne z ważniejszych wydarzeń astronomicznych odległych lat.</p>
+		<br><br>
+	</div>
+
+    Style guide: 3.0
+*/
+
+
+
+
+/*
+    Zaćmienie Słońca - podstrona sekcji "Przyszłe lata" strony
+
+    To jest podstrona sekcji "Przyszłe lata" szablonu.
+
+    **#content**: Div o tym id ma padding 40px, szerokość 917px i wyjustowany tekst w środku.
+
+    **.bigtitle**: Elementy o tej klasie mają pogrubioną czcionkę o rozmiarze 32px, litery są wystrzelone na 2px.
+
+    **.dottedline**: Elementy o tej klasie mają wysokość 5px, margines górny 15px, margines dolny 20px i dole obramowanie 2px.
+
+    **.zdjęciaDoPrzejscia**: Ta klasa wykorzystywana jest w scripcie, który powoduje przejście zdjęć co 3,5 sekundy.
+
+    Markup:
+    <div id="content">
+		<span class="bigtitle">Zaćmienie Słońca</span>
+        <div class="dottedline"></div>
+		<div>
+		29 marca 2025 roku odbędzie się częściowe zaćmienie Słońca, które będzie widoczne w Polsce.
+		<br><br>
+		Zaćmienie Słońca to astronomiczne zjawisko, które występuje, gdy Księżyc znajduje się między Ziemią a
+		Słońcem, <br>
+		a ich trzy ciała znajdują się w jednej linii. <br>
+		W takiej sytuacji Księżyc zakrywa część lub całą tarczę Słońca, <br>
+		co powoduje chwilowe zaćiemnienie nieba w okolicach miejsca, gdzie zaćmienie jest widoczne.
+		<br><br>
+		<div style="max-width:900px">
+			<img class="zdjęciaDoPrzejscia" src="images/zacmienie1.png" alt="zdjęciaDoPrzejscia 1" style="width:100%">
+			<img class="zdjęciaDoPrzejscia" src="images/zacmienie2.jpg" alt="zdjęciaDoPrzejscia 2" style="width:100%">
+			<img class="zdjęciaDoPrzejscia" src="images/zacmienie3.jpg" alt="zdjęciaDoPrzejscia 3" style="width:100%">
+		</div>
+			<script>
+				var idneks = 0;
+				przejscie();
+				function przejscie() {
+					var i;
+					var x = document.getElementsByClassName("zdjęciaDoPrzejscia");
+					for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";
+					}
+					idneks++;
+					if (idneks > x.length) { idneks = 1 }
+					x[idneks - 1].style.display = "block";
+					setTimeout(przejscie, 3500);
+				}
+			</script>
+		</div>
+	</div>
+
+    Style guide: 3.1
+*/
+
+
+
+/*
+    Misje na Księżyc - podstrona sekcji "Przyszłe lata" strony
+
+    To jest podstrona sekcji "Przyszłe lata" szablonu.
+
+    **#content**: Div o tym id ma padding 40px, szerokość 917px i wyjustowany tekst w środku.
+
+    **.bigtitle**: Elementy o tej klasie mają pogrubioną czcionkę o rozmiarze 32px, litery są wystrzelone na 2px.
+
+    **.dottedline**: Elementy o tej klasie mają wysokość 5px, margines górny 15px, margines dolny 20px i dole obramowanie 2px.
+
+    **.zdjęciaDoPrzejscia**: Ta klasa wykorzystywana jest w scripcie, który powoduje przejście zdjęć co 3,5 sekundy.
+
+    Markup:
+    <div id="content">
+		<span class="bigtitle" >Misje na Księżyc</span>
+		<div class="dottedline"></div>
+		<div>
+			Misja Artemis II planowana jest na wrzesień 2025 roku. <br>
+			Statek Orion ma przelecieć obok Księżyca a następnie wrócić na Ziemię. <br>
+			Artemis II to pierwsza misja kosmiczna od czasów Apollo 17 z 1972 roku, <br>
+			w której załoga poleci poza niską orbitę Ziemi. <br>
+			Załoga znajdzie się w odległości 6 400 mil, <br>
+			czyli 10 300 km od powierzchni Księżyca. 
+            <br><br>
+			Celem misji Artemis II jest przelot nad Księżycem z udziałem czteroosobowej załogi w statku Orion. <br>
+			W czasie trwania misji załoga będzie wykonywała kontrole systemów podtrzymywania życia.
+			<br><br>
+			<div style="max-width:900px">
+				<img class="zdjęciaDoPrzejscia" src="images/ksiezycMisje1.jpg" alt="zdjęcieDoPrzejscia 1" style="width:100%">
+				<img class="zdjęciaDoPrzejscia" src="images/ksiezycMisje2.png" alt="zdjęcieDoPrzejscia 2" style="width:100%">
+				<img class="zdjęciaDoPrzejscia" src="images/ksiezycMisje3.jpg" alt="zdjęcieDoPrzejscia 3" style="width:100%">
+			</div>
+			<br><br>
+			Kolejną misją jest Artemis III, w której załoga ma wylądować na Księżycu. <br>
+			Odbędzie się ona nie wcześniej niż we werześniu 2026 roku.
+			<script>
+				var idneks = 0;
+				przejscie();
+				function przejscie() {
+					var i;
+					var x = document.getElementsByClassName("zdjęciaDoPrzejscia");
+					for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";
+					}
+					idneks++;
+					if (idneks > x.length) { idneks = 1 }
+					x[idneks - 1].style.display = "block";
+					setTimeout(przejscie, 3500);
+				}
+			</script>
+		</div>
+	</div>
+
+    Style guide: 3.2
+*/
+
+
+
+
+/*
+    Apophis - podstrona sekcji "Przyszłe lata" strony
+
+    To jest podstrona sekcji "Przyszłe lata" szablonu.
+
+    **#content**: Div o tym id ma padding 40px, szerokość 917px i wyjustowany tekst w środku.
+
+    **.bigtitle**: Elementy o tej klasie mają pogrubioną czcionkę o rozmiarze 32px, litery są wystrzelone na 2px.
+
+    **.dottedline**: Elementy o tej klasie mają wysokość 5px, margines górny 15px, margines dolny 20px i dole obramowanie 2px.
+
+    **.zdjęciaDoPrzejscia**: Ta klasa wykorzystywana jest w scripcie, który powoduje przejście zdjęć co 3,5 sekundy.
+
+
+    Markup:
+    <div id="content">
+		<span class="bigtitle">Przelot asteroidy Apophis</span>
+		<div class="dottedline"></div>
+		<div>
+			W 2029 roku asteoroida 99942 Apofis znajdzie się na tyle blisko powierzchni Ziemi, <br>
+			by zmieść najwyżej latające satelity. <br> <br>
+			Według NASA żadna skała tej wielkości nigdy nie przeleciała bliżej. <br>
+			Gdyż ma ona w pasie 340 metrów, czyli więcej niż wysokość wieży Eiffle'a.
+			<br><br>
+			<div style="max-width:900px">
+				<img class="zdjęciaDoPrzejscia" src="images/apophis1.jpg" alt="zdjęcieDoPrzejscia 1" style="width:100%">
+				<img class="zdjęciaDoPrzejscia" src="images/apophis2.png" alt="zdjęcieDoPrzejscia 2" style="width:100%">
+				<img class="zdjęciaDoPrzejscia" src="images/apophis3.png" alt="zdjęcieDoPrzejscia 3" style="width:100%">
+			</div>
+			<script>
+				var idneks = 0;
+				przejscie();
+				function przejscie() {
+					var i;
+					var x = document.getElementsByClassName("zdjęciaDoPrzejscia");
+					for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";
+					}
+					idneks++;
+					if (idneks > x.length) { idneks = 1 }
+					x[idneks - 1].style.display = "block";
+					setTimeout(przejscie, 3500);
+				}
+			</script>
+		</div>
+	</div>
+
+    Style guide: 3.3
+*/
+
+
+
+
+/*
+    Supernowa - podstrona sekcji "Przyszłe lata" strony
+
+    To jest podstrona sekcji "Przyszłe lata" szablonu.
+
+    **#content**: Div o tym id ma padding 40px, szerokość 917px i wyjustowany tekst w środku.
+
+    **.bigtitle**: Elementy o tej klasie mają pogrubioną czcionkę o rozmiarze 32px, litery są wystrzelone na 2px.
+
+    **.dottedline**: Elementy o tej klasie mają wysokość 5px, margines górny 15px, margines dolny 20px i dole obramowanie 2px.
+
+    **.zdjęciaDoPrzejscia**: Ta klasa wykorzystywana jest w scripcie, który powoduje przejście zdjęć co 3,5 sekundy.
+
+
+    Markup:
+    <div id="content">
+		<span class="bigtitle">Supernowa Betelgezy</span>
+		<div class="dottedline"></div>
+		<div>
+			Nieco ponad 650 lat świetlnych od Ziemi umiera Betelgeza. <br>
+			Najświeższe prognozy dają słynnemu nadolbrzymowi zaledwie kilka dekad, <br>
+			zanim zapadnie się w ostatnim błysku chwały.
+			<br> <br>
+			Betelgeza jest jedną z najjaśniejszych gwiazd widocznych na naszym niebie <br>
+			i zdecydowanie jedną z najbardziej interesujących.
+			Można ją dostrzec w „prawym ramieniu” postaci Oriona, gdzie tworzy wierzchołek tzw. trójkąta zimowego,
+			<br>
+			złożonego z jasnych gwiazd dobrze widocznych zimą z Polski.
+			<br><br>
+			Badacze sugerują, że do ostatecznego rozbłysku może dojść w drugiej połowie naszego wieku.
+			<br><br>
+			<div style="max-width:900px">
+				<img class="zdjęciaDoPrzejscia" src="images/supernowa1.png" alt="zdjęciaDoPrzejscia 1" style="width:100%">
+				<img class="zdjęciaDoPrzejscia" src="images/supernowa2.png" alt="zdjęciaDoPrzejscia 2" style="width:100%">
+				<img class="zdjęciaDoPrzejscia" src="images/supernowa3.png" alt="zdjęciaDoPrzejscia 3" style="width:100%">
+			</div>
+			<script>
+				var idneks = 0;
+				przejscie();
+				function przejscie() {
+					var i;
+					var x = document.getElementsByClassName("zdjęciaDoPrzejscia");
+					for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";
+					}
+					idneks++;
+					if (idneks > x.length) { idneks = 1 }
+					x[idneks - 1].style.display = "block";
+					setTimeout(przejscie, 3500);
+				}
+			</script>
+		</div>
+	</div>
+
+    Style guide: 3.4
+*/
+
+
+
+
+/*
+    Zdjęcie dnia - sekcja "Zdjęcia dnia" strony
+
+    To jest strona szablonu ze zdjęciem dnia pobieranym od NASA.
+
+    **#content**: Div o tym id ma padding 40px, szerokość 917px i wyjustowany tekst w środku.
+
+    **.bigtitle**: Elementy o tej klasie mają pogrubioną czcionkę o rozmiarze 32px, litery są wystrzelone na 2px.
+
+    **.dottedline**: Elementy o tej klasie mają wysokość 5px, margines górny 15px, margines dolny 20px i dole obramowanie 2px.
+
+    **#nasa-apod**: Div o tym id umożliwia wczytanie zdjęcia za pomocą API ze strony NASA.
+
+    Markup:
+    <div id="content">
+		<span class="bigtitle">Zdjęcie dnia</span>		
+		<div class="dottedline"></div>
+		<div id="nasa-apod">
+			<img id="apod-image" src="" alt="Astronomy Picture of the Day" style="max-width: 100%;">
+		</div>
+	</div>
+    <script>
+        async function fetchAPOD() {
+            try {
+                const apiKey = 'WY1QbfQACxdGXRbDJflTWlNBmsZGzpgXuok1naaX'; 
+                const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}`);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+                displayAPOD(data);
+            } catch (error) {
+                console.error('Could not fetch APOD data:', error);
+            }
+        }
+        function displayAPOD(data) {
+            const imageElement = document.getElementById('apod-image');
+            imageElement.src = data.url;
+            imageElement.alt = data.title;
+        }
+        document.addEventListener('DOMContentLoaded', fetchAPOD);
+    </script>
+
+    Style guide: 4.0
+*/
+
+
+
+
+/*
+   Kontakt - sekcja kontaktowa strony
+
+    To jest strona z kontaktem szablonu.
+
+    **#content**: Div o tym id ma padding 40px, szerokość 917px i wyjustowany tekst w środku.
+
+    **.bigtitle**: Elementy o tej klasie mają pogrubioną czcionkę o rozmiarze 32px, litery są wystrzelone na 2px.
+
+    **.dottedline**: Elementy o tej klasie mają wysokość 5px, margines górny 15px, margines dolny 20px i dole obramowanie 2px.
+
+    **.form**: Elementy o tej klasie mają czcionkę z rodziny sans-serif, margines górny 5px, maksymalną szerokość 40rem.
+    
+    **.form-row**: Elementy o tej klasie margines dolny 1rem.
+
+    **.submit-btn**: Elementy o tej klasie mają czcionkę z rodziny sans-serif, rozmiar czcionki 1.1rem, czcionka jest pogrubiona, padding 1rem 2rem, ma ustawioną animację zmiany koloru tła.
+
+    Markup:
+    <div id="content">
+        <span class="bigtitle">Formularz zgłoszeniowy </span>
+        <div class="dottedline"></div>
+        <br>
+        <form class="form" id="contactForm">
+            <div class="form-row">
+                <label for="field-name">Imię i nazwisko*</label>
+                <input type="text" name="name" required id="field-name" title="Wypełnij to pole"
+                    pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+            </div>
+            <div class="form-row">
+                <label for="field-email">Email*</label>
+                <input type="email" name="email" required id="field-email" title="Wpisz poprawny email"
+                    pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+            </div>
+            <div class="form-row">
+                <label for="field-message">Wiadomość*</label>
+                <textarea name="message" required title="Musisz wypełnić pole" id="field-message"></textarea>
+            </div>
+            <div class="form-row">
+                <label class="checkbox-cnt">
+                    <input type="checkbox" title="Musisz wypełnić pole" name="regulation">
+                    <i class="state" aria-hidden="true"></i>
+                    <span>Zgadzam się z przetwarzaniem danych osobowych.</span>
+                </label>
+            </div>
+            <div class="form-row">
+                <br>
+                <button type="submit" class="submit-btn">
+                    Wyślij
+                </button>
+            </div>
+        </form>
+        <div id="output"></div>
+    </div>
+
+    Style guide: 5.0
+*/
+
+
+
+#container {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo {
+    color: white;
+    margin-top: 20px;
+    font-size: 44px;
+    letter-spacing: 3px;
+    font-weight: 900;
+}
+
+
+#menu {
+    background-color: #34343498;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+
+#srodek {
+    text-align: center;
+}
+
+
+#strGlownaZdj {
+    margin: auto;
+    display: block;
+    box-shadow: 0px 3px 6px black;
+    width: 900px;
+}
+
+
+#zdj {
+    margin: auto;
+    display: block;
+    box-shadow: 0px 3px 6px black;
+
+}
+
+
+#zdj2 {
+    margin: auto;
+    display: block;
+
+}
+
+
+
+#content {
+    clear: both;
+    padding: 40px;
+    width: 917px;
+    background-color: #ffffffca;
+
+    text-align: justify;
+    color: black;
+}
+
+#social {
+    background-color: #4d4b5100;
+    clear: both;
+    color: orange;
+    text-align: center;
+    padding: 40px;
+    width: 917px;
+    min-height: 40px;
+    font-size: 10px;
+    opacity: 0.9;
+    margin-top: 25px;
+}
+
+
+
+#footer .heading {
+    color: #FFFFFF;
+}
+
+#footer hr,
+#footer .borderedbox,
+#footer .linklist li {
+    border-color: rgba(255, 255, 255, .1);
+}
+
+#footer input,
+#footer button {
+    border-color: transparent;
+}
+
+#footer input {
+    color: #474747;
+    background-color: #C1C2C4;
+}
+
+#footer input:focus {
+    border-color: #95103B;
+}
+
+#footer button {
+    color: #FFFFFF;
+    background-color: #95103B;
+}
+
+
+
+#footer {
+    clear: both;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    display: block;
+}
+
+
+
+
+
+
+.bigtitle {
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: black;
+}
+
+.dottedline {
+    height: 5px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-bottom: 2px dotted #444444;
+}
+
+.przyklad {
+    overflow: hidden;
+    padding: 0;
+
+
+}
+
+.przyklad img {
+    transition-duration: 3s;
+    margin: 0 auto;
+    display: block;
+}
+
+.przyklad img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    z-index: 0;
+}
+
+
+.form {
+    margin-top: 5px;
+    font-family: sans-serif;
+    max-width: 40rem;
+}
+
+.form .form-row {
+    margin-bottom: 1rem;
+}
+
+.form .form-row:last-child {
+    margin-bottom: 10px;
+}
+
+.form input[type=text],
+.form input[type=email],
+.form textarea,
+.form .checkbox-cnt .state {
+    box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.07);
+}
+
+.form input[type=text],
+.form input[type=email],
+.form textarea {
+    border-radius: 0.2rem;
+    font-family: sans-serif;
+    padding: 0.8rem;
+    border: 1px solid #aaa;
+    display: block;
+    width: 100%;
+    color: #666;
+}
+
+.form input[type=text]:focus,
+.form input[type=email]:focus,
+.form textarea:focus {
+    border-color: #9DC9F5;
+    box-shadow: inset 0 0 0 1px #9DC9F5, inset 0 1px 5px rgba(0, 0, 0, 0.07);
+    outline: none;
+}
+
+.form textarea {
+    height: 10rem;
+}
+
+.form label {
+    font-weight: bold;
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.form .submit-btn {
+    font-family: sans-serif;
+    padding: 1rem 2rem;
+    background: #70B81B;
+    border: 0;
+    border-radius: 0.2rem;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: 0.3s background-color;
+}
+
+
+/* checkbox */
+
+.form .submit-btn:hover {
+    background: #7EC927;
+}
+
+
+.form .checkbox-cnt {
+    padding-left: 3rem;
+    position: relative;
+    font-weight: normal;
+    font-size: 0.85rem;
+    line-height: 1.1rem;
+    color: #444;
+    cursor: pointer;
+}
+
+
+.form .checkbox-cnt .state {
+    width: 2rem;
+    height: 2rem;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px solid #aaa;
+    border-radius: 0.2rem;
+}
+
+
+.form .checkbox-cnt .state:before {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0.2rem;
+    background: #70B81B;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    content: '';
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+}
+
+.form .checkbox-cnt input:checked~.state:before {
+    animation: checkboxShowAnim 0.5s 1;
+    opacity: 1;
+}
+
+.form .checkbox-cnt input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+    z-index: 2;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+}
+
+
+@keyframes checkboxShowAnim {
+    0% {
+        border-radius: 50%;
+        transform: translate(-50%, -50%) scale(0.2);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+
+
+
+ol {
+
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-size: 20px;
+    height: 35px;
+    line-height: 200%;
+    display: inline-block;
+}
+
+ol a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+
+}
+
+ol>li {
+    float: left;
+    width: 150px;
+    height: 40px;
+    border-right: 1px solid black;
+
+}
+
+ol>li:last-child {
+
+    border-right: none;
+
+}
+
+ol>li:hover {
+
+    background-color: #696969;
+}
+
+ol>li:hover>a {
+    color: #000000;
+
+}
+
+ol>li>ul {
+
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 30 px;
+    display: none;
+}
+
+ol>li:hover>ul {
+
+    display: block;
+}
+
+ol>li>ul>li {
+
+    background-color: #303030;
+    position: relative;
+
+    z-index: 100;
+    border-top: 1px dashed black;
+}
+
+ol>li>ul>li:hover {
+    background-color: white;
+}
+
+ol>li>ul>li:hover>a {
+    color: black;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #container {
+        width: auto;
+        padding: 0 10px;
+    }
+
+    body {
+        background-size: 100% 100%;
+        min-height: 1000px;
+    }
+
+    #menu ol,
+    #menu ol ul {
+        display: block;
+        width: auto;
+    }
+
+    #menu ol li,
+    #menu ol li ul li {
+        float: none;
+        width: auto;
+        border: none;
+    }
+
+    #content,
+    #footer {
+        width: auto;
+        padding: 20px;
+    }
+
+    .bigtitle,
+    .form {
+        width: 100%;
+    }
+
+    .form input[type=text],
+    .form input[type=email],
+    .form textarea {
+        width: calc(100% - 1.6rem);
+    }
+
+    #strGlownaZdj,
+    #zdj,
+    #zdj2 {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+    #menu ol li a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .bigtitle {
+        font-size: 24px;
+    }
+
+    .form .submit-btn {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .przyklad img {
+        transition-duration: 2s;
+    }
+
+    #footer {
+        font-size: 14px;
+    }
+}

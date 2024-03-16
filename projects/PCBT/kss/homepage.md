@@ -1,0 +1,2 @@
+# Dokumentacja KSS projektu "PCBT - PC Building Tips"
+Witaj w dokumentacji. Ta strona zawiera szczegóły dotyczące najważniejszych dostępnych stylów oraz ich zastosowań w projekcie. Z poważaniem, Konrad Pluta.

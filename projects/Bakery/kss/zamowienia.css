@@ -1,0 +1,345 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0e2d3;
+}
+
+nav {
+    background: #d2a679;
+}
+
+/*
+    Zamówienia - sekcja formularza zamówień piekarnii
+
+    Poniżej jest przedstawiona zawartość podstrony zamówień. Jest w nim umieszczony formularz zamówień.
+
+    **.container**: Kontener o tej klasie ma szerokość 80% ekranu, jest wyśrodkowany, ma pionowe marginesy ustawione na 20px i padding na 20px. Minimalna wysokośc kontenera to 70vh.
+    
+    **#formularz-zamowienia**: Formularz o tym id ma padding 3em, maksymalną szerokość 500px i jest wyśrodkowany.
+
+    **#formularz-zamowienia label**: Każda etykieta wewnątrz formularza o takim id ma ustawiony display:flex, ma też margines dolny na 5px.
+
+    **#formularz-zamowienia input/select**: Każde pole i pole wyboru ma szerokość 100%, padding 8px, dolny margines na 15px i obramowanie 1px. 
+
+    **#formularz-zamowienia button**: Każdy przycisk ma padding poziomy na 10px i pionowy na 15px, usuniety ma obramowanie, rozmiar czcionki ma 16px i górny margines na 15px.
+
+    Markup:
+    <main>
+        <div class="container">
+            <section>
+                <h2>Składanie zamówienia</h2>
+                <form action="#" id="formularz-zamowienia">
+                    <label for="imie">Imię:</label>
+                    <input type="text" id="imie" name="imie" required autofocus pattern="[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]+"
+                        title="Wpisz poprawne imię.">
+                    <label for="nazwisko">Nazwisko:</label>
+                    <input type="text" id="nazwisko" name="nazwisko" required pattern="[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]+"
+                        title="Wpisz poprawne nazwisko.">
+                    <label for="email">Adres e-mail:</label>
+                    <input type="email" id="email" name="email" required title="Wpisz adres e-mail.">
+                    <label for="telefon">Nr telefonu:</label>
+                    <input type="tel" id="telefon" name="telefon" required title="Wpisz nr telefonu.">
+                    <label for="miasto">Miasto:</label>
+                    <input type="text" id="miasto" name="miasto" required pattern="[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]+"
+                        title="Wpisz poprawne miasto.">
+                    <label for="kod-pocztowy">Kod pocztowy:</label>
+                    <input type="text" id="kod-pocztowy" name="kod-pocztowy" required pattern="\d{2}-\d{3}"
+                        title="Wpisz poprawny kod pocztowy (np. 00-000).">
+                    <label for="ulica">Ulica:</label>
+                    <input type="text" id="ulica" name="ulica" required pattern="[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]+"
+                        title="Wpisz poprawną ulicę.">
+                    <label for="nr-budynku">Numer budynku/mieszkania:</label>
+                    <input type="text" id="nr-budynku" name="nr-budynku" required pattern="\d+[\/]?\d*"
+                        title="Wpisz poprawny nr budynku lub mieszkania mieszkania (np. 10/20).">
+                    <label for="pieczywo">Wybierz pieczywo:</label>
+                    <select id="pieczywo" name="pieczywo">
+                        <optgroup label="Chleby">
+                            <option value="chleb1">chleb1</option>
+                            <option value="chleb2">chleb2</option>
+                            <option value="chleb3">chleb3</option>
+                        </optgroup>
+                        <optgroup label="Bułki">
+                            <option value="bułka1">bułka1</option>
+                            <option value="bułka2">bułka2</option>
+                            <option value="bułka3">bułka3</option>
+                        </optgroup>
+                        <optgroup label="Rogaliki">
+                            <option value="rogalik1">rogalik1</option>
+                            <option value="rogalik2">rogalik2</option>
+                            <option value="rogalik3">rogalik3</option>
+                        </optgroup>
+                        <optgroup label="Bagietki">
+                            <option value="bagietka1">bagietka1</option>
+                            <option value="bagietka1">bagietka2</option>
+                            <option value="bagietka1">bagietka3</option>
+                        </optgroup>
+                    </select>
+                    <label for="ilosc">Ilość:</label>
+                    <input type="number" id="ilosc" name="ilosc" min="1" max="100" required
+                        title="Wpisz ilość zamówień.">
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" id="maka-zytnia" name="maka" value="maka-zytnia" checked>
+                            Mąka żytnia
+                        </label>
+                        <label>
+                            <input type="radio" id="maka-pszenna" name="maka" value="maka-pszenna">
+                            Mąka pszenna
+                        </label>
+                    </div>
+                    <button type="submit">Zamów</button>
+                </form>
+            </section>
+            <section>
+                <h2>Moje zamówienia</h2>
+                <table id="tabela-zamowien">
+                    <thead>
+                        <tr>
+                            <th>Imię</th>
+                            <th>Nazwisko</th>
+                            <th>Pieczywo</th>
+                            <th>Ilość</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    Style guide: 4.0
+*/
+
+.burger-menu {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.zdjecie {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.zdjecie img {
+    width: 200px;
+    height: auto;
+}
+
+.linki {
+    display: flex;
+    flex-grow: 3;
+    background-color: #bd946c;
+}
+
+.linki a {
+    flex: 1;
+    padding: 1.5em;
+    text-align: center;
+    border-left: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+}
+
+.linki a:hover {
+    background-color: #b08a61;
+}
+
+.linki a:first-child {
+    border-left: none;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff7e6;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    min-height: 70vh;
+}
+
+.container p {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #8f5c30;
+    color: #fff;
+    padding: 1em 0;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+}
+
+.footer-info>p,
+.socials {
+    margin: 0;
+}
+
+.footer-info>.footer-right>p>a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footer-info>.footer-right>p>a:hover {
+    color: #d2a679;
+}
+
+.socials img {
+    padding: 0 0.5em;
+    vertical-align: middle;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 712px) {
+
+    .zdjecie {
+        order: -1;
+    }
+
+    .menu,
+    .linki {
+        flex-direction: column;
+    }
+
+    .linki {
+        display: none;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .linki a {
+        border-left: none;
+        border-top: 1px solid #fff;
+        padding: 1em;
+        text-align: center;
+    }
+
+    .linki.active {
+        display: flex;
+    }
+
+    .linki a:first-child {
+        border-top: none;
+    }
+
+    .linki.active a {
+        border-left: none;
+    }
+
+    .container img {
+        width: 100%;
+        display: block;
+        margin: 1em auto;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        align-items: center;
+        margin: 0.5em 0;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.container p {
+    text-align: center;
+}
+
+#formularz-zamowienia {
+    background-color: #fce8ca;
+    padding: 3em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: auto;
+}
+
+#formularz-zamowienia label {
+    display: flex;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#formularz-zamowienia input,
+#formularz-zamowienia select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#formularz-zamowienia button {
+    background-color: #d2a679;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.radio-group {
+    display: flex;
+}
+
+#formularz-zamowienia button:hover {
+    background-color: #b08a61;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+table {
+    margin: auto;
+    text-align: center;
+}

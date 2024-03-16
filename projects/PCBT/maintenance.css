@@ -1,0 +1,999 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(0, 0, 0);
+
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0 2.2rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 1400;
+    width: 100%;
+    height: 4.7rem;
+    background-color: rgba(0, 0, 0, .75);
+    backdrop-filter: blur(2rem);
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin: 0 -1rem;
+}
+
+.nav-list-mobile {
+    display: none;
+}
+
+.nav-link {
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 0 1rem;
+    transition: opacity .5s;
+}
+
+.nav-link-maintenance{
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 0 1rem;
+    padding-bottom: 3px;
+    transition: opacity .5s;
+    background-color: rgba(160, 160, 160, 0.4);
+    border-radius: 10px;
+}
+
+.nav-link:hover {
+    opacity: .7;
+}
+
+.nav-link-pcbt {
+    width: 2.6rem;
+    height: 5.4rem;
+    background: url("images/icons/pcbt50.png") center no-repeat;
+}
+.title {
+    display: flex;
+    align-items:last baseline;
+    color: rgba(255, 255, 255);
+    text-align: left;
+    padding-top: 5.5rem;
+    backdrop-filter: blur(0.05rem);
+    border-radius: 50px;
+    height: 400px;
+    background-size: cover;
+    max-width: 500px;
+}
+
+.title-heading {
+    font-size: 2.6rem;
+    line-height: 1.07;
+    letter-spacing: 0.15rem;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    /* Dodałem wypełnienie, aby ramka miała więcej miejsca do zaokrąglenia */
+    display: inline-block;
+    /* Element inline-block, aby dopasować się do zawartości */
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    background-color: rgb(0, 0, 0, 0.7);
+    animation: typing 1s steps(30, end) forwards, blinking 2s infinite;
+}
+
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blinking {
+    0% {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: whitesmoke
+    }
+
+    100% {
+        border-color: transparent
+    }
+    
+}
+
+.subTitleCon {
+    font-size: 28px;
+    margin-top: .6rem;
+    letter-spacing: .015rem;
+    font-weight: 350;
+    color: white;
+    max-width: 300px;
+    background-color: rgb(0, 0, 0, 0.7);
+    animation: typing 1s steps(30, end) forwards, blinking 2s infinite;
+  }
+
+.short-link {
+    font-size: 1.15rem;
+    margin-top: .6rem;
+    letter-spacing: .015rem;
+    font-weight: 350;
+    color: rgb(189, 178, 255);
+    margin-bottom: 3%;
+    bottom: 0;
+}
+
+.partsInstallation{
+    background: url("images/hero/maintance/daniel-lezuch-I4DcRJ_Evd8-unsplash.jpg");
+    transition: 2s;
+}
+
+.hero {
+    height: 100%;
+    background-size: 100%;
+    background-position-x: 50%;
+    background-position-y: 40%;
+    background-repeat: no-repeat;
+    border-bottom-style: solid; /* Use border-bottom-style instead of border-style */
+    border-bottom-width: 5px; /* Use border-bottom-width instead of border-width */
+    border-image: linear-gradient(90deg, rgb(145, 250, 255) 0%, rgb(27, 202, 255) 39%, rgb(0, 51, 234) 60%, rgb(145, 250, 255) 100%);
+    border-image-repeat: round;
+    border-image-slice: 1;
+    padding-left: 5%;
+}
+
+
+.partsInstallation:hover{
+    background-size: 105%;
+    background-position-x: 50%;
+    background-position-y: 50%;
+}
+
+.boxForTable{
+    padding-bottom: 10px;
+}
+
+.tableOfContent{
+    margin-top: 10px;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.913);
+    letter-spacing: 3px;
+    border-radius: 20px;
+}
+.tableOfContent p{
+    font-weight: 600;
+    padding-bottom: 10px;
+    font-size: 50px;
+}
+
+.tableOfContent a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+    transition: 0.8s;
+}
+
+.tableOfContent li{
+    list-style-type: none;
+    text-align: left;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 25px;
+    transition: 0.5s;
+    padding-bottom: 15px;
+}
+.tableOfContent li:hover{
+    color: rgb(131, 131, 255);
+    transform: scale(1.1);
+    padding-left: 120px;
+}
+
+.tableOfContent a:hover{
+    color: cornflowerblue;
+}
+
+hr{
+    margin-top: 5%;
+}
+
+.spoint-container{
+    display: flex;
+    background: url("images/hero/maintance/tetiana-shyshkina-unsplash.jpg");
+    background-size: 80%;
+    background-position-x: 30%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+}   
+
+.processor{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    padding: 20px;
+    transition: 1s;
+}
+
+.processor .point-div{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+h2{
+    font-size: 50px;
+    color: white;
+}
+
+.point-description:first-child{
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.point-div img{
+    opacity: 0.85;
+    margin-left: 10px;
+}
+
+.number{
+    font-size: 40px;
+    color: cornflowerblue;
+    font-weight: 500;
+    padding-right: 20px;
+    top: 0%;
+}
+
+.processor h2{
+    margin-bottom: 60px;
+}
+
+.point-description{
+    font-size: 20px;
+    color:rgba(255, 255, 255, 0.9);
+    font-weight: 400;
+    text-align: left;
+    align-items: center;
+}
+
+.points-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 90%;
+    background-color: rgb(0, 0, 0, 0.8);
+    border-radius: 20px;
+}
+
+.point:hover{
+    animation: boxShadowAnimation 5s infinite;
+    scale: 1.01;
+}
+
+@keyframes boxShadowAnimation {
+    0%{
+        box-shadow: rgb(69, 107, 149) 0px 20px 50px -10px;
+    }
+    50%{
+        box-shadow: rgb(93, 155, 226) 0px 30px 50px -10px;
+    }
+    100%{
+        box-shadow: rgb(69, 107, 149) 0px 20px 50px -10px;
+    }
+}
+
+.processor{
+    border-radius: 25px;
+}
+
+.processor iframe{
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgb(69, 107, 149) 0px 20px 30px -10px;
+    border-radius: 10px;
+}
+
+.video{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    margin-top: 350px;
+    margin-left: 5%;
+}
+
+iframe{
+    transition: 1s;
+    min-width: 340px;
+    min-height: 160px;
+    width: 640px;
+    height: 360px;
+}
+
+.img-in-text{
+    float: right;
+    width: 400px;
+    min-width: 200px;
+    border-radius: 20px;
+}
+
+.processor .spoint-container{
+    justify-content: center;
+}
+
+.warning{
+    color: rgb(255, 64, 64);
+}
+
+.mobo .points-container{
+    max-width: 60%;
+}
+
+.mobo{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    padding: 20px;
+    transition: 1s;
+    border-radius: 25px;
+}
+
+.mobo .point-div{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+.mobo h2{
+    margin-bottom: 60px;
+}
+
+.mobo .spoint-container{
+    justify-content: left;
+    margin-left: 50px;
+    background: url("images/hero/maintance/sven-finger-unsplash.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 50%;
+    border-radius: 20px;
+}
+
+.mobo .points-container{
+    padding: 20px;
+}
+
+.memory{
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+    margin-top: 100px;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 25px;
+}
+
+.memory h2{
+    padding: 50px;
+}
+
+.memory .point-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.7s;
+    max-width: 800px;
+}
+
+.memory p{
+    transform: skew(20deg);
+}
+
+.memory .point-div:hover{
+    scale: 1.05;
+    box-shadow: inset rgb(69, 107, 149) 0px 20px 30px -10px;
+    background-color: rgba(0, 6, 8, 0.95);
+}
+
+.memory .number{
+    color: #001948;
+    margin-left: 1%;
+}
+
+.memory .point-description{
+    margin-left: 40px;
+}
+
+.memory .point-div{
+    display: flex;
+    margin-bottom: 20px;
+    max-width: 70%;
+    min-width: 70%;
+    padding: 50px;
+    margin: 20px;
+    align-items: center;
+    transform: skew(-20deg);
+    transition: .8s;
+    
+    background-color: rgb(0, 19, 25);
+    --borderWidth: 1px;
+    position: relative;
+    border-radius: var(--borderWidth);
+}
+
+.memory .point-div:after{
+    background-color: rgba(66, 65, 65, 0.9);
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(120px + var(--borderWidth) * 2);
+    background: linear-gradient(144deg,#AF40FF, #5B42F3,#00DDEB, #5B42F3, #AF40FF);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 6s ease alternate infinite;
+    background-size: 300% 300%;
+}
+
+.memory h2{
+    padding-bottom: 20px;
+}
+
+.memory .s-title{
+    font-size: 35px;
+    color: rgba(106, 238, 255, 0.85);
+}
+
+.category-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.memory .point-container:hover{
+    background-color: rgba(0, 109, 131, 0.14);
+}
+
+@keyframes animatedgradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+    	background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.memory{
+    background: url("images/hero/maintance/olivier-collet-unsplash.jpg");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 60%;
+}
+
+.memory .category-container{
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+.graphic .points-container{
+    max-width: 100%;
+}
+
+.graphic{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    border-radius: 25px;
+    padding: 20px;
+    transition: 1s;
+}
+
+.graphic .point-div{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+.graphic h2{
+    margin-bottom: 60px;
+}
+
+.graphic .spoint-container{
+    justify-content: left;
+    margin-left: 50px;
+    background: url("images/hero/maintance/bruno-yamazaky-ts17B8i4Mog-unsplash.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 50%;
+    border-radius: 20px;
+}
+
+.graphic .points-container{
+    padding: 20px;
+}
+
+.first-slide{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    background-color: #000000;
+    flex-direction: column;
+}
+
+.first-slide .point-description{
+    font-size: 25px;
+    color:rgba(76, 238, 253, 0.969);
+    font-weight: 350;
+    line-height: 40px;
+    letter-spacing: 1px;
+    text-align: center;
+    align-items: center;
+    max-width: 70%;
+
+}
+
+.section-title {
+    background-image: linear-gradient(to right, #0077ff, #00e1ff, #00fff2, #00ffff, #0000ff, #ff00ff);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradient 15s ease infinite;
+    margin-bottom: 50px;
+}
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  footer{
+    background: rgb(29, 29, 29);
+    padding:10px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    bottom: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:12.5px;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:600px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+}
+
+.back-to-top-scroll-button{
+    display: none;
+}
+
+.back-to-top-scroll-button{
+    display: flex;
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    color: rgb(0, 0, 0, 0.7);
+    border: none;
+    background-color: rgb(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.25);
+    transition: 1s;
+}
+
+.back-to-top-scroll-button:hover{
+    transform: scale(1.05);
+    background-color: rgba(106, 238, 255, 0.85);
+}
+
+.back-to-top-scroll-button a{
+    font-size: large;
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    
+}
+
+@media only screen and (max-width: 962px){
+
+    header{
+        height: 4.8rem;
+        transition: background .37s cubic-bezier(0.32, 0.08, 0.24, 1),
+                    height .56s cubic-bezier(0.32, 0.08, 0.24, 1);
+    }
+
+    header .container{
+        padding: 0;
+    }
+
+    .nav-list{
+        margin-top: 0;
+
+    }
+
+    .nav-list-mobile{
+        display: flex;
+    }
+
+    .nav-item{
+        width: 4.8rem;
+        height: 4.8rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-item-hidden{
+        display: none;
+    }
+
+    .mobile-menu{
+        position: relative;
+        z-index: 1500;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .line{
+        position: absolute;
+        width: 1.7rem;
+        height: 1px;
+        background-color: #fff;
+        transition: margin-top .3192s cubic-bezier(0.04, 0.04, 0.12, 0.98);
+
+    }
+
+    .line-top{
+        margin-top: 3px;
+    }
+
+    .line-bottom{
+        margin-top: -.4rem;
+    }
+
+    .active .line-top{
+        margin-top: 0;
+        transform: rotate(45deg);
+        transition: transform .3192s .1s cubic-bezier(0.04, 0.04, 0.12, 0.98);
+    }
+
+    .active .line-bottom{
+        margin-top: 0;
+        transform: rotate(-45deg);
+        transition: transform .3192s .1s cubic-bezier(0.04, 0.04, 0.12, 0.98);
+    }
+
+    header.active{
+        height: 100%;
+        background-color: #000;
+
+    }
+
+    .nav-link-pcbt{
+        width: 2rem;
+        height: 4.8rem;
+        position: relative;
+        z-index: 1500;
+    }
+
+    .nav{
+        position: relative;
+    }
+
+    .nav-link{
+        font-size: 1.4rem;
+        padding: 0;
+        margin: auto 0;
+    }
+
+    .nav-list-larger{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        display: block;
+        padding: 10.5rem 5rem;
+        z-index: 1000;
+        box-sizing: border-box;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .3s;
+    }
+
+    .active .nav-list-larger{
+        width: 100%;
+        height: 100vh;
+        opacity: 1;
+        visibility:visible;
+    }
+
+    .nav-list-larger .nav-item{
+        width: 100%;
+        justify-content: flex-start;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .nav-list-larger .nav-item:nth-child(9){
+        width: 100%;
+        justify-content: flex-start;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .active .nav-list-larger .nav-item{
+        animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+
+    .title-heading{
+        font-size: 1.75rem;
+    }
+
+    .subTitleCon{
+        font-size: 1.5rem;
+    }
+
+    .title{
+        height: 150px;
+    }
+
+    .point{
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .point h2{
+        font-size: 35px;
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+
+    .point-description:first-child{
+        font-size: 22px;
+    }
+
+    .point-description{
+        font-size: 22px;
+    }
+
+    .img-in-text{
+        width: 200px;
+    }
+
+    .processor{
+        padding: 5px;
+    }
+
+    .mobo .points-container{
+        max-width: none;
+        padding: 0;
+    }
+
+    .mobo{
+        padding: 0;
+    }
+
+    .mobo .point-description{
+        margin-right: 20px;
+    }
+
+    .mobo .point-div{
+        padding: 0;
+        padding-bottom: 20px;
+        align-items: baseline;
+    }
+
+    .graphic{
+        padding: 0;
+    }
+
+    .graphic .point-description{
+        margin-right: 20px;
+    }
+
+    .graphic .point-div{
+        padding: 0;
+        padding-bottom: 20px;
+        align-items: baseline;
+    }
+
+    .memory{
+        padding: 0;
+    }
+
+    .memory h2{
+        margin-bottom: 40px;
+    }
+
+    .memory .point-container{
+        background: none;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .memory .point-div{
+        box-shadow: inset rgb(69, 107, 149) 0px 20px 30px -25px;
+    }
+
+    .memory .point-div{
+        display: flex;
+        margin-bottom: 20px;
+        max-width: 60%;
+        padding: 50px;
+        padding-left: 10px;
+        margin: 20px;
+        align-items: center;
+        transform: skew(-20deg);
+        width: 100%;
+        transition: .8s;
+        
+        background-color: rgb(0, 6, 8);
+        --borderWidth: 1px;
+        position: relative;
+        border-radius: var(--borderWidth);
+    }
+    
+    .memory .point-div:after{
+        background-color: rgb(0, 0, 0, 0.7);
+        content: '';
+        position: absolute;
+        top: calc(-1 * var(--borderWidth));
+        left: calc(-1 * var(--borderWidth));
+        height: calc(100% + var(--borderWidth) * 2);
+        width: calc(50px + var(--borderWidth) * 2);
+        background: linear-gradient(144deg,#AF40FF, #5B42F3,#00DDEB, #5B42F3, #AF40FF);
+        border-radius: calc(2 * var(--borderWidth));
+        z-index: -1;
+        animation: animatedgradient 6s ease alternate infinite;
+        background-size: 300% 300%;
+    }
+
+    .memory .point-description{
+        margin-left: 30px;
+        min-width: 200px;
+    }
+
+    .memory .point-container:nth-child(2) .s-title{
+        padding-left: 30px;
+    }
+
+    .memory .point-container{
+        max-width: 80%;
+    }
+
+    .memory .point-description{
+        font-size: 14px;
+        margin-left: 15px;
+    }
+
+    .graphic .spoint-container{
+        margin-left: 0;
+        background-size: 300%;
+        background-position-x: 50%;
+        background-position-y: 70%;
+    }
+
+    .processor .spoint-container{
+        background-size: 450%;
+        background-position-x: 60%;
+        background-position-y: 100%;
+    }
+
+    .processor .points-container{
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .mobo .spoint-container{
+        background-size: 450%;
+        background-position-x: 60%;
+        background-position-y: 100%;
+        margin-left: 0;
+    }
+
+    .mobo .points-container{
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .memory{
+        background: none;
+    }
+}

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PCBT - Overclocking</title>
+    <link rel="stylesheet" href="overclocking.css">
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list nav-list-mobile">
+                    <li class="nav-item">
+                        <div class="mobile-menu">
+                            <spanc class="line line-top"></spanc>
+                            <spanc class="line line-bottom"></spanc>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link nav-link-pcbt"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link nav-link-bag"></a>
+                    </li>
+                </ul>
+                <!-- /.nav-list nav-list-mobile -->
+    
+                <ul class="nav-list nav-list-larger">
+                    <li class="nav-item nav-item-hidden">
+                        <a href="index.html" class="nav-link nav-link-pcbt"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="hardwareSelection.html" class="nav-link nav-link-hardwareselection">Dobór komponentów</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="partsInstallation.html" class="nav-link nav-link-partsInstallation">Instalacja podzespołów</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="overclocking.html" class="nav-link nav-link-overclocking">Overclocking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="undervolting.html" class="nav-link">Undervolting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="maintenance.html" class="nav-link nav-link-maintenance">Serwisowanie</a>
+                    </li>
+                </ul>
+                <!-- /.nav-list nav-list-larger -->
+            </nav>
+        </div>
+    </header>
+    <!-- HTML -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Ta sekcja jest dla zaawansowanych użytkowników. Należy ją traktować jako ciekawostkę. Przed przystąpieniem do wspomnianych czynności prosimy o dokładne zgłębienie tematu z innych źródeł! <span class="important">NIE PONOSIMY ODPOWIEDZIALNOŚCI ZA PONIESIONE SZKODY W WYNIKU POWTARZANIA NIŻEJ WYMIENIONYCH CZYNNOŚCI!</span>
+             Przechodząc dalej akceptujesz ryzyko.
+        </p>
+        </div>
+      </div>
+      <!-- JavaScript -->
+      <script>
+          var modal = document.getElementById("myModal");
+          var span = document.getElementsByClassName("close")[0];
+
+          window.onload = function() {
+            modal.style.display = "block";
+          }
+
+          span.onclick = function() {
+            modal.style.display = "none";
+          }
+
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
+      </script>
+    <script src="main.js"></script>
+    <div class="back-to-top-scroll-button"><a href="#titleheading">▲</a></div>
+    <section class="hero partsInstallation">
+        <div class="title-container">
+            <div class="title">
+                <h2 class="title-heading" id="titleheading">Overclocking</h2>
+            </div>
+            <p class="subTitleCon">Wprowadzenie i wskazówki</p>
+            <div class="effect-container">
+                <div class="circle-container">
+                    <svg>
+                        <circle class="bg" cx="57" cy="57" r="52" />
+                        <circle class="meter-1" cx="57" cy="57" r="52" />
+                        <p class="circ-description">Taktowanie rdzenia</p>
+                        <p class="freq"> MHz</a>
+                    </svg>
+                </div>
+                <div class="circle-container">
+                    <svg>
+                        <circle class="bg" cx="57   " cy="57" r="52" />
+                        <circle class="meter-2" cx="57" cy="57" r="52" />
+                        <p class="circ-description">Temperatura</p>
+                        <p class="temp"> °C</a>
+                    </svg>
+                </div>
+                <div class="circle-container">
+                    <svg>
+                        <circle class="bg" cx="57" cy="57" r="52" />
+                        <circle class="meter-3" cx="57" cy="57" r="52" />
+                        <p class="circ-description">Prędkość wentylatorów</p>
+                        <p class="fan"> %</a>
+                    </svg>
+                </div>
+            </div>
+        </div>
+           
+    </section>
+    <section class="first-slide">
+        <h2 class="section-title">Wprowadzenie</h2>
+        <p class="point-description">Overclocking to proces zwiększania taktowania podzespołów komputera ponad specyfikację zalecaną przez producenta . Dzięki temu, że podzespoły pracują szybciej, komputer może wykonywać więcej operacji na sekundę, co zwiększa jego wydajność. Jednakże, podkręcanie podzespołów może prowadzić do przegrzania sprzętu i skrócenia jego żywotności.
+
+            Podczas overclockingu, zwiększamy częstotliwość taktowania procesora, karty graficznej lub pamięci RAM. Wymaga to zmiany ustawień BIOS-u lub oprogramowania dostarczanego przez producenta, takiego jak np. MSI Afterburner.
+        
+            Warto jednak pamiętać, że overclocking jest procesem ryzykownym i może prowadzić do uszkodzenia sprzętu. Dlatego przed podjęciem decyzji o podkręcaniu swojego komputera, warto dokładnie zapoznać się z instrukcjami producenta i zacząć od niewielkich zmian.</p>
+    </section>
+    <section class="slideA">
+        <h1 class="sectionTitle">Karta graficzna</h1>
+        <div class="slideContainer">
+            <p class="slidesContent">Podkręcanie karty graficznej jest bardziej skomplikowane niż w przypadku procesora, ponieważ liczy się nie tylko częstotliwość układu graficznego (GPU), ale też pamięci wideo (VRAM). Oba parametry mają różne przełożenie na wydajność w różnych modelach, więc warto zwrócić uwagę na oba. Zaleca się testowanie wydajności i szukanie optymalnych ustawień.</p>
+            <img class="slideImage" src="images/hero/overclocking/msi-afterburner.jpg">
+        </div>
+        <div class="sectionContainer">
+            <h2 class="sectionTitle2">Jak podkręcić kartę?</h2>
+            <div class="pointsContainer">
+                <div class="point">
+                    <h2 class="point-title">Oprogramowanie</h2>
+                    <p class="pointDescription">Jeśli chcesz podkręcić swoją kartę graficzną, 
+                        najlepiej wykorzystać do tego aplikację <span class="important">MSI Afterburner</span>. Jest to uniwersalne narzędzie, które działa nie tylko z kartami MSI, ale także z kartami innych producentów. Program wyróżnia się przejrzystym interfejsem i prostą obsługą. Włączenie opcji “Startup” pozwoli załadować zmienione ustawienia już przy starcie systemu.</p>
+                </div>
+                <div class="point">
+                    <h2 class="point-title">Jak podkręcać kartę?</h2>
+                    <p class="pointDescription">Podczas podkręcania karty graficznej, zwiększamy częstotliwość taktowania układu graficznego - <span class="important">GPU</span> i pamięci wideo - <span class="important"> VRAM</span>.
+                         Zaleca się zwiększenie częstotliwości taktowania procesora graficznego <span class="important"> o 30-50 MHz i sprawdzenie stabilności wartości </span>. 
+                         Jeśli wartość jest stabilna, można zwiększyć częstotliwość taktowania procesora graficznego o kolejne <span class="important">10-20 MHz</span>, 
+                         aż do uzyskania najwyższej stabilnej wartości.</p>
+                </div>
+                <div class="point">
+                    <h2 class="point-title">Power limit</h2>
+                    <p class="pointDescription">Zwiększenie limitu mocy - <span class="important">Power Limit</span> pozwoli poprawić osiągi karty, ale przekłada się na wyższy pobór energii i wyższe temperatury, co wpłynie na głośniejszą pracę chłodzenia. Warto eksperymentować z tym ustawieniem, np. na początek zwiększyć limit mocy o <span class="important">5-10%</span> i sprawdzić jaki ma to wpływ na wydajność/temperaturę.
+
+                        Bardziej zaawansowani użytkownicy mogą także pokusić się o <span class="important">podbicie napięcia</span>, funkcję trzeba jednak odblokować w opcjach - pozycja Unlock voltage control i Unlock voltage monitoring. Podobnie jak w przypadku zwiększenia limitu mocy, wyższe napięcie pozwoli poprawić stabilność, ale wpłynie na wyższy pobór mocy, wyższe temperatury i głośniejszą pracę chłodzenia.</p>
+                </div>
+                <div class="point">
+                    <h2 class="point-title">Memory clock</h2>
+                    <p class="pointDescription">Polecamy podnieść taktowanie o <span class="important">50 - 100 MHz</span> i sprawdzić czy przy takiej wartości karta pracuje stabilnie, później można je podniesić w krokach o kolejne 50 MHz.</p>
+                </div>
+                <div class="point">
+                    <h2 class="point-title">Test stabliności</h2>
+                    <p class="pointDescription">Uruchomiony test np. Furmark, pozostawiamy na <span class="important">godzinę lub dłużej</span>, monitorując temperatury w MSI Afterburner, aby nie przekraczały <span class="important">95-100 stopni Celsjusza</span>, powyżej tego limitu karta może "ucinać" zegary oraz obniżać swoją wydajność.
+                        Jeżeli komputer pracuje stabilnie, nie pojawiają się przekłamania w wyświetlanym obrazie, a komputer się nie zawiesza lub nie restartuje, a temperatury mieszczą się w normie, możemy uznać, że uzyskane wartości są stabilne. W przeciwnym wypadku musimy nieco zmniejszyć zegary i/lub podnieść limit mocy.</p>
+                </div>
+            </div>
+            <div class="video">
+                <p class="point-description">Oto przykładowy film instruktażowy.</p>
+                <iframe src="https://www.youtube.com/embed/psbgZY0AR-8?si=LpWX8uduk1w9nHXV"></iframe>
+            </div>
+        </div>
+    </section>
+    <section class="slideB">
+        <h1 class="sectionTitle2">Procesor</h1>
+        <div class="opinionContainer">
+            <div class="slideContainer">
+                <img class="slideImage" src="images/hero/overclocking/cpu-oc.jpg">
+                <p class="slidesContent">Podkręcanie procesora, znane także jako CPU Overclocking (OC), to podniesienie zegarów procesora ponad domyślne wartości ustalone przez producenta. Dzięki temu zabiegowi możemy zwiększyć wydajność naszego komputera bez konieczności zakupu nowego CPU lub całej platformy. Podczas podkręcania procesora, zwiększamy częstotliwość taktowania procesora ponad wartości zalecane przez producenta. Wymaga to zmiany ustawień BIOS-u lub oprogramowania dostarczanego przez producenta, takiego jak Intel XTU lub AMD Ryzen Master.
+                    Warto jednak pamiętać, że podkręcanie procesora jest procesem ryzykownym i może prowadzić do przegrzania sprzętu i skrócenia jego żywotności. Przed podjęciem decyzji o podkręcaniu swojego procesora, warto dokładnie zapoznać się z instrukcjami producenta i zacząć od niewielkich zmian.</p>
+            </div>
+        </div>
+        <div class="addonPhotos">
+            <div class="addP1"></div>
+            <div class="addP2"></div>
+        </div>
+        <div class="sectionContainer">
+            <h2 class="sectionTitle">Jak podkręcić?</h2>
+            <div class="pointsContainer">
+                <div class="point">
+                    <h2 class="point-title">Kiedy możemy podkręcić procesor.</h2>
+                    <p class="pointDescription">Aby podkręcić procesor, potrzebujemy <span class="important">odblokowanego mnożnika</span>, który pozwoli nam na zmianę wartości zegarów ponad ich domyślne wartości.
+
+                        Aby sprawdzić, czy takowy mnożnik mamy odblokowany, powinniśmy zerknąć, jaki procesor jest zainstalowany w naszym komputerze. Na PC z Windowsem najłatwiej sprawdzimy model procesora w ustawieniach (zakładka informacje), czy też w menedżerze zadań. Możemy też użyć prostego programu diagnostycznego, takiego jak CPU-Z.
+                        
+                        Jeśli posiadamy konsumencki procesor Intela, to do podkręcenia będzie nam potrzebny model z literką K w nazwie np. I5-12600K. Niezależnie czy mowa tu o procesorze w laptopie, czy w komputerze, owa litera K symbolizuje odblokowany mnożnik.
+                        
+                        Z procesorami AMD sprawa jest nieco prostsza. Większość procesorów konsumenckich tej firmy z serii Ryzen, Athlon oraz FX ma odblokowany mnożnik i nie są do tego stosowane żadne oznaczenia.
+                        
+                        Poza odblokowanym mnożnikiem <span class="important">potrzebujemy jeszcze płyty głównej, która wspiera podkręcanie procesora</span>.</p>
+                </div>
+                <div class="point">
+                    <h2 class="point-title">Od czego może zależeć podkręcanie?</h2>
+                    <p class="pointDescription">Podkręcanie procesora wiąże się z większym poborem mocy i wydzielaniem ciepła. Dlatego na zdecydowanej większości podkręconych procesorów potrzebujemy <span class="important">porządnego chłodzenia</span>, aby nie nastąpiło przegrzanie. Maksymalna temperatura procesorów Intela to 100°C, a dla nowszych procesorów AMD limit wynosi 90°C. Gdy procesor osiągnie tę temperaturę, wpadnie w tzw. Throttling - automatyczne obniżenie zegarów procesora w celu zapobiegnięcia przegrzaniu.<br><br>
+
+                        Jakość <span class="important">płyty głównej</span> - powinniśmy zwrócić szczególną uwagę na VRM (Voltage Regulator Module). Jego podstawowe zadanie to dostarczenie odpowiedniego napięcia do procesora. Słabsze VRM podczas pracy z prądożernymi procesorami mogą rozgrzać się do niebezpiecznych temperatur. Wtedy nastąpi VRM Throttling. VRM Throttling jest często trudniejszy do wykrycia niż przegrzanie procesora, ale również potrafi zmniejszyć wydajność i ograniczyć stabilność komputera.<br><br>
+                        
+                        <span class="important">Zasilacz</span> to kolejny podzespół w naszym komputerze, który wpływa na podkręcanie procesora. Jak wspomnieliśmy już przy chłodzeniu, overclocking wiąże się z większym poborem prądu. Potrzebujemy więc mocnego zasilacza, który bez problemu dostarczy odpowiednie ilości prądu. Poza samą mocą zasilacza wpływ na podkręcanie ma również wysokość i stabilność produkowanych napięć.</p>
+                </div>
+                <div class="point">
+                    <h2 class="point-title">Jak podkręcić procesor w BIOSie?</h2>
+                    <p class="pointDescription">Aby podkręcić procesor, wchodzimy do BIOS-u i przechodzimy do <span class="important">zakładki z opcjami podkręcania np. “OC” lub “Tweaker”</span>. Następnie lokalizujemy nasze dwie główne opcje, których będziemy używać przy podkręcaniu procesora, <span class="important">Core Frequency / Core Multiplayer oraz Core Voltage</span>.
+
+                        Podnosimy taktowanie o 100/200 MHz, po czym zapisujemy zmiany i wychodzimy z BIOS-u.<br>
+
+                        Testujemy czy działanie komputera jest stabline, powtarzamy proces albo zostawiamy nowe zegary jako finalne. Jeżeli napotkamy niestabilności, to <span class="important">małymi stopniami podnosimy Core Voltage</span>, uważając przy tym, aby nie przekroczyć zalecanych przez producenta wartości.
+                        
+                        <br>Problemy z podkręcaniem w BIOSie mogą pojawić się, gdy płyta główna nie rozpozna automatycznie zbyt wysokiego podkręcenia. W takiej sytuacji będzie wydawało się, że komputer uruchomił się poprawnie, lecz jako efekt zobaczymy tylko czarny ekran. Jeżeli nam się to przydarzy, to należy wyczyścić CMOS płyty głównej. Możemy to zrobić, wyciągając baterię umieszczoną na płycie, lub poprzez zwarcie danych pinów. Lepiej wyposażone płyty główne udostępniają także przycisk, którym w łatwy sposób wyczyścimy CMOS 2.</p>
+                </div>
+                <div class="point">
+                    <h2 class="point-title">Test stabliności.</h2>
+                    <p class="pointDescription">Jednym z najlepszych programów do sprawdzania stabilności systemu jest <span class="important">Prime95</span>. Wraz z nim powinniśmy wyświetlać z boku program taki jak <span class="important">HwInfo</span>, aby stale kontrolować poprawność aktualnych temperatur. Program sam poinformuje nas, kiedy wystąpi throttling. Najlepiej, jednak gdyby temperatury nie przekraczały 90°C.
+                        Taki test pozostawiamy na godzinę lub dłużej, monitorując pracę komputera.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="first-slide">
+        <h2 class="section-title">Zakończenie</h2>
+        <p class="point-description">Overclocking to proces, który może zwiększyć wydajność komputera, ale jest to również proces ryzykowny i wymagający doświadczenia. Przed podjęciem decyzji o podkręcaniu swojego procesora lub karty graficznej, warto dokładnie zapoznać się z instrukcjami producenta i zacząć od niewielkich zmian.
+
+            Podkręcanie procesora lub karty graficznej wymaga odpowiedniej wiedzy i umiejętności. Warto skorzystać z różnych poradników i źródeł informacji, aby zdobyć odpowiednią wiedzę na temat tego procesu.
+            
+            Podczas podkręcania procesora lub karty graficznej, należy uważać i postępować ostrożnie. Nieprawidłowe ustawienia mogą prowadzić do przegrzania sprzętu i skrócenia jego żywotności.</p>
+    </section>
+</body>
+<footer>
+    <div class="footer">         
+        <div class="row">
+            <ul>
+                <li>
+                    <a>Autor: </a>
+                    <a>Konrad Pluta</a>
+                </li>
+                <li>
+                    <a>E-mail:</a>
+                    <a>adres@email.com</a>
+                </li>
+                <li>
+                    <a>Numer telefonu:</a> 
+                    <a>+48 123 456 789</a>
+                </li>
+                <li>
+                    <a>Zgłoś:</a> 
+                    <a href="form.html">Formularz zgłoszeniowy</a>
+                </li>
+            </ul>
+        </div>
+        <div class="row">
+            Strona stworzona na potrzeby projektu z przedmiotu: Technologie Internetowe.
+        </div>
+    </div>
+</footer>
+</html>

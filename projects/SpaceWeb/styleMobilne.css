@@ -1,0 +1,71 @@
+
+@media only screen and (max-width: 768px) {
+    #container {
+        width: auto;
+        padding: 0 10px; 
+    }
+
+    body {
+        background-size: 100% 100%; 
+        min-height: 1000px;
+    }
+
+    #menu ol, #menu ol ul {
+        display: block;
+        width: auto;
+    }
+
+    #menu ol li, #menu ol li ul li {
+        float: none;
+        width: auto;
+        border: none;
+    }
+
+    #content, #footer {
+        width: auto;
+        padding: 20px; 
+    }
+
+    .bigtitle, .form {
+        width: 100%;
+    }
+
+    .form input[type=text],
+    .form input[type=email],
+    .form textarea {
+        width: calc(100% - 1.6rem);
+    }
+
+    #strGlownaZdj, #zdj, #zdj2 {
+        width: 100%; 
+        height: auto;
+    }
+}
+
+
+@media only screen and (max-width: 360px) {
+    
+    #menu ol li a {
+        font-size: 14px;
+        padding: 5px; 
+    }
+
+    .bigtitle {
+        font-size: 24px; 
+    }
+
+    .form .submit-btn {
+        width: 100%; 
+        padding: 10px; 
+    }
+
+    .przyklad img {
+        transition-duration: 2s; 
+    }
+
+    #footer {
+        font-size: 14px; 
+    }
+
+   
+}

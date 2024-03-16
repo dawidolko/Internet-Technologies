@@ -1,0 +1,503 @@
+[
+    {
+        "question": "Ile tytułów mistrza świata w F1 zdobył Michael Schumacher?",
+        "answers": ["6", "7", "4", "3"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Ile tytułów mistrza świata w F1 zdobył Lewis Hamilton?",
+        "answers": ["6", "2", "5", "7"],
+        "correctAnswer": 3
+    },
+    {
+        "question": "W którym roku odbył się pierwszy wyścig Formuły 1?",
+        "answers": ["1950", "1948", "1963", "1952"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Który kierowca posiada największą liczbę startów w wyścigach F1?",
+        "answers": ["Fernardo Alonso", "Jenson Button", "Lewis Hamilton", "Robert Kubica"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Który zespół posiada największą liczbę startów w wyścigach F1?",
+        "answers": ["McLaren", "Ferrari", "Williams", "Sauber"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Który zespół Formuły 1 zdobył najwięcej tytułów mistrza świata konstruktorów?",
+        "answers": ["Mercedes", "McLaren", "Ferrari", "Red Bull"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Ile tytułów mistrza świata konstruktorów posiada Ferrari?",
+        "answers": ["8", "13", "16", "10"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Który kierowca posiada najwięcej zwycięstw w wyścigach F1?",
+        "answers": ["Lewis Hamilton", "Kimi Räikkönen", "Max Verstppen", "Sebastian Vettel"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Który kierowca posiada najwięcej zwycięstw zdobytych po starcie z pole position?",
+        "answers": ["Niki Lauda", "Ayrton Senna", "Charles LeClerc", "Lewis Hamilton"],
+        "correctAnswer": 3
+    },
+    {
+        "question": "Który z obecnych kierowców F1 jest najstarszy?",
+        "answers": ["Oscar Piastri", "Sergio Perez", "Fernardo Alonso", "George Russell"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Który z kierowców posida najwięcej podiów w historii F1?",
+        "answers": ["Niki Lauda", "Ayrton Senna", "Lewis Hamilton", "Michael Schumacher"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Który kierowca zdobył najwięcej podiów w pojedyńczym sezonie F1?",
+        "answers": ["Niki Lauda", "Ayrton Senna", "Charles LeClerc", "Max Verstppen"],
+        "correctAnswer": 3
+    },
+    {
+        "question": "Kto ustanowił rekord najszybszego okrążenia w historii Formuły 1 podczas Grand Prix Włoch w 2018 roku?",
+        "answers": ["Kimi Räikkönen", "Juan Pablo Montoya", "Sebastian Vettel", "Lewis Hamilton"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Który kierowca został ukarany najszybciej po rozpoczęciu swojej kariery w Formule 1?",
+        "answers": ["Fernando Alonso", "Michael Schumacher", "Sebastian Vettel", "Lewis Hamilton"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Kto został najmłodszym zwycięzcą wyścigu w historii Formuły 1?",
+        "answers": ["Max Verstappen", "Sebastian Vettel", "Lewis Hamilton", "Fernando Alonso"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Która ekipa Formuły 1 ustanowiła rekord najszybszego pit-stopu?",
+        "answers": ["McLaren", "Ferrari", "Mercedes", "Red Bull Racing"],
+        "correctAnswer": 0  
+    },
+    {
+        "question": "Kto osiągnął najszybszy wyścig Formuły 1 pod względem średniej prędkości?",
+        "answers": ["Ayrton Senna", "Michael Schumacher", "Lewis Hamilton", "Juan Pablo Montoya"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Ile metrów przejechał Marco Apicella podczas swojej kariery w Formule 1?",
+        "answers": ["500 metrów", "800 metrów", "1000 metrów", "1200 metrów"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Jaka była najmniejsza różnica czasowa między 1. a 3. miejscem podczas kwalifikacji do Grand Prix Europy w 1997 roku?",
+        "answers": ["0.001 sekundy", "0.000 sekundy", "0.01 sekundy", "0.1 sekundy"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Kto ustanowił rekord największej prędkości maksymalnej w historii Formuły 1, osiągając 372,6 km/h podczas Grand Prix Włoch w 2005 roku?",
+        "answers": ["Michael Schumacher", "Lewis Hamilton", "Juan Pablo Montoya", "Sebastian Vettel"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Kto jest rekordzistą pod względem największej liczby tytułów mistrza świata w historii MotoGP?",
+        "answers": ["Valentino Rossi", "Marc Márquez", "Giacomo Agostini", "Jorge Lorenzo"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Który zawodnik ma rekord największej liczby startów w MotoGP?",
+        "answers": ["Andrea Dovizioso", "Valentino Rossi", "Jorge Lorenzo", "Dani Pedrosa"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Kto ustanowił nowy rekord prędkości maksymalnej w MotoGP, osiągając 366,1 km/h?",
+        "answers": ["Jorge Martín", "Brad Binder", "Valentino Rossi", "Marc Márquez"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Który zawodnik wygrał najwięcej wyścigów w jednym sezonie MotoGP?",
+        "answers": ["Valentino Rossi", "Jorge Lorenzo", "Marc Márquez", "Casey Stoner"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Kto ma rekord największej liczby zwycięstw w tym samym Grand Prix w MotoGP?",
+        "answers": ["Marc Márquez", "Giacomo Agostini", "Valentino Rossi", "Casey Stoner"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Kto wyrównał rekord Giacomo Agostiniego, wygrywając co najmniej jeden wyścig w każdym sezonie przez 12 kolejnych lat?",
+        "answers": ["Dani Pedrosa", "Valentino Rossi", "Jorge Lorenzo", "Marc Márquez"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Kto jest najmłodszym zwycięzcą wyścigu w klasie królewskiej MotoGP?",
+        "answers": ["Freddie Spencer", "Marc Márquez", "Valentino Rossi", "Mick Doohan"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Kto jest najbardziej utytułowanym producentem w historii MotoGP?",
+        "answers": ["Honda", "Yamaha", "Ducati", "MV Agusta"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Kto został mistrzem świata MotoGP z najmniejszą liczbą zwycięstw w sezonie?",
+        "answers": ["Joan Mir", "Franco Morbidelli", "Valentino Rossi", "Marc Márquez"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Kto jest najstarszym zwycięzcą wyścigu w klasie królewskiej MotoGP?",
+        "answers": ["Freddie Spencer", "Marc Márquez", "Fergus Anderson", "Mick Doohan"],
+        "correctAnswer": 2
+    },           
+    {
+        "question": "W którym roku odbył się pierwszy w historii wyścig MotoGP?",
+        "answers": ["1949", "1956", "1953", "1960"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Ile tytułów mistrza świata MotoGP podiada Giacomo Agostini?",
+        "answers": ["2", "7", "4", "8"],
+        "correctAnswer": 3
+    }, 
+    {
+        "question": "Ile jest miejsc punktowanych w wyścigu F1 licząc od pierwszego?",
+        "answers": ["10", "3", "5", "6"],
+        "correctAnswer": 0
+    },    
+    {
+        "question": "Ile punktów otrzymuje zwycięzca wyścigu w Formule 1?",
+        "answers": ["10 punktów", "25 punktów", "20 punktów", "15 punktów"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Ile punktów przypada kierowcy za zajęcie drugiego miejsca w wyścigu Formuły 1?",
+        "answers": ["15 punktów", "20 punktów", "25 punktów", "10 punktów"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Ile punktów otrzymuje kierowca za zajęcie trzeciego miejsca w wyścigu Formuły 1?",
+        "answers": ["15 punktów", "10 punktów", "5 punktów", "20 punktów"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Ile punktów przyznaje się za czwarte miejsce w wyścigu Formuły 1?",
+        "answers": ["8 punktów", "6 punktów", "10 punktów", "5 punktów"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Ile punktów zdobywa kierowca za piąte miejsce w wyścigu Formuły 1?",
+        "answers": ["8 punktów", "3 punkty", "10 punktów", "2 punkty"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Ile punktów przyznawane jest za szóste miejsce w wyścigu Formuły 1?",
+        "answers": ["6 punktów", "5 punktów", "3 punkty", "1 punkt"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Ile punktów zdobywa kierowca zajmujący siódme miejsce w wyścigu Formuły 1?",
+        "answers": ["5 punktów", "3 punkty", "2 punkty", "6 punktów"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Ile punktów otrzymuje kierowca za ósme miejsce w wyścigu Formuły 1?",
+        "answers": ["3 punkty", "2 punkty", "5 punktów", "1 punkt"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Ile punktów przypada za zajęcie dziewiątego miejsca w wyścigu Formuły 1?",
+        "answers": ["2 punkty", "1 punkt", "3 punkty", "5 punktów"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Ile punktów przyznaje się za dziesiąte miejsce w wyścigu Formuły 1?",
+        "answers": ["1 punkt", "2 punkty", "3 punkty", "5 punktów"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Ile wyścigów F1 wygrał Robert Kubica?",
+        "answers": ["2", "1", "3", "0"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Ile tytułów mistrza świata w F1 zdobył Fernardo Alonso?",
+        "answers": ["6", "7", "4", "2"],
+        "correctAnswer": 3
+    },
+    {
+        "question": "Ile tytułów mistrza świata w F1 zdobył Sebastian Vettel?",
+        "answers": ["6", "7", "4", "3"],
+        "correctAnswer": 2
+    },  
+    {
+        "question": "Ilu kierowców puntuje w sprincie F1?",
+        "answers": ["1", "8", "5", "3"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Ile punktów otrzymuje zwycięzca sprintu w Formule 1?",
+        "answers": ["8 punktów", "7 punktów", "6 punktów", "5 punktów"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Ile punktów przypada kierowcy za zajęcie drugiego miejsca w sprincie Formuły 1?",
+        "answers": ["7 punktów", "8 punktów", "6 punktów", "5 punktów"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Ile punktów otrzymuje kierowca za zajęcie trzeciego miejsca w sprincie Formuły 1?",
+        "answers": ["6 punktów", "7 punktów", "5 punktów", "4 punkty"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Ile punktów przyznaje się za czwarte miejsce w sprincie Formuły 1?",
+        "answers": ["5 punktów", "4 punkty", "3 punkty", "2 punkty"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Ile punktów zdobywa kierowca za piąte miejsce w sprincie Formuły 1?",
+        "answers": ["4 punkty", "5 punktów", "3 punkty", "2 punkty"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Ile punktów przyznawane jest za szóste miejsce w sprincie Formuły 1?",
+        "answers": ["3 punkty", "2 punkty", "4 punkty", "1 punkt"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Ile punktów zdobywa kierowca zajmujący siódme miejsce w sprincie Formuły 1?",
+        "answers": ["2 punkty", "3 punkty", "1 punkt", "4 punkty"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Ile punktów otrzymuje kierowca za ósme miejsce w sprincie Formuły 1?",
+        "answers": ["1 punkt", "2 punkty", "3 punkty", "4 punkty"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Ile tytułów mistrza świata w F1 zdobył Max Verstappen?",
+        "answers": ["6", "7", "4", "3"],
+        "correctAnswer": 3
+    },
+    {
+        "question": "Ile tytułów mistrza świata w F1 zdobył Charles LeClerc?",
+        "answers": ["2", "4", "0", "3"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Ile tytułów mistrza świata w F1 zdobył Nico Rosberg?",
+        "answers": ["1", "2", "5", "3"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Ilu Polaków startowało w wyscigach Formuły 1?",
+        "answers": ["3", "6", "2", "1"],
+        "correctAnswer": 3
+    },
+    {
+        "question": "Ile samochodów jest obecnie na świecie?",
+        "answers": ["Około 500 milionów", "Około 1 miliarda", "Około 1,5 miliarda", "Około 2 miliardów"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Ile samochodów jest produkowanych każdego dnia?",
+        "answers": ["Około 100 000 sztuk", "Około 165 000 sztuk", "Około 200 000 sztuk", "Około 250 000 sztuk"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Ile części jest potrzebnych do montażu samochodu?",
+        "answers": ["Około 10 000 sztuk", "Około 20 000 sztuk", "Około 30 000 sztuk", "Około 40 000 sztuk"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Ile procent czasu eksploatacji samochód spędza na parkingu lub w garażu?",
+        "answers": ["Około 75%", "Około 85%", "Około 95%", "Około 100%"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Ile samochodów z logo Rolls-Royce jest nadal w eksploatacji?",
+        "answers": ["50 na 100", "60 na 100", "70 na 100", "75 na 100"],
+        "correctAnswer": 3
+    },
+    {
+        "question": "Jaki jest największy zarejestrowany przebieg samochodu w ciągu jego życia?",
+        "answers": ["2 586 063 kilometrów", "3 586 063 kilometrów", "4 586 063 kilometrów", "5 586 063 kilometrów"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "W ktorym roku odbył się pierwszy wyścig samochodowy w historii?",
+        "answers": ["1894", "1899", "1902", "1910"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Kiedy odbył się pierwszy wyścig Le Mans?",
+        "answers": ["1923", "1930", "1919", "1925"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Ile kobiet wystartowało w wyścigach Formuły 1?",
+        "answers": ["1", "5", "4", "2"],
+        "correctAnswer": 3
+    },
+    {
+        "question": "Który z kierowców posiada rekord 77 najszybszych okrążeń w Formule 1?",
+        "answers": ["Max Verstappen", "Lewis Hamilton", "Alain Prost", "Michael Schumacher"],
+        "correctAnswer": 3
+    },
+    {
+        "question": "Który z kierowców wygral najwięcej razy w historii wyscig Le Mans?",
+        "answers": ["Fernardo Alonso", "Robert Kubica", "Tom Kristensen", "Kazuki Nakajima"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Jaki kraj jest największym producentem samochodów na świecie?",
+        "answers": ["Stany Zjednoczone", "Japonia", "Niemcy", "Chiny"],
+        "correctAnswer": 3
+    },
+    {
+        "question": "Który samochód był pierwszym masowo produkowanym modelem?",
+        "answers": ["Ford Model T", "Chevrolet Impala", "Volkswagen Garbus", "Fiat 500"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "W którym roku wynaleziono pierwszy samochód na paliwo kopalne?",
+        "answers": ["1885", "1895", "1905", "1915"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Która firma wprowadziła na rynek pierwszy samochód elektryczny?",
+        "answers": ["Tesla", "Nissan", "General Motors", "Toyota"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Jaka jest maksymalna prędkość najszybszego samochodu świata?",
+        "answers": ["407 km/h", "431 km/h", "457 km/h", "490 km/h"],
+        "correctAnswer": 3
+    },
+    {
+        "question": "Ile lat trwała najdłuższa produkcja modelu samochodu?",
+        "answers": ["28 lat", "34 lata", "40 lat", "67 lat"],
+        "correctAnswer": 3
+    },
+    {
+        "question": "Który samochód był pierwszym pojazdem przekraczającym prędkość 100 km/h?",
+        "answers": ["Mercedes", "Ford", "Bugatti", "Porsche"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Ile wynosi rekord świata w przyspieszeniu od 0 do 100 km/h?",
+        "answers": ["2,4 sekundy", "2,8 sekundy", "3,1 sekundy", "3,5 sekundy"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Która firma samochodowa ma najwięcej wygranych w wyścigu Le Mans?",
+        "answers": ["Audi", "Porsche", "Ferrari", "Ford"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Który kraj jako pierwszy wprowadził ograniczenie prędkości na drogach?",
+        "answers": ["Stany Zjednoczone", "Wielka Brytania", "Niemcy", "Francja"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Jaki jest najpopularniejszy kolor samochodów na świecie?",
+        "answers": ["Czarny", "Biały", "Srebrny", "Niebieski"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Który samochód jest najczęściej kradzionym modelem?",
+        "answers": ["Honda Civic", "Ford Pickup", "Toyota Camry", "Chevrolet Pickup"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "W którym roku wprowadzono obowiązkowe pasy bezpieczeństwa?",
+        "answers": ["1958", "1968", "1978", "1988"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Która marka samochodowa wprowadziła pierwszy na świecie napęd na cztery koła?",
+        "answers": ["Subaru", "Jeep", "Audi", "Land Rover"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Ile kołpaków ma średnio samochód?",
+        "answers": ["2", "4", "6", "8"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Który samochód miał największą produkcję jednego modelu w historii?",
+        "answers": ["Ford Model T", "Volkswagen Garbus", "Toyota Corolla", "Fiat 500"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Jaka jest średnia długość życia samochodu?",
+        "answers": ["8 lat", "12 lat", "15 lat", "20 lat"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Który z tych samochodów używa silnika Wankla?",
+        "answers": ["Mazda RX-7", "Nissan Skyline", "Toyota Supra", "Honda NSX"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Która marka wyprodukowała pierwszy samochód z ABS?",
+        "answers": ["Mercedes-Benz", "BMW", "Audi", "Volvo"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "W którym roku wprowadzono pierwsze światła LED w samochodach?",
+        "answers": ["1993", "2001", "2004", "2008"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Który samochód był pierwszym z centralnie umieszczonym silnikiem?",
+        "answers": ["Lamborghini Miura", "Ferrari 288 GTO", "Porsche 911", "Ford GT40"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Która marka jako pierwsza zastosowała turbodoładowanie w samochodach seryjnych?",
+        "answers": ["Porsche", "Saab", "BMW", "Chevrolet"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Który samochód posiada największy bagażnik w swojej klasie?",
+        "answers": ["Skoda Superb", "Volkswagen Passat", "Mercedes E-Klasse", "BMW 5 Series"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Ile wynosi światowy rekord w długości skoku samochodem?",
+        "answers": ["83 metry", "101 metrów", "120 metrów", "156 metrów"],
+        "correctAnswer": 3
+    },
+    {
+        "question": "Który samochód jako pierwszy przekroczył wartość 1 miliona dolarów?",
+        "answers": ["Ferrari 250 GTO", "Lamborghini Miura", "Bugatti Royale", "McLaren F1"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "W którym roku odbyła się pierwsza oficjalna wystawa samochodowa?",
+        "answers": ["1889", "1899", "1905", "1915"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Który samochód jest uważany za pierwszy luksusowy SUV?",
+        "answers": ["Range Rover", "Jeep Wagoneer", "Toyota Land Cruiser", "Chevrolet Suburban"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Ile samochodów na świecie jest wyposażonych w manualną skrzynię biegów?",
+        "answers": ["Mniej niż 25%", "Około 50%", "Ponad 75%", "Prawie 100%"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Która marka samochodowa jako pierwsza wprowadziła klimatyzację?",
+        "answers": ["Packard", "Cadillac", "Ford", "Chrysler"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Który samochód był pierwszym z elektrycznym wspomaganiem kierownicy?",
+        "answers": ["Toyota Prius", "Honda Accord", "Nissan Qashqai", "Ford Focus"],
+        "correctAnswer": 0
+    }
+    
+]

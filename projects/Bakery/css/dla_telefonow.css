@@ -1,0 +1,57 @@
+@media (max-width: 712px) {
+
+    .zdjecie {
+        order: -1;
+    }
+
+    .menu,
+    .linki {
+        flex-direction: column;
+    }
+
+    .linki {
+        display: none;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .linki a {
+        border-left: none;
+        border-top: 1px solid #fff;
+        padding: 1em;
+        text-align: center;
+    }
+
+    .linki.active {
+        display: flex;
+    }
+
+    .linki a:first-child {
+        border-top: none;
+    }
+
+    .linki.active a {
+        border-left: none;
+    }
+
+    .container img {
+        width: 100%;
+        display: block;
+        margin: 1em auto;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        align-items: center;
+        margin: 0.5em 0;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+}

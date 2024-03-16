@@ -1,0 +1,356 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0e2d3;
+}
+
+nav {
+    background: #d2a679;
+}
+
+.burger-menu {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*
+    Kontakt - sekcja kontaktowa piekarnii
+
+    Poniżej jest przedstawiona podstrona kontaktowa firmy.
+
+    **.container**: Kontener o tej klasie ma szerokość 80% ekranu, jest wyśrodkowany, ma pionowe marginesy ustawione na 20px i padding na 20px. Minimalna wysokośc kontenera to 70vh.
+    
+    **#formularz**: Formularz o tym id ma ustawiony padding 3em, maksymalną szerokość 500px i jest wyśrodkowany.
+
+    **#formularz label**: Każda etykieta wewnątrz formularza o takim id ma ustawiony display:flex, ma też margines dolny na 5px.
+
+    **#formularz-zamowienia input**: Każde pole ma szerokość 100%, padding 8px, dolny margines na 15px i obramowanie 1px.
+
+    **#formularz-zamowienia button**: Każdy przycisk ma padding poziomy na 10px i pionowy na 15px, usuniety ma obramowanie, rozmiar czcionki ma 16px i górny margines na 15px.
+
+    **#formularz textarea**: Każde pole tekstu ma szerokość 100%, padding na 8px, dolny margines na 15px i obramowanie 1px. Wyłączona została opcja resize.
+
+    Markup:
+    <main>
+        <div class="container">
+            <section>
+                <h2>Dane kontaktowe</h2>
+                <p>Adres: Lorem, ipsum dolor.</p>
+                <p>E-mail: example@example.pl</p>
+                <p>tel./fax: +48 12 345 67 89</p>
+                <p>tel.kom.: +48 123 456 789</p>
+                <p>Czynne: pon-pt 6:00 - 20:00</p>
+            </section>
+            <section>
+                <h2>Wyślij nam wiadomość</h2>
+                <form action="#" id="formularz">
+                    <label for="imie">Imię:</label>
+                    <input type="text" id="imie" name="imie" required autofocus pattern="[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]+"
+                        title="Wpisz poprawne imię.">
+                    <label for="nazwisko">Nazwisko:</label>
+                    <input type="text" id="nazwisko" name="nazwisko" required pattern="[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]+"
+                        title="Wpisz poprawne nazwisko.">
+                    <label for="adres-email">Adres e-mail:</label>
+                    <input type="email" id="adres-email" name="adres-email" required title="Wpisz adres e-mail.">
+                    <label for="temat">Temat:</label>
+                    <input type="text" id="temat" name="temat" title="Wpisz temat.">
+                    <label for="tresc">Treść wiadomości:</label>
+                    <textarea name="tresc" id="tresc" cols="60" rows="10"></textarea>
+                    <button type="submit">Wyślij</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    Style guide: 5.0
+*/
+
+/*
+    Pasek nawigacji - sekcja paska nawigacji
+
+    Poniżej przedstawiony jest pasek nawigacji
+
+    **.menu**: Display jest ustawiony na flex i elementy paska są wyśrodkowane.
+
+    **.zdjecie**: Kontener o tej klasie jest wyśrodkowane i ma właściwość flex-grow: 1.
+
+    **.burger-menu**: Dla urządzeń desktopowych nie przycisk nie jest wyświetlany, tylko na telefony i tablety. Rozmiar czcionki ma 30px. Nie ma obramowania i tła.
+
+    **.linki**: Kontener o tej klasie ma właściwość display:flex i zajmuje 3 razy więcej miejsca niż kontener z klasą .zdjecie.
+
+    **.linki a**: Każdy element ma równą wielkośc (flex: 1), padding na 1.5em. Są wyśrodkowane, nie mają podkreśleń i mają lewe obramowanie o grubości 1px. Dla pierwszego elementu nie ma lewego obramowania.
+
+    Markup:
+    <nav>
+        <div class="menu">
+            <div class="zdjecie">
+                <img src="img/placeholder.png" alt="logo">
+            </div>
+            <button class="burger-menu">&#9776;</button>
+            <div class="linki">
+                <a href="index.html">Strona Główna</a>
+                <a href="o_nas.html">O nas</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="zamowienie.html">Zamówienia</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+
+    Style guide: 6.0
+*/
+
+/*
+    Stopka - sekcja paska nawigacji
+
+    Poniżej przedstawiony jest stopka piekarnii
+
+   **.footer-info**: Kontener o tej klasie ma ustawiony display:flex i elementy mają równe odstępy między sobą. Padding pionowy ma 2em, a poziomy 1em.
+
+   **.footer-left**: Kontener o tej klasie ma ustawiony display:flex, elementy są ułożone w kolumnie.
+
+   **.footer-right**: Kontener o tej klasie ma ustawiony display:flex i elementy są ułożone pośrodku kontenera.
+   
+   **.socials**: Kontener o tej klasie ma ustawione marginesy na 0.
+
+    Markup:
+    <footer>
+        <div class="footer-info">
+            <div class="footer-left">
+                <p>© Piekarnia 2024</p>
+            </div>
+            <div class="footer-right">
+                <p><a href="#">Polityka prywatności</a></p>
+                <div class="socials">
+                    <a href="#"><img src="img/socials/facebook.png" id="fb" alt="link_do_facebooka"></a>
+                    <a href="#"><img src="img/socials/instagram.png" id="inst" alt="link_do_instagrama"></a>
+                    <a href="#"><img src="img/socials/twitter.png" id="tw" alt="link_do_twittera"></a>
+                    <a href="#"><img src="img/socials/youtube.png" id="yt" alt="link_do_youtuba"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    Style guide: 7.0
+*/
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.zdjecie {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.zdjecie img {
+    width: 200px;
+    height: auto;
+}
+
+.linki {
+    display: flex;
+    flex-grow: 3;
+    background-color: #bd946c;
+}
+
+.linki a {
+    flex: 1;
+    padding: 1.5em;
+    text-align: center;
+    border-left: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+}
+
+.linki a:hover {
+    background-color: #b08a61;
+}
+
+.linki a:first-child {
+    border-left: none;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff7e6;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    min-height: 70vh;
+}
+
+.container p {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #8f5c30;
+    color: #fff;
+    padding: 1em 0;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+}
+
+.footer-info>p,
+.socials {
+    margin: 0;
+}
+
+.footer-info>.footer-right>p>a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footer-info>.footer-right>p>a:hover {
+    color: #d2a679;
+}
+
+.socials img {
+    padding: 0 0.5em;
+    vertical-align: middle;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 712px) {
+
+    .zdjecie {
+        order: -1;
+    }
+
+    .menu,
+    .linki {
+        flex-direction: column;
+    }
+
+    .linki {
+        display: none;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .linki a {
+        border-left: none;
+        border-top: 1px solid #fff;
+        padding: 1em;
+        text-align: center;
+    }
+
+    .linki.active {
+        display: flex;
+    }
+
+    .linki a:first-child {
+        border-top: none;
+    }
+
+    .linki.active a {
+        border-left: none;
+    }
+
+    .container img {
+        width: 100%;
+        display: block;
+        margin: 1em auto;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        align-items: center;
+        margin: 0.5em 0;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.container p {
+    text-align: center;
+}
+
+#formularz {
+    background-color: #fce8ca;
+    padding: 3em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: auto;
+}
+
+#formularz label {
+    display: flex;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#formularz input,
+#formularz select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#formularz button {
+    background-color: #d2a679;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+#formularz button:hover {
+    background-color: #b08a61;
+}
+
+#formularz textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    resize: none;
+}

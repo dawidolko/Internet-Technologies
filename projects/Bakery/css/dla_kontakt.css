@@ -1,0 +1,55 @@
+.container h2 {
+    text-align: center;
+}
+
+.container p {
+    text-align: center;
+}
+
+#formularz {
+    background-color: #fce8ca;
+    padding: 3em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: auto;
+}
+
+#formularz label {
+    display: flex;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#formularz input,
+#formularz select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#formularz button {
+    background-color: #d2a679;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+#formularz button:hover {
+    background-color: #b08a61;
+}
+
+#formularz textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    resize: none;
+}

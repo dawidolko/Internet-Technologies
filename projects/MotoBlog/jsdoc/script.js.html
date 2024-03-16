@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: script.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: script.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * Obsługuje wyświetlanie i ukrywanie wyskakującego okienka (popup).
+ * Po załadowaniu strony pokazuje popup, który można zamknąć na dwa sposoby: klikając 'X' lub klikając w dowolne miejsce na ekranie.
+ * Dodatkowo obsługuje formularz zapisu do newslettera.
+ * @example
+ * // Załadowanie DOM i inicjalizacja popupa
+ * document.addEventListener("DOMContentLoaded", function() {
+ *     // ...inicjalizacja i obsługa...
+ * });
+ */
+document.addEventListener("DOMContentLoaded", function() {
+  // Inicjalizacja elementów popup i przycisku zamknięcia
+  var popup = document.getElementById("popup");
+  var closeBtn = document.getElementsByClassName("close")[0];
+
+  // Wyświetla popup po 1 sekundzie
+  setTimeout(function() {
+    popup.style.display = "block";
+  }, 1000);
+
+  // Zamyka popup po kliknięciu w 'X'
+  closeBtn.onclick = function() {
+    popup.style.display = "none";
+  };
+
+  // Zamyka popup klikając gdziekolwiek poza nim
+  window.onclick = function(event) {
+    if (event.target == popup) {
+      popup.style.display = "none";
+    }
+  };
+
+  // Obsługa formularza newslettera
+  document.getElementById("newsletter-form").onsubmit = function(event) {
+    event.preventDefault();
+    var email = document.getElementById("email").value;
+    alert("Dziękujemy za zapisanie się do newslettera: " + email);
+    popup.style.display = "none";
+  };
+});
+
+  
+
+/**
+ * Obsługuje menu typu 'hamburger' na urządzeniach mobilnych.
+ * Po kliknięciu na ikonę hamburgera, menu się rozwija lub zwija.
+ * @example
+ * // Inicjalizacja menu hamburger po załadowaniu DOM
+ * document.addEventListener("DOMContentLoaded", function() {
+ *     // ...inicjalizacja i obsługa...
+ * });
+ */
+document.addEventListener("DOMContentLoaded", function() {
+  var hamburger = document.querySelector('.hamburger-menu');
+  var mobileNav = document.querySelector('.navigation ul');
+
+  hamburger.addEventListener('click', function() {
+      mobileNav.classList.toggle('active');
+  });
+});
+
+
+/**
+ * Skaluje formularz kontaktowy po załadowaniu strony.
+ * @example
+ * // Skalowanie formularza kontaktowego
+ * window.addEventListener('DOMContentLoaded', (event) => {
+ *     // ...skalowanie...
+ * });
+ */
+window.addEventListener('DOMContentLoaded', (event) => {
+  document.getElementById('contactForm').style.transform = 'scale(1)';
+});
+
+  
+/**
+ * Funkcje do obsługi slidera.
+ * Pozwalają na przełączanie slajdów oraz ustawianie obecnego slajdu.
+ * @example
+ * // Używanie funkcji slidera
+ * let slideIndex = 1;
+ * showSlides(slideIndex);
+ * changeSlide(1);
+ * currentSlide(2);
+ */
+
+// Ustawia początkowy indeks slajdu
+let slideIndex = 1;
+showSlides(slideIndex);
+
+/**
+ * Zmienia slajd o daną liczbę pozycji.
+ * @function
+ * @public
+ * @param {number} n - Liczba, o którą przesunąć slajd.
+ */
+function changeSlide(n) {
+  showSlides(slideIndex += n);
+}
+
+/**
+ * Ustawia bieżący slajd.
+ * @function
+ * @public
+ * @param {number} n - Indeks wybranego slajdu.
+ */
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+/**
+ * Wyświetla slajd o danym indeksie.
+ * Ukrywa pozostałe slajdy i aktualizuje kropki nawigacyjne.
+ * @function
+ * @public
+ * @param {number} n - Indeks slajdu do wyświetlenia.
+ */
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slide");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) { slideIndex = 1 }
+  if (n &lt; 1) { slideIndex = slides.length }
+  for (i = 0; i &lt; slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i &lt; dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+/**
+ * Obsługuje zakładki na stronie.
+ * Kliknięcie na etykietę zakładki rozszerza ją, pokazując zawartość.
+ * Ponowne kliknięcie zamyka zakładkę.
+ * @example
+ * // Inicjalizacja obsługi zakładek
+ * document.querySelectorAll('.tab-label').forEach((label) => {
+ *     label.addEventListener('click', () => {
+ *         // ...obsługa zakładek...
+ *     });
+ * });
+ */
+document.querySelectorAll('.tab-label').forEach((label) => {
+  label.addEventListener('click', () => {
+    const content = label.nextElementSibling;
+
+    // Otwiera lub zamyka zakładkę
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      // Zamyka wszystkie inne zakładki
+      document.querySelectorAll('.tab .tab-content').forEach((otherContent) => {
+        otherContent.style.maxHeight = null;
+      });
+      // Otwiera wybraną zakładkę
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+});</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#backToStart">backToStart</a></li><li><a href="global.html#changeSlide">changeSlide</a></li><li><a href="global.html#currentSlide">currentSlide</a></li><li><a href="global.html#displayQuestion">displayQuestion</a></li><li><a href="global.html#goToNextQuestion">goToNextQuestion</a></li><li><a href="global.html#initQuiz">initQuiz</a></li><li><a href="global.html#loadAndDisplayQuestions">loadAndDisplayQuestions</a></li><li><a href="global.html#resetQuizState">resetQuizState</a></li><li><a href="global.html#resetState">resetState</a></li><li><a href="global.html#selectAnswer">selectAnswer</a></li><li><a href="global.html#selectRandomQuestions">selectRandomQuestions</a></li><li><a href="global.html#showResult">showResult</a></li><li><a href="global.html#showSlides">showSlides</a></li><li><a href="global.html#slideIndex">slideIndex</a></li><li><a href="global.html#startGame">startGame</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Wed Feb 07 2024 13:06:58 GMT+0100 (czas środkowoeuropejski standardowy)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
