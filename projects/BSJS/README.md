@@ -1,5 +1,7 @@
 # Battleships Game
 
+Author: [link](https://github.com/g00staw/BSJS)
+
 Welcome to Battleships Game! This project is a web-based implementation of the classic Battleships game using JavaScript, HTML, and CSS.
 
 ## How to Play
